@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { REVIEW_LABEL } from "../lib/catalog";
+---
+
+<BaseLayout title="About — Awesome RGBDT Manipulation">
+  <article class="prose wrap">
+    <a class="back-link" href="/">
+      ← Back to the library
+    </a>
+    <h1>A clearer view of contact-rich manipulation.</h1>
+    <p class="lead">
+      An independent, source-backed reference for robotic manipulation
+      benchmarks and policies, spanning RGB, depth, tactile sensing and force
+      feedback.
+    </p>
+    <h2>Two ways into the literature</h2>
+    <p>
+      <strong>Benchmarks</strong> describe what is tested: published tasks,
+      evaluation domains, simulator versions, sensors, robot embodiments,
+      demonstrations, metrics and protocols. Task figures show the suite or
+      capability taxonomy whenever an appropriate author figure is available.
+    </p>
+    <p>
+      <strong>Policies</strong> describe how actions are produced: architecture,
+      base model, deployment inputs, action outputs, model size, learning data,
+      training resources and inference or control rates. Their figures show the
+      method pipeline or architecture.
+    </p>
+    <p>
+      A paper can contribute to both collections. It keeps one canonical
+      research record, with collection-specific details and figures. Supporting
+      datasets, tactile simulators and perception tests are labeled separately
+      from closed-loop manipulation benchmarks.
+    </p>
+    <h2>Evidence before completeness claims</h2>
+    <ul>
+      <li>
+        Primary papers, author project pages, official repositories and model
+        cards support the records. Secondary lists are discovery aids.
+      </li>
+      <li>
+        Publication dates use the first public paper version where verified. An
+        anonymous, undated project stays undated.
+      </li>
+      <li>
+        Paper experiments and current software releases can use different
+        simulators, datasets or checkpoints. Both scopes are retained.
+      </li>
+      <li>
+        Undisclosed values stay <em>Not reported</em>. Unresolved values stay{" "}
+        <em>Not verified</em>. Neither means zero, absent or closed source.
+      </li>
+      <li>
+        Code, model weights and data have separate release and licensing fields.
+        A project link does not establish an open release.
+      </li>
+    </ul>
+    <h2>Physical observations and deployment inputs</h2>
+    <p>
+      Rendered ground-truth depth, reconstructed sensor depth, geometry
+      predicted from RGB, tactile images, taxel force arrays and wrist
+      force/torque are distinct observations. Privileged simulator state or
+      tactile labels used during training are not automatically deployment
+      inputs. Policy details describe these differences explicitly.
+    </p>
+    <p>
+      Model sizes identify the component when reported. A training GPU count,
+      inference device, action throughput, environment step rate and closed-loop
+      control frequency are different measurements. This atlas retains their
+      source scope rather than turning them into a shared performance ranking.
+    </p>
+    <h2>Figures and attribution</h2>
+    <p>
+      Research figures come from author publications, projects or official
+      repositories. Images are optimized locally and retain their source URL,
+      author credit and original rights. Click a figure to enlarge it and follow
+      its source. Missing figures are stated explicitly.
+    </p>
+    <h2>Keeping the atlas current</h2>
+    <p>
+      This is a reviewed snapshot dated <strong>{REVIEW_LABEL}</strong>, not a
+      live publication feed. The <a href="/coverage/">coverage page</a>{" "}
+      describes the search boundary and unresolved fields. The local repository
+      includes structured data, regeneration and validation scripts, and a
+      review workflow for future additions.
+    </p>
+    <p>
+      Search accepts task names, simulators, model names, sensors and training
+      details. Filters are collection-specific. Save papers in this browser,
+      compare up to four records, export a filtered CSV, or share a URL that
+      restores the current view.
+    </p>
+    <div class="notice">
+      Original repository code and prose use the MIT license. Third-party
+      research figures, linked code, datasets and model weights retain their
+      respective licenses and rights.
+    </div>
+  </article>
+</BaseLayout>

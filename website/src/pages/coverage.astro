@@ -1,0 +1,211 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  works,
+  figures,
+  REVIEW_LABEL,
+  CATEGORIES,
+  inCollection,
+  isUnknown,
+} from "../lib/catalog";
+const bench = works.filter((w) => inCollection(w, "benchmark"));
+const policies = works.filter((w) => inCollection(w, "policy"));
+const support = works.filter((w) =>
+  w.categories.includes("supporting-resources"),
+);
+const costs = [
+  "modelSize",
+  "trainingData",
+  "trainingTime",
+  "trainingHardware",
+  "controlRate",
+];
+const labels: Record<string, string> = {
+  modelSize: "Model size",
+  trainingData: "Training data",
+  trainingTime: "Training duration",
+  trainingHardware: "Training hardware",
+  controlRate: "Inference / control rate",
+};
+const imageCount = works.filter(
+  (w) => Object.keys(figures[w.id] ?? {}).length,
+).length;
+const sources = new Set(works.flatMap((w) => w.evidence.map((s) => s.url)));
+---
+
+<BaseLayout title="Coverage & updates — Awesome RGBDT Manipulation">
+  <article class="prose wrap">
+    <a class="back-link" href="/">
+      ← Back to the library
+    </a>
+    <h1>Broad coverage. Explicit boundaries.</h1>
+    <p class="lead">
+      A reviewed map of the field through {REVIEW_LABEL}, including recent work
+      and the foundations needed to interpret it. Source availability and
+      experimental scope remain visible.
+    </p>
+    <div class="coverage-stats">
+      <div>
+        <strong>{bench.length}</strong>
+        <span>benchmark records</span>
+      </div>
+      <div>
+        <strong>{policies.length}</strong>
+        <span>policy records</span>
+      </div>
+      <div>
+        <strong>{works.length}</strong>
+        <span>unique research records</span>
+      </div>
+    </div>
+    <p>
+      Some papers contribute to both collections, so collection counts cannot be
+      added. {support.length} supporting resources are accessible under Tools &
+      data. {imageCount} records have locally stored, credited figures;{" "}
+      {sources.size} distinct primary-source URLs support the catalog.
+    </p>
+    <h2>Benchmark coverage</h2>
+    <table class="coverage-table">
+      <thead>
+        <tr>
+          <th>Research area</th>
+          <th>Scope</th>
+          <th>Records</th>
+        </tr>
+      </thead>
+      <tbody>
+        {CATEGORIES.benchmark.map((c) => (
+          <tr>
+            <td>
+              <a href={"/?category=" + c.id + "#library"}>{c.label}</a>
+            </td>
+            <td>{c.description}</td>
+            <td>
+              {works.filter((w) => inCollection(w, "benchmark", c.id)).length}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <h2>Policy coverage</h2>
+    <table class="coverage-table">
+      <thead>
+        <tr>
+          <th>Research area</th>
+          <th>Scope</th>
+          <th>Records</th>
+        </tr>
+      </thead>
+      <tbody>
+        {CATEGORIES.policy.map((c) => (
+          <tr>
+            <td>
+              <a href={"/?collection=policy&category=" + c.id + "#library"}>
+                {c.label}
+              </a>
+            </td>
+            <td>{c.description}</td>
+            <td>
+              {works.filter((w) => inCollection(w, "policy", c.id)).length}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p>
+      Categories can overlap. They are discovery routes, not mutually exclusive
+      claims about an architecture or sensor.
+    </p>
+    <h2>What the papers disclose</h2>
+    <p>
+      The requested cost and implementation fields are recorded for every
+      policy. Some authors disclose only selected settings, so populated values
+      retain their component and experiment qualifiers.
+    </p>
+    <table class="coverage-table">
+      <thead>
+        <tr>
+          <th>Policy field</th>
+          <th>Reported / described</th>
+          <th>Undisclosed / unresolved</th>
+        </tr>
+      </thead>
+      <tbody>
+        {costs.map((k) => (
+          <tr>
+            <td>{labels[k]}</td>
+            <td>{policies.filter((w) => !isUnknown(w.policy?.[k])).length}</td>
+            <td>{policies.filter((w) => isUnknown(w.policy?.[k])).length}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <h2>Search and review method</h2>
+    <ul>
+      <li>
+        Search across tactile benchmarks, precision assembly, dexterous hands,
+        general manipulation and robustness; then follow citations and official
+        implementations.
+      </li>
+      <li>
+        Search policy families independently: visuo-tactile IL, tactile VLA /
+        WAM, RGB-D / 3D, visual precision and RL, and relevant generalist
+        foundations.
+      </li>
+      <li>
+        Review full papers, appendices, code installation instructions, task
+        registries, model cards and actual license files when resolving detailed
+        fields.
+      </li>
+      <li>
+        Reconcile aliases, renamed manuscripts, versions, simulator differences
+        and paper-versus-release task counts.
+      </li>
+      <li>
+        Independently review sensor claims, task scope, training resource
+        claims, figure selection and release status. Verify rendered behavior
+        separately from data checks.
+      </li>
+    </ul>
+    <h2>Coverage limits</h2>
+    <p>
+      This collection focuses on manipulation and action-policy evaluation.
+      Standalone tactile representation, sensor hardware, medical palpation,
+      locomotion, haptics and generic depth-estimation papers are not
+      exhaustively cataloged. Selected supporting resources are included when
+      they explain the benchmarks or policies.
+    </p>
+    <p>
+      A listed task registry can contain more tasks than a paper’s evaluation
+      subset. Task lists are labeled as complete suites, released registries,
+      subsets or examples. Task totals across overlapping suites and datasets
+      are not aggregated.
+    </p>
+    <p>
+      Recent anonymous or unreleased projects are included only when an
+      accessible author source supports the record. Their availability is
+      qualified; an unpublished checkpoint or an undocumented simulator version
+      is never assumed.
+    </p>
+    <h2>Update the local repository</h2>
+    <p>
+      The structured source is <code>data/works.json</code>; figure provenance
+      is <code>data/media.json</code>. Edit a record with primary-source
+      evidence, then run:
+    </p>
+    <div class="notice">
+      <code>python3 scripts/generate.py</code>
+      <br />
+      <code>python3 scripts/validate.py</code>
+      <br />
+      <code>cd website && npm test && npm run check && npm run build</code>
+    </div>
+    <p>
+      Review additions in the local browser before release. The repository has
+      no remote or deployment configuration.{" "}
+      <a href="/catalog.json" download="rgbdt-catalog.json">
+        Download the complete structured catalog ↗
+      </a>
+    </p>
+  </article>
+</BaseLayout>

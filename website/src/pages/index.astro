@@ -1,0 +1,243 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CatalogCard from "../components/CatalogCard.astro";
+import { works, CATEGORIES, inCollection } from "../lib/catalog";
+const pool = works.filter((w) => inCollection(w, "benchmark"));
+---
+
+<BaseLayout title="Awesome RGBDT Manipulation — See the geometry. Feel the contact.">
+  <section class="library-intro wrap">
+    <h1>
+      See the geometry. <em>Feel the contact.</em>
+    </h1>
+    <p>Benchmarks and policies for precise, contact-rich robot manipulation.</p>
+  </section>
+  <section id="library" class="library wrap" aria-label="Research library">
+    <div class="library-toolbar" id="library-toolbar">
+      <div class="library-tabs" role="group" aria-label="Collection">
+        <button type="button" data-collection="benchmark" aria-pressed="true">
+          Benchmarks
+        </button>
+        <button type="button" data-collection="policy" aria-pressed="false">
+          Policies
+        </button>
+      </div>
+      <label class="search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </svg>
+        <input
+          type="search"
+          id="catalog-search"
+          autocomplete="off"
+          placeholder="Search papers, tasks, simulators, models…"
+          aria-label="Search the library"
+        />
+        <kbd>/</kbd>
+      </label>
+      <button
+        type="button"
+        class="filters-toggle"
+        id="filters-toggle"
+        aria-expanded="false"
+        aria-controls="filter-panel"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M7 12h10M10 17h4" />
+        </svg>
+        Filters
+        <span id="filter-count" hidden>
+          0
+        </span>
+      </button>
+      <div class="filter-panel" id="filter-panel" hidden>
+        <div class="filter-heading">
+          <h2 id="filter-panel-title">Benchmark filters</h2>
+          <button type="button" id="reset-filters">
+            Reset
+          </button>
+        </div>
+        <div class="filter-body">
+          <div id="filter-fields" class="filter-fields"></div>
+          <fieldset class="signal-filters">
+            <legend id="modality-label">Available observations</legend>
+            <div id="modality-options"></div>
+          </fieldset>
+          <p class="filter-note" id="filter-note">
+            Simulator support and policy inputs are different claims. See each
+            entry for experimental scope.
+          </p>
+        </div>
+        <button type="button" class="button-dark" id="apply-filters">
+          Done
+        </button>
+      </div>
+    </div>
+    <nav class="category-nav" aria-label="Benchmark categories">
+      <div id="category-options" class="category-options">
+        <button type="button" data-category="all" aria-pressed="true">
+          All benchmarks <span>{pool.length}</span>
+        </button>
+        {CATEGORIES.benchmark.map((c) => (
+          <button
+            type="button"
+            data-category={c.id}
+            aria-pressed="false"
+            title={c.description}
+          >
+            {c.label}
+            <span>
+              {works.filter((w) => inCollection(w, "benchmark", c.id)).length}
+            </span>
+          </button>
+        ))}
+      </div>
+    </nav>
+    <div class="library-meta">
+      <p id="result-count" role="status" aria-live="polite">
+        {pool.length} benchmarks
+      </p>
+      <div class="library-meta-actions">
+        <button
+          type="button"
+          id="saved-toggle"
+          aria-pressed="false"
+          title="Show papers saved in this browser"
+        >
+          Saved <span id="saved-count">0</span>
+        </button>
+        <button type="button" id="view-toggle" aria-pressed="false">
+          Index view
+        </button>
+        <button type="button" id="share-view">
+          Share view ↗
+        </button>
+        <button type="button" id="export-view">
+          Export CSV ↓
+        </button>
+        <label class="sort-label">
+          Sort:{" "}
+          <select id="sort-order" aria-label="Sort results">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div
+      id="active-filters"
+      class="active-filters"
+      aria-label="Active filters"
+    ></div>
+    <div id="catalog-results" class="catalog-feed" aria-busy="false">
+      <div class="feed-batch">
+        {pool.slice(0, 12).map((w) => (
+          <CatalogCard work={w} collection="benchmark" />
+        ))}
+      </div>
+    </div>
+    <div id="catalog-empty" class="empty-state" hidden>
+      <h2>No matching entries.</h2>
+      <p>Try a task name, another phrase, or fewer filters.</p>
+      <button type="button" class="button-dark" id="empty-reset">
+        Clear filters
+      </button>
+    </div>
+    <div class="feed-boundary" id="feed-boundary">
+      <div
+        id="loading-dots"
+        class="loading-dots"
+        aria-label="Loading entries"
+        hidden
+      >
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+      <span id="feed-end" hidden>
+        end
+      </span>
+      <div id="feed-error" hidden>
+        <p>The local catalog could not be loaded.</p>
+        <button type="button" class="button-dark" id="retry-load">
+          Try again
+        </button>
+      </div>
+      <button type="button" id="load-more" hidden>
+        Load more
+      </button>
+    </div>
+    <noscript>
+      <p class="empty-state">
+        Browse the complete <a href="/README.md">README</a> or{" "}
+        <a href="/catalog.json">structured catalog</a>. Interactive search and
+        comparison require JavaScript.
+      </p>
+    </noscript>
+  </section>
+  <div class="compare-tray" id="compare-tray" hidden>
+    <div>
+      <strong id="compare-count">0 selected</strong>
+      <span id="compare-names"></span>
+    </div>
+    <button type="button" class="button-dark" id="open-compare">
+      Compare
+    </button>
+    <button type="button" id="clear-compare" aria-label="Clear comparison">
+      ×
+    </button>
+  </div>
+  <dialog
+    id="detail-dialog"
+    class="detail-dialog"
+    aria-label="Research details"
+  >
+    <div class="dialog-controls">
+      <button
+        type="button"
+        class="dialog-close"
+        data-close
+        aria-label="Close details"
+      >
+        ×
+      </button>
+    </div>
+    <div id="detail-content"></div>
+  </dialog>
+  <dialog
+    id="compare-dialog"
+    class="compare-dialog"
+    aria-label="Research comparison"
+  >
+    <div class="dialog-controls">
+      <button
+        type="button"
+        class="dialog-close"
+        data-close
+        aria-label="Close comparison"
+      >
+        ×
+      </button>
+    </div>
+    <div id="compare-content"></div>
+  </dialog>
+  <dialog id="figure-dialog" class="figure-dialog" aria-label="Research figure">
+    <div class="dialog-controls">
+      <button
+        type="button"
+        class="dialog-close"
+        data-close
+        aria-label="Close figure"
+      >
+        ×
+      </button>
+    </div>
+    <div id="figure-content"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script>
+    import "../scripts/atlas";
+  </script>
+</BaseLayout>

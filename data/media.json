@@ -1,0 +1,2494 @@
+{
+  "pace": {
+    "policy": {
+      "path": "/images/catalog/pace-policy.webp",
+      "original": "https://arxiv.org/html/2610.16308v1/figs/Figure1.png",
+      "page": "https://arxiv.org/html/2610.16308",
+      "credit": "PACE authors",
+      "alt": "PACE — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "5553e5acb172872cdfadb722780505c903674815a040aa4153edcdab4486d7e6",
+      "width": 1500,
+      "height": 923,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "vista": {
+    "policy": {
+      "path": "/images/catalog/vista-policy.webp",
+      "original": "https://arxiv.org/html/2610.03333v1/method.png",
+      "page": "https://arxiv.org/html/2610.03333",
+      "credit": "VISTA authors",
+      "alt": "VISTA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e5fc3b1b09792fc2b521ea0d4f154a5e30c9c040f8fa7d3297483ccf26d3bb02",
+      "width": 1500,
+      "height": 616,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "simpletouch": {
+    "policy": {
+      "path": "/images/catalog/simpletouch-policy.webp",
+      "original": "https://arxiv.org/html/2610.02784v1/simpletouch_overview.png",
+      "page": "https://arxiv.org/html/2610.02784",
+      "credit": "SimpleTouch authors",
+      "alt": "SimpleTouch — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "6b6dd157f1b5dea912f1747cf741f9849e95f40229c392e17589521a6246a131",
+      "width": 810,
+      "height": 298,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "tacdyn-wam": {
+    "policy": {
+      "path": "/images/catalog/tacdyn-wam-policy.webp",
+      "original": "https://arxiv.org/html/2610.00638v1/figures/main_framework.png",
+      "page": "https://arxiv.org/html/2610.00638",
+      "credit": "TacDyn-WAM authors",
+      "alt": "TacDyn-WAM — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "79a79676eb243b515a414a25c958d776ed4ff5495a4cf7eb42edf9eef2c3585b",
+      "width": 942,
+      "height": 482,
+      "note": "Author method diagram showing sensory encoding,multimodal computation and action/control pathways."
+    }
+  },
+  "vistacalign": {
+    "policy": {
+      "path": "/images/catalog/vistacalign-policy.webp",
+      "original": "https://arxiv.org/html/2609.30959v2/pipeline.png",
+      "page": "https://arxiv.org/html/2609.30959",
+      "credit": "VisTacAlign authors",
+      "alt": "VisTacAlign — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e72b0bf5c27fc72b37d0152af0d459357d383930c3c23301161767e74b421438",
+      "width": 1500,
+      "height": 1395,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "tactic-encoder-study": {
+    "policy": {
+      "path": "/images/catalog/tactic-encoder-study-policy.webp",
+      "original": "https://arxiv.org/html/2609.30969v1/tactic_eyecandy.png",
+      "page": "https://arxiv.org/html/2609.30969",
+      "credit": "TACTIC — encoder study authors",
+      "alt": "TACTIC — encoder study — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "177c54882839bc920f058704c511e5dffce0b828c552aac0e9529ec6f325b38f",
+      "width": 468,
+      "height": 479,
+      "note": "Author method diagram showing sensory encoding,multimodal computation and action/control pathways."
+    },
+    "benchmark": {
+      "path": "/images/catalog/tactic-encoder-study-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2609.30969#page=3",
+      "page": "https://arxiv.org/abs/2609.30969",
+      "credit": "TACTIC — encoder study authors",
+      "alt": "TACTIC — encoder study — Four real-world tasks with five annotated execution stages.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1483,
+      "note": "Figure 2. Four real-world tasks with five annotated execution stages. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "e5dad2933df410f9a6796408223b8bae0b6ed117868769b0c62dae400820e5cf"
+    }
+  },
+  "me-dex-1": {
+    "policy": {
+      "path": "/images/catalog/me-dex-1-policy.webp",
+      "original": "https://arxiv.org/html/2609.21449v2/mainpipeline.png",
+      "page": "https://arxiv.org/html/2609.21449",
+      "credit": "ME-Dex 1.0 authors",
+      "alt": "ME-Dex 1.0 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "1f8c44bddaa19434829ada15793931fe034e2571db10d0e18ca46d84013a41f3",
+      "width": 1500,
+      "height": 1055,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "foretac-vla": {
+    "policy": {
+      "path": "/images/catalog/foretac-vla-policy.webp",
+      "original": "https://foretac-vla.github.io/assets/Fig1.png",
+      "page": "https://foretac-vla.github.io/",
+      "credit": "ForeTac-VLA authors",
+      "alt": "ForeTac-VLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f9759f46cf9421fdfd165f36b277f4ff5ff49b1373802af9490e037b5102db21",
+      "width": 1500,
+      "height": 927,
+      "note": "Author framework diagram showing tactile forecasting and action conditioning."
+    }
+  },
+  "unidex-vitac": {
+    "policy": {
+      "path": "/images/catalog/unidex-vitac-policy.webp",
+      "original": "https://arxiv.org/html/2609.16504v1/figure_1.png",
+      "page": "https://arxiv.org/html/2609.16504",
+      "credit": "UniDex-ViTac authors",
+      "alt": "UniDex-ViTac — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "d52b58e16b2935df9ee39e0854b1962c3762ba80d75cda3a05646dbaad6950e2",
+      "width": 837,
+      "height": 391,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "visible-touch": {
+    "policy": {
+      "path": "/images/catalog/visible-touch-policy.webp",
+      "original": "https://arxiv.org/html/2609.14156v2/figures/overview_postrebuttal_v3.png",
+      "page": "https://arxiv.org/html/2609.14156",
+      "credit": "Visible Touch authors",
+      "alt": "Visible Touch — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "af84cb2837116d55421b1c2531212609527829ed9fe876113636f4176e82fcd9",
+      "width": 1500,
+      "height": 626,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "wm-craftnet": {
+    "policy": {
+      "path": "/images/catalog/wm-craftnet-policy.webp",
+      "original": "https://arxiv.org/html/2609.07002v1/pipeline.png",
+      "page": "https://arxiv.org/html/2609.07002",
+      "credit": "WM-Craftnet authors",
+      "alt": "WM-Craftnet — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "c8558bf5f1a7e56be5edd9e25017b0beb1217c95dae55845ad1f20d01e277952",
+      "width": 1500,
+      "height": 696,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "tacpac": {
+    "policy": {
+      "path": "/images/catalog/tacpac-policy.webp",
+      "original": "https://arxiv.org/html/2609.05266v1/pipeline.png",
+      "page": "https://arxiv.org/html/2609.05266",
+      "credit": "TacPAC authors",
+      "alt": "TacPAC — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "702c1cf78647188a9dcfafa8d95a90554a814e71c65f9667e8e9ebc00dedcf2a",
+      "width": 994,
+      "height": 378,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "tacforcing": {
+    "policy": {
+      "path": "/images/catalog/tacforcing-policy.webp",
+      "original": "https://arxiv.org/html/2608.25798v2/Framwork.png",
+      "page": "https://arxiv.org/html/2608.25798",
+      "credit": "TacForcing authors",
+      "alt": "TacForcing — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8ec02e480798338761290c2d3e95d84803906e65e6d947baf69ca09ed1b7f588",
+      "width": 1459,
+      "height": 630,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "caat": {
+    "policy": {
+      "path": "/images/catalog/caat-policy.webp",
+      "original": "https://arxiv.org/html/2608.01102v1/fig/pipeline.png",
+      "page": "https://arxiv.org/html/2608.01102",
+      "credit": "CAAT authors",
+      "alt": "CAAT — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "3ba7c959d9d42cf565bad11c557c4f56fa3b1ee0b7418078f3a181bf483c7a21",
+      "width": 1500,
+      "height": 526,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "tacwam": {
+    "policy": {
+      "path": "/images/catalog/tacwam-policy.webp",
+      "original": "https://arxiv.org/html/2607.28391v2/Method.png",
+      "page": "https://arxiv.org/html/2607.28391",
+      "credit": "TacWAM authors",
+      "alt": "TacWAM — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "736f2dd02f0e9776cb465258d044cb6a593e8006f0bb636ebbaef7bf0422bb15",
+      "width": 1475,
+      "height": 726,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "n0-vtla": {
+    "policy": {
+      "path": "/images/catalog/n0-vtla-policy.webp",
+      "original": "https://arxiv.org/html/2607.23782v1/e2e.png",
+      "page": "https://arxiv.org/html/2607.23782",
+      "credit": "N₀-VTLA authors",
+      "alt": "N₀-VTLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "735875d76ff6e79c7460478492e72ff5e46c37bd1a9b9f5e73685dce31918b89",
+      "width": 1435,
+      "height": 509,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "n0-twam": {
+    "policy": {
+      "path": "/images/catalog/n0-twam-policy.webp",
+      "original": "https://arxiv.org/html/2607.23783v1/WAMTeaser_v2.png",
+      "page": "https://arxiv.org/html/2607.23783",
+      "credit": "N₀-TWAM authors",
+      "alt": "N₀-TWAM — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7aff91a3825ab6102b4c0242b281a2e96840d396e90c63c03dc1ab5664cb38b9",
+      "width": 1500,
+      "height": 751,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "tactile-wam": {
+    "policy": {
+      "path": "/images/catalog/tactile-wam-policy.webp",
+      "original": "https://arxiv.org/html/2606.26663v3/figures/fig2_method_user.png",
+      "page": "https://arxiv.org/html/2606.26663",
+      "credit": "Tactile-WAM authors",
+      "alt": "Tactile-WAM — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "062cdd3065c22bc2427179659c443ede8227bbf6d452fd496aabc4d19eb592eb",
+      "width": 1500,
+      "height": 488,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "t-rex": {
+    "policy": {
+      "path": "/images/catalog/t-rex-policy.webp",
+      "original": "https://arxiv.org/html/2606.17055v2/model_v2_0524.png",
+      "page": "https://arxiv.org/html/2606.17055",
+      "credit": "T-Rex authors",
+      "alt": "T-Rex — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b22acc6f5b6b2fd5dcf1e9d67ceee292302a1d5770de8a3168eb1f49da735b8b",
+      "width": 1500,
+      "height": 1135,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "ftp-1": {
+    "policy": {
+      "path": "/images/catalog/ftp-1-policy.webp",
+      "original": "https://arxiv.org/html/2606.13102v3/model_architecture_0519_v1.png",
+      "page": "https://arxiv.org/html/2606.13102",
+      "credit": "FTP-1 authors",
+      "alt": "FTP-1 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8847a22205f8776df4f35c80fd76fdd6e4adfcde9f347b7ca6c5e61d677ce6ee",
+      "width": 1500,
+      "height": 642,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "taccorl": {
+    "policy": {
+      "path": "/images/catalog/taccorl-policy.webp",
+      "original": "https://arxiv.org/html/2606.11743v1/pipeline.png",
+      "page": "https://arxiv.org/html/2606.11743",
+      "credit": "TacCoRL authors",
+      "alt": "TacCoRL — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "d2bedd5159e857bce981d658d94596de24cc569cea3bfff18a825a0d5058e857",
+      "width": 1224,
+      "height": 339,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "torl-vla": {
+    "policy": {
+      "path": "/images/catalog/torl-vla-policy.webp",
+      "original": "https://arxiv.org/html/2606.09337v3/corlpipeline.png",
+      "page": "https://arxiv.org/html/2606.09337",
+      "credit": "TORL-VLA authors",
+      "alt": "TORL-VLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4a162bc7ddc7f9572619c3bd9e2a6a6f508c780361ade1196a51856798d2acc6",
+      "width": 1500,
+      "height": 785,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "dream-tac": {
+    "policy": {
+      "path": "/images/catalog/dream-tac-policy.webp",
+      "original": "https://arxiv.org/html/2606.08737v1/main_fig2.png",
+      "page": "https://arxiv.org/html/2606.08737",
+      "credit": "Dream-Tac authors",
+      "alt": "Dream-Tac — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "471a79f68d9273efdbfec302c84bc7fb42b13820a3b7f1c043970216f1ef1318",
+      "width": 1430,
+      "height": 919,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "si-diff": {
+    "policy": {
+      "path": "/images/catalog/si-diff-policy.webp",
+      "original": "https://arxiv.org/html/2605.12247v1/Figures/fig1.png",
+      "page": "https://arxiv.org/html/2605.12247",
+      "credit": "SI-Diff authors",
+      "alt": "SI-Diff — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "bac1a8e86dc3b3c564991787ec2936e8033e0d2de44508b0897c7664d6c5c6d1",
+      "width": 1500,
+      "height": 775,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "at-vla": {
+    "policy": {
+      "path": "/images/catalog/at-vla-policy.webp",
+      "original": "https://arxiv.org/html/2605.07308v2/method-v8.png",
+      "page": "https://arxiv.org/html/2605.07308",
+      "credit": "AT-VLA authors",
+      "alt": "AT-VLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "9619a3cb551e915235c529958b5393d390f9503b5f88fc6c48233de994199b5a",
+      "width": 1500,
+      "height": 463,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "moss": {
+    "policy": {
+      "path": "/images/catalog/moss-policy.webp",
+      "original": "https://arxiv.org/html/2604.23272v2/overview.png",
+      "page": "https://arxiv.org/html/2604.23272",
+      "credit": "MoSS authors",
+      "alt": "MoSS — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f38adc00ce56375267ded268d1ee1835dcf5cdd79d39680fcd2d310206180d87",
+      "width": 1500,
+      "height": 878,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "omnivta": {
+    "policy": {
+      "path": "/images/catalog/omnivta-policy.webp",
+      "original": "https://arxiv.org/html/2603.19201v3/system.png",
+      "page": "https://arxiv.org/html/2603.19201",
+      "credit": "OmniVTA authors",
+      "alt": "OmniVTA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e70ee5db7d559c3b525a3a99c01ebe1a2562fa478a444f2e88f89aeb5e36f062",
+      "width": 1191,
+      "height": 350,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "tacfilm": {
+    "policy": {
+      "path": "/images/catalog/tacfilm-policy.webp",
+      "original": "https://arxiv.org/html/2603.14604v2/Tactile-VLA.png",
+      "page": "https://arxiv.org/html/2603.14604",
+      "credit": "TacFiLM authors",
+      "alt": "TacFiLM — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "a353c845b1e781fa1fc49dfb7f1fcc476675b971a476dedc71a74c1008a9d736",
+      "width": 1454,
+      "height": 539,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "transdex": {
+    "policy": {
+      "path": "/images/catalog/transdex-policy.webp",
+      "original": "https://arxiv.org/html/2603.13869v2/Figure/figure_1.png",
+      "page": "https://arxiv.org/html/2603.13869",
+      "credit": "TransDex authors",
+      "alt": "TransDex — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "859d7ab7fbc4e2829517aa8a00c4f6c2c3347350157ed6c49abeba26fd1606c9",
+      "width": 1500,
+      "height": 590,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "tacmamba": {
+    "policy": {
+      "path": "/images/catalog/tacmamba-policy.webp",
+      "original": "https://arxiv.org/html/2603.01700v1/1.png",
+      "page": "https://arxiv.org/html/2603.01700",
+      "credit": "TacMamba authors",
+      "alt": "TacMamba — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e607364a717914c139cf9618d20c119f72bdbb29655de16baa0e5c4bf3a688d0",
+      "width": 842,
+      "height": 464,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "deco": {
+    "policy": {
+      "path": "/images/catalog/deco-policy.webp",
+      "original": "https://arxiv.org/html/2602.05513v4/figures/sec3_framework.png",
+      "page": "https://arxiv.org/html/2602.05513",
+      "credit": "DECO authors",
+      "alt": "DECO — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "56cc0f4bd8cd0d2ceb3ed8cd012cfdbb91f6104a0ff0973d1cdb093ebdf3056b",
+      "width": 1500,
+      "height": 646,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "taf-vla": {
+    "policy": {
+      "path": "/images/catalog/taf-vla-policy.webp",
+      "original": "https://arxiv.org/html/2601.20321v2/fig3-pipeline.png",
+      "page": "https://arxiv.org/html/2601.20321",
+      "credit": "TaF-VLA authors",
+      "alt": "TaF-VLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "0492ba3818f28ab0e241d7872459f64d5f75228ebcbaa31567c565a795a4c93e",
+      "width": 1500,
+      "height": 577,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "t-wla": {
+    "policy": {
+      "path": "/images/catalog/t-wla-policy.webp",
+      "original": "https://anonymous-submission-20.github.io/T-WLA2.github.io/resources/images/method-overview.png",
+      "page": "https://anonymous-submission-20.github.io/T-WLA2.github.io/",
+      "credit": "T-WLA authors",
+      "alt": "T-WLA — pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "24e0de5fa220aaa39d4a594f2dcdcaff45f70a74b2521b29be29ff3c395fb591",
+      "width": 1500,
+      "height": 716,
+      "note": "Explicit method overview of visual context bank,action expert and tactile residual editor."
+    }
+  },
+  "vt-refine": {
+    "policy": {
+      "path": "/images/catalog/vt-refine-policy.webp",
+      "original": "https://arxiv.org/html/2510.14930v2/method.png",
+      "page": "https://arxiv.org/html/2510.14930",
+      "credit": "VT-Refine authors",
+      "alt": "VT-Refine — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "64ceddd78f17cd63d2cc92e282ebd1ab0899af0feb4a67d4ffc94bcca1e98204",
+      "width": 1500,
+      "height": 794,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "farm": {
+    "policy": {
+      "path": "/images/catalog/farm-policy.webp",
+      "original": "https://arxiv.org/html/2510.13324v1/farm_diffusion_policy_lowres.png",
+      "page": "https://arxiv.org/html/2510.13324",
+      "credit": "FARM authors",
+      "alt": "FARM — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "13fe85b4bd8fc7c56c71b92027fb347e4400513445df5df758cf29b2badc855a",
+      "width": 709,
+      "height": 772,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "mla": {
+    "policy": {
+      "path": "/images/catalog/mla-policy.webp",
+      "original": "https://arxiv.org/html/2509.26642v2/model_0917.png",
+      "page": "https://arxiv.org/html/2509.26642",
+      "credit": "MLA authors",
+      "alt": "MLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "be90ce3d9c457c1cb7062f55dafdc6a059008072672973f9ae41c939fcb5d344",
+      "width": 1500,
+      "height": 536,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "ta-vla": {
+    "policy": {
+      "path": "/images/catalog/ta-vla-policy.webp",
+      "original": "https://arxiv.org/html/2509.07962v1/history.png",
+      "page": "https://arxiv.org/html/2509.07962",
+      "credit": "TA-VLA authors",
+      "alt": "TA-VLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "db67c08b01cfd45ee51f653d924084d4dd1a8a117fcc294c321d9c58e543e1e6",
+      "width": 651,
+      "height": 145,
+      "note": "Figure 4: Architectures for embedding torque history."
+    }
+  },
+  "omnivtla": {
+    "policy": {
+      "path": "/images/catalog/omnivtla-policy.webp",
+      "original": "https://arxiv.org/html/2508.08706v3/overview.png",
+      "page": "https://arxiv.org/html/2508.08706",
+      "credit": "OmniVTLA authors",
+      "alt": "OmniVTLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "59207a005322d808c6bff1865fad69eb2b5ada64bef8d994e61fd1df511581ae",
+      "width": 1500,
+      "height": 631,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "vla-touch": {
+    "policy": {
+      "path": "/images/catalog/vla-touch-policy.webp",
+      "original": "https://arxiv.org/html/2507.17294v2/2_framework.png",
+      "page": "https://arxiv.org/html/2507.17294",
+      "credit": "VLA-Touch authors",
+      "alt": "VLA-Touch — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "48c15e2552e85e17268350cccde00fad18f79bde2a963732c8671f25533f8a20",
+      "width": 1500,
+      "height": 565,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "tactile-vla": {
+    "policy": {
+      "path": "/images/catalog/tactile-vla-policy.webp",
+      "original": "https://arxiv.org/html/2507.09160v1/architect.png",
+      "page": "https://arxiv.org/html/2507.09160",
+      "credit": "Tactile-VLA authors",
+      "alt": "Tactile-VLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "a326d777dc02c6eb1b5ef54653f7cf5566d39153ef1794681297e806de269f21",
+      "width": 1265,
+      "height": 483,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "vitacformer": {
+    "policy": {
+      "path": "/images/catalog/vitacformer-policy.webp",
+      "original": "https://arxiv.org/html/2506.15953v2/vitac_method.png",
+      "page": "https://arxiv.org/html/2506.15953",
+      "credit": "ViTacFormer authors",
+      "alt": "ViTacFormer — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "063a38aea24a5bd59f570559c416613a71aa2e445d0602ca2a28e6c3f3ffd327",
+      "width": 1262,
+      "height": 480,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "vital-local": {
+    "policy": {
+      "path": "/images/catalog/vital-local-policy.webp",
+      "original": "https://arxiv.org/html/2506.13762v1/method.png",
+      "page": "https://arxiv.org/html/2506.13762",
+      "credit": "ViTaL — local skills authors",
+      "alt": "ViTaL — local skills — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "33464e0abfb32274b38d46198e709463d4b6460f68c264428f4291db8c8bfab1",
+      "width": 1500,
+      "height": 844,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "forcevla": {
+    "policy": {
+      "path": "/images/catalog/forcevla-policy.webp",
+      "original": "https://arxiv.org/html/2505.22159v3/pipeline.png",
+      "page": "https://arxiv.org/html/2505.22159",
+      "credit": "ForceVLA authors",
+      "alt": "ForceVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b2fb94aa894514773bc6d0bdec1b78d0d092a03fe44c4ff17d34fb8767294c44",
+      "width": 1117,
+      "height": 497,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "polytouch": {
+    "policy": {
+      "path": "/images/catalog/polytouch-policy.webp",
+      "original": "https://arxiv.org/html/2504.19341v1/nn.png",
+      "page": "https://arxiv.org/html/2504.19341",
+      "credit": "PolyTouch policy authors",
+      "alt": "PolyTouch policy — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "47a7cbd745a497a388b5d5b36b060b0793f83e841551d1162b3b9b7d33f060af",
+      "width": 1500,
+      "height": 514,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "reactive-diffusion-policy": {
+    "policy": {
+      "path": "/images/catalog/reactive-diffusion-policy-policy.webp",
+      "original": "https://arxiv.org/html/2503.02881v3/network_pipeline.png",
+      "page": "https://arxiv.org/html/2503.02881",
+      "credit": "Reactive Diffusion Policy authors",
+      "alt": "Reactive Diffusion Policy — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8d92ab2d1dbeeb8bc046f634ad879f17bd1e12b850e2dbd50e220cbb6e2d6738",
+      "width": 1398,
+      "height": 737,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "fuse": {
+    "policy": {
+      "path": "/images/catalog/fuse-policy.webp",
+      "original": "https://arxiv.org/html/2501.04693v3/unifi_arch.png",
+      "page": "https://arxiv.org/html/2501.04693",
+      "credit": "FuSe authors",
+      "alt": "FuSe — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fa0cbc3cfec782c0b8efde7224d261e7a57cb9f59bbc0319151886432f12b4b2",
+      "width": 1500,
+      "height": 802,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "3d-vitac": {
+    "policy": {
+      "path": "/images/catalog/3d-vitac-policy.webp",
+      "original": "https://arxiv.org/html/2410.24091v2/method_v5.png",
+      "page": "https://arxiv.org/html/2410.24091",
+      "credit": "3D-ViTac authors",
+      "alt": "3D-ViTac — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "082b884686c1b744f0c03f11e081385a86c556166e85872cdfbc9d678b6ddb21",
+      "width": 1500,
+      "height": 750,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "visk": {
+    "policy": {
+      "path": "/images/catalog/visk-policy.webp",
+      "original": "https://arxiv.org/html/2410.17246v2/fig1-final-compressed.png",
+      "page": "https://arxiv.org/html/2410.17246",
+      "credit": "ViSk authors",
+      "alt": "ViSk — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "25276e48ecdd9364d5644dede626eaa00d3666ba8c4cecff67331f9528084b7e",
+      "width": 684,
+      "height": 559,
+      "note": "Fig. 1 : ViSk uses AnySkin with a simple transformer-based architecture to solve precise, contact-rich tasks."
+    }
+  },
+  "tacdiffusion": {
+    "policy": {
+      "path": "/images/catalog/tacdiffusion-policy.webp",
+      "original": "https://arxiv.org/html/2409.11047v2/DF_Flowchart_red_0914_7.svg",
+      "page": "https://arxiv.org/html/2409.11047",
+      "credit": "TacDiffusion authors",
+      "alt": "TacDiffusion — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "a6e0a1fc0b808acb8dc087e11dcb4100d407b77e3cb07efe80b2a5fbe3ebb8a3",
+      "width": 1400,
+      "height": 694,
+      "note": "Author force-domain diffusion noise-estimator architecture (SVG)."
+    }
+  },
+  "tactile-skin-translation": {
+    "policy": {
+      "path": "/images/catalog/tactile-skin-translation-policy.webp",
+      "original": "https://arxiv.org/html/2407.07885v2/system_icra_compact.png",
+      "page": "https://arxiv.org/html/2407.07885",
+      "credit": "Tactile Skin Translation authors",
+      "alt": "Tactile Skin Translation — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "891061d70b861247caa69a7d17c8fe8c005e1c4cf23f66f415b877dabe4be9bf",
+      "width": 1500,
+      "height": 952,
+      "note": "Author method diagram showing sensory encoding,multimodal computation and action/control pathways."
+    }
+  },
+  "anyrotate": {
+    "policy": {
+      "path": "/images/catalog/anyrotate-policy.webp",
+      "original": "https://arxiv.org/html/2405.07391v3/rma_diagram_1.drawio.png",
+      "page": "https://arxiv.org/html/2405.07391",
+      "credit": "AnyRotate authors",
+      "alt": "AnyRotate — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b0d4832fa4009bfcf4b8f5b0a3f7b0745500b02b22678cf4dc884c06e1199a63",
+      "width": 1130,
+      "height": 416,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "hato": {
+    "policy": {
+      "path": "/images/catalog/hato-policy.webp",
+      "original": "https://toruowo.github.io/hato/figures/overview.png",
+      "page": "https://toruowo.github.io/hato/",
+      "credit": "HATO authors",
+      "alt": "HATO — pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "0d5420534844e0037df68445ce01bd9430953d8142934601f649697ed85a80bf",
+      "width": 1500,
+      "height": 842,
+      "note": "Author system overview; the paper does not provide a separate detailed network diagram."
+    }
+  },
+  "vital-pretraining": {
+    "policy": {
+      "path": "/images/catalog/vital-pretraining-policy.webp",
+      "original": "https://arxiv.org/html/2403.11898v2/figures/Model_Overview.jpg",
+      "page": "https://arxiv.org/html/2403.11898",
+      "credit": "VITaL Pretraining authors",
+      "alt": "VITaL Pretraining — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "768c55ec5be4ac859cb4d85b64cccc2d65cbfd6e80613b3f4a169365d72be7a8",
+      "width": 1500,
+      "height": 1261,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "mimictouch": {
+    "policy": {
+      "path": "/images/catalog/mimictouch-policy.webp",
+      "original": "https://arxiv.org/html/2310.16917v4/Diagram1.png",
+      "page": "https://arxiv.org/html/2310.16917",
+      "credit": "MimicTouch authors",
+      "alt": "MimicTouch — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4343404ca1d4d0a4af35cfe11baa415406ddd2459367d06f1a74820f63c7c73f",
+      "width": 1385,
+      "height": 693,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "see-to-touch": {
+    "policy": {
+      "path": "/images/catalog/see-to-touch-policy.webp",
+      "original": "https://arxiv.org/html/2309.12300v1/intro_figure.png",
+      "page": "https://arxiv.org/html/2309.12300",
+      "credit": "See to Touch / TAVI authors",
+      "alt": "See to Touch / TAVI — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "ae90066bfd6de66332e517f8d23155897f8f48086c2905a216b867fb94610d92",
+      "width": 1500,
+      "height": 825,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "rotateit": {
+    "policy": {
+      "path": "/images/catalog/rotateit-policy.webp",
+      "original": "https://arxiv.org/html/2309.09979v2/dexit_method.png",
+      "page": "https://arxiv.org/html/2309.09979",
+      "credit": "RotateIt authors",
+      "alt": "RotateIt — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "62dde96f8d8cbc58373a1eb1719c4f659eb5c74f0f3ab9d03e85787abfde34b7",
+      "width": 1227,
+      "height": 525,
+      "note": "Author method diagram showing the observation, representation and action-generation pathways."
+    }
+  },
+  "rotating-without-seeing": {
+    "policy": {
+      "path": "/images/catalog/rotating-without-seeing-policy.webp",
+      "original": "https://arxiv.org/html/2303.10880v4/3_system_diagram-cropped.png",
+      "page": "https://arxiv.org/html/2303.10880",
+      "credit": "Rotating without Seeing authors",
+      "alt": "Rotating without Seeing — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "722ebb1cf32709876fce7eef14db41cf2f55fd7eb8a5ebd73ff04529219d508f",
+      "width": 1012,
+      "height": 714,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "more-than-a-feeling": {
+    "policy": {
+      "path": "/images/catalog/more-than-a-feeling-policy.webp",
+      "original": "https://arxiv.org/html/1805.11085v2/diagram2.png",
+      "page": "https://arxiv.org/html/1805.11085",
+      "credit": "More Than a Feeling authors",
+      "alt": "More Than a Feeling — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "dcb5a312f1d4ec76afef78c7100f7da1e154fe83f4dd45300da90b35fb08ef05",
+      "width": 1500,
+      "height": 532,
+      "note": "Figure 3 : Action-conditioned visuo-tactile model network architecture."
+    }
+  },
+  "openvitac": {
+    "benchmark": {
+      "path": "/images/catalog/openvitac-benchmark.webp",
+      "original": "https://fvl-repo.github.io/OpenViTac/assets/capability_taxonomy.webp",
+      "page": "https://fvl-repo.github.io/OpenViTac/",
+      "credit": "OpenViTac authors",
+      "alt": "OpenViTac — taxonomy",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7480d71d2ea851c5177e33aa580bde33fe2908a6bd1981fa940b4cbe69f26e17",
+      "width": 1500,
+      "height": 1496,
+      "note": "Four capability groups and the associated tasks; more informative for benchmark browsing than a policy pipeline."
+    },
+    "policy": {
+      "path": "/images/catalog/openvtla-policy.webp",
+      "original": "https://arxiv.org/html/2610.10384v1/tactile_injection.png",
+      "page": "https://arxiv.org/html/2610.10384",
+      "credit": "OpenVTLA authors",
+      "alt": "OpenVTLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f950a7c5645e07588fc569b4392c504957cc3abceb5ac816a73f6443b19e912f",
+      "width": 1500,
+      "height": 656,
+      "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
+    }
+  },
+  "univtac": {
+    "benchmark": {
+      "path": "/images/catalog/univtac-benchmark.webp",
+      "original": "https://univtac.github.io/tasks.svg",
+      "page": "https://univtac.github.io/",
+      "credit": "UniVTAC authors",
+      "alt": "UniVTAC — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8daf8a6eda4ff2e26fb146a3d0048a380d139082a355547e0d25ebd06439f5ba",
+      "width": 1400,
+      "height": 518,
+      "note": "Official complete eight-task gallery."
+    }
+  },
+  "tac-bench": {
+    "benchmark": {
+      "path": "/images/catalog/tac-bench-benchmark.webp",
+      "original": "https://peilinwu.site/tac-bench.github.io/static/assets/figures/tasks.png",
+      "page": "https://peilinwu.site/tac-bench.github.io/",
+      "credit": "Tac-Bench authors",
+      "alt": "Tac-Bench — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4138ee51b26f68e5c786c1ef8898bce218484090561bc357858fdeed35b11798",
+      "width": 1500,
+      "height": 813,
+      "note": "Full 14-task gallery from official page."
+    }
+  },
+  "bench2dex": {
+    "benchmark": {
+      "path": "/images/catalog/bench2dex-benchmark.webp",
+      "original": "https://bench2dex.github.io/assets/img/figures/overview.png",
+      "page": "https://bench2dex.github.io/",
+      "credit": "Bench2Dex authors",
+      "alt": "Bench2Dex — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f7c21b13bb8a2ec066589ada0ddcbc2211e0ffcfecdb1be5195807f0cd4d1901",
+      "width": 1500,
+      "height": 846,
+      "note": "Embodiments, task catalogue and multimodal benchmark overview."
+    }
+  },
+  "softvtbench": {
+    "benchmark": {
+      "path": "/images/catalog/softvtbench-benchmark.webp",
+      "original": "https://softvtbench.github.io/assets/fig1_overview.png",
+      "page": "https://softvtbench.github.io/",
+      "credit": "SoftVTBench authors",
+      "alt": "SoftVTBench — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "d50803c4de239f08e6eba3983ac03f5c2121b6e2bdf538c99ef5d565c9fe7c95",
+      "width": 1500,
+      "height": 858,
+      "note": "Four diagnostic suites and matched rigid/deformable assets."
+    }
+  },
+  "fmb": {
+    "benchmark": {
+      "path": "/images/catalog/fmb-benchmark.webp",
+      "original": "https://functional-manipulation-benchmark.github.io/static/images/FMB%20Objects.jpg",
+      "page": "https://functional-manipulation-benchmark.github.io/",
+      "credit": "FMB authors",
+      "alt": "FMB — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "c25d05ba5181d9e64272f67d3510af4f42fb439a63da2ab71a1abbc61c1db5eb",
+      "width": 1500,
+      "height": 444,
+      "note": "Full object and assembly-board diversity."
+    }
+  },
+  "furniturebench": {
+    "benchmark": {
+      "path": "/images/catalog/furniturebench-benchmark.webp",
+      "original": "https://clvrai.github.io/furniture-bench/website_img/all_furniture.png",
+      "page": "https://clvrai.github.io/furniture-bench/",
+      "credit": "FurnitureBench authors",
+      "alt": "FurnitureBench — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "6ebc1bf339fa205caf01ee2a1c51e7a0493074fbe475cb86b5527c4118300f7d",
+      "width": 1500,
+      "height": 848,
+      "note": "All eight miniature furniture assemblies."
+    }
+  },
+  "roco-aaai-2026": {
+    "benchmark": {
+      "path": "/images/catalog/roco-aaai-2026-benchmark.webp",
+      "original": "https://rocochallenge.github.io/RoCo-AAAI2026/assets/images/hero_new.png",
+      "page": "https://rocochallenge.github.io/RoCo-AAAI2026/",
+      "credit": "RoCo AAAI 2026 authors",
+      "alt": "RoCo AAAI 2026 — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b55476075728d3a8612f60baa133867570f8b62f407e5c70fb34c0278849ba81",
+      "width": 1500,
+      "height": 844,
+      "note": "Official gearbox assembly scene and challenge setup."
+    }
+  },
+  "tactidex": {
+    "benchmark": {
+      "path": "/images/catalog/tactidex-benchmark.webp",
+      "original": "https://tactidex.github.io/static/images/f1_dataset.png",
+      "page": "https://tactidex.github.io/",
+      "credit": "TactiDex authors",
+      "alt": "TactiDex — dataset and capture overview",
+      "kind": "dataset-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "5fef4ba08c36b5883d2ce6eb7f7413ca01505e910a8163a83bd94c5afe6e27e3",
+      "width": 1500,
+      "height": 821,
+      "note": "Official dataset breadth / task overview."
+    }
+  },
+  "robotwin2": {
+    "benchmark": {
+      "path": "/images/catalog/robotwin2-benchmark.webp",
+      "original": "https://robotwin-platform.github.io/doc/tasks/50-tasks.gif",
+      "page": "https://robotwin-platform.github.io/doc/tasks/index.html",
+      "credit": "RoboTwin 2.0 authors",
+      "alt": "RoboTwin 2.0 — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4340a690563ba686aae0a931c2bd41fedeacdf30b07cd18644d84275be82c171",
+      "width": 640,
+      "height": 240,
+      "note": "Official complete 50-task montage."
+    }
+  },
+  "dp": {
+    "policy": {
+      "path": "/images/catalog/dp-policy.webp",
+      "original": "https://arxiv.org/html/2303.04137v5/policy_input_output.png",
+      "page": "https://arxiv.org/abs/2303.04137",
+      "credit": "Diffusion Policy authors",
+      "alt": "Diffusion Policy — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e2ddc6995b3597e704e6b8e8cebac544bc0c7769b4336c638bcaf60ce3f088c0",
+      "width": 1500,
+      "height": 409,
+      "note": "Figure 2 : Diffusion Policy Overview a) General formulation. At time step t t , the policy takes the latest T o T_{o} steps of observation data O t O_{t} as input and outputs T a T"
+    }
+  },
+  "act": {
+    "policy": {
+      "path": "/images/catalog/act-policy.webp",
+      "original": "https://tonyzhaozh.github.io/aloha/resources/algo.png",
+      "page": "https://tonyzhaozh.github.io/aloha/",
+      "credit": "Zhao et al.",
+      "alt": "ACT — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "a6f4fd28d77244ee0b6fb9b24abdab17a909cc3e3dabebd6adc8d0d25aed77e5",
+      "width": 1500,
+      "height": 414,
+      "note": "ACT CVAE training and action-chunk prediction diagram."
+    }
+  },
+  "dp3": {
+    "policy": {
+      "path": "/images/catalog/dp3-policy.webp",
+      "original": "https://arxiv.org/html/2403.03954v7/method_v3.png",
+      "page": "https://arxiv.org/abs/2403.03954",
+      "credit": "3D Diffusion Policy (DP3) authors",
+      "alt": "3D Diffusion Policy (DP3) — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4bb40a36dbc70c7637b156ff37ddde9105f3b9f8df103628a7e91f883a3dcd9c",
+      "width": 1500,
+      "height": 557,
+      "note": "Fig. 2: Overview of 3D Diffusion Policy (DP3). Above: In the training phase, DP3 simultaneously trains its perception module and decision-making process in an end-to-end manner usi"
+    }
+  },
+  "idp3": {
+    "policy": {
+      "path": "/images/catalog/idp3-policy.webp",
+      "original": "https://arxiv.org/html/2410.10803v3/system_v2.png",
+      "page": "https://arxiv.org/abs/2410.10803",
+      "credit": "Improved 3D Diffusion Policy (iDP3) authors",
+      "alt": "Improved 3D Diffusion Policy (iDP3) — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b1b2f65c9e303212342ac98dddb3b4e553074d426bb43403f38c842f200915f7",
+      "width": 1500,
+      "height": 509,
+      "note": "Fig. 2: Overview of our system. Our system mainly consists of four parts: the humanoid robot platform, the data collection system, the visuomotor policy learning method, and the re"
+    }
+  },
+  "peract": {
+    "policy": {
+      "path": "/images/catalog/peract-policy.webp",
+      "original": "https://arxiv.org/html/2209.05451v2/peract_main_fig_v6.png",
+      "page": "https://arxiv.org/abs/2209.05451",
+      "credit": "PerAct authors",
+      "alt": "PerAct — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7eab08ef809b94ced00273a463092d8eb74f2900dd619c7c500a403160f54e17",
+      "width": 973,
+      "height": 237,
+      "note": "Figure 2: PerAct Overview. PerAct is a language-conditioned behavior-cloning agent trained with supervised learning to detect actions . PerAct takes as input a language goal and a "
+    }
+  },
+  "rvt": {
+    "policy": {
+      "path": "/images/catalog/rvt-policy.webp",
+      "original": "https://arxiv.org/html/2306.14896v1/overview_v2.png",
+      "page": "https://arxiv.org/abs/2306.14896",
+      "credit": "RVT authors",
+      "alt": "RVT — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "c43aa93811c240535b296aabecfc606044317f46af46f43909165a10bde32066",
+      "width": 1500,
+      "height": 494,
+      "note": "Figure 2: Overview of RVT. Given RGB-D from sensor(s), we first construct a point cloud of the scene. The point cloud is then used to produce virtual images around the robot worksp"
+    }
+  },
+  "rvt2": {
+    "policy": {
+      "path": "/images/catalog/rvt2-policy.webp",
+      "original": "https://arxiv.org/html/2406.08545v1/rvt2-figure2-v4_crop.png",
+      "page": "https://arxiv.org/abs/2406.08545",
+      "credit": "RVT-2 authors",
+      "alt": "RVT-2 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "470d0edab00a4776d72e73d2ea578075152372db887585a9801039406eb04cc5",
+      "width": 1500,
+      "height": 840,
+      "note": "Fig. 2 : RVT-2 Architecture. Given the current scene and a task instruction, RVT-2 predicts the next key-frame pose. It consists of two stages. The first stage uses fixed virtual v"
+    }
+  },
+  "3dda": {
+    "policy": {
+      "path": "/images/catalog/3dda-policy.webp",
+      "original": "https://3d-diffuser-actor.github.io/static/images/arch.jpg",
+      "page": "https://arxiv.org/abs/2402.10885",
+      "credit": "3D Diffuser Actor authors",
+      "alt": "3D Diffuser Actor — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fae0f87f4eada7c3b5b2e4165498d485d6cae398a17383f02b362c4b4ed5a7c9",
+      "width": 1500,
+      "height": 746,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "polarnet": {
+    "policy": {
+      "path": "/images/catalog/polarnet-policy.webp",
+      "original": "https://arxiv.org/html/2309.15596v1/figures/method_detailed.png",
+      "page": "https://arxiv.org/abs/2309.15596",
+      "credit": "PolarNet authors",
+      "alt": "PolarNet — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "c1f99ca37ff4c9a53c659652b2dd2367570993b1f01f1910bbe592e87272bdb8",
+      "width": 1500,
+      "height": 507,
+      "note": "Figure 6: Detailed architecture of PolarNet for language guided robotic manipulation. The model takes the input of point cloud { p 1 , … , p N v } \\{p_{1},...,p_{N_{v}}\\} and instr"
+    }
+  },
+  "gnfactor": {
+    "policy": {
+      "path": "/images/catalog/gnfactor-policy.webp",
+      "original": "https://raw.githubusercontent.com/YanjieZe/GNFactor/main/docs/gnfactor_method.png",
+      "page": "https://github.com/YanjieZe/GNFactor",
+      "credit": "Ze et al.",
+      "alt": "GNFactor — pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "03a4bb1ff408b2e722ee3c995316afc1eab2526dfc3e5687114e923c26228dab",
+      "width": 1500,
+      "height": 616,
+      "note": "Joint feature-field reconstruction and behavior-cloning pipeline."
+    }
+  },
+  "rise": {
+    "policy": {
+      "path": "/images/catalog/rise-policy.webp",
+      "original": "https://arxiv.org/html/2404.12281v3/overview.png",
+      "page": "https://arxiv.org/abs/2404.12281",
+      "credit": "RISE authors",
+      "alt": "RISE — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "54ed9d74d02e3c1ad6ba51d81894d625a2533353afdf1a5d5e558271d5db9a31",
+      "width": 1500,
+      "height": 572,
+      "note": "Fig. 1 : Overview of RISE architecture. The input of RISE is a noisy point cloud captured from the real world. A 3D encoder built with sparse convolution is employed to compress th"
+    }
+  },
+  "equibot": {
+    "policy": {
+      "path": "/images/catalog/equibot-policy.webp",
+      "original": "https://equi-bot.github.io/images/model_architecture.png",
+      "page": "https://arxiv.org/abs/2407.01479",
+      "credit": "EquiBot authors",
+      "alt": "EquiBot — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "ab4159c7ce7cc47d8c026acbe1af596696cca65ddd9494ea0aeaa091b3cd8402",
+      "width": 1500,
+      "height": 809,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "pointvla": {
+    "policy": {
+      "path": "/images/catalog/pointvla-policy.webp",
+      "original": "https://arxiv.org/html/2503.07511v1/pointvla_framework.png",
+      "page": "https://arxiv.org/abs/2503.07511",
+      "credit": "PointVLA authors",
+      "alt": "PointVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "c5c111ab296f66204860a1e29a7b37fe73870309f0e293ab43c6fee356a19b3b",
+      "width": 1500,
+      "height": 804,
+      "note": "Figure 2 : Overview of PointVLA framework. Left: The 2D image observation and instruction are processed by the vision-language model. The vanilla action expert remains frozen, whil"
+    }
+  },
+  "geovla": {
+    "policy": {
+      "path": "/images/catalog/geovla-policy.webp",
+      "original": "https://linsun449.github.io/GeoVLA/static/images/03framework.png",
+      "page": "https://arxiv.org/abs/2508.09071",
+      "credit": "GeoVLA authors",
+      "alt": "GeoVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8a8c84060b4cb99e7c9f2981e7e539b503639185e56ecf5d4ac0c7e662e2f8b4",
+      "width": 1500,
+      "height": 520,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "bridgevla": {
+    "policy": {
+      "path": "/images/catalog/bridgevla-policy.webp",
+      "original": "https://bridgevla.github.io/static/images/network.png",
+      "page": "https://arxiv.org/abs/2506.07961",
+      "credit": "BridgeVLA authors",
+      "alt": "BridgeVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7cb30080e258902aff11022c0c71341802beecf22e90a2294744816a0dfd741a",
+      "width": 1500,
+      "height": 581,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "spatialvla": {
+    "policy": {
+      "path": "/images/catalog/spatialvla-policy.webp",
+      "original": "https://arxiv.org/html/2501.15830v5/pipeline.png",
+      "page": "https://arxiv.org/abs/2501.15830",
+      "credit": "SpatialVLA authors",
+      "alt": "SpatialVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "9488b124c07dd070e5766acde9df35071fc9c4d4d1a8fbcb581a30fe7d9457f2",
+      "width": 1210,
+      "height": 345,
+      "note": "Fig. 2 : Overview of SpatialVLA . Given an image observation 𝐨 t \\mathbf{o}_{t} and a task instruction 𝐋 \\mathbf{L} , the model processes the image using Ego3D Position Encoding an"
+    }
+  },
+  "r3d": {
+    "policy": {
+      "path": "/images/catalog/r3d-policy.webp",
+      "original": "https://arxiv.org/html/2604.15281v2/pipeline-3_cropped.png",
+      "page": "https://arxiv.org/abs/2604.15281",
+      "credit": "R3D authors",
+      "alt": "R3D — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "07269e83febbe2f5c59f15f0cc0e9f388908941c843a2023c1a21cd7a2b3191b",
+      "width": 1447,
+      "height": 831,
+      "note": "Figure 1: Pipeline architecture : a point cloud encoder encodes the input point clouds and a diffusion transformer decodes actions. The encoder can be pre-trained on 3D segmentatio"
+    }
+  },
+  "maniflow": {
+    "policy": {
+      "path": "/images/catalog/maniflow-policy.webp",
+      "original": "https://maniflow-policy.github.io/figures/maniflow_pipeline.jpg",
+      "page": "https://arxiv.org/abs/2509.01819",
+      "credit": "ManiFlow authors",
+      "alt": "ManiFlow — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "53917803dbf34bb4ff2c589e5c5052c5307e19d013c5157e9e292e94d1849104",
+      "width": 1500,
+      "height": 392,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "consisvla4d": {
+    "policy": {
+      "path": "/images/catalog/consisvla4d-policy.webp",
+      "original": "https://arxiv.org/html/2605.05126v1/fig/pipline.png",
+      "page": "https://arxiv.org/abs/2605.05126",
+      "credit": "ConsisVLA-4D authors",
+      "alt": "ConsisVLA-4D — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7adaa30e578500e6b579d270ae7124bc5ea76acaa6089d2825b3245964ae2023",
+      "width": 1500,
+      "height": 461,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "vga": {
+    "policy": {
+      "path": "/images/catalog/vga-policy.webp",
+      "original": "https://arxiv.org/html/2604.12908v2/vggtvla2.png",
+      "page": "https://arxiv.org/abs/2604.12908",
+      "credit": "Vision-Geometry-Action (VGA) authors",
+      "alt": "Vision-Geometry-Action (VGA) — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "c90f0f64e188b18d9ee94b0b1691a21a450c661417466587c162ece362c76c3d",
+      "width": 1487,
+      "height": 813,
+      "note": "Figure 2 . Overview of our VGA model. (a) The left column compares our VGA framework with representative robot learning paradigms.\nVGA differs from them by leveraging a pretrained "
+    }
+  },
+  "serl": {
+    "policy": {
+      "path": "/images/catalog/serl-policy.webp",
+      "original": "https://arxiv.org/html/2401.16013v4/images/software.png",
+      "page": "https://arxiv.org/abs/2401.16013",
+      "credit": "SERL authors",
+      "alt": "SERL — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "43106a6b534b79ed1ddc6a666e695cd8e8321c28a4eb38b0a958a87b0f0831e2",
+      "width": 1500,
+      "height": 765,
+      "note": "Figure 2 : Software architecture and real-world robot training example code. SERL  runs three parallel processes, consisting of the actor, which chooses actions, and the learner no"
+    }
+  },
+  "hilserl": {
+    "policy": {
+      "path": "/images/catalog/hilserl-policy.webp",
+      "original": "https://arxiv.org/html/2410.21845v3/fig2_1.png",
+      "page": "https://arxiv.org/abs/2410.21845",
+      "credit": "HIL-SERL authors",
+      "alt": "HIL-SERL — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "ff0dc7596322e4ef871c4c8e32215854bf94fd4a64da43d2ce780d5d19e77887",
+      "width": 1264,
+      "height": 770,
+      "note": "Figure 2 : Overview of HIL-SERL. This figure illustrates the architecture of HIL-SERL, which comprises three primary components: the actor process, the learner process, and replay "
+    }
+  },
+  "dppo": {
+    "policy": {
+      "path": "/images/catalog/dppo-policy.webp",
+      "original": "https://arxiv.org/html/2409.00588v3/overview-v1.png",
+      "page": "https://arxiv.org/abs/2409.00588",
+      "credit": "DPPO authors",
+      "alt": "DPPO — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "a41832663e9e09aa001f84deb57365165fcb28c468aac078b59ad79421198ce4",
+      "width": 1480,
+      "height": 379,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "dsrl": {
+    "policy": {
+      "path": "/images/catalog/dsrl-policy.webp",
+      "original": "https://arxiv.org/html/2506.15799v2/paper_figure_pi0.png",
+      "page": "https://arxiv.org/abs/2506.15799",
+      "credit": "DSRL authors",
+      "alt": "DSRL — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "56d12dce7d82569d6a06899762e2a853f39cc92489788f59fa75646c48491a7a",
+      "width": 1500,
+      "height": 501,
+      "note": "Figure 1: Overview of our proposed approach, D iffusion S teering via R einforcement L earning ( Dsrl ). Standard deployment of a BC-trained diffusion policy π dp \\pi_{\\mathrm{dp}}"
+    }
+  },
+  "octo": {
+    "policy": {
+      "path": "/images/catalog/octo-policy.webp",
+      "original": "https://arxiv.org/html/2405.12213v2/architecture.png",
+      "page": "https://arxiv.org/abs/2405.12213",
+      "credit": "Octo authors",
+      "alt": "Octo — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "03f34d47fe8965fe9e9340c86ef90f3a3d3359a0b10baf2be4fd12c9533798ca",
+      "width": 1500,
+      "height": 726,
+      "note": "Fig. 1: Model architecture. Left : Octo tokenizes task descriptions (green) and input observations (blue) using a pretrained language model and a lightweight CNN, respectively. Top"
+    }
+  },
+  "openvla": {
+    "policy": {
+      "path": "/images/catalog/openvla-policy.webp",
+      "original": "https://arxiv.org/html/2406.09246v3/openvla_model.png",
+      "page": "https://arxiv.org/abs/2406.09246",
+      "credit": "OpenVLA authors",
+      "alt": "OpenVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "037ac1c22b7793d0df916620b065bb13dfdbb357c39c3e7da2f203e33f5bf0ae",
+      "width": 1500,
+      "height": 557,
+      "note": "Figure 2: OpenVLA model architecture. Given an image observation and a language instruction, the model predicts 7-dimensional robot control actions. The architecture consists of th"
+    }
+  },
+  "pi0": {
+    "policy": {
+      "path": "/images/catalog/pi0-policy.webp",
+      "original": "https://arxiv.org/html/2410.24164v4/overview.png",
+      "page": "https://arxiv.org/abs/2410.24164",
+      "credit": "π0 authors",
+      "alt": "π0 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "480cd004bd0aaebb731ead815e0375bda88eb79ef4b54efa5c1875fd2094b2e5",
+      "width": 1500,
+      "height": 419,
+      "note": "Fig. 3: Overview of our framework. We start with a pre-training mixture, which consists of both our own dexterous manipulation datasets and open-source data. We use this mixture to"
+    }
+  },
+  "pi05": {
+    "policy": {
+      "path": "/images/catalog/pi05-policy.webp",
+      "original": "https://arxiv.org/html/2504.16054v1/Figure_3.png",
+      "page": "https://arxiv.org/abs/2504.16054",
+      "credit": "π0.5 authors",
+      "alt": "π0.5 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7100dfa67a7626ec259857484efb613c3bc4502d32e553ed0017df8127b8ab15",
+      "width": 1500,
+      "height": 624,
+      "note": "Fig. 3 : Model overview. π 0.5 \\pi_{0.5} is trained in two stages. First, a pre-training stage combines all of the different data sources to produce an initial VLA with discrete to"
+    }
+  },
+  "grootn1": {
+    "policy": {
+      "path": "/images/catalog/grootn1-policy.webp",
+      "original": "https://arxiv.org/html/2503.14734v2/groot_model_v6.png",
+      "page": "https://arxiv.org/abs/2503.14734",
+      "credit": "GR00T N1 authors",
+      "alt": "GR00T N1 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "dff8fe9996013c8ea08a28d3d3d4acae503d97ff2c0f9358906b4a8c53040fa0",
+      "width": 1500,
+      "height": 778,
+      "note": "Figure 3 : GR00T N1 Model Architecture. GR00T N1 is trained on a diverse set of embodiments ranging from single-arm robot arms to bimanual humanoid dexterous hands.\nTo deal with di"
+    }
+  },
+  "grootn16": {
+    "policy": {
+      "path": "/images/catalog/grootn16-policy.webp",
+      "original": "https://raw.githubusercontent.com/NVIDIA/Isaac-GR00T/n1.6-release/media/model-architecture.png",
+      "page": "https://huggingface.co/nvidia/GR00T-N1.6-3B",
+      "credit": "NVIDIA",
+      "alt": "GR00T N1.6 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "bbf161c66daac88799b5bc7b5c110429f48d7f96ae315113e2b2e6d1f11c9e54",
+      "width": 1500,
+      "height": 782,
+      "note": "Version-pinned GR00T N1.6 model architecture."
+    }
+  },
+  "grootn17": {
+    "policy": {
+      "path": "/images/catalog/grootn17-policy.webp",
+      "original": "https://huggingface.co/nvidia/GR00T-N1.7-3B/resolve/main/model-architecture.png",
+      "page": "https://huggingface.co/nvidia/GR00T-N1.7-3B",
+      "credit": "NVIDIA",
+      "alt": "GR00T N1.7 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "bbf161c66daac88799b5bc7b5c110429f48d7f96ae315113e2b2e6d1f11c9e54",
+      "width": 1500,
+      "height": 782,
+      "note": "N1.7-specific official model-card architecture."
+    }
+  },
+  "rdt": {
+    "policy": {
+      "path": "/images/catalog/rdt-policy.webp",
+      "original": "https://arxiv.org/html/2410.07864v2/framework.png",
+      "page": "https://arxiv.org/abs/2410.07864",
+      "credit": "RDT-1B authors",
+      "alt": "RDT-1B — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "d231a61a3190bc6686f43ad980cdc604f2d43650fae400f085d303eb6f8b1b59",
+      "width": 1500,
+      "height": 740,
+      "note": "Figure 3: RDT framework. Heterogeneous action spaces of various robots are embedded into a unified action space for multi-robot training. Inputs: proprioception 𝒛 t {\\bm{z}}_{t} , "
+    }
+  },
+  "rdt2": {
+    "policy": {
+      "path": "/images/catalog/rdt2-policy.webp",
+      "original": "https://arxiv.org/html/2602.03310v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2602.03310",
+      "credit": "RDT2 authors",
+      "alt": "RDT2 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f50161b3836828aa3e61c56b60361286715e20e184e49f913f679d5a3b81c0c3",
+      "width": 1500,
+      "height": 284,
+      "note": "Figure 2 : A three-stage pipeline for training RDT2. In Stage 1, we pre-train a 7B VLM backbone with discretized action data for vision-language reasoning capabilities. Then, in St"
+    }
+  },
+  "smolvla": {
+    "policy": {
+      "path": "/images/catalog/smolvla-policy.webp",
+      "original": "https://arxiv.org/html/2506.01844v1/SmolVLA.png",
+      "page": "https://arxiv.org/abs/2506.01844",
+      "credit": "SmolVLA authors",
+      "alt": "SmolVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "89c2504c2cec53f3769c8c54c0be3d0599a562c5e482d36d15228aa1dccf5947",
+      "width": 1200,
+      "height": 675,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "cosmospolicy": {
+    "policy": {
+      "path": "/images/catalog/cosmospolicy-policy.webp",
+      "original": "https://arxiv.org/html/2601.16163v1/fig/cosmos_policy_diffusion_sequence_v2_main_version.001.jpeg",
+      "page": "https://arxiv.org/abs/2601.16163",
+      "credit": "Cosmos Policy authors",
+      "alt": "Cosmos Policy — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f02ed92c1e6ef9197d511cb680c26a2235046439831f5a52ef9c919dc7a4675e",
+      "width": 1500,
+      "height": 598,
+      "note": "Figure 2: The latent diffusion sequence of Cosmos Policy. We illustrate latent frame injection —the primary mechanism for adapting the pretrained Cosmos-Predict2 into a policy that"
+    }
+  },
+  "dreamzero": {
+    "policy": {
+      "path": "/images/catalog/dreamzero-policy.webp",
+      "original": "https://arxiv.org/html/2602.15922v1/dreamzero_model.png",
+      "page": "https://arxiv.org/abs/2602.15922",
+      "credit": "DreamZero authors",
+      "alt": "DreamZero — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4483f06722a68bd5eb8909549900c7104e9ce36d4f5efeae64f53f8061c3c80b",
+      "width": 1500,
+      "height": 494,
+      "note": "Figure 4 : Model Architecture of DreamZero . The model takes three inputs: visual context (encoded via a VAE), language instructions (via a text encoder), and proprioceptive state "
+    }
+  },
+  "act3d": {
+    "policy": {
+      "path": "/images/catalog/act3d-policy.webp",
+      "original": "https://arxiv.org/html/2306.17817v2/final_figures/main.png",
+      "page": "https://arxiv.org/abs/2306.17817",
+      "credit": "Act3D authors",
+      "alt": "Act3D — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8def8d732cbcba3fce373d40af64d17e1bffefc77ef56f862a5ce491f4e76252",
+      "width": 1500,
+      "height": 456,
+      "note": "Author architecture / method figure showing observation encoding and action generation."
+    }
+  },
+  "gendp": {
+    "policy": {
+      "path": "/images/catalog/gendp-policy.webp",
+      "original": "https://robopil.github.io/GenDP/media/figures/method.png",
+      "page": "https://robopil.github.io/GenDP/",
+      "credit": "Wang et al.",
+      "alt": "GenDP — pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8dea7259e49d1669a4d719f91bc56c06999315a93722216fcdc335f9cdf3e387",
+      "width": 1500,
+      "height": 1025,
+      "note": "Measured RGB-D → descriptor/semantic fields → diffusion actions, Figure2."
+    }
+  },
+  "rise2": {
+    "policy": {
+      "path": "/images/catalog/rise2-policy.webp",
+      "original": "https://arxiv.org/html/2503.03081v3/policy.png",
+      "page": "https://arxiv.org/abs/2503.03081",
+      "credit": "Fang et al.",
+      "alt": "RISE-2 — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "48a87c715647724d999a3f9305d28f4632ba3f2553b6f5c047f3e4ac99ef273c",
+      "width": 1500,
+      "height": 629,
+      "note": "Figure3 RISE-2 policy architecture, distinct from AirExo hardware diagram."
+    }
+  },
+  "tabero": {
+    "benchmark": {
+      "path": "/images/catalog/tabero-benchmark.webp",
+      "original": "https://arxiv.org/html/2605.27886v1/figs/mul_task_new.png",
+      "page": "https://arxiv.org/html/2605.27886",
+      "credit": "Tabero authors",
+      "alt": "Tabero / Tabero-VTLA — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e24259a468257647181a3b493bd5ef2a3a8a07d4ea0aa34e19d158e3e409e868",
+      "width": 1294,
+      "height": 440,
+      "note": "Migrated LIBERO environment families;broader than the nine-task policy subset."
+    },
+    "policy": {
+      "path": "/images/catalog/tabero-policy.webp",
+      "original": "https://arxiv.org/html/2605.27886v1/part2.png",
+      "page": "https://arxiv.org/html/2605.27886",
+      "credit": "Tabero authors",
+      "alt": "Tabero / Tabero-VTLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fa380d3456f5bb0235c0af3277c5ba50eb03a28a52aea2bb7b8246062c1ba673",
+      "width": 1145,
+      "height": 1059,
+      "note": "Policy force/position architecture and hybrid feedback controller."
+    }
+  },
+  "vtdexmanip": {
+    "benchmark": {
+      "path": "/images/catalog/vtdexmanip-benchmark.webp",
+      "original": "https://lqts.github.io/VTDexManip/resources/benchmark1.jpg",
+      "page": "https://lqts.github.io/VTDexManip/",
+      "credit": "VTDexManip authors",
+      "alt": "VTDexManip — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "871306dea4239725e886811deca6a1a82acf209c35a8ff8c738c5e1c5196949f",
+      "width": 1500,
+      "height": 670,
+      "note": "Author composite of all six benchmark tasks,18 representation variants and PPO policy pipeline."
+    },
+    "policy": {
+      "path": "/images/catalog/vtdexmanip-policy.webp",
+      "original": "https://proceedings.iclr.cc/paper_files/paper/2025/file/e19b6f65791e350347bcff8a3955cb5b-Paper-Conference.pdf#page=20",
+      "page": "https://proceedings.iclr.cc/paper_files/paper/2025/file/e19b6f65791e350347bcff8a3955cb5b-Paper-Conference.pdf",
+      "credit": "VTDexManip authors",
+      "alt": "VTDexManip — VT-JointPretrain architecture with joint vision-tactile masking, Transformer encoder/decoder and modality reconstruction heads",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1801,
+      "height": 872,
+      "note": "Actual Figure9, PDF page20. Cropped to the complete VT-JointPretrain method architecture, including its token legend; crop rectangle[124,77,490,254]PDFpoints. This is the benchmark's joint vision-tactile representation pretraining architecture, not the downstream PPO action head. The benchmark card retains its separate full task/platform overview image. Rendered from the primary ICLR2025 proceedings PDF and visually inspected.",
+      "sourceSha256": "2b7cfb1052430c62260782a8be21ee1366e8983924a649d6361f619bf06161ad"
+    }
+  },
+  "colosseum-v2": {
+    "benchmark": {
+      "path": "/images/catalog/colosseum-v2-benchmark.webp",
+      "original": "https://colosseum-v2.github.io/content/ColosseumV2_hero.jpg",
+      "page": "https://colosseum-v2.github.io/",
+      "credit": "Colosseum V2 authors",
+      "alt": "Colosseum V2 — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "2abf9387174f513346689c05fe650b895147309221fbc3b8c9b195d16fd0ad67",
+      "width": 1500,
+      "height": 672,
+      "note": "Official 28-task and perturbation overview."
+    }
+  },
+  "vla-arena": {
+    "benchmark": {
+      "path": "/images/catalog/vla-arena-benchmark.webp",
+      "original": "https://vla-arena.github.io/figures/structure.png",
+      "page": "https://vla-arena.github.io/",
+      "credit": "VLA-Arena authors",
+      "alt": "VLA-Arena — taxonomy",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "0668e369454639ecd30d44edde68ae8a4746ab5a6cf33a64a22408c4e8c6eab7",
+      "width": 1500,
+      "height": 920,
+      "note": "Four capability dimensions, task levels and independent perturbation structure."
+    }
+  },
+  "prism": {
+    "benchmark": {
+      "path": "/images/catalog/prism-benchmark.webp",
+      "original": "https://tengbo-yu.github.io/PRISM/assets/images/overview_v2.png",
+      "page": "https://tengbo-yu.github.io/PRISM/",
+      "credit": "PRISM authors",
+      "alt": "PRISM — dataset and capture overview",
+      "kind": "dataset-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "af609879228677d8c59b5ac5cb293c156ad3988a8e9bb31ab536a04d34ccae51",
+      "width": 1500,
+      "height": 666,
+      "note": "Industrial tasks, robot platforms and sensing breadth."
+    }
+  },
+  "reassemble": {
+    "benchmark": {
+      "path": "/images/catalog/reassemble-benchmark.webp",
+      "original": "https://tuwien-asl.github.io/REASSEMBLE_page/figures/teaser.png",
+      "page": "https://tuwien-asl.github.io/REASSEMBLE_page/",
+      "credit": "REASSEMBLE authors",
+      "alt": "REASSEMBLE — dataset and capture overview",
+      "kind": "dataset-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4767920c7c5cffebc67cba064701164fe37555487edf8141b51ee291c885ed03",
+      "width": 1500,
+      "height": 844,
+      "note": "Task board, action types, sensing and dataset overview."
+    }
+  },
+  "tacverse": {
+    "benchmark": {
+      "path": "/images/catalog/tacverse-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2606.25877#page=4",
+      "page": "https://arxiv.org/abs/2606.25877",
+      "credit": "TacVerse authors",
+      "alt": "TacVerse — dataset and capture overview",
+      "kind": "dataset-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 722,
+      "note": "Figure 2. Shape classification, grating classification and force regression, with example tactile observations and the force-measurement apparatus. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "86f99234f83187a13a5849d57b4fbc1934724f554065a199e25ec051cd0c28b3"
+    }
+  },
+  "dexvla": {
+    "policy": {
+      "path": "/images/catalog/dexvla-policy.webp",
+      "original": "https://arxiv.org/html/2502.05855v3/framework2.png",
+      "page": "https://arxiv.org/abs/2502.05855",
+      "credit": "Wen et al.",
+      "alt": "DexVLA — architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "a4f6464405586ae14ed45096ff17aad6eb9fb2cadc18759dddde61591493a86e",
+      "width": 1500,
+      "height": 472,
+      "note": "Figure2: VLM/diffusion expert and three-stage embodiment curriculum."
+    }
+  },
+  "univla": {
+    "policy": {
+      "path": "/images/catalog/univla-policy.webp",
+      "original": "https://arxiv.org/pdf/2505.06111#page=5",
+      "page": "https://arxiv.org/abs/2505.06111",
+      "credit": "Bu et al. / OpenDriveLab",
+      "alt": "Figure 3: Generalist policy architecture with latent action tokens, autoregressive VLM and task-specific action decoder.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1548,
+      "height": 840,
+      "note": "Re-rendered actual paper vector figure at6x for legible zoom; replaced lower-resolution web image. Surrounding paper text/caption excluded; visually reviewed.",
+      "sourceSha256": "1b8551db322a0e31514601d9d84879f85a5c391e4911e40752ea9df7567196f5"
+    }
+  },
+  "pifast": {
+    "policy": {
+      "path": "/images/catalog/pifast-policy.webp",
+      "original": "https://arxiv.org/html/2501.09747v1/teaser.png",
+      "page": "https://arxiv.org/abs/2501.09747",
+      "credit": "Pertsch et al.",
+      "alt": "π0-FAST / FAST — pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "be38f8035d6319c7cda945bf9a140c0a4b4d972254ca941218845d11289889d4",
+      "width": 1067,
+      "height": 1005,
+      "note": "Figure2: autoregressive robot control with FAST action compression."
+    }
+  },
+  "xvla": {
+    "policy": {
+      "path": "/images/catalog/xvla-policy.webp",
+      "original": "https://arxiv.org/pdf/2510.10274#page=22",
+      "page": "https://arxiv.org/abs/2510.10274",
+      "credit": "Zheng et al.",
+      "alt": "Figure 10: Shared Transformer, embodiment-specific soft prompts and input/output projection libraries.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1926,
+      "height": 1830,
+      "note": "Re-rendered actual paper vector figure at6x for legible zoom; replaced lower-resolution web image. Surrounding paper text/caption excluded; visually reviewed.",
+      "sourceSha256": "483c47a651b44456f7f5a71b8d0e586df2e32c034f188dfb0653f3f6cc2d8aa7"
+    }
+  },
+  "sparsh": {
+    "benchmark": {
+      "path": "/images/catalog/sparsh-benchmark.webp",
+      "original": "https://sparsh-ssl.github.io/media/figures/teaser2.png",
+      "page": "https://sparsh-ssl.github.io/",
+      "credit": "TacBench authors",
+      "alt": "TacBench — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "22cfa233b206f546faf6935e781590ddefcd10d0f3867e8dc28931c6ab3bf280",
+      "width": 1500,
+      "height": 619,
+      "note": "Overview of all six benchmark problems and touch representations."
+    }
+  },
+  "bridgevla-plus": {
+    "policy": {
+      "path": "/images/catalog/bridgevla-plus-policy.webp",
+      "original": "https://bridgevla-plus.github.io/static/images/paper/architecture.png",
+      "page": "https://bridgevla-plus.github.io/",
+      "credit": "BridgeVLA++ authors",
+      "alt": "BridgeVLA++ — Fig2:grounding/action pipeline with temporal and spatial memory injection.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1500,
+      "height": 814,
+      "note": "Officialdirectarchitecturefigure;optimizedlocalcopy. Visually reviewed."
+    }
+  },
+  "spatialvam": {
+    "policy": {
+      "path": "/images/catalog/spatialvam-policy.webp",
+      "original": "https://spatialvam.github.io/static/images/Method.png",
+      "page": "https://spatialvam.github.io/home_page.html",
+      "credit": "SpatialVAM authors",
+      "alt": "SpatialVAM — Fig2:pipeline,view-awarevideoTransformer andaction decoder.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1500,
+      "height": 979,
+      "note": "Officialdirectarchitecturefigure;optimizedlocalcopy. Visually reviewed."
+    }
+  },
+  "sa-wam": {
+    "policy": {
+      "path": "/images/catalog/sa-wam-policy.webp",
+      "original": "https://jlopetegui98.github.io/assets/img/sawam/method.png",
+      "page": "https://jlopetegui98.github.io/projects/sa_wam.html",
+      "credit": "SA-WAM authors",
+      "alt": "SA-WAM — Fig2:observedRGB-D/state/languageconditioning andjointlatentaction/futuregeneration.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1500,
+      "height": 626,
+      "note": "Officialdirectarchitecturefigure;optimizedlocalcopy. Visually reviewed."
+    }
+  },
+  "manifeel": {
+    "benchmark": {
+      "path": "/images/catalog/manifeel-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2505.18472#page=3",
+      "page": "https://arxiv.org/abs/2505.18472",
+      "credit": "ManiFeel authors",
+      "alt": "ManiFeel — simulation and real-world task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1605,
+      "note": "Figure1, PDF page3. Eight named simulation panels and four real-world panels are shown. The paper text counts nine simulation setups because separate PegInsertion is described in text but has no separate panel here. Rendered from the primary paper PDF, cropped to the original figure, and visually reviewed.",
+      "sourceSha256": "f9bbb98529baf333276c989b912a5f887a3ec4ba6156d6debd2601882664cc12"
+    }
+  },
+  "contactworld": {
+    "benchmark": {
+      "path": "/images/catalog/contactworld-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2606.13877#page=3",
+      "page": "https://arxiv.org/abs/2606.13877",
+      "credit": "ContactWorld authors",
+      "alt": "ContactWorld — Twelve task variants grouped into insertion, screwing, disassembly, and exploration.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 877,
+      "note": "Figure 2. Twelve task variants grouped into insertion, screwing, disassembly, and exploration. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "a57be63a903b68d2cee9f11245d6ab7a0ec38731a7940e16c4d2d61ff1b6df8c"
+    }
+  },
+  "taco-sensor-benchmark": {
+    "benchmark": {
+      "path": "/images/catalog/taco-sensor-benchmark-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2605.21976#page=6",
+      "page": "https://arxiv.org/abs/2605.21976",
+      "credit": "TacO authors",
+      "alt": "TacO — Reorientation, unknown-mass pick-and-place and insertion tasks, plus repeatability test apparatus.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 607,
+      "note": "Figure 3. Reorientation, unknown-mass pick-and-place and insertion tasks, plus repeatability test apparatus. Rendered from the primary paper PDF (page 6), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "d7077a4591adc2ead90b9616833afaac6f4fb2c42db58fbe699e041ad1ba0aac"
+    }
+  },
+  "tactilegym2": {
+    "benchmark": {
+      "path": "/images/catalog/tactilegym2-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2207.10763#page=5",
+      "page": "https://arxiv.org/abs/2207.10763",
+      "credit": "Tactile Gym 2.0 authors",
+      "alt": "Tactile Gym 2.0 — Physical stimuli for edge-following, surface-following and object-pushing; stimuli rather than robot scenes.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 228,
+      "note": "Figure 3. Physical stimuli for edge-following, surface-following and object-pushing; stimuli rather than robot scenes. Rendered from the primary paper PDF (page 5), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "c92c7b5719692529c420dfe73714a1638a0ebc0cd27e4ab0fb0a1e5e745dee3c"
+    }
+  },
+  "maniskill-vitac-2025": {
+    "benchmark": {
+      "path": "/images/catalog/maniskill-vitac-2025-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2411.12503#page=3",
+      "page": "https://arxiv.org/abs/2411.12503",
+      "credit": "ManiSkill-ViTac 2025 authors",
+      "alt": "ManiSkill-ViTac 2025 — The real and simulated challenge insertion platform; this is not an all-track taxonomy.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 928,
+      "note": "Figure 1. The real and simulated challenge insertion platform; this is not an all-track taxonomy. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "227c618dc588b8179f16cac10ca75f655a2a17fec04b1a99c9de9f42159cabc7"
+    }
+  },
+  "peg-in-bench": {
+    "benchmark": {
+      "path": "/images/catalog/peg-in-bench-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2609.00906#page=4",
+      "page": "https://arxiv.org/abs/2609.00906",
+      "credit": "Peg-in-Bench authors",
+      "alt": "Peg-in-Bench — Printed benchmark bases, five peg shapes, multiple clearances, fixing parts and peg holder.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 805,
+      "note": "Figure 2. Printed benchmark bases, five peg shapes, multiple clearances, fixing parts and peg holder. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "74a2c98dcf4e8953e9a39bd8dc49416325b0b3266b94cf356642bca7ba9ae16a"
+    }
+  },
+  "labit": {
+    "benchmark": {
+      "path": "/images/catalog/labit-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2610.16398#page=4",
+      "page": "https://arxiv.org/abs/2610.16398",
+      "credit": "LABIT authors",
+      "alt": "LABIT — All fifteen assembly operations in the published task sequence.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 708,
+      "note": "Figure 4. All fifteen assembly operations in the published task sequence. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "15e953dbf9c36a4f1ca4ddd6532fb7ffd8e7cecac7289c05cc848a54509d50fe"
+    }
+  },
+  "ramp": {
+    "benchmark": {
+      "path": "/images/catalog/ramp-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2305.09644#page=4",
+      "page": "https://arxiv.org/abs/2305.09644",
+      "credit": "RAMP authors",
+      "alt": "RAMP — Assembly configurations grouped by easy, medium and hard difficulty.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 837,
+      "note": "Figure 3. Assembly configurations grouped by easy, medium and hard difficulty. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "8d44e6ec660a7de604c6c5a85857c07562d4685da8f673d37715e3b037e9f4b2"
+    }
+  },
+  "manipulationnet": {
+    "benchmark": {
+      "path": "/images/catalog/manipulationnet-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2603.04363#page=17",
+      "page": "https://arxiv.org/abs/2603.04363",
+      "credit": "ManipulationNet authors",
+      "alt": "ManipulationNet — Peg-in-hole tolerance board and cable management board; two benchmark families, not the full platform scope.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 843,
+      "note": "Figure 4. Peg-in-hole tolerance board and cable management board; two benchmark families, not the full platform scope. Rendered from the primary paper PDF (page 17), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "90b885dae1d53df7e6c242281dd54904dac40a01dc09af3a839d437e30abd647"
+    }
+  },
+  "industreal": {
+    "benchmark": {
+      "path": "/images/catalog/industreal-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2305.17110#page=3",
+      "page": "https://arxiv.org/abs/2305.17110",
+      "credit": "IndustReal authors",
+      "alt": "IndustReal — Three assembly types and pick, place, insert phases.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1104,
+      "note": "Figure 2. Three assembly types and pick, place, insert phases. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "cb84773e54def381b301c07ec8907aeaa5fa7a2d0418beadabbd782772103954"
+    }
+  },
+  "automate": {
+    "benchmark": {
+      "path": "/images/catalog/automate-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2407.08028#page=4",
+      "page": "https://arxiv.org/abs/2407.08028",
+      "credit": "AutoMate authors",
+      "alt": "AutoMate — dataset and capture overview",
+      "kind": "dataset-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1518,
+      "note": "Figure 2. All one hundred simulation-compatible plug-and-socket geometries. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "8cb3e920d90507d27716dd4c45c061183ce40bc0f160c8346d158185cd22c535"
+    }
+  },
+  "dexjoco": {
+    "benchmark": {
+      "path": "/images/catalog/dexjoco-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2605.16257#page=5",
+      "page": "https://arxiv.org/abs/2605.16257",
+      "credit": "DexJoCo authors",
+      "alt": "DexJoCo — Eleven task initial states and interactive asset examples.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1025,
+      "note": "Figure 4. Eleven task initial states and interactive asset examples. Rendered from the primary paper PDF (page 5), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "a4acfe1c8b0c304dc5f45688e1360f9dcb76034f771993f19c49fd6bdf52328e"
+    }
+  },
+  "dexjoco-x": {
+    "benchmark": {
+      "path": "/images/catalog/dexjoco-x-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2610.03278#page=3",
+      "page": "https://arxiv.org/abs/2610.03278",
+      "credit": "DexJoCo-X authors",
+      "alt": "DexJoCo-X — Six single-arm and bimanual tasks, stages and success criteria.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1097,
+      "note": "Figure 2. Six single-arm and bimanual tasks, stages and success criteria. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "4b995d2a4bd6e4c3b8b19d4f4e49c719a45b5eed1f7e7a9a6766a99acade57b5"
+    }
+  },
+  "dexart": {
+    "benchmark": {
+      "path": "/images/catalog/dexart-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2305.05706#page=1",
+      "page": "https://arxiv.org/abs/2305.05706",
+      "credit": "DexArt authors",
+      "alt": "DexArt — Four articulated-object task categories, seen objects and unseen objects.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 740,
+      "note": "Figure 1. Four articulated-object task categories, seen objects and unseen objects. Rendered from the primary paper PDF (page 1), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "44354c0496a14f9ef90e19cd93f1521075adb6daff5f0a882cc045a649fbff7e"
+    }
+  },
+  "bi-dexhands": {
+    "benchmark": {
+      "path": "/images/catalog/bi-dexhands-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2206.08686#page=16",
+      "page": "https://arxiv.org/abs/2206.08686",
+      "credit": "Bi-DexHands authors",
+      "alt": "Bi-DexHands — Complete twenty-task gallery.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 805,
+      "note": "Figure 5. Complete twenty-task gallery. Rendered from the primary paper PDF (page 16), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "e5691ff204175f5cf96ef8923565e6e7d7fb82c8e4277f8165019fdd9ada4cfa"
+    }
+  },
+  "dexverse": {
+    "benchmark": {
+      "path": "/images/catalog/dexverse-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2607.08751#page=4",
+      "page": "https://arxiv.org/abs/2607.08751",
+      "credit": "DexVerse authors",
+      "alt": "DexVerse — Selected task examples across eight categories; not a gallery of all one hundred tasks.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 856,
+      "note": "Figure 2. Selected task examples across eight categories; not a gallery of all one hundred tasks. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "be0e0b51cd1bd68c6f52f9f3177c18e88c8115fc33a680fa3d7bc631a0841d42"
+    }
+  },
+  "robodojo": {
+    "benchmark": {
+      "path": "/images/catalog/robodojo-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2607.04434#page=6",
+      "page": "https://arxiv.org/abs/2607.04434",
+      "credit": "RoboDojo authors",
+      "alt": "RoboDojo — Complete forty-two simulation and eighteen real-world task gallery organized by capability.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1507,
+      "note": "Figure 2. Complete forty-two simulation and eighteen real-world task gallery organized by capability. Rendered from the primary paper PDF (page 6), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "e07c215f30169dde6a792c34b046b1f54818d09331763988732dcf9ead89a9d4"
+    }
+  },
+  "robocasa365": {
+    "benchmark": {
+      "path": "/images/catalog/robocasa365-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2603.04356#page=5",
+      "page": "https://arxiv.org/abs/2603.04356",
+      "credit": "RoboCasa365 authors",
+      "alt": "RoboCasa365 — Activity-family taxonomy and representative composite tasks; this figure concerns the three hundred composite tasks.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 813,
+      "note": "Figure 3. Activity-family taxonomy and representative composite tasks; this figure concerns the three hundred composite tasks. Rendered from the primary paper PDF (page 5), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "f3e6877b8de3dd471afb6951c1e067729e2a57c53fcb3d6daaa0f4af5080206b"
+    }
+  },
+  "maniskill3": {
+    "benchmark": {
+      "path": "/images/catalog/maniskill3-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2410.00425#page=2",
+      "page": "https://arxiv.org/abs/2410.00425",
+      "credit": "ManiSkill3 authors",
+      "alt": "ManiSkill3 — tactile simulation examples",
+      "kind": "simulation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 736,
+      "note": "Figure 1. Representative task-category gallery; not an exhaustive enumeration of released tasks. Rendered from the primary paper PDF (page 2), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "0482cef460af5ca0dd09d2b1d0f499b996287d9dadec31b13ca60377a49ee80c"
+    }
+  },
+  "libero": {
+    "benchmark": {
+      "path": "/images/catalog/libero-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2306.03310#page=2",
+      "page": "https://arxiv.org/abs/2306.03310",
+      "credit": "LIBERO authors",
+      "alt": "LIBERO — Four benchmark suites, transfer axes and lifelong-learning evaluation dimensions.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 859,
+      "note": "Figure 1. Four benchmark suites, transfer axes and lifelong-learning evaluation dimensions. Rendered from the primary paper PDF (page 2), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "ff7d943e2eb37760df684f3ae2931a5a35ef8ea465bd387e62afe49507b8e414"
+    }
+  },
+  "rlbench": {
+    "benchmark": {
+      "path": "/images/catalog/rlbench-benchmark.webp",
+      "original": "https://arxiv.org/pdf/1909.12271#page=2",
+      "page": "https://arxiv.org/abs/1909.12271",
+      "credit": "RLBench authors",
+      "alt": "RLBench — Twenty-four representative tasks from the paper's one-hundred-task benchmark.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 604,
+      "note": "Figure 1. Twenty-four representative tasks from the paper's one-hundred-task benchmark. Rendered from the primary paper PDF (page 2), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "fbb04509bea7bf6aa9b97b07c46d95e5c1a900987599693b3fae3fd84377db76"
+    }
+  },
+  "factory": {
+    "benchmark": {
+      "path": "/images/catalog/factory-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2205.03532#page=6",
+      "page": "https://arxiv.org/abs/2205.03532",
+      "credit": "Factory authors",
+      "alt": "Factory — tactile simulation examples",
+      "kind": "simulation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1612,
+      "height": 812,
+      "note": "Composite of original Figures 4 and 5 (page 6) plus 6 and 7 (page 7): nut-and-bolt scene, NIST asset board, insertion scene, and gear scene. Three benchmark environments plus the common asset library; no synthetic scene content. Rendered from the primary paper PDF (page 6), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "3ed5068251c0eaef46fc394cbf8d0482a027dc22ee0dfa1067929ca90b9ff8b6"
+    }
+  },
+  "colosseum": {
+    "benchmark": {
+      "path": "/images/catalog/colosseum-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2402.08191#page=3",
+      "page": "https://arxiv.org/abs/2402.08191",
+      "credit": "The Colosseum authors",
+      "alt": "The Colosseum — Task-horizon groups and fourteen perturbation factors in the benchmark distribution.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1161,
+      "note": "Figure 3. Task-horizon groups and fourteen perturbation factors in the benchmark distribution. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "ae71956329278bc299039eaa133876b4b132772081418a26c733c4810169edf2"
+    }
+  },
+  "libero-plus": {
+    "benchmark": {
+      "path": "/images/catalog/libero-plus-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2510.13626#page=8",
+      "page": "https://arxiv.org/abs/2510.13626",
+      "credit": "LIBERO-Plus authors",
+      "alt": "LIBERO-Plus — Seven perturbation factors and twenty-one underlying components. Extracted the original embedded figure with its alpha mask to preserve the complete circle, including the bottom labels.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1600,
+      "height": 1600,
+      "note": "Figure 6. Seven perturbation factors and twenty-one underlying components. Extracted the original embedded figure with its alpha mask to preserve the complete circle, including the bottom labels. Rendered from the primary paper PDF (page 8), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "661de08e0ed1bb4bb4774177cac9fafa94f06b5385fa2f4107a1927b9a4aada7"
+    }
+  },
+  "libero-pro": {
+    "benchmark": {
+      "path": "/images/catalog/libero-pro-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2510.03827#page=6",
+      "page": "https://arxiv.org/abs/2510.03827",
+      "credit": "LIBERO-PRO authors",
+      "alt": "LIBERO-PRO — Five perturbation families and their application to the LIBERO suites.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 976,
+      "note": "Figure 6. Five perturbation families and their application to the LIBERO suites. Rendered from the primary paper PDF (page 6), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "e9e125f9b8900e4656db2549e090426b2b6ad484530a67deef9a300ceb1e6f91"
+    }
+  },
+  "mikasa-robo-vla": {
+    "benchmark": {
+      "path": "/images/catalog/mikasa-robo-vla-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2610.00604#page=4",
+      "page": "https://arxiv.org/abs/2610.00604",
+      "credit": "MIKASA-Robo-VLA authors",
+      "alt": "MIKASA-Robo-VLA — Two representative memory-dependent rollouts: object-color recall and tracking; not a complete ninety-task gallery.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 611,
+      "note": "Figure 1. Two representative memory-dependent rollouts: object-color recall and tracking; not a complete ninety-task gallery. Rendered from the primary paper PDF (page 4), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "a6eaf2e89521914bad5b86f1f05ea1caec20dd0690511a21730fe6a7a3f19b67"
+    }
+  },
+  "tacsl": {
+    "benchmark": {
+      "path": "/images/catalog/tacsl-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2408.06506#page=10",
+      "page": "https://arxiv.org/abs/2408.06506",
+      "credit": "TacSL authors",
+      "alt": "TacSL — tactile simulation examples",
+      "kind": "simulation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 698,
+      "note": "Figure 8. Three manipulation-task families: peg placement, peg insertion, and bolt-on-nut. Rendered from the primary paper PDF (page 10), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "f002bbdb47dd469f835294b345970db801994dc4fd385eab8eeb18a722badb0a"
+    }
+  },
+  "tacex": {
+    "benchmark": {
+      "path": "/images/catalog/tacex-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2411.04776#page=3",
+      "page": "https://arxiv.org/abs/2411.04776",
+      "credit": "TacEx authors",
+      "alt": "TacEx — tactile simulation examples",
+      "kind": "simulation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 736,
+      "note": "Figure 2. Simulator demonstration scenes: ball rolling, soft-beam twisting, and object lifting; supporting resource rather than a standardized task suite. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "6ee37818d248cc27a050da4a8ca3bfb2f9d8ecba2e068d0626dd25b965740da3"
+    }
+  },
+  "tacto": {
+    "benchmark": {
+      "path": "/images/catalog/tacto-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2012.08456#page=1",
+      "page": "https://arxiv.org/abs/2012.08456",
+      "credit": "TACTO authors",
+      "alt": "TACTO — tactile simulation examples",
+      "kind": "simulation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 396,
+      "note": "Figure 1. Simulated contact examples and tactile outputs; simulator overview rather than a standardized benchmark suite. Rendered from the primary paper PDF (page 1), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "3d656371a5d15141d5e352680c2c95cdddbbf9e5ce89fc96278e0c6e7b544838"
+    }
+  },
+  "taxim": {
+    "benchmark": {
+      "path": "/images/catalog/taxim-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2109.04027#page=1",
+      "page": "https://arxiv.org/abs/2109.04027",
+      "credit": "Taxim authors",
+      "alt": "Taxim — tactile simulation examples",
+      "kind": "simulation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1359,
+      "note": "Figure 1. Real objects, tactile images and corresponding simulated outputs; supporting tactile simulator rather than an action benchmark. Rendered from the primary paper PDF (page 1), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "24feb04024fe5b03fd7c43c5cd6a6e5d9101f60188ae8418270a63d2c394d8ca"
+    }
+  },
+  "dexbiolab": {
+    "benchmark": {
+      "path": "/images/catalog/dexbiolab-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2610.13643#page=5",
+      "page": "https://arxiv.org/abs/2610.13643",
+      "credit": "DexBioLab authors",
+      "alt": "DexBioLab — Fourteen laboratory manipulation tasks and three dynamic visual phenomena.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 1353,
+      "note": "Figure 2. Fourteen laboratory manipulation tasks and three dynamic visual phenomena. Rendered from the primary paper PDF (page 5), cropped to the figure, and visually reviewed.",
+      "sourceSha256": "dfd1c9f0c214a5f589053a35a3a3e0d7438bb85ca956a703e8ca18bbc7d2a1f6"
+    }
+  },
+  "nist-assembly-task-boards": {
+    "benchmark": {
+      "path": "/images/catalog/nist-assembly-task-boards-benchmark.webp",
+      "original": "https://www.frontiersin.org/files/Articles/999348/xml-images/frobt-09-999348-g001.webp",
+      "page": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.999348/full",
+      "credit": "Kenneth Kimble, Justin Albrecht, Megan Zimmerman, and Joe Falco / NIST",
+      "alt": "NIST Assembly Task Boards — four boards for rigid assembly, belts and pulleys, cable routing, and wire harnesses",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1424,
+      "height": 1464,
+      "note": "Original Figure1 of the NIST authors'2022 primary paper. Four task boards A-D; accompanying caption specifies each competency. Original publisher asset, visually inspected.",
+      "sourceSha256": "277171892d215cd5126c69606aced08fb15d52965864f05766d68bef910de21b"
+    }
+  },
+  "robolab": {
+    "benchmark": {
+      "path": "/images/catalog/robolab-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2604.09860#page=1",
+      "page": "https://arxiv.org/abs/2604.09860",
+      "credit": "RoboLab-120 authors",
+      "alt": "RoboLab — benchmark framework and evaluation dimensions",
+      "kind": "benchmark-overview",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 766,
+      "note": "Official paper Figure1: scene/task generation and evaluation framework. This overview is not a complete gallery of all 120 tasks.",
+      "sourceSha256": "49da5e317e36c4320eb3896cfca4ea1600908f8ed591a1e643ff65c405fba73e"
+    }
+  },
+  "maniskill-vitac-2026": {
+    "benchmark": {
+      "path": "/images/catalog/maniskill-vitac-2026-benchmark.webp",
+      "original": "https://media.githubusercontent.com/media/callmeray/Mani_ViTac_Challenge_2026_page/main/task1.mp4",
+      "page": "https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/",
+      "credit": "ManiSkill-ViTac Challenge2026 organizers",
+      "alt": "ManiSkill-ViTac2026 — Test Tube Cleaning and Grinding task demonstrations",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1612,
+      "height": 506,
+      "note": "Two original video stills at8seconds, placed side by side with the official task names. These are task demonstrations with a human operator visible, not autonomous policy rollouts. Left source task1.mp4; right source https://media.githubusercontent.com/media/callmeray/Mani_ViTac_Challenge_2026_page/main/task2.mp4. Both videos are embedded on the official challenge page. Visually inspected."
+    }
+  },
+  "rl100": {
+    "policy": {
+      "path": "/images/catalog/rl100-policy.webp",
+      "original": "https://arxiv.org/pdf/2510.14830#page=15",
+      "page": "https://arxiv.org/abs/2510.14830",
+      "credit": "Lei et al.",
+      "alt": "Figure6:imitation initialization,offline/onlineRL,data expansion andone-step distillation.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1952,
+      "height": 1196,
+      "note": "Cropped actual author figure fromPDFpage15,excluding surroundingpaper text/caption. Rendered at4x resolution;visually reviewed. Figure6:imitation initialization,offline/onlineRL,data expansion andone-step distillation.",
+      "sourceSha256": "0f1a07b3614d88c9777defcdd3abc6b282afc835fc184dd72cdbee83783c4617"
+    }
+  },
+  "rlt": {
+    "policy": {
+      "path": "/images/catalog/rlt-policy.webp",
+      "original": "https://www.pi.website/download/rlt.pdf#page=4",
+      "page": "https://www.pi.website/research/rlt",
+      "credit": "Xu et al. / Physical Intelligence",
+      "alt": "Figure2:RL-tokenencoder/decoder attachedtoVLAembeddings andactionexpert.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1044,
+      "height": 1016,
+      "note": "Cropped actual author figure fromPDFpage4,excluding surroundingpaper text/caption. Rendered at4x resolution;visually reviewed. Figure2:RL-tokenencoder/decoder attachedtoVLAembeddings andactionexpert.",
+      "sourceSha256": "feecf0f5799bcb3775f42d5de5d5832e61eb379bd47b627ad9a0f6c86f3ebf31"
+    }
+  },
+  "oft": {
+    "policy": {
+      "path": "/images/catalog/oft-policy.webp",
+      "original": "https://arxiv.org/pdf/2502.19645#page=3",
+      "page": "https://arxiv.org/abs/2502.19645",
+      "credit": "Kim et al.",
+      "alt": "Figure2:autoregressive/parallel actiondecoding anddiscrete/continuous actionrepresentations.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2088,
+      "height": 356,
+      "note": "Cropped actual author figure fromPDFpage3,excluding surroundingpaper text/caption. Rendered at4x resolution;visually reviewed. Figure2:autoregressive/parallel actiondecoding anddiscrete/continuous actionrepresentations.",
+      "sourceSha256": "b860aa1206b6cfb0ce8be177f961379dd6a133d52cc74ac346636e0f4952a596"
+    }
+  },
+  "pi06": {
+    "policy": {
+      "path": "/images/catalog/pi06-policy.webp",
+      "original": "https://www.pi.website/download/pistar06.pdf#page=4",
+      "page": "https://www.pi.website/blog/pistar06",
+      "credit": "Physical Intelligence",
+      "alt": "Figure3:RECAPVLA andvalue-function traininginterfaces.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1036,
+      "height": 836,
+      "note": "Cropped actual author figure fromPDFpage4,excluding surroundingpaper text/caption. Rendered at4x resolution;visually reviewed. Figure3:RECAPVLA andvalue-function traininginterfaces.",
+      "sourceSha256": "6b37590a1f17e415df93b456a65ad399788126c5a610e85122e69e471a509223"
+    }
+  },
+  "pi07": {
+    "policy": {
+      "path": "/images/catalog/pi07-policy.webp",
+      "original": "https://www.pi.website/download/pi07.pdf#page=4",
+      "page": "https://www.pi.website/blog/pi07",
+      "credit": "Physical Intelligence",
+      "alt": "Figure2:VLM/historyencoder,actionexpert,high-levelpolicy andworld-model conditioning.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2108,
+      "height": 1004,
+      "note": "Cropped actual author figure fromPDFpage4,excluding surroundingpaper text/caption. Rendered at4x resolution;visually reviewed. Figure2:VLM/historyencoder,actionexpert,high-levelpolicy andworld-model conditioning.",
+      "sourceSha256": "d718dbcfcf294f87a2179052dcd2e783ea1f542f484d05dfa2ce139bc00d7d5b"
+    }
+  },
+  "cosmos3": {
+    "policy": {
+      "path": "/images/catalog/cosmos3-policy.webp",
+      "original": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf#page=11",
+      "page": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "credit": "NVIDIA",
+      "alt": "Figure5:Cosmos3Mixture-of-Transformers backbone includingactionencoder andactionlatents;not aDROID-specifictrainingpipeline.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1856,
+      "height": 868,
+      "note": "Cropped actual author figure fromPDFpage11,excluding surroundingpaper text/caption. Rendered at4x resolution;visually reviewed. Figure5:Cosmos3Mixture-of-Transformers backbone includingactionencoder andactionlatents;not aDROID-specifictrainingpipeline.",
+      "sourceSha256": "d8f554d76b37d8c2ba504c628d7814176d7b0383c6c3bfa9f8389decda228d6e"
+    }
+  },
+  "flux3action": {
+    "policy": {
+      "path": "/images/catalog/flux3action-policy.webp",
+      "original": "https://bfl.ai/models/flux-3-action",
+      "page": "https://bfl.ai/models/flux-3-action",
+      "credit": "Black Forest Labs",
+      "alt": "FLUX 3 Action — Official Figure3 is inline SVG. Exact author vector extracted to sources/rgbd/flux3-action-official-architecture.svg for local rendering; attribution remains this report.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2186,
+      "height": 1484,
+      "note": "ExactauthorinlineSVG rendered inheadlessChromium withauthorlight-themeCSSandlocalfontfallbacks;viewboxextendedonlyforuncroppedbottomlabel;geometryunchanged. Whitespace trimmedandWebPoptimized. Visuallyreviewed."
+    }
+  }
+}

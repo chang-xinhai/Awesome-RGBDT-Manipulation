@@ -1,0 +1,88 @@
+---
+import {
+  display,
+  figureFor,
+  nameFor,
+  resourceLabel,
+  summaryFor,
+  type Work,
+  type Collection,
+} from "../lib/catalog";
+const { work: w, collection: c = "benchmark" } = Astro.props as {
+  work: Work;
+  collection: Collection;
+};
+const f = figureFor(w, c);
+const facts =
+  c === "benchmark"
+    ? [display(w.benchmark?.simulator), display(w.benchmark?.taskCount)]
+    : [display(w.policy?.family), display(w.policy?.baseModel)];
+---
+
+<article class="library-card" data-id={w.id}>
+  <button
+    class="card-cover"
+    type="button"
+    data-detail={w.id}
+    aria-label={"View " + nameFor(w, c)}
+  >
+    {f ? (
+      <img
+        src={f.path}
+        alt={f.alt}
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+      />
+    ) : (
+      <span class="text-cover">
+        <small>
+          {c === "benchmark" ? "Research benchmark" : "Manipulation policy"}
+        </small>
+        <strong>{nameFor(w, c)}</strong>
+        <span>View primary-source details ↗</span>
+      </span>
+    )}
+  </button>
+  <div class="card-copy">
+    <p class="card-meta">
+      {w.institution}
+      <span>·</span>
+      {w.year || "Undated"}
+    </p>
+    <h2>
+      <button type="button" data-detail={w.id} title={w.title}>
+        {nameFor(w, c)}
+      </button>
+    </h2>
+    <p class="card-description">{summaryFor(w, c)}</p>
+    <div class="card-facts">
+      {facts.map((x) => (
+        <span title={x}>{x}</span>
+      ))}
+    </div>
+    <div class="card-tags">
+      {resourceLabel(w) && <span>{resourceLabel(w)}</span>}
+      {w.modalities
+        .filter((x) => !["Proprioception", "Language"].includes(x))
+        .map((x) => (
+          <span>{x}</span>
+        ))}
+    </div>
+    <div class="card-actions">
+      <button type="button" data-detail={w.id}>
+        Details <span aria-hidden="true">↗</span>
+      </button>
+      <button
+        type="button"
+        class="compare-toggle"
+        data-compare={w.id}
+        aria-pressed="false"
+        aria-label={"Compare " + nameFor(w, c)}
+      >
+        <span aria-hidden="true">+</span> Compare
+      </button>
+    </div>
+  </div>
+</article>

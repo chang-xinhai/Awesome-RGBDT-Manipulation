@@ -1,0 +1,1271 @@
+{
+  "purpose": "Official sources for future reviewed updates; no automatic publishing",
+  "reviewed": "2026-10-17",
+  "sources": [
+    {
+      "work": "pace",
+      "kind": "project",
+      "url": "https://pace-insertion.github.io/"
+    },
+    {
+      "work": "labit",
+      "kind": "project",
+      "url": "https://irp-hka.github.io/robotic-assembly-benchmark/"
+    },
+    {
+      "work": "labit",
+      "kind": "code",
+      "url": "https://github.com/IRP-HKA/LABIT-simulation"
+    },
+    {
+      "work": "dexbiolab",
+      "kind": "project",
+      "url": "https://cumulusalpha.github.io/DexBioLabWebPage/"
+    },
+    {
+      "work": "dexbiolab",
+      "kind": "code",
+      "url": "https://github.com/CumulusAlpha/DexBioLab"
+    },
+    {
+      "work": "openvitac",
+      "kind": "project",
+      "url": "https://fvl-repo.github.io/OpenViTac/"
+    },
+    {
+      "work": "openvitac",
+      "kind": "code",
+      "url": "https://github.com/FVL-Repo/OpenViTac"
+    },
+    {
+      "work": "vista",
+      "kind": "code",
+      "url": "https://github.com/Kenn3o3/Vista"
+    },
+    {
+      "work": "simpletouch",
+      "kind": "project",
+      "url": "https://simpletouch-robot.github.io/"
+    },
+    {
+      "work": "simpletouch",
+      "kind": "code",
+      "url": "https://github.com/ccyydd/SimpleTouch"
+    },
+    {
+      "work": "mikasa-robo-vla",
+      "kind": "project",
+      "url": "https://mikasarobo.github.io/"
+    },
+    {
+      "work": "mikasa-robo-vla",
+      "kind": "code",
+      "url": "https://github.com/CognitiveAISystems/MIKASA-Robo"
+    },
+    {
+      "work": "tactic-encoder-study",
+      "kind": "project",
+      "url": "https://utn-air.github.io/TACTIC"
+    },
+    {
+      "work": "foretac-vla",
+      "kind": "project",
+      "url": "https://foretac-vla.github.io/"
+    },
+    {
+      "work": "unidex-vitac",
+      "kind": "project",
+      "url": "https://unidex-vitac.github.io/"
+    },
+    {
+      "work": "bench2dex",
+      "kind": "project",
+      "url": "https://bench2dex.github.io/"
+    },
+    {
+      "work": "bench2dex",
+      "kind": "code",
+      "url": "https://github.com/Bench2Dex/Bench2Dex"
+    },
+    {
+      "work": "visible-touch",
+      "kind": "project",
+      "url": "https://visibletouch.github.io/"
+    },
+    {
+      "work": "visible-touch",
+      "kind": "code",
+      "url": "https://github.com/qaz1678249/visibletouch"
+    },
+    {
+      "work": "wm-craftnet",
+      "kind": "project",
+      "url": "https://wmcraftnet.github.io/"
+    },
+    {
+      "work": "wm-craftnet",
+      "kind": "code",
+      "url": "https://github.com/sharpa-robotics/WM-Craftnet"
+    },
+    {
+      "work": "tacpac",
+      "kind": "project",
+      "url": "https://logosroboticsgroup.github.io/TacPAC/"
+    },
+    {
+      "work": "tacpac",
+      "kind": "code",
+      "url": "https://github.com/LogosRoboticsGroup/TacPAC"
+    },
+    {
+      "work": "sa-wam",
+      "kind": "project",
+      "url": "https://jlopetegui98.github.io/projects/sa_wam.html"
+    },
+    {
+      "work": "sa-wam",
+      "kind": "code",
+      "url": "https://github.com/jlopetegui98/sa-wam"
+    },
+    {
+      "work": "peg-in-bench",
+      "kind": "code",
+      "url": "https://github.com/aistairc/peg-in-bench"
+    },
+    {
+      "work": "flux3action",
+      "kind": "project",
+      "url": "https://bfl.ai/models/flux-3-action"
+    },
+    {
+      "work": "flux3action",
+      "kind": "code",
+      "url": "https://github.com/black-forest-labs/flux-action"
+    },
+    {
+      "work": "tacforcing",
+      "kind": "project",
+      "url": "https://88runaway.github.io/tacforcing/"
+    },
+    {
+      "work": "prism",
+      "kind": "project",
+      "url": "https://tengbo-yu.github.io/PRISM/"
+    },
+    {
+      "work": "prism",
+      "kind": "code",
+      "url": "https://github.com/Tengbo-Yu/PRISM"
+    },
+    {
+      "work": "bridgevla-plus",
+      "kind": "project",
+      "url": "https://bridgevla-plus.github.io/"
+    },
+    {
+      "work": "bridgevla-plus",
+      "kind": "code",
+      "url": "https://github.com/BridgeVLA/BridgeVLA/tree/main"
+    },
+    {
+      "work": "n0-vtla",
+      "kind": "project",
+      "url": "https://research.neoteai.com/n0-vtla/"
+    },
+    {
+      "work": "n0-vtla",
+      "kind": "code",
+      "url": "https://github.com/neoteai/N0-VTLA"
+    },
+    {
+      "work": "n0-twam",
+      "kind": "project",
+      "url": "https://research.neoteai.com/n0-twam/"
+    },
+    {
+      "work": "n0-twam",
+      "kind": "code",
+      "url": "https://github.com/neoteai/N0-TWAM"
+    },
+    {
+      "work": "tactidex",
+      "kind": "project",
+      "url": "https://tactidex.github.io/"
+    },
+    {
+      "work": "dexverse",
+      "kind": "project",
+      "url": "https://ycyao216.github.io/DexVerse.site/"
+    },
+    {
+      "work": "dexverse",
+      "kind": "code",
+      "url": "https://github.com/ycyao216/DexVerse"
+    },
+    {
+      "work": "softvtbench",
+      "kind": "project",
+      "url": "https://softvtbench.github.io/"
+    },
+    {
+      "work": "softvtbench",
+      "kind": "code",
+      "url": "https://github.com/TuojingAI/SoftVTBench"
+    },
+    {
+      "work": "robodojo",
+      "kind": "project",
+      "url": "https://robodojo-benchmark.com/"
+    },
+    {
+      "work": "robodojo",
+      "kind": "code",
+      "url": "https://github.com/RoboDojo-Benchmark/RoboDojo"
+    },
+    {
+      "work": "tacverse",
+      "kind": "project",
+      "url": "https://lannwei.github.io/Tactile_Database/"
+    },
+    {
+      "work": "tacverse",
+      "kind": "code",
+      "url": "https://github.com/LannWei/Tactile_Database"
+    },
+    {
+      "work": "cosmos3",
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/"
+    },
+    {
+      "work": "cosmos3",
+      "kind": "code",
+      "url": "https://github.com/NVIDIA/cosmos-framework"
+    },
+    {
+      "work": "t-rex",
+      "kind": "project",
+      "url": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "work": "t-rex",
+      "kind": "code",
+      "url": "https://github.com/ZhuoyangLiu2005/T-Rex"
+    },
+    {
+      "work": "ftp-1",
+      "kind": "project",
+      "url": "https://ftp1-policy.github.io/"
+    },
+    {
+      "work": "ftp-1",
+      "kind": "code",
+      "url": "https://github.com/michaelyuancb/ftp1-policy"
+    },
+    {
+      "work": "contactworld",
+      "kind": "project",
+      "url": "https://contact-world.github.io/"
+    },
+    {
+      "work": "contactworld",
+      "kind": "code",
+      "url": "https://github.com/PokuangZhou/ContactWorld"
+    },
+    {
+      "work": "taccorl",
+      "kind": "project",
+      "url": "https://tac-corl.github.io/"
+    },
+    {
+      "work": "torl-vla",
+      "kind": "project",
+      "url": "https://torl-vla.github.io/"
+    },
+    {
+      "work": "dream-tac",
+      "kind": "code",
+      "url": "https://github.com/LYFCLOUDFAN/Dream-Tac"
+    },
+    {
+      "work": "tabero",
+      "kind": "project",
+      "url": "https://nathanwu7.github.io/Tabero/"
+    },
+    {
+      "work": "tabero",
+      "kind": "code",
+      "url": "https://github.com/NathanWu7/Tabero"
+    },
+    {
+      "work": "colosseum-v2",
+      "kind": "project",
+      "url": "https://colosseum-v2.github.io/"
+    },
+    {
+      "work": "colosseum-v2",
+      "kind": "code",
+      "url": "https://github.com/jstmn/ColosseumV2"
+    },
+    {
+      "work": "taco-sensor-benchmark",
+      "kind": "project",
+      "url": "https://anyazorin.com/projects/taco"
+    },
+    {
+      "work": "taco-sensor-benchmark",
+      "kind": "code",
+      "url": "https://github.com/TacObench/TacO"
+    },
+    {
+      "work": "dexjoco",
+      "kind": "project",
+      "url": "https://dexjoco.github.io/"
+    },
+    {
+      "work": "dexjoco",
+      "kind": "code",
+      "url": "https://github.com/brave-eai/dexjoco"
+    },
+    {
+      "work": "at-vla",
+      "kind": "project",
+      "url": "https://sites.google.com/view/at-vla"
+    },
+    {
+      "work": "at-vla",
+      "kind": "code",
+      "url": "https://github.com/clorislili/AT-VLA"
+    },
+    {
+      "work": "consisvla4d",
+      "kind": "code",
+      "url": "https://github.com/iLearn-Lab/CVPR26-ConsisVLA-4D"
+    },
+    {
+      "work": "grootn17",
+      "kind": "project",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T"
+    },
+    {
+      "work": "pi07",
+      "kind": "project",
+      "url": "https://www.pi.website/blog/pi07"
+    },
+    {
+      "work": "r3d",
+      "kind": "project",
+      "url": "https://r3d-policy.github.io/"
+    },
+    {
+      "work": "r3d",
+      "kind": "code",
+      "url": "https://github.com/Wushr-Lance/R3D-Policy"
+    },
+    {
+      "work": "vga",
+      "kind": "project",
+      "url": "https://hcplab-sysu.github.io/VisionGeometryActionModel/"
+    },
+    {
+      "work": "vga",
+      "kind": "code",
+      "url": "https://github.com/HCPLab-SYSU/VisionGeometryActionModel"
+    },
+    {
+      "work": "robolab",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/RoboLab"
+    },
+    {
+      "work": "spatialvam",
+      "kind": "project",
+      "url": "https://spatialvam.github.io/home_page.html"
+    },
+    {
+      "work": "rlt",
+      "kind": "project",
+      "url": "https://www.pi.website/research/rlt"
+    },
+    {
+      "work": "omnivta",
+      "kind": "project",
+      "url": "https://mrsecant.github.io/OmniVTA/"
+    },
+    {
+      "work": "omnivta",
+      "kind": "code",
+      "url": "https://github.com/MrSecant/OmniVTA"
+    },
+    {
+      "work": "roco-aaai-2026",
+      "kind": "project",
+      "url": "https://rocochallenge.github.io/RoCo-AAAI2026/"
+    },
+    {
+      "work": "roco-aaai-2026",
+      "kind": "code",
+      "url": "https://github.com/rocochallenge/gearboxAssembly"
+    },
+    {
+      "work": "transdex",
+      "kind": "project",
+      "url": "https://transdex.github.io/"
+    },
+    {
+      "work": "transdex",
+      "kind": "code",
+      "url": "https://github.com/LFGfg/TransDex"
+    },
+    {
+      "work": "robocasa365",
+      "kind": "project",
+      "url": "https://robocasa.ai/"
+    },
+    {
+      "work": "robocasa365",
+      "kind": "code",
+      "url": "https://github.com/robocasa/robocasa"
+    },
+    {
+      "work": "manipulationnet",
+      "kind": "project",
+      "url": "https://mnet-client.readthedocs.io/ros_2/"
+    },
+    {
+      "work": "dreamzero",
+      "kind": "project",
+      "url": "https://dreamzero0.github.io/"
+    },
+    {
+      "work": "dreamzero",
+      "kind": "code",
+      "url": "https://github.com/dreamzero0/dreamzero"
+    },
+    {
+      "work": "univtac",
+      "kind": "project",
+      "url": "https://univtac.github.io/"
+    },
+    {
+      "work": "univtac",
+      "kind": "code",
+      "url": "https://github.com/univtac/UniVTAC"
+    },
+    {
+      "work": "deco",
+      "kind": "project",
+      "url": "https://baai-humanoid.github.io/DECO-webpage/"
+    },
+    {
+      "work": "deco",
+      "kind": "code",
+      "url": "https://github.com/BAAI-Humanoid/DECO"
+    },
+    {
+      "work": "rdt2",
+      "kind": "project",
+      "url": "https://rdt-robotics.github.io/rdt2/"
+    },
+    {
+      "work": "rdt2",
+      "kind": "code",
+      "url": "https://github.com/thu-ml/RDT2"
+    },
+    {
+      "work": "taf-vla",
+      "kind": "code",
+      "url": "https://github.com/mrHuangyz/TaF-VLA"
+    },
+    {
+      "work": "cosmospolicy",
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos-policy/"
+    },
+    {
+      "work": "cosmospolicy",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/cosmos-policy"
+    },
+    {
+      "work": "tac-bench",
+      "kind": "project",
+      "url": "https://peilinwu.site/tac-bench.github.io/"
+    },
+    {
+      "work": "maniskill-vitac-2026",
+      "kind": "project",
+      "url": "https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/"
+    },
+    {
+      "work": "maniskill-vitac-2026",
+      "kind": "code",
+      "url": "https://github.com/chaoyiL/ManiSkill-vitac"
+    },
+    {
+      "work": "vla-arena",
+      "kind": "project",
+      "url": "https://vla-arena.github.io/"
+    },
+    {
+      "work": "vla-arena",
+      "kind": "code",
+      "url": "https://github.com/PKU-Alignment/VLA-Arena"
+    },
+    {
+      "work": "grootn16",
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/"
+    },
+    {
+      "work": "grootn16",
+      "kind": "code",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/tree/n1.6-release"
+    },
+    {
+      "work": "pi06",
+      "kind": "project",
+      "url": "https://www.pi.website/blog/pistar06"
+    },
+    {
+      "work": "vt-refine",
+      "kind": "project",
+      "url": "https://binghao-huang.github.io/vt_refine/"
+    },
+    {
+      "work": "vt-refine",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/vt-refine"
+    },
+    {
+      "work": "rl100",
+      "kind": "project",
+      "url": "https://lei-kun.github.io/RL-100/"
+    },
+    {
+      "work": "rl100",
+      "kind": "code",
+      "url": "https://github.com/Lei-Kun/RL-100"
+    },
+    {
+      "work": "libero-plus",
+      "kind": "project",
+      "url": "https://sylvestf.github.io/LIBERO-plus/"
+    },
+    {
+      "work": "libero-plus",
+      "kind": "code",
+      "url": "https://github.com/sylvestf/LIBERO-plus"
+    },
+    {
+      "work": "farm",
+      "kind": "project",
+      "url": "https://tactile-farm.github.io/"
+    },
+    {
+      "work": "xvla",
+      "kind": "project",
+      "url": "https://thu-air-dream.github.io/X-VLA/"
+    },
+    {
+      "work": "xvla",
+      "kind": "code",
+      "url": "https://github.com/2toinf/X-VLA"
+    },
+    {
+      "work": "libero-pro",
+      "kind": "project",
+      "url": "https://zxy-mllab.github.io/LIBERO-PRO-Webpage/"
+    },
+    {
+      "work": "libero-pro",
+      "kind": "code",
+      "url": "https://github.com/Zxy-MLlab/LIBERO-PRO"
+    },
+    {
+      "work": "mla",
+      "kind": "code",
+      "url": "https://github.com/ZhuoyangLiu2005/MLA"
+    },
+    {
+      "work": "maniflow",
+      "kind": "project",
+      "url": "https://maniflow-policy.github.io/"
+    },
+    {
+      "work": "maniflow",
+      "kind": "code",
+      "url": "https://github.com/geyan21/ManiFlow_Policy"
+    },
+    {
+      "work": "geovla",
+      "kind": "project",
+      "url": "https://linsun449.github.io/GeoVLA/"
+    },
+    {
+      "work": "geovla",
+      "kind": "code",
+      "url": "https://github.com/linsun449/geovla.code"
+    },
+    {
+      "work": "vla-touch",
+      "kind": "code",
+      "url": "https://github.com/clear-nus/vla-touch"
+    },
+    {
+      "work": "robotwin2",
+      "kind": "project",
+      "url": "https://robotwin-platform.github.io/"
+    },
+    {
+      "work": "robotwin2",
+      "kind": "code",
+      "url": "https://github.com/robotwin-Platform/RoboTwin"
+    },
+    {
+      "work": "vitacformer",
+      "kind": "project",
+      "url": "https://roboverseorg.github.io/ViTacFormerPage/"
+    },
+    {
+      "work": "vitacformer",
+      "kind": "code",
+      "url": "https://github.com/RoboVerseOrg/ViTacFormer"
+    },
+    {
+      "work": "dsrl",
+      "kind": "project",
+      "url": "https://diffusion-steering.github.io/"
+    },
+    {
+      "work": "dsrl",
+      "kind": "code",
+      "url": "https://github.com/nakamotoo/dsrl_pi0"
+    },
+    {
+      "work": "vital-local",
+      "kind": "project",
+      "url": "https://vitalprecise.github.io/"
+    },
+    {
+      "work": "vital-local",
+      "kind": "code",
+      "url": "https://github.com/Exiam6/ViTaL"
+    },
+    {
+      "work": "bridgevla",
+      "kind": "project",
+      "url": "https://bridgevla.github.io/home_page.html"
+    },
+    {
+      "work": "bridgevla",
+      "kind": "code",
+      "url": "https://github.com/BridgeVLA/BridgeVLA/tree/bridgevla"
+    },
+    {
+      "work": "smolvla",
+      "kind": "project",
+      "url": "https://huggingface.co/blog/smolvla"
+    },
+    {
+      "work": "smolvla",
+      "kind": "code",
+      "url": "https://github.com/huggingface/lerobot"
+    },
+    {
+      "work": "forcevla",
+      "kind": "project",
+      "url": "https://sites.google.com/view/forcevla2025"
+    },
+    {
+      "work": "manifeel",
+      "kind": "project",
+      "url": "https://zhengtongxu.github.io/manifeel-website/"
+    },
+    {
+      "work": "manifeel",
+      "kind": "code",
+      "url": "https://github.com/purdue-mars/manifeel"
+    },
+    {
+      "work": "univla",
+      "kind": "code",
+      "url": "https://github.com/OpenDriveLab/UniVLA"
+    },
+    {
+      "work": "polytouch",
+      "kind": "project",
+      "url": "https://polytouch.alanz.info/"
+    },
+    {
+      "work": "pi05",
+      "kind": "project",
+      "url": "https://www.pi.website/blog/pi05"
+    },
+    {
+      "work": "pi05",
+      "kind": "code",
+      "url": "https://github.com/Physical-Intelligence/openpi"
+    },
+    {
+      "work": "grootn1",
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1/"
+    },
+    {
+      "work": "grootn1",
+      "kind": "code",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/tree/n1-release"
+    },
+    {
+      "work": "pointvla",
+      "kind": "project",
+      "url": "https://pointvla.github.io/"
+    },
+    {
+      "work": "rise2",
+      "kind": "project",
+      "url": "https://airexo.tech/airexo2/#rise2"
+    },
+    {
+      "work": "rise2",
+      "kind": "code",
+      "url": "https://github.com/rise-policy/RISE-2"
+    },
+    {
+      "work": "reactive-diffusion-policy",
+      "kind": "project",
+      "url": "https://reactive-diffusion-policy.github.io/"
+    },
+    {
+      "work": "reactive-diffusion-policy",
+      "kind": "code",
+      "url": "https://github.com/xiaoxiaoxh/reactive_diffusion_policy"
+    },
+    {
+      "work": "oft",
+      "kind": "project",
+      "url": "https://openvla-oft.github.io/"
+    },
+    {
+      "work": "oft",
+      "kind": "code",
+      "url": "https://github.com/moojink/openvla-oft"
+    },
+    {
+      "work": "dexvla",
+      "kind": "project",
+      "url": "https://dex-vla.github.io/"
+    },
+    {
+      "work": "dexvla",
+      "kind": "code",
+      "url": "https://github.com/juruobenruo/DexVLA"
+    },
+    {
+      "work": "reassemble",
+      "kind": "project",
+      "url": "https://tuwien-asl.github.io/REASSEMBLE_page/"
+    },
+    {
+      "work": "reassemble",
+      "kind": "code",
+      "url": "https://github.com/TUWIEN-ASL/REASSEMBLE"
+    },
+    {
+      "work": "spatialvla",
+      "kind": "project",
+      "url": "https://spatialvla.github.io/"
+    },
+    {
+      "work": "spatialvla",
+      "kind": "code",
+      "url": "https://github.com/SpatialVLA/SpatialVLA"
+    },
+    {
+      "work": "pifast",
+      "kind": "project",
+      "url": "https://www.pi.website/research/fast"
+    },
+    {
+      "work": "fuse",
+      "kind": "project",
+      "url": "https://fuse-model.github.io/"
+    },
+    {
+      "work": "fuse",
+      "kind": "code",
+      "url": "https://github.com/fuse-model/FuSe"
+    },
+    {
+      "work": "vtdexmanip",
+      "kind": "project",
+      "url": "https://lqts.github.io/VTDexManip/"
+    },
+    {
+      "work": "vtdexmanip",
+      "kind": "code",
+      "url": "https://github.com/LQTS/VTDexManip"
+    },
+    {
+      "work": "maniskill-vitac-2025",
+      "kind": "project",
+      "url": "https://ai-workshops.github.io/maniskill-vitac-challenge-2025/"
+    },
+    {
+      "work": "maniskill-vitac-2025",
+      "kind": "code",
+      "url": "https://github.com/cyliizyz/ManiSkill-ViTac2025"
+    },
+    {
+      "work": "tacex",
+      "kind": "project",
+      "url": "https://github.com/DH-Ng/TacEx"
+    },
+    {
+      "work": "pi0",
+      "kind": "project",
+      "url": "https://www.pi.website/blog/pi0"
+    },
+    {
+      "work": "sparsh",
+      "kind": "project",
+      "url": "https://sparsh-ssl.github.io/"
+    },
+    {
+      "work": "sparsh",
+      "kind": "code",
+      "url": "https://github.com/facebookresearch/sparsh"
+    },
+    {
+      "work": "3d-vitac",
+      "kind": "project",
+      "url": "https://binghao-huang.github.io/3D-ViTac/"
+    },
+    {
+      "work": "3d-vitac",
+      "kind": "code",
+      "url": "https://github.com/binghao-huang/3d-vitac-training-code"
+    },
+    {
+      "work": "hilserl",
+      "kind": "project",
+      "url": "https://hil-serl.github.io/"
+    },
+    {
+      "work": "hilserl",
+      "kind": "code",
+      "url": "https://github.com/rail-berkeley/hil-serl"
+    },
+    {
+      "work": "gendp",
+      "kind": "project",
+      "url": "https://robopil.github.io/GenDP/"
+    },
+    {
+      "work": "gendp",
+      "kind": "code",
+      "url": "https://github.com/WangYixuan12/gendp"
+    },
+    {
+      "work": "visk",
+      "kind": "project",
+      "url": "https://visuoskin.github.io/"
+    },
+    {
+      "work": "visk",
+      "kind": "code",
+      "url": "https://github.com/raunaqbhirangi/visuoskin"
+    },
+    {
+      "work": "idp3",
+      "kind": "project",
+      "url": "https://humanoid-manipulation.github.io/"
+    },
+    {
+      "work": "idp3",
+      "kind": "code",
+      "url": "https://github.com/YanjieZe/Improved-3D-Diffusion-Policy"
+    },
+    {
+      "work": "rdt",
+      "kind": "project",
+      "url": "https://rdt-robotics.github.io/rdt-robotics/"
+    },
+    {
+      "work": "rdt",
+      "kind": "code",
+      "url": "https://github.com/thu-ml/RoboticsDiffusionTransformer"
+    },
+    {
+      "work": "maniskill3",
+      "kind": "project",
+      "url": "https://maniskill.ai/"
+    },
+    {
+      "work": "maniskill3",
+      "kind": "code",
+      "url": "https://github.com/mani-skill/ManiSkill"
+    },
+    {
+      "work": "tacdiffusion",
+      "kind": "code",
+      "url": "https://github.com/popnut123/TacDiffusion"
+    },
+    {
+      "work": "dppo",
+      "kind": "project",
+      "url": "https://diffusion-ppo.github.io/"
+    },
+    {
+      "work": "dppo",
+      "kind": "code",
+      "url": "https://github.com/irom-princeton/dppo"
+    },
+    {
+      "work": "tacsl",
+      "kind": "project",
+      "url": "https://iakinola23.github.io/tacsl/"
+    },
+    {
+      "work": "tacsl",
+      "kind": "code",
+      "url": "https://github.com/isaac-sim/IsaacLab"
+    },
+    {
+      "work": "tactile-skin-translation",
+      "kind": "project",
+      "url": "https://jessicayin.github.io/tactile-skin-rl/"
+    },
+    {
+      "work": "tactile-skin-translation",
+      "kind": "code",
+      "url": "https://github.com/jessicayin/tactile_skin_model"
+    },
+    {
+      "work": "automate",
+      "kind": "project",
+      "url": "https://bingjietang718.github.io/automate/"
+    },
+    {
+      "work": "automate",
+      "kind": "code",
+      "url": "https://github.com/isaac-sim/IsaacGymEnvs"
+    },
+    {
+      "work": "equibot",
+      "kind": "project",
+      "url": "https://equi-bot.github.io/"
+    },
+    {
+      "work": "equibot",
+      "kind": "code",
+      "url": "https://github.com/yjy0625/equibot"
+    },
+    {
+      "work": "openvla",
+      "kind": "project",
+      "url": "https://openvla.github.io/"
+    },
+    {
+      "work": "openvla",
+      "kind": "code",
+      "url": "https://github.com/openvla/openvla"
+    },
+    {
+      "work": "rvt2",
+      "kind": "project",
+      "url": "https://robotic-view-transformer-2.github.io/"
+    },
+    {
+      "work": "rvt2",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/RVT"
+    },
+    {
+      "work": "octo",
+      "kind": "project",
+      "url": "https://octo-models.github.io/"
+    },
+    {
+      "work": "octo",
+      "kind": "code",
+      "url": "https://github.com/octo-models/octo"
+    },
+    {
+      "work": "anyrotate",
+      "kind": "project",
+      "url": "https://maxyang27896.github.io/anyrotate/"
+    },
+    {
+      "work": "hato",
+      "kind": "project",
+      "url": "https://toruowo.github.io/hato/"
+    },
+    {
+      "work": "hato",
+      "kind": "code",
+      "url": "https://github.com/ToruOwO/hato"
+    },
+    {
+      "work": "rise",
+      "kind": "project",
+      "url": "https://rise-policy.github.io/"
+    },
+    {
+      "work": "rise",
+      "kind": "code",
+      "url": "https://github.com/rise-policy/RISE"
+    },
+    {
+      "work": "vital-pretraining",
+      "kind": "project",
+      "url": "https://sites.google.com/andrew.cmu.edu/visuo-tactile-pretraining"
+    },
+    {
+      "work": "vital-pretraining",
+      "kind": "code",
+      "url": "https://github.com/Abraham190137/TactileACT"
+    },
+    {
+      "work": "dp3",
+      "kind": "project",
+      "url": "https://3d-diffusion-policy.github.io/"
+    },
+    {
+      "work": "dp3",
+      "kind": "code",
+      "url": "https://github.com/YanjieZe/3D-Diffusion-Policy"
+    },
+    {
+      "work": "3dda",
+      "kind": "project",
+      "url": "https://3d-diffuser-actor.github.io/"
+    },
+    {
+      "work": "3dda",
+      "kind": "code",
+      "url": "https://github.com/nickgkan/3d_diffuser_actor"
+    },
+    {
+      "work": "colosseum",
+      "kind": "project",
+      "url": "https://robot-colosseum.github.io/"
+    },
+    {
+      "work": "colosseum",
+      "kind": "code",
+      "url": "https://github.com/robot-colosseum/robot-colosseum"
+    },
+    {
+      "work": "serl",
+      "kind": "project",
+      "url": "https://serl-robot.github.io/"
+    },
+    {
+      "work": "serl",
+      "kind": "code",
+      "url": "https://github.com/rail-berkeley/serl"
+    },
+    {
+      "work": "fmb",
+      "kind": "project",
+      "url": "https://functional-manipulation-benchmark.github.io/"
+    },
+    {
+      "work": "fmb",
+      "kind": "code",
+      "url": "https://github.com/rail-berkeley/fmb"
+    },
+    {
+      "work": "mimictouch",
+      "kind": "project",
+      "url": "https://sites.google.com/view/MimicTouch"
+    },
+    {
+      "work": "polarnet",
+      "kind": "project",
+      "url": "https://www.di.ens.fr/willow/research/polarnet/"
+    },
+    {
+      "work": "polarnet",
+      "kind": "code",
+      "url": "https://github.com/vlc-robot/polarnet"
+    },
+    {
+      "work": "see-to-touch",
+      "kind": "project",
+      "url": "https://see-to-touch.github.io/"
+    },
+    {
+      "work": "see-to-touch",
+      "kind": "code",
+      "url": "https://github.com/irmakguzey/see-to-touch"
+    },
+    {
+      "work": "rotateit",
+      "kind": "project",
+      "url": "https://haozhi.io/rotateit/"
+    },
+    {
+      "work": "gnfactor",
+      "kind": "project",
+      "url": "https://yanjieze.com/GNFactor/"
+    },
+    {
+      "work": "gnfactor",
+      "kind": "code",
+      "url": "https://github.com/YanjieZe/GNFactor"
+    },
+    {
+      "work": "act3d",
+      "kind": "project",
+      "url": "https://act3d.github.io/"
+    },
+    {
+      "work": "rvt",
+      "kind": "project",
+      "url": "https://robotic-view-transformer.github.io/"
+    },
+    {
+      "work": "libero",
+      "kind": "project",
+      "url": "https://libero-project.github.io/"
+    },
+    {
+      "work": "libero",
+      "kind": "code",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO"
+    },
+    {
+      "work": "industreal",
+      "kind": "project",
+      "url": "https://sites.google.com/nvidia.com/industreal"
+    },
+    {
+      "work": "industreal",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/industreallib"
+    },
+    {
+      "work": "furniturebench",
+      "kind": "project",
+      "url": "https://clvrai.github.io/furniture-bench/"
+    },
+    {
+      "work": "furniturebench",
+      "kind": "code",
+      "url": "https://github.com/clvrai/furniture-bench"
+    },
+    {
+      "work": "ramp",
+      "kind": "project",
+      "url": "https://sites.google.com/oxfordrobotics.institute/ramp"
+    },
+    {
+      "work": "ramp",
+      "kind": "code",
+      "url": "https://github.com/applied-ai-lab/ramp-sim"
+    },
+    {
+      "work": "dexart",
+      "kind": "project",
+      "url": "https://www.chenbao.tech/dexart/"
+    },
+    {
+      "work": "dexart",
+      "kind": "code",
+      "url": "https://github.com/Kami-code/dexart-release"
+    },
+    {
+      "work": "act",
+      "kind": "project",
+      "url": "https://tonyzhaozh.github.io/aloha/"
+    },
+    {
+      "work": "act",
+      "kind": "code",
+      "url": "https://github.com/tonyzhaozh/act"
+    },
+    {
+      "work": "rotating-without-seeing",
+      "kind": "project",
+      "url": "https://touchdexterity.github.io/"
+    },
+    {
+      "work": "rotating-without-seeing",
+      "kind": "code",
+      "url": "https://github.com/YingYuan0414/in-hand-rotation"
+    },
+    {
+      "work": "dp",
+      "kind": "project",
+      "url": "https://diffusion-policy.cs.columbia.edu/"
+    },
+    {
+      "work": "dp",
+      "kind": "code",
+      "url": "https://github.com/real-stanford/diffusion_policy"
+    },
+    {
+      "work": "peract",
+      "kind": "project",
+      "url": "https://peract.github.io/"
+    },
+    {
+      "work": "peract",
+      "kind": "code",
+      "url": "https://github.com/peract/peract"
+    },
+    {
+      "work": "tactilegym2",
+      "kind": "code",
+      "url": "https://github.com/NICESONY/tactile_gym_2"
+    },
+    {
+      "work": "bi-dexhands",
+      "kind": "project",
+      "url": "https://pku-marl.github.io/DexterousHands/"
+    },
+    {
+      "work": "bi-dexhands",
+      "kind": "code",
+      "url": "https://github.com/PKU-MARL/DexterousHands"
+    },
+    {
+      "work": "factory",
+      "kind": "project",
+      "url": "https://sites.google.com/nvidia.com/factory"
+    },
+    {
+      "work": "taxim",
+      "kind": "code",
+      "url": "https://github.com/Robo-Touch/Taxim"
+    },
+    {
+      "work": "tacto",
+      "kind": "code",
+      "url": "https://github.com/facebookresearch/tacto"
+    },
+    {
+      "work": "rlbench",
+      "kind": "project",
+      "url": "https://sites.google.com/view/rlbench"
+    },
+    {
+      "work": "rlbench",
+      "kind": "code",
+      "url": "https://github.com/stepjam/RLBench"
+    },
+    {
+      "work": "nist-assembly-task-boards",
+      "kind": "project",
+      "url": "https://www.nist.gov/el/intelligent-systems-division-73500/robotic-grasping-and-manipulation-assembly/assembly"
+    },
+    {
+      "work": "t-wla",
+      "kind": "project",
+      "url": "https://anonymous-submission-20.github.io/T-WLA2.github.io/"
+    }
+  ]
+}
