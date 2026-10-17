@@ -12,6 +12,10 @@ Vision Pretraining for Dense Spatial Perception
 
 Boundary-centric visual pretraining improves dense spatial representations and the LingBot-Depth2 completion backbone.
 
+<img src="../../../website/public/images/catalog/missing-lingbot-vision-depth2-policy.webp" width="760" alt="Four panels illustrating image patches, random masking, boundary-forcing masks and the boundary-field target used for LingBot-Vision pretraining."/>
+
+*Zelin Fu et al., Vision Pretraining for Dense Spatial Perception, Figure 2. Original rights retained. · [Figure source](https://arxiv.org/abs/2607.05247) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | model |

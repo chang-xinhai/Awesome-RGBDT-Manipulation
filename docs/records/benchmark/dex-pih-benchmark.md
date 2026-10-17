@@ -12,6 +12,12 @@ A Simulation Benchmark for Dexterous Peg-in-Hole Assembly With Force-Tactile-Bas
 
 Dexterous insertion across four arms, two hands and ten geometries, using idealized wrist/fingertip wrenches and a learned pose-estimation baseline.
 
+<img src="../../../website/public/images/catalog/dex-pih-benchmark-benchmark.webp" width="760" alt="Published abstract excerpt describing the DexPiH Isaac Gym alignment and insertion benchmark."/>
+
+*Joosoon Lee and Kyoobin Lee, official GIST institutional abstract. Typography by this catalog. · [Figure source](https://scholar.gist.ac.kr/handle/local/34384) · Original rights retained.*
+
+**Preview scope:** Official abstract excerpt, with an adjacent paraphrase of its scope. The paper’s geometry figure could not be retrieved (IEEE HTTP 418; author-uploaded copy HTTP 403). This is a source-text preview, not Figure 3 or a reconstructed task diagram.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | benchmark |

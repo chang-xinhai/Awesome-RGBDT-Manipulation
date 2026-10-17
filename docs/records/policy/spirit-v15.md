@@ -12,6 +12,10 @@ Spirit-v1.5: Clean Data Is the Enemy of Great Robot Foundation Models
 
 Uses diverse, uncontrolled robot interaction data with a Qwen-based diffusion-transformer controller.
 
+<img src="../../../website/public/images/catalog/spirit-v15-official-overview.webp" width="760" alt="Spirit-v1.5 official data-collection schematic contrasting a curated path and diverse recovery pathways."/>
+
+*Spirit AI · [Figure source](https://www.spirit-ai.com/en/blog/spirit-v1-5) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

@@ -12,6 +12,10 @@ World Models for Robotic Manipulation: A Survey
 
 A manipulation-focused review organizes world models by predicted representation, action interface and learning lifecycle.
 
+<img src="../../../website/public/images/catalog/missing-wm-manipulation-survey-policy.webp" width="760" alt="Survey framework relating predicted representations, the predictive core, action interfaces, infrastructure roles and learning stages."/>
+
+*Fangyuan Wang et al., World Models for Robotic Manipulation: A Survey, Figure 1 (arXiv v1). Original rights retained. · [Figure source](https://arxiv.org/html/2606.00113v1#S2.F1) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | Survey |

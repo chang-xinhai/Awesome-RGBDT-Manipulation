@@ -79,6 +79,7 @@ for c,heading in [('benchmark','Benchmarks'),('policy','Policies')]:
    lines += [f'<a id="record-{c}-{w["id"]}"></a>','<details>',f'<summary><strong>{clean(name(w,c))}</strong> — {clean(w["title"])}</summary>','',f'**{w["date"]or"Undated"} · {clean(w["venue"])} · {clean(w["institution"])}**','',artifact_markdown(w),'',clean(w.get(c+'Summary',w['summary'])),'']
    f=media.get(w['id'],{}).get(c)
    if f:lines += [f'<img src="website/public{f["path"]}" width="760" alt="{clean(f["alt"])}"/>','',f'*{clean(f["credit"])} · [Figure source]({f["page"]}) · Original rights retained.*','']
+   if f and f.get('kind')in ['implementation-preview','source-excerpt']and f.get('note'):lines += [f'**Preview scope:** {clean(f["note"])}','']
    lines+=['| Field | Reported value and source scope |','| :-- | :-- |']
    lines.append(f'| Record type | {record_type(w,c)} |')
    for k,l in (SURVEY if w.get('survey')else BENCH if c=='benchmark'else MODEL if w.get('model')else POLICY):lines.append(f'| {l} | {clean(obj.get(k,"Not reported"))}{sources(w,prefix+"."+k)} |')

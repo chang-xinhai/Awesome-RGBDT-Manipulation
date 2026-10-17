@@ -12,6 +12,10 @@ Learning Tactile Insertion in the Real World
 
 Dreamer-v 3 learns a tactile insertion controller from scratch directly on a physical robot.
 
+<img src="../../../website/public/images/catalog/dreamer-tactile-insertion-overview.webp" width="760" alt="Dreamer tactile-insertion platform showing the robot, GelSight sensor, peg and automated reset apparatus."/>
+
+*Daniel Palenicek et al., Learning Tactile Insertion in the Real World, Figure 1 (arXiv v2). Original rights retained. · [Figure source](https://arxiv.org/abs/2405.00383) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

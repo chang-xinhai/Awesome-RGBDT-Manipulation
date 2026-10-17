@@ -9985,5 +9985,273 @@
       "height": 599,
       "note": "Original Figure3 shows the predictive/reranking component; a separate frozen π0.5 produces candidate actions."
     }
+  },
+  "kinematic-intelligence": {
+    "policy": {
+      "path": "/images/catalog/kinematic-intelligence-policy.webp",
+      "original": "https://sthithpragya.com/assets/transfer-experiments.jpg",
+      "page": "https://sthithpragya.com/projects/kinematic-intelligence/",
+      "credit": "Sthithpragya Gupta, Durgesh H. Salunkhe and Aude Billard / LASA, EPFL",
+      "alt": "Author project overview of demonstrated task stages, robot embodiments and cross-robot transfer experiments.",
+      "kind": "system-overview",
+      "reviewed": "2026-10-17",
+      "width": 1221,
+      "height": 1400,
+      "note": "Official project experiment overview, showing the behaviour–embodiment transfer setting; this is not a neural architecture diagram.",
+      "sourceSha256": "7ebd9a2736d2e5e745a8463f7b4a8b587c1c75d0183a878b9a45b75e8f92b34f"
+    }
+  },
+  "gen-1-5": {
+    "policy": {
+      "path": "/images/catalog/gen-1-5-policy.webp",
+      "original": "https://generalistai.com/blog/gen-1.5",
+      "page": "https://generalistai.com/blog/gen-1.5",
+      "credit": "Generalist Team, GEN-1.5 official research release, Figure 1",
+      "alt": "Official one-shot learning illustration comparing language examples and a sensorimotor physical prompt for GEN-1.5.",
+      "kind": "interaction-overview",
+      "reviewed": "2026-10-17",
+      "width": 1050,
+      "height": 771,
+      "note": "Static capture of the author’s interactive Figure 1 at a human-demonstration frame. It illustrates physical prompting; the release does not publish a full network architecture.",
+      "sourceSha256": "421a0800e5e762c28c14326048e08cba060c81ab54d54522c29b16b0983437f3"
+    }
+  },
+  "wm-manipulation-survey": {
+    "policy": {
+      "path": "/images/catalog/missing-wm-manipulation-survey-policy.webp",
+      "original": "https://arxiv.org/html/2606.00113v1/organization.png",
+      "page": "https://arxiv.org/html/2606.00113v1#S2.F1",
+      "credit": "Fangyuan Wang et al., World Models for Robotic Manipulation: A Survey, Figure 1 (arXiv v1). Original rights retained.",
+      "alt": "Survey framework relating predicted representations, the predictive core, action interfaces, infrastructure roles and learning stages.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 917,
+      "note": "Author figure from the arXiv v1 preprint of the same survey; the Wiley journal article is the later version. Figure icons are author-provided schematic markers.",
+      "sourceSha256": "09618586fbe08e910ed27fad4509ae3ff9edb84756c9adfa93144ed4e792b6ae"
+    }
+  },
+  "lingbot-vision-depth2": {
+    "policy": {
+      "path": "/images/catalog/missing-lingbot-vision-depth2-policy.webp",
+      "original": "https://raw.githubusercontent.com/Robbyant/lingbot-vision/main/paper.pdf",
+      "page": "https://arxiv.org/abs/2607.05247",
+      "credit": "Zelin Fu et al., Vision Pretraining for Dense Spatial Perception, Figure 2. Original rights retained.",
+      "alt": "Four panels illustrating image patches, random masking, boundary-forcing masks and the boundary-field target used for LingBot-Vision pretraining.",
+      "kind": "representation-overview",
+      "reviewed": "2026-10-17",
+      "width": 1434,
+      "height": 351,
+      "note": "Paper Figure 2 illustrates the boundary-centric masking objective. It is a representation-learning concept figure, not a complete architecture diagram or the LingBot-Depth 2.0 inference pipeline.",
+      "sourceSha256": "b0a50771d874865dee9aae5b58171dd080b5afde0fa61d575259a6b1ee898908"
+    }
+  },
+  "vitamin-b": {
+    "policy": {
+      "path": "/images/catalog/vitamin-b-overview.webp",
+      "original": "https://arxiv.org/pdf/2511.05858",
+      "page": "https://arxiv.org/abs/2511.05858",
+      "credit": "Chuanyu Li et al., ViTaMIn-B, Figure 1 (arXiv v2). Original rights retained.",
+      "alt": "ViTaMIn-B data-collection interface, diffusion-policy network, and bimanual deployment.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 714,
+      "note": "Paper v2, Figure 1. Original figure includes the multimodal observations, DINO/PointNet encoders and diffusion policy.",
+      "sourceSha256": "58282a0c5aa3f23102340f6c54fe853faab5d3462bf72a3177dcdef356363701"
+    }
+  },
+  "dreamer-tactile-insertion": {
+    "policy": {
+      "path": "/images/catalog/dreamer-tactile-insertion-overview.webp",
+      "original": "https://arxiv.org/pdf/2405.00383",
+      "page": "https://arxiv.org/abs/2405.00383",
+      "credit": "Daniel Palenicek et al., Learning Tactile Insertion in the Real World, Figure 1 (arXiv v2). Original rights retained.",
+      "alt": "Dreamer tactile-insertion platform showing the robot, GelSight sensor, peg and automated reset apparatus.",
+      "kind": "system-overview",
+      "reviewed": "2026-10-17",
+      "width": 980,
+      "height": 860,
+      "note": "Paper v2, Figure 1: experimental platform overview. The paper does not provide a complete Dreamer network diagram.",
+      "sourceSha256": "5224479d43644091408bbc6c99ee87c75a86ceea3c13333ac598e2d548cd194f"
+    }
+  },
+  "dexop": {
+    "policy": {
+      "path": "/images/catalog/dexop-overview.webp",
+      "original": "https://arxiv.org/pdf/2509.04441",
+      "page": "https://arxiv.org/abs/2509.04441",
+      "credit": "Hao-Shu Fang et al., DEXOP, Figure 1 (arXiv v2). Original rights retained.",
+      "alt": "DEXOP passive-exoskeleton system and transfer from contact-rich human demonstrations to robotic manipulation.",
+      "kind": "system-overview",
+      "reviewed": "2026-10-17",
+      "width": 1584,
+      "height": 680,
+      "note": "Paper v2, Figure 1: perioperation and robotic-transfer system overview; not a detailed learned-policy network diagram.",
+      "sourceSha256": "c810ae9e596987bb9757193136dbe15766aafe89a4c2617a276362072b56b80d"
+    }
+  },
+  "vision-foundations-for-touch": {
+    "policy": {
+      "path": "/images/catalog/vision-foundations-for-touch-overview.webp",
+      "original": "https://arxiv.org/pdf/2305.00596",
+      "page": "https://arxiv.org/abs/2305.00596",
+      "credit": "Ben Zandonati et al., Investigating Vision Foundational Models for Tactile Representation Learning, Figure 2. Original rights retained.",
+      "alt": "Tactile time-series signals are arranged into an image representation for a pretrained vision encoder.",
+      "kind": "representation-overview",
+      "reviewed": "2026-10-17",
+      "width": 404,
+      "height": 368,
+      "note": "Paper PDF Figure 2: tactile-image input construction, rather than a complete ResNet architecture.",
+      "sourceSha256": "5e211efa0da877dc39371d1bc4576ca7fa95667f506d638bfd291b8f0a124d6f"
+    }
+  },
+  "mg-vqa": {
+    "policy": {
+      "path": "/images/catalog/mg-vqa-rollout.webp",
+      "original": "https://arxiv.org/html/2608.17129v3/figures/astra_vs_gemini_example_v1.png",
+      "page": "https://arxiv.org/html/2608.17129v3#S4.F4",
+      "credit": "Vineet Bhat et al., MG-VQA, Figure 4 (arXiv v3). Original rights retained.",
+      "alt": "MG-VQA agent action sequences comparing early termination with persistent manipulation and renewed observation.",
+      "kind": "agent-rollout",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 644,
+      "note": "Figure 4 illustrates observed tool-using agent rollouts. It is not a neural architecture diagram.",
+      "sourceSha256": "81f7f1fc13aadf32b21ca57ac6b654247e3613bb26c60c92777cf149e947f792"
+    }
+  },
+  "awomo05": {
+    "policy": {
+      "path": "/images/catalog/awomo05-implementation-preview.webp",
+      "original": "https://raw.githubusercontent.com/Awomo-WestlakeDI/Awomo-0.5/d22dda9aae0f9ae8096e95580a140a784a17b513/awomo/awomo_05i/model.py",
+      "page": "https://github.com/Awomo-WestlakeDI/Awomo-0.5/blob/d22dda9aae0f9ae8096e95580a140a784a17b513/awomo/awomo_05i/model.py#L65-L81",
+      "credit": "Awomo-WAM Team",
+      "alt": "Awomo-0.5I action-patch implementation excerpt, showing the released transformer and proprioception interface.",
+      "kind": "implementation-preview",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 935,
+      "sourceSha256": "2ae7ca54e1a871b74ddd6e5ae564914e222e0a0483235bed3fd8d0f0d2bdf050",
+      "note": "Exact contiguous source excerpt (lines 65–81), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors."
+    }
+  },
+  "simate-beta": {
+    "policy": {
+      "path": "/images/catalog/simate-beta-implementation-preview.webp",
+      "original": "https://raw.githubusercontent.com/XPolicyLab/XPolicyLab/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Simate_beta/network.py",
+      "page": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Simate_beta/network.py#L95-L106",
+      "credit": "SIPAILab / XPolicyLab contributors",
+      "alt": "Simate-beta inference source excerpt connecting the prefix network and action head.",
+      "kind": "implementation-preview",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 737,
+      "sourceSha256": "b840df554cd1ae855df1d916beac010f863b3b6380879f17b66c800c447f282d",
+      "note": "Exact contiguous source excerpt (lines 95–106), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors."
+    }
+  },
+  "liber0-lite": {
+    "policy": {
+      "path": "/images/catalog/liber0-lite-implementation-preview.webp",
+      "original": "https://raw.githubusercontent.com/XPolicyLab/XPolicyLab/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_lite/liber0/runtime.py",
+      "page": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_lite/liber0/runtime.py#L42-L53",
+      "credit": "LiberAI / XPolicyLab contributors",
+      "alt": "Liber0-Lite inference source excerpt showing RGB views, robot state, instruction conditioning and action-chunk generation.",
+      "kind": "implementation-preview",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 894,
+      "sourceSha256": "8aef9b16c4b3f59ab1be8db29892af68a296ca25d12916beceeab7c6cf264eef",
+      "note": "Exact contiguous source excerpt (lines 42–53), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors."
+    }
+  },
+  "mm-abc": {
+    "policy": {
+      "path": "/images/catalog/mm-abc-implementation-preview.webp",
+      "original": "https://raw.githubusercontent.com/XPolicyLab/XPolicyLab/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/MM_ABC/MM_ABC/README.md",
+      "page": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/MM_ABC/MM_ABC/README.md#L177-L183",
+      "credit": "MM-ABC / XPolicyLab contributors",
+      "alt": "MM-ABC official README inference example showing observation adaptation, policy execution and action decoding.",
+      "kind": "implementation-preview",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 540,
+      "sourceSha256": "60419289727612ffd618a2e6df7f2d72345d5a43573bea657fd61746a9e4d396",
+      "note": "Exact contiguous source excerpt (lines 177–183), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors."
+    }
+  },
+  "spirit-v15": {
+    "policy": {
+      "path": "/images/catalog/spirit-v15-official-overview.webp",
+      "original": "https://www.spirit-ai.com/blog/images/blogs/spirit-v1-5/figure1.png",
+      "page": "https://www.spirit-ai.com/en/blog/spirit-v1-5",
+      "credit": "Spirit AI",
+      "alt": "Spirit-v1.5 official data-collection schematic contrasting a curated path and diverse recovery pathways.",
+      "kind": "data-collection-process",
+      "reviewed": "2026-10-17",
+      "width": 1607,
+      "height": 1800,
+      "note": "Official technical blog Figure 1: training-data collection pathways, not a complete model architecture. Original figure rights remain with Spirit AI.",
+      "sourceSha256": "2e9d9c3dc972bfb145ad13c0a142bf31ed66bc4270173dba62cb9dd2bb702b4d"
+    }
+  },
+  "skild-s1": {
+    "policy": {
+      "path": "/images/catalog/skild-s1-official-overview.webp",
+      "original": "https://www.skild.ai/blogs/s1#fig-seq",
+      "page": "https://www.skild.ai/blogs/s1",
+      "credit": "Skild AI",
+      "alt": "Official S1 conceptual pipeline: an in-context video demonstration conditions robot behavior in a different embodiment and scene.",
+      "kind": "conceptual-pipeline",
+      "reviewed": "2026-10-17",
+      "width": 888,
+      "height": 566,
+      "note": "Static capture of the official interactive Figure 2, preserving its video-prompt and robot-execution panels. This is a conceptual input/output illustration, not a layer-by-layer architecture. Original figure rights remain with Skild AI.",
+      "sourceSha256": "7e5cdd276f1a3c1cd58363db54e5c465d081ca67b7508366a00bc87ae45deb97"
+    }
+  },
+  "knowin-glow": {
+    "policy": {
+      "path": "/images/catalog/knowin-glow-official-overview.webp",
+      "original": "https://www.knowinai.com/assets/technology/glow-v87/resources/pages/diagram-01.html?v=20260924-mobile-1",
+      "page": "https://www.knowinai.com/tech.html",
+      "credit": "KNOWIN",
+      "alt": "Official GLOW system architecture linking experience generation, KnowinGLOW, world rollouts and the KnowinAgent runtime.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 806,
+      "note": "Static capture of the official HTML/SVG GLOW System Architecture diagram; black outer page padding trimmed. Original diagram rights remain with KNOWIN.",
+      "sourceSha256": "08806f849bd883ef10b460fa3ffac212096a0ff8f6c075264f2f6a5a1412c7ee"
+    }
+  },
+  "manipulation-icl-survey": {
+    "policy": {
+      "path": "/images/catalog/manipulation-icl-survey-policy.webp",
+      "original": "https://www.preprints.org/manuscript/202609.0780/v1/download",
+      "page": "https://www.preprints.org/manuscript/202609.0780/v1/download",
+      "credit": "Wenhao Li, Figure 1 text, Preprints.org 202609.0780v1; CC BY 4.0. Typography adapted by this catalog.",
+      "alt": "Readable transcription of the survey author’s four-axis comparison of ICRT and IGA.",
+      "kind": "source-excerpt",
+      "reviewed": "2026-10-17",
+      "width": 1400,
+      "height": 896,
+      "note": "Text transcription of the author’s Figure 1, preserving its classification example. The original image download returned HTTP 403; this preview does not reproduce its artwork or introduce a new framework."
+    }
+  },
+  "dex-pih-benchmark": {
+    "benchmark": {
+      "path": "/images/catalog/dex-pih-benchmark-benchmark.webp",
+      "original": "https://scholar.gist.ac.kr/handle/local/34384",
+      "page": "https://scholar.gist.ac.kr/handle/local/34384",
+      "credit": "Joosoon Lee and Kyoobin Lee, official GIST institutional abstract. Typography by this catalog.",
+      "alt": "Published abstract excerpt describing the DexPiH Isaac Gym alignment and insertion benchmark.",
+      "kind": "source-excerpt",
+      "reviewed": "2026-10-17",
+      "width": 1400,
+      "height": 560,
+      "note": "Official abstract excerpt, with an adjacent paraphrase of its scope. The paper’s geometry figure could not be retrieved (IEEE HTTP 418; author-uploaded copy HTTP 403). This is a source-text preview, not Figure 3 or a reconstructed task diagram."
+    }
   }
 }

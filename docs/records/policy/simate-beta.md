@@ -12,6 +12,12 @@ Simate-beta AE memory policy
 
 Provides an author-contributed inference-only memory policy with compressed history tokens and a released RoboDojo checkpoint.
 
+<img src="../../../website/public/images/catalog/simate-beta-implementation-preview.webp" width="760" alt="Simate-beta inference source excerpt connecting the prefix network and action head."/>
+
+*SIPAILab / XPolicyLab contributors · [Figure source](https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Simate_beta/network.py#L95-L106) · Original rights retained.*
+
+**Preview scope:** Exact contiguous source excerpt (lines 95–106), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

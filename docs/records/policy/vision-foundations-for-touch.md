@@ -12,6 +12,10 @@ Investigating Vision Foundational Models for Tactile Representation Learning
 
 Transforms heterogeneous tactile readings into image-like representations so a common pretrained visual backbone can learn touch tasks across sensor designs.
 
+<img src="../../../website/public/images/catalog/vision-foundations-for-touch-overview.webp" width="760" alt="Tactile time-series signals are arranged into an image representation for a pretrained vision encoder."/>
+
+*Ben Zandonati et al., Investigating Vision Foundational Models for Tactile Representation Learning, Figure 2. Original rights retained. · [Figure source](https://arxiv.org/abs/2305.00596) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | model |

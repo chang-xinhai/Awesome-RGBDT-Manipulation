@@ -12,6 +12,12 @@ In-Context Learning from Demonstrations for Robotic Manipulation: A Survey
 
 A targeted review comparing what demonstrations supply, what methods infer and what manipulation-transfer experiments establish.
 
+<img src="../../../website/public/images/catalog/manipulation-icl-survey-policy.webp" width="760" alt="Readable transcription of the survey author’s four-axis comparison of ICRT and IGA."/>
+
+*Wenhao Li, Figure 1 text, Preprints.org 202609.0780v1; CC BY 4.0. Typography adapted by this catalog. · [Figure source](https://www.preprints.org/manuscript/202609.0780/v1/download) · Original rights retained.*
+
+**Preview scope:** Text transcription of the author’s Figure 1, preserving its classification example. The original image download returned HTTP 403; this preview does not reproduce its artwork or introduce a new framework.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | Survey |

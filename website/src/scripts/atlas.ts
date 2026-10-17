@@ -430,6 +430,29 @@ function switchCollection(next: Collection) {
 function caption(f: Figure) {
   return `<p class="figure-caption">${esc(f.kind.replaceAll("-", " "))} · ${esc(f.credit)}<br>${external(f.page, "Figure source ↗")} · Original rights retained.${f.note ? `<span class="figure-note">${esc(f.note)}</span>` : ""}</p>`;
 }
+function figureLabel(w: Work, f: Figure) {
+  const specific: Record<string, string> = {
+    "implementation-preview": "Published implementation interface",
+    "system-overview": "Author system overview",
+    "representation-overview": "Representation learning overview",
+    "agent-rollout": "Author agent execution example",
+    "interaction-overview": "In-context prompting interface",
+    "data-pipeline": "Data collection & learning pipeline",
+    "data-collection-process": "Author data collection process",
+    "conceptual-pipeline": "Author conceptual pipeline",
+    "source-excerpt": "Published source text preview",
+  };
+  return (
+    specific[f.kind] ??
+    (w.survey
+      ? "Survey taxonomy & conceptual framework"
+      : collection === "benchmark"
+        ? "Task coverage & benchmark overview"
+        : w.model
+          ? "Model architecture & representation pipeline"
+          : "Policy architecture & pipeline")
+  );
+}
 function tasksHtml(w: Work) {
   const b = w.benchmark;
   if (!b) return "";
@@ -558,7 +581,7 @@ function openDetail(id: string, restore = false) {
         ? `<details class="detail-secondary"><summary>Benchmark introduced in this work</summary>${benchmarkSections(w)}</details>`
         : "";
   $("detail-content").innerHTML =
-    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${w.survey ? "Survey taxonomy & conceptual framework" : collection === "benchmark" ? "Task coverage & benchmark overview" : w.model ? "Model architecture & representation pipeline" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
+    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${esc(figureLabel(w, f))}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
       w,
       "",
       w.survey

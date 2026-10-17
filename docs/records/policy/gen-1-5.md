@@ -12,6 +12,10 @@ GEN-1.5: Embodied Foundation Models are One-Shot Learners
 
 A robot foundation model uses sensorimotor demonstrations as physical prompts, with separate one-shot frozen-context and few-gradient-step adaptation conditions.
 
+<img src="../../../website/public/images/catalog/gen-1-5-policy.webp" width="760" alt="Official one-shot learning illustration comparing language examples and a sensorimotor physical prompt for GEN-1.5."/>
+
+*Generalist Team, GEN-1.5 official research release, Figure 1 · [Figure source](https://generalistai.com/blog/gen-1.5) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

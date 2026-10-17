@@ -12,6 +12,10 @@ GLOW: A Generative Learning Framework for General-Purpose Embodied Intelligence
 
 An author-reported embodied system combines multimodal autoregressive actions, physical-experience generation and contextual robot execution.
 
+<img src="../../../website/public/images/catalog/knowin-glow-official-overview.webp" width="760" alt="Official GLOW system architecture linking experience generation, KnowinGLOW, world rollouts and the KnowinAgent runtime."/>
+
+*KNOWIN · [Figure source](https://www.knowinai.com/tech.html) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

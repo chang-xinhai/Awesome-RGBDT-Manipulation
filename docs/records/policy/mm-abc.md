@@ -12,6 +12,12 @@ MM-ABC mobile-manipulation policy
 
 Uses subsystem-aware flow actions for a mobile dual-arm dexterous robot with a preserved embodiment/schema contract.
 
+<img src="../../../website/public/images/catalog/mm-abc-implementation-preview.webp" width="760" alt="MM-ABC official README inference example showing observation adaptation, policy execution and action decoding."/>
+
+*MM-ABC / XPolicyLab contributors · [Figure source](https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/MM_ABC/MM_ABC/README.md#L177-L183) · Original rights retained.*
+
+**Preview scope:** Exact contiguous source excerpt (lines 177–183), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

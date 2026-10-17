@@ -12,6 +12,10 @@ ViTaMIn-B: A Reliable and Efficient Visuo-Tactile Bimanual Manipulation Interfac
 
 Bimanual handheld demonstrations and tactile deformation point clouds improve cross-sensor policy transfer.
 
+<img src="../../../website/public/images/catalog/vitamin-b-overview.webp" width="760" alt="ViTaMIn-B data-collection interface, diffusion-policy network, and bimanual deployment."/>
+
+*Chuanyu Li et al., ViTaMIn-B, Figure 1 (arXiv v2). Original rights retained. · [Figure source](https://arxiv.org/abs/2511.05858) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

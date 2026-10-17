@@ -12,6 +12,12 @@ Liber0-Lite RoboDojo policy
 
 Releases an author-contributed checkpoint and self-contained inference backend for bimanual RoboDojo evaluation.
 
+<img src="../../../website/public/images/catalog/liber0-lite-implementation-preview.webp" width="760" alt="Liber0-Lite inference source excerpt showing RGB views, robot state, instruction conditioning and action-chunk generation."/>
+
+*LiberAI / XPolicyLab contributors · [Figure source](https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_lite/liber0/runtime.py#L42-L53) · Original rights retained.*
+
+**Preview scope:** Exact contiguous source excerpt (lines 42–53), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

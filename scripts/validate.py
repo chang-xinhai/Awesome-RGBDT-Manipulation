@@ -25,6 +25,7 @@ for w in works:
  else:check(not w.get('model'),id+': model fields require the model resource type')
  for c in w['collections']:
   check(c in fields,id+': unknown collection');check(any(k in cat.get(c,set())for k in w['categories']),id+': missing collection category');prefix='survey'if w['resourceType']=='survey'else'model'if c=='policy'and w.get('model')else c;obj=w.get(prefix,{})
+  check(bool(media.get(id,{}).get(c)),id+': missing '+c+' figure or explicitly labeled source preview')
   check(all(k in obj for k in (survey_fields if prefix=='survey'else model_fields if prefix=='model'else fields.get(c,[]))),id+': incomplete '+c+' fields')
   for k,v in obj.items():check(v is not None and (isinstance(v,(str,list))),id+': invalid '+c+'.'+k)
  for k in ['code','weights','data','license','notes']:check(bool(w['release'].get(k)),id+': missing release.'+k)

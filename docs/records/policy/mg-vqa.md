@@ -12,6 +12,10 @@ MG-VQA: Manipulation Grounded Visual Question Answering with VLMs
 
 Uses grasping and pushing as evidence-gathering actions to answer questions about initially occluded tabletop scenes.
 
+<img src="../../../website/public/images/catalog/mg-vqa-rollout.webp" width="760" alt="MG-VQA agent action sequences comparing early termination with persistent manipulation and renewed observation."/>
+
+*Vineet Bhat et al., MG-VQA, Figure 4 (arXiv v3). Original rights retained. · [Figure source](https://arxiv.org/html/2608.17129v3#S4.F4) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

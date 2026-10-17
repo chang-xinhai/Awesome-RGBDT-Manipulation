@@ -12,6 +12,10 @@ Demonstrate once, execute on many: Kinematic intelligence for cross-robot skill 
 
 Stable demonstrated workspace dynamics are embedded in robot-specific joint-space structures to transfer behavior across kinematic morphologies.
 
+<img src="../../../website/public/images/catalog/kinematic-intelligence-policy.webp" width="760" alt="Author project overview of demonstrated task stages, robot embodiments and cross-robot transfer experiments."/>
+
+*Sthithpragya Gupta, Durgesh H. Salunkhe and Aude Billard / LASA, EPFL · [Figure source](https://sthithpragya.com/projects/kinematic-intelligence/) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

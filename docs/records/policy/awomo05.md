@@ -12,6 +12,12 @@ Awomo-0.5: World Action Model Pre-trained at Scale
 
 Releases image- and video-conditioned world-action policy variants with a common embodied simulation action interface.
 
+<img src="../../../website/public/images/catalog/awomo05-implementation-preview.webp" width="760" alt="Awomo-0.5I action-patch implementation excerpt, showing the released transformer and proprioception interface."/>
+
+*Awomo-WAM Team · [Figure source](https://github.com/Awomo-WestlakeDI/Awomo-0.5/blob/d22dda9aae0f9ae8096e95580a140a784a17b513/awomo/awomo_05i/model.py#L65-L81) · Original rights retained.*
+
+**Preview scope:** Exact contiguous source excerpt (lines 65–81), rendered for legibility. This is a released implementation interface preview; an original architecture figure was not located in the reviewed sources. Source rights remain with the original authors.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

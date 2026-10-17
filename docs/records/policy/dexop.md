@@ -12,6 +12,10 @@ DEXOP: A Device for Robotic Transfer of Dexterous Human Manipulation
 
 A passive robot-hand exoskeleton captures transferable visual/tactile demonstrations for bimanual dexterous imitation.
 
+<img src="../../../website/public/images/catalog/dexop-overview.webp" width="760" alt="DEXOP passive-exoskeleton system and transfer from contact-rich human demonstrations to robotic manipulation."/>
+
+*Hao-Shu Fang et al., DEXOP, Figure 1 (arXiv v2). Original rights retained. · [Figure source](https://arxiv.org/abs/2509.04441) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

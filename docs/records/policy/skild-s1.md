@@ -12,6 +12,10 @@ Introducing S1: In-Context Learning for Robotics
 
 A proprietary in-context robot policy executes new manipulation tasks from one video demonstration without task-specific post-training.
 
+<img src="../../../website/public/images/catalog/skild-s1-official-overview.webp" width="760" alt="Official S1 conceptual pipeline: an in-context video demonstration conditions robot behavior in a different embodiment and scene."/>
+
+*Skild AI · [Figure source](https://www.skild.ai/blogs/s1) · Original rights retained.*
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
