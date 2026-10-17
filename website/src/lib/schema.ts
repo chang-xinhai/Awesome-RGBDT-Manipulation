@@ -206,7 +206,7 @@ export const recordTypeLabel = (w: Work, c: Collection) =>
         : resourceLabel(w, c) || "Benchmark";
 export const display = (v: unknown): string =>
   Array.isArray(v)
-    ? v.join(" · ")
+    ? v.join(" · ") || "Not reported"
     : v === undefined || v === null || v === ""
       ? "Not reported"
       : String(v);
