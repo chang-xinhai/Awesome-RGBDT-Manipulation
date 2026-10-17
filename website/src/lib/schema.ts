@@ -39,6 +39,7 @@ export interface Work {
   links: Record<string, string>;
   benchmark?: Record<string, string | string[]>;
   policy?: Record<string, string | string[]>;
+  model?: Record<string, string | string[]>;
   survey?: Record<string, string | string[]>;
   surveyAuditId?: string;
   release: Record<string, string>;
@@ -95,19 +96,31 @@ export const CATEGORIES: Record<
       id: "tactile-il",
       label: "Visuo-tactile learning",
       description:
-        "Imitation, diffusion, ACT and reactive policies using tactile observations.",
+        "Imitation, diffusion, ACT and reactive policies using touch or force feedback. Cutaneous tactile and wrist force/torque remain distinct inputs.",
     },
     {
       id: "tactile-foundation",
       label: "Tactile VLA & WAM",
       description:
-        "Language-conditioned, foundation and world-action policies using touch.",
+        "Language-conditioned, foundation and world-action methods using touch or force. Training-only supervision and deployment observations remain distinct.",
     },
     {
       id: "rgbd-3d",
       label: "RGBD & 3D",
       description:
         "Policies using observed depth or 3D representations. Measured and predicted geometry are distinguished in details.",
+    },
+    {
+      id: "tactile-representation",
+      label: "Tactile representations",
+      description:
+        "Tactile encoders, multimodal representations and pretraining models. Their downstream use is distinguished from an executable action policy.",
+    },
+    {
+      id: "geometry-models",
+      label: "Geometry & world models",
+      description:
+        "Depth, spatial and predictive models relevant to manipulation. Measured inputs, estimated geometry and generated futures retain their separate roles.",
     },
     {
       id: "visual-precision-rl",
@@ -165,6 +178,30 @@ export const SURVEY_FIELDS: [string, string][] = [
   ["reviewMethod", "Literature selection"],
   ["coverageLimits", "Coverage boundaries"],
 ];
+export const MODEL_FIELDS: [string, string][] = [
+  ["role", "Model role & downstream interface"],
+  ["family", "Model family"],
+  ["baseModel", "Model architecture"],
+  ["modelSize", "Model size & component"],
+  ["inputs", "Model inputs"],
+  ["outputs", "Model outputs"],
+  ["trainingMethod", "Training method"],
+  ["trainingData", "Training data & scale"],
+  ["trainingTime", "Training duration"],
+  ["trainingHardware", "Training hardware"],
+  ["inference", "Inference setting & runtime"],
+  ["evaluation", "Downstream evaluation & scope"],
+];
+export const isExecutablePolicy = (w: Work) =>
+  w.collections.includes("policy") && !!w.policy;
+export const recordTypeLabel = (w: Work, c: Collection) =>
+  w.survey
+    ? "Survey"
+    : c === "policy" && w.model
+      ? "Model"
+      : c === "policy"
+        ? "Policy"
+        : resourceLabel(w, c) || "Benchmark";
 export const display = (v: unknown): string =>
   Array.isArray(v)
     ? v.join(" · ")
@@ -187,17 +224,20 @@ export function inCollection(w: Work, c: Collection, category = "all") {
 export const releaseFor = (w: Work, c: Collection) =>
   w.releaseByCollection?.[c] || w.release;
 
-export const resourceLabel = (w: Work) =>
+export const resourceLabel = (w: Work, c: Collection = "policy") =>
   w.resourceType === "survey"
     ? "Survey"
-    : w.categories.includes("supporting-resources")
-      ? {
-          dataset: "Supporting dataset",
-          simulator: "Supporting simulator",
-          benchmark: "Perception benchmark",
-          "evaluation-tool": "Supporting evaluation tool",
-        }[w.resourceType] || "Supporting resource"
-      : "";
+    : c === "policy" && w.model
+      ? "Model"
+      : w.categories.includes("supporting-resources")
+        ? {
+            dataset: "Supporting dataset",
+            simulator: "Supporting simulator",
+            benchmark: "Perception benchmark",
+            model: "Perception benchmark",
+            "evaluation-tool": "Supporting evaluation tool",
+          }[w.resourceType] || "Supporting resource"
+        : "";
 
 export const summaryFor = (w: Work, c: Collection) =>
   c === "policy"

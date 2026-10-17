@@ -1,0 +1,93 @@
+---
+import { sensingSourceAudit, works } from "../lib/catalog";
+import { sitePath } from "../lib/paths";
+const states = {
+  indexed: "Indexed canonical records",
+  "outside-scope": "Outside this atlas's scope",
+  background: "Background references",
+  "adjacent-resource": "Adjacent sensing, data and review resources",
+  candidate: "Candidates requiring separate source review",
+  unresolved: "Unresolved names or unavailable sources",
+};
+---
+
+<h2 id="sensing-source-audit">From tactile and geometry sources to records</h2>
+<p>
+  Collections, surveys, recent papers and official releases help discover
+  omissions. Each indexed record retains its own primary evidence. The counts
+  below refer to source aliases, which can overlap and do not measure unique
+  policies. Exclusions and candidates stay visible.
+</p>
+<table class="coverage-table">
+  <thead>
+    <tr>
+      <th>Discovery source</th>
+      <th>Scoped branch</th>
+      <th>Indexed / aliases</th>
+    </tr>
+  </thead>
+  <tbody>
+    {sensingSourceAudit.sources.map((source) => (
+      <tr>
+        <td>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">
+            {source.label} ↗
+          </a>
+        </td>
+        <td>{source.scope}</td>
+        <td>
+          {source.entries.filter((e) => e.status === "indexed").length} /{" "}
+          {source.entries.length}
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+{sensingSourceAudit.sources.map((source) => (
+  <details>
+    <summary>
+      {source.label} — {source.entries.length} source aliases
+    </summary>
+    <p>{source.scope}</p>
+    {source.snapshot && <p>Source snapshot: {source.snapshot}</p>}
+    {Object.entries(states).map(([status, label]) => {
+      const entries = source.entries.filter((e) => e.status === status);
+      return entries.length ? (
+        <details>
+          <summary>
+            {label} ({entries.length})
+          </summary>
+          <ul>
+            {entries.map((entry) => {
+              const work = works.find((w) => w.id === entry.workId);
+              return (
+                <li>
+                  {work ? (
+                    <a
+                      href={sitePath(
+                        `/?collection=${work.collections.includes("policy") ? "policy" : "benchmark"}&item=${work.id}#library`,
+                      )}
+                    >
+                      {entry.name}
+                    </a>
+                  ) : (
+                    entry.name
+                  )}{" "}
+                  <a href={entry.url} target="_blank" rel="noopener noreferrer">
+                    source ↗
+                  </a>{" "}
+                  — {entry.note}
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      ) : null;
+    })}
+  </details>
+))}
+<p>
+  <a href={sitePath("sensing-source-audit.json")} download>
+    Download tactile and geometry source mappings ↗
+  </a>
+</p>

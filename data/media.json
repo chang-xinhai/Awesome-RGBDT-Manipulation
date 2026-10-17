@@ -1834,6 +1834,19 @@
       "width": 1500,
       "height": 619,
       "note": "Overview of all six benchmark problems and touch representations."
+    },
+    "policy": {
+      "path": "/assets/figures/sensing-sparsh.webp",
+      "original": "https://arxiv.org/html/2410.24090v1/ssl2.png",
+      "page": "https://arxiv.org/html/2410.24090#S3.F2",
+      "credit": "sparsh authors; original paper figure",
+      "alt": "Sparsh compares masked reconstruction, self-distillation and predictive embedding pretraining for tactile encoders.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1320,
+      "height": 631,
+      "note": "Original S3.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "81160674bf2bf7323bf86312b5fbd57aa5a0bd09483f45eb1960a64184c7bcd1"
     }
   },
   "bridgevla-plus": {
@@ -7411,6 +7424,2566 @@
       "height": 395,
       "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
       "sourceSha256": "e5000477da096083ba95fa330e5f6ad7aedf861bc94ec0eb3a8dcf55a1b08341"
+    }
+  },
+  "n0-foundation": {
+    "policy": {
+      "path": "/images/catalog/n0-foundation-policy.webp",
+      "original": "https://arxiv.org/html/2608.29601v2/tactile_representation_model.png",
+      "page": "https://arxiv.org/html/2608.29601v2#S5",
+      "credit": "NeoteAI / Fudan TEAI authors",
+      "alt": "NeoForce visual–tactile token fusion, masked teacher-latent prediction and force reconstruction.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1127,
+      "height": 490,
+      "note": "Original report Figure 7. A representation-learning architecture, not a robot action policy.",
+      "sourceSha256": "36edbd4624a5a0bc910e198c944ec42b9e19709e3190a3c59bc18fd2f2c869a1"
+    },
+    "benchmark": {
+      "path": "/images/catalog/n0-foundation-benchmark.webp",
+      "original": "https://arxiv.org/html/2608.29601v2/neosim.png",
+      "page": "https://arxiv.org/html/2608.29601v2#S6",
+      "credit": "NeoteAI / Fudan TEAI authors",
+      "alt": "NeoSim task scenes paired with tactile gel rendering across twelve single- and dual-arm settings.",
+      "kind": "overview",
+      "reviewed": "2026-10-17",
+      "width": 1418,
+      "height": 662,
+      "note": "Original report Figure 11 shows the twelve NeoSim settings. The separate ten-task physical NeoReal suite is enumerated in the record and original Figure 9; no physical/simulated task totals are pooled into independent skills.",
+      "sourceSha256": "13c82c56fc8febca2d39743fb4478a54d92099f0453594dd1388feebc6a65706"
+    }
+  },
+  "wm-robot-learning-survey": {
+    "policy": {
+      "path": "/images/catalog/wm-robot-learning-survey-policy.webp",
+      "original": "https://ntumars.github.io/wm-robot-survey/assets/intro.png",
+      "page": "https://ntumars.github.io/wm-robot-survey/",
+      "credit": "Hou et al. / World Model for Robot Learning survey authors",
+      "alt": "Author overview separates world models for policy, as learned simulators, and for robotic video generation.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1313,
+      "height": 732,
+      "note": "Original author taxonomy figure; no synthesized research diagram or new executable model.",
+      "sourceSha256": "6b35df9b3e1c4b55571e21ceb38de9c8ace529bfa40404b2a2a4fe8dad31be1b"
+    }
+  },
+  "unitouch": {
+    "policy": {
+      "path": "/assets/figures/sensing-unitouch.webp",
+      "original": "https://arxiv.org/html/2401.18084v1/method.png",
+      "page": "https://arxiv.org/html/2401.18084#S3.F3",
+      "credit": "unitouch authors; original paper figure",
+      "alt": "UniTouch aligns sensor-tokenized touch features with a pretrained visual embedding space.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 963,
+      "height": 658,
+      "note": "Original S3.F3 from the primary paper; scientific content retained.",
+      "sourceSha256": "ef941a8fa54c8596b6825270c39a9ed168ee2227b43f83cce55506a4784fbb11"
+    }
+  },
+  "tvl": {
+    "policy": {
+      "path": "/assets/figures/sensing-tvl.webp",
+      "original": "https://arxiv.org/html/2402.13232v1/method_figure_new.png",
+      "page": "https://arxiv.org/html/2402.13232#S3.F4",
+      "credit": "tvl authors; original paper figure",
+      "alt": "TVL pairs visual, touch and language encoders through cross-modal contrastive objectives.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2042,
+      "height": 486,
+      "note": "Original S3.F4 from the primary paper; scientific content retained.",
+      "sourceSha256": "b14c52e4646e17229e164ee1ec62941438cabe9ecad7492dd0848c947a1ea626"
+    }
+  },
+  "t3": {
+    "policy": {
+      "path": "/assets/figures/sensing-t3.webp",
+      "original": "https://arxiv.org/html/2406.13640v3/network_.png",
+      "page": "https://arxiv.org/html/2406.13640#S1.F1",
+      "credit": "t3 authors; original paper figure",
+      "alt": "T3 connects sensor-specific encoders to a shared transformer trunk and task-specific decoders.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 600,
+      "note": "Original S1.F1 from the primary paper; scientific content retained.",
+      "sourceSha256": "af7ebbbc7bcc229f3190ac9488c8b845c64982f68dec039476b7b73885b35a4a"
+    }
+  },
+  "unit": {
+    "policy": {
+      "path": "/assets/figures/sensing-unit.webp",
+      "original": "https://arxiv.org/html/2408.06481v2/model.png",
+      "page": "https://arxiv.org/html/2408.06481#S2.F1",
+      "credit": "unit authors; original paper figure",
+      "alt": "UniT tactile representation pretraining and downstream transfer pipeline.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2028,
+      "height": 556,
+      "note": "Original S2.F1 from the primary paper; scientific content retained.",
+      "sourceSha256": "37c9176f59eeb49d6bfcb682ab8edb53c8475a2dffda481ed0335843bf0be246"
+    }
+  },
+  "anytouch": {
+    "policy": {
+      "path": "/assets/figures/sensing-anytouch.webp",
+      "original": "https://arxiv.org/html/2502.12191v3/pipeline.png",
+      "page": "https://arxiv.org/html/2502.12191#S3.F2",
+      "credit": "anytouch authors; original paper figure",
+      "alt": "AnyTouch combines masked tactile modeling with multimodal alignment and cross-sensor matching.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2031,
+      "height": 1013,
+      "note": "Original S3.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "f4ed9b389dd575840dae79b04bae3ed14ea709bcf4ec8239a7e37c18c7b7e177"
+    }
+  },
+  "anytouch2": {
+    "policy": {
+      "path": "/assets/figures/sensing-anytouch2.webp",
+      "original": "https://arxiv.org/html/2602.09617v1/model.png",
+      "page": "https://arxiv.org/html/2602.09617#S4.F2",
+      "credit": "anytouch2 authors; original paper figure",
+      "alt": "AnyTouch 2 learns tactile representations across semantic, dynamic and physical prediction objectives.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2023,
+      "height": 1247,
+      "note": "Original S4.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "ad1492b90b829b1cf0bf0aff4712c41a2c8fe858be0461749875e41d786504f7"
+    }
+  },
+  "unitac-nv": {
+    "policy": {
+      "path": "/assets/figures/sensing-unitac-nv.webp",
+      "original": "https://arxiv.org/html/2506.19699v1/Figures/System100.jpg",
+      "page": "https://arxiv.org/html/2506.19699#S1.F1",
+      "credit": "unitac-nv authors; original paper figure",
+      "alt": "UniTac-NV autoencoders map different tactile sensor formats into a shared latent representation.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1759,
+      "height": 1800,
+      "note": "Original S1.F1 from the primary paper; scientific content retained.",
+      "sourceSha256": "c2b6a8ef2072068938d2ec32e1d2b5612380c4e3874d4fa47d1d81ec57f1479a"
+    }
+  },
+  "htt": {
+    "policy": {
+      "path": "/assets/figures/sensing-htt.webp",
+      "original": "https://arxiv.org/html/2606.29948v2/teasor.png",
+      "page": "https://arxiv.org/html/2606.29948#S1.F1",
+      "credit": "htt authors; original paper figure",
+      "alt": "HTT combines sensor-specific patch encoders with a shared tactile transformer trunk.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1249,
+      "height": 507,
+      "note": "Original S1.F1 from the primary paper; scientific content retained.",
+      "sourceSha256": "6cf84fb2132b4a210f3a15ee3e4cee5b856339b0277f980bdbbd2c2e1bf98e1f"
+    }
+  },
+  "tactile-jepa": {
+    "policy": {
+      "path": "/assets/figures/sensing-tactile-jepa.webp",
+      "original": "https://arxiv.org/html/2609.24385v1/pretrain2.png",
+      "page": "https://arxiv.org/html/2609.24385#S1.F2",
+      "credit": "tactile-jepa authors; original paper figure",
+      "alt": "Tactile-JEPA predicts masked taxel-graph embeddings using a context encoder, predictor and EMA teacher.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1445,
+      "height": 602,
+      "note": "Original S1.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "563c96e87acf23cb794044e2c0f3e92a056aa9c44a92ab0c646617469f41e175"
+    }
+  },
+  "octopi": {
+    "policy": {
+      "path": "/assets/figures/sensing-octopi.webp",
+      "original": "https://arxiv.org/html/2405.02794v2/figures/model_diagram.png",
+      "page": "https://arxiv.org/html/2405.02794#S4.F3",
+      "credit": "octopi authors; original paper figure",
+      "alt": "Octopi passes CLIP-encoded tactile sequences through a learned projection into Vicuna for language reasoning.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1536,
+      "height": 768,
+      "note": "Original Figure 3 architecture; transparent source pixels composited onto white. The complete encoder–projection–language-model diagram is retained.",
+      "sourceSha256": "39b46e0f02c0bc32d25d2bdf028cd67a4fb179c2aba4a2cdd60e84a613ac4e2b"
+    }
+  },
+  "octopi-15": {
+    "policy": {
+      "path": "/assets/figures/sensing-octopi-15.webp",
+      "original": "https://arxiv.org/html/2507.09985v1/octopi_arch.png",
+      "page": "https://arxiv.org/html/2507.09985#S1.F2",
+      "credit": "octopi-15 authors; original paper figure",
+      "alt": "Octopi-1.5 combines a tactile encoder and retrieval module with a Qwen2-VL language backbone.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1159,
+      "height": 344,
+      "note": "Original S1.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "671f94db6f1ac3f4bbe8562a13c9580de46e3e0afc02bb39f68b95aa8b8229b9"
+    }
+  },
+  "tlv-link": {
+    "policy": {
+      "path": "/assets/figures/sensing-tlv-link.webp",
+      "original": "https://arxiv.org/html/2406.03813v1/TLV-Link.png",
+      "page": "https://arxiv.org/html/2406.03813#S3.F2",
+      "credit": "tlv-link authors; original paper figure",
+      "alt": "TLV-Link aligns trainable vision and touch encoders with a frozen hierarchical text encoder.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 877,
+      "height": 552,
+      "note": "Original S3.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "ddb342ef5daa5b4c05fb168f571b63dddf2c01eed31e239b67b4bfea99bb01fb"
+    }
+  },
+  "cttp": {
+    "policy": {
+      "path": "/assets/figures/sensing-cttp.webp",
+      "original": "https://arxiv.org/html/2410.11834v1/figures/teaser_cttp.png",
+      "page": "https://arxiv.org/html/2410.11834#S1.F1",
+      "credit": "cttp authors; original paper figure",
+      "alt": "CTTP aligns different tactile sensors using paired contacts and a contrastive embedding objective.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1182,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "787f1eaeebd356ddce26865a63ee8536c97f55e4494a4401e54f3d3d1382432a"
+    }
+  },
+  "mvitac": {
+    "policy": {
+      "path": "/assets/figures/sensing-mvitac.webp",
+      "original": "https://arxiv.org/html/2401.12024v1/Figures/mmssl.png",
+      "page": "https://arxiv.org/html/2401.12024#S3.F1.fig1",
+      "credit": "mvitac authors; original paper figure",
+      "alt": "MViTac visual and tactile momentum encoders use intra-modal and cross-modal contrastive projection heads.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 595,
+      "height": 790,
+      "note": "Original S3.F1.fig1 from the primary paper; scientific content retained.",
+      "sourceSha256": "83183acf4298cc3ebeba784ab10c9c3e01c5250e1d700ba6e7419f3dbf9df598"
+    }
+  },
+  "convitac": {
+    "policy": {
+      "path": "/assets/figures/sensing-convitac.webp",
+      "original": "https://arxiv.org/html/2506.20757v1/pipeline.png",
+      "page": "https://arxiv.org/html/2506.20757#S2.F2",
+      "credit": "convitac authors; original paper figure",
+      "alt": "ConViTac uses contrastive visual-tactile pretraining followed by sequence-conditioned multimodal fusion.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1314,
+      "height": 695,
+      "note": "Original S2.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "9c8860520a9c6bfc6b8671d23ef2506c2ff0c33946aa4e8dc6c3f3546d4d2ed6"
+    }
+  },
+  "sparsh-x": {
+    "policy": {
+      "path": "/assets/figures/sensing-sparsh-x.webp",
+      "original": "https://arxiv.org/html/2506.14754v1/architecture.png",
+      "page": "https://arxiv.org/html/2506.14754#S3.F2",
+      "credit": "sparsh-x authors; original paper figure",
+      "alt": "Sparsh-X processes tactile images, audio, acceleration and pressure before bottleneck-token fusion.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1310,
+      "height": 547,
+      "note": "Original S3.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "c2f37201d8a0ecac7c774e3ecc638a741a3751b1d483b8370aa5012e568f3098"
+    }
+  },
+  "sparsh-skin": {
+    "policy": {
+      "path": "/assets/figures/sensing-sparsh-skin.webp",
+      "original": "https://arxiv.org/html/2505.11420v1/figures/appendix/sparshskin_illustration.png",
+      "page": "https://arxiv.org/html/2505.11420#Ax1.F8",
+      "credit": "sparsh-skin authors; original paper figure",
+      "alt": "Sparsh-skin tokenizes time-series skin measurements for student-teacher representation learning.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1272,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "eb4ffd4a9364f75d05e05a7db9ce947ad3d8c39b469ae26eea6be33dd1fcd5ac"
+    }
+  },
+  "texttoucher": {
+    "policy": {
+      "path": "/assets/figures/sensing-texttoucher.webp",
+      "original": "https://arxiv.org/html/2409.05427v2/architecture.png",
+      "page": "https://arxiv.org/html/2409.05427#Sx2.F2",
+      "credit": "texttoucher authors; original paper figure",
+      "alt": "TextToucher conditions tactile-image generation on text descriptions of texture, shape and sensor state.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1054,
+      "height": 723,
+      "note": "Original Sx2.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "9ee14d4567de6da6f16c787e548b4921ed0d62928b8f463d4986d4931745862f"
+    }
+  },
+  "vtv-llm": {
+    "policy": {
+      "path": "/assets/figures/sensing-vtv-llm.webp",
+      "original": "https://arxiv.org/html/2505.22566v1/figure2.png",
+      "page": "https://arxiv.org/html/2505.22566#S3.F2",
+      "credit": "vtv-llm authors; original paper figure",
+      "alt": "VTV-LLM aligns visual-tactile video features with a language model through staged training.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 837,
+      "height": 718,
+      "note": "Original S3.F2 from the primary paper; scientific content retained.",
+      "sourceSha256": "64d178dc890029eb2466ecffc2b2a9520a7987e5652c2d0c46a5a33e46aebcc5"
+    }
+  },
+  "vitatouch": {
+    "policy": {
+      "path": "/assets/figures/sensing-vitatouch.webp",
+      "original": "https://arxiv.org/html/2604.03322v1/Vitatouch.png",
+      "page": "https://arxiv.org/html/2604.03322#S4.F3",
+      "credit": "vitatouch authors; original paper figure",
+      "alt": "VitaTouch uses separate visual and tactile encoders with Q-Former interfaces to a frozen language decoder.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2040,
+      "height": 990,
+      "note": "Original S4.F3 from the primary paper; scientific content retained.",
+      "sourceSha256": "a3d53ddd26572e9131c478020d381fbef254c10a4001123ee6e1a245cbfceead"
+    }
+  },
+  "tactile-guided-survey": {
+    "policy": {
+      "path": "/assets/figures/sensing-tactile-guided-survey.webp",
+      "original": "https://arxiv.org/html/2610.20134v1/scope_figure1.png",
+      "page": "https://arxiv.org/html/2610.20134#S1.F1",
+      "credit": "tactile-guided-survey authors; original paper figure",
+      "alt": "Taxonomy linking tactile representations, conditioned control, foundation models and predictive adaptation.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 932,
+      "height": 465,
+      "note": "Original S1.F1 from the primary paper; scientific content retained.",
+      "sourceSha256": "352cd7744d185281a727d97d3308dea236978fe1eee1fe1087c13e2ae457c8a5"
+    }
+  },
+  "tactile-fusion-survey": {
+    "policy": {
+      "path": "/assets/figures/sensing-tactile-fusion-survey.webp",
+      "original": "https://arxiv.org/html/2605.17336v1/overview.png",
+      "page": "https://arxiv.org/html/2605.17336#S1.F1",
+      "credit": "tactile-fusion-survey authors; original paper figure",
+      "alt": "Survey taxonomy of tactile sensing, multimodal fusion, learning objectives and robotic applications.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1419,
+      "height": 1382,
+      "note": "Original S1.F1 from the primary paper; scientific content retained.",
+      "sourceSha256": "d4e6d27bf603764c16113844a0b691d1cfc1d7f4c765c1f04c5417ccd7499ebc"
+    }
+  },
+  "sitr": {
+    "policy": {
+      "path": "/assets/figures/sensing-sitr.webp",
+      "original": "https://arxiv.org/html/2502.19638v2/fig/SITR_architecture.png",
+      "page": "https://arxiv.org/html/2502.19638#S3.F2",
+      "credit": "sitr authors; original paper figure",
+      "alt": "SITR uses calibration-image tokens alongside tactile observations to learn sensor-invariant representations.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1522,
+      "height": 812,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "8e345ed2020ddd820da9d5335bbbb96e263a44a164f56e8f503d1747d1b1cc91"
+    }
+  },
+  "bideta": {
+    "policy": {
+      "path": "/assets/figures/sensing-bideta.webp",
+      "original": "https://arxiv.org/html/2609.08673v2/figures/method_architecture.png",
+      "page": "https://arxiv.org/html/2609.08673#S3.F2",
+      "credit": "bideta authors; original paper figure",
+      "alt": "BIDETA combines support memory, graph-based query geometry and reliability weighting for tactile adaptation.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1915,
+      "height": 1080,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "1d63fcfc70927ec820f8dbd355f5b53936fee7898c8d1963b4c6e9c45dd03494"
+    }
+  },
+  "tactile-functasets": {
+    "policy": {
+      "path": "/assets/figures/sensing-tactile-functasets.webp",
+      "original": "https://arxiv.org/html/2409.14592v1/figure/arch.png",
+      "page": "https://arxiv.org/html/2409.14592#S3.F2",
+      "credit": "tactile-functasets authors; original paper figure",
+      "alt": "Tactile functasets represent tactile samples through latent modulations of an implicit coordinate network.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 684,
+      "height": 314,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "f34d1437dd2109579051f24f67b3c43c38d8946001fb47f837d0f524ba3974de"
+    }
+  },
+  "touch-to-touch-translation": {
+    "policy": {
+      "path": "/assets/figures/sensing-touch-to-touch-translation.webp",
+      "original": "https://arxiv.org/html/2411.02187v1/overview.png",
+      "page": "https://arxiv.org/html/2411.02187#S1.F1",
+      "credit": "touch-to-touch-translation authors; original paper figure",
+      "alt": "Touch-to-touch translation learns a paired mapping between camera-based touch images and taxel-array measurements.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1422,
+      "height": 573,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "4f1f311f2f17c1a80604e0aa40484e3da63d8e50f2915c6b3a49920fc90274bc"
+    }
+  },
+  "touchthinker": {
+    "policy": {
+      "path": "/assets/figures/sensing-touchthinker.webp",
+      "original": "https://arxiv.org/html/2606.11637v4/pipline.png",
+      "page": "https://arxiv.org/html/2606.11637#S4.F3",
+      "credit": "touchthinker authors; original paper figure",
+      "alt": "TouchThinker multimodal tactile reasoning architecture and staged training pipeline.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1503,
+      "height": 544,
+      "note": "Original complete method figure, not a task-gallery substitution.",
+      "sourceSha256": "b396a69ef4c0afedd787a057e2482eedda3e01e91109e61981113791a0c4ef55"
+    }
+  },
+  "forceful-foundation-survey": {
+    "policy": {
+      "path": "/assets/figures/sensing-forceful-foundation-survey.webp",
+      "original": "https://arxiv.org/pdf/2504.11827",
+      "page": "https://arxiv.org/pdf/2504.11827#page=6",
+      "credit": "William Xie and Nikolaus Correll; original Figure 2, with subpanel (b) credited by the survey to reference [68]",
+      "alt": "Conceptual force diagram showing gripper contact and joint, wrist and gripper sensing locations.",
+      "kind": "concept-overview",
+      "reviewed": "2026-10-17",
+      "width": 1245,
+      "height": 633,
+      "note": "Crop of the original PDF page 6, Figure 2; both conceptual sensing panels and their attribution retained."
+    }
+  },
+  "vt-wm": {
+    "policy": {
+      "path": "/assets/figures/sensing-vt-wm-policy.webp",
+      "original": "https://arxiv.org/html/2602.06001v1/vtwm_block_diagram.png",
+      "page": "https://arxiv.org/abs/2602.06001",
+      "credit": "Visuo-Tactile World Models authors",
+      "alt": "VT-WM method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1208,
+      "height": 689,
+      "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "4e2437191b753d825e459085a89875f2d88cb20ebba207cee4e03ae878734ccb"
+    }
+  },
+  "hapticvla": {
+    "policy": {
+      "path": "/assets/figures/sensing-hapticvla-policy.webp",
+      "original": "https://arxiv.org/html/2603.15257v2/sections/figures/method.png",
+      "page": "https://arxiv.org/abs/2603.15257",
+      "credit": "HapticVLA: Contact-Rich Manipulation via Vision-Language-Action Model without Inference-Time Tactile Sensing authors",
+      "alt": "HapticVLA method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 812,
+      "note": "Author figure S2.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "9e1de6b14b30406a7ed7954d0ebb413094f127ce3e9667b57dbd3c11aebaa64b"
+    }
+  },
+  "forcevla2": {
+    "policy": {
+      "path": "/assets/figures/sensing-forcevla2-policy.webp",
+      "original": "https://arxiv.org/html/2603.15169v1/2.png",
+      "page": "https://arxiv.org/abs/2603.15169",
+      "credit": "ForceVLA2: Unleashing Hybrid Force-Position Control with Force Awareness for Contact-Rich Manipulation authors",
+      "alt": "ForceVLA2 method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1259,
+      "height": 512,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "766525f6832b4786c7c2e56c1afeced51ce65b4bd3022f7a6634c72db73e4106"
+    }
+  },
+  "dreamtacvla": {
+    "policy": {
+      "path": "/assets/figures/sensing-dreamtacvla-policy.webp",
+      "original": "https://arxiv.org/html/2512.23864v4/framework_1-v4-comp.png",
+      "page": "https://arxiv.org/abs/2512.23864",
+      "credit": "Learning to Feel the Future: DreamTacVLA for Contact-Rich Manipulation authors",
+      "alt": "DreamTacVLA method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 635,
+      "height": 379,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "feb0f69d24daa9d114eb0661685fe542a1b2e7f9c1ff38b1f5c70e470ee01970"
+    }
+  },
+  "vitar": {
+    "policy": {
+      "path": "/assets/figures/sensing-vitar-policy.webp",
+      "original": "https://arxiv.org/html/2608.15816v1/overview.png",
+      "page": "https://arxiv.org/abs/2608.15816",
+      "credit": "ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation authors",
+      "alt": "ViTaR method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1597,
+      "height": 582,
+      "note": "Author figure Sx1.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "a194293b8f68bc9accb7349be4e423fa2c7058340370377e11ee725401c59ceb"
+    }
+  },
+  "star-vtla": {
+    "policy": {
+      "path": "/assets/figures/sensing-star-vtla-policy.webp",
+      "original": "https://arxiv.org/html/2609.12549v2/pipeline1_new.png",
+      "page": "https://arxiv.org/abs/2609.12549",
+      "credit": "STAR: Sparse Tactile Representation Learning in Vision-Tactile-Language-Action Models for Dexterous Manipulation authors",
+      "alt": "STAR — sparse tactile VTLA method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1418,
+      "height": 945,
+      "note": "Author figure S4.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "66c1150faa09eb5813ef714dec22875a148dd3e352bf5dc77bb952237b1a5516"
+    }
+  },
+  "dextouch-wm": {
+    "policy": {
+      "path": "/assets/figures/sensing-dextouch-wm-policy.webp",
+      "original": "https://arxiv.org/html/2609.20649v2/Pipeline.png",
+      "page": "https://arxiv.org/abs/2609.20649",
+      "credit": "DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot Manipulation authors",
+      "alt": "DexTouch-WM method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1749,
+      "height": 962,
+      "note": "Author figure S2.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "dd90d6d5bfa816fb8aa09be6e545bd23010219b9df75e8ee871c4bc45d497d8a"
+    }
+  },
+  "hapticwam": {
+    "policy": {
+      "path": "/assets/figures/sensing-hapticwam-policy.webp",
+      "original": "https://arxiv.org/html/2609.23888v1/architecture.png",
+      "page": "https://arxiv.org/abs/2609.23888",
+      "credit": "HapticWAM: Distilling Imagined Touch into a World-Action Model without Inference-Time Tactile Sensing authors",
+      "alt": "HapticWAM method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1440,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "8fba0908666a710a36a65a81c4f5eab6c7a69c052edf0a21bf278e0707b41cd5"
+    }
+  },
+  "uni-vlat": {
+    "policy": {
+      "path": "/assets/figures/sensing-uni-vlat-policy.webp",
+      "original": "https://arxiv.org/html/2609.35450v2/Fig2_method.png",
+      "page": "https://arxiv.org/abs/2609.35450",
+      "credit": "Uni-VLaT: Whole-Body Tactile Adaptation of VLA Policies for Humanoid Loco-Manipulation authors",
+      "alt": "Uni-VLaT method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1600,
+      "height": 900,
+      "note": "Author figure S1.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "4cc87312bd7317a77d83a93592e9d909362391fd4ff34a645f16020015e580aa"
+    }
+  },
+  "touchworld": {
+    "policy": {
+      "path": "/assets/figures/sensing-touchworld-policy.webp",
+      "original": "https://arxiv.org/html/2607.07287v2/3-layer.png",
+      "page": "https://arxiv.org/abs/2607.07287",
+      "credit": "TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation authors",
+      "alt": "TouchWorld method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1570,
+      "height": 845,
+      "note": "Author figure S2.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "651bad4370605ef8c3590b71ea2ed2770fca0dad69bdf90eda55f3e2d7859d3d"
+    }
+  },
+  "contact-grounded-policy": {
+    "policy": {
+      "path": "/assets/figures/sensing-contact-grounded-policy-policy.webp",
+      "original": "https://arxiv.org/html/2603.05687v3/pipeline.png",
+      "page": "https://arxiv.org/abs/2603.05687",
+      "credit": "Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding authors",
+      "alt": "Contact-Grounded Policy method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2047,
+      "height": 498,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "84a2a2a362649fe0e4ccd3e2a5a8ad15613363f313a049bafc39fff3a512b794"
+    }
+  },
+  "touch2trace": {
+    "policy": {
+      "path": "/assets/figures/sensing-touch2trace-policy.webp",
+      "original": "https://arxiv.org/html/2609.15921v1/figure_3.png",
+      "page": "https://arxiv.org/abs/2609.15921",
+      "credit": "Touch2Trace: Tactile-Driven Imitation Learning for Dexterous Cable Tracing authors",
+      "alt": "Touch2Trace method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2046,
+      "height": 702,
+      "note": "Author figure S4.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "e02389b1cc8f7fbb7e97e5e068a409ada55d6f984658419b393545ba56ebd440"
+    }
+  },
+  "tacot": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacot-policy.webp",
+      "original": "https://arxiv.org/html/2610.04363v1/pipeline-v5.png",
+      "page": "https://arxiv.org/abs/2610.04363",
+      "credit": "TacOT: Learning Contact-Rich Dexterous Manipulation from Human Demonstrations via Tactile-Guided Optimal Transport authors",
+      "alt": "TacOT method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 911,
+      "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "8006bdb2f54ff4194e1d011d6941c971d8b71a93d764eb921c95afc6d90aceeb"
+    }
+  },
+  "phase-tactile": {
+    "policy": {
+      "path": "/assets/figures/sensing-phase-tactile-policy.webp",
+      "original": "https://arxiv.org/html/2609.30889v1/overview_compress.png",
+      "page": "https://arxiv.org/abs/2609.30889",
+      "credit": "PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning authors",
+      "alt": "PHASE method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1158,
+      "height": 410,
+      "note": "Author figure S2.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "010a5f176caaa6e2412e0386ccd7be49373605dffa0692ed92956ac031894761"
+    }
+  },
+  "da-grd": {
+    "policy": {
+      "path": "/assets/figures/sensing-da-grd-policy.webp",
+      "original": "https://arxiv.org/html/2609.29065v1/113_lower.png",
+      "page": "https://arxiv.org/abs/2609.29065",
+      "credit": "DA-GRD: Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-execution mismatches authors",
+      "alt": "DA-GRD method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 990,
+      "note": "Author figure S0.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "e5e6b93d8eb82af3b13fb7f5737170b4b236975f3b01633da06c37c4f854d0b1"
+    }
+  },
+  "face-contact-factorization": {
+    "policy": {
+      "path": "/assets/figures/sensing-face-contact-factorization-policy.webp",
+      "original": "https://arxiv.org/html/2610.09533v1/fig2_arxiv_ver.png",
+      "page": "https://arxiv.org/abs/2610.09533",
+      "credit": "Contact-Aware Imitation Learning Through Contact Factorization authors",
+      "alt": "FACE method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1298,
+      "height": 506,
+      "note": "Author figure S1.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "f37f71094e931cd9248c5b3fdd201c5e0e623dffddf6053e9ecd09ab0be558d5"
+    }
+  },
+  "visual-predicted-force": {
+    "policy": {
+      "path": "/assets/figures/sensing-visual-predicted-force-policy.webp",
+      "original": "https://arxiv.org/html/2610.04741v1/method.png",
+      "page": "https://arxiv.org/abs/2610.04741",
+      "credit": "Robot Learning with Visual Predicted Force authors",
+      "alt": "Visual Predicted Force method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2037,
+      "height": 539,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "3176d6c43f0bb91fe42e6dbb103bbe367e5f7a18c4491f48b1b2e47e6baa5860"
+    }
+  },
+  "tachair": {
+    "policy": {
+      "path": "/assets/figures/sensing-tachair-policy.webp",
+      "original": "https://arxiv.org/html/2610.10637v1/pipeline_final.png",
+      "page": "https://arxiv.org/abs/2610.10637",
+      "credit": "TacHair: Tactile Contact-Distribution Guided Online Correction for Robotic Hair Stroking and Perception authors",
+      "alt": "TacHair method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1323,
+      "height": 473,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "335f4360f5f296d3dbfd1508a36aa9aa47ccf3b9400aa89a90f4f7c5e4aae3c8"
+    }
+  },
+  "secure-gentle-grasping": {
+    "policy": {
+      "path": "/assets/figures/sensing-secure-gentle-grasping-policy.webp",
+      "original": "https://arxiv.org/html/2610.12790v1/Fig_Overview_1.png",
+      "page": "https://arxiv.org/abs/2610.12790",
+      "credit": "Tactile Sensing-based Secure and Gentle Grasping of Unknown Objects authors",
+      "alt": "Secure and Gentle Grasping method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1189,
+      "height": 393,
+      "note": "Author figure S2.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "2ded2a36ee7c2b759159fc441558c3a80f3338afbbb83e7ec4f3b79c4903158d"
+    }
+  },
+  "how-firm-grasp": {
+    "policy": {
+      "path": "/assets/figures/sensing-how-firm-grasp-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.11221",
+      "page": "https://arxiv.org/abs/2610.11221",
+      "credit": "How Firm Should a Grasp Be? authors",
+      "alt": "How Firm Should a Grasp Be? original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1206,
+      "height": 333,
+      "note": "Original PDF page 5, Figure4 gentle-grasping control pipeline. Cropped without surrounding body text.",
+      "sourceSha256": "1fa6cf15657acf79114a7e8e0c368678d3eecd70e8da94001d3e0237f4917768"
+    }
+  },
+  "touchguide": {
+    "policy": {
+      "path": "/assets/figures/sensing-touchguide-policy.webp",
+      "original": "https://arxiv.org/html/2601.20239v6/cpm.png",
+      "page": "https://arxiv.org/abs/2601.20239",
+      "credit": "TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance authors",
+      "alt": "TouchGuide method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2041,
+      "height": 772,
+      "note": "Author figure S4.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "e43bcbebf6a3ff3f4a80131bc01ed2d68dbeed047352007b1343c0d38c7657ad"
+    }
+  },
+  "vitac-tracing": {
+    "policy": {
+      "path": "/assets/figures/sensing-vitac-tracing-policy.webp",
+      "original": "https://arxiv.org/html/2603.18784v1/framework.png",
+      "page": "https://arxiv.org/abs/2603.18784",
+      "credit": "ViTac-Tracing: Visual-Tactile Imitation Learning of Deformable Object Tracing authors",
+      "alt": "ViTac-Tracing method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2038,
+      "height": 838,
+      "note": "Author figure S4.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "89d6d1020f88d309bb08e0752c92ed08fb3848f4c7dc2520db1471f8aac05838"
+    }
+  },
+  "retaf": {
+    "policy": {
+      "path": "/assets/figures/sensing-retaf-policy.webp",
+      "original": "https://arxiv.org/html/2602.10013v2/RETAF.png",
+      "page": "https://arxiv.org/abs/2602.10013",
+      "credit": "Learning Force-Regulated Robotic Manipulation with a Low-Cost Tactile-Force-Controlled Gripper authors",
+      "alt": "RETAF / TF-Gripper method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1854,
+      "height": 1387,
+      "note": "Author figure S4.F6. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "af85daee674a05f9fb0e41cb4fe6a209d5bddad2a03fe70df81148bd251764fb"
+    }
+  },
+  "text2touch": {
+    "policy": {
+      "path": "/assets/figures/sensing-text2touch-policy.webp",
+      "original": "https://arxiv.org/html/2509.07445v1/figures/diagrams/text2touchv3.png",
+      "page": "https://arxiv.org/abs/2509.07445",
+      "credit": "Text2Touch: Tactile In-Hand Manipulation with LLM-Designed Reward Functions authors",
+      "alt": "Text2Touch method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1445,
+      "note": "Author figure S2.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "7d9349af956e4731e53dd4d834a187e5dcf7100ec1767e9a6c4dea09a5c6d219"
+    }
+  },
+  "gelfusion": {
+    "policy": {
+      "path": "/assets/figures/sensing-gelfusion-policy.webp",
+      "original": "https://arxiv.org/html/2505.07455v1/frame.png",
+      "page": "https://arxiv.org/abs/2505.07455",
+      "credit": "GelFusion: Enhancing Robotic Manipulation under Visual Constraints via Visuotactile Fusion authors",
+      "alt": "GelFusion method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2046,
+      "height": 1096,
+      "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "e413544b1d432fa5c4e8c5c2a73ac5bbc280491a8041837931e7977bf3f4c447"
+    }
+  },
+  "simshear": {
+    "policy": {
+      "path": "/assets/figures/sensing-simshear-policy.webp",
+      "original": "https://arxiv.org/html/2508.20561v1/big_hero.png",
+      "page": "https://arxiv.org/abs/2508.20561",
+      "credit": "SimShear: Sim-to-Real Shear-based Tactile Servoing authors",
+      "alt": "SimShear method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 876,
+      "height": 522,
+      "note": "Author figure S1.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "df4417a16c683b1ccbb6e586253684b1a8f9ee074051d166c371a2cf70339bbe"
+    }
+  },
+  "tacex-curiosity": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacex-curiosity-policy.webp",
+      "original": "https://arxiv.org/html/2609.40134v3/fig_1.png",
+      "page": "https://arxiv.org/abs/2609.40134",
+      "credit": "Tactile Curiosity Drives Robot Interaction authors",
+      "alt": "TacEx — tactile curiosity method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1489,
+      "height": 626,
+      "note": "Author figure S1.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "8acac683645f0cc8bd2f298edb44e123cf04172432cb4a57ba0f253df4cdee4a"
+    }
+  },
+  "factorized-tactile-control": {
+    "policy": {
+      "path": "/assets/figures/sensing-factorized-tactile-control-policy.webp",
+      "original": "https://arxiv.org/html/2610.10510v1/figures/fig3_tactile_gated_policy_3k.jpg",
+      "page": "https://arxiv.org/abs/2610.10510",
+      "credit": "Factorized Tactile Representation and Control for Sim-to-Real Manipulation authors",
+      "alt": "Factorized Tactile Representation and Control original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1008,
+      "note": "Author figure S3.F3. Tactile Gated Policy and separately encoded geometry/force/change inputs. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "ccfc834400ad28b2e16b63553942a4273d05e0ecc9ffbda048ba39554971d4dc"
+    }
+  },
+  "propra": {
+    "policy": {
+      "path": "/assets/figures/sensing-propra-policy.webp",
+      "original": "https://arxiv.org/html/2609.29822v1/policy.png",
+      "page": "https://arxiv.org/abs/2609.29822",
+      "credit": "Self-Supervised Anchoring of Fingertip Sensing to Proprioception and Proactive Actions for Robot Imitation Learning authors",
+      "alt": "PROPRA method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 780,
+      "height": 410,
+      "note": "Author figure S4.F3. Deployed multimodal diffusion-policy architecture. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "d6eaf9819459f7674bf5b36517b457a033d7aa0ededd98b21fc3b23f4753ebdd"
+    }
+  },
+  "canonical-3d-tactile": {
+    "policy": {
+      "path": "/assets/figures/sensing-canonical-3d-tactile-policy.webp",
+      "original": "https://arxiv.org/html/2409.17549v3/pips.png",
+      "page": "https://arxiv.org/abs/2409.17549",
+      "credit": "Canonical Representation and Force-Based Pretraining of 3D Tactile for Dexterous Visuo-Tactile Policy Learning authors",
+      "alt": "Canonical 3D Tactile Pretraining method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1314,
+      "height": 567,
+      "note": "Author figure S4.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "6bacad6097009a458b9dba20be439d525f1b3ec73d3f6fcde325e3f1e1fb4b9f"
+    }
+  },
+  "freetacman": {
+    "policy": {
+      "path": "/assets/figures/sensing-freetacman-policy.webp",
+      "original": "https://arxiv.org/html/2506.01941v4/Policy.png",
+      "page": "https://arxiv.org/abs/2506.01941",
+      "credit": "FreeTacMan: Robot-free Visuo-Tactile Data Collection System for Contact-rich Manipulation authors",
+      "alt": "FreeTacMan method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2048,
+      "height": 707,
+      "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "87e8ff392e07b169449298b743d8633e79066a3b6555d09306a1eec2a19df8a3"
+    }
+  },
+  "tacthru-umi": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacthru-umi-policy.webp",
+      "original": "https://arxiv.org/html/2512.09851v2/fig_model_c.png",
+      "page": "https://arxiv.org/abs/2512.09851",
+      "credit": "Simultaneous Tactile-Visual Perception for Learning Multimodal Robot Manipulation authors",
+      "alt": "TacThru-UMI method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 436,
+      "height": 316,
+      "note": "Author figure S4.F4. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "ca1a95d67fa130709a00df3b5538e36fcec531f9932d6cafa10afdce0f1e6a62"
+    }
+  },
+  "lvtg-contrastive-act": {
+    "policy": {
+      "path": "/assets/figures/sensing-lvtg-contrastive-act-policy.webp",
+      "original": "https://arxiv.org/html/2602.00514v3/pic/act.png",
+      "page": "https://arxiv.org/abs/2602.00514",
+      "credit": "Cross-Modal Visuo-Tactile Representation Learning with Action Chunking Transformers for Contact-Rich Manipulation authors",
+      "alt": "LVTG — contrastive ACT method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 997,
+      "height": 894,
+      "note": "Author figure S4.F4. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "f41570185b48156ce6d4ff69d1c1e508c775cb125a9b21b8935cb489e5dfcb90"
+    }
+  },
+  "fingereye": {
+    "policy": {
+      "path": "/assets/figures/sensing-fingereye-policy.webp",
+      "original": "https://arxiv.org/html/2604.20689v4/nn_arch.png",
+      "page": "https://arxiv.org/abs/2604.20689",
+      "credit": "FingerEye: Learning Dexterous Manipulation with Continuous Vision-Tactile Sensing authors",
+      "alt": "FingerEye Policy method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2042,
+      "height": 512,
+      "note": "Author figure A0.F14. Grouped versus flat encoder/decoder policy interface comparison. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "efbc7e2711da5dce0e0d9ecfadf09cc0a2ac2b358fa82ae5b8cc4d6a6540e272"
+    }
+  },
+  "gift-force-transfer": {
+    "policy": {
+      "path": "/assets/figures/sensing-gift-force-transfer-policy.webp",
+      "original": "https://arxiv.org/html/2609.14173v2/fig_teaser.png",
+      "page": "https://arxiv.org/abs/2609.14173",
+      "credit": "GIFT: Glove-Inferred Force Transfer: Force-Aware Human-to-Robot Skill Transfer from a Wearable Sensing Glove to a Robot Hand Without Tactile Sensors authors",
+      "alt": "GIFT method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 395,
+      "height": 386,
+      "note": "Author figure S1.F1. Human-glove to motor-current robot-force transfer interface. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "99a95632d537f197fb11b878ecab151b78706fa21fed0e083dd9e9d328d6bf26"
+    }
+  },
+  "touch2robot": {
+    "policy": {
+      "path": "/assets/figures/sensing-touch2robot-policy.webp",
+      "original": "https://arxiv.org/html/2609.24660v2/pipeline.png",
+      "page": "https://arxiv.org/abs/2609.24660",
+      "credit": "Touch2Robot: Robot Touch in the Human Demonstration Loop authors",
+      "alt": "Touch2Robot method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1287,
+      "height": 376,
+      "note": "Author figure S3.F2. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "abddce358506ed9012a189e834057b00a20830a401c8a312d1b6ff7ef8b1db6d"
+    }
+  },
+  "wearable-contact-shifts": {
+    "policy": {
+      "path": "/assets/figures/sensing-wearable-contact-shifts-policy.webp",
+      "original": "https://arxiv.org/html/2610.08870v2/figures/overview_rev615/fig_overview_rev651_owner_trim400.png",
+      "page": "https://arxiv.org/abs/2610.08870",
+      "credit": "From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations authors",
+      "alt": "Wearable Contact Shifts method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 466,
+      "note": "Author figure S1.F1. Study overview of collection interface, tactile representations and downstream policy evaluation. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "055af18ed36857e58b69c01b06a436fb66fcbd083c77677302720b39e238a0d5"
+    }
+  },
+  "tacross": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacross-policy.webp",
+      "original": "https://arxiv.org/html/2610.11945v1/Fig4_contact_semantics_training_labels.png",
+      "page": "https://arxiv.org/abs/2610.11945",
+      "credit": "TACROSS: An Efficient and Low-Cost Scalable Human Touch System Across Heterogeneous Tactile Sensors for Dexterous Robot Learning authors",
+      "alt": "TACROSS method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2037,
+      "height": 803,
+      "note": "Author figure S3.F4. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "2ee6002bc3714adfc08b9e80a7b00cccc52f0ae3ea2c67482f7842cb1c1e9345"
+    }
+  },
+  "pantact": {
+    "policy": {
+      "path": "/assets/figures/sensing-pantact-policy.webp",
+      "original": "https://arxiv.org/html/2610.12558v1/figures/policy-v3.jpg",
+      "page": "https://arxiv.org/abs/2610.12558",
+      "credit": "PanTact: Teaching Whole-Body Dexterity with a Wearable Contact Interface authors",
+      "alt": "PanTact method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 576,
+      "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "b67b2ad0e443f45864362ee5739fae907ff8b59d02595467e94e58ec98ac4fae"
+    }
+  },
+  "tamen": {
+    "policy": {
+      "path": "/assets/figures/sensing-tamen-policy.webp",
+      "original": "https://arxiv.org/html/2604.07335v1/policy.png",
+      "page": "https://arxiv.org/abs/2604.07335",
+      "credit": "TAMEn: Tactile-Aware Manipulation Engine for Closed-Loop Data Collection in Contact-Rich Tasks authors",
+      "alt": "TAMEn method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2026,
+      "height": 811,
+      "note": "Author figure S3.F4. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "abc9c19bf8ac24f4f5cc4477b7233325b2c55f7a9cf7d08cf3bd313ea5cd2be2"
+    }
+  },
+  "letac-mpc": {
+    "policy": {
+      "path": "/assets/figures/sensing-letac-mpc-policy.webp",
+      "original": "https://arxiv.org/html/2403.04934v2/model_pipeline.png",
+      "page": "https://arxiv.org/abs/2403.04934",
+      "credit": "LeTac-MPC: Learning Model Predictive Control for Tactile-reactive Grasping authors",
+      "alt": "LeTac-MPC method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1756,
+      "height": 399,
+      "note": "Author figure S3.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "9e31a9cca0ec53a715b037bb9e0fc3ca597e844567214a557acd1169d05c51e7"
+    }
+  },
+  "t-dex": {
+    "policy": {
+      "path": "/assets/figures/sensing-t-dex-policy.webp",
+      "original": "https://arxiv.org/html/2303.12076v1/tdex_algo.png",
+      "page": "https://arxiv.org/abs/2303.12076",
+      "credit": "Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play authors",
+      "alt": "T-Dex method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2035,
+      "height": 526,
+      "note": "Author figure S4.F4. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "8dae874b7f0731caad7955789edfc2b5c03ba0eff0e3f3186740140d8484f6bb"
+    }
+  },
+  "vtt": {
+    "policy": {
+      "path": "/assets/figures/sensing-vtt-policy.webp",
+      "original": "https://arxiv.org/html/2210.00121v1/figures/VTT_architecture.png",
+      "page": "https://arxiv.org/abs/2210.00121",
+      "credit": "Visuo-Tactile Transformers for Manipulation authors",
+      "alt": "Visuo-Tactile Transformers method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1285,
+      "height": 605,
+      "note": "Author figure S3.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "4e7f41c8edd0838df4cce7708b6b0e60ec950ae071ad0ef4cd01f5b688d402dc"
+    }
+  },
+  "m3l": {
+    "policy": {
+      "path": "/assets/figures/sensing-m3l-policy.webp",
+      "original": "https://arxiv.org/html/2311.00924v1/M3L-allinone-5.png",
+      "page": "https://arxiv.org/abs/2311.00924",
+      "credit": "The Power of the Senses: Generalizable Manipulation from Vision and Touch through Masked Multimodal Learning authors",
+      "alt": "M3L — Power of the Senses method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 883,
+      "height": 642,
+      "note": "Author figure S1.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "50d196810b28310b0b3b305bbdbc0bc83fb4c9076cc09ebfb80fe8bdb437083f"
+    }
+  },
+  "dlr-modular-reorientation": {
+    "policy": {
+      "path": "/assets/figures/sensing-dlr-modular-reorientation-policy.webp",
+      "original": "https://arxiv.org/html/2303.04705v1/figures/architecture.png",
+      "page": "https://arxiv.org/abs/2303.04705",
+      "credit": "Dextrous Tactile In-Hand Manipulation Using a Modular Reinforcement Learning Architecture authors",
+      "alt": "DLR Modular Reorientation method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1208,
+      "note": "Author figure S2.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "1351ace8bf45ece1be26bfc845b700a04627a3f5d537e75f127354092e4ace65"
+    }
+  },
+  "ecrl": {
+    "policy": {
+      "path": "/assets/figures/sensing-ecrl-policy.webp",
+      "original": "https://arxiv.org/html/2311.04060v1/figures/SteppingDiagram3.png",
+      "page": "https://arxiv.org/abs/2311.04060",
+      "credit": "Estimator-Coupled Reinforcement Learning for Robust Purely Tactile In-Hand Manipulation authors",
+      "alt": "EcRL method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1360,
+      "height": 828,
+      "note": "Author figure S2.F4. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "e8e6a8b33e6fbbf8f58a0dfdfd23f2f7ad1611c9c6b313d66fbd79fff19c3225"
+    }
+  },
+  "speed-adjustable-tactile": {
+    "policy": {
+      "path": "/assets/figures/sensing-speed-adjustable-tactile-policy.webp",
+      "original": "https://arxiv.org/pdf/2411.13148",
+      "page": "https://arxiv.org/abs/2411.13148",
+      "credit": "Learning Time-Optimal and Speed-Adjustable Tactile In-Hand Manipulation authors",
+      "alt": "Speed-Adjustable Tactile Manipulation original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 705,
+      "height": 786,
+      "note": "Original PDF page 3, Figure2 speed-conditioned policy/control architecture. Cropped without surrounding body text.",
+      "sourceSha256": "e9668a66c3009526bacd659cfc2433efd0a84323f18286b2ca4addda53a3273e"
+    }
+  },
+  "pp-tac": {
+    "policy": {
+      "path": "/assets/figures/sensing-pp-tac-policy.webp",
+      "original": "https://arxiv.org/html/2504.16649v2/pipeline_new.png",
+      "page": "https://arxiv.org/abs/2504.16649",
+      "credit": "PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands authors",
+      "alt": "PP-Tac method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1890,
+      "height": 690,
+      "note": "Author figure S5.F6. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "b9baf1b73e615494fe7c371905a2e20a885b534b824499b1addf17de9fcb61fa"
+    }
+  },
+  "scfields": {
+    "policy": {
+      "path": "/assets/figures/sensing-scfields-policy.webp",
+      "original": "https://arxiv.org/html/2602.13833v2/method_overview.png",
+      "page": "https://arxiv.org/abs/2602.13833",
+      "credit": "Semantic-Contact Fields for Category-Level Generalizable Tactile Tool Manipulation authors",
+      "alt": "SCFields original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 877,
+      "height": 426,
+      "note": "Author figure S2.F2. Contact-field learning followed by field-conditioned diffusion policy. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "7aca99fccadc432d4ad1378824573f145f99c240235662e104de2d0605a540ef"
+    }
+  },
+  "fact-force-action-track": {
+    "policy": {
+      "path": "/assets/figures/sensing-fact-force-action-track-policy.webp",
+      "original": "https://arxiv.org/html/2610.19155v1/fact-method_v16.png",
+      "page": "https://arxiv.org/abs/2610.19155",
+      "credit": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity authors",
+      "alt": "FACT method / architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1081,
+      "height": 602,
+      "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "c98a201ff0a70f5648d38aa8cdfe0fe4ca8d2536a9f3011c8dc05ef26ee24db6"
+    }
+  },
+  "dexumi": {
+    "policy": {
+      "path": "/assets/figures/sensing-dexumi-policy.webp",
+      "original": "https://arxiv.org/html/2505.21864v3/Software_Method_Figure_V0.png",
+      "page": "https://arxiv.org/abs/2505.21864",
+      "credit": "DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation authors",
+      "alt": "DexUMI original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2041,
+      "height": 677,
+      "note": "Author figure S3.F4. Visual-domain alignment and robot replay pipeline component. Optimized local copy; original figure rights retained.",
+      "sourceSha256": "045f6e8cfebb91d29bcc1dcf8e2cfcde11a6069c0e40711b2680667d70dcff56"
+    }
+  },
+  "spark-0": {
+    "policy": {
+      "path": "/assets/figures/sensing-spark-0-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.22342",
+      "page": "https://arxiv.org/abs/2610.22342",
+      "credit": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation authors",
+      "alt": "Spark-0 original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1200,
+      "height": 609,
+      "note": "Original PDF page 4, Figure3 full architecture. Cropped without surrounding body text.",
+      "sourceSha256": "c7c2f010e311f4e8da1d4d97fcc7c4eea063a268756625289447067b40b8b5a2"
+    },
+    "benchmark": {
+      "path": "/assets/figures/sensing-spark-0-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2610.22342",
+      "page": "https://arxiv.org/abs/2610.22342",
+      "credit": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation authors",
+      "alt": "SparkArena task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1200,
+      "height": 810,
+      "note": "Original PDF page 7, Figures4–5 simulation/real task coverage; source captions distinguish tracks. Cropped without surrounding body text.",
+      "sourceSha256": "c7c2f010e311f4e8da1d4d97fcc7c4eea063a268756625289447067b40b8b5a2"
+    }
+  },
+  "vtam": {
+    "policy": {
+      "path": "/assets/figures/sensing-vtam-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.23481",
+      "page": "https://arxiv.org/abs/2603.23481",
+      "credit": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs authors",
+      "alt": "VTAM original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1518,
+      "height": 582,
+      "note": "Original PDF page 4, Figure2 video/action architecture. Cropped without surrounding body text.",
+      "sourceSha256": "954f7590a181a34fe18a6344c0798fcbf8ef3cf8e7a87cf13d947174b786ed4a"
+    }
+  },
+  "factr": {
+    "policy": {
+      "path": "/assets/figures/sensing-factr-policy.webp",
+      "original": "https://arxiv.org/pdf/2502.17432",
+      "page": "https://arxiv.org/abs/2502.17432",
+      "credit": "FACTR: Force-Attending Curriculum Training for Contact-Rich Policy Learning authors",
+      "alt": "FACTR original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1479,
+      "height": 642,
+      "note": "Original PDF page 5, Figure4 force-attending curriculum / policy architecture. Cropped without surrounding body text.",
+      "sourceSha256": "8d59e64b4e599f6cbb67096647f546b28fccca5ceaa7ef86df8500fbc3c4fcab"
+    }
+  },
+  "dlr-pure-torque-rotation": {
+    "policy": {
+      "path": "/assets/figures/sensing-dlr-pure-torque-rotation-policy.webp",
+      "original": "https://arxiv.org/pdf/2204.03698",
+      "page": "https://arxiv.org/abs/2204.03698",
+      "credit": "Learning Purely Tactile In-Hand Manipulation with a Torque-Controlled Hand authors",
+      "alt": "DLR Torque-Only Rotation original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 696,
+      "height": 501,
+      "note": "Original PDF page 3, Figure5 policy and impedance-control architecture. Cropped without surrounding body text.",
+      "sourceSha256": "ca3c617838fe20f6a451da67ef47c8cab48ba04bcd0e172b2f44de3ec4ccfc13"
+    }
+  },
+  "shape-conditioned-tactile-agent": {
+    "policy": {
+      "path": "/assets/figures/sensing-shape-conditioned-tactile-agent-policy.webp",
+      "original": "https://arxiv.org/pdf/2407.18834",
+      "page": "https://arxiv.org/abs/2407.18834",
+      "credit": "Learning a Shape-Conditioned Agent for Purely Tactile In-Hand Manipulation of Various Objects authors",
+      "alt": "Shape-Conditioned Tactile Agent original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 717,
+      "height": 756,
+      "note": "Original PDF page 3, Figure2 shape-conditioned state-estimator/control architecture. Cropped without surrounding body text.",
+      "sourceSha256": "36f473a8e351617e5eea39c8378c203b483e759b6b4a0de572dc71065c5124f3"
+    }
+  },
+  "tac-man": {
+    "policy": {
+      "path": "/assets/figures/sensing-tac-man-policy.webp",
+      "original": "https://arxiv.org/pdf/2403.01694",
+      "page": "https://arxiv.org/abs/2403.01694",
+      "credit": "Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated Objects authors",
+      "alt": "Tac-Man original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 759,
+      "height": 627,
+      "note": "Original PDF page 4, Figure2 tactile contact-preserving feedback schematic. Cropped without surrounding body text.",
+      "sourceSha256": "d6d5aba352e9fb6df34e71631a48d5d8a66c642b9179023f8a6b58ec4e7c2695"
+    }
+  },
+  "robopack": {
+    "policy": {
+      "path": "/assets/figures/sensing-robopack-policy.webp",
+      "original": "https://arxiv.org/pdf/2407.01418",
+      "page": "https://arxiv.org/abs/2407.01418",
+      "credit": "RoboPack: Learning Tactile-Informed Dynamics Models for Dense Packing authors",
+      "alt": "RoboPack original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 762,
+      "height": 423,
+      "note": "Original PDF page 4, Figure3 recurrent dynamics architecture component. Cropped without surrounding body text.",
+      "sourceSha256": "7c82c5cc67036b711d2a6cd90f13b6d096f83628efd947e5c7dc0277f84b0338"
+    }
+  },
+  "vitamin": {
+    "policy": {
+      "path": "/assets/figures/sensing-vitamin-policy.webp",
+      "original": "https://arxiv.org/pdf/2504.06156",
+      "page": "https://arxiv.org/abs/2504.06156",
+      "credit": "ViTaMIn: Learning Contact-Rich Tasks Through Robot-Free Visuo-Tactile Manipulation Interface authors",
+      "alt": "ViTaMIn original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 690,
+      "height": 1083,
+      "note": "Original PDF page 4, Figure3 tactile/visual contrastive pretraining component; deployed policy is separately described. Cropped without surrounding body text.",
+      "sourceSha256": "dfd5e0127ad34394b169e9c809a0f940f5f20843db6f4f4cbe8ea9d46ae18d02"
+    }
+  },
+  "tacgnn": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacgnn-policy.webp",
+      "original": "https://arxiv.org/pdf/2304.00736",
+      "page": "https://arxiv.org/abs/2304.00736",
+      "credit": "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot authors",
+      "alt": "TacGNN original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1500,
+      "height": 948,
+      "note": "Original PDF page 3, Figure2 tactile-graph state-estimation and PPO control architecture. Cropped without surrounding body text.",
+      "sourceSha256": "32105bd6561faf724020fa6fe4a7ca8ec150d7fb10b2a72156cf4b224c05c65e"
+    }
+  },
+  "compliant-hand-visuotactile-insertion": {
+    "policy": {
+      "path": "/assets/figures/sensing-compliant-hand-visuotactile-insertion-policy.webp",
+      "original": "https://arxiv.org/pdf/2411.06408",
+      "page": "https://arxiv.org/abs/2411.06408",
+      "credit": "Visuotactile-Based Learning for Insertion with Compliant Hands authors",
+      "alt": "Compliant-Hand Visuotactile Insertion original method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1338,
+      "height": 342,
+      "note": "Original PDF page 5, Figure4 deployed tactile/depth-point-cloud student pipeline. Cropped without surrounding body text.",
+      "sourceSha256": "6d75fad2bb847ddada5edad93f66406619f418660af0400b055d2e84ecd3741c"
+    }
+  },
+  "rynnworld-4d": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-rynnworld-4d.webp",
+      "original": "https://arxiv.org/html/2607.06559v2/pipeline.png",
+      "page": "https://arxiv.org/html/2607.06559",
+      "credit": "RynnWorld-4D / RynnWorld-4D-Policy authors",
+      "alt": "RynnWorld-4D / RynnWorld-4D-Policy — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 759,
+      "height": 516,
+      "note": "Official Figure 4 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "27577208d6bfb17354eeb1c3fe249b35a6263851168877d5e02058ab431ba08f"
+    }
+  },
+  "geoalign": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-geoalign.webp",
+      "original": "https://arxiv.org/html/2606.03240v2/figures/liuchengtu.png",
+      "page": "https://arxiv.org/html/2606.03240",
+      "credit": "GeoAlign authors",
+      "alt": "GeoAlign — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1650,
+      "height": 1034,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "995d6e8e6705f58accac5b0c8b346fa500954c3c490457938f37340a2cb23c20"
+    }
+  },
+  "geobridge-vla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-geobridge-vla.webp",
+      "original": "https://arxiv.org/html/2610.05026v1/figures/geobridge_shared_encoder.png",
+      "page": "https://arxiv.org/html/2610.05026",
+      "credit": "GeoBridge-VLA authors",
+      "alt": "GeoBridge-VLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 1633,
+      "note": "Official Figure 2 compares integration architectures; panel (c) shows the proposed shared-encoder geometry residual. Complete figure retained. Original rights remain with authors/publisher.",
+      "sourceSha256": "f8e14e7971e2be8ea0e161e308614de3070d634cb8e335715c540b863293006b"
+    }
+  },
+  "3d-foresight": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-3d-foresight.webp",
+      "original": "https://arxiv.org/html/2502.10028v4/model.png",
+      "page": "https://arxiv.org/html/2502.10028",
+      "credit": "3D Foresight authors",
+      "alt": "3D Foresight — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2028,
+      "height": 868,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "f84809cc52e38b63aecf3ddb8f7afd82a8b566b9f59d33cab997e22969a36fd6"
+    }
+  },
+  "3dflowaction": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-3dflowaction.webp",
+      "original": "https://arxiv.org/html/2506.06199v1/flow2act.png",
+      "page": "https://arxiv.org/html/2506.06199",
+      "credit": "3DFlowAction authors",
+      "alt": "3DFlowAction — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2029,
+      "height": 768,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "a90198b6808c4dfd45d56a062fe06396da06710ac3f5154f0125aa04fd921886"
+    }
+  },
+  "canonical-policy": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-canonical-policy.webp",
+      "original": "https://arxiv.org/html/2505.18474v2/Pipeline.svg",
+      "page": "https://arxiv.org/html/2505.18474",
+      "credit": "Canonical Policy authors",
+      "alt": "Canonical Policy — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2535,
+      "height": 1800,
+      "note": "Official Figure 4 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "482beefd6501ac4597a94260e257d585acf1ee418b0e0c20b4ecda7277269b94"
+    }
+  },
+  "equiform": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-equiform.webp",
+      "original": "https://arxiv.org/html/2601.17486v1/pipeline.svg",
+      "page": "https://arxiv.org/html/2601.17486",
+      "credit": "EquiForm authors",
+      "alt": "EquiForm — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 1102,
+      "note": "Official Figure 10 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "e7f8ac2535626c7dadfa94e238a4810216b33d4ea15c0ee8e2a84cb8bfca7c94"
+    }
+  },
+  "gem3d": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-gem3d.webp",
+      "original": "https://arxiv.org/pdf/2601.22988v2#page=1",
+      "page": "https://arxiv.org/abs/2601.22988",
+      "credit": "GEM3D authors",
+      "alt": "GEM3D — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1592,
+      "height": 872,
+      "note": "Original Figure 1 method panels: geometry pretraining and policy distillation. Cropped from PDF page 1; adjacent performance plots and manuscript text omitted. Original rights remain with authors/publisher.",
+      "sourceSha256": "b91ceb1884f3c49c16015625b0974ed3ab2660129706f0b36a207008d1ddf6a1"
+    }
+  },
+  "gem-4d": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-gem-4d.webp",
+      "original": "https://arxiv.org/html/2605.22882v4/fig4-final.png",
+      "page": "https://arxiv.org/html/2605.22882",
+      "credit": "GEM-4D authors",
+      "alt": "GEM-4D — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1388,
+      "height": 664,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "5f9f9048a9d90bb18151420f747f1d6643eabb3ff71dc5476fdf408a0bf2862c"
+    }
+  },
+  "equivdp3": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-equivdp3.webp",
+      "original": "https://arxiv.org/html/2609.36575v1/figures/img_system_overview.png",
+      "page": "https://arxiv.org/html/2609.36575",
+      "credit": "EquivDP3 authors",
+      "alt": "EquivDP3 — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 1207,
+      "note": "Official Figure 1 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "c54c3c1a620d12a4a7f733394fab17db6b7ec512d6e93a63c0bb48533df8017d"
+    }
+  },
+  "peafowl": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-peafowl.webp",
+      "original": "https://arxiv.org/html/2601.17885v2/Fig2.png",
+      "page": "https://arxiv.org/html/2601.17885",
+      "credit": "PEAfowl authors",
+      "alt": "PEAfowl — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1770,
+      "height": 793,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "8c375d14efd687d1a7c37957d909bd174182206c3a2b7efa6524b42b0f51446a"
+    }
+  },
+  "tracegen": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-tracegen.webp",
+      "original": "https://arxiv.org/html/2511.21690v1/overview.png",
+      "page": "https://arxiv.org/html/2511.21690",
+      "credit": "TraceGen authors",
+      "alt": "TraceGen — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2040,
+      "height": 724,
+      "note": "Official Figure 5 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "f0de54bccaf661400b3b0242faf77833fa88aa8041911cd2578387360d8f2b60"
+    }
+  },
+  "mu0": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-mu0.webp",
+      "original": "https://arxiv.org/html/2606.13769v2/diagram_v2.png",
+      "page": "https://arxiv.org/html/2606.13769",
+      "credit": "μ₀ / Trace Expert + Action Expert authors",
+      "alt": "μ₀ / Trace Expert + Action Expert — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1417,
+      "height": 732,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "30a8a6a50bdba279fa1145650d0a3675ed50e2098b120c5674506eb908a052f9"
+    }
+  },
+  "dex4d": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-dex4d.webp",
+      "original": "https://arxiv.org/html/2602.15828v2/method_.png",
+      "page": "https://arxiv.org/html/2602.15828",
+      "credit": "Dex4D authors",
+      "alt": "Dex4D — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 811,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "1a0b9384f7adef48fd61d5b6684b4fe01e88c9ea2dff8e98081d24372a61eaf1"
+    }
+  },
+  "motionvla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-motionvla.webp",
+      "original": "https://arxiv.org/html/2606.08288v1/overview_corl.png",
+      "page": "https://arxiv.org/html/2606.08288",
+      "credit": "MotionVLA authors",
+      "alt": "MotionVLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1441,
+      "height": 738,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "6bd2cfddab477ee70724698e22ba1c1810566d366621068e91dbe2356784dda2"
+    }
+  },
+  "gap-action-geometry": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-gap-action-geometry.webp",
+      "original": "https://arxiv.org/html/2602.23814v1/figs/pipeline.png",
+      "page": "https://arxiv.org/html/2602.23814",
+      "credit": "GAP — Action-Geometry Prediction authors",
+      "alt": "GAP — Action-Geometry Prediction — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 758,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "cebcb4c494025dd185aae4b93fc71078345ecf4b10df53d24c058e24cd32dcc3"
+    }
+  },
+  "tax-dpd": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-tax-dpd.webp",
+      "original": "https://arxiv.org/html/2604.11793v1/figs/tax3dv2_method_full.png",
+      "page": "https://arxiv.org/html/2604.11793",
+      "credit": "TAX-DPD authors",
+      "alt": "TAX-DPD — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2301,
+      "height": 673,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "114345b4b1d0fdf7ca9ef641083b7d31133d0db7888208e5a372fabd35b7d136"
+    }
+  },
+  "f3rm": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-f3rm.webp",
+      "original": "https://arxiv.org/html/2308.07931v2/language_guidance_v5.png",
+      "page": "https://arxiv.org/html/2308.07931",
+      "credit": "F3RM authors",
+      "alt": "F3RM — language-guided pose optimization",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1109,
+      "height": 633,
+      "note": "Official Figure 3(b), language-guided pose optimization from radiance-field features. The separate demonstration-retrieval panel is omitted. Original rights remain with authors/publisher.",
+      "sourceSha256": "23123bb9c58c976d1794a78f7f579bfa5fb92ef5970f6f05e5f377a1854746d4"
+    }
+  },
+  "d3fields": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-d3fields.webp",
+      "original": "https://arxiv.org/html/2309.16118v3/fusion_v8.png",
+      "page": "https://arxiv.org/html/2309.16118",
+      "credit": "D³Fields authors",
+      "alt": "D³Fields — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1600,
+      "height": 949,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "25107a82fdd10d2b9aa66b181e9e6ef3bf444c5634cf659377461405eea777b9"
+    }
+  },
+  "ndf": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-ndf.webp",
+      "original": "https://arxiv.org/html/2112.05124v1/NPoseDF_small.png",
+      "page": "https://arxiv.org/html/2112.05124",
+      "credit": "Neural Descriptor Fields (NDF) authors",
+      "alt": "Neural Descriptor Fields — pose-conditioned descriptor architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 414,
+      "height": 168,
+      "note": "Official Figure 2, the pose-conditioned descriptor representation used for manipulation pose optimization. Downstream pose-search steps are described separately. Original rights remain with authors/publisher.",
+      "sourceSha256": "09eabc369a92d8d3945b5f19c9aa1bcb927e6c9b501e520d51c3f4d7aab82cde"
+    }
+  },
+  "imagination-policy": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-imagination-policy.webp",
+      "original": "https://arxiv.org/html/2406.11740v2/figs/architecture2-min.png",
+      "page": "https://arxiv.org/html/2406.11740",
+      "credit": "Imagination Policy authors",
+      "alt": "Imagination Policy — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1853,
+      "height": 559,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "7dc99acc2b2ad2410117d4d831838d017664c2e1269f066e2deb81b307c56e6f"
+    }
+  },
+  "match-policy": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-match-policy.webp",
+      "original": "https://arxiv.org/html/2409.15517v2/figs/match_pick_place2.png",
+      "page": "https://arxiv.org/html/2409.15517",
+      "credit": "MATCH Policy authors",
+      "alt": "MATCH Policy — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 686,
+      "note": "Official Figure 1 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "892870073c9896de3d39ad89431b64da3811470f7254db6579b6edee9e04095e"
+    }
+  },
+  "spherical-diffusion-policy": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-spherical-diffusion-policy.webp",
+      "original": "https://arxiv.org/html/2507.01723v1/figure/method/SDP.png",
+      "page": "https://arxiv.org/html/2507.01723",
+      "credit": "Spherical Diffusion Policy (SDP) authors",
+      "alt": "Spherical Diffusion Policy (SDP) — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 830,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "01b3e240d1caeba22f066109d5ad8cee27621fdb8fce57c678b38af14985ad86"
+    }
+  },
+  "depthworld": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-depthworld.webp",
+      "original": "https://arxiv.org/html/2610.08780v1/model_arch_v3.png",
+      "page": "https://arxiv.org/html/2610.08780",
+      "credit": "DepthWorld authors",
+      "alt": "DepthWorld — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 850,
+      "height": 235,
+      "note": "Official Figure 3 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "3a9c81e6052b7ba3ba084f8beb08f068418381b5723bb1ff80610dadd86a9e57"
+    }
+  },
+  "foreact3d": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-foreact3d.webp",
+      "original": "https://arxiv.org/html/2610.04607v2/pipeline.png",
+      "page": "https://arxiv.org/html/2610.04607",
+      "credit": "ForeAct3D authors",
+      "alt": "ForeAct3D — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 857,
+      "height": 449,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "1e2d8fc76bc53a8f25f740d590649fad61afcfc8f7c16d27bac1783bf3149a73"
+    }
+  },
+  "pointworld": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-pointworld.webp",
+      "original": "https://arxiv.org/html/2601.03782v1/method.png",
+      "page": "https://arxiv.org/html/2601.03782",
+      "credit": "PointWorld + MPC authors",
+      "alt": "PointWorld — action-conditioned 3D scene-flow architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 660,
+      "height": 600,
+      "note": "Official Figure 2, action-conditioned full-scene point-flow predictor. Downstream MPPI control and user-specified costs are described separately. Original rights remain with authors/publisher.",
+      "sourceSha256": "efc1a17921073c3605ed53778fb2c5db3b8ab07d3856d29d91f66a38ec8fe448"
+    }
+  },
+  "tesseract-world": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-tesseract-world.webp",
+      "original": "https://arxiv.org/html/2504.20995v1/arch-new.png",
+      "page": "https://arxiv.org/html/2504.20995",
+      "credit": "TesserAct authors",
+      "alt": "TesserAct — RGB/depth/normal world-model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1595,
+      "height": 697,
+      "note": "Official Figure 2, RGB/depth/normal generation architecture. The downstream separately trained inverse-dynamics controller is described outside this figure. Original rights remain with authors/publisher.",
+      "sourceSha256": "d91ba4d85f319b02375cfeaf45a256124caa4142120344a0101539a4f9495d0e"
+    }
+  },
+  "wristworld": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-wristworld.webp",
+      "original": "https://arxiv.org/html/2510.07313v1/main.png",
+      "page": "https://arxiv.org/html/2510.07313",
+      "credit": "WristWorld authors",
+      "alt": "WristWorld — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1254,
+      "height": 878,
+      "note": "Official Figure 2 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "a067ce1e72daa03c990766ecdb6dc0f90800fc5c44f4f16863423240b7c5fa7f"
+    }
+  },
+  "kinema4d": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-kinema4d.webp",
+      "original": "https://arxiv.org/html/2603.16669v1/pipeline.png",
+      "page": "https://arxiv.org/html/2603.16669",
+      "credit": "Kinema4D authors",
+      "alt": "Kinema4D — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1502,
+      "height": 391,
+      "note": "Official Figure 2 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "ee7d5bb7a712c3ad3b89322543fa87f6e82ecfeaecc8a813edc554aede2b5637"
+    }
+  },
+  "gaussian-world-model": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-gaussian-world-model.webp",
+      "original": "https://arxiv.org/html/2508.17600v2/pipeline_v3.png",
+      "page": "https://arxiv.org/html/2508.17600",
+      "credit": "Gaussian World Model (GWM) authors",
+      "alt": "Gaussian World Model (GWM) — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1571,
+      "height": 386,
+      "note": "Official Figure 2 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "5244e66b118b1908a858bb7bff7467b58c3e8a6232c23198fff67885f20826c1"
+    }
+  },
+  "3d-vla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-3d-vla.webp",
+      "original": "https://arxiv.org/html/2403.09631v1/3dvla_arch_v2.png",
+      "page": "https://arxiv.org/html/2403.09631",
+      "credit": "3D-VLA authors",
+      "alt": "3D-VLA — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2048,
+      "height": 883,
+      "note": "Official Figure 2 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "4637f5e7431188d2cb6d9b8ffb493677cd7c7f861df56422e55c50ca49da4d4d"
+    }
+  },
+  "og-vla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-og-vla.webp",
+      "original": "https://arxiv.org/html/2506.01196v2/OGVLA-fig2.png",
+      "page": "https://arxiv.org/html/2506.01196",
+      "credit": "OG-VLA authors",
+      "alt": "OG-VLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2027,
+      "height": 1140,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "6d4ae33177d848323ed2cf61598377b88e45a18853d72f061c8d241ca5598f8a"
+    }
+  },
+  "3d-cavla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-3d-cavla.webp",
+      "original": "https://arxiv.org/html/2505.05800v2/Figures/3dcavla_arch_newv7.png",
+      "page": "https://arxiv.org/html/2505.05800",
+      "credit": "3D-CAVLA authors",
+      "alt": "3D-CAVLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 798,
+      "height": 302,
+      "note": "Official Figure 1 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "000f6f73b5d23d7bb2cf5d4879317fe49e32c26a3701432bd5401acdeaa6c477"
+    }
+  },
+  "lingbot-depth": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-lingbot-depth.webp",
+      "original": "https://arxiv.org/html/2601.17895v1/fig-method-crop.png",
+      "page": "https://arxiv.org/html/2601.17895",
+      "credit": "LingBot-Depth authors",
+      "alt": "LingBot-Depth — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1367,
+      "height": 697,
+      "note": "Official Figure 2 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "2c465a1450d2c840d3752bf08711fac1cfe4796e8eb8b81c7b3d150de2c6c805"
+    }
+  },
+  "rynnbrain-vla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-rynnbrain-vla.webp",
+      "original": "https://arxiv.org/html/2602.14979v1/vla_model.png",
+      "page": "https://arxiv.org/html/2602.14979",
+      "credit": "RynnBrain / RynnBrain-VLA authors",
+      "alt": "RynnBrain / RynnBrain-VLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 579,
+      "height": 412,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "6d9aa5a28edf2fc394c49853d489ba3fc7d09d3086a389e043574ed11aad278e"
+    }
+  },
+  "rynnbrain-11-vla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-rynnbrain-11-vla.webp",
+      "original": "https://arxiv.org/html/2607.17977v2/vla_arch_v3.png",
+      "page": "https://arxiv.org/html/2607.17977",
+      "credit": "RynnBrain 1.1 / RynnBrain-VLA authors",
+      "alt": "RynnBrain 1.1 / RynnBrain-VLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1373,
+      "height": 421,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "9372891037d3215e6e216ace21ad9eded6cec2776e0d500f25be9ffe6f818fa7"
+    }
+  },
+  "rynnvla-001": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-rynnvla-001.webp",
+      "original": "https://arxiv.org/html/2509.15212v1/arch.png",
+      "page": "https://arxiv.org/html/2509.15212",
+      "credit": "RynnVLA-001 authors",
+      "alt": "RynnVLA-001 — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1505,
+      "height": 732,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "34d837cff0b92004d7f9a76bf0940516287737693b1a1f274ec6a7004ff2b8d6"
+    }
+  },
+  "rynnvla-002": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-rynnvla-002.webp",
+      "original": "https://arxiv.org/html/2511.17502v3/overview_6.png",
+      "page": "https://arxiv.org/html/2511.17502",
+      "credit": "RynnVLA-002 authors",
+      "alt": "RynnVLA-002 — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1667,
+      "height": 767,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "716ffbfe2016ff6f4e5d4c18d5fa5b196a204226dfb9b8dc827e1bd8e5bb3ed1"
+    }
+  },
+  "bimanual-rma": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-bimanual-rma.webp",
+      "original": "https://arxiv.org/html/2610.14833v1/figures/rma_diagram.jpg",
+      "page": "https://arxiv.org/html/2610.14833",
+      "credit": "Bimanual RMA authors",
+      "alt": "Bimanual RMA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1327,
+      "height": 1800,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "3c11df71791528cf751a09e01889124dae2c370381d7d900f6b281249f8211c1"
+    }
+  },
+  "stereopatch": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-stereopatch.webp",
+      "original": "https://arxiv.org/html/2609.15509v1/figures/fig3_policy_instantiations.png",
+      "page": "https://arxiv.org/html/2609.15509",
+      "credit": "StereoPatch authors",
+      "alt": "StereoPatch — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 646,
+      "height": 461,
+      "note": "Official Figure 3 shows integration into ACT and Diffusion Policy; Figure 2 separately explains token construction. Complete figure retained. Original rights remain with authors/publisher.",
+      "sourceSha256": "9ed62f3e7e21a0b0dedd0af0b909dd1a3c034653a235d43f967838ce33542842"
+    }
+  },
+  "robo3r": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-robo3r.webp",
+      "original": "https://arxiv.org/html/2602.10101v2/model.png",
+      "page": "https://arxiv.org/html/2602.10101",
+      "credit": "Robo3R authors",
+      "alt": "Robo3R — model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1237,
+      "height": 487,
+      "note": "Official Figure 2 showing the model architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "a8a0857ebf5bf1dc2258be565e9b8409ceccee94285ba1ea1e10729206121998"
+    }
+  },
+  "depthvla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-depthvla.webp",
+      "original": "https://arxiv.org/html/2510.13375v1/model.png",
+      "page": "https://arxiv.org/html/2510.13375",
+      "credit": "DepthVLA authors",
+      "alt": "DepthVLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2177,
+      "height": 917,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "df0b86473fe19c7ff827428be8f66a6264340b32f57ee34896e24d142d25ac12"
+    }
+  },
+  "4d-vla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-4d-vla.webp",
+      "original": "https://arxiv.org/html/2506.22242v2/vla_pipeline.png",
+      "page": "https://arxiv.org/html/2506.22242",
+      "credit": "4D-VLA authors",
+      "alt": "4D-VLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1459,
+      "height": 454,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "a8a5b65301307f79b8e080da8afc6450b0f8f74c589deb9d6c5da0b816cce380"
+    }
+  },
+  "swiftvla": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-swiftvla.webp",
+      "original": "https://arxiv.org/html/2512.00903v1/pipeline16.png",
+      "page": "https://arxiv.org/html/2512.00903",
+      "credit": "SwiftVLA authors",
+      "alt": "SwiftVLA — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 806,
+      "height": 270,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "e87e0e27dc020335b028b44e4b499b04ee7c3202e8eaa423e38333f3ae62fc96"
+    }
+  },
+  "g3flow": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-g3flow.webp",
+      "original": "https://arxiv.org/html/2411.18369v3/main.png",
+      "page": "https://arxiv.org/html/2411.18369",
+      "credit": "G3Flow authors",
+      "alt": "G3Flow — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1414,
+      "height": 875,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "7b2047586a2502fbd37a299f857b594029b95edbc59831c2b1e066ab2cf2368a"
+    }
+  },
+  "manigaussian": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-manigaussian.webp",
+      "original": "https://arxiv.org/html/2403.08321v2/pipeline_v3.png",
+      "page": "https://arxiv.org/html/2403.08321",
+      "credit": "ManiGaussian authors",
+      "alt": "ManiGaussian — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1016,
+      "height": 482,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "a7953c3af83c6d85d018628136b5f34afa6cebf12e6bd9ba8a7360a9b4dafcb9"
+    }
+  },
+  "robouniview": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-robouniview.webp",
+      "original": "https://arxiv.org/html/2406.18977v3/1111.png",
+      "page": "https://arxiv.org/html/2406.18977",
+      "credit": "RoboUniView authors",
+      "alt": "RoboUniView — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2002,
+      "height": 992,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "cc0f5d4392ba95c1bc16821885201cc3fea5170ac39675e2c8285de9a63ddab0"
+    }
+  },
+  "dexpoint": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-dexpoint.webp",
+      "original": "https://arxiv.org/html/2211.09423v2/CoRL_sim_pipeline_camera_ready.svg",
+      "page": "https://arxiv.org/html/2211.09423",
+      "credit": "DexPoint authors",
+      "alt": "DexPoint — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2600,
+      "height": 967,
+      "note": "Official Figure 3 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "3819c788c99a86139fac3b5413a54c1c274a8c5d7d4ad0da4c15b10ac37245d3"
+    }
+  },
+  "equivact": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-equivact.webp",
+      "original": "https://arxiv.org/html/2310.16050v2/figs/policy_learning.png",
+      "page": "https://arxiv.org/html/2310.16050",
+      "credit": "EquivAct authors",
+      "alt": "EquivAct — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1978,
+      "height": 633,
+      "note": "Official Figure 4 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "46a2954fc0e962d45dc59e64c7e2b74b46c32a458a36bee6330bb0482d8f1b4e"
+    }
+  },
+  "sgr": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-sgr.webp",
+      "original": "https://arxiv.org/html/2306.10474v2/architecture.png",
+      "page": "https://arxiv.org/html/2306.10474",
+      "credit": "Semantic-Geometric Representation (SGR) authors",
+      "alt": "Semantic-Geometric Representation (SGR) — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2022,
+      "height": 935,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "b05e490d6b471e0c220423aaa15d37e0949bac368e79c01b8cbaabde3350f2d6"
+    }
+  },
+  "sgrv2": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-sgrv2.webp",
+      "original": "https://arxiv.org/html/2406.10615v2/method_camera_ready.png",
+      "page": "https://arxiv.org/html/2406.10615",
+      "credit": "SGRv2 authors",
+      "alt": "SGRv2 — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1307,
+      "height": 545,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "2471c1498e3a0bd67bbdea5c0268669373d2b0ad47a71fa57958695c847f543e"
+    }
+  },
+  "gembench-3d-lotus": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-gembench-3d-lotus.webp",
+      "original": "https://arxiv.org/html/2410.01345v2/method_overview_pdf.png",
+      "page": "https://arxiv.org/html/2410.01345",
+      "credit": "GemBench / 3D-LOTUS++ authors",
+      "alt": "GemBench / 3D-LOTUS++ — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1200,
+      "height": 298,
+      "note": "Official Figure 2 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "273922e76c3c08a7e06ffcdfbaa7a845c783fac02ca6e77303e934ac0ae7a6e5"
+    },
+    "benchmark": {
+      "path": "/images/catalog/sensing-depth-gembench-benchmark.webp",
+      "original": "https://www.di.ens.fr/willow/research/gembench/img/teaser.png",
+      "page": "https://www.di.ens.fr/willow/research/gembench/",
+      "credit": "GemBench / 3D-LOTUS authors",
+      "alt": "GemBench / 3D-LOTUS++ — task coverage and generalization taxonomy",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1456,
+      "height": 541,
+      "sourceSha256": "2862bf9b94dd3ca08250341ea753aed176328dd64289a19ff8d72dbd08672551",
+      "note": "Official project overview shows task coverage and the four generalization levels. Complete author figure retained. Original rights remain with authors/publisher."
+    }
+  },
+  "tax-pose": {
+    "policy": {
+      "path": "/images/catalog/sensing-depth-tax-pose.webp",
+      "original": "https://arxiv.org/html/2211.09325v3/TAX-Pose-Figures-Pipeline-Robot-5-NoBack2.png",
+      "page": "https://arxiv.org/html/2211.09325",
+      "credit": "TAX-Pose authors",
+      "alt": "TAX-Pose — policy/control architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 931,
+      "height": 171,
+      "note": "Official Figure 1 showing the policy/control architecture. Complete source figure retained in an optimized local copy. Original rights remain with authors/publisher.",
+      "sourceSha256": "134c9d8dfdd28c5f47f2b9b13cb37df445b545cdeeceeecd2b50b8c23d1b6dae"
+    }
+  },
+  "cltp": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-cltp-policy.webp",
+      "original": "https://arxiv.org/html/2505.08194v1/method.png",
+      "page": "https://arxiv.org/abs/2505.08194",
+      "credit": "CLTP / Tac3D-LLM authors",
+      "alt": "CLTP / Tac3D-LLM — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1357,
+      "height": 520,
+      "note": "Official Figure 3: Contrastive tactile-point-cloud alignment with frozen vision-language encoders. Original rights remain with authors/publisher.",
+      "sourceSha256": "e5cc09e8be1442fb85debdea4ac9b89e8ebb64ed324467d36cdfba5b28dd9001"
+    }
+  },
+  "tac-dino": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-tac-dino-policy.webp",
+      "original": "https://arxiv.org/html/2606.12069v1/methods.png",
+      "page": "https://arxiv.org/abs/2606.12069",
+      "credit": "Tac-DINO / VTPA authors",
+      "alt": "Tac-DINO / VTPA — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 786,
+      "note": "Official Figure 4: VTPA representation-learning architecture, from the released v1 manuscript. Original rights remain with authors/publisher.",
+      "sourceSha256": "3613f46bbada1ab729dc522c3fa89c38674dd1a08086e9f6c192b5ec18d4da9c"
+    }
+  },
+  "tactx": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-tactx-policy.webp",
+      "original": "https://arxiv.org/html/2606.31236v1/figures/archi_v4.png",
+      "page": "https://arxiv.org/abs/2606.31236",
+      "credit": "TactX authors",
+      "alt": "TactX — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1908,
+      "height": 613,
+      "note": "Official Figure 2: Sensor-specific encoders and decoders learn a shared tactile latent through alignment and reconstruction. Downstream ACT integration is described separately. Original rights remain with authors/publisher.",
+      "sourceSha256": "799e73f6f7b7456ca86538c1172a7640f508eb27f75c3f46baa7ce8b019e2a49"
+    }
+  },
+  "uniforce": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-uniforce-policy.webp",
+      "original": "https://arxiv.org/html/2602.01153v1/fig/f2.png",
+      "page": "https://arxiv.org/abs/2602.01153",
+      "credit": "UniForce authors",
+      "alt": "UniForce — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 742,
+      "note": "Official Figure 2: Shared patch-wise force latent learned through inverse/forward dynamics and equilibrium supervision. Original rights remain with authors/publisher.",
+      "sourceSha256": "5ccedd77268428c322c6f1b000ebe56dc0f06db632b0874790785ca7f993d7a4"
+    }
+  },
+  "ra-touch": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-ra-touch-policy.webp",
+      "original": "https://arxiv.org/html/2505.14270v1/main_architecture.png",
+      "page": "https://arxiv.org/abs/2505.14270",
+      "credit": "RA-Touch authors",
+      "alt": "RA-Touch — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2047,
+      "height": 592,
+      "note": "Official Figure 2: Retrieval-augmented tactile understanding architecture and its external visual knowledge source. Original rights remain with authors/publisher.",
+      "sourceSha256": "2e38683524f4cac3bbdbded4bf027d1262e112dedd8341be01c5160577637c38"
+    }
+  },
+  "stola": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-stola-policy.webp",
+      "original": "https://arxiv.org/html/2505.04201v2/stola_crc.png",
+      "page": "https://arxiv.org/abs/2505.04201",
+      "credit": "SToLa authors",
+      "alt": "SToLa — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1344,
+      "height": 584,
+      "note": "Official Figure 2: Touch encoder, adapter and mixture-of-experts tactile-language architecture. Original rights remain with authors/publisher.",
+      "sourceSha256": "bf7f3ab7dbcdb2ffed8193bae20dc16d3ef6d1007fd7e41c657377ad23f2d096"
+    }
+  },
+  "vitapes": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-vitapes-policy.webp",
+      "original": "https://arxiv.org/html/2505.20032v3/ViTaPEs_arch2.png",
+      "page": "https://arxiv.org/abs/2505.20032",
+      "credit": "ViTaPEs authors",
+      "alt": "ViTaPEs — representation architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1280,
+      "height": 900,
+      "note": "Official Figure 2: Separate modality tokens and two-stage positional encoding before multimodal attention. Original rights remain with authors/publisher.",
+      "sourceSha256": "a8d2067f2d05f5089a86576a06074cc04d0ab59cb2edda3a05201117482ff801"
+    }
+  },
+  "making-sense-vision-touch": {
+    "policy": {
+      "path": "/assets/figures/sensing-late-making-sense-vision-touch-policy.webp",
+      "original": "https://arxiv.org/html/1810.10191v2/control_arch_fig5.svg",
+      "page": "https://arxiv.org/abs/1810.10191",
+      "credit": "Making Sense of Vision and Touch authors",
+      "alt": "Making Sense of Vision and Touch — deployed controller architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1544,
+      "height": 949,
+      "note": "Official Figure 3: Policy, interpolating trajectory generator and compliant torque-control hierarchy. Original rights remain with authors/publisher.",
+      "sourceSha256": "46ddf8b4bc7e2a3666e8f77de801e960e50865b793a15d79496942037aa51434"
+    }
+  },
+  "touch-and-go": {
+    "policy": {
+      "path": "/assets/figures/sensing-touch-and-go-policy.webp",
+      "original": "https://arxiv.org/html/2211.12498v2/teaser-v5.png",
+      "page": "https://arxiv.org/html/2211.12498v2#S0.F1",
+      "credit": "Fengyu Yang, Chenyang Ma, Jiacheng Zhang, Jing Zhu, Wenzhen Yuan and Andrew Owens (CC BY 4.0)",
+      "alt": "Original Figure1(b) pairs visual and GelSight observations through separate encoders into a shared embedding for self-supervision.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 390,
+      "height": 448,
+      "note": "Original Figure1 panel(b), the actual dual-encoder/self-supervision schematic. The dataset and stylization/future-prediction panels are omitted; no complete robot controller is implied. No more detailed contrastive architecture diagram appears in the original paper.",
+      "sourceSha256": "ad2ec529f14f021418d3c89558fe66b97df1640ff9502f97c09596500f5c2f28",
+      "crop": {
+        "sourcePixels": [
+          0,
+          580,
+          390,
+          1028
+        ]
+      }
+    }
+  },
+  "tla": {
+    "policy": {
+      "path": "/assets/figures/sensing-tla-policy.webp",
+      "original": "https://arxiv.org/html/2503.08548v1/framework.png",
+      "page": "https://arxiv.org/abs/2503.08548",
+      "credit": "TLA: Tactile-Language-Action Model for Contact-Rich Manipulation authors",
+      "alt": "Tactile image sequences and instructions are encoded into corrective insertion actions.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1017,
+      "height": 406,
+      "note": "Figure 2; original author method diagram. ",
+      "sourceSha256": "7b5fc4c8f0c5cbff180616336291747772f03b1485a9437d4cd358fe23407194"
+    }
+  },
+  "vtla": {
+    "policy": {
+      "path": "/assets/figures/sensing-vtla-policy.webp",
+      "original": "https://arxiv.org/html/2505.09577v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2505.09577",
+      "credit": "VTLA: Vision-Tactile-Language-Action Model with Preference Learning for Insertion Manipulation authors",
+      "alt": "Vision and tactile tokens support instruction tuning and preference optimization.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 953,
+      "height": 665,
+      "note": "Figure 3; original author method diagram. ",
+      "sourceSha256": "fbeed90d611587c0427f82acdb189ab9e8c00cb732cb24d6466fe77b28837ae7"
+    }
+  },
+  "retouch": {
+    "policy": {
+      "path": "/assets/figures/sensing-retouch-policy.webp",
+      "original": "https://arxiv.org/html/2608.01824v2/framework.png",
+      "page": "https://arxiv.org/abs/2608.01824",
+      "credit": "ReTouch: Empowering Contact-Rich Dexterous Manipulation with Online-Refined Tactile Prediction authors",
+      "alt": "Training-only hindsight targets supervise foresight tactile prediction and action refinement.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1358,
+      "height": 572,
+      "note": "Figure 2; original author method diagram. ",
+      "sourceSha256": "c09641fa2bf20d01a0787429534fdff1eaa5a8179206adf1a4b28e08cbd09cd2"
+    }
+  },
+  "foar": {
+    "policy": {
+      "path": "/assets/figures/sensing-foar-policy.webp",
+      "original": "https://arxiv.org/html/2411.15753v2/model.png",
+      "page": "https://arxiv.org/abs/2411.15753",
+      "credit": "FoAR: Force-Aware Reactive Policy for Contact-Rich Robotic Manipulation Thanks: * Equal Contribution. Thanks: † Hao-Shu Fang and Cewu Lu are the corresponding authors. Thanks: Emails: {he0610, galaxies, jjchen20}@sjtu.edu.cn, fhaoshu@gmail.com, lucewu@sjtu.edu.cn authors",
+      "alt": "Point-cloud and force histories are fused using predicted contact for diffusion actions.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 1438,
+      "note": "Figure 2; original author method diagram. ",
+      "sourceSha256": "b1e781f335294710291376dfba2f210b85e48c6c1dfcc7ce53ed59a3f9d991b8"
+    }
+  },
+  "forcemimic": {
+    "policy": {
+      "path": "/assets/figures/sensing-forcemimic-policy.webp",
+      "original": "https://arxiv.org/html/2410.07554v3/pipeline.png",
+      "page": "https://arxiv.org/abs/2410.07554",
+      "credit": "ForceMimic: Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation authors",
+      "alt": "Robot-free wrench and motion demonstrations train a force-position policy with hybrid control.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1600,
+      "height": 709,
+      "note": "Figure 1; original author method diagram. ",
+      "sourceSha256": "4d0d13b0cb65fdc85e50df0855128092eca7b91f63db1f0ddba4e8b528feab5b"
+    }
+  },
+  "implicitrdp": {
+    "policy": {
+      "path": "/assets/figures/sensing-implicitrdp-policy.webp",
+      "original": "https://arxiv.org/html/2512.10946v2/network_architecture.svg",
+      "page": "https://arxiv.org/abs/2512.10946",
+      "credit": "ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning authors",
+      "alt": "Causal force encoding and attention support streaming diffusion control.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 897,
+      "height": 771,
+      "note": "Figure 2; original author method diagram. ",
+      "sourceSha256": "17ae196dc1e214dcbb60dc8bfbd207b5abd82b38fea3aa1e310f7f0032c9ea0e"
+    }
+  },
+  "adaptac": {
+    "policy": {
+      "path": "/assets/figures/sensing-adaptac-policy.webp",
+      "original": "https://arxiv.org/html/2505.13982v2/pip.png",
+      "page": "https://arxiv.org/abs/2505.13982",
+      "credit": "Adaptive Visuo-Tactile Fusion with Predictive Force Attention for Dexterous Manipulation Thanks: Jinzhou Li, Tianhao Wu, Jiyao Zhang, Zeyuan Chen, Haotian Jin, Mingdong Wu and Hao Dong are with the Center on Frontiers of Computing Studies, School of Computer Science, Peking University, also with PKU-Agibot Lab, School of Computer Science, Peking University, and also with National Key Laboratory for Multimedia Information Processing, School of Computer Science, Peking University. Yunjun Shen is with Ant Group. Yaodong Yang is with Institute for Artificial Intelligence, Peking University. Thanks: * and † \\dagger indicates equal contribution. Thanks: Corresponding to hao.dong@pku.edu.cn. authors",
+      "alt": "Predicted and observed forces query visual and tactile features for action generation.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1314,
+      "height": 577,
+      "note": "Figure 2; original author method diagram. ",
+      "sourceSha256": "36d76e276918729ab0275aa6c76f2b2645f4c19d756b1af4f15ea07b82065398"
+    }
+  },
+  "vitacworld": {
+    "policy": {
+      "path": "/assets/figures/sensing-vitacworld-policy.webp",
+      "original": "https://arxiv.org/html/2607.22530v2/pipeline_arxiv.png",
+      "page": "https://arxiv.org/abs/2607.22530",
+      "credit": "ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation authors",
+      "alt": "Action-conditioned visual and tactile generation supports data augmentation and policy evaluation.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1600,
+      "height": 900,
+      "note": "Figure 2; original author method diagram. Supporting world-model interface, not an action-policy architecture.",
+      "sourceSha256": "eccdd5afec93ee1b92d42442e429b05b6c51c0eeed32438cdc0b4c75e93bd841"
+    }
+  },
+  "tacman-turbo": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacman-turbo-policy.webp",
+      "original": "https://arxiv.org/html/2508.02204v4/method_c.png",
+      "page": "https://arxiv.org/abs/2508.02204",
+      "credit": "TacMan-Turbo: Proactive Tactile Control for Robust and Efficient Articulated Object Manipulation authors",
+      "alt": "Contact geometry estimates handle motion and proactively corrects gripper velocity.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 864,
+      "height": 523,
+      "note": "Figure 1; original author method diagram. ",
+      "sourceSha256": "c399db5253adcfa2b694090ed83578e082a3c742f91c01f0012ad8acc9cc7582"
+    }
+  },
+  "tacvla": {
+    "policy": {
+      "path": "/assets/figures/sensing-tacvla-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.12665",
+      "page": "https://arxiv.org/abs/2603.12665",
+      "credit": "TacVLA authors",
+      "alt": "RGB, state, language and contact-gated tactile tokens condition a VLM and action expert.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1449,
+      "height": 693,
+      "note": "Original PDF page 1, Figure 1; includes modality inputs, policy, gating and task-context panels. Caption and body excluded.",
+      "sourceSha256": "4e3efb28b4b62e517189ec4b9fb620c60e5286abfb6aa0624f394b218f09f8e2"
+    }
+  },
+  "kinedex": {
+    "policy": {
+      "path": "/assets/figures/sensing-kinedex-policy.webp",
+      "original": "https://arxiv.org/html/2505.01974v1/pipline.png",
+      "page": "https://arxiv.org/abs/2505.01974",
+      "credit": "KineDex authors",
+      "alt": "Kinesthetic demonstrations are inpainted before a tactile policy learns joint and force targets for dexterous control.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1756,
+      "height": 704,
+      "note": "Original Figure 2: kinesthetic image preprocessing and force-informed policy architecture. Inpainting is training preprocessing.",
+      "sourceSha256": "621e889bcf38bbe8c25ec84a7ce05b262761f6d52adcf38bb0b1a3dbced91a44"
+    }
+  },
+  "forcebench": {
+    "benchmark": {
+      "path": "/images/catalog/forcebench-benchmark.webp",
+      "original": "https://forcebench-platform.github.io/assets/figures/simulation-tasks.webp",
+      "page": "https://forcebench-platform.github.io/",
+      "credit": "forcebench authors; original research figure",
+      "alt": "Eight simulation tasks shown in six environment panels, including force-dependent sorting, controls, drawer pulling and threaded assembly.",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1900,
+      "height": 1430,
+      "note": "Official task overview. Faucet and stove panels each contain two tasks; the figure is not an eight-panel claim."
+    },
+    "policy": {
+      "path": "/images/catalog/forcebench-policy.webp",
+      "original": "https://forcebench-platform.github.io/assets/figures/force-integration.webp",
+      "page": "https://forcebench-platform.github.io/",
+      "credit": "forcebench authors; original research figure",
+      "alt": "Alternative wrist-force pathways condition the shared π0.5 action backbone; future-force supervision is training-only.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1900,
+      "height": 999,
+      "note": "Original force-interface architecture; alternatives are separate compared systems, not a single concatenated deployment pipeline."
+    }
+  },
+  "evo-dexbench": {
+    "benchmark": {
+      "path": "/images/catalog/evo-dexbench-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.21180v1/main.png",
+      "page": "https://arxiv.org/html/2610.21180#S0.F1",
+      "credit": "evo-dexbench authors; original research figure",
+      "alt": "Evo-DexBench overview of six functional families, Core–Gen tasks, single/bimanual scenes and tactile observations.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1568,
+      "height": 908,
+      "note": "Original complete overview; the main paper evaluates a15-task subset of the30-task suite."
+    }
+  },
+  "maia": {
+    "policy": {
+      "path": "/images/catalog/maia-policy.webp",
+      "original": "https://arxiv.org/html/2610.21686v1/method.png",
+      "page": "https://arxiv.org/html/2610.21686#S4.F3",
+      "credit": "maia authors; original research figure",
+      "alt": "MAIA visual–action–force predictor and anomaly head forecast physical interaction consequences of proposed actions.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1900,
+      "height": 599,
+      "note": "Original Figure3 shows the predictive/reranking component; a separate frozen π0.5 produces candidate actions."
     }
   }
 }

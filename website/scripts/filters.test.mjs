@@ -14,6 +14,8 @@ import {
   releaseFor,
   artifactLinks,
   CATEGORIES,
+  isExecutablePolicy,
+  recordTypeLabel,
 } from "../src/lib/schema.ts";
 const works = JSON.parse(
   fs.readFileSync(new URL("../../data/works.json", import.meta.url), "utf8"),
@@ -23,6 +25,47 @@ const w = (id) => {
   assert.ok(v, `Missing source record ${id}`);
   return v;
 };
+test("Supporting model inputs do not turn an encoder into an executable policy", () => {
+  const model = {
+    ...w("sparsh"),
+    resourceType: "model",
+    collections: ["benchmark", "policy"],
+    categories: ["supporting-resources", "tactile-representation"],
+    model: {
+      family: "Tactile encoder",
+      inputs: "Tactile sensor image",
+      outputs: "Transferable contact features",
+    },
+  };
+  assert.equal(isExecutablePolicy(model), false);
+  assert.equal(recordTypeLabel(model, "policy"), "Model");
+  assert.equal(recordTypeLabel(model, "benchmark"), "Perception benchmark");
+  assert.ok(
+    matches(model, "policy", {
+      ...emptyView(),
+      filters: { type: "Model" },
+      query: "contact features",
+    }),
+  );
+  assert.ok(
+    !matches(model, "policy", { ...emptyView(), filters: { type: "Policy" } }),
+  );
+  assert.ok(inCollection(model, "benchmark", "supporting-resources"));
+  assert.ok(!inCollection(model, "benchmark"));
+});
+test("Model route and record type survive URL restoration", () => {
+  const view = {
+    ...emptyView(),
+    category: "tactile-representation",
+    filters: { type: "Model" },
+  };
+  assert.deepEqual(
+    fromParams(toParams("policy", view, [], undefined), "policy"),
+    view,
+  );
+  assert.ok(CATEGORIES.policy.some((c) => c.id === "geometry-models"));
+  assert.equal(isExecutablePolicy(w("openvitac")), true);
+});
 test("Task-name search traverses scoped task lists", () => {
   const v = { ...emptyView(), query: "Insert HDMI" };
   assert.ok(matches(w("univtac"), "benchmark", v));

@@ -18,7 +18,7 @@ A JEPA-style latent world model learns visuo-tactile dynamics from demonstration
 
 | Field | Reported value and source scope |
 | :-- | :-- |
-| Record type | benchmark |
+| Record type | policy |
 | Policy family | Model-based planning [4](https://arxiv.org/pdf/2606.13877)  |
 | Base model and architecture | From-scratch IMPALA-style RGB/tactile-image encoders, PointNet-style point-cloud encoder or taxel-wise TacFF MLP; latent concatenation and action-conditioned GRU dynamics with JEPA-style prediction. [4](https://arxiv.org/pdf/2606.13877)  |
 | Model size and component | Representation-dependent; Figure 7 visualizes model sizes with example bubble labels 1.6M, 5.4M and 17.9M. There is no single universal ContactWorld policy size. [4](https://arxiv.org/pdf/2606.13877)  |

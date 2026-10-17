@@ -32,8 +32,13 @@ Benchmark figures show task coverage or taxonomy; policy figures show method
 architecture. Surveys appear within relevant categories, use conceptual
 taxonomy figures, and have scope/corpus fields instead of policy training
 specifications. The Record type filter separates surveys and methods; surveys
-do not increase the executable-policy count. Citation trails and scope
-decisions are available under Coverage. Click figures to enlarge. Supporting resources are a distinct
+do not increase the executable-policy count. Model records separately describe
+tactile representations, multimodal reasoning and manipulation-relevant
+geometry predictors, with model interfaces and downstream evidence. They have
+their own type facet, detail fields, comparison rows and CSV columns, and are
+counted separately from executable policies. Citation trails, tactile/geometry
+discovery sources and unresolved candidates are available under Coverage.
+Click figures to enlarge. Supporting resources are a distinct
 category. Cost and simulator fields preserve the source's version and scope.
 
 Public website: <https://chang-xinhai.github.io/Awesome-RGBDT-Manipulation/>.

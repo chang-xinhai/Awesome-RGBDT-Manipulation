@@ -12,8 +12,8 @@ of the same research records. Do not maintain a second, divergent bibliography.
    primary source and contribution justify it.
 3. Verify the first public publication date. Use a partial date if that is the
    available precision. Undated works use `date: ""`, `year: 0`.
-4. Fill the common metadata and every field in the applicable benchmark and/or
-   policy object. Explicitly use `Not reported` or `Not verified`; do not infer
+4. Fill the common metadata and every field in the applicable benchmark, policy,
+   model or survey object. Explicitly use `Not reported` or `Not verified`; do not infer
    costs, versions, parameters or sensor use from a neighboring model.
 5. Attach primary evidence with the fields it supports. Retain the relevant
    setting, source version and paper/release distinction.
@@ -38,6 +38,14 @@ invent model size, deployment inputs or training costs for a literature review.
 Reconcile citation trails in `data/survey-source-audit.json`, and return to each
 original method paper before adding its technical record. Keep adjacent data,
 background references and unreviewed candidates explicitly distinct.
+
+Use `resourceType: model` and the model-specific interface/resource fields for
+non-executable tactile representations, multimodal reasoning models and
+manipulation-relevant geometry predictors. Do not invent an action head or
+control frequency. Preserve their downstream-policy evidence without counting
+the model as an additional executable policy. Record discovery dispositions
+from tactile and geometry sources in `data/sensing-source-audit.json`; retain
+the reviewed subset and unresolved candidates explicitly.
 
 ```sh
 python3 scripts/generate.py

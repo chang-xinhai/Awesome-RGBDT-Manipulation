@@ -4,7 +4,10 @@ import argparse,datetime,json,pathlib,re,time,urllib.parse,urllib.request,xml.et
 R=pathlib.Path(__file__).resolve().parents[1]
 NS={'a':'http://www.w3.org/2005/Atom'}
 QUERIES=[
- '(cat:cs.RO OR cat:cs.AI) AND (all:tactile OR all:visuotactile OR all:"visuo-tactile")',
+ '(cat:cs.RO OR (cat:cs.CV AND all:robot)) AND (all:"depth" OR all:"point cloud" OR all:"scene flow" OR all:"3D representation" OR all:"4D world")',
+ '(cat:cs.RO OR cat:cs.CV) AND (all:"tactile pretraining" OR all:"tactile representation" OR all:"vision-tactile-language" OR all:taxel)',
+
+ '(cat:cs.RO OR cat:cs.CV OR cat:cs.AI) AND (all:tactile OR all:visuotactile OR all:"visuo-tactile")',
  'cat:cs.RO AND (all:"precision manipulation" OR all:"robotic assembly" OR all:"contact-rich" OR all:"3D policy" OR all:"RGB-D")',
  'cat:cs.RO AND (all:"manipulation benchmark" OR all:"world action" OR all:"vision-language-action")',
  '(cat:cs.RO OR (cat:cs.AI AND all:robot)) AND (all:"robot agent" OR all:"in-context learning" OR all:"self-improving" OR all:"self-evolving" OR all:"recursive self-improvement" OR all:"code as policies")',

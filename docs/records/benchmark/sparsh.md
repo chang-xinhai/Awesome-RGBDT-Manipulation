@@ -2,15 +2,15 @@
 
 [← Back to the Awesome index](../../../README.md) · [Interactive website](https://chang-xinhai.github.io/Awesome-RGBDT-Manipulation/?collection=benchmark&item=sparsh#library)
 
-# Sparsh / TacBench
+# TacBench
 
 Sparsh: Self-supervised touch representations for vision-based tactile sensing
 
 **2024-10-31 · CoRL 2024 · FAIR at Meta**
 
-**[Paper](https://arxiv.org/abs/2410.24090)** · [Project](https://sparsh-ssl.github.io/) · [Code](https://github.com/facebookresearch/sparsh) · [Data](https://huggingface.co/collections/facebook/sparsh-67167ce57566196a4526c328)
+**[Paper](https://arxiv.org/abs/2410.24090)** · [Project](https://sparsh-ssl.github.io/) · [Code](https://github.com/facebookresearch/sparsh) · [Data](https://huggingface.co/collections/facebook/sparsh-67167ce57566196a4526c328) · [Weights](https://huggingface.co/collections/facebook/sparsh-67167ce57566196a4526c328)
 
-A six-task tactile representation evaluation suite, mixing supervised sensing probes with one closed-loop bead-maze policy task.
+Self-supervised optical-touch encoders plus TacBench, a six-task tactile evaluation suite with one closed-loop bead-maze control task.
 
 <img src="../../../website/public/images/catalog/sparsh-benchmark.webp" width="760" alt="TacBench — task overview"/>
 
@@ -18,7 +18,7 @@ A six-task tactile representation evaluation suite, mixing supervised sensing pr
 
 | Field | Reported value and source scope |
 | :-- | :-- |
-| Record type | benchmark |
+| Record type | Perception benchmark |
 | Simulator | Not applicable — recorded/physical touch evaluation [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
 | Simulator version and scope | Not applicable [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/) [3](https://github.com/facebookresearch/sparsh)  |
 | Task count and scope | 6 touch-centric tasks; only bead-maze is a closed-loop manipulation-policy task [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
@@ -36,7 +36,7 @@ A six-task tactile representation evaluation suite, mixing supervised sensing pr
 | Release: code | Available [3](https://github.com/facebookresearch/sparsh)  |
 | Release: weights | Available [3](https://github.com/facebookresearch/sparsh)  |
 | Release: data | Available [3](https://github.com/facebookresearch/sparsh)  |
-| Release: license | Code/model/data terms differ; inspect official repository and dataset cards [3](https://github.com/facebookresearch/sparsh)  |
+| Release: license | Code/model/data terms differ; inspect official repository and dataset cards [3](https://github.com/facebookresearch/sparsh) [5](https://github.com/facebookresearch/sparsh/blob/main/LICENSE.md)  |
 | Release: notes | Public repository and Hugging Face collection include representation models and benchmark data. [3](https://github.com/facebookresearch/sparsh)  |
 
 **Task names — Complete six-task TacBench suite.:**
@@ -58,3 +58,5 @@ A six-task tactile representation evaluation suite, mixing supervised sensing pr
 1. [Paper](https://arxiv.org/abs/2410.24090) — Published paper / arXiv record and manuscript.
 2. [Official project](https://sparsh-ssl.github.io/) — Public project page.
 3. [Official repository](https://github.com/facebookresearch/sparsh) — Current public repository; implementation scope may differ from paper.
+4. [Original Sparsh representation and training sections](https://arxiv.org/html/2410.24090#S3) — 460K+ original pretraining corpus; Appendix C specifies eight A100 80GB GPUs. Separate from TacBench labels.
+5. [Repository license](https://github.com/facebookresearch/sparsh/blob/main/LICENSE.md) — CC BY-NC 4.0 license file verified.

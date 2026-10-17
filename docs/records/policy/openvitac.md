@@ -18,7 +18,7 @@ Adapts a pretrained VLA using temporally aware tactile encoding and token-level 
 
 | Field | Reported value and source scope |
 | :-- | :-- |
-| Record type | benchmark |
+| Record type | policy |
 | Policy family | VLA [1](https://arxiv.org/abs/2610.10384)  |
 | Base model and architecture | π0.5 with AnyTouch2 temporally aware tactile encoder [1](https://arxiv.org/abs/2610.10384) [4](https://arxiv.org/html/2610.10384)  |
 | Model size and component | Not reported [1](https://arxiv.org/abs/2610.10384) [4](https://arxiv.org/html/2610.10384)  |

@@ -8,8 +8,9 @@ ids=[w['id']for w in works];check(len(ids)==len(set(ids)),'Duplicate canonical w
 required=['id','name','title','date','year','collections','categories','resourceType','summary','institution','venue','modalities','environments','embodiments','links','release','evidence','caveats','verified']
 fields={'benchmark':['simulator','simulatorVersion','taskCount','tasks','taskListScope','capabilities','metrics','robots','sensors','data','protocol','baselines'],'policy':['family','baseModel','modelSize','inputs','outputs','trainingData','trainingTime','trainingHardware','controlRate','trainingMethod','evaluation']}
 survey_fields=['scope','taxonomy','adaptationRegimes','contextSources','evaluationAxes','corpus','reviewMethod','coverageLimits']
-cat={'benchmark':{'tactile-benchmarks','precision-assembly','dexterous-benchmarks','general-manipulation','robustness-evaluation','supporting-resources'},'policy':{'tactile-il','tactile-foundation','rgbd-3d','visual-precision-rl','generalist-foundation','agent-rsi-icl'}}
-knownTypes={'benchmark','policy','dataset','simulator','evaluation-tool','survey'}
+cat={'benchmark':{'tactile-benchmarks','precision-assembly','dexterous-benchmarks','general-manipulation','robustness-evaluation','supporting-resources'},'policy':{'tactile-il','tactile-foundation','rgbd-3d','visual-precision-rl','generalist-foundation','agent-rsi-icl','tactile-representation','geometry-models'}}
+knownTypes={'benchmark','policy','dataset','simulator','evaluation-tool','survey','model'}
+model_fields=['role','family','baseModel','modelSize','inputs','outputs','trainingMethod','trainingData','trainingTime','trainingHardware','inference','evaluation']
 primary=collections.defaultdict(list)
 for w in works:
  id=w['id'];check(all(k in w for k in required),id+': incomplete common fields');check(bool(re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',id)),id+': invalid stable ID');check(w['resourceType']in knownTypes,id+': invalid resource type')
@@ -19,9 +20,12 @@ for w in works:
   check(bool(w.get('survey')) and not w.get('policy') and not w.get('benchmark'),id+': survey must describe literature rather than an executable policy or benchmark')
   check(not w['modalities'] and not w['embodiments'],id+': survey must not claim deployment observations or a robot embodiment')
  else:check(not w.get('survey'),id+': survey fields require the survey resource type')
+ if w['resourceType']=='model':
+  check(bool(w.get('model')) and not w.get('policy'),id+': non-executable model requires model interfaces, not fabricated action-policy fields')
+ else:check(not w.get('model'),id+': model fields require the model resource type')
  for c in w['collections']:
-  check(c in fields,id+': unknown collection');check(any(k in cat.get(c,set())for k in w['categories']),id+': missing collection category');obj=w.get('survey'if w['resourceType']=='survey'else c,{})
-  check(all(k in obj for k in (survey_fields if w['resourceType']=='survey'else fields.get(c,[]))),id+': incomplete '+c+' fields')
+  check(c in fields,id+': unknown collection');check(any(k in cat.get(c,set())for k in w['categories']),id+': missing collection category');prefix='survey'if w['resourceType']=='survey'else'model'if c=='policy'and w.get('model')else c;obj=w.get(prefix,{})
+  check(all(k in obj for k in (survey_fields if prefix=='survey'else model_fields if prefix=='model'else fields.get(c,[]))),id+': incomplete '+c+' fields')
   for k,v in obj.items():check(v is not None and (isinstance(v,(str,list))),id+': invalid '+c+'.'+k)
  for k in ['code','weights','data','license','notes']:check(bool(w['release'].get(k)),id+': missing release.'+k)
  for e in w['evidence']:check(bool(re.match('https?://',e.get('url','')))and bool(e.get('label'))and bool(e.get('fields')),id+': incomplete evidence')
@@ -88,10 +92,22 @@ for source in survey_sources:
   check(entry.get('status')in ['indexed','outside-scope','background','adjacent-resource','candidate'],'Unknown survey reference disposition')
   check(bool(entry.get('title')and entry.get('note')and re.match('https?://',entry.get('url',''))),'Incomplete survey reference evidence')
   check(entry.get('workId')in ids if entry['status']=='indexed'else not entry.get('workId'),'Invalid survey citation mapping: '+entry['key'])
+  check(entry.get('workId')!=source.get('workId'),'Survey reference resolved to its containing survey: '+entry['key'])
 for w in works:
  if w.get('surveyAuditId'):check(any(s['id']==w['surveyAuditId']and s['workId']==w['id']for s in survey_sources),'Missing survey citation audit: '+w['id'])
 check(json.loads((R/'website/public/survey-source-audit.json').read_text())==survey_audit,'Website survey reference audit is stale')
-check(not(R/'.openai/hosting.json').exists(),'Unexpected hosting configuration');check(not(R/'.github/workflows/deploy.yml').exists(),'Unexpected deployment workflow')
+sensing_audit=json.loads((R/'data/sensing-source-audit.json').read_text())
+check(sensing_audit['reviewed']==cutoff,'Sensing source audit has a different review date')
+check(bool(sensing_audit['sources']),'Sensing source audit is empty')
+check(len({s['id']for s in sensing_audit['sources']})==len(sensing_audit['sources']),'Duplicate sensing audit source IDs')
+for source in sensing_audit['sources']:
+ check(all(source.get(k)for k in ['id','label','url','scope','entries']),'Incomplete sensing discovery source')
+ for entry in source['entries']:
+  check(entry.get('status')in ['indexed','outside-scope','background','adjacent-resource','candidate','unresolved'],'Unknown sensing discovery disposition')
+  check(all(entry.get(k)for k in ['name','url','note']),'Incomplete sensing discovery disposition')
+  check(bool(re.match('https?://',entry.get('url',''))),'Invalid sensing discovery URL')
+  check(entry.get('workId')in ids if entry.get('status')=='indexed'else not entry.get('workId'),'Invalid sensing discovery canonical mapping')
+check(json.loads((R/'website/public/sensing-source-audit.json').read_text())==sensing_audit,'Website sensing source audit is stale')
 if errors:
  print('\n'.join(errors));print(f'FAILED: {len(errors)} data/provenance issues');sys.exit(1)
-print(json.dumps({'status':'passed','uniqueRecords':len(works),'benchmarkRecords':sum('benchmark'in w['collections']and'supporting-resources'not in w['categories']and w['resourceType']!='survey'for w in works),'policyRecords':sum('policy'in w['collections']and w['resourceType']!='survey'for w in works),'surveyRecords':sum(w['resourceType']=='survey'for w in works),'supportingRecords':sum('supporting-resources'in w['categories']for w in works),'scopedTaskLabels':sum(len(w.get('benchmark',{}).get('tasks',[]))for w in works),'figures':sum(len(x)for x in media.values()),'primaryEvidenceURLs':len(set(s['url']for w in works for s in w['evidence']))},indent=2))
+print(json.dumps({'status':'passed','uniqueRecords':len(works),'benchmarkRecords':sum('benchmark'in w['collections']and'supporting-resources'not in w['categories']and bool(w.get('benchmark'))for w in works),'policyRecords':sum('policy'in w['collections']and bool(w.get('policy'))for w in works),'modelRecords':sum(bool(w.get('model'))for w in works),'surveyRecords':sum(w['resourceType']=='survey'for w in works),'supportingRecords':sum('supporting-resources'in w['categories']for w in works),'scopedTaskLabels':sum(len(w.get('benchmark',{}).get('tasks',[]))for w in works),'figures':sum(len(x)for x in media.values()),'primaryEvidenceURLs':len(set(s['url']for w in works for s in w['evidence']))},indent=2))

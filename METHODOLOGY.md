@@ -64,6 +64,17 @@ rates and evaluation scope. Distinguish:
 Costs and rates retain experiment qualifiers. Results across different tasks,
 data budgets, controllers and embodiments are not a unified leaderboard.
 
+## Representation and predictive models
+
+Tactile encoders, multimodal tactile-language models and manipulation-relevant
+depth/3D/4D predictors appear within Policies as **Model** records. Record their
+actual inputs, representation or prediction outputs, pretraining resources and
+downstream evidence. Keep these interfaces separate from robot actions and
+controller frequencies. An encoder used by a downstream policy does not itself
+increase the executable-policy count; a model paper can independently introduce
+a benchmark. General-purpose vision models need direct manipulation or tactile
+representation evidence to fall within this atlas's scope.
+
 ## Unknowns and release state
 
 `Not reported` denotes a missing disclosure in the inspected sources.
@@ -92,6 +103,14 @@ baselines, current leaderboard participants and implementation adapters as
 separate discovery sources. An adapter establishes integration support, not an
 evaluated result. Preserve named aliases and map them to canonical works rather
 than making each checkpoint or recipe a duplicate paper.
+
+`data/sensing-source-audit.json` retains tactile-list sections, scoped survey
+subsets, recent method bibliographies and official-release discovery trails.
+Source aliases may overlap. Indexed records, adjacent sensing/data resources,
+scope exclusions and unreviewed candidates remain distinct. Bibliography
+extraction is not a claim that every reference has completed primary-source
+review; matches require a verified artifact identity or a checked bibliographic
+alias, and must never resolve a missing reference URL to its containing survey.
 
 Artifact links always follow Paper, Project, Code, Data, then other artifacts;
 the first available artifact is highlighted. Validate schema,

@@ -1,0 +1,2771 @@
+{
+  "reviewed": "2026-10-17",
+  "scope": "Source-by-source tactile and manipulation-relevant geometry discovery. Source aliases can overlap; inclusion specifications use original papers and releases.",
+  "sources": [
+    {
+      "id": "n0-foundation-release",
+      "label": "N₀-Foundation original report and official release",
+      "url": "https://github.com/neoteai/N0-Foundation",
+      "kind": "official-release",
+      "scope": "NeoForce representation, NeoReal/NeoSim benchmark roles and current release artifacts, verified against the report and implementation.",
+      "entries": [
+        {
+          "name": "N₀-Foundation / NeoForce / NeoReal / NeoSim",
+          "url": "https://arxiv.org/abs/2608.29601",
+          "status": "indexed",
+          "workId": "n0-foundation",
+          "note": "One canonical paper retains the supporting encoder and benchmark roles; paper settings and released environment versions are separated."
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-1",
+      "label": "Awesome-Touch / Visual-Tactile",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "kind": "awesome-list",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "Combining Finger Vision and Optical Tactile Sensing: Reducing and Handling Errors While Cutting Vegetables",
+          "url": "https://ieeexplore.ieee.org/abstract/document/7803400",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Robotic grasp control with high-resolution combined tactile and proximity sensing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/7487126",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Seeing Through your Skin: Recognizing Objects with a Novel Visuotactile Sensor",
+          "url": "https://openaccess.thecvf.com/content/WACV2021/papers/Hogan_Seeing_Through_Your_Skin_Recognizing_Objects_With_a_Novel_Visuotactile_WACV_2021_paper.pdf",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "UVtac: Switchable UV Marker-Based Tactile Sensing Finger for Effective Force Estimation and Object Localization",
+          "url": "https://ieeexplore.ieee.org/document/9745352",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Finger-STS: Combined Proximity and Tactile Sensing for Robotic Manipulation",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9832483",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "SpecTac: A Visual-Tactile Dual-Modality Sensor Using UV Illumination",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9812348",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "StereoTac: a Novel Visuotactile Sensor that Combines Tactile Sensing with 3D Vision",
+          "url": "https://arxiv.org/abs/2303.06542",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "TIRgel: A Visuo-Tactile Sensor With Total Internal Reflection Mechanism for External Observation and Contact Detection",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10224334",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "VisTac Toward a Unified Multimodal Sensing Finger for Robotic Manipulation",
+          "url": "https://ieeexplore.ieee.org/document/10242327",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "CompdVision: Combining Near-Field 3D Visual and Tactile Sensing Using a Compact Compound-Eye Imaging System",
+          "url": "https://arxiv.org/pdf/2312.07146.pdf",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "Vision-based Proximity and Tactile Sensing for Robot Arms: Design, Perception, and Control",
+          "url": "https://ieeexplore.ieee.org/abstract/document/11097357",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Simultaneous Tactile-Visual Perception for Learning Multimodal Robot Manipulation",
+          "url": "https://arxiv.org/pdf/2512.09851",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tacthru-umi"
+        },
+        {
+          "name": "LightTact: A Visual–Tactile Fingertip Sensor for Deformation-Independent Contact Sensing",
+          "url": "https://arxiv.org/pdf/2512.09851",
+          "status": "indexed",
+          "note": "Discovery-list citation/title mismatch: arXiv2512.09851 is TacThru, not LightTact. Correct canonical identity retained.",
+          "workId": "tacthru-umi"
+        },
+        {
+          "name": "Biomimetic multimodal tactile sensing enables human-like robotic perception",
+          "url": "https://www.nature.com/articles/s44460-025-00006-y",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Design and application of multimodal visual-tactile sensor for object information perception",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0924424726000804?via%3Dihub",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "A Low-Cost Vision-Based Tactile Gripper with Pretraining Learning for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/pdf/2602.00514",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "lvtg-contrastive-act"
+        },
+        {
+          "name": "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting",
+          "url": "https://arxiv.org/pdf/2602.18991",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "FingerEye: Continuous and Unified Vision-Tactile Sensing for Dexterous Manipulation",
+          "url": "https://arxiv.org/pdf/2604.20689",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "fingereye"
+        },
+        {
+          "name": "TransTac: Visuo-Tactile Modality Transition via Ultraviolet-Encoded Transparent Elastomers",
+          "url": "https://arxiv.org/pdf/2606.04477",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-2",
+      "label": "Awesome-Touch / Data Collection",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "kind": "awesome-list",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "MimicTouch: Leveraging Multi-modal Human Tactile Demonstrations for Contact-rich Manipulation",
+          "url": "https://arxiv.org/pdf/2310.16917",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "mimictouch"
+        },
+        {
+          "name": "Learning Visuotactile Skills with Two Multifingered Hands",
+          "url": "https://arxiv.org/pdf/2404.16823",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "hato"
+        },
+        {
+          "name": "ManiWAV: Learning Robot Manipulation from In-the-Wild Audio-Visual Data",
+          "url": "https://arxiv.org/pdf/2406.19464?",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "3D-ViTac: Learning Fine-Grained Manipulation with Visuo-Tactile Sensing",
+          "url": "https://arxiv.org/pdf/2410.24091",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "3d-vitac"
+        },
+        {
+          "name": "Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning",
+          "url": "https://arxiv.org/pdf/2407.03162",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning Precise, Contact-Rich Manipulation through Uncalibrated Tactile Skins",
+          "url": "https://arxiv.org/pdf/2410.17246",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "visk"
+        },
+        {
+          "name": "Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/pdf/2503.02881",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "reactive-diffusion-policy"
+        },
+        {
+          "name": "DOGlove: Dexterous Manipulation with a Low-Cost Open-Source Haptic Force Feedback Glove",
+          "url": "https://arxiv.org/pdf/2502.07730",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "FACTR: Force-Attending Curriculum Training for Contact-Rich Policy Learning",
+          "url": "https://arxiv.org/pdf/2502.17432",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "factr"
+        },
+        {
+          "name": "TacCap: A Wearable FBG-Based Tactile Sensor for Seamless Human-to-Robot Skill Transfer",
+          "url": "https://arxiv.org/pdf/2503.01789",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "ViTaMIn: Learning Contact-Rich Tasks Through Robot-Free Visuo-Tactile Manipulation Interface",
+          "url": "https://arxiv.org/pdf/2504.06156",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vitamin"
+        },
+        {
+          "name": "TactileAloha: Learning Bimanual Manipulation With Tactile Sensing",
+          "url": "https://ieeexplore.ieee.org/document/11063285",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "PolyTouch: A Robust Multi-Modal Tactile Sensor for Contact-rich Manipulation Using Tactile-Diffusion Policies",
+          "url": "https://arxiv.org/pdf/2504.19341",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "polytouch"
+        },
+        {
+          "name": "GelFusion: Enhancing Robotic Manipulation under Visual Constraints via Visuotactile Fusion",
+          "url": "https://arxiv.org/pdf/2505.07455",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "gelfusion"
+        },
+        {
+          "name": "FreeTacMan: Robot-free Visuo-Tactile Data Collection System for Contact-rich Manipulation",
+          "url": "https://arxiv.org/pdf/2506.01941",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "freetacman"
+        },
+        {
+          "name": "DEXOP: A Device for Robotic Transfer of Dexterous Human Manipulation",
+          "url": "https://arxiv.org/pdf/2509.04441",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dexop"
+        },
+        {
+          "name": "ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation",
+          "url": "https://arxiv.org/pdf/2506.15953",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vitacformer"
+        },
+        {
+          "name": "DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation",
+          "url": "https://arxiv.org/pdf/2505.21864",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dexumi"
+        },
+        {
+          "name": "DEXOP: A Device for Robotic Transfer of Dexterous Human Manipulation",
+          "url": "https://arxiv.org/pdf/2509.04441",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dexop"
+        },
+        {
+          "name": "exUMI: Extensible Robot Teaching System with Action-aware Task-agnostic Tactile Representation",
+          "url": "https://openreview.net/attachment?id=b86nyIOJWq&name=pdf",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "ViTaMIn-B: A Reliable and Efficient Visuo-Tactile Bimanual Manipulation Interface",
+          "url": "https://arxiv.org/pdf/2511.05858",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vitamin-b"
+        },
+        {
+          "name": "Simultaneous Tactile-Visual Perception for Learning Multimodal Robot Manipulation",
+          "url": "https://arxiv.org/pdf/2512.09851",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tacthru-umi"
+        },
+        {
+          "name": "TacUMI: A Multi-Modal Universal Manipulation Interface for Contact-Rich Tasks",
+          "url": "https://arxiv.org/pdf/2601.14550",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance",
+          "url": "https://arxiv.org/pdf/2601.20239",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "touchguide"
+        },
+        {
+          "name": "TAMEn: Tactile-Aware Manipulation Engine  for Closed-Loop Data Collection in Contact-Rich Tasks",
+          "url": "https://arxiv.org/pdf/2604.07335",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tamen"
+        },
+        {
+          "name": "TouchAnything: A Dataset and Framework for Bimanual Tactile Estimation from Egocentric Video",
+          "url": "https://arxiv.org/pdf/2605.13083",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "ART-Glove: Articulated Tactile Glove for Contact-Grounded Dexterous Interaction Capture",
+          "url": "https://arxiv.org/abs/2606.16370",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "ViHaTeleop: A Low-Cost, Lightweight Visual-Haptic Teleoperation System for Dexterous Manipulation Learning",
+          "url": "https://arxiv.org/pdf/2608.16572",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "GIFT: Glove-Inferred Force Transfer: Force-Aware Human-to-Robot Skill Transfer from a Wearable Sensing Glove to a Robot Hand Without Tactile Sensors",
+          "url": "https://arxiv.org/abs/2609.14173",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "gift-force-transfer"
+        },
+        {
+          "name": "Touch2Robot: Robot Touch in the Human Demonstration Loop",
+          "url": "https://arxiv.org/abs/2609.24660",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "touch2robot"
+        },
+        {
+          "name": "VisTacAlign: Co-Training Dexterous Policies on Tactile Human and Robot Demonstrations",
+          "url": "https://arxiv.org/abs/2609.30959",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vistacalign"
+        },
+        {
+          "name": "DITTO-X: Forward and Reverse Teleoperation for Dexterous Manipulation and Human Intervention",
+          "url": "https://arxiv.org/abs/2610.00781",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "VICON: Visual-Inertial-Contact based Hand-Object Tracking for Manipulation Datasets",
+          "url": "https://arxiv.org/abs/2610.05180",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations",
+          "url": "https://arxiv.org/abs/2610.08870",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "wearable-contact-shifts"
+        },
+        {
+          "name": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
+          "url": "https://arxiv.org/abs/2610.10288",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "TACROSS: An Efficient and Low-Cost Scalable Human Touch System Across Heterogeneous Tactile Sensors for Dexterous Robot Learning",
+          "url": "https://arxiv.org/abs/2610.11945",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tacross"
+        },
+        {
+          "name": "PanTact: Teaching Whole-Body Dexterity with a Wearable Contact Interface",
+          "url": "https://arxiv.org/abs/2610.12558",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "pantact"
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-3",
+      "label": "Awesome-Touch / VLA/WM/LLM/VLM",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "kind": "awesome-list",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "A Touch, Vision, and Language Dataset for Multimodal Alignment",
+          "url": "https://arxiv.org/abs/2402.13232",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "tvl"
+        },
+        {
+          "name": "Binding Touch to Everything: Learning Unified Multimodal Tactile Representations",
+          "url": "https://arxiv.org/abs/2401.18084",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "unitouch"
+        },
+        {
+          "name": "Octopi: Object Property Reasoning with Large Tactile-Language Models",
+          "url": "https://arxiv.org/pdf/2405.02794",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "octopi"
+        },
+        {
+          "name": "TextToucher: Fine-Grained Text-to-Touch Generation",
+          "url": "https://arxiv.org/pdf/2409.05427",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "texttoucher"
+        },
+        {
+          "name": "Touch100k: A Large-Scale Touch-Language-Vision Dataset for Touch-Centric Multimodal Representation",
+          "url": "https://arxiv.org/pdf/2406.03813",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "tlv-link"
+        },
+        {
+          "name": "CLTP: Contrastive Language-Tactile Pre-training for 3D Contact Geometry Understanding",
+          "url": "https://arxiv.org/pdf/2505.08194",
+          "status": "indexed",
+          "note": "Exact primary-source identity reconciled to the reviewed canonical record; source-list placement does not establish an executable policy.",
+          "workId": "cltp"
+        },
+        {
+          "name": "Demonstrating the Octopi-1.5 Visual-Tactile-Language Model",
+          "url": "https://arxiv.org/pdf/2507.09985",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "octopi-15"
+        },
+        {
+          "name": "Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization",
+          "url": "https://arxiv.org/pdf/2507.09160",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "tactile-vla"
+        },
+        {
+          "name": "Universal Visuo-Tactile Video Understanding for Embodied Interaction",
+          "url": "https://arxiv.org/pdf/2505.22566",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vtv-llm"
+        },
+        {
+          "name": "OmniVTLA: Vision-Tactile-Language-Action Model with Semantic-Aligned Tactile Sensing",
+          "url": "https://arxiv.org/pdf/2508.08706",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "omnivtla"
+        },
+        {
+          "name": "Text2Touch: Tactile In-Hand Manipulation with LLM-Designed Reward Functions",
+          "url": "https://arxiv.org/pdf/2509.07445",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "text2touch"
+        },
+        {
+          "name": "Visuo-Tactile World Models",
+          "url": "https://arxiv.org/pdf/2602.06001",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vt-wm"
+        },
+        {
+          "name": "HapticVLA: Contact-Rich Manipulation via Vision-Language-Action Model without Inference-Time Tactile Sensing",
+          "url": "https://arxiv.org/pdf/2603.15257",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "hapticvla"
+        },
+        {
+          "name": "ForceVLA2: Unleashing Hybrid Force-Position Control with Force Awareness for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/pdf/2603.15169",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "forcevla2"
+        },
+        {
+          "name": "Tactile Modality Fusion for Vision-Language-Action Models",
+          "url": "https://arxiv.org/pdf/2603.14604",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "tacfilm"
+        },
+        {
+          "name": "Learning to Feel the Future: DreamTacVLA for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/pdf/2512.23864",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dreamtacvla"
+        },
+        {
+          "name": "OmniVTA: Visuo-Tactile World Modeling for Contact-Rich Robotic Manipulation",
+          "url": "https://arxiv.org/pdf/2603.19201",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "omnivta"
+        },
+        {
+          "name": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
+          "url": "https://arxiv.org/pdf/2603.23481",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vtam"
+        },
+        {
+          "name": "VitaTouch: Property-Aware Vision–Tactile–Language Model for Robotic Quality Inspection in Manufacturing",
+          "url": "https://arxiv.org/pdf/2604.03322",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vitatouch"
+        },
+        {
+          "name": "Modular Sensory Stream for Integrating Physical Feedback in Vision-Language-Action Models",
+          "url": "https://arxiv.org/pdf/2604.23272",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "moss"
+        },
+        {
+          "name": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning",
+          "url": "https://arxiv.org/pdf/2606.04825",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/pdf/2606.13102",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "ftp-1"
+        },
+        {
+          "name": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+          "url": "https://arxiv.org/abs/2606.17055",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "t-rex"
+        },
+        {
+          "name": "ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation",
+          "url": "https://arxiv.org/pdf/2608.15816",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vitar"
+        },
+        {
+          "name": "STAR: Sparse Tactile Representation Learning in Vision-Tactile-Language-Action Models for Dexterous Manipulation",
+          "url": "https://arxiv.org/abs/2609.12549",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "star-vtla"
+        },
+        {
+          "name": "DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot Manipulation",
+          "url": "https://arxiv.org/abs/2609.20649",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dextouch-wm"
+        },
+        {
+          "name": "ForeTac-VLA: A Forecasting-Based Tactile-Vision-Language-Action Model for Contact-Rich Robotic Manipulation",
+          "url": "https://arxiv.org/abs/2609.20980",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "foretac-vla"
+        },
+        {
+          "name": "HapticWAM: Distilling Imagined Touch into a World-Action Model without Inference-Time Tactile Sensing",
+          "url": "https://arxiv.org/abs/2609.23888",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "hapticwam"
+        },
+        {
+          "name": "TacDyn-WAM: Learning Implicit Tactile Dynamics in a Heterogeneous Visuo-Tactile World Action Model",
+          "url": "https://arxiv.org/abs/2610.00638",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "tacdyn-wam"
+        },
+        {
+          "name": "Uni-VLaT: Whole-Body Tactile Adaptation of VLA Policies for Humanoid Loco-Manipulation",
+          "url": "https://arxiv.org/abs/2609.35450",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "uni-vlat"
+        },
+        {
+          "name": "SimpleTouch: Can Vision-Language-Action Models Master Contact-Rich Manipulation Without Tactile Policy Pretraining?",
+          "url": "https://arxiv.org/abs/2610.02784",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "simpletouch"
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-4",
+      "label": "Awesome-Touch / Dexterous Manipulation",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "kind": "awesome-list",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "All the Feels: A dexterous hand with large-area tactile sensing",
+          "url": "https://arxiv.org/pdf/2210.15658",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning Purely Tactile In-Hand Manipulation with a Torque-Controlled Hand",
+          "url": "https://arxiv.org/abs/2204.03698",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dlr-pure-torque-rotation"
+        },
+        {
+          "name": "Sampling-based Exploration for Reinment Learning of Dexterous Manipulation",
+          "url": "https://arxiv.org/abs/2303.03486",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Rotating without Seeing: Towards In-hand Dexterity through Touch",
+          "url": "https://arxiv.org/abs/2303.10880",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "rotating-without-seeing"
+        },
+        {
+          "name": "Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play",
+          "url": "https://arxiv.org/abs/2303.12076",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "t-dex"
+        },
+        {
+          "name": "See to Touch: Learning Tactile Dexterity through Visual Incentives",
+          "url": "https://arxiv.org/abs/2309.12300",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "see-to-touch"
+        },
+        {
+          "name": "TacGNN: Learning Tactile-based In-hand Manipulation with a Blind Robot using Hierarchical Graph Neural Network",
+          "url": "https://arxiv.org/pdf/2304.00736.pdf",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tacgnn"
+        },
+        {
+          "name": "General In-Hand Object Rotation with Vision and Touch",
+          "url": "https://arxiv.org/abs/2309.09979",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "rotateit"
+        },
+        {
+          "name": "Dextrous Tactile In-Hand Manipulation Using a Modular Reinment Learning Architecture",
+          "url": "https://arxiv.org/abs/2303.04705",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dlr-modular-reorientation"
+        },
+        {
+          "name": "Estimator-Coupled Reinforcement Learning for Robust Purely Tactile In-Hand Manipulation",
+          "url": "https://arxiv.org/abs/2311.04060",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "ecrl"
+        },
+        {
+          "name": "Tactile SoftHand-A: 3D-Printed, Tactile, Highly-underactuated, Anthropomorphic Robot Hand with an Antagonistic Tendon Mechanism",
+          "url": "https://arxiv.org/pdf/2406.12731",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning a Shape-Conditioned Agent for Purely Tactile In-Hand Manipulation of Various Objects",
+          "url": "https://arxiv.org/abs/2407.18834",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "shape-conditioned-tactile-agent"
+        },
+        {
+          "name": "Learning Time-Optimal and Speed-Adjustable Tactile In-Hand Manipulation",
+          "url": "http://arxiv.org/abs/2411.13148",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "speed-adjustable-tactile"
+        },
+        {
+          "name": "Visuotactile-Based Learning for Insertion with Compliant Hands",
+          "url": "https://arxiv.org/pdf/2411.06408",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "compliant-hand-visuotactile-insertion"
+        },
+        {
+          "name": "PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands",
+          "url": "https://arxiv.org/abs/2504.16649",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "pp-tac"
+        },
+        {
+          "name": "Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding",
+          "url": "https://arxiv.org/pdf/2603.05687",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "contact-grounded-policy"
+        },
+        {
+          "name": "Bench2Dex: Benchmarking Visuo-Tactile Bimanual Dexterous Manipulation Across Dexterous Hands",
+          "url": "https://arxiv.org/abs/2609.15726",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "bench2dex"
+        },
+        {
+          "name": "Touch2Trace: Tactile-Driven Imitation Learning for Dexterous Cable Tracing",
+          "url": "https://arxiv.org/abs/2609.15921",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "touch2trace"
+        },
+        {
+          "name": "FlashDexRetarget: Accelerating Dexterous Manipulation Data Generation through Multi-Motion Retargeting",
+          "url": "https://arxiv.org/abs/2610.01849",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "TacOT: Learning Contact-Rich Dexterous Manipulation from Human Demonstrations via Tactile-Guided Optimal Transport",
+          "url": "https://arxiv.org/abs/2610.04363",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tacot"
+        },
+        {
+          "name": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
+          "url": "https://arxiv.org/abs/2610.10283",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-5",
+      "label": "Awesome-Touch / Manipulation/Grasping",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "kind": "awesome-list",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "Localization and manipulation of small parts using GelSight tactile sensing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/6943123",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Reliable object handover through tactile force sensing and effort control in the Shadow Robot hand",
+          "url": "https://ieeexplore.ieee.org/abstract/document/7989048",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Reliable robotic handovers through tactile sensing",
+          "url": "https://link.springer.com/article/10.1007/s10514-018-09823-2",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Tactile-Based Insertion for Dense Box-Packing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8968204",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Maintaining Grasps within Slipping Bounds by Monitoring Incipient Slip",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8794219",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Manipulation by feel: Touch-based control with deep predictive models",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8793538",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Building a Library of Tactile Skills Based on FingerVision",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9035000",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Self-Attention Based Visual-Tactile Fusion Learning for Predicting Grasp Outcomes",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9145654",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Deep Reinforcement Learning for Tactile Robotics: Learning to Type on a Braille Keyboard",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9144378",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Swingbot: Learning physical features from in-hand tac?tile exploration for dynamic swing-up manipulation",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9341006",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Tactile Dexterity: Manipulation Primitives with Tactile Feedback",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9196976",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Cable manipulation with a tactile-reactive gripper",
+          "url": "https://journals.sagepub.com/doi/full/10.1177/02783649211027233",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "A Robust Controller for Stable 3D Pinching Using Tactile Sensing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9511836",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Tactile-RL for Insertion: Generalization to Objects of Unknown Geometry",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9561646",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Improving Grasp Stability with Rotation Measurement from Tactile Sensing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9636488",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Dynamic Modeling of Hand-Object Interactions via Tactile Sensing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9636361",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "SEED: Series Elastic End Effectors in 6D for Visuotactile Tool Use",
+          "url": "https://arxiv.org/abs/2111.01376",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer",
+          "url": "https://arxiv.org/abs/2112.06374",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Meta-Residual Policy Learning: Zero-Trial Robot Skill Adaptation via Knowledge Fusion",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9697332",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Active Visuo-Tactile Interactive Robotic Perception for Accurate Object Pose Estimation in Dense Clutter",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9709520",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Autonomous Learning of Page Flipping Movements via Tactile Feedback",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9786532",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Where Shall I Touch? Vision-Guided Tactile Poking for Transparent Object Grasping",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9882387",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Efficient Tactile Simulation with Differentiability for Robotic Manipulation",
+          "url": "https://openreview.net/forum?id=6BIffCl6gsM",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Tactile Pose Estimation and Policy Learning for Unknown Object Manipulation",
+          "url": "https://arxiv.org/abs/2203.10685",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Visuo-Tactile Transformers for Manipulation",
+          "url": "https://arxiv.org/abs/2210.00121",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vtt"
+        },
+        {
+          "name": "Grasp Stability Prediction with Sim-to-Real Transfer from Tactile Sensing",
+          "url": "https://arxiv.org/abs/2208.02885",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Safely Learning Visuo-Tactile Feedback Policies in Real For Industrial Insertion",
+          "url": "https://arxiv.org/abs/2210.01340",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Manipulation via Membranes: High-Resolution and Highly Deformable Tactile Sensing and Control",
+          "url": "https://arxiv.org/abs/2209.13432",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning Self-Supervised Representations from Vision and Touch for Active Sliding Perception of Deformable Surfaces",
+          "url": "https://arxiv.org/abs/2209.13042",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Active Extrinsic Contact Sensing: Application to General Peg-in-Hole Insertion",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9812017",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Task-Driven In-Hand Manipulation of Unknown Objects with Tactile Sensing",
+          "url": "https://arxiv.org/abs/2210.13403",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Visual-tactile Fusion for Transparent Object Grasping in Complex Backgrounds",
+          "url": "https://arxiv.org/abs/2211.16693",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Integrating High-Resolution Tactile Sensing into Grasp Stability Prediction",
+          "url": "https://ieeexplore.ieee.org/document/9867102",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Heuristic grasping of convex objects using 3D imaging and tactile sensing in uncalibrated grasping scenarios",
+          "url": "https://www.sciencedirect.com/science/article/pii/S095741742201301X",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Skill generalization of tubular object manipulation with tactile sensing and Sim2Real learning",
+          "url": "https://www.sciencedirect.com/science/article/pii/S092188902200210X",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning height for top-down grasps with the DIGIT sensor",
+          "url": "https://hal.science/hal-03989704/",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Deep Functional Predictive Control for Strawberry Cluster Manipulation using Tactile Prediction",
+          "url": "https://arxiv.org/abs/2303.05393",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Cable Routing and Assembly using Tactile-driven Motion Primitives",
+          "url": "https://arxiv.org/abs/2303.11765",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Tactile-Filter: Interactive Tactile Perception for Part Mating",
+          "url": "https://arxiv.org/abs/2303.06034",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning to Detect Slip through Tactile Measures of the Contact Force Field and its Entropy",
+          "url": "https://arxiv.org/abs/2303.00935.pdf",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "Visuo-Tactile Sensor Enabled Pneumatic Device Towards Compliant Oropharyngeal Swab Sampling",
+          "url": "https://arxiv.org/abs/2305.06537.pdf",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Integrated Object Deformation and Contact Patch Estimation from Visuo-Tactile Feedback",
+          "url": "https://arxiv.org/abs/2305.14470.pdf",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "Learning-Based Slip Detection for Dexterous Manipulation Using GelStereo Sensing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10132406",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Enabling Robot Manipulation of Soft and Rigid Objects with Vision-based Tactile Sensors",
+          "url": "https://arxiv.org/pdf/2306.05791.pdf",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "TacMMs: Tactile Mobile Manipulators for Warehouse Automation",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10155191",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Visual-Tactile Learning of Garment Unfolding for Robot-Assisted Dressing",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10185075",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Grasp Stability Assessment Through Attention-Guided Cross-Modality Fusion and Transfer Learning",
+          "url": "https://arxiv.org/abs/2308.00980",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "TactileVAD: Geometric Aliasing-Aware Dynamics for High-Resolution Tactile Control",
+          "url": "https://openreview.net/forum?id=FefFLN5FvIM",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Precise Robotic Needle-Threading with Tactile Perception and Reinforcement Learning",
+          "url": "https://openreview.net/forum?id=B7PnAw4ze0l",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "General In-hand Object Rotation with Vision and Touch",
+          "url": "https://openreview.net/forum?id=RN00jfIV-X",
+          "status": "indexed",
+          "note": "OpenReview and arXiv aliases resolve to the existing RotateIt canonical work.",
+          "workId": "rotateit"
+        },
+        {
+          "name": "Inter-finger Small Object Manipulation with DenseTact Optical Tactile Sensor",
+          "url": "https://arxiv.org/abs/2308.16480",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Embedded Object Detection and Mapping in Soft Materials Using Optical Tactile Sensing",
+          "url": "https://arxiv.org/abs/2308.11087",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "VisTac Towards a Unified Multi-Modal Sensing Finger for Robotic Manipulation",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10242327",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Laboratory Automation: Precision Insertion with Adaptive Fingers utilizing Contact through Sliding with Tactile-based Pose Estimation",
+          "url": "https://arxiv.org/abs/2309.16170",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "AcTExplore: Active Tactile Exploration on Unknown Objects",
+          "url": "https://arxiv.org/abs/2310.08745",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "MimicTouch: Learning Human's Control Strategy with Multi-Modal Tactile Feedbacks",
+          "url": "https://arxiv.org/abs/2310.16917",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "mimictouch"
+        },
+        {
+          "name": "Tactile Active Inference Reinforcement Learning for Efficient Robotic Manipulation Skill Acquisition",
+          "url": "https://arxiv.org/abs/2311.11287",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Evetac: An Event-based Optical Tactile Sensor for Robotic Manipulation",
+          "url": "https://arxiv.org/abs/2312.01236",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Pose and shear-based tactile servoing",
+          "url": "https://arxiv.org/abs/2312.08411.pdf",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "GelStereo BioTip: Self-Calibrating Bionic Fingertip Visuotactile Sensor for Robotic Manipulation",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10358360",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Perceiving Extrinsic Contacts from Touch Improves Learning Insertion Policies",
+          "url": "https://arxiv.org/abs/2309.16652",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Neural feels with neural fields: Visuo-tactile perception for in-hand manipulation",
+          "url": "https://arxiv.org/abs/2312.13469",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "The Power of the Senses: Generalizable Manipulation from Vision and Touch through Masked Multimodal Learning",
+          "url": "https://arxiv.org/pdf/2311.00924",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "m3l"
+        },
+        {
+          "name": "TEXterity: Tactile Extrinsic deXterity",
+          "url": "https://arxiv.org/abs/2401.10230",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated Objects",
+          "url": "https://arxiv.org/abs/2403.01694",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tac-man"
+        },
+        {
+          "name": "LeTac-MPC: Learning Model Predictive Control for Tactile-reactive Grasping",
+          "url": "https://arxiv.org/pdf/2403.04934",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "letac-mpc"
+        },
+        {
+          "name": "Visuo-Tactile Pretraining for Cable Plugging",
+          "url": "https://arxiv.org/pdf/2403.11898",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vital-pretraining"
+        },
+        {
+          "name": "Stable Object Placing using Curl and Diff Features of Vision-based Tactile Sensors",
+          "url": "https://arxiv.org/pdf/2403.19129",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "DexiTac: Soft Dexterous Tactile Gripping",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10505922",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Learning Tactile Insertion in the Real World",
+          "url": "https://arxiv.org/abs/2405.00383",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "dreamer-tactile-insertion"
+        },
+        {
+          "name": "Generalize by Touching: Tactile Ensemble Skill Transfer for Robotic Furniture Assembly",
+          "url": "https://arxiv.org/pdf/2404.17684",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "SimPLE, a visuotactile method learned in simulation to precisely pick, localize, regrasp, and place objects",
+          "url": "https://www.science.org/doi/10.1126/scirobotics.adi8808#:~:text=SimPLE%20learns%20to%20pick%2C%20regrasp,visuotactile%20perception%2C%20and%20regrasp%20planning.",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "RoTipBot: Robotic Handling of Thin and Flexible Objects using Rotatable Tactile Sensors",
+          "url": "https://arxiv.org/abs/2406.09332",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "RoboPack: Learning Tactile-Informed Dynamics Models for Dense Packing",
+          "url": "https://arxiv.org/abs/2407.01418",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "robopack"
+        },
+        {
+          "name": "Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing",
+          "url": "https://arxiv.org/pdf/2407.07885",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "tactile-skin-translation"
+        },
+        {
+          "name": "Jointly Understand Visual and Tactile Signals",
+          "url": "https://openreview.net/pdf?id=NtQqIcSbqv",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "In-Hand Singulation and Scooping Manipulation with a 5 DOF Tactile Gripper",
+          "url": "https://arxiv.org/abs/2408.00610",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "T-TD3: A Reinforcement Learning Framework for Stable Grasping of Deformable Objects Using Tactile Prior",
+          "url": "https://arxiv.org/abs/2408.00610",
+          "status": "candidate",
+          "note": "Discovery-list identity conflict: this arXivID is In-Hand Singulation and Scooping, not the separately linked T-TD3 paper. Do not create a duplicate or misattribute claims."
+        },
+        {
+          "name": "Learning Task Planning from Multi-Modal Demonstration for Multi-Stage Contact-Rich Manipulation",
+          "url": "https://arxiv.org/pdf/2409.11863",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Bimanual In-hand Manipulation using Dual Limit Surfaces",
+          "url": "https://arxiv.org/pdf/2409.14698",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Extremum Seeking Controlled Wiggling for Tactile Insertion",
+          "url": "https://arxiv.org/pdf/2410.02595",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "T-TD3: A Reinforcement Learning Framework for Stable Grasping of Deformable Objects Using Tactile Prior",
+          "url": "https://ieeexplore.ieee.org/document/10636851",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "3D-ViTac: Learning Fine-Grained Manipulation with Visuo-Tactile Sensing",
+          "url": "https://arxiv.org/pdf/2410.24091",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "3d-vitac"
+        },
+        {
+          "name": "Analysing the Interplay of Vision and Touch for Dexterous Insertion Tasks",
+          "url": "https://arxiv.org/pdf/2410.23860",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "TARS: Tactile Affordance in Robot Synesthesia for Dexterous Manipulation",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10766612",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Image-Based Tactile Deformation Simulation and Pose Estimation for Robot Skill Learning",
+          "url": "https://www.mdpi.com/2076-3417/15/3/1099",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Multimodal and Force-Matched Imitation Learning With a See-Through Visuotactile Sensor",
+          "url": "https://ieeexplore.ieee.org/document/10814647",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "DIH-Tele: Dexterous In-Hand Teleoperation Framework for Learning Multiobjects Manipulation With Tactile Sensing",
+          "url": "https://ieeexplore.ieee.org/document/10898061",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/abs/2503.02881",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "reactive-diffusion-policy"
+        },
+        {
+          "name": "GelFusion: Enhancing Robotic Manipulation under Visual Constraints via Visuotactile Fusion",
+          "url": "https://arxiv.org/pdf/2505.07455",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "gelfusion"
+        },
+        {
+          "name": "PolyTouch: A Robust Multi-Modal Tactile Sensor for Contact-rich Manipulation Using Tactile-Diffusion Policies",
+          "url": "https://arxiv.org/abs/2504.19341",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "polytouch"
+        },
+        {
+          "name": "FreeTacMan: Robot-free Visuo-Tactile Data Collection System for Contact-rich Manipulation",
+          "url": "https://arxiv.org/pdf/2506.01941",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "freetacman"
+        },
+        {
+          "name": "TactileAloha: Learning Bimanual Manipulation with Tactile Sensing",
+          "url": "https://ieeexplore.ieee.org/document/11063285",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "SimShear: Sim-to-Real Shear-based Tactile Servoing",
+          "url": "https://arxiv.org/pdf/2508.20561",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "simshear"
+        },
+        {
+          "name": "Reactive In-Air Clothing Manipulation with Confidence-Aware Dense Correspondence and Visuotactile Affordance",
+          "url": "https://arxiv.org/pdf/2509.03889",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Text2Touch: Tactile In-Hand Manipulation with LLM-Designed Reward Functions",
+          "url": "https://arxiv.org/pdf/2509.07445",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "text2touch"
+        },
+        {
+          "name": "exUMI: Extensible Robot Teaching System with Action-aware Task-agnostic Tactile Representation",
+          "url": "https://openreview.net/attachment?id=b86nyIOJWq&name=pdf",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Touch begins where vision ends: Generalizable policies for contact-rich manipulation",
+          "url": "https://arxiv.org/pdf/2506.13762",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vital-local"
+        },
+        {
+          "name": "Learning Force-Regulated Manipulation with a Low-Cost Tactile-Force-Controlled Gripper",
+          "url": "https://arxiv.org/pdf/2602.10013",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "retaf"
+        },
+        {
+          "name": "ViTac-Tracing: Visual-Tactile Imitation Learning of Deformable Object Tracing",
+          "url": "https://arxiv.org/pdf/2603.18784",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "vitac-tracing"
+        },
+        {
+          "name": "SlipSense: Multimodal Tactile Learning for Low-Latency and Generalized Slip Detection",
+          "url": "https://arxiv.org/abs/2609.15910",
+          "status": "adjacent-resource",
+          "note": "Primary paper describes sensing, representation, estimation or a data resource; no independently audited executable manipulation policy is asserted in this control batch."
+        },
+        {
+          "name": "DA-GRD: Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-execution mismatches",
+          "url": "https://arxiv.org/abs/2609.29065",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "da-grd"
+        },
+        {
+          "name": "PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning",
+          "url": "https://arxiv.org/abs/2609.30889",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "phase-tactile"
+        },
+        {
+          "name": "Equivariant Visual-Tactile Diffusion Policy for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/abs/2610.03333",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "vista"
+        },
+        {
+          "name": "Tactile Curiosity Drives Robot Interaction",
+          "url": "https://arxiv.org/abs/2609.40134",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tacex-curiosity"
+        },
+        {
+          "name": "Robot Learning with Visual Predicted Force",
+          "url": "https://arxiv.org/abs/2610.04741",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "visual-predicted-force"
+        },
+        {
+          "name": "Contact-Aware Imitation Learning Through Contact Factorization",
+          "url": "https://arxiv.org/abs/2610.09533",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "face-contact-factorization"
+        },
+        {
+          "name": "TacHair: Tactile Contact-Distribution Guided Online Correction for Robotic Hair Stroking and Perception",
+          "url": "https://arxiv.org/abs/2610.10637",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "tachair"
+        },
+        {
+          "name": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
+          "url": "https://arxiv.org/abs/2610.10384",
+          "status": "indexed",
+          "note": "Canonical primary-source record already indexed.",
+          "workId": "openvitac"
+        },
+        {
+          "name": "Tactile Sensing-based Secure and Gentle Grasping of Unknown Objects",
+          "url": "https://arxiv.org/abs/2610.12790",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "secure-gentle-grasping"
+        },
+        {
+          "name": "How Firm Should a Grasp Be?",
+          "url": "https://arxiv.org/abs/2610.11221",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "how-firm-grasp"
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-6",
+      "label": "User seed",
+      "url": "https://xsparkai.com/Spark-0/",
+      "kind": "primary-expansion",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "Spark-0",
+          "url": "https://arxiv.org/abs/2610.22342",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "spark-0"
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-7",
+      "label": "Primary source expansion / representation cross-review",
+      "url": "https://arxiv.org/abs/2607.07287",
+      "kind": "primary-expansion",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "TouchWorld",
+          "url": "https://arxiv.org/abs/2607.07287",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "touchworld"
+        },
+        {
+          "name": "Just Add Force",
+          "url": "https://arxiv.org/abs/2410.13124",
+          "status": "candidate",
+          "note": "Potentially relevant control or supporting work; detailed original-source and release audit remains incomplete, so not counted as a reviewed model/policy."
+        },
+        {
+          "name": "Canonical Representation and Force-Based Pretraining",
+          "url": "https://arxiv.org/abs/2409.17549",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "canonical-3d-tactile"
+        },
+        {
+          "name": "Self-Supervised Anchoring",
+          "url": "https://arxiv.org/abs/2609.29822",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "propra"
+        },
+        {
+          "name": "Factorized Tactile Representation and Control",
+          "url": "https://arxiv.org/abs/2610.10510",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "factorized-tactile-control"
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-discovery-8",
+      "label": "Primary expansion / official author site",
+      "url": "https://arxiv.org/abs/2602.13833",
+      "kind": "primary-expansion",
+      "snapshot": "2026-10-17",
+      "scope": "Named source aliases, including reviewed canonical matches, adjacent sensing/data resources and explicit candidates awaiting primary-source review. Section placement alone does not establish a deployable controller.",
+      "entries": [
+        {
+          "name": "SCFields",
+          "url": "https://arxiv.org/abs/2602.13833",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "scfields"
+        },
+        {
+          "name": "FACT",
+          "url": "https://arxiv.org/abs/2610.19155",
+          "status": "indexed",
+          "note": "Primary paper and full implementation/evaluation sections reviewed; included in this expansion.",
+          "workId": "fact-force-action-track"
+        }
+      ]
+    },
+    {
+      "id": "tactile-representation-review-discovery",
+      "label": "Awesome-Touch representations / reviews and primary-source expansion",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "kind": "awesome-list-and-reviews",
+      "snapshot": "2026-10-17",
+      "scope": "Representation Learning and Review source sections plus separately discovered tactile models, datasets and surveys. Adjacent resources are retained without manufacturing an action policy.",
+      "entries": [
+        {
+          "name": "Touch and Go: Learning from Human-Collected Vision and Touch",
+          "url": "https://openreview.net/forum?id=ZZ3FeSSPPblo",
+          "status": "candidate",
+          "note": "Representation-section discovery candidate requiring distinct original-source review before inclusion."
+        },
+        {
+          "name": "Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play",
+          "url": "https://arxiv.org/abs/2303.12076",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "t-dex"
+        },
+        {
+          "name": "Investigating Vision Foundational Models for Tactile Representation Learning",
+          "url": "https://arxiv.org/abs/2305.00596",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "vision-foundations-for-touch"
+        },
+        {
+          "name": "Binding Touch to Everything: Learning Unified Multimodal Tactile Representations",
+          "url": "https://arxiv.org/abs/2401.18084",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "unitouch"
+        },
+        {
+          "name": "Multimodal Visual-Tactile Representation Learning through Self-Supervised Contrastive Pre-Training",
+          "url": "https://arxiv.org/abs/2401.12024",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "mvitac"
+        },
+        {
+          "name": "Touch100k: A Large-Scale Touch-Language-Vision Dataset for Touch-Centric Multimodal Representation",
+          "url": "https://arxiv.org/pdf/2406.03813",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "tlv-link"
+        },
+        {
+          "name": "Marker or Markerless? Mode-Switchable Optical Tactile Sensing for Diverse Robot Tasks",
+          "url": "https://arxiv.org/pdf/2408.08276",
+          "status": "adjacent-resource",
+          "note": "Mode-switchable optical sensor hardware/method paper; do not manufacture an executable policy or reusable foundation model from the list placement."
+        },
+        {
+          "name": "Tactile Functasets: Neural Implicit Representations of Tactile Datasets",
+          "url": "https://arxiv.org/pdf/2409.14592",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "tactile-functasets"
+        },
+        {
+          "name": "Contrastive Touch-to-Touch Pretraining",
+          "url": "https://arxiv.org/pdf/2410.11834",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "cttp"
+        },
+        {
+          "name": "T3: Transferable Tactile Transformers",
+          "url": "https://arxiv.org/abs/2406.13640",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "t3"
+        },
+        {
+          "name": "UniT: Unified Tactile Representation for Robot Learning",
+          "url": "https://arxiv.org/pdf/2408.06481",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "unit"
+        },
+        {
+          "name": "Sparsh: Self-supervised touch representations for vision-based tactile sensing",
+          "url": "https://arxiv.org/pdf/2410.24090",
+          "status": "indexed",
+          "note": "Existing canonical TacBench record also exposes Sparsh model role, preserving one paper identity; six perception/control tasks are not six manipulation environments.",
+          "workId": "sparsh"
+        },
+        {
+          "name": "Touch-to-Touch Translation - Learning the Mapping Between Heterogeneous Tactile Sensing Technologies",
+          "url": "https://arxiv.org/pdf/2411.02187",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "touch-to-touch-translation"
+        },
+        {
+          "name": "Reducing Cross-Sensor Domain Gaps in Tactile Sensing via Few-Sample-Driven Style-to-Content Unsupervised Domain Adaptation",
+          "url": "https://www.mdpi.com/1424-8220/25/1/2567",
+          "status": "candidate",
+          "note": "Representation-section discovery candidate requiring distinct original-source review before inclusion."
+        },
+        {
+          "name": "Canonical Representation and Force-Based Pretraining of 3D Tactile for Dexterous Visuo-Tactile Policy Learning",
+          "url": "https://arxiv.org/pdf/2409.17549",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "canonical-3d-tactile"
+        },
+        {
+          "name": "AnyTouch: Learning Unified Static-Dynamic Representation across Multiple Visuo-tactile Sensors",
+          "url": "https://arxiv.org/abs/2502.12191",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "anytouch"
+        },
+        {
+          "name": "UniTac-NV: A Unified Tactile Representation For Non-Vision-Based Tactile Sensors",
+          "url": "https://arxiv.org/pdf/2506.19699",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "unitac-nv"
+        },
+        {
+          "name": "ConViTac: Aligning Visual-Tactile Fusion with Contrastive Representations",
+          "url": "https://arxiv.org/pdf/2506.20757",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "convitac"
+        },
+        {
+          "name": "AnyTouch 2: General Optical Tactile Representation Learning For Dynamic Tactile Perception",
+          "url": "https://arxiv.org/pdf/2602.09617",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "anytouch2"
+        },
+        {
+          "name": "Heterogeneous Tactile Transformer",
+          "url": "https://arxiv.org/pdf/2606.29948",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "htt"
+        },
+        {
+          "name": "Tactile-JEPA: Topology-Aware Self-Supervised Representation Learning for Distributed Tactile Sensors",
+          "url": "https://arxiv.org/abs/2609.24385",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "tactile-jepa"
+        },
+        {
+          "name": "Self-Supervised Anchoring of Fingertip Sensing to Proprioception and Proactive Actions for Robot Imitation Learning",
+          "url": "https://arxiv.org/abs/2609.29822",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "propra"
+        },
+        {
+          "name": "TACTIC: Understanding Tactile Encoders and Conditioning for Contact-rich Robot Manipulation Policies",
+          "url": "https://arxiv.org/abs/2609.30969",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "tactic-encoder-study"
+        },
+        {
+          "name": "Factorized Tactile Representation and Control for Sim-to-Real Manipulation",
+          "url": "https://arxiv.org/abs/2610.10510",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "factorized-tactile-control"
+        },
+        {
+          "name": "A Minimal Optical-Flow Representation for Vision-Based Tactile Rotation Classification in Robotic Manipulation Across Gravity Domains",
+          "url": "https://arxiv.org/abs/2610.12073",
+          "status": "candidate",
+          "note": "Representation-section discovery candidate requiring distinct original-source review before inclusion."
+        },
+        {
+          "name": "Artificial Sense of Slip—A Review",
+          "url": "https://ieeexplore.ieee.org/document/6479676",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile sensing in dexterous robot hands — Review",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0921889015001621",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile Image Sensors Employing Camera: A Review",
+          "url": "https://www.mdpi.com/1424-8220/19/18/3933",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile Sensors for Advanced Intelligent Systems",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.201900090",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Visuotactile Sensors With Emphasis on GelSight Sensor: A Review",
+          "url": "https://ieeexplore.ieee.org/document/9028163",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "On the Design and Development of Vision-based Tactile Sensors",
+          "url": "https://link.springer.com/article/10.1007/s10846-021-01431-0",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "A survey of visuotactile sensing technologies for robotic manipulation",
+          "url": "http://www.infocomm-journal.com/znkx/CN/10.11959/j.issn.2096-6652.202222",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Hardware Technology of Vision-Based Tactile Sensor: A Review",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9911183",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Marker Displacement MethodUsedinVision-Based Tactile Sensors—From 2D to 3D: A Review",
+          "url": "https://www.techrxiv.org/articles/preprint/Marker_Displacement_Method_Used_in_Vision-Based_Tactile_Sensors_From_2D_to_3D_A_Review/22122596",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "When Vision Meets Touch: A Contemporary Review for Visuotactile Sensors from the Signal Processing Perspective",
+          "url": "https://arxiv.org/pdf/2406.12226",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Artificial Skin Based on Visuo-Tactile Sensing for 3D Shape Reconstruction: Material, Method, and Evaluation",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/adfm.202411686",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile Data Generation and Applications Based on Visuo-tactile Sensors: A Review",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253525002350",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile Robotics: An Outlook",
+          "url": "https://arxiv.org/pdf/2508.11261",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Classification of Vision-Based Tactile Sensors: A Review",
+          "url": "https://ieeexplore.ieee.org/abstract/document/11134134",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "A Survey of Vision-Based Tactile Sensors: Hardware, Algorithm, Application and Future Direction",
+          "url": "https://ieeexplore.ieee.org/abstract/document/11146862",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Co-evolution of Vision-Based Tactile Sensors: From structure-dominated design to task-based system integration—A Review",
+          "url": "https://ieeexplore.ieee.org/document/11498615",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms",
+          "url": "https://www.researchgate.net/publication/403306640_Tactile-based_Multimodal_Fusion_in_Embodied_Intelligence_A_Survey_of_Vision_Language_and_Contact-Driven_Paradigms",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "tactile-fusion-survey"
+        },
+        {
+          "name": "Vision-Based Tactile Intelligence for Robotics: Sensing, Learning, and Embodied Manipulation",
+          "url": "https://arxiv.org/pdf/2608.15490",
+          "status": "adjacent-resource",
+          "note": "Hardware/signal-processing review retained as adjacent discovery; not a reviewed manipulation model entry."
+        },
+        {
+          "name": "Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms",
+          "url": "https://arxiv.org/pdf/2605.17336",
+          "status": "indexed",
+          "note": "Canonical work matched to its original primary source; Awesome-Touch is discovery provenance only.",
+          "workId": "tactile-fusion-survey"
+        },
+        {
+          "name": "TouchScale",
+          "url": "https://arxiv.org/abs/2610.10288",
+          "status": "adjacent-resource",
+          "note": "500-hour human dataset; head RGB-D, wrist RGB and bimanual tactile streams. Public code/data links independently found. Retained as supporting dataset candidate; no new model record invented from dataset scale."
+        },
+        {
+          "name": "TouchAnything / EgoTouch",
+          "url": "https://arxiv.org/abs/2605.13083",
+          "status": "adjacent-resource",
+          "note": "EgoTouch captures measured dense pressure; TouchAnything predicts pressure from RGB at inference. 208tasks and1,891episodes are dataset scope, not robot-control benchmark totals. Public code and data links independently found."
+        },
+        {
+          "name": "VICON",
+          "url": "https://arxiv.org/abs/2610.05180",
+          "status": "adjacent-resource",
+          "note": "Human hand/object tracking and sparse normal-force capture. Evaluation uses40mocapsessions/fiveobjects; expandedten-categorydataset promised separately. Retained as acquisition/tracking candidate, not tactile policy."
+        },
+        {
+          "name": "ART-Glove",
+          "url": "https://arxiv.org/abs/2606.16370",
+          "status": "adjacent-resource",
+          "note": "Articulated capture hardware:22DoF and2,048taxels at120Hz. Direct human capture and contactgeometry sensing do not establish robotpolicytraining. Retained as supporting acquisition candidate."
+        },
+        {
+          "name": "Touch and Go",
+          "url": "https://arxiv.org/abs/2211.12498",
+          "status": "indexed",
+          "note": "Original contrastive encoder implementation and paper independently reviewed; supporting model touch-and-go now separates reusable CMC representations from its human-collected corpus and offline grasp-outcome evaluation. Not an executable policy.",
+          "workId": "touch-and-go"
+        },
+        {
+          "name": "Vision-Based Tactile Intelligence for Robotics",
+          "url": "https://arxiv.org/abs/2608.15490",
+          "status": "adjacent-resource",
+          "note": "Additional survey discovery retained for a subsequent original-source citation audit; no claim its full bibliography is covered."
+        },
+        {
+          "name": "Tactile Robotics: An Outlook",
+          "url": "https://arxiv.org/abs/2508.11261",
+          "status": "adjacent-resource",
+          "note": "Additional survey/outlook discovery retained for a subsequent original-source citation audit."
+        },
+        {
+          "name": "When Vision Meets Touch",
+          "url": "https://arxiv.org/abs/2406.12226",
+          "status": "adjacent-resource",
+          "note": "Additional signal-processing survey discovery retained for a subsequent primary-source review."
+        },
+        {
+          "name": "N0-Foundation / NeoForce",
+          "url": "https://arxiv.org/abs/2608.29601",
+          "status": "indexed",
+          "note": "Assigned to root for model/benchmark dual-role canonical n0-foundation; avoid duplicate paper identity.",
+          "workId": "n0-foundation"
+        },
+        {
+          "name": "RLHND",
+          "url": "https://arxiv.org/abs/2610.09455",
+          "status": "adjacent-resource",
+          "note": "Monocular-video pose/contact/force prediction; predicted tactile information is not a measured touch input. Supporting model discovery candidate."
+        },
+        {
+          "name": "A Touch, Vision, and Language Dataset for Multimodal Alignment",
+          "url": "https://arxiv.org/abs/2402.13232",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "tvl"
+        },
+        {
+          "name": "Octopi: Object Property Reasoning with Large Tactile-Language Models",
+          "url": "https://arxiv.org/abs/2405.02794",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "octopi"
+        },
+        {
+          "name": "Demonstrating the Octopi-1.5 Visual-Tactile-Language Model",
+          "url": "https://arxiv.org/abs/2507.09985",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "octopi-15"
+        },
+        {
+          "name": "Tactile Beyond Pixels: Multisensory Touch Representations for Robot Manipulation",
+          "url": "https://arxiv.org/abs/2506.14754",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "sparsh-x"
+        },
+        {
+          "name": "Self-supervised perception for tactile skin covered dexterous hands",
+          "url": "https://arxiv.org/abs/2505.11420",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "sparsh-skin"
+        },
+        {
+          "name": "TextToucher: Fine-Grained Text-to-Touch Generation",
+          "url": "https://arxiv.org/abs/2409.05427",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "texttoucher"
+        },
+        {
+          "name": "Universal Visuo-Tactile Video Understanding for Embodied Interaction",
+          "url": "https://arxiv.org/abs/2505.22566",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "vtv-llm"
+        },
+        {
+          "name": "VitaTouch: Property-Aware Vision-Tactile-Language Model for Robotic Quality Inspection in Manufacturing",
+          "url": "https://arxiv.org/abs/2604.03322",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "vitatouch"
+        },
+        {
+          "name": "Sensor-Invariant Tactile Representation",
+          "url": "https://arxiv.org/abs/2502.19638",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "sitr"
+        },
+        {
+          "name": "BIDETA: Brain-Inspired Data-Efficient Tactile Adaptation for Unseen Sensors",
+          "url": "https://arxiv.org/abs/2609.08673",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "bideta"
+        },
+        {
+          "name": "TouchThinker: Scaling Tactile Commonsense Reasoning to the Open World with Large-scale Data and Action-aware Representation",
+          "url": "https://arxiv.org/abs/2606.11637",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "touchthinker"
+        },
+        {
+          "name": "Tactile-Guided Robot Learning: From Representation Learning to Foundation Models",
+          "url": "https://arxiv.org/abs/2610.20134",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "tactile-guided-survey"
+        },
+        {
+          "name": "Towards Forceful Robotic Foundation Models: a Literature Survey",
+          "url": "https://arxiv.org/abs/2504.11827",
+          "status": "indexed",
+          "note": "Independently verified original method/review paper; code, weights and data audited as separate artifacts where links exist.",
+          "workId": "forceful-foundation-survey"
+        }
+      ]
+    },
+    {
+      "id": "depth-geometry-discovery",
+      "label": "RynnWorld-4D, geometry surveys and original method bibliographies",
+      "url": "https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io/",
+      "kind": "surveys-and-primary-bibliographies",
+      "snapshot": "2026-10-17",
+      "scope": "Depth, 3D geometry and geometry-grounded manipulation models; primary methods read independently of discovery lists.",
+      "discoverySources": [
+        {
+          "url": "https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io/",
+          "kind": "user-seed"
+        },
+        {
+          "url": "https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation",
+          "kind": "survey-companion-list"
+        },
+        {
+          "url": "https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy",
+          "kind": "awesome-list"
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053",
+          "kind": "survey-geometry-reference-subset"
+        },
+        {
+          "url": "https://arxiv.org/abs/2607.06559",
+          "kind": "seed-method-bibliography"
+        },
+        {
+          "url": "https://arxiv.org/abs/2610.08780",
+          "kind": "latest-arxiv-bibliography"
+        }
+      ],
+      "entries": [
+        {
+          "name": "RynnWorld-4D / RynnWorld-4D-Policy",
+          "url": "https://arxiv.org/abs/2607.06559",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "rynnworld-4d"
+        },
+        {
+          "name": "GeoAlign",
+          "url": "https://arxiv.org/abs/2606.03240",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "geoalign"
+        },
+        {
+          "name": "GeoBridge-VLA",
+          "url": "https://arxiv.org/abs/2610.05026",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "geobridge-vla"
+        },
+        {
+          "name": "3D Foresight",
+          "url": "https://arxiv.org/abs/2502.10028",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "3d-foresight"
+        },
+        {
+          "name": "3DFlowAction",
+          "url": "https://arxiv.org/abs/2506.06199",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "3dflowaction"
+        },
+        {
+          "name": "Canonical Policy",
+          "url": "https://arxiv.org/abs/2505.18474",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "canonical-policy"
+        },
+        {
+          "name": "EquiForm",
+          "url": "https://arxiv.org/abs/2601.17486",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "equiform"
+        },
+        {
+          "name": "GEM3D",
+          "url": "https://arxiv.org/abs/2601.22988",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "gem3d"
+        },
+        {
+          "name": "GEM-4D",
+          "url": "https://arxiv.org/abs/2605.22882",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "gem-4d"
+        },
+        {
+          "name": "EquivDP3",
+          "url": "https://arxiv.org/abs/2609.36575",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "equivdp3"
+        },
+        {
+          "name": "PEAfowl",
+          "url": "https://arxiv.org/abs/2601.17885",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "peafowl"
+        },
+        {
+          "name": "TraceGen",
+          "url": "https://arxiv.org/abs/2511.21690",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "tracegen"
+        },
+        {
+          "name": "μ₀ / Trace Expert + Action Expert",
+          "url": "https://arxiv.org/abs/2606.13769",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "mu0"
+        },
+        {
+          "name": "Dex4D",
+          "url": "https://arxiv.org/abs/2602.15828",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "dex4d"
+        },
+        {
+          "name": "MotionVLA",
+          "url": "https://arxiv.org/abs/2606.08288",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "motionvla"
+        },
+        {
+          "name": "GAP — Action-Geometry Prediction",
+          "url": "https://arxiv.org/abs/2602.23814",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "gap-action-geometry"
+        },
+        {
+          "name": "TAX-DPD",
+          "url": "https://arxiv.org/abs/2604.11793",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "tax-dpd"
+        },
+        {
+          "name": "F3RM",
+          "url": "https://arxiv.org/abs/2308.07931",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "f3rm"
+        },
+        {
+          "name": "D³Fields",
+          "url": "https://arxiv.org/abs/2309.16118",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "d3fields"
+        },
+        {
+          "name": "Neural Descriptor Fields (NDF)",
+          "url": "https://arxiv.org/abs/2112.05124",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "ndf"
+        },
+        {
+          "name": "Imagination Policy",
+          "url": "https://arxiv.org/abs/2406.11740",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "imagination-policy"
+        },
+        {
+          "name": "MATCH Policy",
+          "url": "https://arxiv.org/abs/2409.15517",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "match-policy"
+        },
+        {
+          "name": "Spherical Diffusion Policy (SDP)",
+          "url": "https://arxiv.org/abs/2507.01723",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "spherical-diffusion-policy"
+        },
+        {
+          "name": "DepthWorld",
+          "url": "https://arxiv.org/abs/2610.08780",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "depthworld"
+        },
+        {
+          "name": "ForeAct3D",
+          "url": "https://arxiv.org/abs/2610.04607",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "foreact3d"
+        },
+        {
+          "name": "PointWorld + MPC",
+          "url": "https://arxiv.org/abs/2601.03782",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "pointworld"
+        },
+        {
+          "name": "TesserAct",
+          "url": "https://arxiv.org/abs/2504.20995",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "tesseract-world"
+        },
+        {
+          "name": "WristWorld",
+          "url": "https://arxiv.org/abs/2510.07313",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "wristworld"
+        },
+        {
+          "name": "Kinema4D",
+          "url": "https://arxiv.org/abs/2603.16669",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "kinema4d"
+        },
+        {
+          "name": "Gaussian World Model (GWM)",
+          "url": "https://arxiv.org/abs/2508.17600",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "gaussian-world-model"
+        },
+        {
+          "name": "3D-VLA",
+          "url": "https://arxiv.org/abs/2403.09631",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "3d-vla"
+        },
+        {
+          "name": "OG-VLA",
+          "url": "https://arxiv.org/abs/2506.01196",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "og-vla"
+        },
+        {
+          "name": "3D-CAVLA",
+          "url": "https://arxiv.org/abs/2505.05800",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished. Closed the geometry-model bibliography reference subset from the Wiley survey, using the original method paper rather than the survey as evidence.",
+          "workId": "3d-cavla"
+        },
+        {
+          "name": "LingBot-Depth",
+          "url": "https://arxiv.org/abs/2601.17895",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "lingbot-depth"
+        },
+        {
+          "name": "LingBot-Vision / LingBot-Depth 2.0",
+          "url": "https://arxiv.org/abs/2607.05247",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "lingbot-vision-depth2"
+        },
+        {
+          "name": "RynnBrain / RynnBrain-VLA",
+          "url": "https://arxiv.org/abs/2602.14979",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "rynnbrain-vla"
+        },
+        {
+          "name": "RynnBrain 1.1 / RynnBrain-VLA",
+          "url": "https://arxiv.org/abs/2607.17977",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "rynnbrain-11-vla"
+        },
+        {
+          "name": "RynnVLA-001",
+          "url": "https://arxiv.org/abs/2509.15212",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "rynnvla-001"
+        },
+        {
+          "name": "RynnVLA-002",
+          "url": "https://arxiv.org/abs/2511.17502",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "rynnvla-002"
+        },
+        {
+          "name": "Bimanual RMA",
+          "url": "https://arxiv.org/abs/2610.14833",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "bimanual-rma"
+        },
+        {
+          "name": "StereoPatch",
+          "url": "https://arxiv.org/abs/2609.15509",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "stereopatch"
+        },
+        {
+          "name": "Robo3R",
+          "url": "https://arxiv.org/abs/2602.10101",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "robo3r"
+        },
+        {
+          "name": "DepthVLA",
+          "url": "https://arxiv.org/abs/2510.13375",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "depthvla"
+        },
+        {
+          "name": "4D-VLA",
+          "url": "https://arxiv.org/abs/2506.22242",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "4d-vla"
+        },
+        {
+          "name": "SwiftVLA",
+          "url": "https://arxiv.org/abs/2512.00903",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "swiftvla"
+        },
+        {
+          "name": "G3Flow",
+          "url": "https://arxiv.org/abs/2411.18369",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "g3flow"
+        },
+        {
+          "name": "ManiGaussian",
+          "url": "https://arxiv.org/abs/2403.08321",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "manigaussian"
+        },
+        {
+          "name": "RoboUniView",
+          "url": "https://arxiv.org/abs/2406.18977",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "robouniview"
+        },
+        {
+          "name": "DexPoint",
+          "url": "https://arxiv.org/abs/2211.09423",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "dexpoint"
+        },
+        {
+          "name": "EquivAct",
+          "url": "https://arxiv.org/abs/2310.16050",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "equivact"
+        },
+        {
+          "name": "Semantic-Geometric Representation (SGR)",
+          "url": "https://arxiv.org/abs/2306.10474",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "sgr"
+        },
+        {
+          "name": "SGRv2",
+          "url": "https://arxiv.org/abs/2406.10615",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "sgrv2"
+        },
+        {
+          "name": "GemBench / 3D-LOTUS++",
+          "url": "https://arxiv.org/abs/2410.01345",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "gembench-3d-lotus"
+        },
+        {
+          "name": "TAX-Pose",
+          "url": "https://arxiv.org/abs/2211.09325",
+          "status": "indexed",
+          "note": "Original method and geometry provenance reviewed, with measured/inferred/generated geometry distinguished.",
+          "workId": "tax-pose"
+        },
+        {
+          "name": "RynnVLA-003",
+          "url": "https://github.com/alibaba-damo-academy",
+          "status": "unresolved",
+          "note": "Exact public paper/repository identity not independently located. No speculative canonical entry created."
+        },
+        {
+          "name": "DriveDreamer-Policy",
+          "url": "https://arxiv.org/abs/2604.01765",
+          "status": "outside-scope",
+          "note": "Geometry-aware driving model; no robotic manipulation experiments."
+        },
+        {
+          "name": "VLGA",
+          "url": "https://arxiv.org/abs/2606.12396",
+          "status": "outside-scope",
+          "note": "Autonomous-driving geometry/action model, outside manipulation scope."
+        },
+        {
+          "name": "Dense4D",
+          "url": "https://arxiv.org/abs/2610.22325",
+          "status": "outside-scope",
+          "note": "Human body/clothing correspondence; no inspected manipulation policy evaluation."
+        },
+        {
+          "name": "CAP",
+          "url": "https://arxiv.org/abs/2609.11553",
+          "status": "outside-scope",
+          "note": "Humanoid locomotion under depth corruption, without manipulation experiment."
+        },
+        {
+          "name": "Depth Camera or RGB-to-Depth?",
+          "url": "https://doi.org/10.1109/LRA.2026.3734880",
+          "status": "candidate",
+          "note": "Directly relevant sensor-vs-estimator policy study located; full primary manuscript and complete release evidence not yet independently inspected."
+        },
+        {
+          "name": "DeSiRe",
+          "url": "https://eprints.gla.ac.uk/396362/",
+          "status": "candidate",
+          "note": "University author repository verifies peer-reviewed depth-conditioned dexterous policy and date. Full text unavailable there; abstract does not resolve depth provenance, training cost or releases."
+        }
+      ]
+    },
+    {
+      "id": "wiley-manipulation-world-model-geometry",
+      "label": "World Models for Robotic Manipulation — geometry reference subset",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053",
+      "kind": "survey-reference-subset",
+      "snapshot": "2026-10-17",
+      "scope": "Eight named 3D/4D and geometry/action works in the survey, each reviewed through its original primary paper. This is a scoped subset, not a claim to close all 162 references.",
+      "entries": [
+        {
+          "name": "PointWorld + MPC",
+          "url": "https://arxiv.org/abs/2601.03782",
+          "status": "indexed",
+          "workId": "pointworld",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "TesserAct",
+          "url": "https://arxiv.org/abs/2504.20995",
+          "status": "indexed",
+          "workId": "tesseract-world",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "WristWorld",
+          "url": "https://arxiv.org/abs/2510.07313",
+          "status": "indexed",
+          "workId": "wristworld",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "Kinema4D",
+          "url": "https://arxiv.org/abs/2603.16669",
+          "status": "indexed",
+          "workId": "kinema4d",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "Gaussian World Model (GWM)",
+          "url": "https://arxiv.org/abs/2508.17600",
+          "status": "indexed",
+          "workId": "gaussian-world-model",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "3D-VLA",
+          "url": "https://arxiv.org/abs/2403.09631",
+          "status": "indexed",
+          "workId": "3d-vla",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "OG-VLA",
+          "url": "https://arxiv.org/abs/2506.01196",
+          "status": "indexed",
+          "workId": "og-vla",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        },
+        {
+          "name": "3D-CAVLA",
+          "url": "https://arxiv.org/abs/2505.05800",
+          "status": "indexed",
+          "workId": "3d-cavla",
+          "note": "Original model/policy paper independently reviewed; geometry provenance and downstream controller role are recorded separately."
+        }
+      ]
+    },
+    {
+      "id": "tactile-representation-final-gaps",
+      "label": "Tactile survey representation/control gaps",
+      "url": "https://arxiv.org/abs/2605.17336",
+      "kind": "original-paper-gap-closure",
+      "snapshot": "2026-10-17",
+      "scope": "Named primary-source gaps found through the indicated bibliography or benchmark baseline; original methods and current artifacts were reviewed separately.",
+      "entries": [
+        {
+          "name": "CLTP / Tac3D-LLM",
+          "url": "https://arxiv.org/abs/2505.08194",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "cltp"
+        },
+        {
+          "name": "Tac-DINO / VTPA",
+          "url": "https://arxiv.org/abs/2606.12069",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "tac-dino"
+        },
+        {
+          "name": "TactX",
+          "url": "https://arxiv.org/abs/2606.31236",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "tactx"
+        },
+        {
+          "name": "UniForce",
+          "url": "https://arxiv.org/abs/2602.01153",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "uniforce"
+        },
+        {
+          "name": "RA-Touch",
+          "url": "https://arxiv.org/abs/2505.14270",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "ra-touch"
+        },
+        {
+          "name": "SToLa",
+          "url": "https://arxiv.org/abs/2505.04201",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "stola"
+        },
+        {
+          "name": "ViTaPEs",
+          "url": "https://arxiv.org/abs/2505.20032",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "vitapes"
+        },
+        {
+          "name": "Making Sense of Vision and Touch",
+          "url": "https://arxiv.org/abs/1810.10191",
+          "status": "indexed",
+          "note": "Primary role follows the reusable central contribution; downstream control probes are retained without automatically changing representation models to policies.",
+          "workId": "making-sense-vision-touch"
+        }
+      ]
+    },
+    {
+      "id": "tactile-control-final-gaps",
+      "label": "Tactile-guided survey control gaps",
+      "url": "https://arxiv.org/abs/2610.20134",
+      "kind": "original-paper-gap-closure",
+      "snapshot": "2026-10-17",
+      "scope": "Named primary-source gaps found through the indicated bibliography or benchmark baseline; original methods and current artifacts were reviewed separately.",
+      "entries": [
+        {
+          "name": "TLA",
+          "url": "https://arxiv.org/abs/2503.08548",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "tla"
+        },
+        {
+          "name": "VTLA",
+          "url": "https://arxiv.org/abs/2505.09577",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "vtla"
+        },
+        {
+          "name": "TacVLA",
+          "url": "https://arxiv.org/abs/2603.12665",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "tacvla"
+        },
+        {
+          "name": "ReTouch",
+          "url": "https://arxiv.org/abs/2608.01824",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "retouch"
+        },
+        {
+          "name": "FoAR",
+          "url": "https://arxiv.org/abs/2411.15753",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "foar"
+        },
+        {
+          "name": "ForceMimic / HybridIL",
+          "url": "https://arxiv.org/abs/2410.07554",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "forcemimic"
+        },
+        {
+          "name": "ImplicitRDP",
+          "url": "https://arxiv.org/abs/2512.10946",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "implicitrdp"
+        },
+        {
+          "name": "AdapTac",
+          "url": "https://arxiv.org/abs/2505.13982",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "adaptac"
+        },
+        {
+          "name": "ViTacWorld",
+          "url": "https://arxiv.org/abs/2607.22530",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; predictive model rather than executable policy.",
+          "workId": "vitacworld"
+        },
+        {
+          "name": "TacMan-Turbo",
+          "url": "https://arxiv.org/abs/2508.02204",
+          "status": "indexed",
+          "note": "Original full text, deployment interface and available official artifact status reviewed; executable policy/controller.",
+          "workId": "tacman-turbo"
+        }
+      ]
+    },
+    {
+      "id": "evo-kinedex-original",
+      "label": "Evo-DexBench KineDex baseline — original policy",
+      "url": "https://arxiv.org/abs/2610.21180",
+      "kind": "original-paper-gap-closure",
+      "snapshot": "2026-10-17",
+      "scope": "Named primary-source gaps found through the indicated bibliography or benchmark baseline; original methods and current artifacts were reviewed separately.",
+      "entries": [
+        {
+          "name": "KineDex",
+          "url": "https://arxiv.org/abs/2505.01974",
+          "status": "indexed",
+          "note": "Original paper and official implementation verified. Original tactile interface retained independently of benchmark adapter modifications.",
+          "workId": "kinedex"
+        }
+      ]
+    },
+    {
+      "id": "latest-arxiv-sensing-20261014-17",
+      "label": "Recent official arXiv — scoped sensing/contact additions",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.RO&sortBy=submittedDate&sortOrder=descending",
+      "kind": "official-arxiv-api",
+      "snapshot": "2026-10-17; submittedDate20261014 onward",
+      "scope": "Seven official arXiv queries returned67 unindexed candidates across broad robotics/vision topics without source errors. This table retains the sensing/contact subset inspected here; it is not67 completed primary reviews or an automatic feed.",
+      "entries": [
+        {
+          "name": "ForceBench / force-integration policies",
+          "url": "https://arxiv.org/abs/2610.19604",
+          "status": "indexed",
+          "workId": "forcebench",
+          "note": "Found in the official arXiv Oct14–17 query, then reviewed in the complete original method/evaluation/appendix; release and figure checks completed."
+        },
+        {
+          "name": "Evo-DexBench",
+          "url": "https://arxiv.org/abs/2610.21180",
+          "status": "indexed",
+          "workId": "evo-dexbench",
+          "note": "Found in the official arXiv Oct14–17 query, then reviewed in the complete original method/evaluation/appendix; release and figure checks completed."
+        },
+        {
+          "name": "MAIA / VAF-WM",
+          "url": "https://arxiv.org/abs/2610.21686",
+          "status": "indexed",
+          "workId": "maia",
+          "note": "Found in the official arXiv Oct14–17 query, then reviewed in the complete original method/evaluation/appendix; release and figure checks completed."
+        },
+        {
+          "name": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+          "url": "https://arxiv.org/abs/2610.20320v1",
+          "status": "candidate",
+          "note": "VTLA data-collection/corpus discovery; full primary-source model and release review remains pending."
+        },
+        {
+          "name": "FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation",
+          "url": "https://arxiv.org/abs/2610.19839v1",
+          "status": "candidate",
+          "note": "Force-feedback teaching interface discovery; its full control contribution and releases still require separate source review."
+        },
+        {
+          "name": "TGrasp6D: Task-Informed Vision-Language Priors and Pose Refinement enable Zero-Shot Task-Oriented 6DoF Grasping",
+          "url": "https://arxiv.org/abs/2610.20901v1",
+          "status": "candidate",
+          "note": "Geometry-guided grasping candidate; full policy interface, depth provenance and release review remains pending."
+        },
+        {
+          "name": "Manifold Generative Annealing for Contact Constraint-aware Impedance Control with Reinforcement Learning Prior",
+          "url": "https://arxiv.org/abs/2610.21140v1",
+          "status": "candidate",
+          "note": "Contact/impedance control candidate; original implementation and full policy-resource review remain pending."
+        },
+        {
+          "name": "CQDC-Warp: GPU-Accelerated Differentiable Quasi-Dynamic Simulation for Contact-Rich Manipulation",
+          "url": "https://arxiv.org/abs/2610.21349v1",
+          "status": "adjacent-resource",
+          "note": "Differentiable contact simulator discovery; retained as an adjacent tool requiring separate primary review."
+        }
+      ]
+    }
+  ]
+}

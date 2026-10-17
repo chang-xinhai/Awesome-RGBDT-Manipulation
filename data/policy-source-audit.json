@@ -926,6 +926,230 @@
           "workId": "me-u0"
         }
       ]
+    },
+    {
+      "id": "n0-foundation-baselines",
+      "benchmarkId": "n0-foundation",
+      "label": "N₀-Foundation NeoReal / NeoSim baseline rosters",
+      "url": "https://arxiv.org/html/2608.29601v2#S6",
+      "kind": "paper-baselines",
+      "scope": "Nine representative families described for NeoReal; NeoSim table evaluates seven (excluding ACT and Diffusion Policy). NeoForce-conditioned variants are not independent foundation-model identities.",
+      "entries": [
+        {
+          "name": "ACT",
+          "workId": "act",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "Diffusion Policy",
+          "workId": "dp",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "π0.5",
+          "workId": "pi05",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "Xiaomi-Robotics-0",
+          "workId": "xiaomi0",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "InternVLA-A1",
+          "workId": "internvla-a1",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "StarVLA-α",
+          "workId": "starvla-alpha",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "Fast-WAM",
+          "workId": "fast-wam",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "GigaWorld Policy",
+          "workId": "gigaworld-policy",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        },
+        {
+          "name": "LingBot-VA",
+          "workId": "lingbot-va",
+          "note": "Paper baseline identity; sensor integration and evaluation setting remain specific to the N₀-Foundation experiment."
+        }
+      ]
+    },
+    {
+      "id": "evo-dexbench-paper",
+      "benchmarkId": "evo-dexbench",
+      "label": "Evo-DexBench evaluated policies and No-Touch ablation",
+      "url": "https://arxiv.org/abs/2610.21180",
+      "kind": "paper-baselines",
+      "scope": "Five named policy configurations over15 evaluated tasks; No-Touch is an additional KineDex ablation. DP-C and DP-T share a canonical Diffusion Policy paper; the benchmark adapter is not the original KineDex sensor interface.",
+      "entries": [
+        {
+          "name": "π0.5",
+          "workId": "pi05",
+          "note": "Paper baseline, separate single/bimanual checkpoint settings."
+        },
+        {
+          "name": "SmolVLA",
+          "workId": "smolvla",
+          "note": "Paper baseline with benchmark interface adaptations."
+        },
+        {
+          "name": "DP-C",
+          "workId": "dp",
+          "note": "Convolutional temporal U-Net variant."
+        },
+        {
+          "name": "DP-T",
+          "workId": "dp",
+          "note": "Transformer variant; same canonical policy paper."
+        },
+        {
+          "name": "KineDex",
+          "workId": "kinedex",
+          "note": "Original policy independently reviewed;123-taxel benchmark adaptation is separate."
+        },
+        {
+          "name": "KineDex No-Touch",
+          "workId": "kinedex",
+          "note": "Removes tactile inputs, force supervision and force feedback; not an isolated input-only ablation."
+        }
+      ]
+    },
+    {
+      "id": "forcebench-paper",
+      "benchmarkId": "forcebench",
+      "label": "ForceBench simulation comparison",
+      "url": "https://arxiv.org/abs/2610.19604",
+      "kind": "paper-baselines",
+      "scope": "Ten evaluated simulation systems; real hardware includes eight. New force-interface variants share one canonical paper; external policy budgets and action horizons differ.",
+      "entries": [
+        {
+          "name": "π0.5 (No Force)",
+          "workId": "pi05"
+        },
+        {
+          "name": "Token Fusion",
+          "workId": "forcebench",
+          "note": "Force-interface variant introduced in this same canonical paper, not a separate publication."
+        },
+        {
+          "name": "Prompt Fusion",
+          "workId": "forcebench",
+          "note": "Force-interface variant introduced in this same canonical paper, not a separate publication."
+        },
+        {
+          "name": "Cross-Attention",
+          "workId": "forcebench",
+          "note": "Force-interface variant introduced in this same canonical paper, not a separate publication."
+        },
+        {
+          "name": "Token Fusion + Pred",
+          "workId": "forcebench",
+          "note": "Force-interface variant introduced in this same canonical paper, not a separate publication."
+        },
+        {
+          "name": "Temporal Prompt",
+          "workId": "forcebench",
+          "note": "Force-interface variant introduced in this same canonical paper, not a separate publication."
+        },
+        {
+          "name": "Dual-Path Fusion",
+          "workId": "forcebench",
+          "note": "Force-interface variant introduced in this same canonical paper, not a separate publication."
+        },
+        {
+          "name": "π0",
+          "workId": "pi0"
+        },
+        {
+          "name": "ForceVLA",
+          "workId": "forcevla"
+        },
+        {
+          "name": "ForceFlow",
+          "note": "External evaluated reference remains unresolved as an independently reviewed canonical record; its architecture and budget are not inferred from ForceBench."
+        }
+      ]
+    },
+    {
+      "id": "sparkarena-paper",
+      "benchmarkId": "spark-0",
+      "label": "SparkArena simulation / hardware paper baselines",
+      "url": "https://arxiv.org/abs/2610.22342",
+      "kind": "paper-baselines",
+      "scope": "Named main tables span vision-only simulation and separate hardware studies; baseline rosters are track-dependent. Pretraining variants share canonical Spark-0.",
+      "entries": [
+        {
+          "name": "π0.5",
+          "workId": "pi05",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "GR00T-N1.7",
+          "workId": "grootn17",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "StarVLA",
+          "workId": "starvla",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "RDT-1B",
+          "workId": "rdt",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "EgoVLA",
+          "workId": "egovla",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "H-RDT",
+          "workId": "h-rdt",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "FastWAM",
+          "workId": "fast-wam",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "ACT",
+          "workId": "act",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "FTP-1",
+          "workId": "ftp-1",
+          "note": "Named evaluated baseline; track-specific training and observations follow the Spark-0 tables, not every benchmark track."
+        },
+        {
+          "name": "VITRA",
+          "note": "Named human-pretraining baseline; exact primary identity and independent technical record remain unresolved."
+        },
+        {
+          "name": "UniT (human-action policy)",
+          "note": "Human-action baseline is not silently mapped to the distinct UniT tactile representation paper; original policy identity remains unresolved."
+        },
+        {
+          "name": "Spark-0 Scratch / Visual PT / 100H / 1000H",
+          "workId": "spark-0",
+          "note": "Within-paper variants and pretraining budgets, not additional canonical papers."
+        }
+      ]
     }
   ]
 }

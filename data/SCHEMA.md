@@ -42,6 +42,13 @@ link to a canonical `workId`; every other disposition requires an explanation.
 A citation match is discovery provenance, not evidence for a policy's resource
 or performance claims.
 
+`sensing-source-audit.json` tracks scoped tactile-list sections, geometry survey
+subsets and primary bibliography/release expansion. Its sources retain `id`,
+`label`, `url`, `kind`, `scope`, optional `snapshot` and `entries`. Each entry has
+`name`, `url`, `status`, `note`, and a `workId` only when indexed. States are
+`indexed`, `outside-scope`, `background`, `adjacent-resource`, `candidate` and
+`unresolved`. Alias counts can overlap and are not unique-paper totals.
+
 Policy categories include `agent-rsi-icl` for robot agents, feedback-driven
 self-improvement and in-context adaptation. These are overlapping routes:
 in-context examples, persistent code/memory, prompt optimization and gradient
@@ -75,3 +82,12 @@ Date precision may be `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`. Genuinely undated
 records use an empty date and year zero; the UI renders them as Undated and
 sorts them last. All unreported or unresolved values remain explicit strings;
 no cost, model size or training-duration estimates are silently filled in.
+
+Supporting representations and predictive models use `resourceType: model` under
+Policies, with `model` fields: `role`, `family`, `baseModel`, `modelSize`, `inputs`,
+`outputs`, `trainingMethod`, `trainingData`, `trainingTime`, `trainingHardware`,
+`inference`, and `evaluation`. These describe the encoder/predictor interface and
+its downstream evidence, not fabricated actions or servo rates. A canonical
+model paper can also have a `benchmark` role. Models are counted separately from
+executable policies. Dedicated routes are `tactile-representation` and
+`geometry-models`, with overlap in related categories where useful.

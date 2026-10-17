@@ -4,6 +4,8 @@ import {
   BENCH_FIELDS,
   POLICY_FIELDS,
   SURVEY_FIELDS,
+  MODEL_FIELDS,
+  recordTypeLabel,
   display,
   isUnknown,
   nameFor,
@@ -157,11 +159,13 @@ function card(w: Work) {
       ? ["Survey", display(w.survey.scope)]
       : collection === "benchmark"
         ? [display(w.benchmark?.simulator), display(w.benchmark?.taskCount)]
-        : [display(w.policy?.family), display(w.policy?.baseModel)];
+        : w.model
+          ? ["Model · " + display(w.model.family), display(w.model.baseModel)]
+          : [display(w.policy?.family), display(w.policy?.baseModel)];
   const cover = f
     ? `<img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}" width="640" height="360" loading="lazy" decoding="async"/>`
-    : `<span class="text-cover"><small>${w.survey ? "Research survey" : collection === "benchmark" ? "Research benchmark" : "Manipulation policy"}</small><strong>${esc(nameFor(w, collection))}</strong><span>View primary-source details ↗</span></span>`;
-  return `<article class="library-card feed-enter${s ? " is-selected" : ""}" data-id="${esc(w.id)}"><button type="button" class="card-cover" data-detail="${esc(w.id)}" aria-label="View ${esc(nameFor(w, collection))}">${cover}</button><div class="card-copy"><p class="card-meta">${esc(w.institution)}<span>·</span>${w.year || "Undated"}</p><h2><button type="button" data-detail="${esc(w.id)}" title="${esc(w.title)}">${esc(nameFor(w, collection))}</button></h2><p class="card-description">${esc(summaryFor(w, collection))}</p><div class="card-facts">${items.map((x) => `<span title="${esc(x)}">${esc(x)}</span>`).join("")}</div><div class="card-tags">${resourceLabel(w) ? `<span>${esc(resourceLabel(w))}</span>` : ""}${w.modalities
+    : `<span class="text-cover"><small>${w.survey ? "Research survey" : collection === "benchmark" ? "Research benchmark" : w.model ? "Representation / world model" : "Manipulation policy"}</small><strong>${esc(nameFor(w, collection))}</strong><span>View primary-source details ↗</span></span>`;
+  return `<article class="library-card feed-enter${s ? " is-selected" : ""}" data-id="${esc(w.id)}"><button type="button" class="card-cover" data-detail="${esc(w.id)}" aria-label="View ${esc(nameFor(w, collection))}">${cover}</button><div class="card-copy"><p class="card-meta">${esc(w.institution)}<span>·</span>${w.year || "Undated"}</p><h2><button type="button" data-detail="${esc(w.id)}" title="${esc(w.title)}">${esc(nameFor(w, collection))}</button></h2><p class="card-description">${esc(summaryFor(w, collection))}</p><div class="card-facts">${items.map((x) => `<span title="${esc(x)}">${esc(x)}</span>`).join("")}</div><div class="card-tags">${resourceLabel(w, collection) ? `<span>${esc(resourceLabel(w, collection))}</span>` : ""}${w.modalities
     .filter((x) => !["Proprioception", "Language"].includes(x))
     .map((x) => `<span>${esc(x)}</span>`)
     .join(
@@ -182,7 +186,7 @@ function filtered() {
 }
 function indexTable() {
   const isBench = collection === "benchmark";
-  return `<div class="index-wrap"><table class="index-table"><thead><tr><th>Work</th><th>${isBench ? "Simulator" : "Type / architecture"}</th><th>${isBench ? "Tasks & scope" : "Inputs / review scope"}</th><th>${isBench ? "Evaluation domain" : "Data / literature corpus"}</th><th>Code</th><th>Compare</th></tr></thead><tbody>${current.map((w) => `<tr><td><button class="index-title" type="button" data-detail="${esc(w.id)}">${esc(nameFor(w, collection))}</button><small>${esc(w.date || "Undated")} · ${esc(w.venue)}</small></td><td>${esc(display(w.survey ? "Survey" : isBench ? w.benchmark?.simulator : w.policy?.family))}</td><td>${esc(display(w.survey ? w.survey.scope : isBench ? w.benchmark?.taskCount : w.policy?.inputs))}</td><td>${esc(display(w.survey ? w.survey.corpus : isBench ? w.environments : w.policy?.trainingData))}</td><td>${esc(releaseFor(w, collection).code)}</td><td><button type="button" class="compare-toggle" data-compare="${esc(w.id)}" aria-pressed="${selected.has(w.id)}">${selected.has(w.id) ? "✓" : "+"} Compare</button></td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="index-wrap"><table class="index-table"><thead><tr><th>Work</th><th>${isBench ? "Simulator" : "Type / architecture"}</th><th>${isBench ? "Tasks & scope" : "Inputs / review scope"}</th><th>${isBench ? "Evaluation domain" : "Data / literature corpus"}</th><th>Code</th><th>Compare</th></tr></thead><tbody>${current.map((w) => `<tr><td><button class="index-title" type="button" data-detail="${esc(w.id)}">${esc(nameFor(w, collection))}</button><small>${esc(w.date || "Undated")} · ${esc(w.venue)}</small></td><td>${esc(display(w.survey ? "Survey" : isBench ? w.benchmark?.simulator : w.model ? "Model · " + display(w.model.family) : w.policy?.family))}</td><td>${esc(display(w.survey ? w.survey.scope : isBench ? w.benchmark?.taskCount : (w.model?.inputs ?? w.policy?.inputs)))}</td><td>${esc(display(w.survey ? w.survey.corpus : isBench ? w.environments : (w.model?.trainingData ?? w.policy?.trainingData)))}</td><td>${esc(releaseFor(w, collection).code)}</td><td><button type="button" class="compare-toggle" data-compare="${esc(w.id)}" aria-pressed="${selected.has(w.id)}">${selected.has(w.id) ? "✓" : "+"} Compare</button></td></tr>`).join("")}</tbody></table></div>`;
 }
 function renderCategories() {
   const nav = $("category-options"),
@@ -229,11 +233,11 @@ function renderFilters() {
   $("modality-label").textContent =
     collection === "benchmark"
       ? "Available observations / benchmark setting"
-      : "Actual deployment inputs";
+      : "Policy / model inputs";
   $("filter-note").textContent =
     collection === "benchmark"
       ? "A listed sensor or simulator channel does not mean every evaluated policy used it. Counts and versions retain their paper or release scope."
-      : "Measured depth, inferred geometry, tactile sensing and wrist force/torque are recorded separately. Training cost and control rates retain their reported scope.";
+      : "Measured depth, inferred geometry, tactile sensing and wrist force/torque are recorded separately. Models retain their encoder or prediction inputs; policies retain deployment inputs. Training cost and control rates retain their reported scope.";
   $("filter-fields").innerHTML = FACETS[collection]
     .map((f) => {
       const pool = works.filter((w) =>
@@ -354,14 +358,17 @@ function render() {
     collection === "benchmark"
       ? view.category === "supporting-resources"
         ? "supporting resources"
-        : current.some((w) => !!resourceLabel(w))
+        : current.some((w) => w.categories.includes("supporting-resources"))
           ? "research resources"
           : "benchmarks"
       : "policies";
   const surveyCount = current.filter((w) => w.resourceType === "survey").length;
-  $("result-count").textContent = surveyCount
-    ? `${current.length} records · ${current.length - surveyCount} ${label} · ${surveyCount} ${surveyCount === 1 ? "survey" : "surveys"}`
-    : `${current.length} ${label}`;
+  const modelCount =
+    collection === "policy" ? current.filter((w) => !!w.model).length : 0;
+  $("result-count").textContent =
+    surveyCount || modelCount
+      ? `${current.length} records · ${current.length - surveyCount - modelCount} ${label}${modelCount ? ` · ${modelCount} ${modelCount === 1 ? "model" : "models"}` : ""}${surveyCount ? ` · ${surveyCount} ${surveyCount === 1 ? "survey" : "surveys"}` : ""}`
+      : `${current.length} ${label}`;
   $("catalog-empty").hidden = current.length > 0;
   $("feed-error").hidden = true;
   $("feed-end").hidden = true;
@@ -491,6 +498,30 @@ function policySections(w: Work) {
         ? `<section class="detail-section"><h3>Follow the literature</h3><p class="detail-summary">${external(location.origin + sitePath("coverage/#survey-source-audit"), "Browse the reference-to-record audit ↗")}</p><p class="task-scope">Citation mappings identify indexed methods, adjacent resources and exclusions. Each indexed method retains evidence from its own primary sources.</p></section>`
         : "")
     );
+  if (w.model)
+    return (
+      factSection(
+        w,
+        "Model role, architecture & interfaces",
+        "model",
+        MODEL_FIELDS.slice(0, 6),
+        w.model,
+      ) +
+      factSection(
+        w,
+        "Pretraining & resources",
+        "model",
+        MODEL_FIELDS.slice(6, 10),
+        w.model,
+      ) +
+      factSection(
+        w,
+        "Inference & downstream evidence",
+        "model",
+        MODEL_FIELDS.slice(10),
+        w.model,
+      )
+    );
   if (!w.policy) return "";
   return (
     factSection(
@@ -521,13 +552,13 @@ function openDetail(id: string, restore = false) {
   const fields =
     collection === "benchmark" ? benchmarkSections(w) : policySections(w);
   const secondary =
-    collection === "benchmark" && w.policy
-      ? `<details class="detail-secondary"><summary>Policy introduced in this work</summary>${policySections(w)}</details>`
+    collection === "benchmark" && (w.policy || w.model)
+      ? `<details class="detail-secondary"><summary>${w.model ? "Model" : "Policy"} introduced in this work</summary>${policySections(w)}</details>`
       : collection === "policy" && w.benchmark
         ? `<details class="detail-secondary"><summary>Benchmark introduced in this work</summary>${benchmarkSections(w)}</details>`
         : "";
   $("detail-content").innerHTML =
-    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${w.survey ? "Survey taxonomy & conceptual framework" : collection === "benchmark" ? "Task coverage & benchmark overview" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
+    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${w.survey ? "Survey taxonomy & conceptual framework" : collection === "benchmark" ? "Task coverage & benchmark overview" : w.model ? "Model architecture & representation pipeline" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
       w,
       "",
       w.survey
@@ -540,14 +571,20 @@ function openDetail(id: string, restore = false) {
               "modalities",
               collection === "benchmark"
                 ? "Listed observations"
-                : w.survey
-                  ? "Deployment modalities (not applicable)"
+                : w.model
+                  ? "Model inputs"
                   : "Deployment modalities",
             ],
             ["environments", "Evaluation domain"],
             ["embodiments", "Embodiment"],
           ],
-      w as unknown as Record<string, unknown>,
+      {
+        ...w,
+        embodiments:
+          w.model && !w.embodiments.length
+            ? "Not applicable — no robot controller"
+            : w.embodiments,
+      } as unknown as Record<string, unknown>,
     )}</dl>${related.length ? `<div class="detail-related"><strong>Related research record</strong>${related.map((x) => `<button type="button" data-related="${esc(x.id)}">${esc(nameFor(x, collection))} ↗</button>`).join("<br>")}</div>` : ""}</aside><div class="detail-copy"><p class="detail-kicker">${esc(w.venue)} · ${esc(w.date || "Undated")} · ${esc(w.institution)}</p><h2>${esc(nameFor(w, collection))}</h2><p class="detail-paper-title">${esc(w.title)}</p><div class="detail-links">${artifactLinks(
       w.links,
     )
@@ -608,40 +645,53 @@ function openCompare() {
   if (list.length < 2) return;
   const c = collection,
     hasSurveys = list.some((w) => !!w.survey),
-    onlySurveys = list.every((w) => !!w.survey),
-    fieldList =
+    hasModels = c === "policy" && list.some((w) => !!w.model),
+    groups: [string, [string, string][]][] =
       c === "benchmark"
-        ? [
-            ...BENCH_FIELDS,
-            ["tasks", "Published task names"] as [string, string],
-          ]
-        : onlySurveys
-          ? SURVEY_FIELDS
-          : hasSurveys
-            ? [...POLICY_FIELDS, ...SURVEY_FIELDS]
-            : POLICY_FIELDS;
+        ? [["benchmark", [...BENCH_FIELDS, ["tasks", "Published task names"]]]]
+        : [
+            ...(list.some((w) => !!w.policy)
+              ? [["policy", POLICY_FIELDS] as [string, [string, string][]]]
+              : []),
+            ...(hasModels
+              ? [["model", MODEL_FIELDS] as [string, [string, string][]]]
+              : []),
+            ...(hasSurveys
+              ? [["survey", SURVEY_FIELDS] as [string, [string, string][]]]
+              : []),
+          ],
+    fieldList = groups.flatMap(([prefix, fields]) =>
+      fields.map(([key, label]) => [
+        prefix,
+        key,
+        groups.length > 1
+          ? `${prefix === "policy" ? "Policy" : prefix === "model" ? "Model" : "Survey"}: ${label}`
+          : label,
+      ]),
+    );
   const row = (label: string, fn: (w: Work) => string) =>
     `<tr><th scope="row">${esc(label)}</th>${list.map((w) => `<td>${fn(w)}</td>`).join("")}</tr>`;
   $("compare-content").innerHTML =
-    `<div class="compare-heading"><h2>${hasSurveys ? "Compare research" : c === "benchmark" ? "Compare benchmarks" : "Compare policies"}</h2><p>${hasSurveys ? "Surveys describe literature scope; methods describe executable policies. Fields that do not apply remain labeled." : c === "benchmark" ? "Task counts, simulator versions and protocols retain their paper or release scope." : "Architecture, deployment observations and training resources are compared separately."} Different evaluation settings do not form a common performance ranking.</p></div><div class="compare-table-wrap"><table class="comparison-table" style="min-width:${(155 + list.length * 245) / 16}rem"><thead><tr><th scope="col">${hasSurveys ? "Research record" : c === "benchmark" ? "Benchmark" : "Policy"}</th>${list
+    `<div class="compare-heading"><h2>${hasSurveys || hasModels ? "Compare research" : c === "benchmark" ? "Compare benchmarks" : "Compare policies"}</h2><p>${hasSurveys || hasModels ? "Surveys describe literature, models provide representations or predictions, and policies produce actions. Fields that do not apply remain labeled." : c === "benchmark" ? "Task counts, simulator versions and protocols retain their paper or release scope." : "Architecture, deployment observations and training resources are compared separately."} Different evaluation settings do not form a common performance ranking.</p></div><div class="compare-table-wrap"><table class="comparison-table" style="min-width:${(155 + list.length * 245) / 16}rem"><thead><tr><th scope="col">${hasSurveys || hasModels ? "Research record" : c === "benchmark" ? "Benchmark" : "Policy"}</th>${list
       .map((w) => {
         const f = imageFor(w);
         return `<th scope="col">${f ? `<img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/>` : ""}<strong>${esc(nameFor(w, collection))}</strong><span>${esc(w.date || "Undated")} · ${esc(w.venue)}</span></th>`;
       })
       .join(
         "",
-      )}</tr></thead><tbody>${row("Record type", (w) => esc(w.survey ? "Survey" : c === "benchmark" ? "Benchmark" : "Policy"))}${row("Deployment / observations", (w) => (w.survey ? "Not applicable — survey" : esc(w.modalities.join(" · "))))}${row("Evaluation domain", (w) => esc(w.environments.join(" · ")))}${row("Embodiment", (w) => (w.survey ? "Not applicable — survey" : esc(w.embodiments.join(" · "))))}${fieldList
-      .map(([key, label]) =>
+      )}</tr></thead><tbody>${row("Record type", (w) => esc(recordTypeLabel(w, c)))}${row("Policy / model inputs", (w) => (w.survey ? "Not applicable — survey" : esc(w.modalities.join(" · "))))}${row("Evaluation domain", (w) => esc(w.environments.join(" · ")))}${row("Embodiment", (w) => (w.survey ? "Not applicable — survey" : esc(w.embodiments.join(" · "))))}${fieldList
+      .map(([prefix, key, label]) =>
         row(label, (w) => {
-          const prefix = SURVEY_FIELDS.some(([k]) => k === key) ? "survey" : c;
           const obj =
             prefix === "survey"
               ? w.survey
-              : c === "benchmark"
-                ? w.benchmark
-                : w.policy;
+              : prefix === "model"
+                ? w.model
+                : prefix === "benchmark"
+                  ? w.benchmark
+                  : w.policy;
           if (!obj)
-            return `<span class="unknown">Not applicable — ${w.survey ? "survey" : "method record"}</span>`;
+            return `<span class="unknown">Not applicable — ${w.survey ? "survey" : w.model ? "model record" : "method record"}</span>`;
           const val = obj[key];
           return `<span class="${isUnknown(val) ? "unknown" : ""}">${esc(display(val))}</span>${isUnknown(val) ? "" : cite(w, `${prefix}.${key}`)}`;
         }),
@@ -847,13 +897,32 @@ $("clear-compare").addEventListener("click", () => {
 $("open-compare").addEventListener("click", openCompare);
 $("retry-load").addEventListener("click", () => void load());
 $("export-view").addEventListener("click", () => {
-  const hasSurveys = current.some((w) => !!w.survey);
-  const fields =
+  const hasSurveys = current.some((w) => !!w.survey),
+    hasModels = current.some((w) => !!w.model);
+  const fields: [string, string, string][] =
     collection === "benchmark"
-      ? [...BENCH_FIELDS, ["tasks", "Published task names"] as [string, string]]
-      : hasSurveys
-        ? [...POLICY_FIELDS, ...SURVEY_FIELDS]
-        : POLICY_FIELDS;
+      ? [
+          ...BENCH_FIELDS,
+          ["tasks", "Published task names"] as [string, string],
+        ].map(([key, label]) => ["benchmark", key, label])
+      : [
+          ...POLICY_FIELDS.map(
+            ([key, label]) =>
+              ["policy", key, label] as [string, string, string],
+          ),
+          ...(hasModels
+            ? MODEL_FIELDS.map(
+                ([key, label]) =>
+                  ["model", key, "Model: " + label] as [string, string, string],
+              )
+            : []),
+          ...(hasSurveys
+            ? SURVEY_FIELDS.map(
+                ([key, label]) =>
+                  ["survey", key, label] as [string, string, string],
+              )
+            : []),
+        ];
   const quote = (x: unknown) => '"' + display(x).replaceAll('"', '""') + '"';
   const lines = [
     [
@@ -867,16 +936,12 @@ $("export-view").addEventListener("click", () => {
       "Data",
       "Weights",
       "Modalities",
-      ...fields.map((f) => f[1]),
+      ...fields.map((f) => f[2]),
     ],
     ...current.map((w) => [
       nameFor(w, collection),
       w.title,
-      w.resourceType === "survey"
-        ? "Survey"
-        : collection === "policy"
-          ? "Policy"
-          : resourceLabel(w) || "Benchmark",
+      recordTypeLabel(w, collection),
       w.date || "Undated",
       w.links.paper || "",
       w.links.project || "",
@@ -884,15 +949,17 @@ $("export-view").addEventListener("click", () => {
       w.links.data || "",
       w.links.weights || "",
       w.modalities.join("; "),
-      ...fields.map(
-        ([key]) =>
-          (SURVEY_FIELDS.some(([k]) => k === key)
+      ...fields.map(([prefix, key]) => {
+        const obj =
+          prefix === "survey"
             ? w.survey
-            : collection === "benchmark"
-              ? w.benchmark
-              : w.policy)?.[key] ??
-          (w.survey || hasSurveys ? "Not applicable" : "Not reported"),
-      ),
+            : prefix === "model"
+              ? w.model
+              : prefix === "benchmark"
+                ? w.benchmark
+                : w.policy;
+        return obj?.[key] ?? (!obj ? "Not applicable" : "Not reported");
+      }),
     ]),
   ];
   const blob = new Blob(

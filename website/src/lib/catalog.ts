@@ -3,6 +3,7 @@ import records from "../../../data/works.json";
 import media from "../../../data/media.json";
 import policyAudit from "../../../data/policy-source-audit.json";
 import surveyAudit from "../../../data/survey-source-audit.json";
+import sensingAudit from "../../../data/sensing-source-audit.json";
 import type { Work, Collection, Figure } from "./schema";
 export * from "./schema";
 export const works = (records as unknown as Work[]).sort(
@@ -65,3 +66,30 @@ export const REVIEW_LABEL = new Intl.DateTimeFormat("en-GB", {
   year: "numeric",
   timeZone: "UTC",
 }).format(new Date(meta.reviewed + "T00:00:00Z"));
+
+export interface SensingSourceAudit {
+  reviewed: string;
+  scope: string;
+  sources: {
+    id: string;
+    label: string;
+    url: string;
+    kind: string;
+    scope: string;
+    snapshot?: string;
+    entries: {
+      name: string;
+      url: string;
+      status:
+        | "indexed"
+        | "outside-scope"
+        | "background"
+        | "adjacent-resource"
+        | "candidate"
+        | "unresolved";
+      workId?: string;
+      note: string;
+    }[];
+  }[];
+}
+export const sensingSourceAudit = sensingAudit as SensingSourceAudit;

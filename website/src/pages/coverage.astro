@@ -1,6 +1,7 @@
 ---
 import { sitePath } from "../lib/paths";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import SensingSourceAudit from "../components/SensingSourceAudit.astro";
 import {
   works,
   figures,
@@ -8,14 +9,14 @@ import {
   CATEGORIES,
   inCollection,
   isUnknown,
+  isExecutablePolicy,
   policySourceAudit,
   surveySourceAudit,
   nameFor,
 } from "../lib/catalog";
 const bench = works.filter((w) => inCollection(w, "benchmark"));
-const policies = works.filter(
-  (w) => inCollection(w, "policy") && w.resourceType !== "survey",
-);
+const policies = works.filter(isExecutablePolicy);
+const models = works.filter((w) => !!w.model);
 const surveys = works.filter((w) => w.resourceType === "survey");
 const support = works.filter((w) =>
   w.categories.includes("supporting-resources"),
@@ -80,10 +81,11 @@ const referenceStates = {
     <p>
       Some papers contribute to both collections, so collection counts cannot be
       added. {support.length} supporting resources are accessible under Tools &
-      data. {surveys.length} surveys appear in relevant categories and are
-      counted separately from policies. Their details describe the review scope
-      and taxonomy, without deployment or training claims. {imageCount} records
-      have locally stored, credited figures; {sources.size} distinct
+      data. {models.length} supporting models and {surveys.length} surveys
+      appear in relevant categories and are counted separately from policies.
+      Models describe representation/prediction interfaces and downstream
+      evaluation; surveys describe literature scope and taxonomy. {imageCount}{" "}
+      records have locally stored, credited figures; {sources.size} distinct
       primary-source URLs support the catalog.
     </p>
     <h2>Benchmark coverage</h2>
@@ -212,6 +214,7 @@ const referenceStates = {
         Download the source-to-record mappings ↗
       </a>
     </p>
+    <SensingSourceAudit />
     <h2 id="survey-source-audit">From surveys to original methods</h2>
     <p>
       Surveys supply taxonomy and citation trails. Their references are
@@ -375,7 +378,8 @@ const referenceStates = {
     <h2>Coverage limits</h2>
     <p>
       This collection focuses on manipulation and action-policy evaluation.
-      Standalone tactile representation, sensor hardware, medical palpation,
+      Tactile representations and manipulation-relevant depth/geometry models
+      have dedicated routes. Standalone sensor hardware, medical palpation,
       locomotion, haptics and generic depth-estimation papers are not
       exhaustively cataloged. Selected supporting resources are included when
       they explain the benchmarks or policies.
@@ -406,8 +410,8 @@ const referenceStates = {
       <code>cd website && npm test && npm run check && npm run build</code>
     </div>
     <p>
-      Review additions in the local browser before release. The repository has
-      no remote or deployment configuration.{" "}
+      Review additions in the local browser before release. Validated
+      main-branch changes deploy to the public GitHub Pages site.{" "}
       <a href={sitePath("/catalog.json")} download="rgbdt-catalog.json">
         Download the complete structured catalog ↗
       </a>

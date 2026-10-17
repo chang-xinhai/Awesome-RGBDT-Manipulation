@@ -18,7 +18,9 @@ const facts = w.survey
   ? ["Survey", display(w.survey.scope)]
   : c === "benchmark"
     ? [display(w.benchmark?.simulator), display(w.benchmark?.taskCount)]
-    : [display(w.policy?.family), display(w.policy?.baseModel)];
+    : w.model
+      ? ["Model · " + display(w.model.family), display(w.model.baseModel)]
+      : [display(w.policy?.family), display(w.policy?.baseModel)];
 ---
 
 <article class="library-card" data-id={w.id}>
@@ -44,7 +46,9 @@ const facts = w.survey
             ? "Research survey"
             : c === "benchmark"
               ? "Research benchmark"
-              : "Manipulation policy"}
+              : w.model
+                ? "Representation / world model"
+                : "Manipulation policy"}
         </small>
         <strong>{nameFor(w, c)}</strong>
         <span>View primary-source details ↗</span>
@@ -69,7 +73,7 @@ const facts = w.survey
       ))}
     </div>
     <div class="card-tags">
-      {resourceLabel(w) && <span>{resourceLabel(w)}</span>}
+      {resourceLabel(w, c) && <span>{resourceLabel(w, c)}</span>}
       {w.modalities
         .filter((x) => !["Proprioception", "Language"].includes(x))
         .map((x) => (

@@ -1,21 +1,23 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-17. 508 unique records; 45 benchmark records; 455 policy records; 4 surveys; 12 supporting resources. Collection and category counts overlap. Surveys have their own scope fields and do not add to the policy count.
+Review cutoff: 2026-10-17. 681 unique records; 50 benchmark records; 576 policy records; 47 models; 9 surveys; 12 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
-- Visuo-Tactile Benchmarks: 18 records with this classification.
-- Precision and Assembly: 23 records with this classification.
-- Dexterous Manipulation: 10 records with this classification.
-- General Manipulation: 12 records with this classification.
-- Robustness and Evaluation: 11 records with this classification.
+- Visuo-Tactile Benchmarks: 21 records with this classification.
+- Precision and Assembly: 25 records with this classification.
+- Dexterous Manipulation: 12 records with this classification.
+- General Manipulation: 13 records with this classification.
+- Robustness and Evaluation: 14 records with this classification.
 - Supporting Tools and Data: 12 records with this classification.
-- Visuo-Tactile Policy Learning: 33 records with this classification.
-- Tactile VLA and World-Action Models: 33 records with this classification.
-- RGB-D and 3D Policies: 95 records with this classification.
-- Visual Precision and Reinforcement Learning: 23 records with this classification.
-- Agent / RSI / ICL: 248 records with this classification.
-- Generalist Policy Foundations: 129 records with this classification.
+- Visuo-Tactile Policy Learning: 68 records with this classification.
+- Tactile VLA and World-Action Models: 108 records with this classification.
+- RGB-D and 3D Policies: 155 records with this classification.
+- Tactile Representations and Pretraining: 41 records with this classification.
+- Geometry and Predictive Models: 17 records with this classification.
+- Visual Precision and Reinforcement Learning: 37 records with this classification.
+- Agent / RSI / ICL: 250 records with this classification.
+- Generalist Policy Foundations: 137 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -31,6 +33,10 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 56 / 58 |
 | [RoboDojo live leaderboard: real robots](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 11 / 11 |
 | [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab) | adapter-registry | 63 / 63 |
+| [N₀-Foundation NeoReal / NeoSim baseline rosters](https://arxiv.org/html/2608.29601v2#S6) | paper-baselines | 9 / 9 |
+| [Evo-DexBench evaluated policies and No-Touch ablation](https://arxiv.org/abs/2610.21180) | paper-baselines | 6 / 6 |
+| [ForceBench simulation comparison](https://arxiv.org/abs/2610.19604) | paper-baselines | 9 / 10 |
+| [SparkArena simulation / hardware paper baselines](https://arxiv.org/abs/2610.22342) | paper-baselines | 11 / 13 |
 
 ## Survey citation trails
 
@@ -39,6 +45,32 @@ Surveys are reading resources with their own taxonomy and evidence boundaries, n
 | Survey | References reconciled | Indexed canonical links |
 | :-- | :-- | :-- |
 | [In-Context Learning for Robots: Methods and Applications](https://arxiv.org/abs/2609.36012) | 412 | 239 |
+| [Tactile-Guided Robot Learning: From Representation Learning to Foundation Models](https://arxiv.org/abs/2610.20134) | 195 | 72 |
+| [Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms](https://arxiv.org/abs/2605.17336) | 119 | 28 |
+| [Towards Forceful Robotic Foundation Models: a Literature Survey](https://arxiv.org/abs/2504.11827) | 109 | 25 |
+
+## Tactile and geometry discovery audit
+
+Source aliases are discovery provenance, not primary method evidence. Indexed mappings, scope exclusions and unverified candidates are retained in [data/sensing-source-audit.json](data/sensing-source-audit.json). Counts overlap across sources.
+
+| Discovery source and scoped branch | Indexed / source aliases |
+| :-- | :-- |
+| [N₀-Foundation original report and official release](https://github.com/neoteai/N0-Foundation) | 1 / 1 |
+| [Awesome-Touch / Visual-Tactile](https://github.com/linchangyi1/Awesome-Touch) | 4 / 19 |
+| [Awesome-Touch / Data Collection](https://github.com/linchangyi1/Awesome-Touch) | 24 / 37 |
+| [Awesome-Touch / VLA/WM/LLM/VLM](https://github.com/linchangyi1/Awesome-Touch) | 30 / 31 |
+| [Awesome-Touch / Dexterous Manipulation](https://github.com/linchangyi1/Awesome-Touch) | 16 / 21 |
+| [Awesome-Touch / Manipulation/Grasping](https://github.com/linchangyi1/Awesome-Touch) | 30 / 111 |
+| [User seed](https://xsparkai.com/Spark-0/) | 1 / 1 |
+| [Primary source expansion / representation cross-review](https://arxiv.org/abs/2607.07287) | 4 / 5 |
+| [Primary expansion / official author site](https://arxiv.org/abs/2602.13833) | 2 / 2 |
+| [Awesome-Touch representations / reviews and primary-source expansion](https://github.com/linchangyi1/Awesome-Touch) | 38 / 67 |
+| [RynnWorld-4D, geometry surveys and original method bibliographies](https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io/) | 54 / 61 |
+| [World Models for Robotic Manipulation — geometry reference subset](https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053) | 8 / 8 |
+| [Tactile survey representation/control gaps](https://arxiv.org/abs/2605.17336) | 8 / 8 |
+| [Tactile-guided survey control gaps](https://arxiv.org/abs/2610.20134) | 10 / 10 |
+| [Evo-DexBench KineDex baseline — original policy](https://arxiv.org/abs/2610.21180) | 1 / 1 |
+| [Recent official arXiv — scoped sensing/contact additions](https://export.arxiv.org/api/query?search_query=cat%3Acs.RO&sortBy=submittedDate&sortOrder=descending) | 3 / 8 |
 
 ## Evidence methodology
 
@@ -46,7 +78,7 @@ Search recent and foundational work independently across benchmark and policy fa
 
 ## Explicit boundaries
 
-Standalone sensor hardware, representation-only pretraining, medical palpation, locomotion, haptics and generic depth-estimation literature are not exhaustively indexed. Selected supporting resources contextualize manipulation work.
+Tactile representation/pretraining and manipulation-relevant geometry models are included with separate model fields. Standalone sensor hardware, medical palpation, locomotion, haptics and generic depth-estimation literature remain outside comprehensive coverage. Selected supporting resources contextualize manipulation work.
 
 Task labels can refer to distinct suites, released registries, evaluated subsets or examples. They are never pooled into a global count of independent tasks. A paper can introduce both a benchmark and a policy without becoming two unique paper records.
 

@@ -18,7 +18,7 @@ A controlled real-robot study of five tactile encoders and five fusion schemes u
 
 | Field | Reported value and source scope |
 | :-- | :-- |
-| Record type | benchmark |
+| Record type | policy |
 | Policy family | ACT [1](https://arxiv.org/abs/2609.30969)  |
 | Base model and architecture | ACT; ResNet18, SARL, UniT, Sparsh-DINO, T3 tactile backbones [1](https://arxiv.org/abs/2609.30969) [3](https://arxiv.org/html/2609.30969)  |
 | Model size and component | Not reported [1](https://arxiv.org/abs/2609.30969) [3](https://arxiv.org/html/2609.30969)  |

@@ -3,6 +3,7 @@ import {
   display,
   inCollection,
   releaseFor,
+  recordTypeLabel,
   type Collection,
   type Work,
 } from "./schema.ts";
@@ -50,10 +51,13 @@ export function values(
   if (key === "embodiment") return w.embodiments;
   if (key === "year") return [String(w.year)];
   if (key === "code") return [releaseFor(w, c).code || "Not verified"];
-  if (key === "type")
-    return [w.resourceType === "survey" ? "Survey" : "Policy"];
+  if (key === "type") return [recordTypeLabel(w, c)];
   if (key === "family")
-    return [w.resourceType === "survey" ? "Survey" : display(w.policy?.family)];
+    return [
+      w.resourceType === "survey"
+        ? "Survey"
+        : display(w.model?.family ?? w.policy?.family),
+    ];
   if (key === "simulator") {
     const s = display(w.benchmark?.simulator);
     const known = [
@@ -123,6 +127,7 @@ export function matches(
         w.embodiments,
         w.benchmark,
         w.policy,
+        w.model,
         w.survey,
         w.release,
         w.caveats,

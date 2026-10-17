@@ -7,6 +7,7 @@ Maintain a public-facing research reference, never a private project plan.
 - `data/works.json` is the single structured source. `README.md`, the complete generated pages under `docs/records/`, and the static website derive from it; regenerate with `python3 scripts/generate.py`.
 - `data/media.json` stores per-collection figures and source provenance. Benchmark covers show task coverage/taxonomy; policy covers show architecture/pipeline.
 - Supporting simulators, datasets and perception tests have explicit resource types under Benchmarks / Tools & data. Do not count them as closed-loop manipulation benchmarks.
+- Non-executable tactile representations and manipulation-relevant geometry/predictive models use `resourceType: model` and a `model` interface/resource object within Policies. Keep them separate from action-policy counts, fields and modality claims; a model paper may also introduce a benchmark.
 - Surveys use `resourceType: survey` and a `survey` scope/taxonomy object within relevant existing categories. Do not give them fictional policy, training or deployment fields or add them to executable-policy counts. Survey figures may show conceptual taxonomies.
 - Scope includes precise/contact-rich manipulation, tactile and force policies, observed RGB-D/3D policies, and relevant generalist/visual/RL foundations. Avoid a generic CV bibliography.
 - No unpublished proposed tasks, project-specific guidance, internal meetings, private notes, people assignments or paper strategy.
