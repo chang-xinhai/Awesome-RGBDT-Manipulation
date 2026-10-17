@@ -1,4 +1,5 @@
 ---
+import { sitePath } from "../lib/paths";
 import "../styles/atlas.css";
 import { REVIEW_LABEL } from "../lib/catalog";
 import serif from "../assets/fonts/source-serif-4-latin-normal.woff2?url";
@@ -6,6 +7,7 @@ const {
   title = "Awesome RGBDT Manipulation",
   description = "A source-backed atlas of benchmarks and policies for precise, contact-rich robot manipulation.",
 } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -15,7 +17,12 @@ const {
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" href={sitePath("/favicon.svg")} type="image/svg+xml" />
     <link rel="preload" href={serif} as="font" type="font/woff2" crossorigin />
     <title>{title}</title>
   </head>
@@ -24,7 +31,7 @@ const {
       Skip to content
     </a>
     <header class="site-header wrap">
-      <a class="brand" href="/">
+      <a class="brand" href={sitePath("/")}>
         <span class="brand-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M5 19h14M7 17v-5l5-5 4 2 2-5M12 7l-2-3M16 9l3 3M7 12l-3-2" />
@@ -36,11 +43,16 @@ const {
         <span>Awesome RGBDT Manipulation</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="/">Library</a>
-        <a href="/coverage/">Coverage</a>
-        <a href="/about/">About</a>
-        <a class="button-dark repo-link" href="/README.md">
-          Read the repo <span aria-hidden="true">↗</span>
+        <a href={sitePath("/")}>Library</a>
+        <a href={sitePath("/coverage/")}>Coverage</a>
+        <a href={sitePath("/about/")} data-about>
+          About
+        </a>
+        <a
+          class="button-dark repo-link"
+          href="https://github.com/chang-xinhai/Awesome-RGBDT-Manipulation"
+        >
+          GitHub <span aria-hidden="true">↗</span>
         </a>
       </nav>
     </header>
@@ -50,9 +62,11 @@ const {
     <footer class="site-footer wrap">
       <p>Public research. Traceable sources.</p>
       <div>
-        <a href="/coverage/">Coverage & updates</a>
-        <a href="/about/">Curation principles</a>
-        <a href="/catalog.json" download="rgbdt-catalog.json">
+        <a href={sitePath("/coverage/")}>Coverage & updates</a>
+        <a href={sitePath("/about/")} data-about>
+          Curation principles
+        </a>
+        <a href={sitePath("/catalog.json")} download="rgbdt-catalog.json">
           Download catalog
         </a>
         <span>Reviewed {REVIEW_LABEL}</span>

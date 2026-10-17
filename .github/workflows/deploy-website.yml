@@ -1,0 +1,67 @@
+name: Validate and deploy RGBDT atlas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - name: Verify generated reference files
+        run: |
+          python3 scripts/generate.py
+          git diff --exit-code
+      - name: Validate research records and figures
+        run: python3 scripts/validate.py
+      - name: Install website dependencies
+        working-directory: website
+        run: npm ci
+      - name: Test catalog behavior
+        working-directory: website
+        run: npm test
+      - name: Check formatting and types
+        working-directory: website
+        run: |
+          npm run format:check
+          npm run check
+      - name: Build static website
+        working-directory: website
+        run: npm run build
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: website/dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

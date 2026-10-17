@@ -1,4 +1,5 @@
 ---
+import { sitePath } from "../lib/paths";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import {
   works,
@@ -53,7 +54,7 @@ const referenceStates = {
 
 <BaseLayout title="Coverage & updates — Awesome RGBDT Manipulation">
   <article class="prose wrap">
-    <a class="back-link" href="/">
+    <a class="back-link" href={sitePath("/")}>
       ← Back to the library
     </a>
     <h1>Broad coverage. Explicit boundaries.</h1>
@@ -98,7 +99,9 @@ const referenceStates = {
         {CATEGORIES.benchmark.map((c) => (
           <tr>
             <td>
-              <a href={"/?category=" + c.id + "#library"}>{c.label}</a>
+              <a href={sitePath("/?category=" + c.id + "#library")}>
+                {c.label}
+              </a>
             </td>
             <td>{c.description}</td>
             <td>
@@ -121,7 +124,11 @@ const referenceStates = {
         {CATEGORIES.policy.map((c) => (
           <tr>
             <td>
-              <a href={"/?collection=policy&category=" + c.id + "#library"}>
+              <a
+                href={sitePath(
+                  "/?collection=policy&category=" + c.id + "#library",
+                )}
+              >
                 {c.label}
               </a>
             </td>
@@ -185,7 +192,9 @@ const referenceStates = {
                     {" "}
                     →{" "}
                     <a
-                      href={"/?collection=policy&item=" + work.id + "#library"}
+                      href={sitePath(
+                        "/?collection=policy&item=" + work.id + "#library",
+                      )}
                     >
                       {nameFor(work, "policy")}
                     </a>
@@ -199,7 +208,7 @@ const referenceStates = {
       </details>
     ))}
     <p>
-      <a href="/policy-source-audit.json" download>
+      <a href={sitePath("/policy-source-audit.json")} download>
         Download the source-to-record mappings ↗
       </a>
     </p>
@@ -213,7 +222,11 @@ const referenceStates = {
     {surveySourceAudit.sources.map((source) => (
       <section>
         <h3>
-          <a href={"/?collection=policy&item=" + source.workId + "#library"}>
+          <a
+            href={sitePath(
+              "/?collection=policy&item=" + source.workId + "#library",
+            )}
+          >
             {source.label}
           </a>
         </h3>
@@ -250,15 +263,15 @@ const referenceStates = {
                     <li>
                       {work ? (
                         <a
-                          href={
+                          href={sitePath(
                             "/?collection=" +
-                            (work.collections.includes("policy")
-                              ? "policy"
-                              : "benchmark") +
-                            "&item=" +
-                            work.id +
-                            "#library"
-                          }
+                              (work.collections.includes("policy")
+                                ? "policy"
+                                : "benchmark") +
+                              "&item=" +
+                              work.id +
+                              "#library",
+                          )}
                         >
                           {work.name}
                         </a>
@@ -303,7 +316,7 @@ const referenceStates = {
       </section>
     ))}
     <p>
-      <a href="/survey-source-audit.json" download>
+      <a href={sitePath("/survey-source-audit.json")} download>
         Download the survey reference mappings ↗
       </a>
     </p>
@@ -395,7 +408,7 @@ const referenceStates = {
     <p>
       Review additions in the local browser before release. The repository has
       no remote or deployment configuration.{" "}
-      <a href="/catalog.json" download="rgbdt-catalog.json">
+      <a href={sitePath("/catalog.json")} download="rgbdt-catalog.json">
         Download the complete structured catalog ↗
       </a>
     </p>

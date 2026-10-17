@@ -76,5 +76,6 @@ python3 scripts/discover.py --since 2026-10-17 --output /tmp/rgbdt-candidates.js
 
 The collection is public research reference material. Keep unpublished project
 plans, proposed experiments, internal task choices and private communications
-out of its records and prose. Repository publication is a separate action;
-the current checkout and preview are local only.
+out of its records and prose. The main-branch website is deployed to GitHub Pages after validation; candidate discovery stays separate from reviewed publication.
+
+The generator keeps `README.md` as a compact categorized index and writes complete, source-linked detail pages under `docs/records/`. Edit the structured source rather than generated pages.

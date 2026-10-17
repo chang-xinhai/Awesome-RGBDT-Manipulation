@@ -1,4 +1,5 @@
 ---
+import { sitePath } from "../lib/paths";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CatalogCard from "../components/CatalogCard.astro";
 import { works, CATEGORIES, inCollection } from "../lib/catalog";
@@ -171,9 +172,9 @@ const pool = works.filter((w) => inCollection(w, "benchmark"));
     </div>
     <noscript>
       <p class="empty-state">
-        Browse the complete <a href="/README.md">README</a> or{" "}
-        <a href="/catalog.json">structured catalog</a>. Interactive search and
-        comparison require JavaScript.
+        Browse the complete <a href={sitePath("/README.md")}>README</a> or{" "}
+        <a href={sitePath("/catalog.json")}>structured catalog</a>. Interactive
+        search and comparison require JavaScript.
       </p>
     </noscript>
   </section>

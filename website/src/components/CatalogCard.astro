@@ -1,4 +1,5 @@
 ---
+import { sitePath } from "../lib/paths";
 import {
   display,
   figureFor,
@@ -29,7 +30,7 @@ const facts = w.survey
   >
     {f ? (
       <img
-        src={f.path}
+        src={sitePath(f.path)}
         alt={f.alt}
         width="640"
         height="360"

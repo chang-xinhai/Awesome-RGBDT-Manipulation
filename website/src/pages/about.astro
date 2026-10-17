@@ -1,11 +1,12 @@
 ---
+import { sitePath } from "../lib/paths";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { REVIEW_LABEL } from "../lib/catalog";
 ---
 
 <BaseLayout title="About — Awesome RGBDT Manipulation">
   <article class="prose wrap">
-    <a class="back-link" href="/">
+    <a class="back-link" href={sitePath("/")}>
       ← Back to the library
     </a>
     <h1>A clearer view of contact-rich manipulation.</h1>
@@ -89,10 +90,11 @@ import { REVIEW_LABEL } from "../lib/catalog";
     <h2>Keeping the atlas current</h2>
     <p>
       This is a reviewed snapshot dated <strong>{REVIEW_LABEL}</strong>, not a
-      live publication feed. The <a href="/coverage/">coverage page</a>{" "}
-      describes the search boundary and unresolved fields. The local repository
-      includes structured data, regeneration and validation scripts, and a
-      review workflow for future additions.
+      live publication feed. The{" "}
+      <a href={sitePath("/coverage/")}>coverage page</a> describes the search
+      boundary and unresolved fields. The repository includes structured data,
+      regeneration and validation scripts, and a review workflow for future
+      additions.
     </p>
     <p>
       Search accepts task names, simulators, model names, sensors and training

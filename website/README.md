@@ -1,4 +1,4 @@
-# Local visual atlas
+# RGBDT visual atlas
 
 An Astro static website generated from `../data/works.json`, with separate
 benchmark and policy discovery, evidence, figures and comparison fields.
@@ -9,7 +9,7 @@ npm ci
 npm run dev -- --host 127.0.0.1 --port 4345
 ```
 
-Local preview: <http://127.0.0.1:4345>.
+Local preview: <http://127.0.0.1:4345/Awesome-RGBDT-Manipulation/>.
 
 ```sh
 npm test
@@ -36,5 +36,15 @@ do not increase the executable-policy count. Citation trails and scope
 decisions are available under Coverage. Click figures to enlarge. Supporting resources are a distinct
 category. Cost and simulator fields preserve the source's version and scope.
 
-This checkout is local only. There is no GitHub repository, remote, publication
-workflow, hosting configuration or automatic external deployment.
+Public website: <https://chang-xinhai.github.io/Awesome-RGBDT-Manipulation/>.
+Repository: <https://github.com/chang-xinhai/Awesome-RGBDT-Manipulation>.
+
+The approved Ego atlas scale is shared: desktop viewports from 901 CSS pixels use
+an 80% root design scale; viewports from 1280 pixels show four cards across.
+Compact and mobile layouts keep their original type and control sizes. All
+internal routes and assets resolve under the configured GitHub Pages base path.
+
+`.github/workflows/deploy-website.yml` validates the generated catalog, runs the
+website checks and deploys successful main-branch builds to GitHub Pages.
+Pull requests run the same checks without deployment. Candidate discovery never
+adds or publishes records automatically.

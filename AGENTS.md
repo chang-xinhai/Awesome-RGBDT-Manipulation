@@ -4,7 +4,7 @@ Maintain a public-facing research reference, never a private project plan.
 
 ## Scope and structure
 - Exactly two main collections: Benchmarks and Policies. A canonical work may have both roles.
-- `data/works.json` is the single structured source. `README.md` and the static website derive from it; regenerate with `python3 scripts/generate.py`.
+- `data/works.json` is the single structured source. `README.md`, the complete generated pages under `docs/records/`, and the static website derive from it; regenerate with `python3 scripts/generate.py`.
 - `data/media.json` stores per-collection figures and source provenance. Benchmark covers show task coverage/taxonomy; policy covers show architecture/pipeline.
 - Supporting simulators, datasets and perception tests have explicit resource types under Benchmarks / Tools & data. Do not count them as closed-loop manipulation benchmarks.
 - Surveys use `resourceType: survey` and a `survey` scope/taxonomy object within relevant existing categories. Do not give them fictional policy, training or deployment fields or add them to executable-policy counts. Survey figures may show conceptual taxonomies.
@@ -30,5 +30,5 @@ Preserve the established Ego/UMI atlas design: white background, Source Serif 4 
 Run `python3 scripts/validate.py`, `npm test`, `npm run check`, `npm run build` and desktop/mobile browser checks. Test search through task names, filter-state restoration, detail deep links, branch-specific comparison, large task lists, figure enlargement, exports and saved records.
 When the user requests extensive parallel work, use independent research and cross-review; keep provisional evidence outside public source until resolved.
 
-## Local-only restriction
-The user explicitly requested local-only work on 2026-10-17. Do not create any GitHub repository, remote, push, deployment, GitHub Pages configuration or scheduled external publishing. Local Git and local previews are authorized. Publication requires a later user request.
+## Publication
+The user authorized GitHub publication and deployment on 2026-10-17 after aligning the atlas with Awesome-Ego-Robotics's approved 80% desktop scale. The public repository is `chang-xinhai/Awesome-RGBDT-Manipulation`; deploy the static website to its GitHub Pages project path. Preserve compact/mobile sizing, use base-aware routes and assets, and run data/build/browser checks before publication. Candidate discovery remains separate from reviewed source; no scheduled research publication is configured.

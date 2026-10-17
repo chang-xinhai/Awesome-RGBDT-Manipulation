@@ -1,3 +1,4 @@
+import { sitePath } from "../lib/paths";
 import {
   CATEGORIES,
   BENCH_FIELDS,
@@ -158,7 +159,7 @@ function card(w: Work) {
         ? [display(w.benchmark?.simulator), display(w.benchmark?.taskCount)]
         : [display(w.policy?.family), display(w.policy?.baseModel)];
   const cover = f
-    ? `<img src="${esc(f.path)}" alt="${esc(f.alt)}" width="640" height="360" loading="lazy" decoding="async"/>`
+    ? `<img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}" width="640" height="360" loading="lazy" decoding="async"/>`
     : `<span class="text-cover"><small>${w.survey ? "Research survey" : collection === "benchmark" ? "Research benchmark" : "Manipulation policy"}</small><strong>${esc(nameFor(w, collection))}</strong><span>View primary-source details ↗</span></span>`;
   return `<article class="library-card feed-enter${s ? " is-selected" : ""}" data-id="${esc(w.id)}"><button type="button" class="card-cover" data-detail="${esc(w.id)}" aria-label="View ${esc(nameFor(w, collection))}">${cover}</button><div class="card-copy"><p class="card-meta">${esc(w.institution)}<span>·</span>${w.year || "Undated"}</p><h2><button type="button" data-detail="${esc(w.id)}" title="${esc(w.title)}">${esc(nameFor(w, collection))}</button></h2><p class="card-description">${esc(summaryFor(w, collection))}</p><div class="card-facts">${items.map((x) => `<span title="${esc(x)}">${esc(x)}</span>`).join("")}</div><div class="card-tags">${resourceLabel(w) ? `<span>${esc(resourceLabel(w))}</span>` : ""}${w.modalities
     .filter((x) => !["Proprioception", "Language"].includes(x))
@@ -487,7 +488,7 @@ function policySections(w: Work) {
         w.survey,
       ) +
       (w.surveyAuditId
-        ? `<section class="detail-section"><h3>Follow the literature</h3><p class="detail-summary">${external(location.origin + "/coverage/#survey-source-audit", "Browse the reference-to-record audit ↗")}</p><p class="task-scope">Citation mappings identify indexed methods, adjacent resources and exclusions. Each indexed method retains evidence from its own primary sources.</p></section>`
+        ? `<section class="detail-section"><h3>Follow the literature</h3><p class="detail-summary">${external(location.origin + sitePath("coverage/#survey-source-audit"), "Browse the reference-to-record audit ↗")}</p><p class="task-scope">Citation mappings identify indexed methods, adjacent resources and exclusions. Each indexed method retains evidence from its own primary sources.</p></section>`
         : "")
     );
   if (!w.policy) return "";
@@ -526,7 +527,7 @@ function openDetail(id: string, restore = false) {
         ? `<details class="detail-secondary"><summary>Benchmark introduced in this work</summary>${benchmarkSections(w)}</details>`
         : "";
   $("detail-content").innerHTML =
-    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${w.survey ? "Survey taxonomy & conceptual framework" : collection === "benchmark" ? "Task coverage & benchmark overview" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(f.path)}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
+    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${w.survey ? "Survey taxonomy & conceptual framework" : collection === "benchmark" ? "Task coverage & benchmark overview" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
       w,
       "",
       w.survey
@@ -622,10 +623,10 @@ function openCompare() {
   const row = (label: string, fn: (w: Work) => string) =>
     `<tr><th scope="row">${esc(label)}</th>${list.map((w) => `<td>${fn(w)}</td>`).join("")}</tr>`;
   $("compare-content").innerHTML =
-    `<div class="compare-heading"><h2>${hasSurveys ? "Compare research" : c === "benchmark" ? "Compare benchmarks" : "Compare policies"}</h2><p>${hasSurveys ? "Surveys describe literature scope; methods describe executable policies. Fields that do not apply remain labeled." : c === "benchmark" ? "Task counts, simulator versions and protocols retain their paper or release scope." : "Architecture, deployment observations and training resources are compared separately."} Different evaluation settings do not form a common performance ranking.</p></div><div class="compare-table-wrap"><table class="comparison-table" style="min-width:${155 + list.length * 245}px"><thead><tr><th scope="col">${hasSurveys ? "Research record" : c === "benchmark" ? "Benchmark" : "Policy"}</th>${list
+    `<div class="compare-heading"><h2>${hasSurveys ? "Compare research" : c === "benchmark" ? "Compare benchmarks" : "Compare policies"}</h2><p>${hasSurveys ? "Surveys describe literature scope; methods describe executable policies. Fields that do not apply remain labeled." : c === "benchmark" ? "Task counts, simulator versions and protocols retain their paper or release scope." : "Architecture, deployment observations and training resources are compared separately."} Different evaluation settings do not form a common performance ranking.</p></div><div class="compare-table-wrap"><table class="comparison-table" style="min-width:${(155 + list.length * 245) / 16}rem"><thead><tr><th scope="col">${hasSurveys ? "Research record" : c === "benchmark" ? "Benchmark" : "Policy"}</th>${list
       .map((w) => {
         const f = imageFor(w);
-        return `<th scope="col">${f ? `<img src="${esc(f.path)}" alt="${esc(f.alt)}"/>` : ""}<strong>${esc(nameFor(w, collection))}</strong><span>${esc(w.date || "Undated")} · ${esc(w.venue)}</span></th>`;
+        return `<th scope="col">${f ? `<img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/>` : ""}<strong>${esc(nameFor(w, collection))}</strong><span>${esc(w.date || "Undated")} · ${esc(w.venue)}</span></th>`;
       })
       .join(
         "",
@@ -709,7 +710,7 @@ async function copy(text: string) {
 }
 async function load() {
   try {
-    const response = await fetch("/catalog.json");
+    const response = await fetch(sitePath("catalog.json"));
     if (!response.ok) throw Error(String(response.status));
     const data = await response.json();
     reviewed = data.reviewed;
@@ -764,7 +765,7 @@ document.addEventListener("click", (event) => {
       const f = imageFor(byId.get(button.dataset.figure)!);
       if (f) {
         $("figure-content").innerHTML =
-          `<img src="${esc(f.path)}" alt="${esc(f.alt)}"/>${caption(f)}`;
+          `<img src="${esc(sitePath(f.path))}" alt="${esc(f.alt)}"/>${caption(f)}`;
         dialogOpen(figure);
       }
     } else if (button.dataset.related) {

@@ -47,6 +47,19 @@ for id,contexts in media.items():
 readme=(R/'README.md').read_text()if(R/'README.md').exists()else''
 for id in ids:check('<!-- work:'+id+' -->'in readme,id+': missing generated README record')
 check((R/'website/public/README.md').read_text()==readme,'Website README is stale')
+check(len(readme.encode())<500_000,'README is too large for a browsable GitHub index')
+for w in works:
+ for c in w['collections']:
+  relative=f'docs/records/{c}/{w["id"]}.md'
+  page=R/relative
+  check(page.exists(),w['id']+': missing generated record page')
+  check(relative in readme,w['id']+': missing record-page link in README')
+  if page.exists():
+   body=page.read_text()
+   check('**Primary evidence**'in body and '| Record type |'in body,w['id']+': incomplete record page')
+   for image in re.findall(r'<img src="([^"]+)"',body):
+    check((page.parent/image).resolve().is_file(),w['id']+': broken record-page figure')
+
 audit=json.loads((R/'data/policy-source-audit.json').read_text())
 check(audit['reviewed']==cutoff,'Policy roster audit has a different review date')
 check(bool(audit['sources']),'Policy roster audit is empty')
