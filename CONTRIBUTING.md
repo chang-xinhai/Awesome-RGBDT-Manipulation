@@ -25,6 +25,13 @@ of the same research records. Do not maintain a second, divergent bibliography.
    inspect it visually, and record attribution in `data/media.json`.
 8. Regenerate, validate and inspect the changed pages.
 
+When expanding policy coverage, audit benchmark paper tables, official
+leaderboards and adapter registries separately. Record which is the source of
+each alias; integration alone is not evidence of an evaluated result. Follow
+the missing model's original paper/project before adding its factual fields.
+Present artifact links as Paper → Project → Code → Data → other artifacts,
+highlighting the first available link.
+
 ```sh
 python3 scripts/generate.py
 python3 scripts/validate.py
@@ -43,6 +50,8 @@ npm run build
 - Model component size, training setting, inference hardware and control-rate scope.
 - Paper simulator versions versus current repository instructions and checkpoints.
 - Current paper revisions and renamed manuscripts versus stale project summaries.
+- Agent base model versus robot execution harness; in-context learning versus
+  code/memory changes versus weight updates, and adaptation/test scene separation.
 - Figure contents, crop, legibility, source URL, author credit and original rights.
 - Search by task name; collection-specific filters, detail links, comparison,
   saved records, CSV and mobile dialogs.

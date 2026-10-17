@@ -1,6 +1,6 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-17. 164 unique records; 42 benchmark records; 114 policy records; 12 supporting resources. Collection and category counts overlap.
+Review cutoff: 2026-10-17. 333 unique records; 43 benchmark records; 284 policy records; 12 supporting resources. Collection and category counts overlap.
 
 ## Search areas
 
@@ -8,13 +8,29 @@ Review cutoff: 2026-10-17. 164 unique records; 42 benchmark records; 114 policy 
 - Precision and Assembly: 23 records with this classification.
 - Dexterous Manipulation: 10 records with this classification.
 - General Manipulation: 10 records with this classification.
-- Robustness and Evaluation: 10 records with this classification.
+- Robustness and Evaluation: 11 records with this classification.
 - Supporting Tools and Data: 12 records with this classification.
-- Visuo-Tactile Policy Learning: 32 records with this classification.
-- Tactile VLA and World-Action Models: 29 records with this classification.
-- RGB-D and 3D Policies: 33 records with this classification.
-- Visual Precision and Reinforcement Learning: 8 records with this classification.
-- Generalist Policy Foundations: 22 records with this classification.
+- Visuo-Tactile Policy Learning: 33 records with this classification.
+- Tactile VLA and World-Action Models: 31 records with this classification.
+- RGB-D and 3D Policies: 65 records with this classification.
+- Visual Precision and Reinforcement Learning: 13 records with this classification.
+- Agent / RSI / ICL: 88 records with this classification.
+- Generalist Policy Foundations: 105 records with this classification.
+
+## Benchmark-to-policy source audit
+
+Paper baselines, leaderboard participants and adapter registries are distinct sources. Integration support does not establish an evaluated result. Counts below refer to named source aliases, with overlaps and version aliases retained; multiple names may map to one canonical work. Full mappings are stored in [data/policy-source-audit.json](data/policy-source-audit.json).
+
+| Primary source | Source type | Aliases mapped |
+| :-- | :-- | :-- |
+| [RoboTwin 2.0 paper policy comparison](https://arxiv.org/abs/2506.18088) | paper-baselines | 5 / 5 |
+| [RoboTwin2 leaderboard: joint 50-task](https://robotwin-platform.github.io/data/robotwin_leaderboard.json) | leaderboard | 19 / 20 |
+| [RoboTwin2 leaderboard: single-task](https://robotwin-platform.github.io/data/robotwin_leaderboard.json) | leaderboard | 5 / 5 |
+| [RoboDojo paper: simulation baselines](https://arxiv.org/abs/2607.04434) | paper-baselines | 30 / 30 |
+| [RoboDojo paper: real-robot baselines](https://arxiv.org/abs/2607.04434) | paper-baselines | 10 / 10 |
+| [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 56 / 58 |
+| [RoboDojo live leaderboard: real robots](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 11 / 11 |
+| [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab) | adapter-registry | 63 / 63 |
 
 ## Evidence methodology
 

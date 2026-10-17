@@ -8,7 +8,13 @@ import {
   toParams,
   values,
 } from "../src/lib/filters.ts";
-import { inCollection, nameFor, releaseFor } from "../src/lib/schema.ts";
+import {
+  inCollection,
+  nameFor,
+  releaseFor,
+  artifactLinks,
+  CATEGORIES,
+} from "../src/lib/schema.ts";
 const works = JSON.parse(
   fs.readFileSync(new URL("../../data/works.json", import.meta.url), "utf8"),
 );
@@ -92,4 +98,53 @@ test("Unexpected category/sort cannot inject a navigation state", () => {
 test("Undated anonymous projects do not acquire a discovery publication date", () => {
   assert.equal(w("t-wla").date, "");
   assert.equal(w("t-wla").year, 0);
+});
+test("Artifact links keep Paper first regardless of source insertion order", () => {
+  const unordered = {
+    weights: "w",
+    data: "d",
+    code: "c",
+    project: "s",
+    paper: "p",
+  };
+  assert.deepEqual(
+    artifactLinks(unordered).map(([key]) => key),
+    ["paper", "project", "code", "data", "weights"],
+  );
+});
+test("Missing artifacts fall back to the next available source before extras", () => {
+  assert.deepEqual(
+    artifactLinks({
+      video: "v",
+      data: "d",
+      paper: "",
+      project: "s",
+      code: "c",
+      appendix: "a",
+    }).map(([key]) => key),
+    ["project", "code", "data", "appendix", "video"],
+  );
+  assert.equal(artifactLinks({ data: "d", code: "c" })[0][0], "code");
+});
+test("Agent / RSI / ICL is an addressable policy route", () => {
+  assert.ok(CATEGORIES.policy.some((x) => x.id === "agent-rsi-icl"));
+  assert.equal(
+    fromParams(new URLSearchParams("category=agent-rsi-icl"), "policy")
+      .category,
+    "agent-rsi-icl",
+  );
+  assert.equal(
+    fromParams(new URLSearchParams("category=agent-rsi-icl"), "benchmark")
+      .category,
+    "all",
+  );
+});
+test("Common model spellings resolve punctuation and Greek names", () => {
+  assert.ok(
+    matches(w("roboprobe"), "policy", { ...emptyView(), query: "GPT6" }),
+  );
+  assert.ok(matches(w("pi05"), "policy", { ...emptyView(), query: "pi0.5" }));
+  assert.ok(
+    matches(w("vpp2"), "policy", { ...emptyView(), query: "VPP2 Preview" }),
+  );
 });

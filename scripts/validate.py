@@ -7,7 +7,7 @@ def check(ok,message):
 ids=[w['id']for w in works];check(len(ids)==len(set(ids)),'Duplicate canonical work IDs')
 required=['id','name','title','date','year','collections','categories','resourceType','summary','institution','venue','modalities','environments','embodiments','links','release','evidence','caveats','verified']
 fields={'benchmark':['simulator','simulatorVersion','taskCount','tasks','taskListScope','capabilities','metrics','robots','sensors','data','protocol','baselines'],'policy':['family','baseModel','modelSize','inputs','outputs','trainingData','trainingTime','trainingHardware','controlRate','trainingMethod','evaluation']}
-cat={'benchmark':{'tactile-benchmarks','precision-assembly','dexterous-benchmarks','general-manipulation','robustness-evaluation','supporting-resources'},'policy':{'tactile-il','tactile-foundation','rgbd-3d','visual-precision-rl','generalist-foundation'}}
+cat={'benchmark':{'tactile-benchmarks','precision-assembly','dexterous-benchmarks','general-manipulation','robustness-evaluation','supporting-resources'},'policy':{'tactile-il','tactile-foundation','rgbd-3d','visual-precision-rl','generalist-foundation','agent-rsi-icl'}}
 knownTypes={'benchmark','policy','dataset','simulator','evaluation-tool'}
 primary=collections.defaultdict(list)
 for w in works:
@@ -32,12 +32,29 @@ for id,contexts in media.items():
  check(id in ids,'Orphan media ID '+id)
  for c,m in contexts.items():
   check(c in ['benchmark','policy'],id+': invalid figure context');check(all(m.get(k) for k in ['path','original','page','credit','alt','kind','reviewed']),id+': incomplete figure provenance')
+  check(all(isinstance(m.get(k),str)for k in ['path','original','page','credit','alt','kind','reviewed']),id+': figure provenance must use strings')
+  check(all(bool(re.match('https?://',str(m.get(k,''))))for k in ['page','original']),id+': figure source must be a primary URL')
+  check(isinstance(m.get('reviewed'),str) and bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}',m.get('reviewed',''))) and m['reviewed']<=cutoff,id+': invalid figure review date')
   path=(R/'website/public'/m.get('path','').lstrip('/')).resolve();check(path.is_relative_to((R/'website/public').resolve()),id+': unsafe asset path');check(path.exists(),id+': missing figure '+str(path))
   if c=='policy':check(m.get('kind')not in ['taxonomy','task-overview'],id+': benchmark figure used for policy')
   if c=='benchmark':check(m.get('kind')not in ['architecture','pipeline'],id+': policy pipeline used for benchmark')
 readme=(R/'README.md').read_text()if(R/'README.md').exists()else''
 for id in ids:check('<!-- work:'+id+' -->'in readme,id+': missing generated README record')
 check((R/'website/public/README.md').read_text()==readme,'Website README is stale')
+audit=json.loads((R/'data/policy-source-audit.json').read_text())
+check(audit['reviewed']==cutoff,'Policy roster audit has a different review date')
+check(bool(audit['sources']),'Policy roster audit is empty')
+check(len({s['id']for s in audit['sources']})==len(audit['sources']),'Duplicate policy roster source IDs')
+for source in audit['sources']:
+ check(source['kind']in ['paper-baselines','leaderboard','adapter-registry'],'Unexpected policy roster source type')
+ check(all(source.get(k)for k in ['label','url','scope','entries']),'Incomplete policy roster source '+source['id'])
+ check(bool(re.match('https?://',source['url'])),'Invalid policy roster source URL')
+ check(not source.get('benchmarkId')or source['benchmarkId']in ids,'Policy roster benchmark does not exist')
+ for entry in source['entries']:
+  target=next((w for w in works if w['id']==entry.get('workId')),None)
+  check(bool(entry.get('name')),'Unnamed source alias in '+source['id'])
+  check(bool(target and 'policy'in target['collections'])if entry.get('workId')else bool(entry.get('note')),'Unmapped policy alias without qualification: '+entry['name'])
+check(json.loads((R/'website/public/policy-source-audit.json').read_text())==audit,'Website policy roster audit is stale')
 check(not(R/'.openai/hosting.json').exists(),'Unexpected hosting configuration');check(not(R/'.github/workflows/deploy.yml').exists(),'Unexpected deployment workflow')
 if errors:
  print('\n'.join(errors));print(f'FAILED: {len(errors)} data/provenance issues');sys.exit(1)

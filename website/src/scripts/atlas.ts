@@ -8,6 +8,7 @@ import {
   releaseFor,
   resourceLabel,
   summaryFor,
+  artifactLinks,
   type Collection,
   type Work,
   type Figure,
@@ -513,10 +514,9 @@ function openDetail(id: string, restore = false) {
         ["embodiments", "Embodiment"],
       ],
       w as unknown as Record<string, unknown>,
-    )}</dl>${related.length ? `<div class="detail-related"><strong>Related research record</strong>${related.map((x) => `<button type="button" data-related="${esc(x.id)}">${esc(nameFor(x, collection))} ↗</button>`).join("<br>")}</div>` : ""}</aside><div class="detail-copy"><p class="detail-kicker">${esc(w.venue)} · ${esc(w.date || "Undated")} · ${esc(w.institution)}</p><h2>${esc(nameFor(w, collection))}</h2><p class="detail-paper-title">${esc(w.title)}</p><div class="detail-links">${Object.entries(
+    )}</dl>${related.length ? `<div class="detail-related"><strong>Related research record</strong>${related.map((x) => `<button type="button" data-related="${esc(x.id)}">${esc(nameFor(x, collection))} ↗</button>`).join("<br>")}</div>` : ""}</aside><div class="detail-copy"><p class="detail-kicker">${esc(w.venue)} · ${esc(w.date || "Undated")} · ${esc(w.institution)}</p><h2>${esc(nameFor(w, collection))}</h2><p class="detail-paper-title">${esc(w.title)}</p><div class="detail-links">${artifactLinks(
       w.links,
     )
-      .filter(([, url]) => !!url)
       .map(([key, url]) =>
         external(
           url,
@@ -527,8 +527,14 @@ function openDetail(id: string, restore = false) {
               code: "Code",
               data: "Data",
               weights: "Weights",
+              repository: "Repository",
+              report: "Report",
+              blog: "Blog",
+              demo: "Demo",
+              video: "Video",
+              documentation: "Documentation",
             } as Record<string, string>
-          )[key] ?? key,
+          )[key] ?? key.charAt(0).toUpperCase() + key.slice(1),
         ),
       )
       .join(
@@ -803,7 +809,10 @@ $("export-view").addEventListener("click", () => {
       "Title",
       "Publication date",
       "Paper",
+      "Project",
       "Code",
+      "Data",
+      "Weights",
       "Modalities",
       ...fields.map((f) => f[1]),
     ],
@@ -811,8 +820,11 @@ $("export-view").addEventListener("click", () => {
       nameFor(w, collection),
       w.title,
       w.date || "Undated",
-      w.links.paper || w.links.project,
-      w.links.code || releaseFor(w, collection).code,
+      w.links.paper || "",
+      w.links.project || "",
+      w.links.code || "",
+      w.links.data || "",
+      w.links.weights || "",
       w.modalities.join("; "),
       ...fields.map(
         ([key]) => (collection === "benchmark" ? w.benchmark : w.policy)?.[key],

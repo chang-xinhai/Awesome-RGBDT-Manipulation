@@ -18,6 +18,9 @@ Maintain a public-facing research reference, never a private project plan.
 - Separate task registry totals, evaluated subsets, demos and released data; tasks must retain list scope. Do not aggregate overlapping corpora.
 - Preserve paper vs current release differences. Version-specific checkpoints, licenses and install instructions matter.
 - Code, weights and data releases are independent. Actual LICENSE files outrank contradictory README summaries. Per-collection release fields preserve policy/benchmark differences.
+- Audit benchmark paper baselines, official leaderboard participants and adapter registries separately; an integration is not an evaluated result. Map aliases to canonical works.
+- Agent / RSI / ICL records distinguish in-context feedback, code/prompt/memory adaptation and weight updates. Describe the executable robot agent, not only its base LLM.
+- Present artifacts as Paper, Project, Code, Data, then other links. Highlight the first available artifact; insertion order must not change this.
 - Figures retain source URL, credit and original rights; use real official figures, inspect them visually and optimize local copies. Never synthesize scientific results or pipeline diagrams.
 
 ## UI and checks

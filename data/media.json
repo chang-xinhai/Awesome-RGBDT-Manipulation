@@ -1906,6 +1906,19 @@
       "height": 877,
       "note": "Figure 2. Twelve task variants grouped into insertion, screwing, disassembly, and exploration. Rendered from the primary paper PDF (page 3), cropped to the figure, and visually reviewed.",
       "sourceSha256": "a57be63a903b68d2cee9f11245d6ab7a0ec38731a7940e16c4d2d61ff1b6df8c"
+    },
+    "policy": {
+      "path": "/images/catalog/contactworld-policy.webp",
+      "original": "https://contact-world.github.io/assets/architecture.svg",
+      "page": "https://contact-world.github.io/",
+      "credit": "ContactWorld authors",
+      "alt": "ContactWorld — pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "848f9c0943ec241f504255468066510adf0c8cf3d491ac6720631ad7de863319",
+      "width": 1400,
+      "height": 736,
+      "note": "Official training and planning architecture; distinct from the benchmark task overview."
     }
   },
   "taco-sensor-benchmark": {
@@ -2489,6 +2502,2378 @@
       "width": 2186,
       "height": 1484,
       "note": "ExactauthorinlineSVG rendered inheadlessChromium withauthorlight-themeCSSandlocalfontfallbacks;viewboxextendedonlyforuncroppedbottomlabel;geometryunchanged. Whitespace trimmedandWebPoptimized. Visuallyreviewed."
+    }
+  },
+  "scdp": {
+    "policy": {
+      "path": "/images/catalog/scdp-policy.webp",
+      "original": "https://scdp-project.github.io/static/images/scdp/architecture.png",
+      "page": "https://scdp-project.github.io/",
+      "credit": "SCDP authors",
+      "alt": "Spatially Conditioned Diffusion Policy (SCDP) — Official method architecture; original author rights retained.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1700,
+      "height": 597,
+      "sourceSha256": "84c69a04a6de0fed84b437295b1a4b4adb9bd1e92b1528e6f7f34df8db537d4e",
+      "note": "Official method architecture; original author rights retained. Optimized official image; no diagram content changed."
+    }
+  },
+  "stereopolicy": {
+    "policy": {
+      "path": "/images/catalog/stereopolicy-policy.webp",
+      "original": "https://arxiv.org/pdf/2605.09989",
+      "page": "https://arxiv.org/abs/2605.09989",
+      "credit": "StereoPolicy authors",
+      "alt": "StereoPolicy — Figure 2, PDF page 3: DP/VLA branches and stereo feature-extraction pipeline.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1600,
+      "height": 756,
+      "sourceSha256": "bf0f0648295b1c3129291a520e665cb8189d12d936ff0af2180a641a810d939b",
+      "note": "Figure 2, PDF page 3: DP/VLA branches and stereo feature-extraction pipeline. Cropped to the complete figure panel; no diagram content changed."
+    }
+  },
+  "exstereo": {
+    "policy": {
+      "path": "/images/catalog/exstereo-policy.webp",
+      "original": "https://exstereo-vla.github.io/ExStereo/assets/img/method.jpg",
+      "page": "https://exstereo-vla.github.io/ExStereo/",
+      "credit": "ExStereo authors",
+      "alt": "ExStereo — Official method architecture; original author rights retained.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1700,
+      "height": 571,
+      "sourceSha256": "9a88ddd88ed757211be61b06e3f0b5df310d2f552ddf1d11fa70d2cc75c26fd3",
+      "note": "Official method architecture; original author rights retained. Optimized official image; no diagram content changed."
+    }
+  },
+  "r3dp": {
+    "policy": {
+      "path": "/images/catalog/r3dp-policy.webp",
+      "original": "https://dazazh.github.io/r3dp-project-page/images/architecture.png",
+      "page": "https://dazazh.github.io/r3dp-project-page/",
+      "credit": "R3DP authors",
+      "alt": "R3DP — Official method architecture; original author rights retained.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1700,
+      "height": 614,
+      "sourceSha256": "f02e3906177a3758c2b7a4c3277d34ac7e298a1914a38000c78a01401e2754a8",
+      "note": "Official method architecture; original author rights retained. Optimized official image; no diagram content changed."
+    }
+  },
+  "step": {
+    "policy": {
+      "path": "/images/catalog/step-policy.webp",
+      "original": "https://arxiv.org/pdf/2602.08245",
+      "page": "https://arxiv.org/abs/2602.08245",
+      "credit": "STEP authors",
+      "alt": "STEP — Figure 2, PDF page 4: spatiotemporal predictor architecture.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 668,
+      "height": 660,
+      "sourceSha256": "8f8c33c7f13449d0a419bfe92d98493615485419d8bb1cf497fe62c6d4ffcd53",
+      "note": "Figure 2, PDF page 4: spatiotemporal predictor architecture. Cropped to the complete figure panel; no diagram content changed."
+    }
+  },
+  "evo-depth": {
+    "policy": {
+      "path": "/images/catalog/evo-depth-policy.webp",
+      "original": "https://raw.githubusercontent.com/MINT-SJTU/Evo-Depth/main/Evo_depth/assets/model_overview.png",
+      "page": "https://github.com/MINT-SJTU/Evo-Depth",
+      "credit": "Evo-Depth authors",
+      "alt": "Evo-Depth — Official method architecture; original author rights retained.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1700,
+      "height": 899,
+      "sourceSha256": "554804b5324a18196dd609ab1d241113b092144e5c89516991893a2bef0bd046",
+      "note": "Official method architecture; original author rights retained. Optimized official image; no diagram content changed."
+    }
+  },
+  "lingbot-vla2": {
+    "policy": {
+      "path": "/images/catalog/lingbot-vla2-policy.webp",
+      "original": "https://raw.githubusercontent.com/Robbyant/lingbot-vla-v2/main/assets/lingbot_vla2_framework.png",
+      "page": "https://github.com/Robbyant/lingbot-vla-v2",
+      "credit": "LingBot-VLA 2.0 authors",
+      "alt": "LingBot-VLA 2.0 — Official method architecture; original author rights retained.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1284,
+      "height": 545,
+      "sourceSha256": "5e7fccb501606ae27383bbb0c5e6d6824a5cdcaa9a2534488b5af059bb7e13d7",
+      "note": "Official method architecture; original author rights retained. Optimized official image; no diagram content changed."
+    }
+  },
+  "vla-jepa": {
+    "policy": {
+      "path": "/images/catalog/vla-jepa-policy.webp",
+      "original": "https://raw.githubusercontent.com/ginwind/VLA-JEPA/main/assets/VLA-JEPA.png",
+      "page": "https://ginwind.github.io/VLA-JEPA/",
+      "credit": "VLA-JEPA authors",
+      "alt": "VLA-JEPA — Official method architecture; original author rights retained.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1700,
+      "height": 956,
+      "sourceSha256": "5823c9ac2002e11f2162a1b9b5a9b3d1ba8b87cc120f4375a586a06aa3dfaf1a",
+      "note": "Official method architecture; original author rights retained. Optimized official image; no diagram content changed."
+    }
+  },
+  "qwen-vla": {
+    "policy": {
+      "path": "/images/catalog/qwen-vla-policy.webp",
+      "original": "https://arxiv.org/pdf/2605.30280",
+      "page": "https://arxiv.org/abs/2605.30280",
+      "credit": "Qwen-VLA authors",
+      "alt": "Qwen-VLA — Figure 1: Qwen vision-language backbone and action DiT architecture.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1720,
+      "height": 948,
+      "sourceSha256": "f6aabca8b80fab2605050749cc2e2c4c02d888c11dce6729310f030072a82b0d",
+      "note": "Figure 1: Qwen vision-language backbone and action DiT architecture. Cropped from PDF page 1; diagram contents retained."
+    }
+  },
+  "qwen-robotmanip": {
+    "policy": {
+      "path": "/images/catalog/qwen-robotmanip-policy.webp",
+      "original": "https://arxiv.org/pdf/2606.17846",
+      "page": "https://arxiv.org/abs/2606.17846",
+      "credit": "Qwen-RobotManip authors",
+      "alt": "Qwen-RobotManip — Figure 3: architecture, canonical actions and camera-relative motion prediction.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 1113,
+      "sourceSha256": "193fff177785d4e9d9cc63dca02b61b4e250ec174535c45dafe7a625ed8ed025",
+      "note": "Figure 3: architecture, canonical actions and camera-relative motion prediction. Cropped from PDF page 11; diagram contents retained."
+    }
+  },
+  "wall-oss05": {
+    "policy": {
+      "path": "/images/catalog/wall-oss05-policy.webp",
+      "original": "https://arxiv.org/pdf/2605.30877",
+      "page": "https://arxiv.org/abs/2605.30877",
+      "credit": "Wall-OSS-0.5 authors",
+      "alt": "Wall-OSS-0.5 — Figure 2: gradient-bridged co-training, MoT routing and deployment action pathway.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 938,
+      "sourceSha256": "9b2a011f5da25b3cadc05aa9ef37b459e00febf52352392edee57b396b542ab1",
+      "note": "Figure 2: gradient-bridged co-training, MoT routing and deployment action pathway. Cropped from PDF page 4; diagram contents retained."
+    }
+  },
+  "joyai-ra01": {
+    "policy": {
+      "path": "/images/catalog/joyai-ra01-policy.webp",
+      "original": "https://arxiv.org/pdf/2604.20100",
+      "page": "https://arxiv.org/abs/2604.20100",
+      "credit": "JoyAI-RA authors",
+      "alt": "JoyAI-RA 0.1 — Figure 3: vision-language model and flow-matching action expert.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 529,
+      "sourceSha256": "9e81be0069d1b83b676ccba9d66eb3d28b74e3c518ae9c8fe6b576c148881c00",
+      "note": "Figure 3: vision-language model and flow-matching action expert. Cropped from PDF page 6; diagram contents retained."
+    }
+  },
+  "aha-wam": {
+    "policy": {
+      "path": "/images/catalog/aha-wam-policy.webp",
+      "original": "https://arxiv.org/html/2606.09811v1/model_arch.png",
+      "page": "https://arxiv.org/html/2606.09811",
+      "credit": "AHA-WAM authors",
+      "alt": "AHA-WAM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "9b8ba337d7a24215af70a84219129c802f9e503e3200cc42807b22f05c40ad10",
+      "width": 1836,
+      "height": 1271,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "fast-wam": {
+    "policy": {
+      "path": "/images/catalog/fast-wam-policy.webp",
+      "original": "https://arxiv.org/html/2603.16666v2/model_arch.png",
+      "page": "https://arxiv.org/html/2603.16666",
+      "credit": "Fast-WAM authors",
+      "alt": "Fast-WAM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "9c8cc668ca307d8c719da593d67e19be1dd19dbcb680865b4f826f36d6b78839",
+      "width": 619,
+      "height": 452,
+      "note": "(a) Fast-WAM model architecture. (b) Training and inference masks. Figure 2 : Fast-WAM architecture and the structured attention mask used to disentangle video co-training from action generation.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "gigaworld-policy": {
+    "policy": {
+      "path": "/images/catalog/gigaworld-policy-policy.webp",
+      "original": "https://arxiv.org/html/2603.17240v2/pipeline15.png",
+      "page": "https://arxiv.org/html/2603.17240",
+      "credit": "GigaWorld-Policy authors",
+      "alt": "GigaWorld-Policy — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "a1ad595230422326052d21ab5c56b376a36150789c370d702b306994316d34c8",
+      "width": 1453,
+      "height": 404,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "gigaworld-policy05": {
+    "policy": {
+      "path": "/images/catalog/gigaworld-policy05-policy.webp",
+      "original": "https://arxiv.org/html/2607.13960v3/framework.png",
+      "page": "https://arxiv.org/html/2607.13960",
+      "credit": "GigaWorld-Policy-0.5 authors",
+      "alt": "GigaWorld-Policy-0.5 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "d7929765af832e1b1a65b0a3548f6af1dca7cebb5657a155d7fe0f98c4cfbe0a",
+      "width": 1525,
+      "height": 452,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "lingbot-va": {
+    "policy": {
+      "path": "/images/catalog/lingbot-va-policy.webp",
+      "original": "https://arxiv.org/html/2601.21998v2/framework2.png",
+      "page": "https://arxiv.org/html/2601.21998",
+      "credit": "LingBot-VA authors",
+      "alt": "LingBot-VA — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "36d1ebd68bb8a2d8c1dbde8ffa18e05108024d2a03ab2eaa5a0a521345c3c31e",
+      "width": 1414,
+      "height": 524,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "lingbot-va2": {
+    "policy": {
+      "path": "/images/catalog/lingbot-va2-policy.webp",
+      "original": "https://arxiv.org/html/2607.08639v2/framework.png",
+      "page": "https://arxiv.org/html/2607.08639",
+      "credit": "LingBot-VA 2.0 authors",
+      "alt": "LingBot-VA 2.0 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "b4d5603cd821433afd0f898723dd3cb1770b4e88fbe37157f68f9574f66a168c",
+      "width": 1604,
+      "height": 730,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "openwam": {
+    "policy": {
+      "path": "/images/catalog/openwam-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.07398",
+      "page": "https://arxiv.org/abs/2609.07398",
+      "pdfPage": 17,
+      "cropPoints": [
+        68,
+        280,
+        544,
+        628
+      ],
+      "credit": "OpenWAM / OpenWAM-α authors",
+      "alt": "OpenWAM / OpenWAM-α — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "09606aafdd27a377b669331c2d11ad87c11dbba31066689c8d48d9fd2f28151b",
+      "width": 1666,
+      "height": 1218,
+      "note": "Figure 12, PDF page 17: OpenWAM-alpha architecture, pretraining mixture, noise scheduler, and unified action interface.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "spatial-forcing": {
+    "policy": {
+      "path": "/images/catalog/spatial-forcing-policy.webp",
+      "original": "https://arxiv.org/html/2510.12276v2/fig_teaser.png",
+      "page": "https://arxiv.org/html/2510.12276",
+      "credit": "Spatial Forcing authors",
+      "alt": "Spatial Forcing — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "d5c6f4faafe36fc9e51e242323313b2bae8ad9f27fd2336638c6014cde229118",
+      "width": 1025,
+      "height": 442,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "x-wam": {
+    "policy": {
+      "path": "/images/catalog/x-wam-policy.webp",
+      "original": "https://arxiv.org/html/2604.26694v2/framework.png",
+      "page": "https://arxiv.org/html/2604.26694",
+      "credit": "X-WAM authors",
+      "alt": "X-WAM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "967f7923a4b193597e564120999e925145fb1c1cbc2941197fc3e02bc60c2a10",
+      "width": 1557,
+      "height": 869,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "patchwam": {
+    "policy": {
+      "path": "/images/catalog/patchwam-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.25961",
+      "page": "https://arxiv.org/abs/2609.25961",
+      "pdfPage": 5,
+      "cropPoints": [
+        108,
+        59,
+        504,
+        357
+      ],
+      "credit": "PatchWAM / PatchWAM-Lite authors",
+      "alt": "PatchWAM / PatchWAM-Lite — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "6f890e11bc2e2dfd72193da93307e529a62a7c51c946f3bd1a12e90da16853c6",
+      "width": 1386,
+      "height": 1044,
+      "note": "Figure 2, PDF page 5: Shared visual diffusion transformer, action-as-patch codec, and joint denoising layout.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "worldscape-policy2": {
+    "policy": {
+      "path": "/images/catalog/worldscape-policy2-policy.webp",
+      "original": "https://arxiv.org/html/2607.18840v2/framework.png",
+      "page": "https://arxiv.org/html/2607.18840",
+      "credit": "WorldScape Policy 2.0 authors",
+      "alt": "WorldScape Policy 2.0 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "6ef7634ff324b33807a7d28797a6a31cef5c98e22e999beb2cdc66f692fb8376",
+      "width": 1595,
+      "height": 485,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "discrete-forcing": {
+    "policy": {
+      "path": "/images/catalog/discrete-forcing-policy.webp",
+      "original": "https://arxiv.org/html/2609.39526v1/archi.png",
+      "page": "https://arxiv.org/html/2609.39526",
+      "credit": "Discrete Forcing authors",
+      "alt": "Discrete Forcing — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "c4dd27c2bbf810018f71ac875f52864b2f2b1c76800216a4867c787c26d551ae",
+      "width": 1006,
+      "height": 387,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "cogwam": {
+    "policy": {
+      "path": "/images/catalog/cogwam-policy.webp",
+      "original": "https://arxiv.org/html/2609.37721v1/fig2.png",
+      "page": "https://arxiv.org/html/2609.37721",
+      "credit": "CogWAM authors",
+      "alt": "CogWAM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "a701c3f97ff53b30c1abe657f6e4095c48dc2135cafdb6ab0b6dbb9fa6c43c04",
+      "width": 1723,
+      "height": 834,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "me-u0": {
+    "policy": {
+      "path": "/images/catalog/me-u0-policy.webp",
+      "original": "https://arxiv.org/html/2609.25627v1/pipeline.png",
+      "page": "https://arxiv.org/html/2609.25627",
+      "credit": "MachEmbodied-U0 (ME-U0) authors",
+      "alt": "MachEmbodied-U0 (ME-U0) — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "ea99b9705dfa74f629a6206be7f06bcf4aa0b16ffea2044c7deede26a47dd45a",
+      "width": 1402,
+      "height": 834,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "motus": {
+    "policy": {
+      "path": "/images/catalog/motus-policy.webp",
+      "original": "https://arxiv.org/html/2512.13030v2/block.png",
+      "page": "https://arxiv.org/html/2512.13030",
+      "credit": "Motus authors",
+      "alt": "Motus — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "40c61d49da342ef09d679e0c133c78210b86f096ec788ce78241e5794332af11",
+      "width": 1118,
+      "height": 1013,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "motus2": {
+    "policy": {
+      "path": "/images/catalog/motus2-policy.webp",
+      "original": "https://arxiv.org/html/2608.30237v2/motus2_overview.png",
+      "page": "https://arxiv.org/html/2608.30237",
+      "credit": "Motus2 authors",
+      "alt": "Motus2 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "114a966f71118df720e092df925144233c863870ad1c3f844322035005f785d4",
+      "width": 1380,
+      "height": 714,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "mimic-video": {
+    "policy": {
+      "path": "/images/catalog/mimic-video-policy.webp",
+      "original": "https://arxiv.org/html/2512.15692v2/figure3-oier-new.png",
+      "page": "https://arxiv.org/html/2512.15692",
+      "credit": "mimic-video authors",
+      "alt": "mimic-video — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "15e6a3a2a6f356b6b82b54dfef13ec4689656fe011739dc6e130bcbc455d1f91",
+      "width": 1811,
+      "height": 845,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "unitas": {
+    "policy": {
+      "path": "/images/catalog/unitas-policy.webp",
+      "original": "https://arxiv.org/html/2610.12099v1/architecture.png",
+      "page": "https://arxiv.org/html/2610.12099",
+      "credit": "UNITAS authors",
+      "alt": "UNITAS — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "8c0db513b7178649ff9e90f67bc84f3424ba882e425eb3593a035c6da1362cc0",
+      "width": 1521,
+      "height": 720,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "lawam": {
+    "policy": {
+      "path": "/images/catalog/lawam-policy.webp",
+      "original": "https://arxiv.org/html/2606.15768v1/LaWAM_overview.png",
+      "page": "https://arxiv.org/html/2606.15768",
+      "credit": "LaWAM authors",
+      "alt": "LaWAM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "39d7ac23a094469717636061fa89bc86f77508566aff0af256bbdb8b0361481d",
+      "width": 1531,
+      "height": 880,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "tau0-wm": {
+    "policy": {
+      "path": "/images/catalog/tau0-wm-policy.webp",
+      "original": "https://arxiv.org/html/2606.01027v2/VAM-method.png",
+      "page": "https://arxiv.org/html/2606.01027",
+      "credit": "τ₀-WM authors",
+      "alt": "τ₀-WM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "5de003e64c26ad6a94818555f7320f8d1e37b7628ee7a7b2b6073cff27994771",
+      "width": 1382,
+      "height": 724,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "uwm": {
+    "policy": {
+      "path": "/images/catalog/uwm-policy.webp",
+      "original": "https://arxiv.org/html/2504.02792v3/method.png",
+      "page": "https://arxiv.org/html/2504.02792",
+      "credit": "Unified World Models (UWM) authors",
+      "alt": "Unified World Models (UWM) — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "27eb209f6d2c2c47157f802131c5f86e01958af9ed0e87be3be635c6345e3e7d",
+      "width": 1656,
+      "height": 442,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "videovla": {
+    "policy": {
+      "path": "/images/catalog/videovla-policy.webp",
+      "original": "https://arxiv.org/html/2512.06963v1/overviewnew.png",
+      "page": "https://arxiv.org/html/2512.06963",
+      "credit": "VideoVLA authors",
+      "alt": "VideoVLA — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "7adb85ca18a5514655cf66100386f0dc575b84c2b81d9bb25e4b54c3811c7397",
+      "width": 1551,
+      "height": 667,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "attention-dp3": {
+    "policy": {
+      "path": "/images/catalog/attention-dp3-policy.webp",
+      "original": "https://arxiv.org/html/2609.13318v1/figures/method_overview.png",
+      "page": "https://arxiv.org/html/2609.13318",
+      "credit": "Attention-DP3 authors",
+      "alt": "Attention-DP3 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "ba7c00d081ca9fb740246c221c156b7b6c98f5f4c78fcf1bb1cf283d3da70c48",
+      "width": 1221,
+      "height": 627,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "hyper-dp3": {
+    "policy": {
+      "path": "/images/catalog/hyper-dp3-policy.webp",
+      "original": "https://arxiv.org/html/2605.01581v4/DIM-nips.png",
+      "page": "https://arxiv.org/html/2605.01581",
+      "credit": "Hyper-DP3 authors",
+      "alt": "Hyper-DP3 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "0fec779fa01eda99d475afe370d93a813ae16ff0413ceff5b53faa81646e6435",
+      "width": 1519,
+      "height": 445,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "clamp": {
+    "policy": {
+      "path": "/images/catalog/clamp-policy.webp",
+      "original": "https://arxiv.org/html/2602.00937v3/model_architecture.png",
+      "page": "https://arxiv.org/html/2602.00937",
+      "credit": "CLAMP authors",
+      "alt": "CLAMP — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "16f6439f9a812723cc6d8c0dc7fe7c500c99b0607991915d15e4af1d7409a0fa",
+      "width": 2012,
+      "height": 801,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "stereovla": {
+    "policy": {
+      "path": "/images/catalog/stereovla-policy.webp",
+      "original": "https://arxiv.org/html/2512.21970v2/arch.png",
+      "page": "https://arxiv.org/html/2512.21970",
+      "credit": "StereoVLA authors",
+      "alt": "StereoVLA — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "98291f971a801b8c390ef90986865b05b25af496a8cb7c14212896915cb3964b",
+      "width": 2045,
+      "height": 708,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "any3dvla": {
+    "policy": {
+      "path": "/images/catalog/any3dvla-policy.webp",
+      "original": "https://arxiv.org/pdf/2602.00807",
+      "page": "https://arxiv.org/abs/2602.00807",
+      "pdfPage": 1,
+      "cropPoints": [
+        54,
+        185,
+        542,
+        398
+      ],
+      "credit": "Any3D-VLA authors",
+      "alt": "Any3D-VLA — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "e284b8b7509c29e57867b281c66a54ca3451331c9af586f49ab5ca0ab88f9b50",
+      "width": 1708,
+      "height": 746,
+      "note": "Figure 1, PDF page 1: Point-cloud source mixture and the fusion of geometry, image features, and action prediction.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "falcon": {
+    "policy": {
+      "path": "/images/catalog/falcon-policy.webp",
+      "original": "https://arxiv.org/html/2510.17439v3/x2.png",
+      "page": "https://arxiv.org/html/2510.17439",
+      "credit": "FALCON — From Spatial to Actions authors",
+      "alt": "FALCON — From Spatial to Actions — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "bd2b09a87193071134971cbfaa1ce47358d1a8cc6f18e26f67a398658963458b",
+      "width": 996,
+      "height": 453,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "tacit": {
+    "policy": {
+      "path": "/images/catalog/tacit-policy.webp",
+      "original": "https://arxiv.org/html/2609.24507v1/figure/tacit_policy_architecture.jpg",
+      "page": "https://arxiv.org/html/2609.24507",
+      "credit": "TACIT authors",
+      "alt": "TACIT — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "64487d6382ebc0c5028aba22cbcdc7da1fdbe5d522af8dbb329dc338855fe0be",
+      "width": 2100,
+      "height": 810,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "internw0-delta": {
+    "policy": {
+      "path": "/images/catalog/internw0-delta-policy.webp",
+      "original": "https://arxiv.org/html/2609.31394v1/figure1.png",
+      "page": "https://arxiv.org/html/2609.31394",
+      "credit": "InternW0-Δ authors",
+      "alt": "InternW0-Δ — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "c2810b9e62b5c45a856fee02f3c1e7d5be8d0767e27bcfd1ac962e811f890546",
+      "width": 1608,
+      "height": 610,
+      "note": "Figure 1: complete InternW0-Delta architecture with video, action, and geometry distillation components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "gigabrain07": {
+    "policy": {
+      "path": "/images/catalog/gigabrain07-policy.webp",
+      "original": "https://arxiv.org/html/2608.15875v1/gigabrain07_arch.png",
+      "page": "https://arxiv.org/html/2608.15875v1",
+      "credit": "GigaBrain-0.7 authors",
+      "alt": "GigaBrain-0.7 — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "9c701a53261b4db9bef36ed9487d06bd0b5e4e66a25ae8fd9cf026ccacb2346e",
+      "width": 2048,
+      "height": 1218,
+      "note": "Figure 6: the three-system architecture for planning, world/value prediction, and executable control.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "4d-wam": {
+    "policy": {
+      "path": "/images/catalog/4d-wam-policy.webp",
+      "original": "https://arxiv.org/html/2608.08023v2/Figures/draw/alignment_process.png",
+      "page": "https://arxiv.org/html/2608.08023",
+      "credit": "4D-WAM — trajectory alignment authors",
+      "alt": "4D-WAM — trajectory alignment — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "8c31ee10950904a5522ab43adab83c3cfe5d06fd8534135baefe550f8f0c7932",
+      "width": 2100,
+      "height": 832,
+      "note": "Figure 3: training alignment between future video, action, and 4D correspondence features.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "uniwam": {
+    "policy": {
+      "path": "/images/catalog/uniwam-policy.webp",
+      "original": "https://arxiv.org/html/2610.02054v4/model.png",
+      "page": "https://arxiv.org/html/2610.02054",
+      "credit": "UniWAM / OLA-Sem authors",
+      "alt": "UniWAM / OLA-Sem — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "60d60890232d21fc12c075056a4a76c5b2037ec53ba5e1a51e723dc1b18a7658",
+      "width": 2036,
+      "height": 1020,
+      "note": "Figure 3: the unified video, language, and action model architecture.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "vigar": {
+    "policy": {
+      "path": "/images/catalog/vigar-policy.webp",
+      "original": "https://arxiv.org/html/2610.02368v1/model_arch.png",
+      "page": "https://arxiv.org/html/2610.02368",
+      "credit": "ViGAR authors",
+      "alt": "ViGAR — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "3bb9e15854ffac8e391e8e8291f265b9d8be167947442b0f615a24c4fa97f0e8",
+      "width": 1283,
+      "height": 638,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "streaming-wam": {
+    "policy": {
+      "path": "/images/catalog/streaming-wam-policy.webp",
+      "original": "https://arxiv.org/html/2609.28927v1/streaming-wam-method-slot.png",
+      "page": "https://arxiv.org/html/2609.28927",
+      "credit": "Streaming-WAM — action-conditioned authors",
+      "alt": "Streaming-WAM — action-conditioned — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "eb7c02e3414e99050afab499dc3b35d0f800ba2460404e7fac17cf4817f0509d",
+      "width": 1979,
+      "height": 888,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "streamingwam-staircase": {
+    "policy": {
+      "path": "/images/catalog/streamingwam-staircase-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.15585",
+      "page": "https://arxiv.org/abs/2610.15585",
+      "pdfPage": 3,
+      "cropPoints": [
+        108,
+        39,
+        504,
+        263
+      ],
+      "credit": "StreamingWAM — staircase flow authors",
+      "alt": "StreamingWAM — staircase flow — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "0ac5aa39915087e3097ead2d65b8900601a697e017dd1f3ea19765be0ee3de87",
+      "width": 1386,
+      "height": 785,
+      "note": "Figure 2, PDF page 3: Joint video/action architecture and the persistent staircase-denoising action buffer.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "dreamwam": {
+    "policy": {
+      "path": "/images/catalog/dreamwam-policy.webp",
+      "original": "https://arxiv.org/html/2608.04996v1/DreamWAM.png",
+      "page": "https://arxiv.org/html/2608.04996",
+      "credit": "DreamWAM authors",
+      "alt": "DreamWAM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "5f7696206c1458328f4e62244d029ba418bf4ea56b419a89a4677940dc210e5b",
+      "width": 1488,
+      "height": 688,
+      "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "wall-wm": {
+    "policy": {
+      "path": "/images/catalog/wall-wm-policy.webp",
+      "original": "https://arxiv.org/html/2606.01955v2/pipeline.png",
+      "page": "https://arxiv.org/html/2606.01955v2",
+      "credit": "WALL-WM authors",
+      "alt": "WALL-WM — policy architecture",
+      "kind": "architecture",
+      "sourceSha256": "8c4e87d577a641370f03b03ec7185022a06a0d0ecbdcfbe6ce9521abf258370c",
+      "width": 1199,
+      "height": 664,
+      "note": "Figure 3: event and unified conditioning pathways, coupled video/action towers, and temporal alignment.",
+      "reviewed": "2026-10-17"
+    }
+  },
+  "wla": {
+    "policy": {
+      "path": "/images/catalog/wla-policy.webp",
+      "original": "https://arxiv.org/html/2606.05979v1/architecture.png",
+      "page": "https://arxiv.org/html/2606.05979v1",
+      "credit": "Yang et al. / WLA authors",
+      "alt": "WLA-0 / WLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2039,
+      "height": 767,
+      "note": "Figure 2: AR backbone, world/action experts and optional value-ranked test-time scaling."
+    }
+  },
+  "vpp2": {
+    "policy": {
+      "path": "/images/catalog/vpp2-policy.webp",
+      "original": "https://arxiv.org/html/2610.10270v3/fig4_3.png",
+      "page": "https://arxiv.org/html/2610.10270v3",
+      "credit": "Guo et al. / VPP2 authors",
+      "alt": "Video Prediction Policy 2 (VPP2) policy architecture",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1756,
+      "height": 614,
+      "note": "Figure 4: three-stage video/action training pipeline; architecture rather than leaderboard plot."
+    }
+  },
+  "a1": {
+    "policy": {
+      "path": "/images/catalog/a1-policy.webp",
+      "original": "https://arxiv.org/html/2604.05672v3/framework.png",
+      "page": "https://arxiv.org/html/2604.05672v3",
+      "credit": "A1 authors",
+      "alt": "A1 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2038,
+      "height": 723,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "being-h05": {
+    "policy": {
+      "path": "/images/catalog/being-h05-policy.webp",
+      "original": "https://arxiv.org/html/2601.12993v1/beingh05_arch_nar.png",
+      "page": "https://arxiv.org/html/2601.12993v1",
+      "credit": "Being-H0.5 authors",
+      "alt": "Being-H0.5 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1979,
+      "height": 1099,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "dm0": {
+    "policy": {
+      "path": "/images/catalog/dm0-policy.webp",
+      "original": "https://arxiv.org/html/2602.14974v1/figs/dm0_arch_v2.png",
+      "page": "https://arxiv.org/html/2602.14974v1",
+      "credit": "DM0 authors",
+      "alt": "DM0 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 726,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "eventvla": {
+    "policy": {
+      "path": "/images/catalog/eventvla-policy.webp",
+      "original": "https://arxiv.org/html/2606.20092v3/framework.png",
+      "page": "https://arxiv.org/html/2606.20092v3",
+      "credit": "EventVLA authors",
+      "alt": "EventVLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1299,
+      "height": 993,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "galaxea-g0": {
+    "policy": {
+      "path": "/images/catalog/galaxea-g0-policy.webp",
+      "original": "https://arxiv.org/html/2509.00576v1/vla_model.png",
+      "page": "https://arxiv.org/html/2509.00576v1",
+      "credit": "Galaxea G0 authors",
+      "alt": "Galaxea G0 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2040,
+      "height": 1134,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "go1": {
+    "policy": {
+      "path": "/images/catalog/go1-policy.webp",
+      "original": "https://arxiv.org/html/2503.06669v4/policy_architecture_v5.png",
+      "page": "https://arxiv.org/html/2503.06669v4",
+      "credit": "GO-1 / AgiBot World authors",
+      "alt": "GO-1 / AgiBot World policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 964,
+      "height": 335,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "internvla-a1": {
+    "policy": {
+      "path": "/images/catalog/internvla-a1-policy.webp",
+      "original": "https://arxiv.org/html/2601.02456v2/figure2_method_InternVLA-A1.png",
+      "page": "https://arxiv.org/html/2601.02456v2",
+      "credit": "InternVLA-A1 authors",
+      "alt": "InternVLA-A1 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1549,
+      "height": 894,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "internvla-a15": {
+    "policy": {
+      "path": "/images/catalog/internvla-a15-policy.webp",
+      "original": "https://arxiv.org/html/2607.04988v1/Model-A1.5.png",
+      "page": "https://arxiv.org/html/2607.04988v1",
+      "credit": "InternVLA-A1.5 authors",
+      "alt": "InternVLA-A1.5 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1066,
+      "height": 339,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "lda1b": {
+    "policy": {
+      "path": "/images/catalog/lda1b-policy.webp",
+      "original": "https://arxiv.org/html/2602.12215v2/LDA_pipeline.png",
+      "page": "https://arxiv.org/html/2602.12215v2",
+      "credit": "LDA-1B authors",
+      "alt": "LDA-1B policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1772,
+      "height": 685,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "lingbot-vla": {
+    "policy": {
+      "path": "/images/catalog/lingbot-vla-policy.webp",
+      "original": "https://arxiv.org/html/2601.18692v4/Teaser.png",
+      "page": "https://arxiv.org/html/2601.18692v4",
+      "credit": "LingBot-VLA authors",
+      "alt": "LingBot-VLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 671,
+      "height": 325,
+      "note": "Cropped central architecture panel from Figure1:RGB/text/depth queries and flow-action expert; excludes deployment gallery and score plots."
+    }
+  },
+  "abot-m0": {
+    "policy": {
+      "path": "/images/catalog/abot-m0-policy.webp",
+      "original": "https://arxiv.org/html/2602.11236v2/model.png",
+      "page": "https://arxiv.org/html/2602.11236v2",
+      "credit": "ABot-M0 authors",
+      "alt": "ABot-M0 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1844,
+      "height": 709,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "dexora": {
+    "policy": {
+      "path": "/images/catalog/dexora-policy.webp",
+      "original": "https://arxiv.org/html/2605.18722v1/method.png",
+      "page": "https://arxiv.org/html/2605.18722v1",
+      "credit": "Dexora authors",
+      "alt": "Dexora policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1273,
+      "height": 486,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "h-rdt": {
+    "policy": {
+      "path": "/images/catalog/h-rdt-policy.webp",
+      "original": "https://arxiv.org/html/2507.23523v2/figure2.png",
+      "page": "https://arxiv.org/html/2507.23523v2",
+      "credit": "H-RDT authors",
+      "alt": "H-RDT policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 724,
+      "height": 509,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "hy-embodied05": {
+    "policy": {
+      "path": "/images/catalog/hy-embodied05-policy.webp",
+      "original": "https://arxiv.org/html/2606.14409v2/pipeline.png",
+      "page": "https://arxiv.org/html/2606.14409v2",
+      "credit": "Hy-Embodied-0.5-VLA authors",
+      "alt": "Hy-Embodied-0.5-VLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2033,
+      "height": 659,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "molmoact2": {
+    "policy": {
+      "path": "/images/catalog/molmoact2-policy.webp",
+      "original": "https://arxiv.org/html/2605.02881v2/MAF3.png",
+      "page": "https://arxiv.org/html/2605.02881v2",
+      "credit": "MolmoAct2 authors",
+      "alt": "MolmoAct2 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2024,
+      "height": 843,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "tinyvla": {
+    "policy": {
+      "path": "/images/catalog/tinyvla-policy.webp",
+      "original": "https://arxiv.org/html/2409.12514v5/tinyvla_framework.png",
+      "page": "https://arxiv.org/html/2409.12514v5",
+      "credit": "TinyVLA authors",
+      "alt": "TinyVLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 985,
+      "height": 524,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "xiaomi0": {
+    "policy": {
+      "path": "/images/catalog/xiaomi0-policy.webp",
+      "original": "https://arxiv.org/html/2602.12684v2/fig3.png",
+      "page": "https://arxiv.org/html/2602.12684v2",
+      "credit": "Xiaomi-Robotics-0 authors",
+      "alt": "Xiaomi-Robotics-0 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 970,
+      "height": 460,
+      "note": "Figure3:original model architecture and staged training; replaced data-mixture Figure2 after visual review."
+    }
+  },
+  "xiaomi1": {
+    "policy": {
+      "path": "/images/catalog/xiaomi1-policy.webp",
+      "original": "https://arxiv.org/html/2607.15330v2/model.png",
+      "page": "https://arxiv.org/html/2607.15330v2",
+      "credit": "Xiaomi-Robotics-1 authors",
+      "alt": "Xiaomi-Robotics-1 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2047,
+      "height": 779,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "starvla": {
+    "policy": {
+      "path": "/images/catalog/starvla-policy.webp",
+      "original": "https://arxiv.org/html/2604.05014v1/starvla_dataflow.png",
+      "page": "https://arxiv.org/html/2604.05014v1",
+      "credit": "StarVLA codebase authors",
+      "alt": "StarVLA codebase policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1297,
+      "height": 645,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "starvla-alpha": {
+    "policy": {
+      "path": "/images/catalog/starvla-alpha-policy.webp",
+      "original": "https://arxiv.org/html/2604.11757v2/method.png",
+      "page": "https://arxiv.org/html/2604.11757v2",
+      "credit": "StarVLA-α authors",
+      "alt": "StarVLA-α policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2048,
+      "height": 726,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "evo1": {
+    "policy": {
+      "path": "/images/catalog/evo1-policy.webp",
+      "original": "https://arxiv.org/html/2511.04555v2/evo1_architecture_v7.png",
+      "page": "https://arxiv.org/html/2511.04555v2",
+      "credit": "Evo-1 authors",
+      "alt": "Evo-1 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1544,
+      "height": 904,
+      "note": "Cropped method portion of original Evo-1 architecture; excludes right-side benchmark result insets."
+    }
+  },
+  "simplememvla": {
+    "policy": {
+      "path": "/images/catalog/simplememvla-policy.webp",
+      "original": "https://arxiv.org/html/2609.05533v2/fig_arch_stream.png",
+      "page": "https://arxiv.org/html/2609.05533v2",
+      "credit": "SimpleMemVLA authors",
+      "alt": "SimpleMemVLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1457,
+      "height": 827,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "egovla": {
+    "policy": {
+      "path": "/images/catalog/egovla-policy.webp",
+      "original": "https://arxiv.org/html/2507.12440v3/VLM-Pipeline-V13-Proprio.png",
+      "page": "https://arxiv.org/html/2507.12440v3",
+      "credit": "EgoVLA authors",
+      "alt": "EgoVLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2008,
+      "height": 719,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "mopa": {
+    "policy": {
+      "path": "/images/catalog/mopa-policy.webp",
+      "original": "https://arxiv.org/html/2609.12081v2/main.png",
+      "page": "https://arxiv.org/html/2609.12081v2",
+      "credit": "MoPA authors",
+      "alt": "MoPA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1209,
+      "height": 580,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "kinrt": {
+    "policy": {
+      "path": "/images/catalog/kinrt-policy.webp",
+      "original": "https://arxiv.org/html/2607.26807v2/thirteen.jpg",
+      "page": "https://arxiv.org/html/2607.26807v2",
+      "credit": "KinRT authors",
+      "alt": "KinRT policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1681,
+      "height": 657,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "fast-vla": {
+    "policy": {
+      "path": "/images/catalog/fast-vla-policy.webp",
+      "original": "https://arxiv.org/html/2610.21389v1/fastvla_arch_v12_sage.png",
+      "page": "https://arxiv.org/html/2610.21389v1",
+      "credit": "Fast-VLA authors",
+      "alt": "Fast-VLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2031,
+      "height": 839,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "memoryvla": {
+    "policy": {
+      "path": "/images/catalog/memoryvla-policy.webp",
+      "original": "https://arxiv.org/html/2508.19236v2/fig_2_method.png",
+      "page": "https://arxiv.org/html/2508.19236v2",
+      "credit": "MemoryVLA authors",
+      "alt": "MemoryVLA policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1347,
+      "height": 485,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "molmoact": {
+    "policy": {
+      "path": "/images/catalog/molmoact-policy.webp",
+      "original": "https://arxiv.org/html/2508.07917v4/figures/final/fig2_model_and_training.png",
+      "page": "https://arxiv.org/html/2508.07917v4",
+      "credit": "MolmoAct authors",
+      "alt": "MolmoAct policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2156,
+      "height": 783,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "rmbench": {
+    "policy": {
+      "path": "/images/catalog/rmbench-policy.webp",
+      "original": "https://arxiv.org/html/2603.01229v4/mem0_policy.png",
+      "page": "https://arxiv.org/html/2603.01229v4",
+      "credit": "RMBench / Mem-0 authors",
+      "alt": "RMBench / Mem-0 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1557,
+      "height": 860,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    },
+    "benchmark": {
+      "path": "/images/catalog/rmbench-benchmark.webp",
+      "original": "https://arxiv.org/html/2603.01229v4/benchmark.png",
+      "page": "https://arxiv.org/html/2603.01229v4",
+      "credit": "RMBench authors",
+      "alt": "RMBench / Mem-0 task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1695,
+      "height": 752,
+      "note": "Figure 1 presents all 9memory-dependent task families and execution steps; use this in benchmark context."
+    }
+  },
+  "dm05": {
+    "policy": {
+      "path": "/images/catalog/dm05-policy.webp",
+      "original": "https://www.dexmal.com/blog/dm0.5/dm05-model-architecture.png",
+      "page": "https://www.dexmal.com/blog/dm0.5",
+      "credit": "Dexmal Team",
+      "alt": "DM0.5 / OpenDM policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2012,
+      "height": 938,
+      "note": "Original model architecture diagram from official technical blog."
+    }
+  },
+  "galaxea-g05": {
+    "policy": {
+      "path": "/images/catalog/galaxea-g05-policy.webp",
+      "original": "https://opengalaxea.github.io/G05/Galaxea_G0_5.pdf",
+      "page": "https://opengalaxea.github.io/G05/Galaxea_G0_5.pdf#page=1",
+      "credit": "Galaxea Team",
+      "alt": "Galaxea G0.5 autoregressive reasoning/action pipeline",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 969,
+      "height": 471,
+      "note": "Figure1 top-left method panel,PDF page1,RGB/state→autoregressive VLM→reasoning/action codes→ActionCodec; score plots and text excluded."
+    }
+  },
+  "memoryvla-plusplus": {
+    "policy": {
+      "path": "/images/catalog/memoryvla-plusplus-policy.webp",
+      "original": "https://arxiv.org/html/2606.09827v1/fig_overall.png",
+      "page": "https://arxiv.org/html/2606.09827v1",
+      "credit": "MemoryVLA++ authors",
+      "alt": "MemoryVLA++ policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1501,
+      "height": 602,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "abot-m05": {
+    "policy": {
+      "path": "/images/catalog/abot-m05-policy.webp",
+      "original": "https://arxiv.org/html/2607.00678v2/model.png",
+      "page": "https://arxiv.org/html/2607.00678v2",
+      "credit": "ABot-M0.5 authors",
+      "alt": "ABot-M0.5 policy architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1162,
+      "height": 572,
+      "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
+    }
+  },
+  "vlact": {
+    "policy": {
+      "path": "/images/catalog/vlact-policy.webp",
+      "original": "https://raw.githubusercontent.com/starVLA/VLAct/main/assets/vlact/fig3_method.png",
+      "page": "https://arxiv.org/html/2608.27550",
+      "credit": "VLAct authors",
+      "alt": "VLAct representation-centric policy pretraining and adaptation",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1769,
+      "height": 697,
+      "note": "Figure3 from official model repository:pretraining and fine-tuning pipeline."
+    }
+  },
+  "embodiedevo": {
+    "policy": {
+      "path": "/images/catalog/embodiedevo-policy.webp",
+      "original": "https://arxiv.org/html/2610.18867v2/Figures/embodied-rsi-overview.png",
+      "page": "https://arxiv.org/abs/2610.18867",
+      "credit": "EmbodiedEvo authors",
+      "alt": "Figure 1: A coding agent develops executable robot-control programs and reusable Skills and Lessons through Playground interaction.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1599,
+      "height": 742,
+      "note": "Figure 1: A coding agent develops executable robot-control programs and reusable Skills and Lessons through Playground interaction."
+    }
+  },
+  "roboicl": {
+    "policy": {
+      "path": "/images/catalog/roboicl-policy.webp",
+      "original": "https://arxiv.org/html/2609.34261v1/figures/method.png",
+      "page": "https://arxiv.org/abs/2609.34261",
+      "credit": "RoboICL authors",
+      "alt": "Figure 2: A frozen VLM controls robots using a shared observation–action–receipt grammar for demonstration context and interaction memory, without an external skill library.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1228,
+      "note": "Figure 2: A frozen VLM controls robots using a shared observation–action–receipt grammar for demonstration context and interaction memory, without an external skill library."
+    }
+  },
+  "roboprobe": {
+    "policy": {
+      "path": "/images/catalog/roboprobe-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.24170#page=4",
+      "page": "https://arxiv.org/abs/2609.24170",
+      "credit": "RoboProbe / GPT-6 Astra Direct-EEF authors",
+      "alt": "Figure 2: A frozen frontier model selects end-effector targets from RGB and robot state.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1353,
+      "height": 925,
+      "note": "Figure 2: A frozen frontier model selects end-effector targets from RGB and robot state. Extracted from PDF page 4, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "astra-embodied-policies": {
+    "policy": {
+      "path": "/images/catalog/astra-embodied-policies-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.38537#page=2",
+      "page": "https://arxiv.org/abs/2609.38537",
+      "credit": "GPT-6 Astra as Embodied Policies authors",
+      "alt": "Figure 1: Evaluates direct Astra-generated commands with analytic control and hybrid configurations that review learned-policy proposals or command frozen whole-body controllers.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1660,
+      "height": 801,
+      "note": "Figure 1: Evaluates direct Astra-generated commands with analytic control and hybrid configurations that review learned-policy proposals or command frozen whole-body controllers. Extracted from PDF page 2, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "astra-robomme": {
+    "policy": {
+      "path": "/images/catalog/astra-robomme-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.17350#page=4",
+      "page": "https://arxiv.org/abs/2610.17350",
+      "credit": "Astra on RoboMME authors",
+      "alt": "Figure 2: A full-context frontier VLM retains the episode video and prior responses while commanding every end-effector waypoint in memory-dependent manipulation.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1656,
+      "height": 400,
+      "note": "Figure 2: A full-context frontier VLM retains the episode video and prior responses while commanding every end-effector waypoint in memory-dependent manipulation. Extracted from PDF page 4, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "coap": {
+    "policy": {
+      "path": "/images/catalog/coap-policy.webp",
+      "original": "https://arxiv.org/html/2610.12369v1/fig_method_overview.png",
+      "page": "https://arxiv.org/abs/2610.12369",
+      "credit": "Code-Only-as-Policy (COAP) authors",
+      "alt": "Figure 3: Offline coding-agent improvement produces a reusable library that measures state and executes stateful robot programs.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 756,
+      "height": 468,
+      "note": "Figure 3: Offline coding-agent improvement produces a reusable library that measures state and executes stateful robot programs."
+    }
+  },
+  "embodirsi": {
+    "policy": {
+      "path": "/images/catalog/embodirsi-policy.webp",
+      "original": "https://arxiv.org/html/2609.38905v3/overview.png",
+      "page": "https://arxiv.org/abs/2609.38905",
+      "credit": "EmbodiRSI authors",
+      "alt": "Figure 1: Real-to-simulation reconstruction and policy rollout feedback drive targeted error correction, adaptive demonstration collection and repeated policy fine-tuning.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1655,
+      "height": 1123,
+      "note": "Figure 1: Real-to-simulation reconstruction and policy rollout feedback drive targeted error correction, adaptive demonstration collection and repeated policy fine-tuning."
+    }
+  },
+  "adarsi": {
+    "policy": {
+      "path": "/images/catalog/adarsi-policy.webp",
+      "original": "https://arxiv.org/html/2610.20474v1/figures/AdaRSI_pipeline.jpg",
+      "page": "https://arxiv.org/abs/2610.20474",
+      "credit": "AdaRSI authors",
+      "alt": "Figure 2: Improves a frozen executor through harness revision first, then fine-tunes only the substeps whose failures remain after harness repair.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1056,
+      "note": "Figure 2: Improves a frozen executor through harness revision first, then fine-tunes only the substeps whose failures remain after harness repair."
+    }
+  },
+  "re-0": {
+    "policy": {
+      "path": "/images/catalog/re-0-policy.webp",
+      "original": "https://arxiv.org/html/2609.32416v1/fig1_main_user.png",
+      "page": "https://arxiv.org/abs/2609.32416",
+      "credit": "RE-0 authors",
+      "alt": "Figure 1: Verifies bounded repairs to failing code-policy segments through paired counterfactual rollouts, then distills accepted interventions into a standalone student.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1274,
+      "note": "Figure 1: Verifies bounded repairs to failing code-policy segments through paired counterfactual rollouts, then distills accepted interventions into a standalone student."
+    }
+  },
+  "rsi-123-rounds": {
+    "policy": {
+      "path": "/images/catalog/rsi-123-rounds-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.31760#page=3",
+      "page": "https://arxiv.org/abs/2609.31760",
+      "credit": "123 Rounds of Robot Skill Discovery authors",
+      "alt": "Figure 2: A longitudinal negative-result study audits why an agentic skill-discovery loop can accumulate accepted changes without solving its target manipulation task.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1698,
+      "height": 445,
+      "note": "Figure 2: A longitudinal negative-result study audits why an agentic skill-discovery loop can accumulate accepted changes without solving its target manipulation task. Extracted from PDF page 3, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "rho": {
+    "policy": {
+      "path": "/images/catalog/rho-policy.webp",
+      "original": "https://arxiv.org/pdf/2606.16458#page=2",
+      "page": "https://arxiv.org/abs/2606.16458",
+      "credit": "RHO authors",
+      "alt": "Figure 1: A tool-enabled coding agent mutates complete robot-policy repositories; gated evaluation and a Pareto frontier retain useful program variants.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1284,
+      "height": 619,
+      "note": "Figure 1: A tool-enabled coding agent mutates complete robot-policy repositories; gated evaluation and a Pareto frontier retain useful program variants. Extracted from PDF page 2, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "sear": {
+    "policy": {
+      "path": "/images/catalog/sear-policy.webp",
+      "original": "https://arxiv.org/html/2610.18792v1/harness-loop-and-real-world-sequences.png",
+      "page": "https://arxiv.org/abs/2610.18792",
+      "credit": "SEAR authors",
+      "alt": "Figure 2, upper panel: language-model agents, a retained library, robot-policy updates and external feedback form the self-evolving loop.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1312,
+      "height": 725,
+      "note": "Figure 2, upper panel: language-model agents, a retained library, robot-policy updates and external feedback form the self-evolving loop. Cropped to the upper method panel; rollout galleries are excluded."
+    }
+  },
+  "enpire": {
+    "policy": {
+      "path": "/images/catalog/enpire-policy.webp",
+      "original": "https://arxiv.org/html/2606.19980v2/figure-v4.png",
+      "page": "https://arxiv.org/abs/2606.19980",
+      "credit": "ENPIRE authors",
+      "alt": "Figure 2: Environment preparation, policy improvement, rollout collection and coding-agent evolution form the autonomous robot-learning loop.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1479,
+      "height": 1314,
+      "note": "Figure 2: Environment preparation, policy improvement, rollout collection and coding-agent evolution form the autonomous robot-learning loop."
+    }
+  },
+  "embodiedrsi": {
+    "policy": {
+      "path": "/images/catalog/embodiedrsi-policy.webp",
+      "original": "https://arxiv.org/html/2610.10498v1/Main_figure.png",
+      "page": "https://arxiv.org/abs/2610.10498",
+      "credit": "EmbodiedRSI authors",
+      "alt": "Figure 2: A frozen robot foundation model is supported by a fast hypothesis-guided experimental loop and slower memory consolidation that co-evolve code and skills.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2010,
+      "height": 1098,
+      "note": "Figure 2: A frozen robot foundation model is supported by a fast hypothesis-guided experimental loop and slower memory consolidation that co-evolve code and skills."
+    }
+  },
+  "agent-as-policy": {
+    "policy": {
+      "path": "/images/catalog/agent-as-policy-policy.webp",
+      "original": "https://arxiv.org/html/2609.12541v3/agp_method_v12.png",
+      "page": "https://arxiv.org/abs/2609.12541",
+      "credit": "Agent as Policy (AGP) authors",
+      "alt": "Figure 1: General coding agents write and select robot programs from multimodal feedback on physical manipulation tasks, while experience files support repeated-run refinement and transfer.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2038,
+      "height": 1307,
+      "note": "Figure 1: General coding agents write and select robot programs from multimodal feedback on physical manipulation tasks, while experience files support repeated-run refinement and transfer."
+    }
+  },
+  "roboskill": {
+    "policy": {
+      "path": "/images/catalog/roboskill-policy.webp",
+      "original": "https://arxiv.org/html/2609.37810v1/RoboSkill-revised-final.png",
+      "page": "https://arxiv.org/abs/2609.37810",
+      "credit": "RoboSkill authors",
+      "alt": "Figure 2: An Explore–Execute–Evolve loop acquires and reuses robot skills, including contact-based exploration that combines visual and tactile feedback.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1981,
+      "height": 1029,
+      "note": "Figure 2: An Explore–Execute–Evolve loop acquires and reuses robot skills, including contact-based exploration that combines visual and tactile feedback."
+    }
+  },
+  "harness-vla": {
+    "policy": {
+      "path": "/images/catalog/harness-vla-policy.webp",
+      "original": "https://arxiv.org/html/2607.08448v5/figures/scheme.png",
+      "page": "https://arxiv.org/abs/2607.08448",
+      "credit": "Harness VLA authors",
+      "alt": "Figure 1: An agent composes analytic primitives and a frozen VLA, using memory to invoke the learned policy within more reliable operating conditions.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1411,
+      "note": "Figure 1: An agent composes analytic primitives and a frozen VLA, using memory to invoke the learned policy within more reliable operating conditions."
+    }
+  },
+  "show-harness": {
+    "policy": {
+      "path": "/images/catalog/show-harness-policy.webp",
+      "original": "https://arxiv.org/html/2609.10522v1/method.png",
+      "page": "https://arxiv.org/abs/2609.10522",
+      "credit": "Show-Harness authors",
+      "alt": "Figure 3: A shared semantic action interface connects VLM perception and reasoning to robot motion across embodiments, with frozen frontier-model and adapted compact-model variants.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1064,
+      "height": 529,
+      "note": "Figure 3: A shared semantic action interface connects VLM perception and reasoning to robot motion across embodiments, with frozen frontier-model and adapted compact-model variants."
+    }
+  },
+  "gpt-policy": {
+    "policy": {
+      "path": "/images/catalog/gpt-policy-policy.webp",
+      "original": "https://arxiv.org/html/2609.19138v1/overview.png",
+      "page": "https://arxiv.org/abs/2609.19138",
+      "credit": "GPT-Policy authors",
+      "alt": "Figure 2: A frozen VLM combines task references, current observations and persistent interaction history to select constrained Cartesian robot tools.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2048,
+      "height": 1108,
+      "note": "Figure 2: A frozen VLM combines task references, current observations and persistent interaction history to select constrained Cartesian robot tools."
+    }
+  },
+  "urai": {
+    "policy": {
+      "path": "/images/catalog/urai-policy.webp",
+      "original": "https://arxiv.org/html/2609.39018v1/URAI_fig2_framework.png",
+      "page": "https://arxiv.org/abs/2609.39018",
+      "credit": "Universal Robot-Agent Interface (URAI) authors",
+      "alt": "Figure 2: Separates an offline programming agent that writes and validates tools from an execution agent that selects their parameters through a shared GUI / API backend.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1291,
+      "height": 734,
+      "note": "Figure 2: Separates an offline programming agent that writes and validates tools from an execution agent that selects their parameters through a shared GUI / API backend."
+    }
+  },
+  "pyrualean": {
+    "policy": {
+      "path": "/images/catalog/pyrualean-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.01939#page=4",
+      "page": "https://arxiv.org/abs/2610.01939",
+      "credit": "PyRUA-Lean authors",
+      "alt": "Figure 2: Uses Python cells to compose existing robot primitives with control flow and selective feedback, reducing repeated model calls relative to tool-by-tool execution.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1629,
+      "height": 642,
+      "note": "Figure 2: Uses Python cells to compose existing robot primitives with control flow and selective feedback, reducing repeated model calls relative to tool-by-tool execution. Extracted from PDF page 4, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "roborsi": {
+    "policy": {
+      "path": "/images/catalog/roborsi-policy.webp",
+      "original": "https://arxiv.org/html/2610.12424v1/2027_ICLR_Framework2.0.png",
+      "page": "https://arxiv.org/abs/2610.12424",
+      "credit": "RoboRSI (Noematrix) authors",
+      "alt": "Figure 2: A multi-agent skill hierarchy uses Top-down Skill Refinement to diagnose execution failures and revise reusable base, atomic and compound skills.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 798,
+      "height": 418,
+      "note": "Figure 2: A multi-agent skill hierarchy uses Top-down Skill Refinement to diagnose execution failures and revise reusable base, atomic and compound skills."
+    }
+  },
+  "rise-opendrivelab": {
+    "policy": {
+      "path": "/images/catalog/rise-opendrivelab-policy.webp",
+      "original": "https://arxiv.org/html/2602.11075v2/world_model.png",
+      "page": "https://arxiv.org/abs/2602.11075",
+      "credit": "RISE (Compositional World Model) authors",
+      "alt": "Figure 4: Learns a compositional visual world model and progress-based value model, then improves a robot policy through imagined rollouts rather than repeated physical exploration.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 763,
+      "height": 485,
+      "note": "Figure 4: Learns a compositional visual world model and progress-based value model, then improves a robot policy through imagined rollouts rather than repeated physical exploration."
+    }
+  },
+  "me-brain-1": {
+    "policy": {
+      "path": "/images/catalog/me-brain-1-policy.webp",
+      "original": "https://arxiv.org/html/2609.24271v2/ME_Brain_Main_Figure.png",
+      "page": "https://arxiv.org/abs/2609.24271",
+      "credit": "ME-Brain-1.0 authors",
+      "alt": "Figure 1: Combines hierarchical multimodal memory, a skill-using Cognitive Core and a world-aware action model to retain experience across deployment.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2010,
+      "height": 1139,
+      "note": "Figure 1: Combines hierarchical multimodal memory, a skill-using Cognitive Core and a world-aware action model to retain experience across deployment."
+    }
+  },
+  "icrt": {
+    "policy": {
+      "path": "/images/catalog/icrt-policy.webp",
+      "original": "https://arxiv.org/html/2408.15980v2/corl_2024/figures/method_figure.png",
+      "page": "https://arxiv.org/abs/2408.15980",
+      "credit": "In-Context Robot Transformer (ICRT) authors",
+      "alt": "Figure 3: A causal sensorimotor transformer learns to imitate a prompted task from demonstration trajectories without target-task fine-tuning.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 433,
+      "note": "Figure 3: A causal sensorimotor transformer learns to imitate a prompted task from demonstration trajectories without target-task fine-tuning."
+    }
+  },
+  "instant-policy": {
+    "policy": {
+      "path": "/images/catalog/instant-policy-policy.webp",
+      "original": "https://arxiv.org/html/2411.12633v2/figs/net.png",
+      "page": "https://arxiv.org/abs/2411.12633",
+      "credit": "Instant Policy authors",
+      "alt": "Figure 3: A graph-based diffusion model adapts manipulation behavior from one or two demonstration trajectories using segmented point-cloud geometry.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1511,
+      "height": 534,
+      "note": "Figure 3: A graph-based diffusion model adapts manipulation behavior from one or two demonstration trajectories using segmented point-cloud geometry."
+    }
+  },
+  "ricl": {
+    "policy": {
+      "path": "/images/catalog/ricl-policy.webp",
+      "original": "https://arxiv.org/html/2508.02062v1/regentic-pi0-arch.png",
+      "page": "https://arxiv.org/abs/2508.02062",
+      "credit": "RICL authors",
+      "alt": "Figure 2: Post-trains a pretrained VLA to use retrieved demonstration groups, enabling new-task adaptation through context without mandatory task-specific weight updates.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1929,
+      "height": 837,
+      "note": "Figure 2: Post-trains a pretrained VLA to use retrieved demonstration groups, enabling new-task adaptation through context without mandatory task-specific weight updates."
+    }
+  },
+  "behavior-prompting-policy": {
+    "policy": {
+      "path": "/images/catalog/behavior-prompting-policy-policy.webp",
+      "original": "https://arxiv.org/html/2606.30457v2/architecture.png",
+      "page": "https://arxiv.org/abs/2606.30457",
+      "credit": "Behavior Prompting Policy (BPP) authors",
+      "alt": "Figure 2: A demonstration-conditioned diffusion policy uses dense observation and action sequences to reproduce new manipulation behavior, with one prompt demonstration at deployment.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1490,
+      "height": 387,
+      "note": "Figure 2: A demonstration-conditioned diffusion policy uses dense observation and action sequences to reproduce new manipulation behavior, with one prompt demonstration at deployment."
+    }
+  },
+  "synthicl": {
+    "policy": {
+      "path": "/images/catalog/synthicl-policy.webp",
+      "original": "https://arxiv.org/html/2606.08154v1/figures/model2.drawio.png",
+      "page": "https://arxiv.org/abs/2606.08154",
+      "credit": "SynthICL authors",
+      "alt": "Figure 2: A visual-context flow-matching policy learns in-context imitation from synthetic pseudo-demonstrations and an auxiliary subgoal-image objective.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1133,
+      "height": 695,
+      "note": "Figure 2: A visual-context flow-matching policy learns in-context imitation from synthetic pseudo-demonstrations and an auxiliary subgoal-image objective."
+    }
+  },
+  "stellavla": {
+    "policy": {
+      "path": "/images/catalog/stellavla-policy.webp",
+      "original": "https://arxiv.org/html/2608.11671v1/framework.png",
+      "page": "https://arxiv.org/abs/2608.11671",
+      "credit": "StellaVLA authors",
+      "alt": "Figure 2: Converts demonstrations into structured visual, kinematic and language context, then trains a VLA with an action expert and a spatial-language auxiliary objective.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1058,
+      "height": 416,
+      "note": "Figure 2: Converts demonstrations into structured visual, kinematic and language context, then trains a VLA with an action expert and a spatial-language auxiliary objective."
+    }
+  },
+  "keypoint-action-tokens": {
+    "policy": {
+      "path": "/images/catalog/keypoint-action-tokens-policy.webp",
+      "original": "https://arxiv.org/html/2403.19578v3/figures/fig2_png.png",
+      "page": "https://arxiv.org/abs/2403.19578",
+      "credit": "Keypoint Action Tokens (KAT) authors",
+      "alt": "Figure 1: Visual observations become 3D keypoint tokens; a prompted language model predicts action tokens decoded into end-effector poses.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1788,
+      "height": 467,
+      "note": "Figure 1: Visual observations become 3D keypoint tokens; a prompted language model predicts action tokens decoded into end-effector poses."
+    }
+  },
+  "roboprompt": {
+    "policy": {
+      "path": "/images/catalog/roboprompt-policy.webp",
+      "original": "https://arxiv.org/pdf/2410.12782#page=1",
+      "page": "https://arxiv.org/abs/2410.12782",
+      "credit": "RoboPrompt authors",
+      "alt": "Figure 1: Object-pose and demonstrated keyframe encodings form the context for language-model action prediction.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1772,
+      "height": 1221,
+      "note": "Figure 1: Object-pose and demonstrated keyframe encodings form the context for language-model action prediction. Extracted from PDF page 1, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "reflective-vla": {
+    "policy": {
+      "path": "/images/catalog/reflective-vla-policy.webp",
+      "original": "https://arxiv.org/html/2606.25215v1/fig2.png",
+      "page": "https://arxiv.org/abs/2606.25215",
+      "credit": "Reflective VLA authors",
+      "alt": "Figure 2: Conditions a continuous-action VLA on bounded histories of observations, executed action chunks and observed consequences.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 718,
+      "height": 317,
+      "note": "Figure 2: Conditions a continuous-action VLA on bounded histories of observations, executed action chunks and observed consequences."
+    }
+  },
+  "robottt": {
+    "policy": {
+      "path": "/images/catalog/robottt-policy.webp",
+      "original": "https://arxiv.org/html/2607.15275v1/model_arch-fig.png",
+      "page": "https://arxiv.org/abs/2607.15275",
+      "credit": "RoboTTT authors",
+      "alt": "Figure 2: Introduces fast-weight test-time training into a robot action model to compress long histories and adapt behavior from context.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1166,
+      "height": 447,
+      "note": "Figure 2: Introduces fast-weight test-time training into a robot action model to compress long histories and adapt behavior from context."
+    }
+  },
+  "ici-vla": {
+    "policy": {
+      "path": "/images/catalog/ici-vla-policy.webp",
+      "original": "https://arxiv.org/html/2609.07581v1/method.png",
+      "page": "https://arxiv.org/abs/2609.07581",
+      "credit": "ICI-VLA authors",
+      "alt": "Figure 2: Retrieves phase-aligned micro-demonstrations to condition a text-action VLM, using offline alignment and retrieval training while keeping evaluation parameters fixed.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1220,
+      "height": 894,
+      "note": "Figure 2: Retrieves phase-aligned micro-demonstrations to condition a text-action VLM, using offline alignment and retrieval training while keeping evaluation parameters fixed."
+    }
+  },
+  "iclr-visual-reasoning": {
+    "policy": {
+      "path": "/images/catalog/iclr-visual-reasoning-policy.webp",
+      "original": "https://arxiv.org/html/2603.07530v2/method_3.png",
+      "page": "https://arxiv.org/abs/2603.07530",
+      "credit": "ICLR: Visual Reasoning Imitation authors",
+      "alt": "Figure 2: Augments demonstration-conditioned sensorimotor prediction with explicit image-space future keypoint traces that are generated before robot actions.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1537,
+      "height": 345,
+      "note": "Figure 2: Augments demonstration-conditioned sensorimotor prediction with explicit image-space future keypoint traces that are generated before robot actions."
+    }
+  },
+  "robodawn": {
+    "policy": {
+      "path": "/images/catalog/robodawn-policy.webp",
+      "original": "https://arxiv.org/html/2609.22966v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2609.22966",
+      "credit": "Robo Dawn authors",
+      "alt": "Figure 2: A frozen VLM uses a compact semantic motion vocabulary and in-context examples, grounded at the gripper interaction point.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1255,
+      "height": 810,
+      "note": "Figure 2: A frozen VLM uses a compact semantic motion vocabulary and in-context examples, grounded at the gripper interaction point."
+    }
+  },
+  "vima": {
+    "policy": {
+      "path": "/images/catalog/vima-policy.webp",
+      "original": "https://arxiv.org/html/2210.03094v2/arch-fig.png",
+      "page": "https://arxiv.org/abs/2210.03094",
+      "credit": "VIMA authors",
+      "alt": "Figure 3: Object-centric observations and a T5-encoded multimodal prompt condition the causal robot-action transformer through cross-attention.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2009,
+      "height": 1412,
+      "note": "Figure 3: Object-centric observations and a T5-encoded multimodal prompt condition the causal robot-action transformer through cross-attention."
+    }
+  },
+  "code-as-policies": {
+    "policy": {
+      "path": "/images/catalog/code-as-policies-policy.webp",
+      "original": "https://arxiv.org/pdf/2209.07753#page=1",
+      "page": "https://arxiv.org/abs/2209.07753",
+      "credit": "Code as Policies (CaP) authors",
+      "alt": "Figure 1: A code-writing language model composes perception and robot-control APIs, recursively generating helper functions.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 859,
+      "height": 557,
+      "note": "Figure 1: A code-writing language model composes perception and robot-control APIs, recursively generating helper functions. Extracted from PDF page 1, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "voxposer": {
+    "policy": {
+      "path": "/images/catalog/voxposer-policy.webp",
+      "original": "https://arxiv.org/html/2307.05973v2/method.png",
+      "page": "https://arxiv.org/abs/2307.05973",
+      "credit": "VoxPoser authors",
+      "alt": "Figure 2: Composes 3D value maps from language-model programs and visual grounding, then optimizes robot motion within those maps.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1098,
+      "height": 318,
+      "note": "Figure 2: Composes 3D value maps from language-model programs and visual grounding, then optimizes robot motion within those maps."
+    }
+  },
+  "rekep": {
+    "policy": {
+      "path": "/images/catalog/rekep-policy.webp",
+      "original": "https://arxiv.org/html/2409.01652v2/method.png",
+      "page": "https://arxiv.org/abs/2409.01652",
+      "credit": "ReKep authors",
+      "alt": "Figure 2: Generates relational constraints over visual 3D keypoints and solves a sequence of constrained optimization problems for manipulation.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1258,
+      "height": 564,
+      "note": "Figure 2: Generates relational constraints over visual 3D keypoints and solves a sequence of constrained optimization problems for manipulation."
+    }
+  },
+  "robocat": {
+    "policy": {
+      "path": "/images/catalog/robocat-policy.webp",
+      "original": "https://arxiv.org/html/2306.11706v2/robocat_fig_TMLR.png",
+      "page": "https://arxiv.org/abs/2306.11706",
+      "credit": "RoboCat authors",
+      "alt": "Figure 1: Generalist training, few-demonstration adaptation, autonomous data generation and retraining comprise the self-improvement cycle.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1930,
+      "height": 644,
+      "note": "Figure 1: Generalist training, few-demonstration adaptation, autonomous data generation and retraining comprise the self-improvement cycle."
+    }
+  },
+  "robogen": {
+    "policy": {
+      "path": "/images/catalog/robogen-policy.webp",
+      "original": "https://arxiv.org/html/2311.01455v3/images/method.png",
+      "page": "https://arxiv.org/abs/2311.01455",
+      "credit": "RoboGen authors",
+      "alt": "Figure 2: A generative simulation pipeline proposes robot tasks, assets and learning supervision, then chooses reinforcement learning, motion planning or trajectory optimization to acquire skills.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 949,
+      "note": "Figure 2: A generative simulation pipeline proposes robot tasks, assets and learning supervision, then chooses reinforcement learning, motion planning or trajectory optimization to acquire skills."
+    }
+  },
+  "eureka": {
+    "policy": {
+      "path": "/images/catalog/eureka-policy.webp",
+      "original": "https://arxiv.org/html/2310.12931v2/figures/eureka.png",
+      "page": "https://arxiv.org/abs/2310.12931",
+      "credit": "Eureka authors",
+      "alt": "Figure 2: Uses language-model reward-code generation and evolutionary reward reflection to train robot skills through reinforcement learning.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1031,
+      "note": "Figure 2: Uses language-model reward-code generation and evolutionary reward reflection to train robot skills through reinforcement learning."
+    }
+  },
+  "dreureka": {
+    "policy": {
+      "path": "/images/catalog/dreureka-policy.webp",
+      "original": "https://arxiv.org/html/2406.01967v1/figures/concept/concept.png",
+      "page": "https://arxiv.org/abs/2406.01967",
+      "credit": "DrEureka authors",
+      "alt": "Figure 1: Language-model reward generation and reward-aware physics priors guide domain randomization and sim-to-real policy training.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 967,
+      "note": "Figure 1: Language-model reward generation and reward-aware physics priors guide domain randomization and sim-to-real policy training."
+    }
+  },
+  "autort": {
+    "policy": {
+      "path": "/images/catalog/autort-policy.webp",
+      "original": "https://arxiv.org/pdf/2401.12963#page=4",
+      "page": "https://arxiv.org/abs/2401.12963",
+      "credit": "AutoRT authors",
+      "alt": "Figure 1: Visual scene descriptions and language-model task selection coordinate fleet data collection and execution-policy assignment.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1246,
+      "height": 923,
+      "note": "Figure 1: Visual scene descriptions and language-model task selection coordinate fleet data collection and execution-policy assignment. Extracted from PDF page 4, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "inner-monologue": {
+    "policy": {
+      "path": "/images/catalog/inner-monologue-policy.webp",
+      "original": "https://arxiv.org/html/2207.05608v1/feedback-teaser.png",
+      "page": "https://arxiv.org/abs/2207.05608",
+      "credit": "Inner Monologue authors",
+      "alt": "Figure 1: Perception, success detection and optional human feedback supply language evidence for iterative skill planning.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1564,
+      "height": 675,
+      "note": "Figure 1: Perception, success detection and optional human feedback supply language evidence for iterative skill planning."
+    }
+  },
+  "saycan": {
+    "policy": {
+      "path": "/images/catalog/saycan-policy.webp",
+      "original": "https://arxiv.org/html/2204.01691v2/figures/vfs_llm_all.png",
+      "page": "https://arxiv.org/abs/2204.01691",
+      "credit": "SayCan authors",
+      "alt": "Figure 15: Language-model relevance and learned affordance probabilities jointly select the next executable robot skill.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1996,
+      "height": 1230,
+      "note": "Figure 15: Language-model relevance and learned affordance probabilities jointly select the next executable robot skill."
+    }
+  },
+  "progprompt": {
+    "policy": {
+      "path": "/images/catalog/progprompt-policy.webp",
+      "original": "https://arxiv.org/html/2209.11302v1/plan_and_exec.png",
+      "page": "https://arxiv.org/abs/2209.11302",
+      "credit": "ProgPrompt authors",
+      "alt": "Figure 2: Prompts an LLM to produce situated robot programs using an allowed action API, object inventory and assertion-style feedback.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1500,
+      "height": 728,
+      "note": "Figure 2: Prompts an LLM to produce situated robot programs using an allowed action API, object inventory and assertion-style feedback."
+    }
+  },
+  "instruct2act": {
+    "policy": {
+      "path": "/images/catalog/instruct2act-policy.webp",
+      "original": "https://arxiv.org/html/2305.11176v3/framework.png",
+      "page": "https://arxiv.org/abs/2305.11176",
+      "credit": "Instruct2Act authors",
+      "alt": "Figure 2: Maps multimodal instructions into executable robot programs through a modular visual-perception and action API.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1468,
+      "height": 873,
+      "note": "Figure 2: Maps multimodal instructions into executable robot programs through a modular visual-perception and action API."
+    }
+  },
+  "robotool": {
+    "policy": {
+      "path": "/images/catalog/robotool-policy.webp",
+      "original": "https://arxiv.org/html/2310.13065v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2310.13065",
+      "credit": "RoboTool authors",
+      "alt": "Figure 2: A four-role language-model system reasons about objects as tools and generates robot programs for creative tool-use tasks.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1082,
+      "height": 509,
+      "note": "Figure 2: A four-role language-model system reasons about objects as tools and generates robot programs for creative tool-use tasks."
+    }
+  },
+  "cap-x": {
+    "policy": {
+      "path": "/images/catalog/cap-x-policy.webp",
+      "original": "https://arxiv.org/html/2603.22435v2/capagent0_figure.png",
+      "page": "https://arxiv.org/abs/2603.22435",
+      "credit": "CaP-X / CaP-Agent0 authors",
+      "alt": "Figure 7: CaP-Agent0 combines an automatically synthesized skill library, visual differencing and parallel coding-agent reasoning.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2044,
+      "height": 1090,
+      "note": "Figure 7: CaP-Agent0 combines an automatically synthesized skill library, visual differencing and parallel coding-agent reasoning."
+    }
+  },
+  "embodiedswe": {
+    "policy": {
+      "path": "/images/catalog/embodiedswe-policy.webp",
+      "original": "https://arxiv.org/html/2609.27308v2/overview_labels_revised.png",
+      "page": "https://arxiv.org/abs/2609.27308",
+      "credit": "EmbodiedSWE authors",
+      "alt": "Figure 1: Uses coding agents to solve long-horizon simulator-control tasks, then diversifies verified programs into demonstrations for visuomotor policy training.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 660,
+      "height": 353,
+      "note": "Figure 1: Uses coding agents to solve long-horizon simulator-control tasks, then diversifies verified programs into demonstrations for visuomotor policy training."
+    }
+  },
+  "zetta": {
+    "policy": {
+      "path": "/images/catalog/zetta-policy.webp",
+      "original": "https://arxiv.org/html/2608.16590v1/agent_framework_v2.png",
+      "page": "https://arxiv.org/abs/2608.16590",
+      "credit": "Zetta authors",
+      "alt": "Figure 2: Supports a frozen VLA with action-frequency critics, episodic recoveries and validated skill evolution at three time scales.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1256,
+      "height": 574,
+      "note": "Figure 2: Supports a frozen VLA with action-frequency critics, episodic recoveries and validated skill evolution at three time scales."
+    }
+  },
+  "rapid": {
+    "policy": {
+      "path": "/images/catalog/rapid-policy.webp",
+      "original": "https://arxiv.org/html/2609.30249v1/method.png",
+      "page": "https://arxiv.org/abs/2609.30249",
+      "credit": "RAPID authors",
+      "alt": "Figure 2: Builds reusable object-centric relational programs from demonstrations, using simulation variants and cross-entropy trajectory optimization to verify generalization.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1830,
+      "height": 414,
+      "note": "Figure 2: Builds reusable object-centric relational programs from demonstrations, using simulation variants and cross-entropy trajectory optimization to verify generalization."
+    }
+  },
+  "physical-coding": {
+    "policy": {
+      "path": "/images/catalog/physical-coding-policy.webp",
+      "original": "https://arxiv.org/html/2609.35432v1/figure-1.png",
+      "page": "https://arxiv.org/abs/2609.35432",
+      "credit": "Physical Coding authors",
+      "alt": "Figure 1: Couples an executable account of task state and constraints with executable control programs, using independently checked physical outcomes to revise the system.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2033,
+      "height": 1141,
+      "note": "Figure 1: Couples an executable account of task state and constraints with executable control programs, using independently checked physical outcomes to revise the system."
+    }
+  },
+  "playful": {
+    "policy": {
+      "path": "/images/catalog/playful-policy.webp",
+      "original": "https://arxiv.org/html/2606.19419v1/f2.png",
+      "page": "https://arxiv.org/abs/2606.19419",
+      "credit": "RATs / Playful Agentic Robot Learning authors",
+      "alt": "Figure 2: Learns a reusable skill library through self-directed play before receiving downstream task requests, selecting experiences that balance novelty and learnability.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2047,
+      "height": 913,
+      "note": "Figure 2: Learns a reusable skill library through self-directed play before receiving downstream task requests, selecting experiences that balance novelty and learnability."
+    }
+  },
+  "aspire": {
+    "policy": {
+      "path": "/images/catalog/aspire-policy.webp",
+      "original": "https://arxiv.org/html/2607.00272v1/system_design.png",
+      "page": "https://arxiv.org/abs/2607.00272",
+      "credit": "ASPIRE authors",
+      "alt": "Figure 1: Parallel coding agents discover and repair robot programs, then retain validated skills that can guide other tasks or embodiments.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1455,
+      "height": 874,
+      "note": "Figure 1: Parallel coding agents discover and repair robot programs, then retain validated skills that can guide other tasks or embodiments."
+    }
+  },
+  "closed-loop-robot-software": {
+    "policy": {
+      "path": "/images/catalog/closed-loop-robot-software-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.19906#page=2",
+      "page": "https://arxiv.org/abs/2609.19906",
+      "credit": "Closed-Loop Robot Software authors",
+      "alt": "Figure 1: Optimizes per-task executable controllers from demonstrations and reuses optimized software as references for related tasks.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1771,
+      "height": 947,
+      "note": "Figure 1: Optimizes per-task executable controllers from demonstrations and reuses optimized software as references for related tasks. Extracted from PDF page 2, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "shaper": {
+    "policy": {
+      "path": "/images/catalog/shaper-policy.webp",
+      "original": "https://arxiv.org/html/2608.11350v2/figures/main.png",
+      "page": "https://arxiv.org/abs/2608.11350",
+      "credit": "SHAPER authors",
+      "alt": "Figure 2: Adapts a frozen planner by separately evolving textual skills and the context-construction harness through held-out rollout feedback.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 816,
+      "note": "Figure 2: Adapts a frozen planner by separately evolving textual skills and the context-construction harness through held-out rollout feedback."
+    }
+  },
+  "roboharn-evo": {
+    "policy": {
+      "path": "/images/catalog/roboharn-evo-policy.webp",
+      "original": "https://arxiv.org/html/2609.37583v2/figure2_query_cycle_v10.png",
+      "page": "https://arxiv.org/abs/2609.37583",
+      "credit": "RoboHarn-Evo authors",
+      "alt": "Figure 2: Retains task-level and action-level physical knowledge and repairs or deactivates entries using interaction evidence.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2012,
+      "height": 1107,
+      "note": "Figure 2: Retains task-level and action-level physical knowledge and repairs or deactivates entries using interaction evidence."
+    }
+  },
+  "zeva": {
+    "policy": {
+      "path": "/images/catalog/zeva-policy.webp",
+      "original": "https://arxiv.org/html/2608.30880v2/zeva_v2.png",
+      "page": "https://arxiv.org/abs/2608.30880",
+      "credit": "Zeva authors",
+      "alt": "Figure 2: Uses a learned causal transition encoder and two-timescale interaction memory to condition a frozen robot policy on observed action effects.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1069,
+      "height": 563,
+      "note": "Figure 2: Uses a learned causal transition encoder and two-timescale interaction memory to condition a frozen robot policy on observed action effects."
+    }
+  },
+  "simex": {
+    "policy": {
+      "path": "/images/catalog/simex-policy.webp",
+      "original": "https://arxiv.org/html/2609.38982v1/figure2.png",
+      "page": "https://arxiv.org/abs/2609.38982",
+      "credit": "SimEX authors",
+      "alt": "Figure 2: Simulation reconstruction, capability discovery and few-trial physical toolbox repair form the two-stage robot autoresearch pipeline.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1667,
+      "height": 1002,
+      "note": "Figure 2: Simulation reconstruction, capability discovery and few-trial physical toolbox repair form the two-stage robot autoresearch pipeline."
+    }
+  },
+  "racap": {
+    "policy": {
+      "path": "/images/catalog/racap-policy.webp",
+      "original": "https://arxiv.org/html/2609.29394v1/RACaP_Figure1_editable.png",
+      "page": "https://arxiv.org/abs/2609.29394",
+      "credit": "RACaP authors",
+      "alt": "Figure 1: Separates curriculum-driven robot-API evolution from a frozen runtime hierarchy that reasons over tasks, transports and local execution feedback.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1915,
+      "height": 1258,
+      "note": "Figure 1: Separates curriculum-driven robot-API evolution from a frozen runtime hierarchy that reasons over tasks, transports and local execution feedback."
+    }
+  },
+  "rpg": {
+    "policy": {
+      "path": "/images/catalog/rpg-policy.webp",
+      "original": "https://arxiv.org/html/2610.02204v1/pipeline-0930.png",
+      "page": "https://arxiv.org/abs/2610.02204",
+      "credit": "Reconstruct, Practice, Go Real (RPG) authors",
+      "alt": "Figure 2: Uses dataset-derived practice tasks, privileged simulator comparison and video analysis to improve a reusable symbolic robot-skill system before physical deployment.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1993,
+      "height": 906,
+      "note": "Figure 2: Uses dataset-derived practice tasks, privileged simulator comparison and video analysis to improve a reusable symbolic robot-skill system before physical deployment."
+    }
+  },
+  "scale-selection": {
+    "policy": {
+      "path": "/images/catalog/scale-selection-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.39304#page=2",
+      "page": "https://arxiv.org/abs/2609.39304",
+      "credit": "Scale and Selection: Harness Evolution authors",
+      "alt": "Figure 1: Panels (a) and (b) show the visual-interface controller and champion–challenger harness-evolution loop. The PDF is required because raster subimages alone omit the surrounding vector pipeline.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1641,
+      "height": 867,
+      "note": "Figure 1: Panels (a) and (b) show the visual-interface controller and champion–challenger harness-evolution loop. The PDF is required because raster subimages alone omit the surrounding vector pipeline. Extracted from PDF page 2, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "robo-cop": {
+    "policy": {
+      "path": "/images/catalog/robo-cop-policy.webp",
+      "original": "https://arxiv.org/html/2610.09228v1/figures/method.png",
+      "page": "https://arxiv.org/abs/2610.09228",
+      "credit": "Robo-COP authors",
+      "alt": "Figure 2: Co-evolves a robot orchestrator and learned policy by selectively collecting skill-level data, training candidates and verifying whether to deploy them.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1050,
+      "note": "Figure 2: Co-evolves a robot orchestrator and learned policy by selectively collecting skill-level data, training candidates and verifying whether to deploy them."
+    }
+  },
+  "find": {
+    "policy": {
+      "path": "/images/catalog/find-policy.webp",
+      "original": "https://arxiv.org/html/2609.32069v2/find-overview.png",
+      "page": "https://arxiv.org/abs/2609.32069",
+      "credit": "FIND authors",
+      "alt": "Figure 1: Runs real-world policy improvement in a persistent workspace by choosing feasible weak tasks and evaluating outcomes from before / after images.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 855,
+      "height": 340,
+      "note": "Figure 1: Runs real-world policy improvement in a persistent workspace by choosing feasible weak tasks and evaluating outcomes from before / after images."
+    }
+  },
+  "cwm-rsi": {
+    "policy": {
+      "path": "/images/catalog/cwm-rsi-policy.webp",
+      "original": "https://arxiv.org/html/2607.28251v2/figure1_risk_score.png",
+      "page": "https://arxiv.org/abs/2607.28251",
+      "credit": "Criticality World Model RSI authors",
+      "alt": "Figure 1: Targets risky scenarios with a learned criticality model, then trains and selectively deploys specialist robot policies.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1393,
+      "height": 731,
+      "note": "Figure 1: Targets risky scenarios with a learned criticality model, then trains and selectively deploys specialist robot policies."
+    }
+  },
+  "appl": {
+    "policy": {
+      "path": "/images/catalog/appl-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.35690#page=2",
+      "page": "https://arxiv.org/abs/2609.35690",
+      "credit": "Agent Priors-guided Policy Learning (APPL) authors",
+      "alt": "Figure 1: Construction, documented skill priors and runtime composition form the complete policy-learning and execution pipeline. The PDF is required because raster subimages alone omit the surrounding vector pipeline.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1400,
+      "height": 713,
+      "note": "Figure 1: Construction, documented skill priors and runtime composition form the complete policy-learning and execution pipeline. The PDF is required because raster subimages alone omit the surrounding vector pipeline. Extracted from PDF page 2, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "hero": {
+    "policy": {
+      "path": "/images/catalog/hero-policy.webp",
+      "original": "https://arxiv.org/pdf/2607.26809#page=1",
+      "page": "https://arxiv.org/abs/2607.26809",
+      "credit": "HERO authors",
+      "alt": "Figure 1: the HERO hierarchy connects heuristic reasoning, successful exemplars and learned visuomotor reflex policies.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1691,
+      "height": 614,
+      "note": "Figure 1: the HERO hierarchy connects heuristic reasoning, successful exemplars and learned visuomotor reflex policies. Extracted from PDF page 1, cropped to the actual diagram and excluding body text / caption."
+    }
+  },
+  "robofoundry": {
+    "policy": {
+      "path": "/images/catalog/robofoundry-policy.webp",
+      "original": "https://arxiv.org/html/2609.32862v1/robo_model.png",
+      "page": "https://arxiv.org/abs/2609.32862",
+      "credit": "RoboFoundry authors",
+      "alt": "Figure 2: Evolves an executable system of context, memory, hierarchical skills and recovery routines while binding skills to different robot embodiments.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 1317,
+      "note": "Figure 2: Evolves an executable system of context, memory, hierarchical skills and recovery routines while binding skills to different robot embodiments."
+    }
+  },
+  "adahvla": {
+    "policy": {
+      "path": "/images/catalog/adahvla-policy.webp",
+      "original": "https://arxiv.org/html/2609.29204v1/overview.png",
+      "page": "https://arxiv.org/abs/2609.29204",
+      "credit": "AdaHVLA authors",
+      "alt": "Figure 2: Adapts an executable harness around frozen robot / navigation policies through isolated analysis, revision and assessment contexts.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1187,
+      "height": 759,
+      "note": "Figure 2: Adapts an executable harness around frozen robot / navigation policies through isolated analysis, revision and assessment contexts."
+    }
+  },
+  "harnesspai": {
+    "policy": {
+      "path": "/images/catalog/harnesspai-policy.webp",
+      "original": "https://arxiv.org/html/2609.29166v1/images/framework/framework.png",
+      "page": "https://arxiv.org/abs/2609.29166",
+      "credit": "HarnessPAI authors",
+      "alt": "Figure 8: Task, skill and executable-code memories surround a planner that invokes perception, control and action-model primitives.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2200,
+      "height": 702,
+      "note": "Figure 8: Task, skill and executable-code memories surround a planner that invokes perception, control and action-model primitives."
+    }
+  },
+  "agentic-robotics-loop": {
+    "policy": {
+      "path": "/images/catalog/agentic-robotics-loop-policy.webp",
+      "original": "https://arxiv.org/html/2608.07555v1/agenticrobotics_pipeline.png",
+      "page": "https://arxiv.org/abs/2608.07555",
+      "credit": "AgenticRobotics authors",
+      "alt": "Figure 1: Uses an LLM control plane, disposable workers and durable experiment transactions to automate reproducible robot-policy screening and improvement campaigns.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1672,
+      "height": 941,
+      "note": "Figure 1: Uses an LLM control plane, disposable workers and durable experiment transactions to automate reproducible robot-policy screening and improvement campaigns."
+    }
+  },
+  "sensenova-roborsi": {
+    "policy": {
+      "path": "/images/catalog/sensenova-roborsi-policy.webp",
+      "original": "https://raw.githubusercontent.com/OpenSenseNova/SenseNova-RoboRSI/main/assets/sensenova-roborsi-overview-en.webp",
+      "page": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+      "credit": "SenseNova-RoboRSI authors",
+      "alt": "Official runtime overview shows model / skill interfaces, benchmark execution, trace collection and recursive harness improvement.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1426,
+      "height": 1084,
+      "note": "Official runtime overview shows model / skill interfaces, benchmark execution, trace collection and recursive harness improvement."
+    }
+  },
+  "physicalrsi": {
+    "policy": {
+      "path": "/images/catalog/physicalrsi-policy.webp",
+      "original": "https://yanming03.github.io/PhysicalRSI/v2/#architecture-explainer",
+      "page": "https://yanming03.github.io/PhysicalRSI/v2/",
+      "credit": "PhysicalRSI authors",
+      "alt": "The official HTML architecture canvas shows evidence-driven harness revision, skill routing and the physical execution loop.",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1797,
+      "height": 1145,
+      "note": "Official HTML architecture canvas: rollout evidence guides harness revision; skill routing connects observations and episode state to code / VLA execution. Captured from the original rendered architecture canvas, excluding website navigation; no figure elements were reconstructed."
     }
   }
 }

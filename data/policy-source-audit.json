@@ -1,0 +1,931 @@
+{
+  "reviewed": "2026-10-17",
+  "sources": [
+    {
+      "id": "robotwin2-paper",
+      "benchmarkId": "robotwin2",
+      "label": "RoboTwin 2.0 paper policy comparison",
+      "url": "https://arxiv.org/abs/2506.18088",
+      "kind": "paper-baselines",
+      "scope": "Section 4.5: 5 policies on 50 tasks, Aloha-AgileX, 50 clean demonstrations/task, clean/randomized evaluation. Separate data-generation LLMs are outside this policy roster.",
+      "entries": [
+        {
+          "name": "ACT",
+          "workId": "act"
+        },
+        {
+          "name": "DP",
+          "workId": "dp"
+        },
+        {
+          "name": "DP3",
+          "workId": "dp3"
+        },
+        {
+          "name": "RDT",
+          "workId": "rdt"
+        },
+        {
+          "name": "π0",
+          "workId": "pi0"
+        }
+      ]
+    },
+    {
+      "id": "robotwin2-board-cotrain",
+      "benchmarkId": "robotwin2",
+      "label": "RoboTwin2 leaderboard: joint 50-task",
+      "url": "https://robotwin-platform.github.io/data/robotwin_leaderboard.json",
+      "kind": "leaderboard",
+      "scope": "Official snapshot updated 2026-10-11; Aloha-AgileX, 2,500 clean demos, 100 trials/task in clean/randomized settings; one checkpoint jointly trained on 50 tasks.",
+      "entries": [
+        {
+          "name": "GigaBrain-0.7",
+          "workId": "gigabrain07"
+        },
+        {
+          "name": "π0.5",
+          "workId": "pi05"
+        },
+        {
+          "name": "X-WAM",
+          "workId": "x-wam"
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "Xiaomi Robotics-0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "EventVLA",
+          "workId": "eventvla"
+        },
+        {
+          "name": "AHA-WAM",
+          "workId": "aha-wam"
+        },
+        {
+          "name": "FastWAM",
+          "workId": "fast-wam"
+        },
+        {
+          "name": "Spatial Forcing",
+          "workId": "spatial-forcing"
+        },
+        {
+          "name": "starVLA",
+          "workId": "starvla",
+          "note": "Family / codebase label; exact head/checkpoint is not specified by this board alias."
+        },
+        {
+          "name": "Abot-M0",
+          "workId": "abot-m0"
+        },
+        {
+          "name": "GalaxeaVLA",
+          "workId": "galaxea-g0"
+        },
+        {
+          "name": "4D-WAM",
+          "workId": "4d-wam"
+        },
+        {
+          "name": "OLA-Geo",
+          "note": "Unresolved: official board identifies this submission name, but an unambiguous primary paper / author repository was not located; no model identity inferred from the name."
+        },
+        {
+          "name": "UniWAM",
+          "workId": "uniwam"
+        },
+        {
+          "name": "ME-Dex-1.0",
+          "workId": "me-dex-1"
+        },
+        {
+          "name": "WorldScape Policy 2.0",
+          "workId": "worldscape-policy2"
+        },
+        {
+          "name": "PatchWAM",
+          "workId": "patchwam"
+        },
+        {
+          "name": "Discrete Forcing",
+          "workId": "discrete-forcing"
+        },
+        {
+          "name": "ViGAR",
+          "workId": "vigar"
+        }
+      ]
+    },
+    {
+      "id": "robotwin2-board-sft",
+      "benchmarkId": "robotwin2",
+      "label": "RoboTwin2 leaderboard: single-task",
+      "url": "https://robotwin-platform.github.io/data/robotwin_leaderboard.json",
+      "kind": "leaderboard",
+      "scope": "Official snapshot updated 2026-10-11; Aloha-AgileX, 2,500 clean demos, 100 trials/task in clean/randomized settings; separate checkpoint fine-tuned per task.",
+      "entries": [
+        {
+          "name": "RDT",
+          "workId": "rdt"
+        },
+        {
+          "name": "π0",
+          "workId": "pi0"
+        },
+        {
+          "name": "ACT",
+          "workId": "act"
+        },
+        {
+          "name": "DP",
+          "workId": "dp"
+        },
+        {
+          "name": "DP3",
+          "workId": "dp3"
+        }
+      ]
+    },
+    {
+      "id": "robodojo-paper-sim",
+      "benchmarkId": "robodojo",
+      "label": "RoboDojo paper: simulation baselines",
+      "url": "https://arxiv.org/abs/2607.04434",
+      "kind": "paper-baselines",
+      "scope": "Table 1 frozen paper snapshot (July 3 cutoff), 42 tasks and five capability dimensions; per-task success / continuous score. HumanExpert reference excluded from model count.",
+      "entries": [
+        {
+          "name": "Hy-Embodied-0.5-VLA",
+          "workId": "hy-embodied05"
+        },
+        {
+          "name": "Spatial Forcing",
+          "workId": "spatial-forcing"
+        },
+        {
+          "name": "Pi-05",
+          "workId": "pi05"
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "X-WAM",
+          "workId": "x-wam"
+        },
+        {
+          "name": "Xiaomi-Robotics-0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "StarVLA-α",
+          "workId": "starvla-alpha"
+        },
+        {
+          "name": "GigaWorld-Policy",
+          "workId": "gigaworld-policy"
+        },
+        {
+          "name": "GalaxeaVLA (G0)",
+          "workId": "galaxea-g0",
+          "note": "Original G0 family; RoboDojo paper recipe uses a G0Plus-3B checkpoint, not a claim that all G0 assets are equivalent."
+        },
+        {
+          "name": "LingBot-VLA",
+          "workId": "lingbot-vla"
+        },
+        {
+          "name": "EventVLA",
+          "workId": "eventvla"
+        },
+        {
+          "name": "AHA-WAM",
+          "workId": "aha-wam"
+        },
+        {
+          "name": "ABot-M0",
+          "workId": "abot-m0"
+        },
+        {
+          "name": "Fast-WAM",
+          "workId": "fast-wam"
+        },
+        {
+          "name": "Pi-0",
+          "workId": "pi0"
+        },
+        {
+          "name": "GROOT-N1.7",
+          "workId": "grootn17"
+        },
+        {
+          "name": "InternVLA-A1",
+          "workId": "internvla-a1"
+        },
+        {
+          "name": "SmolVLA (Single Task)",
+          "workId": "smolvla",
+          "note": "Per-task fine-tuned checkpoint setting, not an independent paper."
+        },
+        {
+          "name": "LDA-1B",
+          "workId": "lda1b"
+        },
+        {
+          "name": "MolmoAct2",
+          "workId": "molmoact2"
+        },
+        {
+          "name": "GO-1",
+          "workId": "go1"
+        },
+        {
+          "name": "ACT (Single Task)",
+          "workId": "act",
+          "note": "Per-task trained checkpoint setting, not an independent paper."
+        },
+        {
+          "name": "H-RDT",
+          "workId": "h-rdt"
+        },
+        {
+          "name": "RDT-1B",
+          "workId": "rdt"
+        },
+        {
+          "name": "DM0",
+          "workId": "dm0"
+        },
+        {
+          "name": "Dexora-1B",
+          "workId": "dexora"
+        },
+        {
+          "name": "A1",
+          "workId": "a1"
+        },
+        {
+          "name": "Spirit v1.5",
+          "workId": "spirit-v15"
+        },
+        {
+          "name": "TinyVLA",
+          "workId": "tinyvla"
+        },
+        {
+          "name": "OpenVLA-OFT",
+          "workId": "oft"
+        }
+      ]
+    },
+    {
+      "id": "robodojo-paper-real",
+      "benchmarkId": "robodojo",
+      "label": "RoboDojo paper: real-robot baselines",
+      "url": "https://arxiv.org/abs/2607.04434",
+      "kind": "paper-baselines",
+      "scope": "Real evaluation: 10 policies, 18 tasks across ARX X5, Piper, PiperX, 10 trials/task/robot setting; full paper protocol rather than later live board.",
+      "entries": [
+        {
+          "name": "Pi-05",
+          "workId": "pi05"
+        },
+        {
+          "name": "InternVLA-A1",
+          "workId": "internvla-a1"
+        },
+        {
+          "name": "GalaxeaVLA (G0)",
+          "workId": "galaxea-g0",
+          "note": "Original G0 family; RoboDojo paper recipe uses a G0Plus-3B checkpoint, not a claim that all G0 assets are equivalent."
+        },
+        {
+          "name": "Xiaomi-Robotics-0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "GROOT-N1.7",
+          "workId": "grootn17"
+        },
+        {
+          "name": "Pi-0",
+          "workId": "pi0"
+        },
+        {
+          "name": "StarVLA-α",
+          "workId": "starvla-alpha"
+        },
+        {
+          "name": "Spirit v1.5",
+          "workId": "spirit-v15"
+        },
+        {
+          "name": "DM0",
+          "workId": "dm0"
+        }
+      ]
+    },
+    {
+      "id": "robodojo-board-sim",
+      "benchmarkId": "robodojo",
+      "label": "RoboDojo live leaderboard: simulation",
+      "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+      "kind": "leaderboard",
+      "scope": "Official generated-data snapshot updated 2026-10-14. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
+      "entries": [
+        {
+          "name": "EmbodiedEvo",
+          "workId": "embodiedevo"
+        },
+        {
+          "name": "VPP2",
+          "workId": "vpp2",
+          "note": "Final-name leaderboard asset; do not merge its score with VPP2-Preview."
+        },
+        {
+          "name": "PhysicalRSI",
+          "workId": "physicalrsi"
+        },
+        {
+          "name": "Awomo-0.5",
+          "workId": "awomo05",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "Simate-beta",
+          "workId": "simate-beta",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "Rex-M1 Preview",
+          "note": "Unresolved: preview submission identified by the official board; a matching primary technical report and released model architecture were not verified."
+        },
+        {
+          "name": "VPP2-Preview",
+          "workId": "vpp2",
+          "note": "Preview leaderboard asset associated with VPP2; retain its own score and checkpoint scope."
+        },
+        {
+          "name": "InternW0-Δ",
+          "workId": "internw0-delta"
+        },
+        {
+          "name": "Liber-0 Preview",
+          "note": "Unresolved: preview leaderboard asset; no primary technical report establishing identity relative to Liber0-Lite was verified."
+        },
+        {
+          "name": "Liber-0 Lite",
+          "workId": "liber0-lite",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "GPT-6-Astra",
+          "workId": "roboprobe",
+          "note": "RoboProbe frozen API policy under Direct-EEF action interface; model variant is part of the experimental setting."
+        },
+        {
+          "name": "DM0.5",
+          "workId": "dm05"
+        },
+        {
+          "name": "ME-Brain-1.0",
+          "workId": "me-brain-1"
+        },
+        {
+          "name": "GalaxeaVLA (G0.5)",
+          "workId": "galaxea-g05",
+          "note": "Distinct G0.5 technical report / checkpoint generation."
+        },
+        {
+          "name": "Xiaomi-Robotics-1",
+          "workId": "xiaomi1"
+        },
+        {
+          "name": "MachEmbodied-U0",
+          "workId": "me-u0"
+        },
+        {
+          "name": "OpenWAM-α",
+          "workId": "openwam"
+        },
+        {
+          "name": "Meituan-Robotics-0",
+          "workId": "starvla",
+          "note": "Evaluation-only StarVLA-family checkpoint (Qwen3.5-4B / MMDiT-Psi0); no distinct paper released in adapter. Mapping describes implementation lineage, not identical weights/scores."
+        },
+        {
+          "name": "HWM-CogWAM",
+          "workId": "cogwam"
+        },
+        {
+          "name": "Hy-Embodied-0.5-VLA",
+          "workId": "hy-embodied05"
+        },
+        {
+          "name": "KinRT",
+          "workId": "kinrt"
+        },
+        {
+          "name": "SimpleMemVLA",
+          "workId": "simplememvla"
+        },
+        {
+          "name": "Spatial Forcing",
+          "workId": "spatial-forcing"
+        },
+        {
+          "name": "Pi-05",
+          "workId": "pi05"
+        },
+        {
+          "name": "InternVLA-A1.5",
+          "workId": "internvla-a15"
+        },
+        {
+          "name": "StarVLA-PI_v3",
+          "workId": "starvla",
+          "note": "Named StarVLA configuration; share codebase identity while retaining distinct head/checkpoint and evaluated score."
+        },
+        {
+          "name": "VLAct",
+          "workId": "vlact",
+          "note": "Resolved official StarVLA team paper2608.27550 with released backbone and attached executable policies; distinct from VLAC action-critic."
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "MolmoAct2",
+          "workId": "molmoact2"
+        },
+        {
+          "name": "StarVLA-GR00T",
+          "workId": "starvla",
+          "note": "Named StarVLA configuration; share codebase identity while retaining distinct head/checkpoint and evaluated score."
+        },
+        {
+          "name": "StarVLA-OFT",
+          "workId": "starvla",
+          "note": "Named StarVLA configuration; share codebase identity while retaining distinct head/checkpoint and evaluated score."
+        },
+        {
+          "name": "X-WAM",
+          "workId": "x-wam"
+        },
+        {
+          "name": "Xiaomi-Robotics-0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "StarVLA",
+          "workId": "starvla",
+          "note": "Family / codebase label. α, OFT, GR00T and PI configurations have distinct recipes and scores; exact leaderboard head is not inferred where unspecified."
+        },
+        {
+          "name": "GigaWorld-Policy-0",
+          "workId": "gigaworld-policy",
+          "note": "Original GigaWorld-Policy family; distinct from GigaWorld-Policy-0.5 release."
+        },
+        {
+          "name": "GalaxeaVLA (G0)",
+          "workId": "galaxea-g0",
+          "note": "Original G0 family; RoboDojo paper recipe uses a G0Plus-3B checkpoint, not a claim that all G0 assets are equivalent."
+        },
+        {
+          "name": "LingBot-VLA",
+          "workId": "lingbot-vla"
+        },
+        {
+          "name": "EventVLA",
+          "workId": "eventvla"
+        },
+        {
+          "name": "AHA-WAM",
+          "workId": "aha-wam"
+        },
+        {
+          "name": "ABot-M0",
+          "workId": "abot-m0"
+        },
+        {
+          "name": "Fast-WAM",
+          "workId": "fast-wam"
+        },
+        {
+          "name": "Pi-0",
+          "workId": "pi0"
+        },
+        {
+          "name": "DeepSeek-Flash",
+          "workId": "roboprobe",
+          "note": "RoboProbe baseline API-model variant under the same Direct-EEF interface; distinct from a learned VLA checkpoint."
+        },
+        {
+          "name": "GROOT-N1.7",
+          "workId": "grootn17"
+        },
+        {
+          "name": "InternVLA-A1",
+          "workId": "internvla-a1"
+        },
+        {
+          "name": "SmolVLA (Single Task)",
+          "workId": "smolvla",
+          "note": "Per-task fine-tuned checkpoint setting, not an independent paper."
+        },
+        {
+          "name": "LDA-1B",
+          "workId": "lda1b"
+        },
+        {
+          "name": "GPT-5.5",
+          "workId": "roboprobe",
+          "note": "RoboProbe baseline API-model variant evaluated with the same Direct-EEF interface; no separate robotics paper inferred."
+        },
+        {
+          "name": "ACT (Single Task)",
+          "workId": "act",
+          "note": "Per-task trained checkpoint setting, not an independent paper."
+        },
+        {
+          "name": "GO-1",
+          "workId": "go1"
+        },
+        {
+          "name": "H-RDT",
+          "workId": "h-rdt"
+        },
+        {
+          "name": "RDT",
+          "workId": "rdt"
+        },
+        {
+          "name": "DM0",
+          "workId": "dm0"
+        },
+        {
+          "name": "Dexora-1B",
+          "workId": "dexora"
+        },
+        {
+          "name": "A1",
+          "workId": "a1"
+        },
+        {
+          "name": "Spirit v1.5",
+          "workId": "spirit-v15"
+        },
+        {
+          "name": "TinyVLA",
+          "workId": "tinyvla"
+        },
+        {
+          "name": "OpenVLA-OFT",
+          "workId": "oft"
+        }
+      ]
+    },
+    {
+      "id": "robodojo-board-realworld",
+      "benchmarkId": "robodojo",
+      "label": "RoboDojo live leaderboard: real robots",
+      "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+      "kind": "leaderboard",
+      "scope": "Official generated-data snapshot updated 2026-10-14. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
+      "entries": [
+        {
+          "name": "OpenWAM-α",
+          "workId": "openwam"
+        },
+        {
+          "name": "Pi-05",
+          "workId": "pi05"
+        },
+        {
+          "name": "InternVLA-A1",
+          "workId": "internvla-a1"
+        },
+        {
+          "name": "GalaxeaVLA (G0)",
+          "workId": "galaxea-g0",
+          "note": "Original G0 family; RoboDojo paper recipe uses a G0Plus-3B checkpoint, not a claim that all G0 assets are equivalent."
+        },
+        {
+          "name": "Xiaomi-Robotics-0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "GROOT-N1.7",
+          "workId": "grootn17"
+        },
+        {
+          "name": "Pi-0",
+          "workId": "pi0"
+        },
+        {
+          "name": "StarVLA",
+          "workId": "starvla",
+          "note": "Family / codebase label. α, OFT, GR00T and PI configurations have distinct recipes and scores; exact leaderboard head is not inferred where unspecified."
+        },
+        {
+          "name": "Spirit v1.5",
+          "workId": "spirit-v15"
+        },
+        {
+          "name": "DM0",
+          "workId": "dm0"
+        }
+      ]
+    },
+    {
+      "id": "xpolicylab-registry",
+      "benchmarkId": "robodojo",
+      "label": "XPolicyLab integrated adapter registry",
+      "url": "https://github.com/XPolicyLab/XPolicyLab",
+      "kind": "adapter-registry",
+      "scope": "63 integrated policy adapters as of October2026; integration/serving availability only, not evidence that all adapters were evaluated on RoboTwin or RoboDojo. demo_policy scaffold excluded.",
+      "entries": [
+        {
+          "name": "Mem-0",
+          "workId": "rmbench",
+          "note": "Learned reference policy introduced by RMBench; one cross-listed benchmark/policy work, with separate retrained July checkpoints."
+        },
+        {
+          "name": "StarVLA",
+          "workId": "starvla",
+          "note": "Family / codebase label. α, OFT, GR00T and PI configurations have distinct recipes and scores; exact leaderboard head is not inferred where unspecified."
+        },
+        {
+          "name": "A1",
+          "workId": "a1"
+        },
+        {
+          "name": "AHA-WAM",
+          "workId": "aha-wam"
+        },
+        {
+          "name": "ABot-M0",
+          "workId": "abot-m0"
+        },
+        {
+          "name": "Being-H05",
+          "workId": "being-h05"
+        },
+        {
+          "name": "DM0",
+          "workId": "dm0"
+        },
+        {
+          "name": "Dexora-1B",
+          "workId": "dexora"
+        },
+        {
+          "name": "DreamZero",
+          "workId": "dreamzero"
+        },
+        {
+          "name": "EventVLA",
+          "workId": "eventvla"
+        },
+        {
+          "name": "FastWAM",
+          "workId": "fast-wam"
+        },
+        {
+          "name": "G0",
+          "workId": "galaxea-g0"
+        },
+        {
+          "name": "G0.5",
+          "workId": "galaxea-g05"
+        },
+        {
+          "name": "GO-1",
+          "workId": "go1"
+        },
+        {
+          "name": "GR00T-N1.7",
+          "workId": "grootn17"
+        },
+        {
+          "name": "GigaWorld-Policy",
+          "workId": "gigaworld-policy"
+        },
+        {
+          "name": "H-RDT",
+          "workId": "h-rdt"
+        },
+        {
+          "name": "Hy-Embodied-0.5-VLA",
+          "workId": "hy-embodied05"
+        },
+        {
+          "name": "InternVLA-A1",
+          "workId": "internvla-a1"
+        },
+        {
+          "name": "InternVLA-A1.5",
+          "workId": "internvla-a15"
+        },
+        {
+          "name": "LDA-1B",
+          "workId": "lda1b"
+        },
+        {
+          "name": "LingBot-VA",
+          "workId": "lingbot-va"
+        },
+        {
+          "name": "LingBot-VLA",
+          "workId": "lingbot-vla"
+        },
+        {
+          "name": "Meituan-Robotics-0",
+          "workId": "starvla",
+          "note": "Evaluation-only StarVLA-family checkpoint (Qwen3.5-4B / MMDiT-Psi0); no distinct paper released in adapter. Mapping describes implementation lineage, not identical weights/scores."
+        },
+        {
+          "name": "MolmoAct2",
+          "workId": "molmoact2"
+        },
+        {
+          "name": "OLA-SEM",
+          "workId": "uniwam",
+          "note": "Official RoboTwin news (2026-10-10) renames OLA-Sem to UniWAM; this is an alias, not a second paper."
+        },
+        {
+          "name": "OpenDM",
+          "workId": "dm05"
+        },
+        {
+          "name": "OpenVLA-OFT",
+          "workId": "oft"
+        },
+        {
+          "name": "OpenWAM",
+          "workId": "openwam"
+        },
+        {
+          "name": "π0",
+          "workId": "pi0"
+        },
+        {
+          "name": "π0.5",
+          "workId": "pi05"
+        },
+        {
+          "name": "π0-Fast",
+          "workId": "pifast"
+        },
+        {
+          "name": "RDT-1B",
+          "workId": "rdt"
+        },
+        {
+          "name": "RISE",
+          "workId": "rise-opendrivelab",
+          "note": "OpenDriveLab self-improving policy2602.11075; distinct from the RGB-D RISE2404.12281 work."
+        },
+        {
+          "name": "SmolVLA",
+          "workId": "smolvla"
+        },
+        {
+          "name": "Spatial Forcing",
+          "workId": "spatial-forcing"
+        },
+        {
+          "name": "Spirit v1.5",
+          "workId": "spirit-v15"
+        },
+        {
+          "name": "TinyVLA",
+          "workId": "tinyvla"
+        },
+        {
+          "name": "X-VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "X-WAM",
+          "workId": "x-wam"
+        },
+        {
+          "name": "Xiaomi-Robotics-0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "Xiaomi-Robotics-1 (XR-1)",
+          "workId": "xiaomi1"
+        },
+        {
+          "name": "ACT",
+          "workId": "act"
+        },
+        {
+          "name": "DP",
+          "workId": "dp"
+        },
+        {
+          "name": "Evo-1",
+          "workId": "evo1"
+        },
+        {
+          "name": "InternW0_delta",
+          "workId": "internw0-delta"
+        },
+        {
+          "name": "KinRT",
+          "workId": "kinrt"
+        },
+        {
+          "name": "PatchWAM-Lite",
+          "workId": "patchwam",
+          "note": "Integrated Lite checkpoint/configuration; shares the PatchWAM paper identity, not necessarily the full model cost."
+        },
+        {
+          "name": "Awomo-0.5",
+          "workId": "awomo05",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "MoPA",
+          "workId": "mopa"
+        },
+        {
+          "name": "PhysicalRSI",
+          "workId": "physicalrsi"
+        },
+        {
+          "name": "Simate-beta",
+          "workId": "simate-beta",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "SimpleMemVLA",
+          "workId": "simplememvla"
+        },
+        {
+          "name": "WorldScape Policy 2.0",
+          "workId": "worldscape-policy2"
+        },
+        {
+          "name": "GPT-6-Astra-Direct-EEF",
+          "workId": "roboprobe",
+          "note": "RoboProbe frozen API policy with Direct-EEF interface and local Cartesian planner."
+        },
+        {
+          "name": "VPP2",
+          "workId": "vpp2",
+          "note": "Final-name leaderboard asset; do not merge its score with VPP2-Preview."
+        },
+        {
+          "name": "Liber_0_lite",
+          "workId": "liber0-lite",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "Discrete Forcing",
+          "workId": "discrete-forcing"
+        },
+        {
+          "name": "EgoVLA",
+          "workId": "egovla"
+        },
+        {
+          "name": "MM-ABC",
+          "workId": "mm-abc",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "HWM-CogWAM",
+          "workId": "cogwam"
+        },
+        {
+          "name": "ME-Brain-1.0",
+          "workId": "me-brain-1"
+        },
+        {
+          "name": "ME-U0",
+          "workId": "me-u0"
+        }
+      ]
+    }
+  ]
+}

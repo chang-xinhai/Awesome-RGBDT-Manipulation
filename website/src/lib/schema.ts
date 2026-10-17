@@ -114,6 +114,12 @@ export const CATEGORIES: Record<
         "Visual precision policies, reinforcement learning and policy refinement.",
     },
     {
+      id: "agent-rsi-icl",
+      label: "Agent / RSI / ICL",
+      description:
+        "Robot agents, recursive or feedback-driven self-improvement, and in-context adaptation. Each record identifies what changes and how robot actions are executed.",
+    },
+    {
       id: "generalist-foundation",
       label: "Generalist foundations",
       description:
@@ -183,3 +189,21 @@ export const summaryFor = (w: Work, c: Collection) =>
   c === "policy"
     ? w.policySummary || w.summary
     : w.benchmarkSummary || w.summary;
+
+// Artifact presentation must not depend on JSON key insertion order.
+export const ARTIFACT_ORDER = [
+  "paper",
+  "project",
+  "code",
+  "data",
+  "weights",
+] as const;
+export function artifactLinks(links: Record<string, string>) {
+  const rank = (key: string) => {
+    const index = (ARTIFACT_ORDER as readonly string[]).indexOf(key);
+    return index < 0 ? ARTIFACT_ORDER.length : index;
+  };
+  return Object.entries(links)
+    .filter(([, url]) => !!url)
+    .sort(([a], [b]) => rank(a) - rank(b) || a.localeCompare(b));
+}

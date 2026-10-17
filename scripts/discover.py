@@ -7,6 +7,7 @@ QUERIES=[
  '(cat:cs.RO OR cat:cs.AI) AND (all:tactile OR all:visuotactile OR all:"visuo-tactile")',
  'cat:cs.RO AND (all:"precision manipulation" OR all:"robotic assembly" OR all:"contact-rich" OR all:"3D policy" OR all:"RGB-D")',
  'cat:cs.RO AND (all:"manipulation benchmark" OR all:"world action" OR all:"vision-language-action")',
+ '(cat:cs.RO OR (cat:cs.AI AND all:robot)) AND (all:"robot agent" OR all:"in-context learning" OR all:"self-improving" OR all:"self-evolving" OR all:"recursive self-improvement" OR all:"code as policies")',
 ]
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--since',default=json.loads((R/'data/meta.json').read_text())['reviewed']);p.add_argument('--output',required=True);p.add_argument('--max-results',type=int,default=100);args=p.parse_args()

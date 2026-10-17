@@ -46,6 +46,12 @@ rates and evaluation scope. Distinguish:
 - Policy inference, action throughput, asynchronous sensory updates and
   low-level servo frequency.
 - Full pretraining, downstream fine-tuning and extra adaptation to a variation.
+- In-context demonstrations, within-episode interaction history, transferred
+  memory/code/prompt changes and parameter updates. These mechanisms do not all
+  constitute recursive self-improvement.
+- A base language model and an executable robot-agent configuration. Preserve
+  the model variant, reasoning effort, tool/action interface, supplied skills
+  and adaptation/test protocol when disclosed.
 
 Costs and rates retain experiment qualifiers. Results across different tasks,
 data budgets, controllers and embodiments are not a unified leaderboard.
@@ -73,7 +79,14 @@ relicense those images.
 ## Review and maintenance
 
 Research benchmark and policy families independently, expand through citations
-and official links, and cross-review the merged records. Validate schema,
+and official links, and cross-review the merged records. Audit benchmark paper
+baselines, current leaderboard participants and implementation adapters as
+separate discovery sources. An adapter establishes integration support, not an
+evaluated result. Preserve named aliases and map them to canonical works rather
+than making each checkpoint or recipe a duplicate paper.
+
+Artifact links always follow Paper, Project, Code, Data, then other artifacts;
+the first available artifact is highlighted. Validate schema,
 canonical IDs, publication boundaries, sources, local figure files and generated
 README consistency. Separately verify rendered search/filter/detail/comparison,
 keyboard behavior and desktop/mobile layout. See `COVERAGE.md` for the current

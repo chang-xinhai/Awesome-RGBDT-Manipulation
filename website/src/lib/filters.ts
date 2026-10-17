@@ -92,25 +92,35 @@ export function matches(
     )
   )
     return false;
-  const q = v.query.toLowerCase().trim();
+  const fold = (text: string) =>
+    text
+      .normalize("NFKC")
+      .toLowerCase()
+      .replaceAll("π", "pi")
+      .replace(/[-‐‑–—_/]/g, "");
+  const q = fold(v.query).trim();
   if (q) {
-    const corpus = JSON.stringify([
-      w.name,
-      w.policyName,
-      w.benchmarkName,
-      w.title,
-      w.summary,
-      w.policySummary,
-      w.benchmarkSummary,
-      w.institution,
-      w.categories,
-      w.modalities,
-      w.environments,
-      w.embodiments,
-      w.benchmark,
-      w.policy,
-      w.release,
-    ]).toLowerCase();
+    const corpus = fold(
+      JSON.stringify([
+        w.id,
+        w.name,
+        w.policyName,
+        w.benchmarkName,
+        w.title,
+        w.summary,
+        w.policySummary,
+        w.benchmarkSummary,
+        w.institution,
+        w.categories,
+        w.modalities,
+        w.environments,
+        w.embodiments,
+        w.benchmark,
+        w.policy,
+        w.release,
+        w.caveats,
+      ]),
+    );
     if (!q.split(/\s+/).every((t) => corpus.includes(t))) return false;
   }
   return true;

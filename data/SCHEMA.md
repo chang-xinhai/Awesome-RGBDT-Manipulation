@@ -4,6 +4,13 @@
 record ID to separate `benchmark` and/or `policy` figures. The schema is checked
 by `scripts/validate.py`; the website also has strict TypeScript interfaces.
 
+`policy-source-audit.json` maps benchmark source aliases to canonical policy
+records. Each source has `id`, optional `benchmarkId`, `label`, primary `url`,
+`kind` (`paper-baselines`, `leaderboard`, `adapter-registry`), measurement
+`scope` and `entries`. An entry has its source `name`, resolved `workId` and/or
+a qualifying `note`. An unresolved alias requires a note and does not create
+a speculative policy record. Source alias counts are not unique-paper counts.
+
 Common metadata: `id`, `name`, optional `benchmarkName` / `policyName`, exact
 `title`, first-public `date`, `year`, `collections`, overlapping `categories`,
 `resourceType`, `summary`, optional collection-specific `benchmarkSummary` / `policySummary`, `institution`, `venue`, actual/listed `modalities`,
@@ -17,6 +24,17 @@ Benchmark fields: `simulator`, `simulatorVersion`, `taskCount`, `tasks`,
 Policy fields: `family`, `baseModel`, `modelSize`, `inputs`, `outputs`,
 `trainingMethod`, `trainingData`, `trainingTime`, `trainingHardware`,
 `controlRate`, `evaluation`.
+
+Policy categories include `agent-rsi-icl` for robot agents, feedback-driven
+self-improvement and in-context adaptation. These are overlapping routes:
+in-context examples, persistent code/memory, prompt optimization and gradient
+updates describe different mechanisms. Record the mechanism, deployed action
+interface, adaptation/test split and frozen/trainable components in the policy
+fields and source qualifications; do not equate all agent work with RSI.
+
+Artifact links are presented in this order: `paper`, `project`, `code`, `data`,
+then `weights` and other artifacts. Highlight the first available link. The
+website and generator enforce this independently of JSON key insertion order.
 
 Release fields: `code`, `weights`, `data`, `license`, `notes`. Optional
 `releaseByCollection` preserves differences between a suite and its associated
