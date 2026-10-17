@@ -23915,6 +23915,14 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://arxiv.org/abs/2306.03310",
+        "label": "Original LIBERO demonstration capture",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Primary source for the human SpaceMouse demonstrations inherited by this benchmark; new evaluation configurations are not a new capture interface."
       }
     ],
     "caveats": [
@@ -24387,6 +24395,14 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://arxiv.org/abs/2306.03310",
+        "label": "Original LIBERO demonstration capture",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Primary source for the human SpaceMouse demonstrations inherited by this benchmark; new evaluation configurations are not a new capture interface."
       }
     ],
     "caveats": [

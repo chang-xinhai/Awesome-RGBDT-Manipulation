@@ -60,3 +60,4 @@ LIBERO evaluation extension probing object, position, semantic, task and environ
 3. [Official repository](https://github.com/Zxy-MLlab/LIBERO-PRO) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/Zxy-MLlab/LIBERO-PRO/blob/master/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
 5. [Data collection method and scope](https://arxiv.org/abs/2510.03827) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+6. [Original LIBERO demonstration capture](https://arxiv.org/abs/2306.03310) — Primary source for the human SpaceMouse demonstrations inherited by this benchmark; new evaluation configurations are not a new capture interface.

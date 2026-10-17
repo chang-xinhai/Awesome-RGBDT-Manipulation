@@ -61,3 +61,4 @@ Automated perturbation generation and progressive difficulty for seven robustnes
 2. [Official project](https://sylvestf.github.io/LIBERO-plus/) — Public project page.
 3. [Official repository](https://github.com/sylvestf/LIBERO-plus) — Current public repository; implementation scope may differ from paper.
 4. [Data collection method and scope](https://arxiv.org/abs/2510.13626) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+5. [Original LIBERO demonstration capture](https://arxiv.org/abs/2306.03310) — Primary source for the human SpaceMouse demonstrations inherited by this benchmark; new evaluation configurations are not a new capture interface.
