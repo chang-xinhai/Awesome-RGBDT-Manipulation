@@ -6,7 +6,7 @@ def check(ok,message):
  if not ok:errors.append(message)
 ids=[w['id']for w in works];check(len(ids)==len(set(ids)),'Duplicate canonical work IDs')
 required=['id','name','title','date','year','collections','categories','resourceType','summary','institution','venue','modalities','environments','embodiments','links','release','evidence','caveats','verified']
-fields={'benchmark':['simulator','simulatorVersion','taskCount','tasks','taskListScope','capabilities','metrics','robots','sensors','data','protocol','baselines'],'policy':['family','baseModel','modelSize','inputs','outputs','trainingData','trainingTime','trainingHardware','controlRate','trainingMethod','evaluation']}
+fields={'benchmark':['simulator','simulatorVersion','taskCount','tasks','taskListScope','capabilities','metrics','robots','sensors','dataCollection','data','protocol','baselines'],'policy':['family','baseModel','modelSize','inputs','outputs','trainingData','trainingTime','trainingHardware','controlRate','trainingMethod','evaluation']}
 survey_fields=['scope','taxonomy','adaptationRegimes','contextSources','evaluationAxes','corpus','reviewMethod','coverageLimits']
 cat={'benchmark':{'tactile-benchmarks','precision-assembly','dexterous-benchmarks','general-manipulation','robustness-evaluation','supporting-resources'},'policy':{'tactile-il','tactile-foundation','rgbd-3d','visual-precision-rl','generalist-foundation','agent-rsi-icl','tactile-representation','geometry-models'}}
 knownTypes={'benchmark','policy','dataset','simulator','evaluation-tool','survey','model'}
@@ -32,6 +32,8 @@ for w in works:
  for k,u in w['links'].items():check(bool(re.match('https?://',u)),id+': invalid '+k+' link')
  if w.get('benchmark'):
   check(isinstance(w['benchmark']['tasks'],list),id+': tasks must be a scoped list');check(bool(w['benchmark']['taskListScope']),id+': task list lacks scope')
+  check(isinstance(w['benchmark'].get('dataCollection'),str)and bool(w['benchmark']['dataCollection'].strip()),id+': data collection method must be explicit')
+  check(any('benchmark.dataCollection'in e['fields']for e in w['evidence']),id+': data collection method lacks scoped primary evidence')
  check(not any('propose our' in str(v).lower() for v in w.values()),id+': private planning prose')
  paper=w['links'].get('paper','');arxiv=re.search(r'arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})',paper)
  paper='https://arxiv.org/abs/'+arxiv.group(1)if arxiv else re.sub(r'v\d+$','',paper.replace('/html/','/abs/'))

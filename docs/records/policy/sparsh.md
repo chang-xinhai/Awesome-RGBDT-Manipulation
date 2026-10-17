@@ -52,3 +52,4 @@ Self-supervised optical-touch encoders plus TacBench, a six-task tactile evaluat
 3. [Official repository](https://github.com/facebookresearch/sparsh) — Current public repository; implementation scope may differ from paper.
 4. [Original Sparsh representation and training sections](https://arxiv.org/html/2410.24090#S3) — 460K+ original pretraining corpus; Appendix C specifies eight A100 80GB GPUs. Separate from TacBench labels.
 5. [Repository license](https://github.com/facebookresearch/sparsh/blob/main/LICENSE.md) — CC BY-NC 4.0 license file verified.
+6. [Data collection method and scope](https://arxiv.org/abs/2410.24090) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

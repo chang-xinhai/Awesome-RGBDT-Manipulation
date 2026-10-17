@@ -27,6 +27,7 @@ Dexterous articulated-object manipulation benchmark centered on transfer to unse
 | Metrics | Task success on seen / unseen articulated objects and representation-pretraining ablations. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/)  |
 | Robots | Robot arm with Allegro Hand. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/)  |
 | Sensors and observations | Partial point cloud from depth camera; robot proprioception. Color and optical tactile inputs are not the benchmark focus. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/)  |
+| Data collection method | Online PPO interaction in simulation with point-cloud observations; perception pretraining is a separate stage rather than human demonstrations. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/) [4](https://arxiv.org/abs/2305.05706)  |
 | Demonstrations and data | Articulated object assets, RL vision pretraining resources and policy checkpoints; not a fixed human-demonstration benchmark. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/)  |
 | Evaluation protocol | Train RL on selected object instances; evaluate geometric/kinematic generalization to unseen instances within each family. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/)  |
 | Evaluated baselines | PPO with different 3D representation encoders/pretraining choices. [1](https://arxiv.org/abs/2305.05706) [2](https://www.chenbao.tech/dexart/)  |
@@ -55,3 +56,4 @@ Dexterous articulated-object manipulation benchmark centered on transfer to unse
 1. [Paper](https://arxiv.org/abs/2305.05706) — Published paper / arXiv record and manuscript.
 2. [Official project](https://www.chenbao.tech/dexart/) — Public project page.
 3. [Official repository](https://github.com/Kami-code/dexart-release) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2305.05706) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

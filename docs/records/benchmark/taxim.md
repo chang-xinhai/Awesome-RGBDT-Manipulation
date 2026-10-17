@@ -27,6 +27,7 @@ Calibration-driven optical and marker-motion simulation for GelSight-style tacti
 | Metrics | Image/marker fidelity and computational performance. [1](https://arxiv.org/abs/2109.04027)  |
 | Robots | Not prescribed [1](https://arxiv.org/abs/2109.04027)  |
 | Sensors and observations | GelSight and sensor-specific variations calibrated with example contacts. [1](https://arxiv.org/abs/2109.04027)  |
+| Data collection method | Instrumented real contact calibration fits optical/deformation models; simulated tactile samples are then rendered. No uniform action-policy demonstration corpus. [1](https://arxiv.org/abs/2109.04027) [3](https://arxiv.org/abs/2109.04027)  |
 | Demonstrations and data | Calibration files, object meshes and optical/marker-motion examples. [1](https://arxiv.org/abs/2109.04027)  |
 | Evaluation protocol | Collect calibration contacts, fit optical table and simulate deformation / marker fields under configured contact. [1](https://arxiv.org/abs/2109.04027)  |
 | Evaluated baselines | Sensor-model comparisons; no manipulation-policy baseline. [1](https://arxiv.org/abs/2109.04027)  |
@@ -51,3 +52,4 @@ Task names not reported or not verified in the cited sources.
 
 1. [Paper](https://arxiv.org/abs/2109.04027) — Published paper / arXiv record and manuscript.
 2. [Official repository](https://github.com/Robo-Touch/Taxim) — Current public repository; implementation scope may differ from paper.
+3. [Data collection method and scope](https://arxiv.org/abs/2109.04027) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

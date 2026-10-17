@@ -27,6 +27,7 @@ Gearbox assembly challenge with from-scratch, partial-state continuation and err
 | Metrics | Stage/component completion and final assembly score under simulation/onsite rules. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/)  |
 | Robots | Galaxea R1 Lite physical platform; simulated bimanual assembly setup. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/)  |
 | Sensors and observations | RGB-D / robot state in simulation; physical sensor configuration defined by competition APIs. No optical tactile input established. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/)  |
+| Data collection method | Simulation: automatically generated expert trajectories and released generation scripts. Physical track: robot teleoperation using the R1 Lite interface. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/) [4](https://arxiv.org/abs/2603.15469)  |
 | Demonstrations and data | Simulation successful-attempt trajectories and about 300 hardware demonstrations described by report; exact split depends on stage. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/)  |
 | Evaluation protocol | Online qualification then onsite physical evaluation; varied initial states encode collaboration and recovery; common assembly plan and robot API. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/)  |
 | Evaluated baselines | ACT / diffusion / VLA-style policy baselines and challenge systems; exact table scope in report. [1](https://arxiv.org/abs/2603.15469) [2](https://rocochallenge.github.io/RoCo-AAAI2026/)  |
@@ -55,3 +56,4 @@ Gearbox assembly challenge with from-scratch, partial-state continuation and err
 1. [Paper](https://arxiv.org/abs/2603.15469) — Published paper / arXiv record and manuscript.
 2. [Official project](https://rocochallenge.github.io/RoCo-AAAI2026/) — Public project page.
 3. [Official repository](https://github.com/rocochallenge/gearboxAssembly) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2603.15469) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

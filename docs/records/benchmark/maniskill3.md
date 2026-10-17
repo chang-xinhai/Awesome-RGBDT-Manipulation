@@ -27,6 +27,7 @@ GPU-parallel SAPIEN robotics simulation and learning framework with diverse mani
 | Metrics | Environment-specific success/reward; throughput; policy-learning baselines. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/)  |
 | Robots | Many registered arms, grippers, hands and mobile embodiments. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/)  |
 | Sensors and observations | Selectable RGB, depth, segmentation, point clouds and state; tactile support is extension/task-specific, not universal. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/)  |
+| Data collection method | Task-dependent motion planning, RL rollouts and teleoperation; replay and generation tools support multiple collectors rather than one method for every task. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/) [4](https://arxiv.org/abs/2410.00425)  |
 | Demonstrations and data | Replayable demonstrations and trajectory-generation tools; task-specific datasets rather than one homogeneous corpus. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/)  |
 | Evaluation protocol | Gymnasium-compatible vectorized tasks; state and visual RL / learning-from-demonstrations settings. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/)  |
 | Evaluated baselines | PPO, SAC, behavior cloning, Diffusion Policy and other task-dependent examples. [1](https://arxiv.org/abs/2410.00425) [2](https://maniskill.ai/)  |
@@ -60,3 +61,4 @@ GPU-parallel SAPIEN robotics simulation and learning framework with diverse mani
 1. [Paper](https://arxiv.org/abs/2410.00425) — Published paper / arXiv record and manuscript.
 2. [Official project](https://maniskill.ai/) — Public project page.
 3. [Official repository](https://github.com/mani-skill/ManiSkill) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2410.00425) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

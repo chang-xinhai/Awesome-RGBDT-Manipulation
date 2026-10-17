@@ -27,6 +27,7 @@ Language-conditioned manipulation suites for controlled knowledge-transfer studi
 | Metrics | Success rate and lifelong learning / forward/backward transfer statistics; task-order studies. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/)  |
 | Robots | Franka Panda parallel-jaw manipulator. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/)  |
 | Sensors and observations | Agent-view and wrist RGB, proprioception, language; optional simulator observations must be declared separately. No tactile stream in original suite. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/)  |
+| Data collection method | Human expert teleoperation with a 3Dconnexion SpaceMouse. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/) [5](https://arxiv.org/abs/2306.03310)  |
 | Demonstrations and data | 50 human demonstrations per task in official suite datasets. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/)  |
 | Evaluation protocol | Separate 10-task controlled transfer suites and 100-task diverse set; lifelong task sequences, multitask/pretraining evaluations; versioned init-state sets. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/)  |
 | Evaluated baselines | Sequential / multitask imitation and lifelong-learning methods from original benchmark; later VLA evaluations use distinct recipes. [1](https://arxiv.org/abs/2306.03310) [2](https://libero-project.github.io/)  |
@@ -183,3 +184,4 @@ Language-conditioned manipulation suites for controlled knowledge-transfer studi
 2. [Official project](https://libero-project.github.io/) — Public project page.
 3. [Official repository](https://github.com/Lifelong-Robot-Learning/LIBERO) — Current public repository; implementation scope may differ from paper.
 4. [Official implementation / documentation](https://github.com/Lifelong-Robot-Learning/LIBERO/blob/master/libero/libero/benchmark/libero_suite_task_map.py) — Complete official suite map; counts scoped explicitly.
+5. [Data collection method and scope](https://arxiv.org/abs/2306.03310) — Original data-collection section: 3Dconnexion SpaceMouse; not inferred from another benchmark comparison table.

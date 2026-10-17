@@ -27,6 +27,7 @@ Reproducible physical functional assembly benchmark with procedurally varied 3D-
 | Metrics | Per-primitive success, complete multi-stage success, held-out object/pose generalization. [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/)  |
 | Robots | Franka Panda [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/)  |
 | Sensors and observations | 2 global and 2 wrist RGB-D views; robot state, gripper and force/torque signals in data. [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/)  |
+| Data collection method | SpaceMouse teleoperation commands end-effector motion; selected skill-collection stages are partially scripted to exploit repeatable fixture states. [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/) [4](https://arxiv.org/abs/2401.08553)  |
 | Demonstrations and data | 22,550 expert demonstration trajectories. Single-object tasks last about 20–40 s; complete multi-object assembly can exceed 100 s. [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/)  |
 | Evaluation protocol | Standardized workspace and reset; held-out object variations and board positions; skill-level models can be combined into longer manipulation pipelines. [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/)  |
 | Evaluated baselines | Provided ResNet-based and Transformer-based imitation-learning skill policies. [1](https://arxiv.org/abs/2401.08553) [2](https://functional-manipulation-benchmark.github.io/)  |
@@ -54,3 +55,4 @@ Reproducible physical functional assembly benchmark with procedurally varied 3D-
 1. [Paper](https://arxiv.org/abs/2401.08553) — Published paper / arXiv record and manuscript.
 2. [Official project](https://functional-manipulation-benchmark.github.io/) — Public project page.
 3. [Official repository](https://github.com/rail-berkeley/fmb) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2401.08553) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

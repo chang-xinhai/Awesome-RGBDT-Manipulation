@@ -27,6 +27,7 @@ Contact simulation methods and assembly learning tools with 60 designed part mod
 | Metrics | Simulation speed/contact stability; RL success, policy training time and control comparisons. [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory)  |
 | Robots | Franka Panda [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory)  |
 | Sensors and observations | Robot state and simulated contact information; original policies are not optical-tactile RGBDT policies. [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory)  |
+| Data collection method | PPO interaction in parallel contact simulation; the paper trains assembly policies without human demonstration collection or corrections. [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory) [4](https://arxiv.org/abs/2205.03532)  |
 | Demonstrations and data | 60 CAD/physical part models derived from industrial assembly test components; environment/controller assets rather than a common demonstration corpus. [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory)  |
 | Evaluation protocol | GPU-parallel contact-rich scenes; proof-of-concept PPO policies for nut-and-bolt assembly with alternative controllers. [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory)  |
 | Evaluated baselines | PPO with operational-space, joint-space, force and hybrid controllers. [1](https://arxiv.org/abs/2205.03532) [2](https://sites.google.com/nvidia.com/factory)  |
@@ -55,3 +56,4 @@ Contact simulation methods and assembly learning tools with 60 designed part mod
 1. [Paper](https://arxiv.org/abs/2205.03532) — Published paper / arXiv record and manuscript.
 2. [Official project](https://sites.google.com/nvidia.com/factory) — Public project page.
 3. [Official repository](https://github.com/isaac-sim/IsaacGymEnvs) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2205.03532) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -23,6 +23,7 @@ Dexterous insertion across four arms, two hands and ten geometries, using ideali
 | Metrics | Pose MAE (mm / degrees); insertion success after ≥3.5 cm insertion; failures include dropping or reaching 2,000 timesteps. [1](https://doi.org/10.1109/ACCESS.2026.3709302)  |
 | Robots | Franka Panda, KUKA iiwa, Kinova Gen3, UR5e arms; Allegro and KISTAR hands. [1](https://doi.org/10.1109/ACCESS.2026.3709302)  |
 | Sensors and observations | Idealized six-axis wrist and per-fingertip net wrench; no noise/hysteresis/bandwidth/calibration model; no per-taxel pressure/shear image. [1](https://doi.org/10.1109/ACCESS.2026.3709302)  |
+| Data collection method | Automated state-machine expert sequences in parallel simulation; successful insertion sequences are retained for training. [1](https://doi.org/10.1109/ACCESS.2026.3709302) [2](https://doi.org/10.1109/ACCESS.2026.3709302)  |
 | Demonstrations and data | 80K successful state-machine sequences, 1K per embodiment–shape; 400 parallel environments on one RTX 3090. Post-contact training subsequences average 370 steps. [1](https://doi.org/10.1109/ACCESS.2026.3709302)  |
 | Evaluation protocol | 80/20 train/test for estimator; friction/restitution/compliance/controller randomization; static hand grasp, arm corrects wrist; vision ablations limited to Franka–Allegro. [1](https://doi.org/10.1109/ACCESS.2026.3709302)  |
 | Evaluated baselines | DexPiHNet Transformer; LSTM/temporal learned baselines and classical force-search controllers. [1](https://doi.org/10.1109/ACCESS.2026.3709302)  |
@@ -51,3 +52,4 @@ Dexterous insertion across four arms, two hands and ten geometries, using ideali
 **Primary evidence**
 
 1. [Paper](https://doi.org/10.1109/ACCESS.2026.3709302) — Published paper / arXiv record and manuscript.
+2. [Data collection method and scope](https://doi.org/10.1109/ACCESS.2026.3709302) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -59,3 +59,4 @@ NeoForce learns visual–tactile contact features with force reconstruction and 
 8. [NeoForce MIT license](https://github.com/neoteai/N0-Foundation/blob/main/neoforce/LICENSE)
 9. [NeoSim MIT license](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)
 10. [Root documentation license](https://github.com/neoteai/N0-Foundation/blob/main/LICENSE)
+11. [Data collection method and scope](https://arxiv.org/abs/2608.29601) — NeoSim appendix describes scripted cuRobo collection; NeoData pretraining capture is not treated as the NeoReal task collector.

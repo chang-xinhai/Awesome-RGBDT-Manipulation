@@ -27,6 +27,7 @@ Self-attention and temporal contrastive learning enable one-shot visual imitatio
 | Metrics | Mean and standard deviation of success rate per task. [1](https://arxiv.org/abs/2110.13423)  |
 | Robots | Sawyer demonstrator; Panda policy robot. [1](https://arxiv.org/abs/2110.13423)  |
 | Sensors and observations | RGB rendered images. [1](https://arxiv.org/abs/2110.13423)  |
+| Data collection method | Scripted expert policies generate Sawyer and Panda demonstrations for randomized instances of each task variation. [1](https://arxiv.org/abs/2110.13423) [5](https://arxiv.org/abs/2110.13423)  |
 | Demonstrations and data | 100 Sawyer and 100 Panda scripted demonstrations per variation. [1](https://arxiv.org/abs/2110.13423)  |
 | Evaluation protocol | Single / multi-task training; three converged checkpoints evaluated on 10 random-seed episodes per variation; separate held-out-task and fine-tuning settings. [1](https://arxiv.org/abs/2110.13423)  |
 | Evaluated baselines | DAML, T-OSIL, LSTM, MLP and MOSAIC. [1](https://arxiv.org/abs/2110.13423)  |
@@ -59,3 +60,4 @@ Self-attention and temporal contrastive learning enable one-shot visual imitatio
 2. [Official project](https://sites.google.com/berkeley.edu/mosaic) — Author-linked project and current release checked on the catalog cutoff.
 3. [Repository LICENSE](https://github.com/rll-research/mosaic/blob/HEAD/LICENSE) — Actual license file inspected; code license does not automatically license data or weights.
 4. [Verified official code artifact](https://github.com/rll-research/mosaic) — Author project / repository cross-link verified; current release distinguished from original paper experiments.
+5. [Data collection method and scope](https://arxiv.org/abs/2110.13423) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

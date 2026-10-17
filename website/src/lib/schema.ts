@@ -151,6 +151,7 @@ export const BENCH_FIELDS: [string, string][] = [
   ["metrics", "Evaluation metrics"],
   ["robots", "Robots & embodiments"],
   ["sensors", "Sensors & observations"],
+  ["dataCollection", "Data collection method"],
   ["data", "Demonstrations & data"],
   ["protocol", "Evaluation protocol"],
   ["baselines", "Evaluated baselines"],

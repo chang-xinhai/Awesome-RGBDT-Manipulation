@@ -27,6 +27,7 @@ RL sim-to-real assembly tools combine simulation-aware updates, signed-distance-
 | Metrics | Real/sim insertion success, assembly time, robustness to pose/contact variation. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal)  |
 | Robots | Franka Panda with a parallel gripper and wrist RGB-D camera. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal)  |
 | Sensors and observations | RGB-D perception estimates part pose; low-level policy uses proprioception / estimated target state. Raw images and depth are not necessarily direct actor inputs; no tactile image sensor. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal)  |
+| Data collection method | Online RL interaction in parallel simulation with geometry-based rewards and curricula; no common human-demonstration corpus is required. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal) [4](https://arxiv.org/abs/2305.17110)  |
 | Demonstrations and data | Algorithms, assembly assets, trained RL workflows and real deployment tools; no unified demonstration count. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal)  |
 | Evaluation protocol | Train contact-rich policies in simulation and transfer without physical RL fine-tuning; separate pose-estimation and low-level policy components; 600 physical trials in original report. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal)  |
 | Evaluated baselines | PPO-based IndustReal; curriculum / reward / action-integrator ablations; Franka control comparisons. [1](https://arxiv.org/abs/2305.17110) [2](https://sites.google.com/nvidia.com/industreal)  |
@@ -57,3 +58,4 @@ RL sim-to-real assembly tools combine simulation-aware updates, signed-distance-
 1. [Paper](https://arxiv.org/abs/2305.17110) — Published paper / arXiv record and manuscript.
 2. [Official project](https://sites.google.com/nvidia.com/industreal) — Public project page.
 3. [Official repository](https://github.com/NVlabs/industreallib) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2305.17110) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

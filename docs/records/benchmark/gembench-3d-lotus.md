@@ -27,6 +27,7 @@ Generalization suite built on RLBench, with novel placements, rigid objects, art
 | Metrics | Binary episode success; per-variation average and five-seed mean/standard deviation. [3](https://arxiv.org/html/2410.01345)  |
 | Robots | Franka Panda in RLBench [3](https://arxiv.org/html/2410.01345)  |
 | Sensors and observations | Four 256 × 256 calibrated RGB-D views: front, left shoulder, right shoulder and wrist; robot proprioception. [3](https://arxiv.org/html/2410.01345)  |
+| Data collection method | RLBench-style scripted experts generate demonstrations for the training task variations; collection is separate from held-out evaluation rollouts. [3](https://arxiv.org/html/2410.01345) [15](https://arxiv.org/abs/2410.01345)  |
 | Demonstrations and data | 100 scripted demonstrations for each of 31 training variations = 3,100 training demonstrations. Validation uses 20 episodes per training variation, separately from testing. [3](https://arxiv.org/html/2410.01345)  |
 | Evaluation protocol | Four test levels with 31/28/21/12 variations; 20 episodes × five seeds × 92 variations = 9,200 test episodes; maximum 25 keyframe steps. [3](https://arxiv.org/html/2410.01345)  |
 | Evaluated baselines | Hiveformer,PolarNet,3D Diffuser Actor,RVT-2,3D-LOTUS,3D-LOTUS++; external RLBench 18-task comparison table separate. [3](https://arxiv.org/html/2410.01345)  |
@@ -107,3 +108,4 @@ Generalization suite built on RLBench, with novel placements, rigid objects, art
 12. [Actual 3D-LOTUS checkpoint inventory](https://huggingface.co/rjgpinel/3dlotus/tree/main) — Contains GemBench model_step_150000.pt and RLBench model_step_300000.pt checkpoint files.
 13. [Actual 3D-LOTUS++ checkpoint inventory](https://huggingface.co/rjgpinel/3dlotusplus/tree/main) — Contains GemBench model_step_140000.pt and RealRobot model_step_50000.pt checkpoint files.
 14. [Actual GemBench dataset inventory](https://huggingface.co/datasets/rjgpinel/GEMBench/tree/main) — Contains released LMDB training episodes and the test microsteps archive.
+15. [Data collection method and scope](https://arxiv.org/abs/2410.01345) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

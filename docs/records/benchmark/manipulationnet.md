@@ -27,6 +27,7 @@ Distributed physical benchmarking infrastructure with standardized kits, server-
 | Metrics | Physical skill success rate and average successful completion time; reasoning goal accuracy / normalized efficiency; uploaded evidence audited. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/)  |
 | Robots | Robot-agnostic clients connected to standardized physical task kits. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/)  |
 | Sensors and observations | Method-dependent visual / depth / tactile / force sensors; the infrastructure does not require RGBDT for every entry. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/)  |
+| Data collection method | Not applicable — standardized physical task/evaluation protocol; participants choose their own policy-training data and collection method. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/) [3](https://arxiv.org/abs/2603.04363)  |
 | Demonstrations and data | Task kits, machine-readable instructions and execution video/metadata; not one fixed demonstration corpus. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/)  |
 | Evaluation protocol | Server specifies trial configuration; local human resets standard kit; robot executes; video/results uploaded for audit. Peg geometries and nominal clearances vary. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/)  |
 | Evaluated baselines | Baseline systems and task-specific submissions; no single policy architecture mandated. [1](https://arxiv.org/abs/2603.04363) [2](https://mnet-client.readthedocs.io/ros_2/)  |
@@ -54,3 +55,4 @@ Distributed physical benchmarking infrastructure with standardized kits, server-
 
 1. [Paper](https://arxiv.org/abs/2603.04363) — Published paper / arXiv record and manuscript.
 2. [Official project](https://mnet-client.readthedocs.io/ros_2/) — Public project page.
+3. [Data collection method and scope](https://arxiv.org/abs/2603.04363) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

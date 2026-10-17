@@ -27,6 +27,7 @@ Assembly learning framework with a 100-assembly geometry collection and speciali
 | Metrics | Insertion success over assembly geometries; specialist/generalist success; physical perception-initialized study. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/)  |
 | Robots | Franka Panda with shore 30A finger pads and wrist RealSense D435. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/)  |
 | Sensors and observations | RGB-D camera feeds SAM + FoundationPose in perception-initialized workflow. Assembly actors use estimated/privileged geometry and state, not a raw RGBDT observation stack. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/)  |
+| Data collection method | Automatically generated disassembly paths are reversed into assembly demonstrations and guide subsequent RL policy learning. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/) [4](https://arxiv.org/abs/2407.08028)  |
 | Demonstrations and data | 100 assembly CAD assets compatible with simulation and physical printing; policy training via RL plus assembly trajectories. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/)  |
 | Evaluation protocol | Disassembly trajectories guide insertion-policy learning; specialist per geometry and generalist multi-geometry evaluation; physical pose-based trials and a separate five-assembly perception study. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/)  |
 | Evaluated baselines | Specialist and generalist AutoMate policies; IndustReal-related and guidance/distillation ablations. [1](https://arxiv.org/abs/2407.08028) [2](https://bingjietang718.github.io/automate/)  |
@@ -53,3 +54,4 @@ Assembly learning framework with a 100-assembly geometry collection and speciali
 1. [Paper](https://arxiv.org/abs/2407.08028) — Published paper / arXiv record and manuscript.
 2. [Official project](https://bingjietang718.github.io/automate/) — Public project page.
 3. [Official repository](https://github.com/isaac-sim/IsaacGymEnvs) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2407.08028) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

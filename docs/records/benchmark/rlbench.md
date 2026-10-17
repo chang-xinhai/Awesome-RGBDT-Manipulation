@@ -27,6 +27,7 @@ Programmatic manipulation environment and demonstration generation benchmark wit
 | Metrics | Task-specific binary success and episode return; few-shot/multi-task splits. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench)  |
 | Robots | Default Franka Panda; configurable additional robot arms. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench)  |
 | Sensors and observations | Multiple RGB-D cameras, masks and proprioception; privileged object states optional; no optical tactile observations in original suite. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench)  |
+| Data collection method | Scripted task experts and motion planning through manually designed waypoints generate demonstrations on demand. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench) [4](https://arxiv.org/abs/1909.12271)  |
 | Demonstrations and data | On-demand waypoint/script-generated expert demonstrations; number is user-selected. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench)  |
 | Evaluation protocol | Predefined task splits and variations; programmatic success/failure criteria; task-specific waypoints generate observations/actions. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench)  |
 | Evaluated baselines | Original benchmark behavior-cloning / RL examples; later 3D and VLA policies evaluated through downstream recipes. [1](https://arxiv.org/abs/1909.12271) [2](https://sites.google.com/view/rlbench)  |
@@ -158,3 +159,4 @@ Programmatic manipulation environment and demonstration generation benchmark wit
 1. [Paper](https://arxiv.org/abs/1909.12271) — Published paper / arXiv record and manuscript.
 2. [Official project](https://sites.google.com/view/rlbench) — Public project page.
 3. [Official repository](https://github.com/stepjam/RLBench) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/1909.12271) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

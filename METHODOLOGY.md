@@ -41,6 +41,12 @@ code-registry and released-data distinctions. A sensor supported by a simulator
 is not automatically a policy input. A replay, perception dataset or physical
 kit is not automatically a closed-loop action-policy benchmark.
 
+Data collection has its own source-backed field: record the teleoperation
+interface, scripted expert, motion planner or RL collector, separately from
+demonstration counts. Distinguish a generated task script from the planner that
+executes it, human seed demonstrations from augmented replays, and policy
+training interactions from released demonstration datasets.
+
 ## Policy records
 
 Record family, base model, model/component size, deployment inputs, action

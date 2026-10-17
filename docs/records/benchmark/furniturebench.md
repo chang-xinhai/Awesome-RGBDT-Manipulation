@@ -27,6 +27,7 @@ Physical miniature furniture assembly with reproducible initial-state difficulty
 | Metrics | Assembly / skill success under low, medium and high randomization; evaluation time and human reset reproducibility. [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/)  |
 | Robots | Franka Panda arm with parallel-jaw gripper [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/)  |
 | Sensors and observations | External and wrist RGB-D cameras; robot proprioception; AprilTag-based part tracking used for reproducible setups and labels. [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/)  |
+| Data collection method | VR teleoperation with an Oculus Quest 2 controller, supplemented by keyboard control for fine wrist rotations. [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/) [5](https://arxiv.org/abs/2305.12821)  |
 | Demonstrations and data | 200+ hours, 5,000+ demonstrations; RGB-D, robot states and actions. [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/)  |
 | Evaluation protocol | Three standardized initial-state randomization levels; skill and full-assembly evaluation; physical benchmark complemented by FurnitureSim. [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/)  |
 | Evaluated baselines | Behavior cloning and offline reinforcement-learning baselines; exact suite settings in manuscript. [1](https://arxiv.org/abs/2305.12821) [2](https://clvrai.github.io/furniture-bench/)  |
@@ -61,3 +62,4 @@ Physical miniature furniture assembly with reproducible initial-state difficulty
 2. [Official project](https://clvrai.github.io/furniture-bench/) — Public project page.
 3. [Official repository](https://github.com/clvrai/furniture-bench) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/clvrai/furniture-bench/blob/main/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
+5. [Data collection method and scope](https://arxiv.org/abs/2305.12821) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -27,6 +27,7 @@ Configurable optical tactile rendering for sensors such as DIGIT/OmniTact, with 
 | Metrics | Rendering throughput; grasp prediction and control outcomes; proof-of-concept sim-to-real. [1](https://arxiv.org/abs/2012.08456)  |
 | Robots | Task-specific gripper / tactile configurations. [1](https://arxiv.org/abs/2012.08456)  |
 | Sensors and observations | DIGIT and OmniTact optical tactile designs. [1](https://arxiv.org/abs/2012.08456)  |
+| Data collection method | Procedural physics/grasps supply tactile-rendering samples for application-specific datasets; not a common closed-loop demonstration collector. [1](https://arxiv.org/abs/2012.08456) [3](https://arxiv.org/abs/2012.08456)  |
 | Demonstrations and data | One million simulated grasps used in paper grasp-stability application; not one million closed-loop task demonstrations. [1](https://arxiv.org/abs/2012.08456)  |
 | Evaluation protocol | Separate tactile rendering from external rigid-body dynamics; application-specific perception and control evaluation. [1](https://arxiv.org/abs/2012.08456)  |
 | Evaluated baselines | Application-specific neural predictors/controllers; not a universal policy benchmark. [1](https://arxiv.org/abs/2012.08456)  |
@@ -52,3 +53,4 @@ Configurable optical tactile rendering for sensors such as DIGIT/OmniTact, with 
 
 1. [Paper](https://arxiv.org/abs/2012.08456) — Published paper / arXiv record and manuscript.
 2. [Official repository](https://github.com/facebookresearch/tacto) — Current public repository; implementation scope may differ from paper.
+3. [Data collection method and scope](https://arxiv.org/abs/2012.08456) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

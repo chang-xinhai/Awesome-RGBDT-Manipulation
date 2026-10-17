@@ -27,6 +27,7 @@ Photorealistic task-generalist evaluation with 120 tasks and controlled language
 | Metrics | Binary success plus task progress / motion quality diagnostics; performance sensitivity to controlled external factors. [1](https://arxiv.org/abs/2604.09860)  |
 | Robots | Default Franka/DROID-style setup; registration supports additional robots including Kinova; task definitions designed robot-agnostically. [1](https://arxiv.org/abs/2604.09860)  |
 | Sensors and observations | RGB / depth camera configuration, proprioception and language; privileged evaluator predicates. Model adapters choose actual channels. [1](https://arxiv.org/abs/2604.09860)  |
+| Data collection method | Not applicable as a common training-data collector — evaluation/task toolkit without a uniform benchmark-wide demonstration corpus. [1](https://arxiv.org/abs/2604.09860) [4](https://arxiv.org/abs/2604.09860)  |
 | Demonstrations and data | Task/scene assets and evaluation toolset; no uniform 120-task human training demonstration corpus claimed. [1](https://arxiv.org/abs/2604.09860)  |
 | Evaluation protocol | Three competency axes and three difficulty levels; server-client policy interface; multi-environment evaluation; configurable language specificity and scene/observation perturbations. [1](https://arxiv.org/abs/2604.09860)  |
 | Evaluated baselines | Generalist VLA / world-action policies and policy clients; see versioned paper/leaderboard for exact checkpoint scope. [1](https://arxiv.org/abs/2604.09860)  |
@@ -172,3 +173,4 @@ Photorealistic task-generalist evaluation with 120 tasks and controlled language
 1. [Paper](https://arxiv.org/abs/2604.09860) — Published paper / arXiv record and manuscript.
 2. [Official repository](https://github.com/NVlabs/RoboLab) — Current public repository; implementation scope may differ from paper.
 3. [Official implementation / documentation](https://github.com/NVlabs/RoboLab/blob/main/robolab/tasks/_metadata/task_table.csv) — Complete 120-row task catalogue parsed from source.
+4. [Data collection method and scope](https://arxiv.org/abs/2604.09860) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

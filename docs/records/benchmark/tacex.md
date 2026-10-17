@@ -27,6 +27,7 @@ Modular Isaac Sim/Lab tactile extension combining optical rendering, marker moti
 | Metrics | Sensor simulation fidelity and performance; example-specific policy results. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx)  |
 | Robots | Sensor-mounted robots / fingertips in examples. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx)  |
 | Sensors and observations | Current main release supports GelSight Mini; Taxim optical rendering, FOTS marker motion and UIPC-based FEM marker simulation. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx)  |
+| Data collection method | Task-dependent simulation examples and sensor/calibration workflows; no common benchmark-wide demonstration collection method is prescribed. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx) [4](https://arxiv.org/abs/2411.04776)  |
 | Demonstrations and data | Sensor assets and calibration/examples; no standardized manipulation demonstration dataset. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx)  |
 | Evaluation protocol | Select interchangeable optical/marker/soft-body components; measure fidelity/performance under example interactions. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx)  |
 | Evaluated baselines | Taxim/FOTS/UIPC components rather than a common learned-policy leaderboard. [1](https://arxiv.org/abs/2411.04776) [2](https://github.com/DH-Ng/TacEx)  |
@@ -52,3 +53,4 @@ Modular Isaac Sim/Lab tactile extension combining optical rendering, marker moti
 1. [Paper](https://arxiv.org/abs/2411.04776) — Published paper / arXiv record and manuscript.
 2. [Official project](https://github.com/DH-Ng/TacEx) — Public project page.
 3. [Official repository](https://github.com/DH-Ng/TacEx) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2411.04776) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

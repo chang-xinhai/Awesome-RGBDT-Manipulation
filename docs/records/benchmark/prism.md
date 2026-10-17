@@ -27,6 +27,7 @@ Industrial contact-rich demonstrations with synchronized RGB-D, wrist force/torq
 | Metrics | Task-success and baseline modality comparisons on selected representative tasks. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/)  |
 | Robots | Franka Panda, Realman and other robot platforms described in paper; gripper / dexterous configurations vary. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/)  |
 | Sensors and observations | Multi-view RGB-D, six-axis F/T, robot joint/Cartesian/gripper state; tactile available only for a subset, not every episode. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/)  |
+| Data collection method | Human teleoperation through three interface families: exoskeleton, tracker and VR. Paired human demonstrations are a separate capture stream. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/) [5](https://arxiv.org/abs/2608.17962)  |
 | Demonstrations and data | 5,000+ robot trajectories, 5,000+ paired human demonstrations, 45+ hours across 25+ tasks; three teleoperation interfaces. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/)  |
 | Evaluation protocol | Exoskeleton, tracker and VR teleoperation; calibrated/timestamped multisensor records; policy experiments use 200 demonstrations/task and 20 evaluation episodes in reported settings. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/)  |
 | Evaluated baselines | Multimodal imitation baselines with controlled sensor / teleoperation comparison; exact model table in paper. [1](https://arxiv.org/abs/2608.17962) [2](https://tengbo-yu.github.io/PRISM/)  |
@@ -59,3 +60,4 @@ Industrial contact-rich demonstrations with synchronized RGB-D, wrist force/torq
 2. [Official project](https://tengbo-yu.github.io/PRISM/) — Public project page.
 3. [Official repository](https://github.com/Tengbo-Yu/PRISM) — Current public repository; implementation scope may differ from paper.
 4. [Author publication list](https://tengbo-yu.github.io/) — Primary author homepage labels PRISM IROS 2026.
+5. [Data collection method and scope](https://arxiv.org/abs/2608.17962) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

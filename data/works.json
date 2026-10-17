@@ -653,6 +653,7 @@
       "metrics": "Complexity-weighted score and reliability at primitive/subtask/category/subassembly level; time and force-interaction diagnostics are secondary.",
       "robots": "Industrial single-arm parallel-gripper setup with wrist RGB-D and F/T sensing; exact arm model Not verified in excerpt.",
       "sensors": "Wrist RGB-D camera, wrist F/T, end-effector/joint logging. No tactile images claimed.",
+      "dataCollection": "Manually engineered force–position primitive sequences execute the assembly plan; success/failure baseline executions are recorded. A standardized training-demonstration collector is not prescribed.",
       "data": "CAD, bill of materials, assembly/evaluation protocol and simulator; standardized demonstration count Not reported.",
       "protocol": "Three provisioning levels: oriented feeder, unoriented plate, cluttered box. Housing fixtures and downstream sequence held fixed. 59 operations grouped into SA1 bottom housing, SA2 middle module and SA3 final integration.",
       "baselines": "Manually engineered hybrid force-position primitives; real and simulated execution compared."
@@ -693,6 +694,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.16398",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Section4 manually engineered force–position baseline; recorded execution data are separate from a fixed training corpus."
       }
     ],
     "caveats": [
@@ -1002,6 +1011,7 @@
       "metrics": "Task success; progressive score for Operate Mixer Panel / real tube-transfer validation; three seeds ×100 rollouts for simulation comparisons.",
       "robots": "UR5e and ALOHA arms; Shadow, XHand and Wuji hand configurations yield four evaluated embodiments.",
       "sensors": "RGB from wrist/third-person viewpoints, proprioception and language; physical UR5e-XHand validation uses RealSense D405 wrist and D435 scene cameras. Depth/tactile policy inputs not established.",
+      "dataCollection": "Scripted Parallel Finite-State Machine (PFSM) experts with end-effector waypoints and hand targets; batched simulation and decoupled replay generate observations.",
       "data": "1,400+ collected trajectories; parallel state-machine generation and demonstration replay. Real transfer experiment mixes 10 real +90 simulated demonstrations per condition.",
       "protocol": "Shared task/model interface; compare Gaussian vs standard backgrounds. Physical Transfer Tube XHand: 10 initial positions ×2 trials per condition, same task scoring.",
       "baselines": "ACT / diffusion / VLA families in paper; per-task table distinguishes 13 simulation tasks from physical-transfer validation."
@@ -1042,6 +1052,14 @@
           "benchmark"
         ],
         "note": "Official current code linked by project, README read."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.13643",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -1550,6 +1568,7 @@
       "metrics": "Task-specific binary success; average is the unweighted task mean; sim-real ranking correlation; sim-real co-training comparisons.",
       "robots": "Corresponding sim-real arms; Franka Hand and Robotiq gripper configurations. Arm model is not resolved from the public excerpt.",
       "sensors": "GelSight, Xense and Neote tactile configurations. GelSight/Xense export tactile RGB, marker motion, depth and pose; Neote exports gel-particle or dense force fields. Exported tactile depth is not an external metric-depth policy input.",
+      "dataCollection": "Simulation and physical expert demonstrations are reported, but the collection controller and teleoperation interface are Not reported in the inspected manuscript.",
       "data": "Per tactile configuration: 1,300 simulation episodes across 11 tasks; 2,400 real demonstrations across 8 tasks. Training uses 100/task except Insert Block v2 with 300. Public dataset download links still marked coming soon.",
       "protocol": "Separate single-task fine-tuning; predefined balanced task conditions; task variants evaluated separately then aggregated. Co-training keeps 100 real demonstrations fixed and adds 250 or 500 simulated demonstrations for Insert USB / Gear assembly.",
       "baselines": "π0.5, StarVLA (Qwen3), InternVLA-A1.5, X-VLA, Lingbot-VLA-2, Xiaomi-Robotics; FastWAM, Lingbot-VA, StarVLA (Cosmos); FTP-1; OpenVTLA."
@@ -1623,6 +1642,14 @@
           "policy.outputs"
         ],
         "note": "Client observation/action schema and remote-server dependency. Main README OpenVTLA section states that model and dataset release links will be added when available."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.10384",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -2329,6 +2356,7 @@
       "metrics": "Success per hand/task and mean across 42 pairs; three independent 50-rollout evaluations/cell = 6,300 evaluation episodes.",
       "robots": "XHand, Inspire, Wuji, LEAP, Sharpa Wave, LinkerHand, Allegro hands with arm setups.",
       "sensors": "RGB, robot state and action records; no tactile sensing established.",
+      "dataCollection": "Motion-capture teleoperation using Rokoko gloves and Vive wrist trackers, followed by reviewed trajectory replay, scene expansion and success verification.",
       "data": "2,100 balanced demonstrations; 50 per hand–task pair; reviewed demonstrations expanded and verified in randomized scenes.",
       "protocol": "Seven per-hand multitask π0.5/Ego-Pi policies (300 demos each) vs joint Being-H0.5 (2,100 demos); Native, function-aligned action slots and DexLatent within matched joint architecture.",
       "baselines": "π0.5, Ego-Pi action-head adaptation; Being-H0.5 with Native, FAAS, DexLatent."
@@ -2350,6 +2378,14 @@
           "benchmark"
         ],
         "note": "Published paper / arXiv record and manuscript."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.03278",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -3276,6 +3312,7 @@
       "metrics": "Per-split task-macro success, full per-task table and per-memory-type success; optional return diagnostics.",
       "robots": "ManiSkill robot-arm/tabletop manipulation setup.",
       "sensors": "RGB, proprioception and instruction for deployable policy; task_cue / oracle_info fields are privileged and must be hidden by required wrappers.",
+      "dataCollection": "PPO-oracle policy rollouts for 34 tasks and scripted motion planners for 56 tasks; collectors use privileged simulation state and retain successful trajectories.",
       "data": "22,500 oracle trajectories (250/task), 6,306,953 transitions, RLDS and LeRobotDataset v3; 34 PPO-oracle and 56 motion-planning tasks.",
       "protocol": "Train multitask within horizon split; canonical evaluation 50 episodes/task using seeds 4242424242–4242424291. Paper π0.5 reference evaluates 14-task subset with 20 episodes/task; report subset explicitly.",
       "baselines": "π0.5 current-frame/no-explicit-memory baseline; PPO and motion-planning oracles for data collection."
@@ -3332,6 +3369,14 @@
           "benchmark.protocol"
         ],
         "note": "Canonical split / seed / reporting protocol."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.00604",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -4542,6 +4587,7 @@
       "metrics": "Success at initialization, grasp, task attempt, task completion and termination; task-specific completion criteria.",
       "robots": "Two Franka FR3 arms in leader/follower data collection; only follower used during inference, with Franka Hand.",
       "sensors": "Two DIGIT tactile sensors; RealSense D405 wrist and D435 side RGB cameras. Depth-capable hardware does not establish depth policy input.",
+      "dataCollection": "Bilateral leader–follower teleoperation with two Franka FR3 arms and torque-based haptic feedback.",
       "data": "Approximately 100 demonstrations/task at 30 Hz, with four DIGIT cartridge pairs.",
       "protocol": "2,180 physical rollouts; 20 inference rollouts per ablation condition. Five tactile backbones crossed with five fusion schemes; stage-level success and OOD tests.",
       "baselines": "ACT; ResNet18, SARL, UniT, Sparsh-DINO, T3 encoders; Concatenation, FiLM, Gated Cross-Attention, CLIP-R and CLIP-T fusion."
@@ -4605,6 +4651,14 @@
           "release"
         ],
         "note": "Project identity and release links checked independently of manuscript claims."
+      },
+      {
+        "url": "https://arxiv.org/abs/2609.30969",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -6662,6 +6716,7 @@
       "metrics": "Stable task success (terminal predicate with default 0.5 s dwell); latched stage completion; efficiency; SafeSR and violation/drop diagnostics; bootstrap intervals.",
       "robots": "IIWA7+Sharpa; JAKA ZU7+DexHand021; Panda+Orca/Allegro; RM65+Revo2; xArm7+Ability/LEAP; UR5+RH5DG2/RH56DFX/Shadow/Schunk/Wuji.",
       "sensors": "RGB / depth cameras and shared visuotactile images generated by ray-sampling contact surfaces; proprioception and privileged object-state annotations. Geometry-based contact response is not an identified physical optical sensor model.",
+      "dataCollection": "Glove-and-wrist-tracking teleoperation: Manus hand skeletons, ARKit wrist tracking, DexPilot retargeting and arm inverse kinematics. Offline replay adds the full sensor suite.",
       "data": "Approximately 1,300 human-teleoperated demonstrations across the task catalogue.",
       "protocol": "4 policies × 26 tasks × 4 channels × 50 rollouts = 20,800 evaluation episodes. Channels None, Equivariance, Invariance and All control seven perturbation factors; task-macro averages.",
       "baselines": "ACT, Diffusion Policy, π0.5, GR00T N1.5."
@@ -6710,6 +6765,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://arxiv.org/abs/2609.15726",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Section3.1 online teleoperation and3.2 offline multimodal replay."
       }
     ],
     "caveats": [
@@ -7945,6 +8008,7 @@
       "metrics": "Scenario-conditional insertion/assembly success; exact scoring procedure specified in manuscript.",
       "robots": "Embodiment-agnostic physical kit.",
       "sensors": "Not prescribed; no tactile sensor is required by the benchmark.",
+      "dataCollection": "Not applicable — scenario/component generator and evaluation protocol; no fixed robot-demonstration corpus or prescribed collector.",
       "data": "STL components and JSON scenario generator; not a robot demonstration dataset.",
       "protocol": "Hold physical/contact conditions approximately fixed while varying target pose, geometry, nominal tolerance (0.1 / 1 / 3 mm) and assembly structure.",
       "baselines": "No standardized learned-policy comparison established in the source overview."
@@ -7975,6 +8039,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2609.00906",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -8660,6 +8732,7 @@
       "metrics": "Task-success and baseline modality comparisons on selected representative tasks.",
       "robots": "Franka Panda, Realman and other robot platforms described in paper; gripper / dexterous configurations vary.",
       "sensors": "Multi-view RGB-D, six-axis F/T, robot joint/Cartesian/gripper state; tactile available only for a subset, not every episode.",
+      "dataCollection": "Human teleoperation through three interface families: exoskeleton, tracker and VR. Paired human demonstrations are a separate capture stream.",
       "data": "5,000+ robot trajectories, 5,000+ paired human demonstrations, 45+ hours across 25+ tasks; three teleoperation interfaces.",
       "protocol": "Exoskeleton, tracker and VR teleoperation; calibrated/timestamped multisensor records; policy experiments use 200 demonstrations/task and 20 evaluation episodes in reported settings.",
       "baselines": "Multimodal imitation baselines with controlled sensor / teleoperation comparison; exact model table in paper."
@@ -8708,6 +8781,14 @@
           "venue"
         ],
         "note": "Primary author homepage labels PRISM IROS 2026."
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.17962",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -10670,6 +10751,7 @@
       "metrics": "Object translation/rotation tracking error, MPJPE, fingertip error, mean tactile force error, Contact F1; SRkin / SRtac; PeakSafe@3N and SafeTac@3N.",
       "robots": "Human data collection; simulation 12-DoF Inspire model; physical two Franka Panda arms with two Inspire hands exposing 6 independent motors each.",
       "sensors": "Human piezoresistive glove: 162 elements, 17 Hz; kinematic/pose streams 120 Hz via tracking glove and OptiTrack. Physical robot tactile sensors are available but not fed back online.",
+      "dataCollection": "Human hand–object capture with motion tracking and a tactile glove; kinematics, pressure and object poses are synchronized. Retargeted robot-policy training is downstream.",
       "data": "757 synchronized human interaction sequences, 49 calibrated objects; 73 representative sequences selected for quantitative simulated transfer.",
       "protocol": "TactiSkill PPO asymmetric actor-critic tracks retargeted demonstrations with tactile-guided rewards. Physical transfer retargets to six actuator commands and executes open-loop.",
       "baselines": "Kinematic-only transfer baseline and tri-component tactile reward ablations (TactiSkill)."
@@ -10701,6 +10783,14 @@
           "imageCandidates"
         ],
         "note": "Public project page."
+      },
+      {
+        "url": "https://arxiv.org/abs/2607.09190",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -11078,6 +11168,7 @@
       "metrics": "Success rate and generalization under texture/background/light/camera perturbations; task-conditioned baseline comparison.",
       "robots": "Franka Research 3, UR10e, xArm7 arms; Sharpa Wave, WUJI, Shadow, Inspire, Allegro and LEAP hands.",
       "sensors": "RGB, depth, point clouds, proprioception and privileged state; no tactile stream established.",
+      "dataCollection": "VR teleoperation with Apple Vision Pro through Isaac Lab CloudXR; tracked wrist poses drive arm IK and human hand motion is retargeted to robot joints.",
       "data": "3,180 demonstrations collected through VR teleoperation.",
       "protocol": "Shared task definitions and configurable visual randomization; baseline comparison across 19 selected tasks, not all 100.",
       "baselines": "Diffusion Policy, DP3, OpenVLA and π0.5."
@@ -11134,6 +11225,14 @@
           "benchmark.tasks"
         ],
         "note": "Read static register_env calls across all category __init__.py files, without executing simulator code."
+      },
+      {
+        "url": "https://arxiv.org/abs/2607.08751",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -11540,6 +11639,7 @@
       "metrics": "Paper: Goal Success and Safety Success (no drop + peak deformation below calibrated per-object tolerance). Current page: Task Success Rate and Deformation-aware Success Rate (DSR).",
       "robots": "Franka Panda arm with parallel-jaw gripper",
       "sensors": "Third-person / wrist RGB; dual-finger GelSight Mini tactile RGB and marker motion; proprioception, language and actions at 20 Hz. Privileged FEM states restricted to evaluator.",
+      "dataCollection": "Constraint-aware simulated expert rollouts, followed by integrity screening and human verification. The low-level expert implementation is Not verified; calibration sweeps are separate.",
       "data": "Current homepage advertises 4,000 expert demonstrations / 40 tasks / 50+ assets; early paper states 2,000 episodes and 33 assets with 50 demos per task.",
       "protocol": "Four matched suites separate object type and variation axis; deformation calibration performed before policy training. Current default evaluation uses 50 episodes per task over ten tasks per suite.",
       "baselines": "Early manuscript: π0.5 visual-only / visuotactile. Current project additionally lists Diffusion Policy and FastWAM."
@@ -11588,6 +11688,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://softvtbench.github.io/",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -11711,6 +11819,7 @@
       "metrics": "Capability-specific / overall task-success aggregates; fine-grained progress under task criteria; separate sim and physical leaderboards.",
       "robots": "Simulation dual-arm ARX X5; physical ARX X5, Piper and Piper X.",
       "sensors": "Head and wrist RGB cameras, proprioception and instructions. Simulator can export depth, but listed baseline observation channels must be verified separately; official suite has no tactile sensor.",
+      "dataCollection": "Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation.",
       "data": "Demonstration data downloadable by task; exact current total count varies by release.",
       "protocol": "Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation.",
       "baselines": "30 integrated policies in paper / 40+ integrations in current XPolicyLab; VLA and world-action model families."
@@ -11759,6 +11868,14 @@
           "benchmark.tasks"
         ],
         "note": "Complete official core task catalogue."
+      },
+      {
+        "url": "https://arxiv.org/abs/2607.04434",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Sections3.1.4/3.2.2 and4.1.4; simulated trajectory synthesis/VR and physical leader–follower collection retain separate scopes."
       }
     ],
     "caveats": [
@@ -11839,6 +11956,7 @@
       "metrics": "Pose MAE (mm / degrees); insertion success after ≥3.5 cm insertion; failures include dropping or reaching 2,000 timesteps.",
       "robots": "Franka Panda, KUKA iiwa, Kinova Gen3, UR5e arms; Allegro and KISTAR hands.",
       "sensors": "Idealized six-axis wrist and per-fingertip net wrench; no noise/hysteresis/bandwidth/calibration model; no per-taxel pressure/shear image.",
+      "dataCollection": "Automated state-machine expert sequences in parallel simulation; successful insertion sequences are retained for training.",
       "data": "80K successful state-machine sequences, 1K per embodiment–shape; 400 parallel environments on one RTX 3090. Post-contact training subsequences average 370 steps.",
       "protocol": "80/20 train/test for estimator; friction/restitution/compliance/controller randomization; static hand grasp, arm corrects wrist; vision ablations limited to Franka–Allegro.",
       "baselines": "DexPiHNet Transformer; LSTM/temporal learned baselines and classical force-search controllers."
@@ -11860,6 +11978,14 @@
           "benchmark"
         ],
         "note": "Published paper / arXiv record and manuscript."
+      },
+      {
+        "url": "https://doi.org/10.1109/ACCESS.2026.3709302",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -12308,6 +12434,7 @@
       "metrics": "Classification accuracy and force-regression error under within-sensor / cross-sensor / few-shot splits.",
       "robots": "Sensor data collection rigs; no common robot manipulation embodiment.",
       "sensors": "GelSightNoMarker, GelSightMarker, MagicGripper, MagicTac, TacTip, ViTac, ViTacTip.",
+      "dataCollection": "Robot-controlled indenter contacts and orientation sweeps collect tactile images; synchronized six-axis force measurements label force-regression samples. This is perception data, not policy demonstrations.",
       "data": "106,800 tactile images from seven vision-based tactile sensors.",
       "protocol": "Trial/trajectory-disjoint chronological 60/20/20 train/validation/test split after near-duplicate filtering. Exhaustive 7×7 source-target shape transfer; fixed-source grating and force transfer. Few-shot target adaptation is force-regression only: 0.5%, 1%, 2.5%, 5% and 10% of target training samples, with untouched target test set.",
       "baselines": "Transfer study: fixed ImageNet-initialized ViT. Representation study: ResNet-18, ViT from scratch, ImageNet ViT and MAE-initialized ViT; up to 30 epochs, batch128; reported server has four H200 GPUs, not a per-run allocation/time claim."
@@ -12358,6 +12485,14 @@
           "benchmark.baselines"
         ],
         "note": "Advanced Robotics Research, first published 25 September 2026. Section4 gives leakage-controlled chronological split, fixed-source transfer, force-only few-shot protocol and backbone study. Entry date retains arXiv v1."
+      },
+      {
+        "url": "https://arxiv.org/abs/2606.25877",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -13707,6 +13842,7 @@
       "metrics": "Closed-loop task success, multi-step prediction error, planning frequency and parameter count.",
       "robots": "Simulation Franka Panda; physical Franka Panda and reBot platforms.",
       "sensors": "Wrist/front RGB; point clouds reconstructed from front RGB-D and subsampled to 1,024 XYZRGB points. Three local tactile representations: TacRGB, TacDepth and TacFF (normal plus two tangential components). Physical sensors include GelSight Mini and DM-Tac W2M configurations.",
+      "dataCollection": "6-DoF 3Dconnexion SpaceMouse teleoperation in both simulation and the physical robot study.",
       "data": "Simulation 1,872 demonstrations / 247,518 interaction steps at 10 Hz; physical 80 demos per each of 6 tasks (50 train /30 held out).",
       "protocol": "Simulation: 100K gradient updates; goal offsets 12/24/36/48 and 100 evaluation rollouts per task–modality–offset. Physical: 200 training epochs, final checkpoint without task-specific selection; 900 total trials across 6 tasks, 2 platforms and 3 tactile systems, with fixed 30 held-out initial–goal pairs per setting.",
       "baselines": "JEPA-structured world models with a CEM-style planner; visual-image, point-cloud, TacRGB and TacFF combinations."
@@ -13758,6 +13894,14 @@
           "imageCandidates"
         ],
         "note": "Simulation 100K gradient updates and physical200 epochs are distinct settings. Planning controls are CEM-based; no pretrained foundation backbone is claimed."
+      },
+      {
+        "url": "https://arxiv.org/abs/2606.13877",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -15183,6 +15327,14 @@
           "release"
         ],
         "note": "Explicit paper-versus-minicase rerun settings and contact binding caveat."
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.27886",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -15231,6 +15383,7 @@
       "metrics": "Success rate;average grip/applied force;maximum transient grip/applied force (mean of top5% samples).",
       "robots": "Franka Panda with tactile-integrated parallel gripper",
       "sensors": "Two RGB-D cameras;dual GelSight-style320x240 tactile RGB and11x9 marker fields;fingertip3D contact force;state/language/actions20 Hz.",
+      "dataCollection": "Replay and re-collect source LIBERO trajectories across simulators, with controlled gripper-force scaling and success filtering; tactile observations are regenerated.",
       "data": "Replay source trajectories under100%,25%,10% gripper-controller scaling;keep successful replays;dataset totals source/version dependent.",
       "protocol": "Compare firm/gentle prompts on matched object tasks;DatasetsA/B continuous force25%/10%,DatasetC binary gripper10%;controller ablations isolate tracking.",
       "baselines": "Vision-only π0;image,marker-field andforce tactile injection variants;force-supervision and fixed-controller ablations."
@@ -15336,6 +15489,7 @@
       "metrics": "In-domain/OOD task success; relative success degradation; physical-vs-sim correlation.",
       "robots": "Single Franka Panda and dual Franka Panda parallel-gripper configurations.",
       "sensors": "Visual observations with optional framework depth/point-cloud channels; proprioception and language; baseline actual channel setting in implementation.",
+      "dataCollection": "Simulation: expert motion-planning solvers with privileged state. The physical study reports demonstrations, but its collection interface is Not reported.",
       "data": "100 clean demonstrations/task for simulated baselines; physical ACT study uses 60 demonstrations/task on three selected tasks.",
       "protocol": "Train separately for single/bimanual suites; 200 evaluation episodes per task/perturbation. Physical validation: RaiseCube, RotateArrow, LiftPegUpright and selected shifts.",
       "baselines": "ACT and π0.5."
@@ -15376,6 +15530,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.27759",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -15454,6 +15616,7 @@
       "metrics": "Policy task success; analysis of spatial resolution, shear, sensor representation, friction and sensor durability.",
       "robots": "Franka Panda 7-DoF arms; experiments distributed across institutions.",
       "sensors": "Four tactile modalities: optical, acoustic, magnetic, resistive. Named devices include FlexiTac, eGain, Daimon, eFlesh and FSR configurations; consult paper sensor matrix for tested combinations.",
+      "dataCollection": "GELLO joint-space teleoperation; sensor configurations share the demonstration and imitation-learning pipeline.",
       "data": "GELLO teleoperation; paper specifies task-dependent demonstration budgets (e.g., 60 demonstrations for pick-and-place, 50 per sensor for plug insertion).",
       "protocol": "Train separate ACT policies per sensor, task and modality configuration; compare outcomes under matched task setup with sensor material properties documented.",
       "baselines": "ACT with sensor-specific tactile representations and vision-only comparisons."
@@ -15494,6 +15657,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.21976",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -15684,6 +15855,7 @@
       "metrics": "Task success across object-only and full visual/dynamics randomization; multitask and action-head adaptation results.",
       "robots": "Franka Panda + Allegro Hand; single-arm and dual-arm configurations.",
       "sensors": "Third-person and wrist RGB, proprioception and actions. Depth/tactile inputs are not established as evaluated baseline modalities.",
+      "dataCollection": "Motion-capture teleoperation with Rokoko gloves and HTC Vive trackers; hand retargeting and randomized-scene replay expand the demonstrations.",
       "data": "1,100 human demonstrations captured with Rokoko gloves / HTC Vive trackers; replay-based randomized scene expansion.",
       "protocol": "Shared asynchronous policy server/client interface; single-task vs multitask training; object placement/table height and visual/dynamic randomization.",
       "baselines": "ACT, Diffusion Policy CNN/Transformer, π0.5, GR00T N1.5."
@@ -15732,6 +15904,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "MuJoCo==3.4.0 pin read from actual package dependency."
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.16257",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -17504,6 +17684,7 @@
       "metrics": "Binary success plus task progress / motion quality diagnostics; performance sensitivity to controlled external factors.",
       "robots": "Default Franka/DROID-style setup; registration supports additional robots including Kinova; task definitions designed robot-agnostically.",
       "sensors": "RGB / depth camera configuration, proprioception and language; privileged evaluator predicates. Model adapters choose actual channels.",
+      "dataCollection": "Not applicable as a common training-data collector — evaluation/task toolkit without a uniform benchmark-wide demonstration corpus.",
       "data": "Task/scene assets and evaluation toolset; no uniform 120-task human training demonstration corpus claimed.",
       "protocol": "Three competency axes and three difficulty levels; server-client policy interface; multi-environment evaluation; configurable language specificity and scene/observation perturbations.",
       "baselines": "Generalist VLA / world-action policies and policy clients; see versioned paper/leaderboard for exact checkpoint scope."
@@ -17542,6 +17723,14 @@
           "benchmark.tasks"
         ],
         "note": "Complete 120-row task catalogue parsed from source."
+      },
+      {
+        "url": "https://arxiv.org/abs/2604.09860",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -18446,6 +18635,7 @@
       "metrics": "Stage/component completion and final assembly score under simulation/onsite rules.",
       "robots": "Galaxea R1 Lite physical platform; simulated bimanual assembly setup.",
       "sensors": "RGB-D / robot state in simulation; physical sensor configuration defined by competition APIs. No optical tactile input established.",
+      "dataCollection": "Simulation: automatically generated expert trajectories and released generation scripts. Physical track: robot teleoperation using the R1 Lite interface.",
       "data": "Simulation successful-attempt trajectories and about 300 hardware demonstrations described by report; exact split depends on stage.",
       "protocol": "Online qualification then onsite physical evaluation; varied initial states encode collaboration and recovery; common assembly plan and robot API.",
       "baselines": "ACT / diffusion / VLA-style policy baselines and challenge systems; exact table scope in report."
@@ -18486,6 +18676,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2603.15469",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -19311,6 +19509,7 @@
       "metrics": "Task success by Atomic-Seen, Composite-Seen and Composite-Unseen; environment and data-scale generalization.",
       "robots": "Mobile Panda-based kitchen manipulation embodiment.",
       "sensors": "RGB / depth rendering, proprioception and language available; actual baseline input setting documented per policy.",
+      "dataCollection": "Human teleoperation provides seed demonstrations; MimicGen synthesizes additional trajectories from those seeds. Human and synthetic portions retain separate scopes.",
       "data": "600+ hours human demonstrations and 1,600+ hours synthetic demonstrations across 2,500 kitchens.",
       "protocol": "Separate multitask, foundation-model and lifelong-learning settings; leaderboard focuses 50 target tasks; training-distribution kitchens vs held-out target kitchens must be reported explicitly.",
       "baselines": "Diffusion Policy, π0, π0.5, GR00T N1.5 in original benchmark; evolving official leaderboard adds other policies."
@@ -19368,6 +19567,14 @@
           "benchmark.data"
         ],
         "note": "Link verified after navigation from official documentation; initial guessed overview.html path corrected."
+      },
+      {
+        "url": "https://arxiv.org/abs/2603.04356",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -19448,6 +19655,7 @@
       "metrics": "Physical skill success rate and average successful completion time; reasoning goal accuracy / normalized efficiency; uploaded evidence audited.",
       "robots": "Robot-agnostic clients connected to standardized physical task kits.",
       "sensors": "Method-dependent visual / depth / tactile / force sensors; the infrastructure does not require RGBDT for every entry.",
+      "dataCollection": "Not applicable — standardized physical task/evaluation protocol; participants choose their own policy-training data and collection method.",
       "data": "Task kits, machine-readable instructions and execution video/metadata; not one fixed demonstration corpus.",
       "protocol": "Server specifies trial configuration; local human resets standard kit; robot executes; video/results uploaded for audit. Peg geometries and nominal clearances vary.",
       "baselines": "Baseline systems and task-specific submissions; no single policy architecture mandated."
@@ -19479,6 +19687,14 @@
           "imageCandidates"
         ],
         "note": "Public project page."
+      },
+      {
+        "url": "https://arxiv.org/abs/2603.04363",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -19706,6 +19922,14 @@
           "benchmark.protocol"
         ],
         "note": "Original weights lost; released M(1) jointly retrained and M(n) per-task execution checkpoints need version qualification."
+      },
+      {
+        "url": "https://arxiv.org/abs/2603.01229",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -19762,6 +19986,7 @@
       "metrics": "Task success rate over100rollouts/task; memory-component ablations and failure analysis",
       "robots": "RoboTwin2.0 dual-arm embodiment; separate physical dual-arm setup",
       "sensors": "RGB observations and robot state; fine-grained language annotations; no tactile requirement",
+      "dataCollection": "Expert demonstrations with action/subtask-aligned language annotations. The original collection controller, motion planner and teleoperation interface are Not reported in the inspected manuscript.",
       "data": "50expert demonstrations/task for all evaluated simulation policies; action/subtask aligned language is additional Mem-0 supervision",
       "protocol": "Common50-demo/task training and100-rollout evaluation; M(1) tasks isolate execution module, M(n) uses planning+execution; see released-retrained checkpoint caveat",
       "baselines": "DP,ACT,π0.5,X-VLA,QwenOFT,MemER,MemoryVLA and Mem-0"
@@ -20563,6 +20788,7 @@
       "metrics": "Success rate per task and unweighted average; tactile encoder pathway ablation.",
       "robots": "Simulation Franka Panda parallel gripper; physical Tianji Marvin with ViTai GF225.",
       "sensors": "GelSight Mini, ViTai GF225 and Xense WS supported by platform. Current public collection/evaluation README limits released task workflow to GelSight Mini; head and wrist visual streams; tactile RGB / marker motion / geometry supervision.",
+      "dataCollection": "Scripted simulation experts use ground-truth feedback with injected failures and contact-based corrections. Physical task demonstrations are separate; their teleoperation interface is Not reported.",
       "data": "Paper: 50 automatically collected full trajectories/task for policy training; 100 test rollouts/task. Public isaac45 and isaac51 folders each advertise 100 HDF5 episodes/task; contact-pretraining data and 4.5 policy checkpoints also provided. Physical study collects 150 demonstrations/task.",
       "protocol": "Scripted expert synthesis intentionally injects failures/corrections for contact variation; eight simulation tasks use identical 50-demo budgets; real policies trained separately and evaluated for 20 rollouts/task.",
       "baselines": "ACT vision-only; VITaL; ACT + UniVTAC Encoder; from-scratch and contact / shape / pose pretraining ablations."
@@ -20611,6 +20837,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://arxiv.org/abs/2602.10093",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -21996,6 +22230,7 @@
       "metrics": "Imitation-learning success rate; closed-loop rollout and action-conditioned reachability probes for world models.",
       "robots": "Franka Panda with operational-space impedance control; 6D relative Cartesian action plus binary gripper.",
       "sensors": "GelSight R1.5, GelSight Mini and FlexiTac; workspace RGB 224×224; tactile channels depend on sensor.",
+      "dataCollection": "Privileged simulation controller generates expert demonstrations. The inspected workshop manuscript does not specify a teleoperation device or named motion planner.",
       "data": "200 demonstrations per task under common data budgets.",
       "protocol": "Matched encoders/data with fusion/policy architecture as controlled variables; 50 rollouts ×3 seeds. World-model probes evaluate visual fidelity, closed-loop rollout success and action-conditioned reachability.",
       "baselines": "Early Fusion, Compositional Policy (CP), Cross-Modal Attention (CMA); world-model evaluations."
@@ -22027,6 +22262,14 @@
           "imageCandidates"
         ],
         "note": "Public project page."
+      },
+      {
+        "url": "https://peilinwu.site/tac-bench.github.io/paper/corl_2026_template_submission/example.pdf",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -22109,6 +22352,7 @@
       "metrics": "Final score is the sum of both task performances from the same submission; best complete submission determines team result.",
       "robots": "Bimanual physical platforms; exact robot models require challenge documentation.",
       "sensors": "Wrist cameras, tactile images, wrist poses and language instructions; no external depth input established by released overview.",
+      "dataCollection": "Bimanual visuo-tactile teleoperation on the ViTaMIn-B platform, recording synchronized visual, tactile and proprioceptive streams.",
       "data": "Sample datasets released 16 April 2026; full demonstration dataset released for Stage 2. Exact trajectory scale Not reported on overview.",
       "protocol": "Technical-brief selection then multiple physical policy submissions; both tasks evaluated per submission; final rankings announced 1 June 2026.",
       "baselines": "Not reported on challenge overview."
@@ -22139,6 +22383,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -22378,6 +22630,7 @@
       "metrics": "Success Rate and safety Cumulative Cost; dimension/level and language/visual robustness breakdown.",
       "robots": "Franka Panda in simulation; physical validation uses Franka Research 3.",
       "sensors": "RGB / robot state / language; scene safety state used by evaluator, not tactile sensing.",
+      "dataCollection": "Human demonstrations, followed by simulator re-rendering/replay and success filtering. The operator interface is Not reported in the inspected dataset section.",
       "data": "L0/L1 datasets: Small/Medium/Large = 10/30/50 demonstrations per task. Paper collection totals 5,750 trajectories over 115 L0/L1 task instances.",
       "protocol": "Standard train on L0-Large, test L0/L1/L2; independently apply W0–W4 language and V0–V4 visual perturbations; three seeds × ten episodes in paper.",
       "baselines": "π0, OpenVLA, OpenVLA-OFT, UniVLA, SmolVLA and others in current official evaluation."
@@ -22418,6 +22671,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2512.22539",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -23605,6 +23866,7 @@
       "metrics": "Success per perturbation/component/difficulty level; robustness degradation; generalization after expanded training.",
       "robots": "Franka Panda in LIBERO",
       "sensors": "RGB, proprioception and language; sensor noise corrupts visual inputs rather than introducing tactile streams.",
+      "dataCollection": "Original LIBERO human-teleoperated training demonstrations are reused; perturbations generate evaluation instances. The collector for additional reported trajectories is Not verified.",
       "data": "Original LIBERO training; expanded generalization dataset includes 22,400 successful trajectories in manuscript study.",
       "protocol": "Zero-shot perturbation evaluation of LIBERO-trained checkpoints; generated configurations grouped into five difficulty levels; separate retraining experiments on generalized sets.",
       "baselines": "Ten models in accepted study; generated suite stratification uses OpenVLA-OFT, π0, π0-fast and UniVLA."
@@ -23645,6 +23907,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2510.13626",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -24060,6 +24330,7 @@
       "metrics": "Success under original vs perturbed conditions; instruction/target-dependence diagnostics.",
       "robots": "Franka Panda in LIBERO",
       "sensors": "RGB, proprioception and language; no tactile stream.",
+      "dataCollection": "Reuses original LIBERO human demonstrations, collected with SpaceMouse teleoperation. New BDDL/initial-state configurations extend evaluation rather than establish a new collection interface.",
       "data": "Original LIBERO demonstrations retained; generated BDDL and initial-state files released for evaluation.",
       "protocol": "Configure perturbations through YAML; task generalization cannot be combined with other axes in current implementation; compare same trained checkpoint under shifted evaluation.",
       "baselines": "OpenVLA, π0, π0.5, UniVLA and evolving VLA evaluations."
@@ -24108,6 +24379,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://arxiv.org/abs/2510.03827",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -25622,6 +25901,7 @@
       "metrics": "Per-task success and task mean; easy clean-to-clean and hard clean-to-random transfer scores.",
       "robots": "Five bimanual embodiments; released configs include ALOHA AgileX and ARX X5, with embodiment-specific expert planning.",
       "sensors": "Head/wrist visual cameras, optional depth/point clouds and robot state; original suite does not provide tactile sensing.",
+      "dataCollection": "MLLM-generated expert task programs with simulation feedback; annotated skills and cuRobo motion planning execute the trajectories. Program generation and trajectory planning are separate stages.",
       "data": "Current repository advertises 100,000+ pre-collected trajectories; automatic task/embodiment-specific expert generation also available. Standard co-training leaderboard uses 50 demo_clean trajectories ×50 tasks.",
       "protocol": "demo_clean and demo_randomized conditions; historical paper uses single-task baselines while current leaderboard distinguishes co-train vs single-task; held-out instructions and assets vary by recipe.",
       "baselines": "ACT, Diffusion Policy, DP3, RDT and π0 in paper; current XPolicyLab integrations expand model set."
@@ -25670,6 +25950,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current released simulator dependency pin."
+      },
+      {
+        "url": "https://arxiv.org/abs/2506.18088",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original task-program generation and embodiment-adaptation sections; MLLM generates programs while cuRobo plans robot motion."
       }
     ],
     "caveats": [
@@ -26475,6 +26763,7 @@
       "metrics": "Task success rate, mean and standard deviation over seeds; FID/KID of simulated vs real tactile observations are sensor-domain diagnostics, not control success.",
       "robots": "Franka Panda with parallel gripper in physical evaluation; simulated tactile-enabled manipulator.",
       "sensors": "Three recorded RGB views and two simulated GelSight R1.5 fingertips; TacRGB and TacFF (normal/shear field) evaluated separately. Real uses front RealSense RGB and one right-finger GelSight R1.5; TacFF estimated from photometric stereo.",
+      "dataCollection": "3Dconnexion SpaceMouse teleoperation for simulated and physical demonstrations, with tactile feedback available to the operator.",
       "data": "SpaceMouse demonstrations at 10 Hz. Table V: 20–100 demonstrations per simulation setup; 50–80 per real setup. Gear/sorting comparative studies use 80 demos; bulb uses 20.",
       "protocol": "Compare Vision, Vision+TacRGB and Vision+TacFF with shared data; three policy runs/seeds and 15 consecutive test rollouts per trained policy. Downstream sensing/fusion and encoder choices are controlled.",
       "baselines": "Diffusion Policy, Equivariant Diffusion Policy, Flow Matching; scratch ResNet18, UniT, T3 and AnyTouch encoders."
@@ -26523,6 +26812,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Setup explicitly requests Isaac Gym Preview 4."
+      },
+      {
+        "url": "https://arxiv.org/abs/2505.18472",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -27812,6 +28109,7 @@
       "metrics": "Action segmentation / anomaly detection / manipulation-policy evaluation depending downstream task.",
       "robots": "Franka Panda / FR3 teleoperation setup around NIST Assembly Task Board 1.",
       "sensors": "Multi-view RGB, event camera, six-axis force/torque, external/wrist microphones, proprioception. No tactile image or metric depth stream claimed.",
+      "dataCollection": "Bidirectional haptic teleoperation: Force Dimension omega.6 master device controls the Franka FR3 and returns force feedback.",
       "data": "4,551 demonstrations, including 4,035 successful, over 781 minutes and 17 objects.",
       "protocol": "Synchronized multimodal demonstrations with action and outcome annotations; includes success and execution errors rather than success-only filtering.",
       "baselines": "Policy and temporal-action recognition baselines provided by paper/code; benchmark task-specific."
@@ -27852,6 +28150,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2502.05086",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -28308,6 +28614,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Training/evaluation, pretraining model anddataset links; MIT license inspected."
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/e19b6f65791e350347bcff8a3955cb5b-Paper-Conference.pdf",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -28354,6 +28668,7 @@
       "metrics": "Task success on seen/unseen objects;viewpoint,tactile-noise andthreshold robustness.",
       "robots": "24-DoF Shadow Hand;two hands forhandover;real Shadow Hand plusAzure Kinect.",
       "sensors": "EgoRGB;20 regional binary contacts from simulated force sensors or realpiezoresistive sensors;proprioception;not optical tactile images.",
+      "dataCollection": "Human manipulation videos synchronized with a pressure-sensor glove provide pretraining data; downstream robot policies collect RL interaction in simulation. Human capture is not robot teleoperation.",
       "data": "Human dataset2,032 sequences/565k frames/182 objects/10 tasks;simulation200 parallel environments,task-specificseen/unseen object splits.",
       "protocol": "18 pretrained/non-pretrained representations under matchedPPO;frozen pretrained encoders;simulation seen/unseen andreal qualitative transfer.",
       "baselines": "VT-JointPretrain,V/T separatepretrain;CLIP,R3M,MVP,Voltron,ResNet18with/without tactile;untrainedV/T/V+T/proprioception."
@@ -28431,6 +28746,7 @@
       "metrics": "Track 1: 50×SR(peg)+50×SR(lock); Track 2: 100×SR; Track 3: 50×SR+50×subjective score. Physical stage determines final ranking for manipulation tracks.",
       "robots": "Matched simulated and physical parallel-gripper manipulation platform.",
       "sensors": "GelSight Mini marker-based tactile sensing; Track 2 adds RealSense D415 depth with semantic segmentation.",
+      "dataCollection": "Task-specific simulator interaction supports skill learning; a uniform demonstration collector or teleoperation interface is Not reported in the challenge overview.",
       "data": "Simulation training environment and baseline resources; standardized full demonstration corpus count Not reported.",
       "protocol": "Sim evaluation followed by physical checkpoint submission for advancing teams. Held-out peg/key shapes; Track 2 increases reach distance and requires selecting matching hole.",
       "baselines": "Provided TD3 tactile policy training / pretrained challenge baseline checkpoints."
@@ -28480,6 +28796,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Official challenge page linked cyliizyz repository, not the earlier provisional guessed owner."
+      },
+      {
+        "url": "https://arxiv.org/abs/2411.12503",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -28640,6 +28964,7 @@
       "metrics": "Sensor simulation fidelity and performance; example-specific policy results.",
       "robots": "Sensor-mounted robots / fingertips in examples.",
       "sensors": "Current main release supports GelSight Mini; Taxim optical rendering, FOTS marker motion and UIPC-based FEM marker simulation.",
+      "dataCollection": "Task-dependent simulation examples and sensor/calibration workflows; no common benchmark-wide demonstration collection method is prescribed.",
       "data": "Sensor assets and calibration/examples; no standardized manipulation demonstration dataset.",
       "protocol": "Select interchangeable optical/marker/soft-body components; measure fidelity/performance under example interactions.",
       "baselines": "Taxim/FOTS/UIPC components rather than a common learned-policy leaderboard."
@@ -28680,6 +29005,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2411.04776",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -28884,6 +29217,7 @@
       "metrics": "Task-specific regression, classification and policy-success metrics; results under limited labeled-data budgets.",
       "robots": "Task-specific physical sensor/robot setups rather than one common manipulation embodiment.",
       "sensors": "Vision-based tactile sensors including DIGIT and GelSight variants, with task-specific datasets.",
+      "dataCollection": "TacBench bead maze: a mixture of VR and manual kinesthetic teleoperation. Offline tactile probes use separate instrumented-contact/pose-label capture setups.",
       "data": "TacBench labeled datasets released separately from the 460K+ image self-supervised tactile corpus used by Sparsh.",
       "protocol": "Frozen representation + lightweight downstream heads for sensing probes; label-budget comparisons; bead-maze policy evaluation separated from offline predictions.",
       "baselines": "Sparsh MAE, DINO, I-JEPA, V-JEPA variants; task/sensor-specific end-to-end baselines."
@@ -28940,6 +29274,14 @@
           "release.license"
         ],
         "note": "CC BY-NC 4.0 license file verified."
+      },
+      {
+        "url": "https://arxiv.org/abs/2410.24090",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -29841,6 +30183,7 @@
       "metrics": "Environment-specific success/reward; throughput; policy-learning baselines.",
       "robots": "Many registered arms, grippers, hands and mobile embodiments.",
       "sensors": "Selectable RGB, depth, segmentation, point clouds and state; tactile support is extension/task-specific, not universal.",
+      "dataCollection": "Task-dependent motion planning, RL rollouts and teleoperation; replay and generation tools support multiple collectors rather than one method for every task.",
       "data": "Replayable demonstrations and trajectory-generation tools; task-specific datasets rather than one homogeneous corpus.",
       "protocol": "Gymnasium-compatible vectorized tasks; state and visual RL / learning-from-demonstrations settings.",
       "baselines": "PPO, SAC, behavior cloning, Diffusion Policy and other task-dependent examples."
@@ -29881,6 +30224,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2410.00425",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -30476,6 +30827,7 @@
       "metrics": "Rendering/simulation throughput; placement/insertion success; multimodal/distillation ablations and physical transfer.",
       "robots": "Franka Panda with sensorized parallel gripper.",
       "sensors": "GelSight R1.5-style tactile RGB and spatial normal/shear force fields; wrist camera and proprioception. Current force fields use penalty/SDF queries.",
+      "dataCollection": "Privileged-state PPO expert policies generate simulated interaction and offline/online distillation trajectories; this is separate from physical transfer evaluation.",
       "data": "RL/offline expert trajectories generated through toolkit; standard public data count Not reported.",
       "protocol": "Compare observation modalities and online/offline distillation; randomize object-in-gripper pose and target location; physical peg placement/insertion validation.",
       "baselines": "AACD, asymmetric actor-critic, DAgger and offline behavior cloning."
@@ -30525,6 +30877,14 @@
           "benchmark.sensors"
         ],
         "note": "Versioned current integration: SDF penalty fields, tactile outputs and PhysX-only support."
+      },
+      {
+        "url": "https://arxiv.org/abs/2408.06506",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -30724,6 +31084,7 @@
       "metrics": "Insertion success over assembly geometries; specialist/generalist success; physical perception-initialized study.",
       "robots": "Franka Panda with shore 30A finger pads and wrist RealSense D435.",
       "sensors": "RGB-D camera feeds SAM + FoundationPose in perception-initialized workflow. Assembly actors use estimated/privileged geometry and state, not a raw RGBDT observation stack.",
+      "dataCollection": "Automatically generated disassembly paths are reversed into assembly demonstrations and guide subsequent RL policy learning.",
       "data": "100 assembly CAD assets compatible with simulation and physical printing; policy training via RL plus assembly trajectories.",
       "protocol": "Disassembly trajectories guide insertion-policy learning; specialist per geometry and generalist multi-geometry evaluation; physical pose-based trials and a separate five-assembly perception study.",
       "baselines": "Specialist and generalist AutoMate policies; IndustReal-related and guidance/distillation ablations."
@@ -30764,6 +31125,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2407.08028",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -32203,6 +32572,7 @@
       "metrics": "Success and relative degradation per perturbation; hardware correlation on selected tasks.",
       "robots": "Franka Panda",
       "sensors": "RGB-D / point clouds depending baseline; proprioception and language. No tactile input in original suite.",
+      "dataCollection": "RLBench scripted experts: motion planners execute manually specified task waypoints with randomized object poses.",
       "data": "100 unperturbed demonstrations/task for training; perturbed evaluation configurations and printable real validation assets.",
       "protocol": "Train on common clean demonstrations; evaluate 25 episodes per perturbation condition; combine multiple factors separately; physical validation is a subset.",
       "baselines": "Five manipulation methods, including PerAct, RVT and zero-shot VoxPoser; exact method/pretraining setting in manuscript."
@@ -32243,6 +32613,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2402.08191",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -32522,6 +32900,7 @@
       "metrics": "Per-primitive success, complete multi-stage success, held-out object/pose generalization.",
       "robots": "Franka Panda",
       "sensors": "2 global and 2 wrist RGB-D views; robot state, gripper and force/torque signals in data.",
+      "dataCollection": "SpaceMouse teleoperation commands end-effector motion; selected skill-collection stages are partially scripted to exploit repeatable fixture states.",
       "data": "22,550 expert demonstration trajectories. Single-object tasks last about 20–40 s; complete multi-object assembly can exceed 100 s.",
       "protocol": "Standardized workspace and reset; held-out object variations and board positions; skill-level models can be combined into longer manipulation pipelines.",
       "baselines": "Provided ResNet-based and Transformer-based imitation-learning skill policies."
@@ -32562,6 +32941,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2401.08553",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -34031,6 +34418,7 @@
       "metrics": "Success rate and lifelong learning / forward/backward transfer statistics; task-order studies.",
       "robots": "Franka Panda parallel-jaw manipulator.",
       "sensors": "Agent-view and wrist RGB, proprioception, language; optional simulator observations must be declared separately. No tactile stream in original suite.",
+      "dataCollection": "Human expert teleoperation with a 3Dconnexion SpaceMouse.",
       "data": "50 human demonstrations per task in official suite datasets.",
       "protocol": "Separate 10-task controlled transfer suites and 100-task diverse set; lifelong task sequences, multitask/pretraining evaluations; versioned init-state sets.",
       "baselines": "Sequential / multitask imitation and lifelong-learning methods from original benchmark; later VLA evaluations use distinct recipes."
@@ -34080,6 +34468,14 @@
           "benchmark.taskCount"
         ],
         "note": "Complete official suite map; counts scoped explicitly."
+      },
+      {
+        "url": "https://arxiv.org/abs/2306.03310",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original data-collection section: 3Dconnexion SpaceMouse; not inferred from another benchmark comparison table."
       }
     ],
     "caveats": [
@@ -34163,6 +34559,7 @@
       "metrics": "Real/sim insertion success, assembly time, robustness to pose/contact variation.",
       "robots": "Franka Panda with a parallel gripper and wrist RGB-D camera.",
       "sensors": "RGB-D perception estimates part pose; low-level policy uses proprioception / estimated target state. Raw images and depth are not necessarily direct actor inputs; no tactile image sensor.",
+      "dataCollection": "Online RL interaction in parallel simulation with geometry-based rewards and curricula; no common human-demonstration corpus is required.",
       "data": "Algorithms, assembly assets, trained RL workflows and real deployment tools; no unified demonstration count.",
       "protocol": "Train contact-rich policies in simulation and transfer without physical RL fine-tuning; separate pose-estimation and low-level policy components; 600 physical trials in original report.",
       "baselines": "PPO-based IndustReal; curriculum / reward / action-integrator ablations; Franka control comparisons."
@@ -34203,6 +34600,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2305.17110",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -34288,6 +34693,7 @@
       "metrics": "Assembly / skill success under low, medium and high randomization; evaluation time and human reset reproducibility.",
       "robots": "Franka Panda arm with parallel-jaw gripper",
       "sensors": "External and wrist RGB-D cameras; robot proprioception; AprilTag-based part tracking used for reproducible setups and labels.",
+      "dataCollection": "VR teleoperation with an Oculus Quest 2 controller, supplemented by keyboard control for fine wrist rotations.",
       "data": "200+ hours, 5,000+ demonstrations; RGB-D, robot states and actions.",
       "protocol": "Three standardized initial-state randomization levels; skill and full-assembly evaluation; physical benchmark complemented by FurnitureSim.",
       "baselines": "Behavior cloning and offline reinforcement-learning baselines; exact suite settings in manuscript."
@@ -34336,6 +34742,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://arxiv.org/abs/2305.12821",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -34514,6 +34928,7 @@
       "metrics": "Correct fully seated peg completion percentage over time; completion time and repeats; partial assemblies count only valid connected components.",
       "robots": "Single-arm physical baseline; kit extensible to other robot systems.",
       "sensors": "AprilTags aid state estimation; force-controlled manipulation primitives; sensor choice not fixed by the kit.",
+      "dataCollection": "Not applicable — configurable assembly test kit and evaluation designs; no standard training-demonstration corpus or prescribed collector.",
       "data": "Nine base beams, up to 15 pegs, printable joints, A2 reset template, XML goal descriptions and digital twin; no standard large demonstration dataset.",
       "protocol": "Easy requires 3–4 peg insertions; Medium 4–8 with angled insertion/sliding/regrasping; Hard longer free-form designs. Baseline repeats three Easy designs five times.",
       "baselines": "Rudimentary symbolic planner and Cartesian-impedance manipulation primitives."
@@ -34563,6 +34978,14 @@
           "benchmark.tasks"
         ],
         "note": "README names simulator version and three selectable XML goals."
+      },
+      {
+        "url": "https://arxiv.org/abs/2305.09644",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -34641,6 +35064,7 @@
       "metrics": "Task success on seen / unseen articulated objects and representation-pretraining ablations.",
       "robots": "Robot arm with Allegro Hand.",
       "sensors": "Partial point cloud from depth camera; robot proprioception. Color and optical tactile inputs are not the benchmark focus.",
+      "dataCollection": "Online PPO interaction in simulation with point-cloud observations; perception pretraining is a separate stage rather than human demonstrations.",
       "data": "Articulated object assets, RL vision pretraining resources and policy checkpoints; not a fixed human-demonstration benchmark.",
       "protocol": "Train RL on selected object instances; evaluate geometric/kinematic generalization to unseen instances within each family.",
       "baselines": "PPO with different 3D representation encoders/pretraining choices."
@@ -34681,6 +35105,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2305.05706",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -35484,6 +35916,7 @@
       "metrics": "Task-specific tracking / pushing reward and physical performance; sim-real qualitative and quantitative evaluation.",
       "robots": "Simulation testing mainly UR5; Panda and Kuka iiwa support is preliminary. Real low-cost 4-DoF arm used for lowered-cost validation.",
       "sensors": "TacTip, DIGIT, DigiTac optical tactile sensors; sensor-specific sim-to-real image adaptation.",
+      "dataCollection": "PPO/RAD-PPO simulation interaction; separate sim-to-real image-translation data use randomized robot contacts against edge/surface stimuli.",
       "data": "RL interaction rather than a standardized demonstration corpus; pretrained PPO / RAD-PPO agents downloadable.",
       "protocol": "One sim-to-real approach tested with three sensor designs across three physically interactive tasks.",
       "baselines": "PPO and RAD-PPO via Stable-Baselines3; observation-space comparisons."
@@ -35522,6 +35955,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://arxiv.org/abs/2207.10763",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -35702,6 +36143,7 @@
       "metrics": "Episodic return / normalized offline score; success diagnostics; training curves over 10 trials.",
       "robots": "Two Shadow Hands",
       "sensors": "Proprioceptive state, object state and fingertip contact forces in state-based baseline observations; these are not optical tactile images.",
+      "dataCollection": "RL policy interaction. Offline subsets use random-policy, replay-buffer, PPO-medium and medium/expert rollouts on selected tasks.",
       "data": "Offline random/replay/medium/medium-expert sets for Hand Over and Door Open Outward; many object assets.",
       "protocol": "Original online results: 100M environment steps, 2,048 parallel simulations; PPO/SAC/MAPPO/HAPPO evaluated on 20 tasks. Offline comparisons on two tasks; MT1/4/20 and ML1/4/20 protocols.",
       "baselines": "PPO, SAC, MAPPO, HAPPO; BC, BCQ, TD3+BC, IQL; multitask PPO and ProMP."
@@ -35750,6 +36192,14 @@
           "release.license"
         ],
         "note": "License text read directly; code license does not automatically cover models, data or simulator."
+      },
+      {
+        "url": "https://arxiv.org/abs/2206.08686",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "AppendixA.3 offline collection; online RL and selected offline task subsets are distinct."
       }
     ],
     "caveats": [
@@ -35828,6 +36278,7 @@
       "metrics": "Simulation speed/contact stability; RL success, policy training time and control comparisons.",
       "robots": "Franka Panda",
       "sensors": "Robot state and simulated contact information; original policies are not optical-tactile RGBDT policies.",
+      "dataCollection": "PPO interaction in parallel contact simulation; the paper trains assembly policies without human demonstration collection or corrections.",
       "data": "60 CAD/physical part models derived from industrial assembly test components; environment/controller assets rather than a common demonstration corpus.",
       "protocol": "GPU-parallel contact-rich scenes; proof-of-concept PPO policies for nut-and-bolt assembly with alternative controllers.",
       "baselines": "PPO with operational-space, joint-space, force and hybrid controllers."
@@ -35868,6 +36319,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2205.03532",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -36021,6 +36480,7 @@
       "metrics": "Image/marker fidelity and computational performance.",
       "robots": "Not prescribed",
       "sensors": "GelSight and sensor-specific variations calibrated with example contacts.",
+      "dataCollection": "Instrumented real contact calibration fits optical/deformation models; simulated tactile samples are then rendered. No uniform action-policy demonstration corpus.",
       "data": "Calibration files, object meshes and optical/marker-motion examples.",
       "protocol": "Collect calibration contacts, fit optical table and simulate deformation / marker fields under configured contact.",
       "baselines": "Sensor-model comparisons; no manipulation-policy baseline."
@@ -36051,6 +36511,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2109.04027",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -36125,6 +36593,7 @@
       "metrics": "Rendering throughput; grasp prediction and control outcomes; proof-of-concept sim-to-real.",
       "robots": "Task-specific gripper / tactile configurations.",
       "sensors": "DIGIT and OmniTact optical tactile designs.",
+      "dataCollection": "Procedural physics/grasps supply tactile-rendering samples for application-specific datasets; not a common closed-loop demonstration collector.",
       "data": "One million simulated grasps used in paper grasp-stability application; not one million closed-loop task demonstrations.",
       "protocol": "Separate tactile rendering from external rigid-body dynamics; application-specific perception and control evaluation.",
       "baselines": "Application-specific neural predictors/controllers; not a universal policy benchmark."
@@ -36155,6 +36624,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/2012.08456",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -36338,6 +36815,7 @@
       "metrics": "Task-specific binary success and episode return; few-shot/multi-task splits.",
       "robots": "Default Franka Panda; configurable additional robot arms.",
       "sensors": "Multiple RGB-D cameras, masks and proprioception; privileged object states optional; no optical tactile observations in original suite.",
+      "dataCollection": "Scripted task experts and motion planning through manually designed waypoints generate demonstrations on demand.",
       "data": "On-demand waypoint/script-generated expert demonstrations; number is user-selected.",
       "protocol": "Predefined task splits and variations; programmatic success/failure criteria; task-specific waypoints generate observations/actions.",
       "baselines": "Original benchmark behavior-cloning / RL examples; later 3D and VLA policies evaluated through downstream recipes."
@@ -36378,6 +36856,14 @@
           "benchmark.simulatorVersion"
         ],
         "note": "Current public repository; implementation scope may differ from paper."
+      },
+      {
+        "url": "https://arxiv.org/abs/1909.12271",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -36563,6 +37049,7 @@
       "metrics": "Assembly/disassembly completion and elapsed time; benchmark templates and statistical tools; manual interference invalidates autonomous trials.",
       "robots": "Robot-agnostic integrated-system evaluation.",
       "sensors": "Not prescribed; perception, control and sensors are system design choices.",
+      "dataCollection": "Not applicable — physical task boards, test procedures and performance metrics; no prescribed training-demonstration collection method.",
       "data": "Board designs, replication instructions, connector-housing STL files, benchmark protocol templates.",
       "protocol": "Randomize board and bin pose in robot workspace; autonomous assembly or disassembly; repeated controlled tests and documented component configuration.",
       "baselines": "Reference systems appear in companion studies such as Benchmarking Off-The-Shelf Solutions to Robotic Assembly Tasks (2021)."
@@ -36594,6 +37081,14 @@
           "imageCandidates"
         ],
         "note": "Public project page."
+      },
+      {
+        "url": "https://www.nist.gov/system/files/documents/2018/01/11/test_method-metrics-analysis_v3.pdf",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -41749,6 +42244,14 @@
           "release.code"
         ],
         "note": "Author project / repository cross-link verified; current release distinguished from original paper experiments."
+      },
+      {
+        "url": "https://arxiv.org/abs/2110.13423",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -41793,6 +42296,7 @@
       "metrics": "Mean and standard deviation of success rate per task.",
       "robots": "Sawyer demonstrator; Panda policy robot.",
       "sensors": "RGB rendered images.",
+      "dataCollection": "Scripted expert policies generate Sawyer and Panda demonstrations for randomized instances of each task variation.",
       "data": "100 Sawyer and 100 Panda scripted demonstrations per variation.",
       "protocol": "Single / multi-task training; three converged checkpoints evaluated on 10 random-seed episodes per variation; separate held-out-task and fine-tuning settings.",
       "baselines": "DAML, T-OSIL, LSTM, MLP and MOSAIC."
@@ -42866,6 +43370,14 @@
           "release.license"
         ],
         "note": "Actual license file inspected; code license does not automatically license data or weights."
+      },
+      {
+        "url": "https://arxiv.org/abs/2604.18933",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -42911,6 +43423,7 @@
       "metrics": "Task success rate; mean and standard deviation over training seeds.",
       "robots": "Simulation grippers; real UR5 with WSG50 / fin-ray fingers and ARX X5 in-the-wild UMI setup.",
       "sensors": "RGB and robot proprioception.",
+      "dataCollection": "Task-dependent heuristic/scripted collectors for MemMimic, plus PPO-oracle trajectories for MIKASA tasks. The real-world collection interface is Not verified.",
       "data": "Task-specific demonstrations; appendix example Match Color has 300 training episodes. Complete task-specific datasets are released.",
       "protocol": "For simulation, each checkpoint evaluated on 100 episodes, best-checkpoint mean/std over three training seeds; real protocols are task-specific.",
       "baselines": "History-free / mid / long-history Diffusion Policy, Past-Token Prediction, history attention variants and GMP."
@@ -53906,6 +54419,14 @@
         "fields": [
           "release.license"
         ]
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.29601",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "NeoSim appendix describes scripted cuRobo collection; NeoData pretraining capture is not treated as the NeoReal task collector."
       }
     ],
     "caveats": [
@@ -53973,6 +54494,7 @@
       "metrics": "Per-task binary success; NeoReal also reports an ordered milestone-progress score.",
       "robots": "NeoReal single-arm Flexiv Rizon 4s; dual-arm Piper or ARX X5. NeoSim has single- and dual-arm setups; exact paper robot variants are not inferred from unrelated dataset embodiments.",
       "sensors": "External/wrist RGB, tactile fingers and robot states. NeoSim records tactile RGB/marker motion/gel depth and derives contact-force fields. Gel deformation depth is not an external scene-depth camera; not every baseline consumes touch.",
+      "dataCollection": "NeoSim: scripted cuRobo experts with planner/success filtering. NeoReal task-demo interface is Not reported; separate NeoData pretraining combines robot teleoperation and TacUMI capture.",
       "data": "NeoReal policies: 400,000+ NeoData pretraining episodes then 300 task-specific demonstrations. NeoSim: 100 successful scripted/cuRobo demonstrations per task. OpenNeoData is a separately gated 5,000-hour corpus, not the task-demo total.",
       "protocol": "NeoReal: 20 randomized trials/task and a 5-minute limit, with milestone and failure rules. NeoSim: 100 fixed evaluation seeds/task disjoint from collection, remote policy inference on RTX 4090. Paper real training uses 8 A100; simulated task-policy training uses 4 A100.",
       "baselines": [
@@ -57002,6 +57524,14 @@
           "release.weights"
         ],
         "note": "Model repository contains pretraining tensors; this does not establish task-finetuned checkpoints or benchmark assets."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.22342",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -57065,6 +57595,7 @@
         "Two Orbbec 305 wrist RGB cameras",
         "Moxian tactile gloves on real hands; 320 retained taxels/hand; no tactile input in simulation"
       ],
+      "dataCollection": "Benchmark task-demonstration collector Not reported. Human Touch pretraining uses egocentric human motion/tactile capture and is separate from SparkArena task demonstrations.",
       "data": "Human Touch 1,000 h is pretraining data, not the Spark Arena evaluation episode count. Benchmark-specific downstream demonstrations are separate; their exact count Not reported.",
       "protocol": "Held-out evaluated tasks absent from pretraining. Per policy/task: 50 simulated rollouts, 10 real rollouts; real methods share paired initial conditions.",
       "baselines": [
@@ -68288,6 +68819,14 @@
           "release.data"
         ],
         "note": "Contains released LMDB training episodes and the test microsteps archive."
+      },
+      {
+        "url": "https://arxiv.org/abs/2410.01345",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -68371,6 +68910,7 @@
       "metrics": "Binary episode success; per-variation average and five-seed mean/standard deviation.",
       "robots": "Franka Panda in RLBench",
       "sensors": "Four 256 × 256 calibrated RGB-D views: front, left shoulder, right shoulder and wrist; robot proprioception.",
+      "dataCollection": "RLBench-style scripted experts generate demonstrations for the training task variations; collection is separate from held-out evaluation rollouts.",
       "data": "100 scripted demonstrations for each of 31 training variations = 3,100 training demonstrations. Validation uses 20 episodes per training variation, separately from testing.",
       "protocol": "Four test levels with 31/28/21/12 variations; 20 episodes × five seeds × 92 variations = 9,200 test episodes; maximum 25 keyframe steps.",
       "baselines": "Hiveformer,PolarNet,3D Diffuser Actor,RVT-2,3D-LOTUS,3D-LOTUS++; external RLBench 18-task comparison table separate."
@@ -70483,6 +71023,14 @@
           "benchmark"
         ],
         "note": "Live project inspected; implementation/data/weights are independently distinguished from paper and published result tables."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.19604",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
       }
     ],
     "caveats": [
@@ -70523,6 +71071,7 @@
       "metrics": "Complete episode success; task/category macro means; destination and mechanism-progress diagnostics do not substitute for success. Nut Thread also checks release and withdrawal.",
       "robots": "Simulated Franka with parallel gripper; real Franka Research 3, Robotiq gripper and KWR75B six-axis F/T sensor.",
       "sensors": "External/wrist RGB, task language, 7-D TCP/gripper state and six-axis wrist wrench. Sim uses parent-on-child joint reaction without gravity compensation; real examples retain sensor-frame readings. No cutaneous tactile or measured depth input.",
+      "dataCollection": "Simulation: task-specific scripted experts with privileged state and a shared controller. The physical demonstration collection interface is Not reported.",
       "data": "1,600 successful scripted simulation demos: 200/task, seeds0–199, synchronized at15Hz. Real study:200 demos/task. Public demonstrations not released at review snapshot.",
       "protocol": "Ten systems ×8 tasks ×200 shared evaluation seeds300–499 =16,000 simulation episodes. Physics60Hz/control15Hz; budget1500 controls/100s. Seven π0.5 variants, π0 and ForceVLA execute50-action chunks; ForceFlow predicts64/executes32. Real:8 systems ×5 tasks ×20 shared starts =800 trials.",
       "baselines": "π0.5 without force; Token Fusion; Prompt Fusion; Cross-Attention; Token Fusion+Pred; Temporal Prompt; Dual-Path Fusion; external π0, ForceVLA and ForceFlow. External architectures/budgets/horizons differ."
@@ -70628,6 +71177,14 @@
           "benchmark.data"
         ],
         "note": "Public ungated inventory contains LeRobot data files; asset access conditions remain separate."
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.21180",
+        "label": "Data collection method and scope",
+        "fields": [
+          "benchmark.dataCollection"
+        ],
+        "note": "Section3.2 collection pipeline; optional keyboard interfaces in the release are not substituted for the reported VR corpus."
       }
     ],
     "caveats": [
@@ -70685,6 +71242,7 @@
       "metrics": "Episode SR and normalized StageScore, macro-averaged across fixed tasks. SR uses Wilson/rollout intervals; training-seed variability and missing per-condition StageScores are not fabricated.",
       "robots": "Panda arm with Shadow Hand; single-arm and bimanual configurations; Quest3/WebXR demonstration collection.",
       "sensors": "Context, interaction and wrist RGB;31-D or62-D state;123 scalar normal-force taxels per hand. PhysX impulses at120Hz are integrated over30Hz observation periods, preserving total impulse. KineDex adaptation uses100 finger taxels with its own padded format, not original KineDex sensor specifications.",
+      "dataCollection": "VR teleoperation with Quest 3/WebXR hand tracking; wrist motion drives Panda arm IK and hand keypoints are retargeted to Shadow Hand joint targets.",
       "data": "1,248 successful trajectories:24 Core×50+6 Gen×8; three layouts per task. Canonical HDF5 and LeRobot-v3 formats. Public HF dataset and asset bundle verified; PartNet assets require separate provider access.",
       "protocol": "100 frozen-policy episodes/task:20 nominal and20 each camera,lighting,physical,spatial; layouts34/33/33. Identical reset schedules across models; no test-time weight or normalization updates. Separate single/bimanual checkpoints; train/transfer mixtures and target budgets remain scoped.",
       "baselines": "π0.5, SmolVLA, Diffusion Policy convolutional/transformer variants, and KineDex; matched KineDex No-Touch ablation. Adapters retain different horizons; training settings and transfer protocols appear in Appendix D."

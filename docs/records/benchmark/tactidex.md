@@ -27,6 +27,7 @@ Tactile-rich human hand–object interaction dataset and contact-aware human-to-
 | Metrics | Object translation/rotation tracking error, MPJPE, fingertip error, mean tactile force error, Contact F1; SRkin / SRtac; PeakSafe@3N and SafeTac@3N. [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/)  |
 | Robots | Human data collection; simulation 12-DoF Inspire model; physical two Franka Panda arms with two Inspire hands exposing 6 independent motors each. [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/)  |
 | Sensors and observations | Human piezoresistive glove: 162 elements, 17 Hz; kinematic/pose streams 120 Hz via tracking glove and OptiTrack. Physical robot tactile sensors are available but not fed back online. [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/)  |
+| Data collection method | Human hand–object capture with motion tracking and a tactile glove; kinematics, pressure and object poses are synchronized. Retargeted robot-policy training is downstream. [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/) [3](https://arxiv.org/abs/2607.09190)  |
 | Demonstrations and data | 757 synchronized human interaction sequences, 49 calibrated objects; 73 representative sequences selected for quantitative simulated transfer. [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/)  |
 | Evaluation protocol | TactiSkill PPO asymmetric actor-critic tracks retargeted demonstrations with tactile-guided rewards. Physical transfer retargets to six actuator commands and executes open-loop. [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/)  |
 | Evaluated baselines | Kinematic-only transfer baseline and tri-component tactile reward ablations (TactiSkill). [1](https://arxiv.org/abs/2607.09190) [2](https://tactidex.github.io/)  |
@@ -62,3 +63,4 @@ Tactile-rich human hand–object interaction dataset and contact-aware human-to-
 
 1. [Paper](https://arxiv.org/abs/2607.09190) — Published paper / arXiv record and manuscript.
 2. [Official project](https://tactidex.github.io/) — Public project page.
+3. [Data collection method and scope](https://arxiv.org/abs/2607.09190) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

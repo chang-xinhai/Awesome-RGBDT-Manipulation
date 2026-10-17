@@ -27,6 +27,7 @@ Task-oriented arm-hand benchmark emphasizing tool use, bimanual coordination, lo
 | Metrics | Task success across object-only and full visual/dynamics randomization; multitask and action-head adaptation results. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/)  |
 | Robots | Franka Panda + Allegro Hand; single-arm and dual-arm configurations. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/)  |
 | Sensors and observations | Third-person and wrist RGB, proprioception and actions. Depth/tactile inputs are not established as evaluated baseline modalities. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/)  |
+| Data collection method | Motion-capture teleoperation with Rokoko gloves and HTC Vive trackers; hand retargeting and randomized-scene replay expand the demonstrations. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/) [5](https://arxiv.org/abs/2605.16257)  |
 | Demonstrations and data | 1,100 human demonstrations captured with Rokoko gloves / HTC Vive trackers; replay-based randomized scene expansion. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/)  |
 | Evaluation protocol | Shared asynchronous policy server/client interface; single-task vs multitask training; object placement/table height and visual/dynamic randomization. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/)  |
 | Evaluated baselines | ACT, Diffusion Policy CNN/Transformer, π0.5, GR00T N1.5. [1](https://arxiv.org/abs/2605.16257) [2](https://dexjoco.github.io/)  |
@@ -64,3 +65,4 @@ Task-oriented arm-hand benchmark emphasizing tool use, bimanual coordination, lo
 2. [Official project](https://dexjoco.github.io/) — Public project page.
 3. [Official repository](https://github.com/brave-eai/dexjoco) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/brave-eai/dexjoco/blob/main/dexjoco/pyproject.toml) — MuJoCo==3.4.0 pin read from actual package dependency.
+5. [Data collection method and scope](https://arxiv.org/abs/2605.16257) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

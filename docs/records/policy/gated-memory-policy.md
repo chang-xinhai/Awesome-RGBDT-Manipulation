@@ -50,3 +50,4 @@ A diffusion policy learns when to recall visual/action history and what context 
 2. [Official project](https://gated-memory-policy.github.io/) — Author-linked project and current release checked on the catalog cutoff.
 3. [Official code / release documentation](https://github.com/real-stanford/gated-memory-policy) — Current repository documentation; paper settings and subsequently released artifacts are distinguished.
 4. [Repository LICENSE](https://github.com/real-stanford/gated-memory-policy/blob/HEAD/LICENSE) — Actual license file inspected; code license does not automatically license data or weights.
+5. [Data collection method and scope](https://arxiv.org/abs/2604.18933) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

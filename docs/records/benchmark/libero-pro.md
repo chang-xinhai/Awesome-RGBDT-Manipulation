@@ -27,6 +27,7 @@ LIBERO evaluation extension probing object, position, semantic, task and environ
 | Metrics | Success under original vs perturbed conditions; instruction/target-dependence diagnostics. [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)  |
 | Robots | Franka Panda in LIBERO [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)  |
 | Sensors and observations | RGB, proprioception and language; no tactile stream. [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)  |
+| Data collection method | Reuses original LIBERO human demonstrations, collected with SpaceMouse teleoperation. New BDDL/initial-state configurations extend evaluation rather than establish a new collection interface. [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/) [5](https://arxiv.org/abs/2510.03827)  |
 | Demonstrations and data | Original LIBERO demonstrations retained; generated BDDL and initial-state files released for evaluation. [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)  |
 | Evaluation protocol | Configure perturbations through YAML; task generalization cannot be combined with other axes in current implementation; compare same trained checkpoint under shifted evaluation. [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)  |
 | Evaluated baselines | OpenVLA, π0, π0.5, UniVLA and evolving VLA evaluations. [1](https://arxiv.org/abs/2510.03827) [2](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)  |
@@ -58,3 +59,4 @@ LIBERO evaluation extension probing object, position, semantic, task and environ
 2. [Official project](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/) — Public project page.
 3. [Official repository](https://github.com/Zxy-MLlab/LIBERO-PRO) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/Zxy-MLlab/LIBERO-PRO/blob/master/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
+5. [Data collection method and scope](https://arxiv.org/abs/2510.03827) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

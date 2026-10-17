@@ -27,6 +27,7 @@ Reconfigurable physical insertion kit with five peg geometries, three nominal cl
 | Metrics | Scenario-conditional insertion/assembly success; exact scoring procedure specified in manuscript. [1](https://arxiv.org/abs/2609.00906)  |
 | Robots | Embodiment-agnostic physical kit. [1](https://arxiv.org/abs/2609.00906)  |
 | Sensors and observations | Not prescribed; no tactile sensor is required by the benchmark. [1](https://arxiv.org/abs/2609.00906)  |
+| Data collection method | Not applicable — scenario/component generator and evaluation protocol; no fixed robot-demonstration corpus or prescribed collector. [1](https://arxiv.org/abs/2609.00906) [3](https://arxiv.org/abs/2609.00906)  |
 | Demonstrations and data | STL components and JSON scenario generator; not a robot demonstration dataset. [1](https://arxiv.org/abs/2609.00906)  |
 | Evaluation protocol | Hold physical/contact conditions approximately fixed while varying target pose, geometry, nominal tolerance (0.1 / 1 / 3 mm) and assembly structure. [1](https://arxiv.org/abs/2609.00906)  |
 | Evaluated baselines | No standardized learned-policy comparison established in the source overview. [1](https://arxiv.org/abs/2609.00906)  |
@@ -56,3 +57,4 @@ Reconfigurable physical insertion kit with five peg geometries, three nominal cl
 
 1. [Paper](https://arxiv.org/abs/2609.00906) — Published paper / arXiv record and manuscript.
 2. [Official repository](https://github.com/aistairc/peg-in-bench) — Current public repository; implementation scope may differ from paper.
+3. [Data collection method and scope](https://arxiv.org/abs/2609.00906) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

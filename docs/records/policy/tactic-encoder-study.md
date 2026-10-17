@@ -52,3 +52,4 @@ A controlled real-robot study of five tactile encoders and five fusion schemes u
 2. [Official source](https://utn-air.github.io/TACTIC/) — Official project checked against full manuscript.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2609.30969) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
 4. [Official TACTIC project](https://utn-air.github.io/TACTIC) — Project identity and release links checked independently of manuscript claims.
+5. [Data collection method and scope](https://arxiv.org/abs/2609.30969) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

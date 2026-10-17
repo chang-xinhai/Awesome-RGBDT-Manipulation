@@ -27,6 +27,7 @@ A diffusion policy learns when to recall visual/action history and what context 
 | Metrics | Task success rate; mean and standard deviation over training seeds. [1](https://arxiv.org/abs/2604.18933)  |
 | Robots | Simulation grippers; real UR5 with WSG50 / fin-ray fingers and ARX X5 in-the-wild UMI setup. [1](https://arxiv.org/abs/2604.18933)  |
 | Sensors and observations | RGB and robot proprioception. [1](https://arxiv.org/abs/2604.18933)  |
+| Data collection method | Task-dependent heuristic/scripted collectors for MemMimic, plus PPO-oracle trajectories for MIKASA tasks. The real-world collection interface is Not verified. [1](https://arxiv.org/abs/2604.18933) [5](https://arxiv.org/abs/2604.18933)  |
 | Demonstrations and data | Task-specific demonstrations; appendix example Match Color has 300 training episodes. Complete task-specific datasets are released. [1](https://arxiv.org/abs/2604.18933)  |
 | Evaluation protocol | For simulation, each checkpoint evaluated on 100 episodes, best-checkpoint mean/std over three training seeds; real protocols are task-specific. [1](https://arxiv.org/abs/2604.18933)  |
 | Evaluated baselines | History-free / mid / long-history Diffusion Policy, Past-Token Prediction, history attention variants and GMP. [1](https://arxiv.org/abs/2604.18933)  |
@@ -60,3 +61,4 @@ A diffusion policy learns when to recall visual/action history and what context 
 2. [Official project](https://gated-memory-policy.github.io/) — Author-linked project and current release checked on the catalog cutoff.
 3. [Official code / release documentation](https://github.com/real-stanford/gated-memory-policy) — Current repository documentation; paper settings and subsequently released artifacts are distinguished.
 4. [Repository LICENSE](https://github.com/real-stanford/gated-memory-policy/blob/HEAD/LICENSE) — Actual license file inspected; code license does not automatically license data or weights.
+5. [Data collection method and scope](https://arxiv.org/abs/2604.18933) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -18,8 +18,16 @@ Common metadata: `id`, `name`, optional `benchmarkName` / `policyName`, exact
 optional `relatedIds`, and `verified`.
 
 Benchmark fields: `simulator`, `simulatorVersion`, `taskCount`, `tasks`,
-`taskListScope`, `capabilities`, `metrics`, `robots`, `sensors`, `data`,
+`taskListScope`, `capabilities`, `metrics`, `robots`, `sensors`, `dataCollection`, `data`,
 `protocol`, `baselines`.
+
+`dataCollection` is a required benchmark field describing how demonstrations or
+training interactions were obtained: teleoperation interface, motion planner,
+scripted/state-machine expert, RL policy, or an explicitly scoped mixture.
+Keep it separate from the dataset size/release in `data`, policy training and
+evaluation rollouts. Preserve simulation/physical and original/augmented data
+differences. Use `Not applicable` for resources without a collection corpus,
+`Not reported` for undisclosed methods, and `Not verified` for unresolved facts.
 
 Policy fields: `family`, `baseModel`, `modelSize`, `inputs`, `outputs`,
 `trainingMethod`, `trainingData`, `trainingTime`, `trainingHardware`,

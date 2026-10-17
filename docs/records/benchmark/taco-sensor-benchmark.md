@@ -27,6 +27,7 @@ Real-robot task-driven comparison of optical, acoustic, magnetic and resistive t
 | Metrics | Policy task success; analysis of spatial resolution, shear, sensor representation, friction and sensor durability. [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco)  |
 | Robots | Franka Panda 7-DoF arms; experiments distributed across institutions. [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco)  |
 | Sensors and observations | Four tactile modalities: optical, acoustic, magnetic, resistive. Named devices include FlexiTac, eGain, Daimon, eFlesh and FSR configurations; consult paper sensor matrix for tested combinations. [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco)  |
+| Data collection method | GELLO joint-space teleoperation; sensor configurations share the demonstration and imitation-learning pipeline. [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco) [4](https://arxiv.org/abs/2605.21976)  |
 | Demonstrations and data | GELLO teleoperation; paper specifies task-dependent demonstration budgets (e.g., 60 demonstrations for pick-and-place, 50 per sensor for plug insertion). [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco)  |
 | Evaluation protocol | Train separate ACT policies per sensor, task and modality configuration; compare outcomes under matched task setup with sensor material properties documented. [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco)  |
 | Evaluated baselines | ACT with sensor-specific tactile representations and vision-only comparisons. [1](https://arxiv.org/abs/2605.21976) [2](https://anyazorin.com/projects/taco)  |
@@ -55,3 +56,4 @@ Real-robot task-driven comparison of optical, acoustic, magnetic and resistive t
 1. [Paper](https://arxiv.org/abs/2605.21976) — Published paper / arXiv record and manuscript.
 2. [Official project](https://anyazorin.com/projects/taco) — Public project page.
 3. [Official repository](https://github.com/TacObench/TacO) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2605.21976) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

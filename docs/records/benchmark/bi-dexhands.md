@@ -27,6 +27,7 @@ GPU-parallel bimanual Shadow Hand benchmark for single/multi-agent RL, offline l
 | Metrics | Episodic return / normalized offline score; success diagnostics; training curves over 10 trials. [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/)  |
 | Robots | Two Shadow Hands [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/)  |
 | Sensors and observations | Proprioceptive state, object state and fingertip contact forces in state-based baseline observations; these are not optical tactile images. [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/)  |
+| Data collection method | RL policy interaction. Offline subsets use random-policy, replay-buffer, PPO-medium and medium/expert rollouts on selected tasks. [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/) [5](https://arxiv.org/abs/2206.08686)  |
 | Demonstrations and data | Offline random/replay/medium/medium-expert sets for Hand Over and Door Open Outward; many object assets. [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/)  |
 | Evaluation protocol | Original online results: 100M environment steps, 2,048 parallel simulations; PPO/SAC/MAPPO/HAPPO evaluated on 20 tasks. Offline comparisons on two tasks; MT1/4/20 and ML1/4/20 protocols. [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/)  |
 | Evaluated baselines | PPO, SAC, MAPPO, HAPPO; BC, BCQ, TD3+BC, IQL; multitask PPO and ProMP. [1](https://arxiv.org/abs/2206.08686) [2](https://pku-marl.github.io/DexterousHands/)  |
@@ -72,3 +73,4 @@ GPU-parallel bimanual Shadow Hand benchmark for single/multi-agent RL, offline l
 2. [Official project](https://pku-marl.github.io/DexterousHands/) — Public project page.
 3. [Official repository](https://github.com/PKU-MARL/DexterousHands) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/PKU-MARL/DexterousHands/blob/main/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
+5. [Data collection method and scope](https://arxiv.org/abs/2206.08686) — AppendixA.3 offline collection; online RL and selected offline task subsets are distinct.

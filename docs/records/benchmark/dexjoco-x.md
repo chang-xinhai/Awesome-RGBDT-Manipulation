@@ -27,6 +27,7 @@ Controlled seven-hand comparison of action representations under shared scenes, 
 | Metrics | Success per hand/task and mean across 42 pairs; three independent 50-rollout evaluations/cell = 6,300 evaluation episodes. [1](https://arxiv.org/abs/2610.03278)  |
 | Robots | XHand, Inspire, Wuji, LEAP, Sharpa Wave, LinkerHand, Allegro hands with arm setups. [1](https://arxiv.org/abs/2610.03278)  |
 | Sensors and observations | RGB, robot state and action records; no tactile sensing established. [1](https://arxiv.org/abs/2610.03278)  |
+| Data collection method | Motion-capture teleoperation using Rokoko gloves and Vive wrist trackers, followed by reviewed trajectory replay, scene expansion and success verification. [1](https://arxiv.org/abs/2610.03278) [2](https://arxiv.org/abs/2610.03278)  |
 | Demonstrations and data | 2,100 balanced demonstrations; 50 per hand–task pair; reviewed demonstrations expanded and verified in randomized scenes. [1](https://arxiv.org/abs/2610.03278)  |
 | Evaluation protocol | Seven per-hand multitask π0.5/Ego-Pi policies (300 demos each) vs joint Being-H0.5 (2,100 demos); Native, function-aligned action slots and DexLatent within matched joint architecture. [1](https://arxiv.org/abs/2610.03278)  |
 | Evaluated baselines | π0.5, Ego-Pi action-head adaptation; Being-H0.5 with Native, FAAS, DexLatent. [1](https://arxiv.org/abs/2610.03278)  |
@@ -56,3 +57,4 @@ Controlled seven-hand comparison of action representations under shared scenes, 
 **Primary evidence**
 
 1. [Paper](https://arxiv.org/abs/2610.03278) — Published paper / arXiv record and manuscript.
+2. [Data collection method and scope](https://arxiv.org/abs/2610.03278) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

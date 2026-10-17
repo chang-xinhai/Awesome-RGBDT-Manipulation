@@ -48,3 +48,4 @@ Combines human visual-tactile representation pretraining with a six-task dextero
 
 1. [Official ICLR2025 full paper](https://proceedings.iclr.cc/paper_files/paper/2025/file/e19b6f65791e350347bcff8a3955cb5b-Paper-Conference.pdf) — §4/5 andAppendixB/C; year is official conference year, no arXiv v1 was identified.
 2. [Official implementation](https://github.com/LQTS/VTDexManip) — Training/evaluation, pretraining model anddataset links; MIT license inspected.
+3. [Data collection method and scope](https://proceedings.iclr.cc/paper_files/paper/2025/file/e19b6f65791e350347bcff8a3955cb5b-Paper-Conference.pdf) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

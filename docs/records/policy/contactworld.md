@@ -51,3 +51,4 @@ A JEPA-style latent world model learns visuo-tactile dynamics from demonstration
 2. [Official project](https://contact-world.github.io/) — Public project page.
 3. [Official repository](https://github.com/PokuangZhou/ContactWorld) — Current public repository; implementation scope may differ from paper.
 4. [Full paper: Sections III-C and V; Figure 7](https://arxiv.org/pdf/2606.13877) — Simulation 100K gradient updates and physical200 epochs are distinct settings. Planning controls are CEM-based; no pretrained foundation backbone is claimed.
+5. [Data collection method and scope](https://arxiv.org/abs/2606.13877) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

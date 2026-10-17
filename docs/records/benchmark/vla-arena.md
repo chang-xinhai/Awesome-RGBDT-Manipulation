@@ -27,6 +27,7 @@ Structured task difficulty and orthogonal language/visual perturbations evaluate
 | Metrics | Success Rate and safety Cumulative Cost; dimension/level and language/visual robustness breakdown. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/)  |
 | Robots | Franka Panda in simulation; physical validation uses Franka Research 3. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/)  |
 | Sensors and observations | RGB / robot state / language; scene safety state used by evaluator, not tactile sensing. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/)  |
+| Data collection method | Human demonstrations, followed by simulator re-rendering/replay and success filtering. The operator interface is Not reported in the inspected dataset section. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/) [4](https://arxiv.org/abs/2512.22539)  |
 | Demonstrations and data | L0/L1 datasets: Small/Medium/Large = 10/30/50 demonstrations per task. Paper collection totals 5,750 trajectories over 115 L0/L1 task instances. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/)  |
 | Evaluation protocol | Standard train on L0-Large, test L0/L1/L2; independently apply W0–W4 language and V0–V4 visual perturbations; three seeds × ten episodes in paper. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/)  |
 | Evaluated baselines | π0, OpenVLA, OpenVLA-OFT, UniVLA, SmolVLA and others in current official evaluation. [1](https://arxiv.org/abs/2512.22539) [2](https://vla-arena.github.io/)  |
@@ -222,3 +223,4 @@ Structured task difficulty and orthogonal language/visual perturbations evaluate
 1. [Paper](https://arxiv.org/abs/2512.22539) — Published paper / arXiv record and manuscript.
 2. [Official project](https://vla-arena.github.io/) — Public project page.
 3. [Official repository](https://github.com/PKU-Alignment/VLA-Arena) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2512.22539) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

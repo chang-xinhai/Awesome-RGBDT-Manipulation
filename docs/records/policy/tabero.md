@@ -50,3 +50,4 @@ Pairs a language-conditioned gentleness benchmark with a VLA that predicts separ
 1. [Author manuscript and submission history](https://arxiv.org/abs/2605.27886) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/NathanWu7/Tabero) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Official release reproduction notes](https://github.com/NathanWu7/Tabero) — Explicit paper-versus-minicase rerun settings and contact binding caveat.
+4. [Data collection method and scope](https://arxiv.org/abs/2605.27886) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -27,6 +27,7 @@ PyBullet-based tactile-control environments supporting comparative sim-to-real s
 | Metrics | Task-specific tracking / pushing reward and physical performance; sim-real qualitative and quantitative evaluation. [1](https://arxiv.org/abs/2207.10763)  |
 | Robots | Simulation testing mainly UR5; Panda and Kuka iiwa support is preliminary. Real low-cost 4-DoF arm used for lowered-cost validation. [1](https://arxiv.org/abs/2207.10763)  |
 | Sensors and observations | TacTip, DIGIT, DigiTac optical tactile sensors; sensor-specific sim-to-real image adaptation. [1](https://arxiv.org/abs/2207.10763)  |
+| Data collection method | PPO/RAD-PPO simulation interaction; separate sim-to-real image-translation data use randomized robot contacts against edge/surface stimuli. [1](https://arxiv.org/abs/2207.10763) [4](https://arxiv.org/abs/2207.10763)  |
 | Demonstrations and data | RL interaction rather than a standardized demonstration corpus; pretrained PPO / RAD-PPO agents downloadable. [1](https://arxiv.org/abs/2207.10763)  |
 | Evaluation protocol | One sim-to-real approach tested with three sensor designs across three physically interactive tasks. [1](https://arxiv.org/abs/2207.10763)  |
 | Evaluated baselines | PPO and RAD-PPO via Stable-Baselines3; observation-space comparisons. [1](https://arxiv.org/abs/2207.10763)  |
@@ -54,3 +55,4 @@ PyBullet-based tactile-control environments supporting comparative sim-to-real s
 1. [Paper](https://arxiv.org/abs/2207.10763) — Published paper / arXiv record and manuscript.
 2. [Official repository](https://github.com/NICESONY/tactile_gym_2) — Current public repository; implementation scope may differ from paper.
 3. [Official source](https://github.com/NICESONY/tactile_gym_2/blob/main/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
+4. [Data collection method and scope](https://arxiv.org/abs/2207.10763) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

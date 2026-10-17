@@ -27,6 +27,7 @@ Physical NIST-board assembly/disassembly data including successful and failed de
 | Metrics | Action segmentation / anomaly detection / manipulation-policy evaluation depending downstream task. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/)  |
 | Robots | Franka Panda / FR3 teleoperation setup around NIST Assembly Task Board 1. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/)  |
 | Sensors and observations | Multi-view RGB, event camera, six-axis force/torque, external/wrist microphones, proprioception. No tactile image or metric depth stream claimed. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/)  |
+| Data collection method | Bidirectional haptic teleoperation: Force Dimension omega.6 master device controls the Franka FR3 and returns force feedback. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/) [4](https://arxiv.org/abs/2502.05086)  |
 | Demonstrations and data | 4,551 demonstrations, including 4,035 successful, over 781 minutes and 17 objects. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/)  |
 | Evaluation protocol | Synchronized multimodal demonstrations with action and outcome annotations; includes success and execution errors rather than success-only filtering. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/)  |
 | Evaluated baselines | Policy and temporal-action recognition baselines provided by paper/code; benchmark task-specific. [1](https://arxiv.org/abs/2502.05086) [2](https://tuwien-asl.github.io/REASSEMBLE_page/)  |
@@ -55,3 +56,4 @@ Physical NIST-board assembly/disassembly data including successful and failed de
 1. [Paper](https://arxiv.org/abs/2502.05086) — Published paper / arXiv record and manuscript.
 2. [Official project](https://tuwien-asl.github.io/REASSEMBLE_page/) — Public project page.
 3. [Official repository](https://github.com/TUWIEN-ASL/REASSEMBLE) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2502.05086) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

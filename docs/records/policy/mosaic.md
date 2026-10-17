@@ -49,3 +49,4 @@ Self-attention and temporal contrastive learning enable one-shot visual imitatio
 2. [Official project](https://sites.google.com/berkeley.edu/mosaic) — Author-linked project and current release checked on the catalog cutoff.
 3. [Repository LICENSE](https://github.com/rll-research/mosaic/blob/HEAD/LICENSE) — Actual license file inspected; code license does not automatically license data or weights.
 4. [Verified official code artifact](https://github.com/rll-research/mosaic) — Author project / repository cross-link verified; current release distinguished from original paper experiments.
+5. [Data collection method and scope](https://arxiv.org/abs/2110.13423) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

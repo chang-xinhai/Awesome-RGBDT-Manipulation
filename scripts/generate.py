@@ -12,7 +12,7 @@ sensing_audit=json.loads((ROOT/'data/sensing-source-audit.json').read_text())
 CATS={
  'benchmark':[('tactile-benchmarks','Visuo-Tactile Benchmarks'),('precision-assembly','Precision and Assembly'),('dexterous-benchmarks','Dexterous Manipulation'),('general-manipulation','General Manipulation'),('robustness-evaluation','Robustness and Evaluation'),('supporting-resources','Supporting Tools and Data')],
  'policy':[('tactile-il','Visuo-Tactile Policy Learning'),('tactile-foundation','Tactile VLA and World-Action Models'),('rgbd-3d','RGB-D and 3D Policies'),('tactile-representation','Tactile Representations and Pretraining'),('geometry-models','Geometry and Predictive Models'),('visual-precision-rl','Visual Precision and Reinforcement Learning'),('agent-rsi-icl','Agent / RSI / ICL'),('generalist-foundation','Generalist Policy Foundations')]}
-BENCH=[('simulator','Simulator'),('simulatorVersion','Simulator version and scope'),('taskCount','Task count and scope'),('taskListScope','Task-list scope'),('capabilities','Capability dimensions'),('metrics','Metrics'),('robots','Robots'),('sensors','Sensors and observations'),('data','Demonstrations and data'),('protocol','Evaluation protocol'),('baselines','Evaluated baselines')]
+BENCH=[('simulator','Simulator'),('simulatorVersion','Simulator version and scope'),('taskCount','Task count and scope'),('taskListScope','Task-list scope'),('capabilities','Capability dimensions'),('metrics','Metrics'),('robots','Robots'),('sensors','Sensors and observations'),('dataCollection','Data collection method'),('data','Demonstrations and data'),('protocol','Evaluation protocol'),('baselines','Evaluated baselines')]
 POLICY=[('family','Policy family'),('baseModel','Base model and architecture'),('modelSize','Model size and component'),('inputs','Deployment inputs'),('outputs','Action outputs and horizon'),('trainingMethod','Training method'),('trainingData','Training data'),('trainingTime','Training duration'),('trainingHardware','Training hardware'),('controlRate','Inference and control rates'),('evaluation','Evaluation scope')]
 SURVEY=[('scope','Review scope'),('taxonomy','Organizing taxonomy'),('adaptationRegimes','Adaptation mechanisms'),('contextSources','Context and evidence'),('evaluationAxes','Evaluation dimensions'),('corpus','Literature corpus and snapshot'),('reviewMethod','Literature selection'),('coverageLimits','Coverage boundaries')]
 MODEL=[('role','Model role and downstream interface'),('family','Model family'),('baseModel','Model architecture'),('modelSize','Model size and component'),('inputs','Model inputs'),('outputs','Model outputs'),('trainingMethod','Training method'),('trainingData','Training data and scale'),('trainingTime','Training duration'),('trainingHardware','Training hardware'),('inference','Inference setting and runtime'),('evaluation','Downstream evaluation and scope')]
@@ -65,14 +65,14 @@ for c,heading in [('benchmark','Benchmarks'),('policy','Policies')]:
   items=ordered([w for w in works if c in w['collections']and cat in w['categories']and w['id']not in placed and (c=='policy' or cat=='supporting-resources' or 'supporting-resources'not in w['categories'])])
   lines += [f'<a id="{cat}"></a>',f'### {label}','']
   if not items:lines+=['See related records in the interactive catalog.',''];continue
-  cols=['Date','Work','Setting','Tasks / simulator' if c=='benchmark'else'Architecture / inputs','Release','Primary links']
-  lines+=['| '+' | '.join(cols)+' |','| :-- | :-- | :-- | :-- | :-- | :-- |']
+  cols=['Date','Work','Setting','Tasks / simulator' if c=='benchmark'else'Architecture / inputs']+(['Data collection']if c=='benchmark'else[])+['Release','Primary links']
+  lines+=['| '+' | '.join(cols)+' |','| '+' | '.join([':--']*len(cols))+' |']
   for w in items:
    obj=w.get('survey'if w.get('survey')else'model'if c=='policy'and w.get('model')else c,{})
    info=('Survey; '+text(obj.get('scope')))if w.get('survey')else(text(obj.get('taskCount'))+'; '+text(obj.get('simulator')))if c=='benchmark'else(text(obj.get('family'))+'; '+text(obj.get('inputs')))
    if len(info)>190:info=info[:187].rstrip()+'…'
    links=artifact_markdown(w)
-   lines.append('| '+' | '.join([w['date']or'Undated',f'[{clean(name(w,c))}](#record-{c}-{w["id"]})',clean(w['environments']),clean(info),clean(release(w,c).get('code')),links+f' <!-- work:{w["id"]} -->'])+' |')
+   lines.append('| '+' | '.join([w['date']or'Undated',f'[{clean(name(w,c))}](#record-{c}-{w["id"]})',clean(w['environments']),clean(info)]+([clean(w['benchmark'].get('dataCollection','Not verified'))]if c=='benchmark'else[])+[clean(release(w,c).get('code')),links+f' <!-- work:{w["id"]} -->'])+' |')
   lines+=['']
   for w in items:
    placed.add(w['id']);prefix='survey'if w.get('survey')else'model'if c=='policy'and w.get('model')else c;obj=w.get(prefix,{})

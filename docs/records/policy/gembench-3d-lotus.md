@@ -60,3 +60,4 @@ A calibrated 3D point-transformer policy is combined with language planning and 
 12. [Actual 3D-LOTUS checkpoint inventory](https://huggingface.co/rjgpinel/3dlotus/tree/main) — Contains GemBench model_step_150000.pt and RLBench model_step_300000.pt checkpoint files.
 13. [Actual 3D-LOTUS++ checkpoint inventory](https://huggingface.co/rjgpinel/3dlotusplus/tree/main) — Contains GemBench model_step_140000.pt and RealRobot model_step_50000.pt checkpoint files.
 14. [Actual GemBench dataset inventory](https://huggingface.co/datasets/rjgpinel/GEMBench/tree/main) — Contains released LMDB training episodes and the test microsteps archive.
+15. [Data collection method and scope](https://arxiv.org/abs/2410.01345) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

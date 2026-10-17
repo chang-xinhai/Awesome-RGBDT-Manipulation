@@ -27,6 +27,7 @@ Nine simulated force-sensitive manipulation tasks evaluate task completion and i
 | Metrics | Success rate;average grip/applied force;maximum transient grip/applied force (mean of top5% samples). |
 | Robots | Franka Panda with tactile-integrated parallel gripper |
 | Sensors and observations | Two RGB-D cameras;dual GelSight-style320x240 tactile RGB and11x9 marker fields;fingertip3D contact force;state/language/actions20 Hz. |
+| Data collection method | Replay and re-collect source LIBERO trajectories across simulators, with controlled gripper-force scaling and success filtering; tactile observations are regenerated. [4](https://arxiv.org/abs/2605.27886)  |
 | Demonstrations and data | Replay source trajectories under100%,25%,10% gripper-controller scaling;keep successful replays;dataset totals source/version dependent. |
 | Evaluation protocol | Compare firm/gentle prompts on matched object tasks;DatasetsA/B continuous force25%/10%,DatasetC binary gripper10%;controller ablations isolate tracking. |
 | Evaluated baselines | Vision-only π0;image,marker-field andforce tactile injection variants;force-supervision and fixed-controller ablations. |
@@ -62,3 +63,4 @@ Nine simulated force-sensitive manipulation tasks evaluate task completion and i
 1. [Author manuscript and submission history](https://arxiv.org/abs/2605.27886) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/NathanWu7/Tabero) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Official release reproduction notes](https://github.com/NathanWu7/Tabero) — Explicit paper-versus-minicase rerun settings and contact binding caveat.
+4. [Data collection method and scope](https://arxiv.org/abs/2605.27886) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

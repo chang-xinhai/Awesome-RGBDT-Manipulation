@@ -27,6 +27,7 @@ Modular dexterous suite covering 100 tasks, multiple arms/hands and configurable
 | Metrics | Success rate and generalization under texture/background/light/camera perturbations; task-conditioned baseline comparison. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/)  |
 | Robots | Franka Research 3, UR10e, xArm7 arms; Sharpa Wave, WUJI, Shadow, Inspire, Allegro and LEAP hands. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/)  |
 | Sensors and observations | RGB, depth, point clouds, proprioception and privileged state; no tactile stream established. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/)  |
+| Data collection method | VR teleoperation with Apple Vision Pro through Isaac Lab CloudXR; tracked wrist poses drive arm IK and human hand motion is retargeted to robot joints. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/) [6](https://arxiv.org/abs/2607.08751)  |
 | Demonstrations and data | 3,180 demonstrations collected through VR teleoperation. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/)  |
 | Evaluation protocol | Shared task definitions and configurable visual randomization; baseline comparison across 19 selected tasks, not all 100. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/)  |
 | Evaluated baselines | Diffusion Policy, DP3, OpenVLA and π0.5. [1](https://arxiv.org/abs/2607.08751) [2](https://ycyao216.github.io/DexVerse.site/)  |
@@ -154,3 +155,4 @@ Modular dexterous suite covering 100 tasks, multiple arms/hands and configurable
 3. [Official repository](https://github.com/ycyao216/DexVerse) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/ycyao216/DexVerse/blob/main/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
 5. [Official source](https://github.com/ycyao216/DexVerse/tree/main/source/dexverse/dexverse/tasks/config) — Read static register_env calls across all category __init__.py files, without executing simulator code.
+6. [Data collection method and scope](https://arxiv.org/abs/2607.08751) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

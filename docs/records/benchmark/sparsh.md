@@ -27,6 +27,7 @@ Self-supervised optical-touch encoders plus TacBench, a six-task tactile evaluat
 | Metrics | Task-specific regression, classification and policy-success metrics; results under limited labeled-data budgets. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
 | Robots | Task-specific physical sensor/robot setups rather than one common manipulation embodiment. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
 | Sensors and observations | Vision-based tactile sensors including DIGIT and GelSight variants, with task-specific datasets. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
+| Data collection method | TacBench bead maze: a mixture of VR and manual kinesthetic teleoperation. Offline tactile probes use separate instrumented-contact/pose-label capture setups. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/) [6](https://arxiv.org/abs/2410.24090)  |
 | Demonstrations and data | TacBench labeled datasets released separately from the 460K+ image self-supervised tactile corpus used by Sparsh. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
 | Evaluation protocol | Frozen representation + lightweight downstream heads for sensing probes; label-budget comparisons; bead-maze policy evaluation separated from offline predictions. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
 | Evaluated baselines | Sparsh MAE, DINO, I-JEPA, V-JEPA variants; task/sensor-specific end-to-end baselines. [1](https://arxiv.org/abs/2410.24090) [2](https://sparsh-ssl.github.io/)  |
@@ -60,3 +61,4 @@ Self-supervised optical-touch encoders plus TacBench, a six-task tactile evaluat
 3. [Official repository](https://github.com/facebookresearch/sparsh) — Current public repository; implementation scope may differ from paper.
 4. [Original Sparsh representation and training sections](https://arxiv.org/html/2410.24090#S3) — 460K+ original pretraining corpus; Appendix C specifies eight A100 80GB GPUs. Separate from TacBench labels.
 5. [Repository license](https://github.com/facebookresearch/sparsh/blob/main/LICENSE.md) — CC BY-NC 4.0 license file verified.
+6. [Data collection method and scope](https://arxiv.org/abs/2410.24090) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -49,3 +49,4 @@ A common π0.5 backbone compares wrist-wrench conditioning, predictive supervisi
 
 1. [Original full manuscript and appendices](https://arxiv.org/html/2610.19604) — Method, evaluation and appendix read; observations, training-only labels, rates and task scopes remain distinct.
 2. [Official benchmark, task/protocol pages and release notice](https://forcebench-platform.github.io/) — Live project inspected; implementation/data/weights are independently distinguished from paper and published result tables.
+3. [Data collection method and scope](https://arxiv.org/abs/2610.19604) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

@@ -27,6 +27,7 @@ Unified simulation/physical benchmark with five capability dimensions and common
 | Metrics | Capability-specific / overall task-success aggregates; fine-grained progress under task criteria; separate sim and physical leaderboards. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
 | Robots | Simulation dual-arm ARX X5; physical ARX X5, Piper and Piper X. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
 | Sensors and observations | Head and wrist RGB cameras, proprioception and instructions. Simulator can export depth, but listed baseline observation channels must be verified separately; official suite has no tactile sensor. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
+| Data collection method | Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [5](https://arxiv.org/abs/2607.04434)  |
 | Demonstrations and data | Demonstration data downloadable by task; exact current total count varies by release. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
 | Evaluation protocol | Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
 | Evaluated baselines | 30 integrated policies in paper / 40+ integrations in current XPolicyLab; VLA and world-action model families. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
@@ -95,3 +96,4 @@ Unified simulation/physical benchmark with five capability dimensions and common
 2. [Official project](https://robodojo-benchmark.com/) — Public project page.
 3. [Official repository](https://github.com/RoboDojo-Benchmark/RoboDojo) — Current public repository; implementation scope may differ from paper.
 4. [Official implementation / documentation](https://robodojo-benchmark.com/doc/sim-tasks/) — Complete official core task catalogue.
+5. [Data collection method and scope](https://arxiv.org/abs/2607.04434) — Sections3.1.4/3.2.2 and4.1.4; simulated trajectory synthesis/VR and physical leader–follower collection retain separate scopes.

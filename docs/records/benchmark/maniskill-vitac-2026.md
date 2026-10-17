@@ -27,6 +27,7 @@ Real-world language-conditioned bimanual challenge covering transparent tube han
 | Metrics | Final score is the sum of both task performances from the same submission; best complete submission determines team result. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
 | Robots | Bimanual physical platforms; exact robot models require challenge documentation. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
 | Sensors and observations | Wrist cameras, tactile images, wrist poses and language instructions; no external depth input established by released overview. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
+| Data collection method | Bimanual visuo-tactile teleoperation on the ViTaMIn-B platform, recording synchronized visual, tactile and proprioceptive streams. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/) [3](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
 | Demonstrations and data | Sample datasets released 16 April 2026; full demonstration dataset released for Stage 2. Exact trajectory scale Not reported on overview. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
 | Evaluation protocol | Technical-brief selection then multiple physical policy submissions; both tasks evaluated per submission; final rankings announced 1 June 2026. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
 | Evaluated baselines | Not reported on challenge overview. [1](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/)  |
@@ -53,3 +54,4 @@ Real-world language-conditioned bimanual challenge covering transparent tube han
 
 1. [Official project](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/) — Public project page.
 2. [Official repository](https://github.com/chaoyiL/ManiSkill-vitac) — Current public repository; implementation scope may differ from paper.
+3. [Data collection method and scope](https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

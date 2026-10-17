@@ -61,6 +61,8 @@ npm run build
 - Actual deployment inputs versus labels, privileged state or predicted geometry.
 - Skin tactile versus wrist force/torque, joint torque and visual contact inference.
 - Full task suite versus evaluated subset, code registry and example tasks.
+- Data-collection interface, planner, scripted expert or RL collector versus
+  dataset size, augmentation, policy training and evaluation rollouts.
 - Reported data scale versus released data; avoid summing overlapping sources.
 - Model component size, training setting, inference hardware and control-rate scope.
 - Paper simulator versions versus current repository instructions and checkpoints.

@@ -27,6 +27,7 @@ GPU-parallel visual/language/action robustness evaluation across 28 single-arm a
 | Metrics | In-domain/OOD task success; relative success degradation; physical-vs-sim correlation. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/)  |
 | Robots | Single Franka Panda and dual Franka Panda parallel-gripper configurations. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/)  |
 | Sensors and observations | Visual observations with optional framework depth/point-cloud channels; proprioception and language; baseline actual channel setting in implementation. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/)  |
+| Data collection method | Simulation: expert motion-planning solvers with privileged state. The physical study reports demonstrations, but its collection interface is Not reported. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/) [4](https://arxiv.org/abs/2605.27759)  |
 | Demonstrations and data | 100 clean demonstrations/task for simulated baselines; physical ACT study uses 60 demonstrations/task on three selected tasks. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/)  |
 | Evaluation protocol | Train separately for single/bimanual suites; 200 evaluation episodes per task/perturbation. Physical validation: RaiseCube, RotateArrow, LiftPegUpright and selected shifts. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/)  |
 | Evaluated baselines | ACT and π0.5. [1](https://arxiv.org/abs/2605.27759) [2](https://colosseum-v2.github.io/)  |
@@ -80,3 +81,4 @@ GPU-parallel visual/language/action robustness evaluation across 28 single-arm a
 1. [Paper](https://arxiv.org/abs/2605.27759) — Published paper / arXiv record and manuscript.
 2. [Official project](https://colosseum-v2.github.io/) — Public project page.
 3. [Official repository](https://github.com/jstmn/ColosseumV2) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2605.27759) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

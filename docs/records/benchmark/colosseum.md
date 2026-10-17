@@ -27,6 +27,7 @@ RLBench-based perturbation benchmark testing robustness of learned manipulation 
 | Metrics | Success and relative degradation per perturbation; hardware correlation on selected tasks. [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/)  |
 | Robots | Franka Panda [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/)  |
 | Sensors and observations | RGB-D / point clouds depending baseline; proprioception and language. No tactile input in original suite. [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/)  |
+| Data collection method | RLBench scripted experts: motion planners execute manually specified task waypoints with randomized object poses. [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/) [4](https://arxiv.org/abs/2402.08191)  |
 | Demonstrations and data | 100 unperturbed demonstrations/task for training; perturbed evaluation configurations and printable real validation assets. [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/)  |
 | Evaluation protocol | Train on common clean demonstrations; evaluate 25 episodes per perturbation condition; combine multiple factors separately; physical validation is a subset. [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/)  |
 | Evaluated baselines | Five manipulation methods, including PerAct, RVT and zero-shot VoxPoser; exact method/pretraining setting in manuscript. [1](https://arxiv.org/abs/2402.08191) [2](https://robot-colosseum.github.io/)  |
@@ -71,3 +72,4 @@ RLBench-based perturbation benchmark testing robustness of learned manipulation 
 1. [Paper](https://arxiv.org/abs/2402.08191) — Published paper / arXiv record and manuscript.
 2. [Official project](https://robot-colosseum.github.io/) — Public project page.
 3. [Official repository](https://github.com/robot-colosseum/robot-colosseum) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2402.08191) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

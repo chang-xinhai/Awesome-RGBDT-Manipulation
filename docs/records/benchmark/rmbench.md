@@ -27,6 +27,7 @@ Introduces nine history-dependent tasks and a modular policy that combines expli
 | Metrics | Task success rate over100rollouts/task; memory-component ablations and failure analysis |
 | Robots | RoboTwin2.0 dual-arm embodiment; separate physical dual-arm setup |
 | Sensors and observations | RGB observations and robot state; fine-grained language annotations; no tactile requirement |
+| Data collection method | Expert demonstrations with action/subtask-aligned language annotations. The original collection controller, motion planner and teleoperation interface are Not reported in the inspected manuscript. [4](https://arxiv.org/abs/2603.01229)  |
 | Demonstrations and data | 50expert demonstrations/task for all evaluated simulation policies; action/subtask aligned language is additional Mem-0 supervision |
 | Evaluation protocol | Common50-demo/task training and100-rollout evaluation; M(1) tasks isolate execution module, M(n) uses planning+execution; see released-retrained checkpoint caveat [3](https://github.com/RoboTwin-Platform/RMBench#-updates)  |
 | Evaluated baselines | DP,ACT,π0.5,X-VLA,QwenOFT,MemER,MemoryVLA and Mem-0 |
@@ -61,3 +62,4 @@ Introduces nine history-dependent tasks and a modular policy that combines expli
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2603.01229) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
 2. [Official policy implementation](https://github.com/RoboTwin-Platform/RMBench) — Source and checkpoint availability checked separately; no local policy execution was performed.
 3. [Official checkpoint release update, 2026-07-14](https://github.com/RoboTwin-Platform/RMBench#-updates) — Original weights lost; released M(1) jointly retrained and M(n) per-task execution checkpoints need version qualification.
+4. [Data collection method and scope](https://arxiv.org/abs/2603.01229) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

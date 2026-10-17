@@ -27,6 +27,7 @@ Automated perturbation generation and progressive difficulty for seven robustnes
 | Metrics | Success per perturbation/component/difficulty level; robustness degradation; generalization after expanded training. [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/)  |
 | Robots | Franka Panda in LIBERO [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/)  |
 | Sensors and observations | RGB, proprioception and language; sensor noise corrupts visual inputs rather than introducing tactile streams. [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/)  |
+| Data collection method | Original LIBERO human-teleoperated training demonstrations are reused; perturbations generate evaluation instances. The collector for additional reported trajectories is Not verified. [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/) [4](https://arxiv.org/abs/2510.13626)  |
 | Demonstrations and data | Original LIBERO training; expanded generalization dataset includes 22,400 successful trajectories in manuscript study. [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/)  |
 | Evaluation protocol | Zero-shot perturbation evaluation of LIBERO-trained checkpoints; generated configurations grouped into five difficulty levels; separate retraining experiments on generalized sets. [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/)  |
 | Evaluated baselines | Ten models in accepted study; generated suite stratification uses OpenVLA-OFT, π0, π0-fast and UniVLA. [1](https://arxiv.org/abs/2510.13626) [2](https://sylvestf.github.io/LIBERO-plus/)  |
@@ -59,3 +60,4 @@ Automated perturbation generation and progressive difficulty for seven robustnes
 1. [Paper](https://arxiv.org/abs/2510.13626) — Published paper / arXiv record and manuscript.
 2. [Official project](https://sylvestf.github.io/LIBERO-plus/) — Public project page.
 3. [Official repository](https://github.com/sylvestf/LIBERO-plus) — Current public repository; implementation scope may differ from paper.
+4. [Data collection method and scope](https://arxiv.org/abs/2510.13626) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.

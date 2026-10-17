@@ -27,6 +27,7 @@ Ten physical NeoReal tasks and twelve NeoSim task settings test contact regulati
 | Metrics | Per-task binary success; NeoReal also reports an ordered milestone-progress score. [3](https://arxiv.org/html/2608.29601v2#S6)  |
 | Robots | NeoReal single-arm Flexiv Rizon 4s; dual-arm Piper or ARX X5. NeoSim has single- and dual-arm setups; exact paper robot variants are not inferred from unrelated dataset embodiments. [3](https://arxiv.org/html/2608.29601v2#S6)  |
 | Sensors and observations | External/wrist RGB, tactile fingers and robot states. NeoSim records tactile RGB/marker motion/gel depth and derives contact-force fields. Gel deformation depth is not an external scene-depth camera; not every baseline consumes touch. [3](https://arxiv.org/html/2608.29601v2#S6)  |
+| Data collection method | NeoSim: scripted cuRobo experts with planner/success filtering. NeoReal task-demo interface is Not reported; separate NeoData pretraining combines robot teleoperation and TacUMI capture. [3](https://arxiv.org/html/2608.29601v2#S6) [11](https://arxiv.org/abs/2608.29601)  |
 | Demonstrations and data | NeoReal policies: 400,000+ NeoData pretraining episodes then 300 task-specific demonstrations. NeoSim: 100 successful scripted/cuRobo demonstrations per task. OpenNeoData is a separately gated 5,000-hour corpus, not the task-demo total. [3](https://arxiv.org/html/2608.29601v2#S6) [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData)  |
 | Evaluation protocol | NeoReal: 20 randomized trials/task and a 5-minute limit, with milestone and failure rules. NeoSim: 100 fixed evaluation seeds/task disjoint from collection, remote policy inference on RTX 4090. Paper real training uses 8 A100; simulated task-policy training uses 4 A100. [3](https://arxiv.org/html/2608.29601v2#S6)  |
 | Evaluated baselines | ACT · Diffusion Policy · π0.5 · Xiaomi-Robotics-0 · InternVLA-A1 · StarVLA-α · Fast-WAM · GigaWorld Policy · LingBot-VA [3](https://arxiv.org/html/2608.29601v2#S6)  |
@@ -83,3 +84,4 @@ Ten physical NeoReal tasks and twelve NeoSim task settings test contact regulati
 8. [NeoForce MIT license](https://github.com/neoteai/N0-Foundation/blob/main/neoforce/LICENSE)
 9. [NeoSim MIT license](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)
 10. [Root documentation license](https://github.com/neoteai/N0-Foundation/blob/main/LICENSE)
+11. [Data collection method and scope](https://arxiv.org/abs/2608.29601) — NeoSim appendix describes scripted cuRobo collection; NeoData pretraining capture is not treated as the NeoReal task collector.

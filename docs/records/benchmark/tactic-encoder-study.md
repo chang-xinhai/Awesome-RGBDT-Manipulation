@@ -27,6 +27,7 @@ Controlled real-world comparison of tactile encoder and policy-conditioning choi
 | Metrics | Success at initialization, grasp, task attempt, task completion and termination; task-specific completion criteria. [1](https://arxiv.org/abs/2609.30969)  |
 | Robots | Two Franka FR3 arms in leader/follower data collection; only follower used during inference, with Franka Hand. [1](https://arxiv.org/abs/2609.30969)  |
 | Sensors and observations | Two DIGIT tactile sensors; RealSense D405 wrist and D435 side RGB cameras. Depth-capable hardware does not establish depth policy input. [1](https://arxiv.org/abs/2609.30969) [2](https://utn-air.github.io/TACTIC/)  |
+| Data collection method | Bilateral leader–follower teleoperation with two Franka FR3 arms and torque-based haptic feedback. [1](https://arxiv.org/abs/2609.30969) [5](https://arxiv.org/abs/2609.30969)  |
 | Demonstrations and data | Approximately 100 demonstrations/task at 30 Hz, with four DIGIT cartridge pairs. [1](https://arxiv.org/abs/2609.30969)  |
 | Evaluation protocol | 2,180 physical rollouts; 20 inference rollouts per ablation condition. Five tactile backbones crossed with five fusion schemes; stage-level success and OOD tests. [1](https://arxiv.org/abs/2609.30969)  |
 | Evaluated baselines | ACT; ResNet18, SARL, UniT, Sparsh-DINO, T3 encoders; Concatenation, FiLM, Gated Cross-Attention, CLIP-R and CLIP-T fusion. [1](https://arxiv.org/abs/2609.30969)  |
@@ -59,3 +60,4 @@ Controlled real-world comparison of tactile encoder and policy-conditioning choi
 2. [Official source](https://utn-air.github.io/TACTIC/) — Official project checked against full manuscript.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2609.30969) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
 4. [Official TACTIC project](https://utn-air.github.io/TACTIC) — Project identity and release links checked independently of manuscript claims.
+5. [Data collection method and scope](https://arxiv.org/abs/2609.30969) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
