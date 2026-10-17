@@ -10253,5 +10253,50 @@
       "height": 560,
       "note": "Official abstract excerpt, with an adjacent paraphrase of its scope. The paper’s geometry figure could not be retrieved (IEEE HTTP 418; author-uploaded copy HTTP 403). This is a source-text preview, not Figure 3 or a reconstructed task diagram."
     }
+  },
+  "liber0-preview": {
+    "policy": {
+      "path": "/images/catalog/liber0-preview-implementation-preview.webp",
+      "original": "https://raw.githubusercontent.com/XPolicyLab/XPolicyLab/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_preview/model.py",
+      "page": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_preview/model.py#L37-L58",
+      "credit": "LiberAI / XPolicyLab contributors",
+      "alt": "Released Liber-0 Preview source showing current-subtask decisions, visual cue selection and conditioned action chunks.",
+      "kind": "implementation-preview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7b8737bbe0f43af5e07073e1816651ab4d2580a8fbc3dd5674abfeb8687704c1",
+      "note": "Exact source lines 37–58 rendered for legibility. This is an implementation/interface preview, not an author-provided neural architecture figure. Original source rights retained.",
+      "width": 1800,
+      "height": 1131
+    }
+  },
+  "rex-m1-preview": {
+    "policy": {
+      "path": "/images/catalog/rex-m1-preview-implementation-preview.webp",
+      "original": "https://raw.githubusercontent.com/XPolicyLab/XPolicyLab/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Rex_M1_preview/model.py",
+      "page": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Rex_M1_preview/model.py#L426-L436",
+      "credit": "Futian Lab / VisIncept / XPolicyLab contributors",
+      "alt": "Released Rex-M1 Preview source showing historical RGB frames prepended to the current-view and instruction context.",
+      "kind": "implementation-preview",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "57fc3cb0018a2bd648ae0c9d04b5a5029903c29228a617e7bec78876698020bc",
+      "note": "Exact source lines 426–436 rendered for legibility. This is an implementation/interface preview, not an author-provided neural architecture figure. Original source rights retained.",
+      "width": 1800,
+      "height": 698
+    }
+  },
+  "worldscape-r2si": {
+    "policy": {
+      "path": "/images/catalog/worldscape-r2si-leaderboard-preview.webp",
+      "original": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+      "page": "https://robodojo-benchmark.com/leaderboard",
+      "credit": "RoboDojo official leaderboard, snapshot 2026-10-17. Data typography adapted by this catalog.",
+      "alt": "Official RoboDojo-Sim result transcription for WorldScape-R²SI, showing average, generalization, precision, long-horizon, memory and open scores and success rates.",
+      "kind": "leaderboard-preview",
+      "reviewed": "2026-10-17",
+      "width": 1400,
+      "height": 854,
+      "note": "Data transcribed from the official 2026-10-17 leaderboard snapshot. This is an evaluation-source preview, not a policy architecture figure. Score and success rate are separate metrics.",
+      "sourceSha256": "3e38ae8a6dfea357faf623b0e0f26be4bf30dfb99933f5fc02bb9c2ef6aa0484"
+    }
   }
 }

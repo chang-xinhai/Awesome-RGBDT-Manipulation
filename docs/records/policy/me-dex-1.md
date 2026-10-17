@@ -8,7 +8,7 @@ ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling
 
 **2026-09-18 · Preprint · Li Auto**
 
-**[Paper](https://arxiv.org/abs/2609.21449)**
+**[Paper](https://arxiv.org/abs/2609.21449)** · [Project](https://machembodied.com/ME-Dex/ME-Dex1.0.html) · [Code](https://github.com/MachEmbodied/ME-Dex-1.0) · [Data](https://huggingface.co/datasets/liuxuetao/MachEmbodied-Dex1.0-RoboTwin-Clean50-Tactile) · [Weights](https://huggingface.co/liuxuetao/ME-Dex-1.0-RoboTwin-Clean2Random-Leaderboard)
 
 Jointly models future video, heterogeneous tactile states and actions with separate flow-matching experts and a canonical hand representation.
 
@@ -22,29 +22,32 @@ Jointly models future video, heterogeneous tactile states and actions with separ
 | Policy family | World-action model [1](https://arxiv.org/abs/2609.21449)  |
 | Base model and architecture | Wan2.2-5B video expert; video/action initialization from Motus [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
 | Model size and component | 5B video backbone component; action/tactile experts have 30 layers at widths 1024/512; total not reported [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
-| Deployment inputs | RGB, language, robot state and heterogeneous tactile measurements [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
+| Deployment inputs | Paper interface: RGB, language, robot state and heterogeneous tactile measurements. Current released RoboTwin checkpoint instead receives RGB/state/language with zero observed tactile force; its future tactile states are predictions, and Clean50 tactile replay is training supervision. [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449) [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9)  |
 | Action outputs and horizon | Future visual/tactile observations and robot action chunks [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
 | Training method | Canonical Hand Model + Unified Tactile Autoencoder; H-Bridge intermediate shared attention [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
-| Training data | Agentic Tactile Data Engine augments RoboTwin and DexJoCo through simulation replay; total not reported [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
+| Training data | Agentic Tactile Data Engine augments RoboTwin and DexJoCo through simulation replay; total not reported; released Clean50 simulation tactile-replay subset contains 2,500 HDF5 episodes across 50 task directories, augmenting existing demonstrations rather than adding a new demonstration corpus. [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449) [4](https://huggingface.co/datasets/liuxuetao/MachEmbodied-Dex1.0-RoboTwin-Clean50-Tactile/tree/4680b177c93be8e07fba8bd4c4c65b97ca94d1df)  |
 | Training duration | Not reported [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
 | Training hardware | Not reported [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
 | Inference and control rates | Not reported [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
-| Evaluation scope | RoboTwin, DexJoCo, ManiFeel and real gripper/dexterous-hand experiments [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449)  |
+| Evaluation scope | RoboTwin, DexJoCo, ManiFeel and real gripper/dexterous-hand experiments [1](https://arxiv.org/abs/2609.21449) [2](https://arxiv.org/html/2609.21449) [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9)  |
 | Observations / modalities | RGB · Tactile · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Dexterous hand · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | No verified public download found in the inspected primary sources. |
+| Release: code | Available [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9)  |
+| Release: weights | Available [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9)  |
+| Release: data | Partial [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9) [4](https://huggingface.co/datasets/liuxuetao/MachEmbodied-Dex1.0-RoboTwin-Clean50-Tactile/tree/4680b177c93be8e07fba8bd4c4c65b97ca94d1df)  |
+| Release: license | Official source Apache-2.0, verified from LICENSE. Checkpoint card declares Apache-2.0; dataset terms are separate and not verified. [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9)  |
+| Release: notes | Official runtime, frozen tactile encoders, reference AE/VAE Clean50 training recipes and tactile replay code are public. Two RoboTwin checkpoint variants and a public Clean50 tactile-replay dataset are retrievable. This does not establish release of all paper-scale data or all physical experiments. [3](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9)  |
 
 **Scope and qualifications**
 
 - Simulation tactile augmentation is not measured real-sensor supervision.
-- Implementation/data downloads were not verified from the inspected primary sources.
+- The released RoboTwin interface has no measured tactile observations: it zeros observed tactile frames and preserves the sensor-support mask. Tactile replay supervision and predicted tactile states must be separated from runtime observations.
 
 **Primary evidence**
 
 1. [Author manuscript and submission history](https://arxiv.org/abs/2609.21449) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Full paper: method and implementation details](https://arxiv.org/html/2609.21449) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+3. [Official current implementation, source LICENSE and release instructions](https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9) — Author library supplies runtime/training/replay and links the actual HF artifacts. Current RoboTwin deployment zeroes observed tactile force; predicted future tactile and training replay labels are not measured runtime tactile input.
+4. [Actual released Clean50 tactile replay dataset inventory](https://huggingface.co/datasets/liuxuetao/MachEmbodied-Dex1.0-RoboTwin-Clean50-Tactile/tree/4680b177c93be8e07fba8bd4c4c65b97ca94d1df) — Public ungated repository has task-specific HDF5 episodes; this is simulation replay augmentation, not real sensor data. Dataset license is not supplied in the inspected metadata.
+5. [Current XPolicyLab alias and interface](https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/ME_Dex_1_0) — ME_Dex_1_0 explicitly cites the same ME-Dex manuscript and official repository; it is an adapter alias, not a new policy.

@@ -38,7 +38,11 @@ const labels: Record<string, string> = {
 const imageCount = works.filter(
   (w) => Object.keys(figures[w.id] ?? {}).length,
 ).length;
-const sources = new Set(works.flatMap((w) => w.evidence.map((s) => s.url)));
+const sources = new Set(
+  works.flatMap((w) =>
+    w.evidence.filter((s) => s.sourceType !== "secondary").map((s) => s.url),
+  ),
+);
 const auditKinds = {
   "paper-baselines": "Paper baselines",
   leaderboard: "Leaderboard snapshot",

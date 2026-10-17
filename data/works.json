@@ -2508,6 +2508,15 @@
         "fields": [
           "release.license"
         ]
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/ViGAR",
+        "label": "Current XPolicyLab alias and interface",
+        "fields": [
+          "links.code",
+          "policy.evaluation"
+        ],
+        "note": "ViGAR adapter directly cites arXiv:2610.02368 and DAGroup-PKU/ViGAR. It is the existing canonical policy, not a new work. RGB/BGR preprocessing, planner/policy GPU split and released interface are explicit."
       }
     ],
     "caveats": [
@@ -6142,15 +6151,19 @@
       "Bimanual"
     ],
     "links": {
-      "paper": "https://arxiv.org/abs/2609.21449"
+      "paper": "https://arxiv.org/abs/2609.21449",
+      "project": "https://machembodied.com/ME-Dex/ME-Dex1.0.html",
+      "code": "https://github.com/MachEmbodied/ME-Dex-1.0",
+      "data": "https://huggingface.co/datasets/liuxuetao/MachEmbodied-Dex1.0-RoboTwin-Clean50-Tactile",
+      "weights": "https://huggingface.co/liuxuetao/ME-Dex-1.0-RoboTwin-Clean2Random-Leaderboard"
     },
     "policy": {
       "family": "World-action model",
       "baseModel": "Wan2.2-5B video expert; video/action initialization from Motus",
       "modelSize": "5B video backbone component; action/tactile experts have 30 layers at widths 1024/512; total not reported",
-      "inputs": "RGB, language, robot state and heterogeneous tactile measurements",
+      "inputs": "Paper interface: RGB, language, robot state and heterogeneous tactile measurements. Current released RoboTwin checkpoint instead receives RGB/state/language with zero observed tactile force; its future tactile states are predictions, and Clean50 tactile replay is training supervision.",
       "outputs": "Future visual/tactile observations and robot action chunks",
-      "trainingData": "Agentic Tactile Data Engine augments RoboTwin and DexJoCo through simulation replay; total not reported",
+      "trainingData": "Agentic Tactile Data Engine augments RoboTwin and DexJoCo through simulation replay; total not reported; released Clean50 simulation tactile-replay subset contains 2,500 HDF5 episodes across 50 task directories, augmenting existing demonstrations rather than adding a new demonstration corpus.",
       "trainingTime": "Not reported",
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
@@ -6158,11 +6171,11 @@
       "evaluation": "RoboTwin, DexJoCo, ManiFeel and real gripper/dexterous-hand experiments"
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "No verified public download found in the inspected primary sources."
+      "code": "Available",
+      "weights": "Available",
+      "data": "Partial",
+      "license": "Official source Apache-2.0, verified from LICENSE. Checkpoint card declares Apache-2.0; dataset terms are separate and not verified.",
+      "notes": "Official runtime, frozen tactile encoders, reference AE/VAE Clean50 training recipes and tactile replay code are public. Two RoboTwin checkpoint variants and a public Clean50 tactile-replay dataset are retrievable. This does not establish release of all paper-scale data or all physical experiments."
     },
     "evidence": [
       {
@@ -6195,11 +6208,40 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/MachEmbodied/ME-Dex-1.0/tree/a2db63b979e748bcea692966b1c57ab2984155a9",
+        "label": "Official current implementation, source LICENSE and release instructions",
+        "fields": [
+          "links",
+          "release",
+          "policy.inputs",
+          "policy.evaluation"
+        ],
+        "note": "Author library supplies runtime/training/replay and links the actual HF artifacts. Current RoboTwin deployment zeroes observed tactile force; predicted future tactile and training replay labels are not measured runtime tactile input."
+      },
+      {
+        "url": "https://huggingface.co/datasets/liuxuetao/MachEmbodied-Dex1.0-RoboTwin-Clean50-Tactile/tree/4680b177c93be8e07fba8bd4c4c65b97ca94d1df",
+        "label": "Actual released Clean50 tactile replay dataset inventory",
+        "fields": [
+          "release.data",
+          "policy.trainingData"
+        ],
+        "note": "Public ungated repository has task-specific HDF5 episodes; this is simulation replay augmentation, not real sensor data. Dataset license is not supplied in the inspected metadata."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/ME_Dex_1_0",
+        "label": "Current XPolicyLab alias and interface",
+        "fields": [
+          "policy.inputs",
+          "links.code"
+        ],
+        "note": "ME_Dex_1_0 explicitly cites the same ME-Dex manuscript and official repository; it is an adapter alias, not a new policy."
       }
     ],
     "caveats": [
       "Simulation tactile augmentation is not measured real-sensor supervision.",
-      "Implementation/data downloads were not verified from the inspected primary sources."
+      "The released RoboTwin interface has no measured tactile observations: it zeros observed tactile frames and preserves the sensor-support mask. Tactile replay supervision and predicted tactile states must be separated from runtime observations."
     ],
     "imageCandidates": [
       {
@@ -6213,11 +6255,11 @@
     "verified": "2026-10-17",
     "releaseByCollection": {
       "policy": {
-        "code": "Not verified",
-        "weights": "Not verified",
-        "data": "Not verified",
-        "license": "Not verified",
-        "notes": "No verified public download found in the inspected primary sources."
+        "code": "Available",
+        "weights": "Available",
+        "data": "Partial",
+        "license": "Official source Apache-2.0, verified from LICENSE. Checkpoint card declares Apache-2.0; dataset terms are separate and not verified.",
+        "notes": "Official runtime, frozen tactile encoders, reference AE/VAE Clean50 training recipes and tactile replay code are public. Two RoboTwin checkpoint variants and a public Clean50 tactile-replay dataset are retrievable. This does not establish release of all paper-scale data or all physical experiments."
       }
     },
     "relatedIds": []
@@ -10397,7 +10439,10 @@
         "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-17",
+    "relatedIds": [
+      "worldscape-r2si"
+    ]
   },
   {
     "id": "xiaomi1",
@@ -10501,7 +10546,10 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-17",
+    "relatedIds": [
+      "rex-m1-preview"
+    ]
   },
   {
     "id": "robottt",
@@ -11822,7 +11870,7 @@
       "dataCollection": "Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation.",
       "data": "Demonstration data downloadable by task; exact current total count varies by release.",
       "protocol": "Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation.",
-      "baselines": "30 integrated policies in paper / 40+ integrations in current XPolicyLab; VLA and world-action model families."
+      "baselines": "Paper: 30 policy baselines. Official 2026-10-17 snapshot: 59 named simulation submissions and 11 real-robot submissions; Preview and checkpoint aliases remain separate. XPolicyLab has 68 integrated adapters at commit 94dbf95; integration does not establish an evaluated result."
     },
     "release": {
       "code": "Available",
@@ -11876,6 +11924,22 @@
           "benchmark.dataCollection"
         ],
         "note": "Sections3.1.4/3.2.2 and4.1.4; simulated trajectory synthesis/VR and physical leader–follower collection retain separate scopes."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official generated leaderboard — 2026-10-17 snapshot",
+        "fields": [
+          "benchmark.baselines"
+        ],
+        "note": "59 simulation and 11 real-world named rows. Adds WorldScape-R²SI in simulation; memberships are separate from paper baselines and adapter integrations."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy",
+        "label": "Pinned XPolicyLab adapter registry",
+        "fields": [
+          "benchmark.baselines"
+        ],
+        "note": "68 policy directories excluding demo_policy. Adapter presence alone is not evidence of a leaderboard result."
       }
     ],
     "caveats": [
@@ -37551,7 +37615,10 @@
       "No manuscript or original architecture figure verified."
     ],
     "imageCandidates": [],
-    "verified": "2026-10-17"
+    "verified": "2026-10-17",
+    "relatedIds": [
+      "liber0-preview"
+    ]
   },
   {
     "id": "robot-icl-survey",
@@ -57468,7 +57535,7 @@
     "links": {
       "paper": "https://arxiv.org/abs/2610.22342",
       "project": "https://xsparkai.com/Spark-0/",
-      "code": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Spark_0",
+      "code": "https://github.com/XsparkAI/Spark-0",
       "weights": "https://huggingface.co/TianxingChen/Spark-0"
     },
     "policy": {
@@ -57481,15 +57548,15 @@
       "trainingTime": "400 k pretraining + 80 k downstream steps; wall-clock time Not reported.",
       "trainingHardware": "12 nodes × 8 GPUs = 96 GPUs; GPU model Not reported (Table 6).",
       "controlRate": "Training-free real-time chunking: 50-action horizon, request after 24 executed steps, nominal eight-step inference delay; physical Hz Not reported.",
-      "trainingMethod": "400 k pretraining steps with geometry/contact alignment and tactile fusion; 80 k downstream fine-tuning steps; frozen geometry teacher and alignment heads are removed at inference.",
+      "trainingMethod": "400 k pretraining steps with geometry/contact alignment and tactile fusion; 80 k downstream fine-tuning steps; frozen geometry teacher and alignment heads are removed at inference. The current XPolicyLab adapter recipe instead lists 500k pretraining steps; this is a separate released recipe, not the paper setting.",
       "evaluation": "Spark Arena seven simulation task settings without tactile input and five real contact-rich tasks with tactile; additional Ego Humanoid vision-only transfer. Different tactile deployment conditions must be compared within their tracks."
     },
     "release": {
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Apache-2.0",
-      "notes": "Author-linked XPolicyLab contains vendored Spark-0 implementation,training/evaluation recipes and a download script pointing to the verified pretrain_spark_0 checkpoint. SparkArena-Sim is separately marked Coming soon."
+      "license": "Official Spark-0 source MIT, verified from LICENSE; XPolicyLab integration is Apache-2.0 and vendored StarVLA retains MIT notices. Checkpoint and dataset terms are separate.",
+      "notes": "Official standalone Spark-0 source is public. Author-linked XPolicyLab contains vendored Spark-0 implementation,training/evaluation recipes and a download script pointing to the verified pretrain_spark_0 checkpoint. SparkArena-Sim is separately marked Coming soon."
     },
     "evidence": [
       {
@@ -57548,6 +57615,24 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/XsparkAI/Spark-0",
+        "label": "Official standalone Spark-0 source and LICENSE",
+        "fields": [
+          "links.code",
+          "release.code",
+          "release.license"
+        ],
+        "note": "Current standalone repository is public and its actual LICENSE is MIT. The canonical paper’s 400k pretraining steps and the current adapter recipe’s 500k are distinct settings."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Spark_0",
+        "label": "XPolicyLab adapter identity and current recipe",
+        "fields": [
+          "policy.trainingMethod"
+        ],
+        "note": "Same title/arXiv and XsparkAI upstream as canonical Spark-0. Current adapter recipe lists 500k pretraining steps; retain paper-specific 400k rather than silently overwriting it."
       }
     ],
     "caveats": [
@@ -57637,8 +57722,8 @@
         "code": "Available",
         "weights": "Available",
         "data": "Not verified",
-        "license": "Apache-2.0",
-        "notes": "Author-linked XPolicyLab contains vendored Spark-0 implementation,training/evaluation recipes and a download script pointing to the verified pretrain_spark_0 checkpoint. SparkArena-Sim is separately marked Coming soon."
+        "license": "Official Spark-0 source MIT, verified from LICENSE; XPolicyLab integration is Apache-2.0 and vendored StarVLA retains MIT notices. Checkpoint and dataset terms are separate.",
+        "notes": "Official standalone Spark-0 source is public. Author-linked XPolicyLab contains vendored Spark-0 implementation,training/evaluation recipes and a download script pointing to the verified pretrain_spark_0 checkpoint. SparkArena-Sim is separately marked Coming soon."
       },
       "benchmark": {
         "code": "Not released",
@@ -71343,5 +71428,310 @@
       "inference": "30Hz alignment;128-step sample/50-step future, one world-model inference step for head features. Downstream wrapper scores8 chunks, executes20 actions and computes asynchronously; this is not a claimed30Hz model inference rate.",
       "evaluation": "Offline anomaly AUPRC,bACC,anticipation rate/lead time on13 seen+5 novel tasks. Real frozen-policy reranking:18 tasks×30 trials/method; mean success52.6%→61.5%. Novel-task results use adaptation, not zero-shot operation."
     }
+  },
+  {
+    "id": "liber0-preview",
+    "name": "Liber-0 Preview",
+    "title": "Liber-0 Preview hierarchical RoboDojo policy",
+    "date": "",
+    "year": 0,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Adds a learned visual-language subtask controller and episodic visual cues to the released Liber inference backend for bimanual manipulation.",
+    "institution": "LiberAI",
+    "venue": "Official project / technical release",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper",
+      "Bimanual"
+    ],
+    "links": {
+      "project": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_preview",
+      "code": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_preview",
+      "weights": "https://huggingface.co/LiberAI/Liber0-Preview-Robodojo"
+    },
+    "policy": {
+      "family": "VLA",
+      "baseModel": "Qwen3-VL context model plus a Qwen3-VL-derived shared visual/action flow backend loaded through the Liber-0 Lite runtime; HiDream-O1-Image base assets.",
+      "modelSize": "Complete parameter count Not reported; checkpoint byte sizes are not parameter counts.",
+      "inputs": "Head and two wrist RGB views, language and 14-dimensional ARX X5 state; maintains subtask hierarchy, episode context and a visual cue image.",
+      "outputs": "32-step chunks of 14-dimensional dual-arm joint/gripper actions; default executes 16 steps before replanning.",
+      "trainingData": "Not disclosed; this is an evaluation-only release.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Default ten flow-integration steps and 16 executed actions per replan; physical control rate Not reported.",
+      "trainingMethod": "Released inference runs a learned context controller to select a current subtask and visual cue, then a conditioned flow action backend. Training code is pending.",
+      "evaluation": "RoboDojo ARX X5 joint-control adapter and a separately released Preview checkpoint; batched evaluation is explicitly unsupported."
+    },
+    "release": {
+      "code": "Partial",
+      "weights": "Available",
+      "data": "Not verified",
+      "license": "XPolicyLab adapter under Apache-2.0; shared Liber vendor components retain MIT/Apache notices. Preview weight license Not reported in the inspected model card/repository.",
+      "notes": "Public checkpoint revision 2773a04e3b8f09096ec7beb6105bd6ed80c91da8 includes model.pt, configuration/statistics and a separate context/ model. It reuses the Lite runtime but requires its own Preview checkpoint and context model. Training is not released."
+    },
+    "evidence": [
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_preview",
+        "label": "Author-contributed Preview adapter and source",
+        "fields": [
+          "title",
+          "institution",
+          "policy",
+          "modalities",
+          "release"
+        ],
+        "note": "Inspected README, model.py, runtime.py, generation.py, deploy.yml and downloader at a fixed XPolicyLab commit. No manuscript or explicit first public policy-release date is supplied."
+      },
+      {
+        "url": "https://huggingface.co/LiberAI/Liber0-Preview-Robodojo/tree/2773a04e3b8f09096ec7beb6105bd6ed80c91da8",
+        "label": "Actual released Preview artifact inventory and configs",
+        "fields": [
+          "links.weights",
+          "release.weights",
+          "policy.inputs",
+          "policy.outputs",
+          "policy.baseModel"
+        ],
+        "note": "Verified public ungated repository file inventory, manifest, config.yaml and context/config.json. No weights downloaded or executed; no total model size inferred from storage bytes."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Liber_0_lite/NOTICE.md",
+        "label": "Shared runtime component notices",
+        "fields": [
+          "release.license"
+        ],
+        "note": "Preview README explicitly reuses the Lite runtime; root Apache-2.0 and third-party component notices do not establish a license for Preview weights."
+      }
+    ],
+    "caveats": [
+      "Preview and Lite are separate scored assets and separate checkpoints; shared inference code does not make the methods identical.",
+      "Full training procedure, corpus and compute are not disclosed.",
+      "An original method diagram was not located in the reviewed sources; the cover is an explicitly labeled excerpt from the released implementation."
+    ],
+    "imageCandidates": [],
+    "verified": "2026-10-17",
+    "relatedIds": [
+      "liber0-lite"
+    ]
+  },
+  {
+    "id": "rex-m1-preview",
+    "name": "Rex-M1 Preview",
+    "title": "Rex-M1 Preview long-context RoboDojo policy",
+    "date": "",
+    "year": 0,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Extends Xiaomi-Robotics-1 inference with sampled head-camera history and fixed-budget history tokens for bimanual RoboDojo evaluation.",
+    "institution": "Futian Lab / VisIncept",
+    "venue": "Official project / technical release",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper",
+      "Bimanual"
+    ],
+    "links": {
+      "project": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Rex_M1_preview",
+      "code": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Rex_M1_preview",
+      "weights": "https://modelscope.cn/models/gzx2019/Rex-M1-preview"
+    },
+    "policy": {
+      "family": "VLA",
+      "baseModel": "Xiaomi-Robotics-1-5B derivative with Qwen3-VL-4B-Instruct and its action model; modified constant-budget history-token pooling.",
+      "modelSize": "Xiaomi-Robotics-1-5B is the declared base checkpoint; complete Rex-M1 Preview parameter count Not reported.",
+      "inputs": "Current head and two wrist RGB views, language and robot state; released config samples up to 20 head-camera history frames at stride 25 and pools each to 16 tokens.",
+      "outputs": "30-step action chunks; default adapter executes 15 before replanning. The internal packed 60-dimensional layout contains end-effector slots and is decoded to dual-ARX5 EE/gripper commands, not 60 independently controlled joints.",
+      "trainingData": "Not disclosed for the released Rex-M1 Preview checkpoint; upstream Xiaomi pretraining corpus is not asserted to be this derivative’s training dataset.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "30-step chunk / default 15-step replan; physical feedback/control Hz Not reported.",
+      "trainingMethod": "Released derivative uses visual history at inference. Upstream training entry points remain vendored, but the required history sampling/collation is absent; checkpoint ptp_length=0 disables the retained past-reconstruction auxiliary path.",
+      "evaluation": "Author-contributed RoboDojo simulation adapter: dual ARX5 with action_type=ee. One policy server per evaluation to avoid mixing environment history."
+    },
+    "release": {
+      "code": "Partial",
+      "weights": "Available",
+      "data": "Not verified",
+      "license": "Apache-2.0 for vendored Xiaomi source and Rex modifications, verified from LICENSE/NOTICE. The ModelScope checkpoint card declares Apache-2.0; no separate weight-license file was present in its inspected inventory.",
+      "notes": "ModelScope revision aeb65fc1944b6871bc1c17c353085fa84e9a84bb publicly lists config.py and last.ckpt/checkpoint/mp_rank_00_model_states.pt with integrity hashes. This release supplies inference; vendored upstream training scripts do not reproduce history-policy training."
+    },
+    "evidence": [
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Rex_M1_preview",
+        "label": "Author-contributed adapter and source",
+        "fields": [
+          "title",
+          "institution",
+          "policy",
+          "modalities",
+          "release"
+        ],
+        "note": "Inspected README, INSTALLATION.md, model.py, deploy.yml and NOTICE at a fixed commit. Explicitly distinguishes usable history inference from the incomplete derivative-training path. Public policy release date is unspecified."
+      },
+      {
+        "url": "https://modelscope.cn/models/gzx2019/Rex-M1-preview",
+        "label": "Released checkpoint model card, inventory and config",
+        "fields": [
+          "release.weights",
+          "release.license",
+          "policy.baseModel",
+          "policy.inputs",
+          "policy.outputs"
+        ],
+        "note": "Public ModelScope API returned README, config.py and actual 10,226,684,560-byte tensor file with SHA-256. Config specifies 20 history frames, stride 25, 16-token pooling and action length 30. No tensors downloaded or executed."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/blob/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Rex_M1_preview/NOTICE",
+        "label": "Actual derivative notice and vendored LICENSE",
+        "fields": [
+          "release.license"
+        ],
+        "note": "NOTICE explicitly licenses Rex modifications under Apache-2.0 and enumerates the modified Xiaomi/Qwen files; source licenses are not silently generalized to all third-party assets."
+      }
+    ],
+    "caveats": [
+      "No paper is released and the derivative’s training data/compute are undisclosed.",
+      "Long-context observations do not by themselves establish recursive self-improvement or weight updates.",
+      "The released checkpoint has ptp_length=0; the retained auxiliary code path should not be described as active at inference.",
+      "An original method diagram was not located in the reviewed sources; the cover is a labeled source-code interface preview."
+    ],
+    "imageCandidates": [],
+    "verified": "2026-10-17",
+    "relatedIds": [
+      "xiaomi1"
+    ]
+  },
+  {
+    "id": "worldscape-r2si",
+    "name": "WorldScape R²SI",
+    "title": "WorldScape R²SI (Recursive Robot Self-Improvement)",
+    "date": "2026-10-17",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "A launch-reported two-level robot agent that revises reusable skills and can update a reactive WorldScape Policy component. Its identity, contributor and simulation results are confirmed by the official RoboDojo leaderboard; the method description has not been corroborated by a public technical report.",
+    "institution": "Manifold AI",
+    "venue": "Launch coverage / official leaderboard entry",
+    "modalities": [],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "leaderboard": "https://robodojo-benchmark.com/leaderboard",
+      "report": "https://mp.weixin.qq.com/s/GqI66EPiB9xz7Bz_LxwdmQ"
+    },
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Launch coverage describes inner and outer VLM agents plus an optional reactive WorldScape Policy (WSP) skill. VLM names, reactive checkpoint version and exact base models are not independently verified.",
+      "modelSize": "Not reported for this R²SI system; WorldScape Policy 2.0 component sizes are not inherited.",
+      "inputs": "Launch coverage reports multi-view RGB, robot state, task descriptions and episode memory. These inputs are not independently verified against an R²SI technical report or release.",
+      "outputs": "Launch coverage reports skill/tool execution and optional reactive WSP action chunks that return control to the inner agent. Native action dimensions and interfaces are not independently verified.",
+      "trainingData": "Launch coverage reports reuse of rollout records for skill revision and, for WSP-enabled tasks, reactive-model training. Dataset scale and the leaderboard checkpoint’s training corpus are not reported.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Launch coverage describes an inner Robot Agent executing task skills and an outer Recursion Agent revising skills, testing versions and optionally training WSP. The complete improvement loop and any meta-level self-modification are not independently verified.",
+      "evaluation": "Official RoboDojo-Sim snapshot 2026-10-17: average Score 46.58 and success rate 39.35%; Precision Score 23.51 and success rate 15.50%. The simulation entry is separate from the real-world leaderboard; this listing does not independently establish the launch article’s recursive-improvement claims."
+    },
+    "release": {
+      "code": "Not verified — no R²SI-specific public implementation was located.",
+      "weights": "Not verified — no R²SI-specific checkpoint release was located.",
+      "data": "Not verified — no R²SI-specific public training or rollout dataset was located.",
+      "license": "Not verified for R²SI; WorldScape Policy 2.0 code and weight licenses do not establish this system’s release terms.",
+      "notes": "The official WorldScape Policy repository and Hugging Face model release are labeled 2.0. They are related earlier artifacts and are not linked as R²SI releases."
+    },
+    "evidence": [
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official RoboDojo-Sim leaderboard — 2026-10-17 snapshot",
+        "fields": [
+          "name",
+          "institution",
+          "environments",
+          "policy.evaluation"
+        ],
+        "note": "The new row names WorldScape-R²SI, contributor Manifold AI, and per-dimension simulation metrics. The row supplies no paper, project, code, data, weights or implementation details. The snapshot date is not treated as a paper submission date."
+      },
+      {
+        "url": "https://github.com/manifoldai-research/WorldScape-Policy",
+        "label": "Author release-scope audit — existing WorldScape Policy 2.0",
+        "fields": [
+          "release",
+          "caveats"
+        ],
+        "note": "Current main README and published webpage branch identify WorldScape Policy 2.0. This is a related-release scope check, not R²SI code or proof that no private implementation exists."
+      },
+      {
+        "url": "https://huggingface.co/manifoldai-research/WorldScape-Policy-2",
+        "label": "Author weight-release scope — WorldScape Policy 2.0",
+        "fields": [
+          "release.weights",
+          "release.license",
+          "caveats"
+        ],
+        "note": "The public model card/checkpoints are labeled WorldScape Policy 2.0. No R²SI-specific or WorldScape Policy 2.5 checkpoint was established from this reviewed release."
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s/GqI66EPiB9xz7Bz_LxwdmQ",
+        "label": "Launch coverage — 机器之心, 2026-10-17 (secondary source)",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "venue",
+          "policy.family",
+          "policy.baseModel",
+          "policy.inputs",
+          "policy.outputs",
+          "policy.trainingData",
+          "policy.trainingMethod",
+          "caveats"
+        ],
+        "note": "Article read through a normal Chrome browser. This supports only explicitly attributed launch descriptions and the report-publication event. It is not primary technical evidence; no R²SI paper or author technical release was located.",
+        "sourceType": "secondary"
+      }
+    ],
+    "caveats": [
+      "The displayed date is the explicit news-publication event (2026-10-17), not a paper submission date; a public R²SI technical report has not been established.",
+      "Technical descriptions are explicitly attributed to launch coverage. The official leaderboard independently confirms the entry, contributor and reported metrics, not the internal architecture or improvement mechanism.",
+      "The launch article also mentions WorldScape Policy 2.5. No separate primary technical report or version-specific release was located; it is not treated as a renamed WorldScape Policy 2.0 checkpoint or a separately verified model here.",
+      "No measured depth or tactile input is established for R²SI. The source illustration labels RGB-only deployment, but primary implementation evidence remains unavailable.",
+      "R²SI is distinct from R²-WAM (arXiv:2610.04913), a separate repair-and-reject post-training method."
+    ],
+    "relatedIds": [
+      "worldscape-policy2"
+    ],
+    "verified": "2026-10-17"
   }
 ]

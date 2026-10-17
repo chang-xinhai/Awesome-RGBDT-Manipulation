@@ -441,6 +441,7 @@ function figureLabel(w: Work, f: Figure) {
     "data-collection-process": "Author data collection process",
     "conceptual-pipeline": "Author conceptual pipeline",
     "source-excerpt": "Published source text preview",
+    "leaderboard-preview": "Official leaderboard result preview",
   };
   return (
     specific[f.kind] ??
@@ -645,7 +646,7 @@ function openDetail(id: string, restore = false) {
         ["notes", "Release details"],
       ],
       releaseFor(w, collection),
-    )}${w.caveats.length ? `<section class="detail-section"><h3>Scope & qualifications</h3><ul class="caveats">${w.caveats.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></section>` : ""}<details class="detail-sources" open><summary>Primary-source evidence (${w.evidence.length})</summary><ol>${w.evidence.map((s, i) => `<li id="evidence-${i + 1}">${external(s.url, s.label)}${s.note ? `<p>${esc(s.note)}</p>` : ""}</li>`).join("")}</ol><p>Last reviewed ${esc(w.verified)}. “Not reported” means the cited sources do not disclose the value; “Not verified” means it remains unresolved.</p></details></div></div>`;
+    )}${w.caveats.length ? `<section class="detail-section"><h3>Scope & qualifications</h3><ul class="caveats">${w.caveats.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></section>` : ""}<details class="detail-sources" open><summary>${w.evidence.some((s) => s.sourceType === "secondary") ? "Sources & attributed launch coverage" : "Primary-source evidence"} (${w.evidence.length})</summary><ol>${w.evidence.map((s, i) => `<li id="evidence-${i + 1}">${external(s.url, s.label)}${s.note ? `<p>${esc(s.note)}</p>` : ""}</li>`).join("")}</ol><p>Last reviewed ${esc(w.verified)}. “Not reported” means the cited sources do not disclose the value; “Not verified” means it remains unresolved.</p></details></div></div>`;
   detail.dataset.work = id;
   if (!detail.open) dialogOpen(detail);
   detail.scrollTop = 0;

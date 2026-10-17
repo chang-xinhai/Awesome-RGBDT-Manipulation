@@ -342,7 +342,7 @@
       "label": "RoboDojo live leaderboard: simulation",
       "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
       "kind": "leaderboard",
-      "scope": "Official generated-data snapshot updated 2026-10-14. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
+      "scope": "Official generated-data snapshot updated 2026-10-17. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
       "entries": [
         {
           "name": "EmbodiedEvo",
@@ -369,7 +369,8 @@
         },
         {
           "name": "Rex-M1 Preview",
-          "note": "Unresolved: preview submission identified by the official board; a matching primary technical report and released model architecture were not verified."
+          "note": "Resolved from the author-contributed long-context adapter and separately released ModelScope checkpoint; distinct from the upstream Xiaomi-Robotics-1 base.",
+          "workId": "rex-m1-preview"
         },
         {
           "name": "VPP2-Preview",
@@ -382,7 +383,8 @@
         },
         {
           "name": "Liber-0 Preview",
-          "note": "Unresolved: preview leaderboard asset; no primary technical report establishing identity relative to Liber0-Lite was verified."
+          "note": "Resolved from the author-contributed hierarchical adapter and separately released Preview/context checkpoints; distinct from Liber0-Lite.",
+          "workId": "liber0-preview"
         },
         {
           "name": "Liber-0 Lite",
@@ -594,6 +596,11 @@
         {
           "name": "OpenVLA-OFT",
           "workId": "oft"
+        },
+        {
+          "name": "WorldScape-R²SI",
+          "workId": "worldscape-r2si",
+          "note": "Distinct R²SI simulation submission (2026-10-17 snapshot). Identity/team/results are official; architecture and improvement descriptions remain attributed launch coverage, without inheriting WorldScape Policy 2.0 artifacts."
         }
       ]
     },
@@ -603,7 +610,7 @@
       "label": "RoboDojo live leaderboard: real robots",
       "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
       "kind": "leaderboard",
-      "scope": "Official generated-data snapshot updated 2026-10-14. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
+      "scope": "Official generated-data snapshot updated 2026-10-17. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
       "entries": [
         {
           "name": "OpenWAM-α",
@@ -657,9 +664,9 @@
       "id": "xpolicylab-registry",
       "benchmarkId": "robodojo",
       "label": "XPolicyLab integrated adapter registry",
-      "url": "https://github.com/XPolicyLab/XPolicyLab",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy",
       "kind": "adapter-registry",
-      "scope": "63 integrated policy adapters as of October2026; integration/serving availability only, not evidence that all adapters were evaluated on RoboTwin or RoboDojo. demo_policy scaffold excluded.",
+      "scope": "68 integrated policy adapters at commit 94dbf9505f2f87cf59c3ee8ba5912cd236781771, reviewed 2026-10-17; integration/serving availability only, not evidence that all adapters were evaluated on RoboTwin or RoboDojo. demo_policy scaffold excluded.",
       "entries": [
         {
           "name": "Mem-0",
@@ -924,6 +931,31 @@
         {
           "name": "ME-U0",
           "workId": "me-u0"
+        },
+        {
+          "name": "Liber-0 Preview",
+          "workId": "liber0-preview",
+          "note": "Separate Preview checkpoint and hierarchical context controller, sharing the Lite runtime."
+        },
+        {
+          "name": "ME-Dex 1.0",
+          "workId": "me-dex-1",
+          "note": "Existing ME-Dex manuscript and official source; the released RoboTwin interface zeros observed tactile, separately from tactile replay supervision."
+        },
+        {
+          "name": "Rex-M1 Preview",
+          "workId": "rex-m1-preview",
+          "note": "Independent long-context derivative checkpoint and released inference interface."
+        },
+        {
+          "name": "Spark-0",
+          "workId": "spark-0",
+          "note": "Existing canonical Spark-0; standalone source is MIT, adapter and vendored components retain their own licenses."
+        },
+        {
+          "name": "ViGAR",
+          "workId": "vigar",
+          "note": "Existing canonical ViGAR; adapter directly cites the same paper and author repository."
         }
       ]
     },

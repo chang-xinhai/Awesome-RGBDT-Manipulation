@@ -1,6 +1,6 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-17. 681 unique records; 50 benchmark records; 576 policy records; 47 models; 9 surveys; 12 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-10-17. 684 unique records; 50 benchmark records; 579 policy records; 47 models; 9 surveys; 12 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
@@ -16,8 +16,8 @@ Review cutoff: 2026-10-17. 681 unique records; 50 benchmark records; 576 policy 
 - Tactile Representations and Pretraining: 41 records with this classification.
 - Geometry and Predictive Models: 17 records with this classification.
 - Visual Precision and Reinforcement Learning: 37 records with this classification.
-- Agent / RSI / ICL: 250 records with this classification.
-- Generalist Policy Foundations: 137 records with this classification.
+- Agent / RSI / ICL: 251 records with this classification.
+- Generalist Policy Foundations: 139 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -30,9 +30,9 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [RoboTwin2 leaderboard: single-task](https://robotwin-platform.github.io/data/robotwin_leaderboard.json) | leaderboard | 5 / 5 |
 | [RoboDojo paper: simulation baselines](https://arxiv.org/abs/2607.04434) | paper-baselines | 30 / 30 |
 | [RoboDojo paper: real-robot baselines](https://arxiv.org/abs/2607.04434) | paper-baselines | 10 / 10 |
-| [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 56 / 58 |
+| [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 59 / 59 |
 | [RoboDojo live leaderboard: real robots](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 11 / 11 |
-| [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab) | adapter-registry | 63 / 63 |
+| [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy) | adapter-registry | 68 / 68 |
 | [N₀-Foundation NeoReal / NeoSim baseline rosters](https://arxiv.org/html/2608.29601v2#S6) | paper-baselines | 9 / 9 |
 | [Evo-DexBench evaluated policies and No-Touch ablation](https://arxiv.org/abs/2610.21180) | paper-baselines | 6 / 6 |
 | [ForceBench simulation comparison](https://arxiv.org/abs/2610.19604) | paper-baselines | 9 / 10 |

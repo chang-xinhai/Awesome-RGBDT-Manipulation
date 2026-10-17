@@ -79,7 +79,7 @@ for c,heading in [('benchmark','Benchmarks'),('policy','Policies')]:
    lines += [f'<a id="record-{c}-{w["id"]}"></a>','<details>',f'<summary><strong>{clean(name(w,c))}</strong> — {clean(w["title"])}</summary>','',f'**{w["date"]or"Undated"} · {clean(w["venue"])} · {clean(w["institution"])}**','',artifact_markdown(w),'',clean(w.get(c+'Summary',w['summary'])),'']
    f=media.get(w['id'],{}).get(c)
    if f:lines += [f'<img src="website/public{f["path"]}" width="760" alt="{clean(f["alt"])}"/>','',f'*{clean(f["credit"])} · [Figure source]({f["page"]}) · Original rights retained.*','']
-   if f and f.get('kind')in ['implementation-preview','source-excerpt']and f.get('note'):lines += [f'**Preview scope:** {clean(f["note"])}','']
+   if f and f.get('kind')in ['implementation-preview','source-excerpt','leaderboard-preview']and f.get('note'):lines += [f'**Preview scope:** {clean(f["note"])}','']
    lines+=['| Field | Reported value and source scope |','| :-- | :-- |']
    lines.append(f'| Record type | {record_type(w,c)} |')
    for k,l in (SURVEY if w.get('survey')else BENCH if c=='benchmark'else MODEL if w.get('model')else POLICY):lines.append(f'| {l} | {clean(obj.get(k,"Not reported"))}{sources(w,prefix+"."+k)} |')
@@ -91,7 +91,9 @@ for c,heading in [('benchmark','Benchmarks'),('policy','Policies')]:
     lines += ['- '+clean(t)for t in tasks] if tasks else ['Task names not reported or not verified in the cited sources.']
    if w.get('caveats'):lines+=['','**Scope and qualifications**','']+['- '+clean(x)for x in w['caveats']]
    if w.get('surveyAuditId'):lines+=['','**Literature trail:** [Reference-to-record mappings and scope decisions](data/survey-source-audit.json). Indexed methods retain their own primary evidence.','']
-   lines+=['','**Primary evidence**','']+[f'{i}. [{clean(s["label"])}]({s["url"]})'+(' — '+clean(s['note'])if s.get('note')else'')for i,s in enumerate(w['evidence'],1)]
+   lines+=['','**Primary evidence**','']+[f'{i}. [{clean(s["label"])}]({s["url"]})'+(' — '+clean(s['note'])if s.get('note')else'')for i,s in enumerate(w['evidence'],1)if s.get('sourceType')!='secondary']
+   secondary=[(i,s)for i,s in enumerate(w['evidence'],1)if s.get('sourceType')=='secondary']
+   if secondary:lines+=['','**Attributed launch coverage (secondary)**','']+[f'{i}. [{clean(s["label"])}]({s["url"]})'+(' — '+clean(s['note'])if s.get('note')else'')for i,s in secondary]
    lines+=['','</details>','']
 lines+=['## Local preview and updates','',
  '```sh','cd website','npm ci','npm run dev -- --host 127.0.0.1 --port 4345','```','',

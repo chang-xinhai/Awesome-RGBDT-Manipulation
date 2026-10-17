@@ -29,7 +29,7 @@ Separates visual subgoal planning from subgoal-conditioned video-action executio
 | Training duration | Planner: 100,000 steps, batch 32. Policy: 50,000 steps, batch 256; the goal-injection ablation instead trains 30,000 steps. Wall-clock duration is Not reported. [1](https://arxiv.org/abs/2610.02368)  |
 | Training hardware | Training hardware is Not reported in the inspected sources. Inference optimization is profiled on one B20Z GPU. [1](https://arxiv.org/abs/2610.02368)  |
 | Inference and control rates | Reported inference speedups are 2.5 × for the policy and 11.2 × for the planner on B20Z. An absolute complete-system rate is Not reported. [1](https://arxiv.org/abs/2610.02368)  |
-| Evaluation scope | RoboTwin: 50 tasks, 100 rollouts per task and setting. Physical evaluation covers five compositional tasks and two goal-image in-context tasks. [1](https://arxiv.org/abs/2610.02368)  |
+| Evaluation scope | RoboTwin: 50 tasks, 100 rollouts per task and setting. Physical evaluation covers five compositional tasks and two goal-image in-context tasks. [1](https://arxiv.org/abs/2610.02368) [5](https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/ViGAR)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
@@ -50,3 +50,4 @@ Separates visual subgoal planning from subgoal-conditioned video-action executio
 2. [Official implementation](https://github.com/DAGroup-PKU/ViGAR) — Author-linked code and artifact instructions; current release may differ from the original manuscript.
 3. [Official project](https://dagroup-pku.github.io/ViGAR/) — Author project and links; scientific figure keeps original rights.
 4. [Verified code license](https://github.com/DAGroup-PKU/ViGAR/blob/main/LICENSE)
+5. [Current XPolicyLab alias and interface](https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/ViGAR) — ViGAR adapter directly cites arXiv:2610.02368 and DAGroup-PKU/ViGAR. It is the existing canonical policy, not a new work. RGB/BGR preprocessing, planner/policy GPU split and released interface are explicit.

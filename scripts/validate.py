@@ -29,7 +29,8 @@ for w in works:
   check(all(k in obj for k in (survey_fields if prefix=='survey'else model_fields if prefix=='model'else fields.get(c,[]))),id+': incomplete '+c+' fields')
   for k,v in obj.items():check(v is not None and (isinstance(v,(str,list))),id+': invalid '+c+'.'+k)
  for k in ['code','weights','data','license','notes']:check(bool(w['release'].get(k)),id+': missing release.'+k)
- for e in w['evidence']:check(bool(re.match('https?://',e.get('url','')))and bool(e.get('label'))and bool(e.get('fields')),id+': incomplete evidence')
+ for e in w['evidence']:check(bool(re.match('https?://',e.get('url','')))and bool(e.get('label'))and bool(e.get('fields')),id+': incomplete evidence');check(e.get('sourceType','primary')in ['primary','secondary'],id+': invalid evidence source type')
+ check(any(e.get('sourceType')!='secondary'for e in w['evidence']),id+': missing primary evidence')
  for k,u in w['links'].items():check(bool(re.match('https?://',u)),id+': invalid '+k+' link')
  if w.get('benchmark'):
   check(isinstance(w['benchmark']['tasks'],list),id+': tasks must be a scoped list');check(bool(w['benchmark']['taskListScope']),id+': task list lacks scope')
@@ -113,4 +114,4 @@ for source in sensing_audit['sources']:
 check(json.loads((R/'website/public/sensing-source-audit.json').read_text())==sensing_audit,'Website sensing source audit is stale')
 if errors:
  print('\n'.join(errors));print(f'FAILED: {len(errors)} data/provenance issues');sys.exit(1)
-print(json.dumps({'status':'passed','uniqueRecords':len(works),'benchmarkRecords':sum('benchmark'in w['collections']and'supporting-resources'not in w['categories']and bool(w.get('benchmark'))for w in works),'policyRecords':sum('policy'in w['collections']and bool(w.get('policy'))for w in works),'modelRecords':sum(bool(w.get('model'))for w in works),'surveyRecords':sum(w['resourceType']=='survey'for w in works),'supportingRecords':sum('supporting-resources'in w['categories']for w in works),'scopedTaskLabels':sum(len(w.get('benchmark',{}).get('tasks',[]))for w in works),'figures':sum(len(x)for x in media.values()),'primaryEvidenceURLs':len(set(s['url']for w in works for s in w['evidence']))},indent=2))
+print(json.dumps({'status':'passed','uniqueRecords':len(works),'benchmarkRecords':sum('benchmark'in w['collections']and'supporting-resources'not in w['categories']and bool(w.get('benchmark'))for w in works),'policyRecords':sum('policy'in w['collections']and bool(w.get('policy'))for w in works),'modelRecords':sum(bool(w.get('model'))for w in works),'surveyRecords':sum(w['resourceType']=='survey'for w in works),'supportingRecords':sum('supporting-resources'in w['categories']for w in works),'scopedTaskLabels':sum(len(w.get('benchmark',{}).get('tasks',[]))for w in works),'figures':sum(len(x)for x in media.values()),'primaryEvidenceURLs':len(set(s['url']for w in works for s in w['evidence']if s.get('sourceType')!='secondary'))},indent=2))

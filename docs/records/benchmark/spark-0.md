@@ -8,7 +8,7 @@ Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manip
 
 **2026-10-15 · Preprint · Xspark AI / Tsinghua University / MMLab, HKU / HKUST (Guangzhou) / Peking University**
 
-**[Paper](https://arxiv.org/abs/2610.22342)** · [Project](https://xsparkai.com/Spark-0/) · [Code](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Spark_0) · [Weights](https://huggingface.co/TianxingChen/Spark-0)
+**[Paper](https://arxiv.org/abs/2610.22342)** · [Project](https://xsparkai.com/Spark-0/) · [Code](https://github.com/XsparkAI/Spark-0) · [Weights](https://huggingface.co/TianxingChen/Spark-0)
 
 Spatially aligned VTLA pretraining uses human touch as visual supervision and as an optional action-expert input; Spark Arena separates vision-only simulation from real tactile control.
 
@@ -69,3 +69,5 @@ Spatially aligned VTLA pretraining uses human touch as visual supervision and as
 4. [Official adapter checkpoint download script](https://github.com/XPolicyLab/XPolicyLab/blob/main/policy/Spark_0/scripts/download_spark0_pretrained_ckpt.sh) — Explicit author checkpoint identity TianxingChen/Spark-0; public pretrain_spark_0 tensor-file inventory verified.
 5. [Public Spark-0 pretraining checkpoint](https://huggingface.co/TianxingChen/Spark-0) — Model repository contains pretraining tensors; this does not establish task-finetuned checkpoints or benchmark assets.
 6. [Data collection method and scope](https://arxiv.org/abs/2610.22342) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+7. [Official standalone Spark-0 source and LICENSE](https://github.com/XsparkAI/Spark-0) — Current standalone repository is public and its actual LICENSE is MIT. The canonical paper’s 400k pretraining steps and the current adapter recipe’s 500k are distinct settings.
+8. [XPolicyLab adapter identity and current recipe](https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy/Spark_0) — Same title/arXiv and XsparkAI upstream as canonical Spark-0. Current adapter recipe lists 500k pretraining steps; retain paper-specific 400k rather than silently overwriting it.

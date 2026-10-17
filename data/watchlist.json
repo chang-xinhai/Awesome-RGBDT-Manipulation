@@ -318,6 +318,16 @@
       "url": "https://github.com/MachEmbodied/ME-Brain-1.0"
     },
     {
+      "work": "me-dex-1",
+      "kind": "project",
+      "url": "https://machembodied.com/ME-Dex/ME-Dex1.0.html"
+    },
+    {
+      "work": "me-dex-1",
+      "kind": "code",
+      "url": "https://github.com/MachEmbodied/ME-Dex-1.0"
+    },
+    {
       "work": "foretac-vla",
       "kind": "project",
       "url": "https://foretac-vla.github.io/"
@@ -3535,7 +3545,7 @@
     {
       "work": "spark-0",
       "kind": "code",
-      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Spark_0"
+      "url": "https://github.com/XsparkAI/Spark-0"
     },
     {
       "work": "hapticvla",
@@ -4341,6 +4351,16 @@
       "work": "evo-dexbench",
       "kind": "code",
       "url": "https://github.com/MINT-SJTU/Evo-DexBench"
+    },
+    {
+      "work": "liber0-preview",
+      "kind": "project",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_preview"
+    },
+    {
+      "work": "rex-m1-preview",
+      "kind": "project",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Rex_M1_preview"
     }
   ]
 }

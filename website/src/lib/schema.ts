@@ -3,6 +3,7 @@ export interface Evidence {
   url: string;
   label: string;
   fields: string[];
+  sourceType?: "primary" | "secondary";
   note?: string;
 }
 export interface Figure {
