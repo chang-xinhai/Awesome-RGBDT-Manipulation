@@ -29,7 +29,11 @@ sort, view and comparison while switching. Shared URLs restore the active view
 and selected detail. Saved records stay in this browser's local storage.
 
 Benchmark figures show task coverage or taxonomy; policy figures show method
-architecture. Click figures to enlarge. Supporting resources are a distinct
+architecture. Surveys appear within relevant categories, use conceptual
+taxonomy figures, and have scope/corpus fields instead of policy training
+specifications. The Record type filter separates surveys and methods; surveys
+do not increase the executable-policy count. Citation trails and scope
+decisions are available under Coverage. Click figures to enlarge. Supporting resources are a distinct
 category. Cost and simulator fields preserve the source's version and scope.
 
 This checkout is local only. There is no GitHub repository, remote, publication

@@ -4875,5 +4875,2542 @@
       "height": 1145,
       "note": "Official HTML architecture canvas: rollout evidence guides harness revision; skill routing connects observations and episode state to code / VLA execution. Captured from the original rendered architecture canvas, excluding website navigation; no figure elements were reconstructed."
     }
+  },
+  "robot-icl-survey": {
+    "policy": {
+      "path": "/images/catalog/robot-icl-survey-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.36012#page=10",
+      "page": "https://arxiv.org/pdf/2609.36012#page=10",
+      "credit": "Huang et al. / Robot ICL survey authors",
+      "alt": "Four context-to-control interfaces: conditioned actions, geometric transfer, predictive control and skill/agent execution.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1404,
+      "height": 876,
+      "note": "Author conceptual taxonomy, cropped from PDF page 10; describes reviewed method families rather than a new executable policy.",
+      "sourceSha256": "fa58ae769a646cdc1dfe38b7c2fed350a78eb8a546ae1664d7b91e2e95de7657"
+    }
+  },
+  "weights-or-skills-survey": {
+    "policy": {
+      "path": "/images/catalog/weights-or-skills-survey-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.01851#page=3",
+      "page": "https://arxiv.org/pdf/2608.01851#page=3",
+      "credit": "Jena et al. / Weights or Skills? authors",
+      "alt": "Six robot-learning branches, with code-as-policy subdivided by self-improvement mechanism.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1188,
+      "height": 1530,
+      "note": "Author conceptual taxonomy, cropped from PDF page 3; describes reviewed method families rather than a new executable policy.",
+      "sourceSha256": "3b42da899db4a7ab01e3e4bf7cc89572798606a499d269bee0af86e433b4728c"
+    }
+  },
+  "wam-control-survey": {
+    "policy": {
+      "path": "/images/catalog/wam-control-survey-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.16074#page=7",
+      "page": "https://arxiv.org/pdf/2609.16074#page=7",
+      "credit": "Lu et al. / WAM survey authors",
+      "alt": "Four WAM architecture classes crossing shared/separate backbones with joint/inverse-dynamics prediction.",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 1554,
+      "height": 318,
+      "note": "Author conceptual taxonomy, cropped from PDF page 7; describes reviewed method families rather than a new executable policy.",
+      "sourceSha256": "c410bbbd06e25c4592a043acf66ca2dcab5ef03eeae601c29093e50898338df4"
+    }
+  },
+  "wam-ttt": {
+    "policy": {
+      "path": "/images/catalog/wam-ttt-policy.webp",
+      "original": "https://arxiv.org/html/2607.06988v2/pipeline.png",
+      "page": "https://arxiv.org/html/2607.06988",
+      "credit": "WAM-TTT authors",
+      "alt": "WAM-TTT — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1336,
+      "height": 545,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "osvi-wm": {
+    "policy": {
+      "path": "/images/catalog/osvi-wm-policy.webp",
+      "original": "https://arxiv.org/html/2505.20425v2/Figs/flow.png",
+      "page": "https://arxiv.org/html/2505.20425",
+      "credit": "OSVI-WM authors",
+      "alt": "OSVI-WM — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1435,
+      "height": 763,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "demo-jepa": {
+    "policy": {
+      "path": "/images/catalog/demo-jepa-policy.webp",
+      "original": "https://arxiv.org/html/2605.20811v1/pipeline.png",
+      "page": "https://arxiv.org/html/2605.20811",
+      "credit": "Demo-JEPA authors",
+      "alt": "Demo-JEPA — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2033,
+      "height": 1359,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "host": {
+    "policy": {
+      "path": "/images/catalog/host-policy.webp",
+      "original": "https://arxiv.org/html/2607.20033v4/Fig2.png",
+      "page": "https://arxiv.org/html/2607.20033",
+      "credit": "HOST authors",
+      "alt": "HOST — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1958,
+      "height": 1902,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "zero-wam": {
+    "policy": {
+      "path": "/images/catalog/zero-wam-policy.webp",
+      "original": "https://robbyant-research.github.io/Zero-WAM/static/images/paper/framework-v1.0.webp",
+      "page": "https://robbyant-research.github.io/Zero-WAM/",
+      "credit": "Zero-WAM authors",
+      "alt": "Zero-WAM — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 781,
+      "note": "Official model framework Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "recap-retrieval": {
+    "policy": {
+      "path": "/images/catalog/recap-retrieval-policy.webp",
+      "original": "https://arxiv.org/html/2606.15631v1/method2.png",
+      "page": "https://arxiv.org/html/2606.15631",
+      "credit": "ReCAP authors",
+      "alt": "ReCAP — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 917,
+      "height": 700,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "universal-planning-networks": {
+    "policy": {
+      "path": "/images/catalog/universal-planning-networks-policy.webp",
+      "original": "https://arxiv.org/html/1804.00645v2/upn_fig1_2.svg",
+      "page": "https://arxiv.org/html/1804.00645",
+      "credit": "Universal Planning Networks authors",
+      "alt": "Universal Planning Networks — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1465,
+      "height": 592,
+      "note": "Figure 2: complete gradient-based planning method Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "visual-mpc-retrying": {
+    "policy": {
+      "path": "/images/catalog/visual-mpc-retrying-policy.webp",
+      "original": "https://proceedings.mlr.press/v87/ebert18a/ebert18a.pdf",
+      "page": "https://proceedings.mlr.press/v87/ebert18a/ebert18a.pdf#page=1",
+      "credit": "Ebert et al. / CoRL 2018",
+      "alt": "Visual MPC with Retrying — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 825,
+      "height": 1030,
+      "note": "Figure 1, PDF p. 1: complete training and closed-loop visual-MPC architecture, rendered with all vector labels. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "core-counterfactual": {
+    "policy": {
+      "path": "/images/catalog/core-counterfactual-policy.webp",
+      "original": "https://arxiv.org/html/2608.14822v1/framework_core.png",
+      "page": "https://arxiv.org/html/2608.14822",
+      "credit": "CoRe authors",
+      "alt": "CoRe — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2037,
+      "height": 780,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "tau0-vla": {
+    "policy": {
+      "path": "/images/catalog/tau0-vla-policy.webp",
+      "original": "https://arxiv.org/html/2608.16885v1/framework_0726.png",
+      "page": "https://arxiv.org/html/2608.16885",
+      "credit": "τ0-VLA authors",
+      "alt": "τ0-VLA — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1961,
+      "height": 808,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "silvr": {
+    "policy": {
+      "path": "/images/catalog/silvr-policy.webp",
+      "original": "https://arxiv.org/html/2506.06658v3/silvr_teaser_figure_resized_new.png",
+      "page": "https://arxiv.org/html/2506.06658",
+      "credit": "SILVR authors",
+      "alt": "SILVR — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1980,
+      "height": 576,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "gavel": {
+    "policy": {
+      "path": "/images/catalog/gavel-policy.webp",
+      "original": "https://arxiv.org/html/2609.19315v1/media/GAVEL_pipeline.png",
+      "page": "https://arxiv.org/html/2609.19315",
+      "credit": "GAVEL authors",
+      "alt": "GAVEL — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2800,
+      "height": 1215,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "sandwich-residuals": {
+    "policy": {
+      "path": "/images/catalog/sandwich-residuals-policy.webp",
+      "original": "https://arxiv.org/html/2609.21740v1/Figure2.png",
+      "page": "https://arxiv.org/html/2609.21740",
+      "credit": "Sandwich-Residuals authors",
+      "alt": "Sandwich-Residuals — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1905,
+      "height": 835,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "metapusher": {
+    "policy": {
+      "path": "/images/catalog/metapusher-policy.webp",
+      "original": "https://arxiv.org/html/2609.21122v1/Framework.png",
+      "page": "https://arxiv.org/html/2609.21122",
+      "credit": "MetaPusher authors",
+      "alt": "MetaPusher — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 867,
+      "height": 339,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "map-wam": {
+    "policy": {
+      "path": "/images/catalog/map-wam-policy.webp",
+      "original": "https://arxiv.org/html/2609.11561v1/framework_cropped.png",
+      "page": "https://arxiv.org/html/2609.11561",
+      "credit": "MaP-WAM authors",
+      "alt": "MaP-WAM — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1578,
+      "height": 830,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "fare": {
+    "policy": {
+      "path": "/images/catalog/fare-policy.webp",
+      "original": "https://arxiv.org/html/2609.18016v1/framework_v2.png",
+      "page": "https://arxiv.org/html/2609.18016",
+      "credit": "FaRe authors",
+      "alt": "FaRe — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1280,
+      "height": 474,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "flowcontrol": {
+    "policy": {
+      "path": "/images/catalog/flowcontrol-policy.webp",
+      "original": "https://arxiv.org/html/2007.00291v1/images/method_figure.png",
+      "page": "https://arxiv.org/html/2007.00291",
+      "credit": "FlowControl authors",
+      "alt": "FlowControl — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1052,
+      "height": 277,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "dome": {
+    "policy": {
+      "path": "/images/catalog/dome-policy.webp",
+      "original": "https://arxiv.org/html/2204.02863v2/main_figure_3.png",
+      "page": "https://arxiv.org/html/2204.02863",
+      "credit": "DOME authors",
+      "alt": "DOME — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2046,
+      "height": 850,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "dinobot": {
+    "policy": {
+      "path": "/images/catalog/dinobot-policy.webp",
+      "original": "https://arxiv.org/html/2402.13181v1/figures/big_method.png",
+      "page": "https://arxiv.org/html/2402.13181",
+      "credit": "DINOBot authors",
+      "alt": "DINOBot — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1768,
+      "height": 719,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "ditto": {
+    "policy": {
+      "path": "/images/catalog/ditto-policy.webp",
+      "original": "https://arxiv.org/html/2403.15203v2/method_v4.png",
+      "page": "https://arxiv.org/html/2403.15203",
+      "credit": "DITTO authors",
+      "alt": "DITTO — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2023,
+      "height": 431,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "mt3": {
+    "policy": {
+      "path": "/images/catalog/mt3-policy.webp",
+      "original": "https://arxiv.org/html/2511.10110v1/Figure_2.png",
+      "page": "https://arxiv.org/html/2511.10110",
+      "credit": "MT3 authors",
+      "alt": "MT3 — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 875,
+      "height": 1170,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "odil": {
+    "policy": {
+      "path": "/images/catalog/odil-policy.webp",
+      "original": "https://arxiv.org/html/2503.06831v1/Figs/overview-v2.png",
+      "page": "https://arxiv.org/html/2503.06831",
+      "credit": "ODIL authors",
+      "alt": "ODIL — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2644,
+      "height": 622,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "semancorr": {
+    "policy": {
+      "path": "/images/catalog/semancorr-policy.webp",
+      "original": "https://arxiv.org/html/2607.28382v2/Pipeline.png",
+      "page": "https://arxiv.org/html/2607.28382",
+      "credit": "SemAnCorr authors",
+      "alt": "SemAnCorr — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1800,
+      "height": 480,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "manilong-shot": {
+    "policy": {
+      "path": "/images/catalog/manilong-shot-policy.webp",
+      "original": "https://arxiv.org/html/2512.16302v1/trainingv2.png",
+      "page": "https://arxiv.org/html/2512.16302",
+      "credit": "ManiLong-Shot authors",
+      "alt": "ManiLong-Shot — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1557,
+      "height": 884,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "imop": {
+    "policy": {
+      "path": "/images/catalog/imop-policy.webp",
+      "original": "https://arxiv.org/html/2405.13178v2/assets/new_main-inv_regm_network.jpeg",
+      "page": "https://arxiv.org/html/2405.13178",
+      "credit": "IMOP authors",
+      "alt": "IMOP — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2800,
+      "height": 645,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "hrt1": {
+    "policy": {
+      "path": "/images/catalog/hrt1-policy.webp",
+      "original": "https://raw.githubusercontent.com/IRVLUTD/HRT1/main/media/pics/overview.png",
+      "page": "https://github.com/IRVLUTD/HRT1",
+      "credit": "HRT1 authors",
+      "alt": "HRT1 — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2492,
+      "height": 1102,
+      "note": "Official complete HRT1 framework Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "robotap": {
+    "policy": {
+      "path": "/images/catalog/robotap-policy.webp",
+      "original": "https://arxiv.org/html/2308.15975v2/overview_figure_v2.svg",
+      "page": "https://arxiv.org/html/2308.15975",
+      "credit": "RoboTAP authors",
+      "alt": "RoboTAP — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1626,
+      "height": 622,
+      "note": "Figure 2: dense tracks, active points, plan and servoing pipeline Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "trajectory-transfer-pose": {
+    "policy": {
+      "path": "/images/catalog/trajectory-transfer-pose-policy.webp",
+      "original": "https://arxiv.org/html/2310.12077v1/Figure_2.png",
+      "page": "https://arxiv.org/html/2310.12077",
+      "credit": "Trajectory Transfer via Unseen Pose Estimation authors",
+      "alt": "Trajectory Transfer via Unseen Pose Estimation — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1200,
+      "height": 675,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "interaction-warping": {
+    "policy": {
+      "path": "/images/catalog/interaction-warping-policy.webp",
+      "original": "https://arxiv.org/html/2306.12392v2/main_figure3.png",
+      "page": "https://arxiv.org/html/2306.12392",
+      "credit": "Interaction Warping authors",
+      "alt": "Interaction Warping — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 912,
+      "height": 363,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "functo": {
+    "policy": {
+      "path": "/images/catalog/functo-policy.webp",
+      "original": "https://arxiv.org/html/2502.11744v2/imgs/pipeline-4.png",
+      "page": "https://arxiv.org/html/2502.11744",
+      "credit": "FUNCTO authors",
+      "alt": "FUNCTO — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2287,
+      "height": 1797,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "magic-contact": {
+    "policy": {
+      "path": "/images/catalog/magic-contact-policy.webp",
+      "original": "https://arxiv.org/html/2411.09627v2/pipeline_revised_revised.png",
+      "page": "https://arxiv.org/html/2411.09627",
+      "credit": "MAGIC authors",
+      "alt": "MAGIC — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1560,
+      "height": 340,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "gift-functional-transfer": {
+    "policy": {
+      "path": "/images/catalog/gift-functional-transfer-policy.webp",
+      "original": "https://arxiv.org/html/2503.15371v2/figures/Fig_2_Pipeline-min_.png",
+      "page": "https://arxiv.org/html/2503.15371",
+      "credit": "GIFT authors",
+      "alt": "GIFT — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2800,
+      "height": 909,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "sparse-meets-dense": {
+    "policy": {
+      "path": "/images/catalog/sparse-meets-dense-policy.webp",
+      "original": "https://sparse-meets-dense.github.io/static/images/method_page.jpg",
+      "page": "https://sparse-meets-dense.github.io/",
+      "credit": "Sparse Meets Dense authors",
+      "alt": "Sparse Meets Dense — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2097,
+      "height": 1085,
+      "note": "Official sparse/dense method pipeline Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "af-osil-ms": {
+    "policy": {
+      "path": "/images/catalog/af-osil-ms-policy.webp",
+      "original": "https://arxiv.org/html/2509.24972v1/method.jpg",
+      "page": "https://arxiv.org/html/2509.24972",
+      "credit": "AF-OSIL-MS authors",
+      "alt": "AF-OSIL-MS — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1846,
+      "height": 958,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "elastic-motion-policy": {
+    "policy": {
+      "path": "/images/catalog/elastic-motion-policy-policy.webp",
+      "original": "https://arxiv.org/html/2503.08029v2/img/block_diagram_v5.png",
+      "page": "https://arxiv.org/html/2503.08029",
+      "credit": "Elastic Motion Policy authors",
+      "alt": "Elastic Motion Policy — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2800,
+      "height": 1310,
+      "note": "Figure 5: complete EMP imitation pipeline Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "screwmimic": {
+    "policy": {
+      "path": "/images/catalog/screwmimic-policy.webp",
+      "original": "https://arxiv.org/html/2405.03666v1/Method.png",
+      "page": "https://arxiv.org/html/2405.03666",
+      "credit": "ScrewMimic authors",
+      "alt": "ScrewMimic — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1619,
+      "height": 684,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "relational-ndf": {
+    "policy": {
+      "path": "/images/catalog/relational-ndf-policy.webp",
+      "original": "https://arxiv.org/html/2211.09786v1/demo_inference_execution.png",
+      "page": "https://arxiv.org/html/2211.09786",
+      "credit": "Relational NDF authors",
+      "alt": "Relational NDF — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1199,
+      "height": 295,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "parts-shape-warping": {
+    "policy": {
+      "path": "/images/catalog/parts-shape-warping-policy.webp",
+      "original": "https://arxiv.org/html/2604.15455v1/big_fig.png",
+      "page": "https://arxiv.org/html/2604.15455",
+      "credit": "Parts-based Shape Warping authors",
+      "alt": "Parts-based Shape Warping — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 1326,
+      "height": 636,
+      "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation. Visually reviewed for complete boundaries, policy role and legibility; author/publisher figure rights remain separate from code licenses."
+    }
+  },
+  "poil": {
+    "policy": {
+      "path": "/images/catalog/poil-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.30404",
+      "page": "https://arxiv.org/pdf/2609.30404#page=3",
+      "credit": "POIL authors",
+      "alt": "POIL — author policy/control pipeline",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "width": 2032,
+      "height": 616,
+      "note": "Figure 1, PDF p. 3: complete transfer/execution pipeline including the bottom twist label and robot icon; the arXiv HTML PNG clips the lower edge. Full PDF render visually reviewed; author/publisher rights separate."
+    }
+  },
+  "icpi": {
+    "policy": {
+      "path": "/images/catalog/icpi-policy.webp",
+      "original": "https://arxiv.org/html/2508.15021v1/figures/llmirp_method.png",
+      "page": "https://arxiv.org/abs/2508.15021",
+      "credit": "In-Context Policy Improvement (ICPI) authors",
+      "alt": "In-Context Policy Improvement (ICPI) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "6a130341568cf3d361dd5369b3b415c6c81262448b72cf75fa9614c00b5aafcf",
+      "width": 1824,
+      "height": 561,
+      "note": "Figure 2: A frozen language model predicts adjustments to a low-dimensional dynamic-manipulation controller from preceding trials and example policy improvements."
+    }
+  },
+  "neural-task-programming": {
+    "policy": {
+      "path": "/images/catalog/neural-task-programming-policy.webp",
+      "original": "https://arxiv.org/html/1710.01813v2/pipeline.png",
+      "page": "https://arxiv.org/abs/1710.01813",
+      "credit": "Neural Task Programming (NTP) authors",
+      "alt": "Neural Task Programming (NTP) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "7d79a4cddbddfd328c555032c90181a9ce8ece5f5134464bd2e4446a0774cea0",
+      "width": 903,
+      "height": 232,
+      "note": "Figure 2: Recursively decomposes a demonstrated task into subtasks and callable neural programs, with information scoping to support compositional generalization."
+    }
+  },
+  "xskill": {
+    "policy": {
+      "path": "/images/catalog/xskill-policy.webp",
+      "original": "https://arxiv.org/pdf/2307.09955",
+      "page": "https://arxiv.org/abs/2307.09955",
+      "credit": "XSkill authors",
+      "alt": "XSkill policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "60fc0417c4a72efc89672687e8957a14af3038333b2595d8ef465dfde61ae8ae",
+      "width": 1543,
+      "height": 555,
+      "note": "PDF page 1, Figure 1: Discovers shared human–robot skill prototypes from videos, learns a skill-conditioned diffusion controller and composes skills from a new human prompt video."
+    }
+  },
+  "uniskill-human-video": {
+    "policy": {
+      "path": "/images/catalog/uniskill-human-video-policy.webp",
+      "original": "https://arxiv.org/html/2505.08787v4/CoRL_fig2.png",
+      "page": "https://arxiv.org/abs/2505.08787",
+      "credit": "UniSkill (Human Video Imitation) authors",
+      "alt": "UniSkill (Human Video Imitation) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "370c51bc71125d46366514cf6a7a25076407fe359fc689cc26e6c433ecaca2f4",
+      "width": 1432,
+      "height": 589,
+      "note": "Figure 2: Learns embodiment-agnostic skill representations through inverse and forward skill dynamics, then conditions robot diffusion policies on skills extracted from human videos."
+    }
+  },
+  "droc": {
+    "policy": {
+      "path": "/images/catalog/droc-policy.webp",
+      "original": "https://arxiv.org/html/2311.10678v2/figures/overview.png",
+      "page": "https://arxiv.org/abs/2311.10678",
+      "credit": "DROC authors",
+      "alt": "DROC policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e6c19298017cb444b122a7d3b1d91ef9e200dd67a1748a4ef200df203f16ba5b",
+      "width": 1478,
+      "height": 494,
+      "note": "Figure 1: Distills reusable knowledge from online language corrections and retrieves past visual / textual experiences to correct robot plans and skill parameters."
+    }
+  },
+  "architect": {
+    "policy": {
+      "path": "/images/catalog/architect-policy.webp",
+      "original": "https://arxiv.org/pdf/2607.23784",
+      "page": "https://arxiv.org/abs/2607.23784",
+      "credit": "ARCHITECT authors",
+      "alt": "ARCHITECT policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "776b5aa0505929401fbd14a2e5a8d2ea0aa3dcc9a3946de646ecfbcd12cc0a30",
+      "width": 1283,
+      "height": 661,
+      "note": "PDF page 2, Figure 1: Uses human language feedback and execution traces to synthesize modular robot programs and retain corrected behaviors in a reusable skill library."
+    }
+  },
+  "lrll": {
+    "policy": {
+      "path": "/images/catalog/lrll-policy.webp",
+      "original": "https://arxiv.org/html/2406.18746v2/img/fig2.png",
+      "page": "https://arxiv.org/abs/2406.18746",
+      "credit": "Lifelong Robot Library Learning (LRLL) authors",
+      "alt": "Lifelong Robot Library Learning (LRLL) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "45a1a95ca759a8b932569ce8873398b1b2ac2b765f59f2590a9c6db18e1721a8",
+      "width": 1919,
+      "height": 400,
+      "note": "Figure 2: Alternates human-guided exploration with skill abstraction to compress successful experiences into a growing composable robot-program library."
+    }
+  },
+  "lyra": {
+    "policy": {
+      "path": "/images/catalog/lyra-policy.webp",
+      "original": "https://arxiv.org/pdf/2509.18597",
+      "page": "https://arxiv.org/abs/2509.18597",
+      "credit": "LYRA authors",
+      "alt": "LYRA policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "9a0b5d7f1d91c4d4ade2e26102bb9ef058748f2911e5ff7c3a0252f53acd00f7",
+      "width": 2011,
+      "height": 1600,
+      "note": "PDF page 3, Figure 2: Distills human feedback into modular reusable skills and retrieves skill / example memory to generate ultra-long-horizon robot programs."
+    }
+  },
+  "teach-and-grow": {
+    "policy": {
+      "path": "/images/catalog/teach-and-grow-policy.webp",
+      "original": "https://arxiv.org/html/2608.17209v3/fig2.png",
+      "page": "https://arxiv.org/abs/2608.17209",
+      "credit": "Teach-and-Grow Learning (TGL) authors",
+      "alt": "Teach-and-Grow Learning (TGL) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fc7a9b2540330cfcbaaec30140e0bacbee36965c1d37b62e9beb22df0ac90c17",
+      "width": 1980,
+      "height": 1192,
+      "note": "Figure 2: Turns a few successful demonstrations into closed-loop Skill Blocks, then expands a verified skill library and experience memory from execution."
+    }
+  },
+  "reflect": {
+    "policy": {
+      "path": "/images/catalog/reflect-policy.webp",
+      "original": "https://arxiv.org/html/2306.15724v4/FS_method_summary.png",
+      "page": "https://arxiv.org/abs/2306.15724",
+      "credit": "REFLECT authors",
+      "alt": "REFLECT policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "9ef123d3a20ba1455b3f465d10a4e41f38c4e486995f68b84a9ce6c22c72f73b",
+      "width": 1413,
+      "height": 509,
+      "note": "Figure 2: Summarizes multisensory robot experience into structured events, explains execution failures and supplies those explanations to a correction planner."
+    }
+  },
+  "knowno": {
+    "policy": {
+      "path": "/images/catalog/knowno-policy.webp",
+      "original": "https://arxiv.org/html/2307.01928v2/robot-help-teaser.png",
+      "page": "https://arxiv.org/abs/2307.01928",
+      "credit": "KnowNo authors",
+      "alt": "KnowNo policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e2e69d655d192971d0de1f9ac0a909a42b127520931bbe5a93ff5afa4ccdcab6",
+      "width": 1764,
+      "height": 944,
+      "note": "Figure 1: Calibrates a language planner with conformal prediction so it requests human clarification when multiple next actions remain plausible."
+    }
+  },
+  "racer": {
+    "policy": {
+      "path": "/images/catalog/racer-policy.webp",
+      "original": "https://arxiv.org/html/2409.14674v1/model_framework_final.png",
+      "page": "https://arxiv.org/abs/2409.14674",
+      "credit": "RACER authors",
+      "alt": "RACER policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "074d08e8d7c3781086584e76694aed66550ce5781fa1cb6fe57f72a600f9a2e2",
+      "width": 905,
+      "height": 306,
+      "note": "Figure 3: A vision-language supervisor issues rich corrective instructions to a visuomotor actor trained with failure-recovery trajectories."
+    }
+  },
+  "lmpc": {
+    "policy": {
+      "path": "/images/catalog/lmpc-policy.webp",
+      "original": "https://arxiv.org/html/2402.11450v2/ims/lmpc-rollout-vs-skip-v2.png",
+      "page": "https://arxiv.org/abs/2402.11450",
+      "credit": "Language Model Predictive Control (LMPC) authors",
+      "alt": "Language Model Predictive Control (LMPC) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "9fc8d57fd8c4280543110220067c49279414947425809816d01f6c81d881da32",
+      "width": 2200,
+      "height": 977,
+      "note": "Figure 3: Learns to predict future human–robot teaching interactions, then searches imagined interaction rollouts to choose code responses that require fewer corrections."
+    }
+  },
+  "correctvla": {
+    "policy": {
+      "path": "/images/catalog/correctvla-policy.webp",
+      "original": "https://arxiv.org/html/2608.29967v1/figure/fig2.detail.png",
+      "page": "https://arxiv.org/abs/2608.29967",
+      "credit": "CorrectVLA authors",
+      "alt": "CorrectVLA policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4b01a0b4328dd1e93835ec5d93a1cb663848d825eb4621c22848bf63f7718e8a",
+      "width": 2124,
+      "height": 847,
+      "note": "Figure 2: Converts one task-level language correction into temporally scoped additive action adjustments while preserving the underlying VLA weights."
+    }
+  },
+  "awda": {
+    "policy": {
+      "path": "/images/catalog/awda-policy.webp",
+      "original": "https://arxiv.org/html/2302.04856v1/system.png",
+      "page": "https://arxiv.org/abs/2302.04856",
+      "credit": "Attributed Waypoints and Demonstration Augmentation (AWDA) authors",
+      "alt": "Attributed Waypoints and Demonstration Augmentation (AWDA) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4bcd4f933fe73f097a30d57902cb5e1b16e6efd40a9c646fa53eec50f2360d16",
+      "width": 2028,
+      "height": 547,
+      "note": "Figure 3: Separates demonstration-conditioned task inference from execution by predicting attributed waypoints that hand-crafted motor primitives can realize."
+    }
+  },
+  "orion": {
+    "policy": {
+      "path": "/images/catalog/orion-policy.webp",
+      "original": "https://arxiv.org/html/2405.20321v2/method_policy.png",
+      "page": "https://arxiv.org/abs/2405.20321",
+      "credit": "ORION authors",
+      "alt": "ORION policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "e91ad0ef3a7beb44b40a57aeb91b178ad7d923bf2e2dcdc74c0f2a5e3cee9292",
+      "width": 1663,
+      "height": 1048,
+      "note": "Figure 3: Extracts open-world object-graph plans from a single human video and grounds object-centric interaction geometry to execute the task in a new scene."
+    }
+  },
+  "physcap": {
+    "policy": {
+      "path": "/images/catalog/physcap-policy.webp",
+      "original": "https://arxiv.org/html/2608.21031v2/main_figure.png",
+      "page": "https://arxiv.org/abs/2608.21031",
+      "credit": "PhysCaP authors",
+      "alt": "PhysCaP policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "6043cc6e08aa24d3ef268bb807ebef679ea3118b64a40463c973668ce3b704d2",
+      "width": 2044,
+      "height": 512,
+      "note": "Figure 2: Uses targeted physical interaction to estimate latent properties such as mass and stiffness before synthesizing a robot-control program."
+    }
+  },
+  "agm": {
+    "policy": {
+      "path": "/images/catalog/agm-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.29537",
+      "page": "https://arxiv.org/abs/2608.29537",
+      "credit": "Achievement-Grounded Memory (AGM) authors",
+      "alt": "Achievement-Grounded Memory (AGM) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "511b0afb47beb3dbab32640da4e8dec9665ab5fbd7be12f9678da9b8691eff9e",
+      "width": 1581,
+      "height": 865,
+      "note": "PDF page 3, Figure 1: Advances a task-memory pointer only after verifying physical achievement, preventing attempted actions from being stored as completed progress."
+    }
+  },
+  "steerable-policies": {
+    "policy": {
+      "path": "/images/catalog/steerable-policies-policy.webp",
+      "original": "https://arxiv.org/html/2602.13193v3/HighLevelInstantiations.png",
+      "page": "https://arxiv.org/abs/2602.13193",
+      "credit": "Steerable Policies authors",
+      "alt": "Steerable Policies policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4ecbcb7d8c00720ff7eb916546c7351bc751955fbbf61ac7fabe34cf9e379953",
+      "width": 1029,
+      "height": 739,
+      "note": "Figure 3: Trains VLAs to follow commands at task, subtask, motion and image-coordinate levels, then controls them with a learned reasoner or a prompted VLM."
+    }
+  },
+  "guava": {
+    "policy": {
+      "path": "/images/catalog/guava-policy.webp",
+      "original": "https://arxiv.org/html/2606.18363v3/guava_overview_icra.png",
+      "page": "https://arxiv.org/abs/2606.18363",
+      "credit": "Guava-4B authors",
+      "alt": "Guava-4B policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "bcc3889d441d53d45ed4a5a8589a363681c420ad6ec1417811e5b9c6df9cb7d2",
+      "width": 940,
+      "height": 309,
+      "note": "Figure 1: Distills physically validated frontier-model interaction traces into a compact tool-using manipulation agent, with perturbation branches teaching recovery."
+    }
+  },
+  "pigey": {
+    "policy": {
+      "path": "/images/catalog/pigey-policy.webp",
+      "original": "https://arxiv.org/pdf/2607.21725",
+      "page": "https://arxiv.org/abs/2607.21725",
+      "credit": "Pigey / Physical Agency authors",
+      "alt": "Pigey / Physical Agency policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "ff76deb13cb32dd31b24573dfbd33915fb20f25e1c062cddbd4638fb5fe4c804",
+      "width": 863,
+      "height": 492,
+      "note": "PDF page 5, Figure 2: Routes subgoals through complementary frozen VLA and geometric-planning backends, verifying outcomes and recovering through a closed physical-agent loop."
+    }
+  },
+  "malmm": {
+    "policy": {
+      "path": "/images/catalog/malmm-policy.webp",
+      "original": "https://arxiv.org/html/2411.17636v2/Main_Pipeline3.png",
+      "page": "https://arxiv.org/abs/2411.17636",
+      "credit": "MALMM authors",
+      "alt": "MALMM policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "59bd49d748db03fa298b886b0a4830130e11cb54f69e7aaf02808960325923df",
+      "width": 1144,
+      "height": 654,
+      "note": "Figure 2: Coordinates separate planner, coder and supervisor agents to generate manipulation programs and recover from failures using observations after each step."
+    }
+  },
+  "proc3s": {
+    "policy": {
+      "path": "/images/catalog/proc3s-policy.webp",
+      "original": "https://arxiv.org/html/2406.05572v2/new_diagram.png",
+      "page": "https://arxiv.org/abs/2406.05572",
+      "credit": "PRoC3S authors",
+      "alt": "PRoC3S policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "3d601dcaad34a3f7ba2ff50598bd93e1f16e7006e2ab2872e1e1ca4367b984e7",
+      "width": 1297,
+      "height": 516,
+      "note": "Figure 2: Prompts an LLM to synthesize programs with open continuous parameters, then solves their geometric / kinematic constraints and replans infeasible specifications."
+    }
+  },
+  "ical": {
+    "policy": {
+      "path": "/images/catalog/ical-policy.webp",
+      "original": "https://arxiv.org/pdf/2406.14596",
+      "page": "https://arxiv.org/abs/2406.14596",
+      "credit": "In-Context Abstraction Learning (ICAL) authors",
+      "alt": "In-Context Abstraction Learning (ICAL) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fe6e17dc31e0631ce8afc73e82ae53ad50a5579e15d3fb2e99bd0464a4164ad1",
+      "width": 1581,
+      "height": 408,
+      "note": "PDF page 4, Figure 1 top panel: noisy demonstrations become revised multimodal examples through abstraction, human feedback and memory."
+    }
+  },
+  "embodiskill": {
+    "policy": {
+      "path": "/images/catalog/embodiskill-policy.webp",
+      "original": "https://arxiv.org/html/2605.10332v2/fig2.png",
+      "page": "https://arxiv.org/abs/2605.10332",
+      "credit": "EmbodiSkill authors",
+      "alt": "EmbodiSkill policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "3b890837f72fe22bafbd05f74c182b5e081b41114af7b251abb5c9374beb0af9",
+      "width": 1195,
+      "height": 409,
+      "note": "Figure 2: Distinguishes faulty skill content from failures to follow valid guidance, then makes targeted revisions to an external procedural skill."
+    }
+  },
+  "uni-skill": {
+    "policy": {
+      "path": "/images/catalog/uni-skill-policy.webp",
+      "original": "https://arxiv.org/html/2603.02623v1/fig_main2.png",
+      "page": "https://arxiv.org/abs/2603.02623",
+      "credit": "Uni-Skill (SkillFolder) authors",
+      "alt": "Uni-Skill (SkillFolder) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "66305a657f1325033086c17907d604eaa58931d7c0e3e9179b6ade34c79b755e",
+      "width": 1467,
+      "height": 558,
+      "note": "Figure 3: Uses a hierarchical skill-video repository to retrieve examples, implement missing skills and extend a robot planner beyond a fixed initial skill library."
+    }
+  },
+  "act-observe-rewrite": {
+    "policy": {
+      "path": "/images/catalog/act-observe-rewrite-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.04466",
+      "page": "https://arxiv.org/abs/2603.04466",
+      "credit": "Act-Observe-Rewrite (AOR) authors",
+      "alt": "Act-Observe-Rewrite (AOR) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fa998d60e6a33503143e1ba429aa6704565d149c4de610cbc17e2fd8e7e61b14",
+      "width": 1904,
+      "height": 641,
+      "note": "PDF page 5, Figure 1: Rewrites the full Python controller between episodes using multimodal failure evidence, while the generated controller executes the next trial without model calls at every step."
+    }
+  },
+  "hi-vla-design": {
+    "policy": {
+      "path": "/images/catalog/hi-vla-design-policy.webp",
+      "original": "https://arxiv.org/html/2606.10267v2/pull_newest.png",
+      "page": "https://arxiv.org/abs/2606.10267",
+      "credit": "Hierarchical VLA Design Study authors",
+      "alt": "Hierarchical VLA Design Study policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "176b1e49c06f4c5d7e178448b946a8a63acda6e4fd502eb8cffc7a7fcb852775",
+      "width": 1971,
+      "height": 865,
+      "note": "Figure 1: Systematically varies planner, low-level policy, switching, observation and memory interfaces, then instantiates stronger hierarchical robot agents."
+    }
+  },
+  "roboclaw": {
+    "policy": {
+      "path": "/images/catalog/roboclaw-policy.webp",
+      "original": "https://arxiv.org/html/2603.11558v3/figure/RoboClaw.png",
+      "page": "https://arxiv.org/abs/2603.11558",
+      "credit": "RoboClaw authors",
+      "alt": "RoboClaw policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b37c0dcf2f8d7ee461a5701f580c120d58b229893b5a1b1a254b8c1114adec7f",
+      "width": 1391,
+      "height": 799,
+      "note": "Figure 2: Unifies autonomous collection, policy learning and long-horizon execution under a VLM controller, using forward–inverse skill pairs to reset the workspace."
+    }
+  },
+  "mimicplay": {
+    "policy": {
+      "path": "/images/catalog/mimicplay-policy.webp",
+      "original": "https://arxiv.org/html/2302.12422v2/method_v12.png",
+      "page": "https://arxiv.org/abs/2302.12422",
+      "credit": "MimicPlay authors",
+      "alt": "MimicPlay policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "3e1ff436ca722311261566f22f5cc2d47611f1cd5ffcc0cc1c7240bbfa366171",
+      "width": 1245,
+      "height": 389,
+      "note": "Figure 2: Learns latent plans from human play videos and uses them to condition a low-level robot imitation policy for long-horizon manipulation."
+    }
+  },
+  "sun-kuafu": {
+    "policy": {
+      "path": "/images/catalog/sun-kuafu-policy.webp",
+      "original": "https://arxiv.org/html/2608.31167v2/figures/pipeline1.png",
+      "page": "https://arxiv.org/abs/2608.31167",
+      "credit": "SUN Programs / Kuafu authors",
+      "alt": "SUN Programs / Kuafu policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "18773aa14f51f08fb9d4c82f3b47bc99c8c03e74fdce4a700ac4d73763d98d77",
+      "width": 2200,
+      "height": 983,
+      "note": "Figure 2: Maintains typed task programs whose grounded relations define aligned control objectives, satisfaction tests and learning rewards throughout policy development."
+    }
+  },
+  "eximo": {
+    "policy": {
+      "path": "/images/catalog/eximo-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.19891",
+      "page": "https://arxiv.org/abs/2608.19891",
+      "credit": "EXIMO authors",
+      "alt": "EXIMO policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8c6d442c3e4a35f6387a20471fcf07bf5c4304aa9a363dcfa9172d05067fb427",
+      "width": 1887,
+      "height": 462,
+      "note": "PDF page 2, Figure 1: VLM-orchestrated exploration produces demonstrations for VLA imitation and residual reinforcement learning."
+    }
+  },
+  "sgpt": {
+    "policy": {
+      "path": "/images/catalog/sgpt-policy.webp",
+      "original": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/jain25b/jain25b.pdf",
+      "page": "https://proceedings.mlr.press/v305/jain25b.html",
+      "credit": "ST-GPT / SGPT authors",
+      "alt": "ST-GPT / SGPT policy architecture and execution flow",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "1e58b0c8bb702d4fdf9fe31e483623528458324497d0e60d19b605b215fcd6f6",
+      "width": 976,
+      "height": 844,
+      "note": "PDF page 5, Figure 3: subgoal encoder and cross-attention decoder for SGPT action prediction."
+    }
+  },
+  "introspective-planning": {
+    "policy": {
+      "path": "/images/catalog/introspective-planning-policy.webp",
+      "original": "https://arxiv.org/html/2402.06529v4/teaser.png",
+      "page": "https://arxiv.org/abs/2402.06529",
+      "credit": "Introspective Planning authors",
+      "alt": "Introspective Planning policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "0e247e63036fc746d8422722edbddd077b3bdca5a77394e4fe43d7d9d170e547",
+      "width": 1679,
+      "height": 598,
+      "note": "Figure 1: Retrieves post-hoc explanations of human-approved choices to align robot plan uncertainty with ambiguous instructions and request clarification when needed."
+    }
+  },
+  "agentchord": {
+    "policy": {
+      "path": "/images/catalog/agentchord-policy.webp",
+      "original": "https://arxiv.org/html/2605.11951v1/framework_compressed.png",
+      "page": "https://arxiv.org/abs/2605.11951",
+      "credit": "AgentChord authors",
+      "alt": "AgentChord policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "3111a40c933f025cdec333a69e1b06d810078eb182952ea769be723d67cc0f01",
+      "width": 1462,
+      "height": 695,
+      "note": "Figure 1: Compiles anticipated failure branches and executable monitors into a task graph so a robot can recover without a fresh high-latency model query."
+    }
+  },
+  "volo": {
+    "policy": {
+      "path": "/images/catalog/volo-policy.webp",
+      "original": "https://arxiv.org/html/2606.07723v1/system.png",
+      "page": "https://arxiv.org/abs/2606.07723",
+      "credit": "VoLoAgent authors",
+      "alt": "VoLoAgent policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "4bcf3e234c0d7ea8d223ce2d78be1e3e0551262647ff5e8b9c3ebbd931751cf5",
+      "width": 1525,
+      "height": 762,
+      "note": "Figure 3: Orchestrates interruptible robot policies and perception tools while monitoring execution and recovering from open-vocabulary manipulation failures."
+    }
+  },
+  "iclhf": {
+    "policy": {
+      "path": "/images/catalog/iclhf-policy.webp",
+      "original": "https://arxiv.org/html/2508.07606v2/method.png",
+      "page": "https://arxiv.org/abs/2508.07606",
+      "credit": "ICLHF authors",
+      "alt": "ICLHF policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "6bd4f8299cfa60260c2439a692ad03761b7356290c26216d78c792f35cacf9a9",
+      "width": 876,
+      "height": 475,
+      "note": "Figure 2: Uses textual human feedback and physical-constraint feedback to revise a household task plan while a graph-based optimizer grounds spatial relations."
+    }
+  },
+  "longact-holomind": {
+    "policy": {
+      "path": "/images/catalog/longact-holomind-policy.webp",
+      "original": "https://arxiv.org/html/2605.14504v2/holo_mind_small-v2.png",
+      "page": "https://arxiv.org/abs/2605.14504",
+      "credit": "HoloMind authors",
+      "alt": "HoloMind / LongAct policy architecture and execution flow",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b96c1890c6902d62c09dbf1a765b154f62935a93f486ad7827524e40a97a47a9",
+      "width": 1243,
+      "height": 681,
+      "note": "Figure 3: two-level planning, executor, spatial / episodic memory and critic feedback in the household agent."
+    }
+  },
+  "stageguard": {
+    "policy": {
+      "path": "/images/catalog/stageguard-policy.webp",
+      "original": "https://arxiv.org/html/2609.20791v1/fig1.png",
+      "page": "https://arxiv.org/abs/2609.20791",
+      "credit": "StageGuard authors",
+      "alt": "StageGuard policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "529576a10e490d01acc5a1440cc7a21daedcb12eb018683a7623184212d0f816",
+      "width": 969,
+      "height": 603,
+      "note": "Figure 1: Distills a teacher model’s structured explanations into a compact stage-transition monitor that switches learned robot skills during long-horizon execution."
+    }
+  },
+  "va-bench": {
+    "policy": {
+      "path": "/images/catalog/va-bench-policy.webp",
+      "original": "https://arxiv.org/html/2609.19554v1/figures/agent.png",
+      "page": "https://arxiv.org/abs/2609.19554",
+      "credit": "VA-Bench Shared Agent Harness authors",
+      "alt": "VA-Bench Shared Agent Harness policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "866513f7320d024bbacc6fc3de3ab401f869ee13b389c9755cbd4dc4d8c3f6e0",
+      "width": 2200,
+      "height": 1178,
+      "note": "Figure 4: Connects general multimodal models to active camera control and metric Cartesian actions, using RGB demonstrations as procedural context."
+    }
+  },
+  "revolve": {
+    "policy": {
+      "path": "/images/catalog/revolve-policy.webp",
+      "original": "https://arxiv.org/html/2609.14633v2/Pictures/3.png",
+      "page": "https://arxiv.org/abs/2609.14633",
+      "credit": "REVOLVE authors",
+      "alt": "REVOLVE policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "fec8c2872f86bc21d9413f851355cf7f191250cabac8ed4d9bb51e789508e739",
+      "width": 2200,
+      "height": 1301,
+      "note": "Figure 3: Pairs automated geometric reset / correction with external judgment memory and repeated policy updates to improve real manipulation with less manual intervention."
+    }
+  },
+  "eta-openeta": {
+    "policy": {
+      "path": "/images/catalog/eta-openeta-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.03924",
+      "page": "https://arxiv.org/abs/2608.03924",
+      "credit": "OpenETA authors",
+      "alt": "OpenETA policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "b50ded7501500dc9c5c33aa56793d133f5661eb5b78134a5ec8e8a49f71b23e9",
+      "width": 1897,
+      "height": 645,
+      "note": "PDF page 2, Figure 1: Places a general reasoning agent above a host-checked tool interface, with fresh visual observations after each world-changing action."
+    }
+  },
+  "roboharness": {
+    "policy": {
+      "path": "/images/catalog/roboharness-policy.webp",
+      "original": "https://arxiv.org/html/2607.18060v3/RoboHarness_fig1.png",
+      "page": "https://arxiv.org/abs/2607.18060",
+      "credit": "RoboHarness authors",
+      "alt": "RoboHarness policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "895706216866f6178859c14e7700ec8635d58f7f283a0f17b7cba8907264f77e",
+      "width": 2013,
+      "height": 969,
+      "note": "Figure 1: Routes heterogeneous robot policies using execution memory and prepares their handoffs with memory-derived bridge states."
+    }
+  },
+  "robo-harness-k1": {
+    "policy": {
+      "path": "/images/catalog/robo-harness-k1-policy.webp",
+      "original": "https://arxiv.org/html/2609.29389v1/k1_framework.png",
+      "page": "https://arxiv.org/abs/2609.29389",
+      "credit": "Robo-Harness K1 authors",
+      "alt": "Robo-Harness K1 policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "48109071f76cf4404344c3fe281b789501513074531d9b804a7a6ba2ce631b6e",
+      "width": 1937,
+      "height": 1236,
+      "note": "Figure 2: Augments a direct robot-use VLM with calibrated geometry queries, persistent visual anchors and grasp hypotheses while retaining its native tool-call interface."
+    }
+  },
+  "world-action-agent": {
+    "policy": {
+      "path": "/images/catalog/world-action-agent-policy.webp",
+      "original": "https://arxiv.org/html/2609.29964v1/waa_method.png",
+      "page": "https://arxiv.org/abs/2609.29964",
+      "credit": "World Action Agent (WAA) authors",
+      "alt": "World Action Agent (WAA) policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "883db078e22384fb19a26becbe389c38e5500411aed460cd36711fdcd747d081",
+      "width": 2021,
+      "height": 1344,
+      "note": "Figure 2: Lets a VLM rehearse geometric actions, inspect contact views and apply image-space corrections, while reusable skills grow from reviewed experience."
+    }
+  },
+  "mimir": {
+    "policy": {
+      "path": "/images/catalog/mimir-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.04933",
+      "page": "https://arxiv.org/abs/2608.04933",
+      "credit": "Mimir authors",
+      "alt": "Mimir policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "065d529bad44f665a36cd3b8baaf80b2f4430ee109dc048e4a3e35534ed93097",
+      "width": 2024,
+      "height": 662,
+      "note": "PDF page 4, Figure 2: Separates persistent world evidence from task progress, then dynamically grounds the active goal against both memories before acting."
+    }
+  },
+  "occ4m": {
+    "policy": {
+      "path": "/images/catalog/occ4m-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.28798",
+      "page": "https://arxiv.org/abs/2609.28798",
+      "credit": "OCC4M authors",
+      "alt": "OCC4M policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "8790ff3d117fd4fcf53a297d353ed735f3f9a4955ef51ebe52163aaf68821a38",
+      "width": 1385,
+      "height": 436,
+      "note": "PDF page 2, Figure 1: Tracks object identity and historical locations in a shared frame, then reprojects remembered targets into the current view for a frozen executor."
+    }
+  },
+  "2am": {
+    "policy": {
+      "path": "/images/catalog/2am-policy.webp",
+      "original": "https://arxiv.org/html/2609.11308v1/figures/teaser.png",
+      "page": "https://arxiv.org/abs/2609.11308",
+      "credit": "2AM authors",
+      "alt": "2AM policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "f99798090a388e8f69e77090d5d00706a9cc7c50c11bc69c8ee0b190c34e52ec",
+      "width": 2200,
+      "height": 719,
+      "note": "Figure 1: Keeps persistent episode memory in a reasoning agent and steers one episodically stateless learned action model with text and optional image-space hints."
+    }
+  },
+  "coding-agents-tamp": {
+    "policy": {
+      "path": "/images/catalog/coding-agents-tamp-policy.webp",
+      "original": "https://arxiv.org/html/2609.30233v1/fig1.png",
+      "page": "https://arxiv.org/abs/2609.30233",
+      "credit": "Coding Agents for Generalized TAMP authors",
+      "alt": "Coding Agents for Generalized TAMP policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "741f6738b133092430c0796c97eec9d130a56b4a48b26924527d91901cf1a937",
+      "width": 795,
+      "height": 700,
+      "note": "Figure 1: Synthesizes executable policies through interactive coding and simulator testing, then freezes each program before evaluating larger unseen problem instances."
+    }
+  },
+  "rivet": {
+    "policy": {
+      "path": "/images/catalog/rivet-policy.webp",
+      "original": "https://arxiv.org/html/2609.31337v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2609.31337",
+      "credit": "RIVET authors",
+      "alt": "RIVET policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "0ffb82a0a01ca94fc1e5515434c116dad529697e592204317bc29cc3e75ab967",
+      "width": 1549,
+      "height": 727,
+      "note": "Figure 1: Generates coordinated perception, rendering, relation-checking and planning programs around a shared object-centric geometric representation."
+    }
+  },
+  "hugo": {
+    "policy": {
+      "path": "/images/catalog/hugo-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.30594",
+      "page": "https://arxiv.org/abs/2609.30594",
+      "credit": "HuGo authors",
+      "alt": "HuGo policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "9c00ae83731d7775c3b8601df46a13564d5f871bd07b97113c1c31dacd17c9e8",
+      "width": 1991,
+      "height": 734,
+      "note": "PDF page 1, Figure 1: Generates and iteratively refines high-level whole-body policy code over a frozen humanoid controller using numerical rollouts and selected video evidence."
+    }
+  },
+  "dualmanip": {
+    "policy": {
+      "path": "/images/catalog/dualmanip-policy.webp",
+      "original": "https://arxiv.org/html/2609.31112v2/Figs/pipeline.png",
+      "page": "https://arxiv.org/abs/2609.31112",
+      "credit": "DualManip authors",
+      "alt": "DualManip policy architecture and execution flow",
+      "kind": "pipeline",
+      "reviewed": "2026-10-17",
+      "sourceSha256": "488c5f947fdc7b065a3301a809dcf79da920463f64ea07798f821184c26681e2",
+      "width": 2200,
+      "height": 1411,
+      "note": "Figure 2: Separates slow semantic planning from fast learned geometric correspondence updates, adapting grasp contacts to object motion and deformation."
+    }
+  },
+  "memer": {
+    "policy": {
+      "path": "/images/catalog/survey-context-memer-policy.webp",
+      "original": "https://jen-pan.github.io/memer/static/images/architecture.png",
+      "page": "https://jen-pan.github.io/memer/",
+      "credit": "MemER authors",
+      "alt": "MemER — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1644,
+      "height": 751,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "99129e3acd069b49200cb1bfffcd2252d1bb6eb9f86762e741373544559dc343"
+    }
+  },
+  "contextflow": {
+    "policy": {
+      "path": "/images/catalog/survey-context-contextflow-policy.webp",
+      "original": "https://dingjiansw101.github.io/contextflow-page/static/images/method.png",
+      "page": "https://dingjiansw101.github.io/contextflow-page/",
+      "credit": "ContextFlow authors",
+      "alt": "ContextFlow — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1453,
+      "height": 517,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "ae6dbe199458cff0cf38410a78b4ca8a33e64aea9842513c727b7be1e2983868"
+    }
+  },
+  "rhyme": {
+    "policy": {
+      "path": "/images/catalog/survey-context-rhyme-policy.webp",
+      "original": "https://raw.githubusercontent.com/portal-cornell/rhyme/HEAD/resources/approach.png",
+      "page": "https://portal-cornell.github.io/rhyme/",
+      "credit": "RHyME authors",
+      "alt": "RHyME — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 948,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "a44a99d3ecfe1e3f3d02f9f8b4b5a5cae9605f3d6eea47d4a7dfe0ad2c96820b"
+    }
+  },
+  "instant-fold": {
+    "policy": {
+      "path": "/images/catalog/survey-context-instant-fold-policy.webp",
+      "original": "https://instant-fold.github.io/assets/images/overview.png",
+      "page": "https://instant-fold.github.io",
+      "credit": "Instant-Fold authors",
+      "alt": "Instant-Fold — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1413,
+      "height": 997,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "4b655ab22e868089bd5ed0bd612009a9e0b04a3a1be364fb50db756b625124e1"
+    }
+  },
+  "bicicle": {
+    "policy": {
+      "path": "/images/catalog/survey-context-bicicle-policy.webp",
+      "original": "https://alesspalma.github.io/bicicle/static/images/method.webp",
+      "page": "https://alesspalma.github.io/bicicle",
+      "credit": "BiCICLe authors",
+      "alt": "BiCICLe — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 864,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "aebfe9f994f228560741a83a28a18421a91dea80ed363e71ee8215bf48fb0259"
+    }
+  },
+  "gated-memory-policy": {
+    "policy": {
+      "path": "/images/catalog/survey-context-gated-memory-policy-policy.webp",
+      "original": "https://arxiv.org/pdf/2604.18933",
+      "page": "https://arxiv.org/abs/2604.18933",
+      "credit": "Gated Memory Policy (GMP) authors",
+      "alt": "Gated Memory Policy (GMP) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 787,
+      "height": 561,
+      "note": "Original paper Figure 2, PDF page 3: complete gated-attention and diffusion-policy architecture. Source PDF page 3; Figure 2.",
+      "sourceSha256": "c384c053dc4ca907a4bc2a4ea364a7fc87c42e6ce716a5602a31de04b96d7153"
+    },
+    "benchmark": {
+      "path": "/images/catalog/survey-context-gated-memory-policy-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2604.18933",
+      "page": "https://arxiv.org/abs/2604.18933",
+      "credit": "Gated Memory Policy (GMP) authors",
+      "alt": "MemMimic — memory-requirement taxonomy and illustrative tasks",
+      "kind": "taxonomy",
+      "reviewed": "2026-10-17",
+      "width": 789,
+      "height": 292,
+      "note": "Original paper Figure 1, cropped to three illustrative memory-requirement categories and task images, excluding result bars. Taxonomy examples are not the exhaustive six-family MemMimic suite or its appendix auxiliary setting. Source PDF page 1; Figure 1.",
+      "sourceSha256": "c384c053dc4ca907a4bc2a4ea364a7fc87c42e6ce716a5602a31de04b96d7153"
+    }
+  },
+  "vinn": {
+    "policy": {
+      "path": "/images/catalog/survey-context-vinn-policy.webp",
+      "original": "https://jyopari.github.io/VINN/files/method.png",
+      "page": "https://jyopari.github.io/VINN/",
+      "credit": "VINN authors",
+      "alt": "VINN — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 526,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "256ac14b5f86b1cfb2a26af1241996e9a9514ac740bb5ce62ce5f0a8b3c00d0b"
+    }
+  },
+  "mint": {
+    "policy": {
+      "path": "/images/catalog/survey-context-mint-policy.webp",
+      "original": "https://renming-huang.github.io/MINT/static/images/overview.jpg",
+      "page": "https://renming-huang.github.io/MINT",
+      "credit": "MINT authors",
+      "alt": "MINT — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 548,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "832ea2d20cab2da19faf8b72a59c72760d7dcbc6ce7a249d595333be9fe08ede"
+    }
+  },
+  "matchingpolicy": {
+    "policy": {
+      "path": "/images/catalog/survey-context-matchingpolicy-policy.webp",
+      "original": "https://matchingpolicy.github.io/static/images/pipeline_real_v2.png",
+      "page": "https://matchingpolicy.github.io",
+      "credit": "MatchingPolicy authors",
+      "alt": "MatchingPolicy — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1886,
+      "height": 805,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "39da9f965df250451a75c3836de531b90d3f31ddc9d04a8f3032b4891695e1f4"
+    }
+  },
+  "vlaff": {
+    "policy": {
+      "path": "/images/catalog/survey-context-vlaff-policy.webp",
+      "original": "https://ojh6404.github.io/vlaff/static/images/model_architecture.png",
+      "page": "https://ojh6404.github.io/vlaff/",
+      "credit": "VLAff authors",
+      "alt": "VLAff — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1742,
+      "height": 758,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "61dd11ee48098cc4e88134b2f452489ef8c2218bd0a8ffaf26b2c53a5784fd14"
+    }
+  },
+  "ponderpounce": {
+    "policy": {
+      "path": "/images/catalog/survey-context-ponderpounce-policy.webp",
+      "original": "https://worv-ai.github.io/ponderpounce/static/images/PP-Arch.png",
+      "page": "https://worv-ai.github.io/ponderpounce/",
+      "credit": "PonderPounce authors",
+      "alt": "PonderPounce — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1919,
+      "height": 992,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "883de69e9ce796a847f153f3d4b49621159e481c4f9b55d13e5a747b29e38d0d"
+    }
+  },
+  "kalm": {
+    "policy": {
+      "path": "/images/catalog/survey-context-kalm-policy.webp",
+      "original": "https://kalm-il.github.io/static/images/framework.jpeg",
+      "page": "https://kalm-il.github.io/",
+      "credit": "KALM authors",
+      "alt": "KALM — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1736,
+      "height": 798,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "5f31f35d5f0ae4be9952726a3dd694a7efc74b03e1815d2faec28158e0e9e019"
+    }
+  },
+  "point-policy": {
+    "policy": {
+      "path": "/images/catalog/survey-context-point-policy-policy.webp",
+      "original": "https://point-policy.github.io/mfiles/images/method.png",
+      "page": "https://point-policy.github.io/",
+      "credit": "Point Policy authors",
+      "alt": "Point Policy — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1332,
+      "height": 799,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "03b3acffd96fbc10426f345b05458a99aa0636ed58d43e9bd842c9006730c2be"
+    }
+  },
+  "mu-vla": {
+    "policy": {
+      "path": "/images/catalog/survey-context-mu-vla-policy.webp",
+      "original": "https://avanturist322.github.io/project-websites/mu-vla/figures/method_v3.png",
+      "page": "https://avanturist322.github.io/mu-vla/",
+      "credit": "μVLA authors",
+      "alt": "μVLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 650,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "ae85247b356b3688e83f9858fa25ee65841fc245ce72f6da75602404b89f3eff"
+    }
+  },
+  "halo": {
+    "policy": {
+      "path": "/images/catalog/survey-context-halo-policy.webp",
+      "original": "https://robin-lab.cs.utexas.edu/HALO/method-overview.svg",
+      "page": "https://robin-lab.cs.utexas.edu/HALO",
+      "credit": "HALO authors",
+      "alt": "HALO — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1350,
+      "height": 386,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "32d10abce942ce7c9fb2001d86c3319fcc6190acf0fc7637d9fb26ad5884295d"
+    }
+  },
+  "mimicdroid": {
+    "policy": {
+      "path": "/images/catalog/survey-context-mimicdroid-policy.webp",
+      "original": "https://ut-austin-rpl.github.io/MimicDroid/static/images/mew_method_figure_inverted_cropped.png",
+      "page": "https://ut-austin-rpl.github.io/MimicDroid",
+      "credit": "MimicDroid authors",
+      "alt": "MimicDroid — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 1249,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "76926776c22e865094e652564bdadac6baf29d1db50e3a6637620013ea291b4a"
+    }
+  },
+  "hpt": {
+    "policy": {
+      "path": "/images/catalog/survey-context-hpt-policy.webp",
+      "original": "https://liruiw.github.io/hpt/media/figures/framework.png",
+      "page": "https://liruiw.github.io/hpt/",
+      "credit": "Heterogeneous Pre-trained Transformers (HPT) authors",
+      "alt": "Heterogeneous Pre-trained Transformers (HPT) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 824,
+      "height": 648,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "a29d42a08349478f5e4d3a2572281341b87d7232634bd5b3a3641a9aa010e418"
+    }
+  },
+  "lipvq-vae": {
+    "policy": {
+      "path": "/images/catalog/survey-context-lipvq-vae-policy.webp",
+      "original": "https://arxiv.org/pdf/2503.01206",
+      "page": "https://arxiv.org/abs/2503.01206",
+      "credit": "LipVQ-VAE / ICRT authors",
+      "alt": "LipVQ-VAE / ICRT — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 989,
+      "height": 814,
+      "note": "Original paper Figure 2: full ICRT demonstration-conditioned policy used with the separately described LipVQ-VAE tokenizer; not merely the isolated tokenizer component. Source PDF page 3; Figure 2.",
+      "sourceSha256": "e36d3dabda1ed93de9a7efb52d71271a707d0d1aa6996573672cdbecf576973c"
+    }
+  },
+  "petnet": {
+    "policy": {
+      "path": "/images/catalog/survey-context-petnet-policy.webp",
+      "original": "https://www.frontiersin.org/files/Articles/606361/xml-images/frobt-07-606361-g0001.webp",
+      "page": "https://www.frontiersin.org/files/Articles/606361/xml-images/frobt-07-606361-g0001.webp",
+      "credit": "PETNet authors",
+      "alt": "PETNet — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1772,
+      "height": 1254,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "e51042013a60d068253610caf489b4160b71385a7ca031d9ed496178396622d5"
+    }
+  },
+  "fast-thinkact": {
+    "policy": {
+      "path": "/images/catalog/survey-context-fast-thinkact-policy.webp",
+      "original": "https://jasper0314-huang.github.io/fast-thinkact/static/images/method.png",
+      "page": "https://jasper0314-huang.github.io/fast-thinkact/",
+      "credit": "Fast-ThinkAct authors",
+      "alt": "Fast-ThinkAct — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 723,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "49d3159e4c6726ca392cf8e22d23a7349e7226f9b713b5d7bb47722a78fa9e89"
+    }
+  },
+  "world-vla-loop": {
+    "policy": {
+      "path": "/images/catalog/survey-context-world-vla-loop-policy.webp",
+      "original": "https://showlab.github.io/World-VLA-Loop/figures/framework.png",
+      "page": "https://showlab.github.io/World-VLA-Loop/",
+      "credit": "World-VLA-Loop authors",
+      "alt": "World-VLA-Loop — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 1149,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "c670ed45b4ffe8e4767f176ef9ea12e210ab6a7a2f629656a7f120a7b99640de"
+    }
+  },
+  "zero-shot-visual-imitation": {
+    "policy": {
+      "path": "/images/catalog/survey-context-zero-shot-visual-imitation-policy.webp",
+      "original": "https://pathak22.github.io/zeroshot-imitation/resources/method.png",
+      "page": "https://pathak22.github.io/zeroshot-imitation/",
+      "credit": "Zero-Shot Visual Imitation / GSP authors",
+      "alt": "Zero-Shot Visual Imitation / GSP — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 2000,
+      "height": 1012,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "4f7db815a7924dac57ea79c053919bd1c7b79b16f182a42322a1e1f4313ebc8b"
+    }
+  },
+  "zeva-ego": {
+    "policy": {
+      "path": "/images/catalog/survey-context-zeva-ego-policy.webp",
+      "original": "https://air-embodied-brain.github.io/Zeva-Ego/assets/figures/zeva-ego-teaser.png",
+      "page": "https://air-embodied-brain.github.io/Zeva-Ego",
+      "credit": "Zeva-Ego authors",
+      "alt": "Zeva-Ego — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1185,
+      "height": 561,
+      "note": "Author Figure 1, central Zeva-Ego policy block and ICCL engine only; surrounding data/task montages and score plots are excluded.",
+      "sourceSha256": "003db697a1209ae04d8ad7300d2e52f65edad9aea2277abf46c4368f35999978"
+    }
+  },
+  "membodied": {
+    "policy": {
+      "path": "/images/catalog/survey-context-membodied-policy.webp",
+      "original": "https://raw.githubusercontent.com/declare-lab/MemBodied/main/assets/architecture.png",
+      "page": "https://github.com/declare-lab/MemBodied",
+      "credit": "MemBodied authors",
+      "alt": "MemBodied — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1620,
+      "height": 975,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "10bb2e898836c4fdd059d8f876354a4ae2818b08b851f514d888df540b89442c"
+    }
+  },
+  "traceflow": {
+    "policy": {
+      "path": "/images/catalog/survey-context-traceflow-policy.webp",
+      "original": "https://zhangjiaxuan-xuan.github.io/TraceFlow/assets/method.png",
+      "page": "https://zhangjiaxuan-xuan.github.io/TraceFlow/",
+      "credit": "TraceFlow authors",
+      "alt": "TraceFlow — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1528,
+      "height": 667,
+      "note": "Author-provided method architecture; static scientific figure.",
+      "sourceSha256": "b474ed9f8ca71ef83b08b5a7f500cc98206e1c9222f68e784248d52996df031d"
+    }
+  },
+  "one-shot-imitation": {
+    "policy": {
+      "path": "/images/catalog/survey-context-one-shot-imitation-policy.webp",
+      "original": "https://arxiv.org/pdf/1703.07326",
+      "page": "https://arxiv.org/abs/1703.07326",
+      "credit": "One-Shot Imitation Learning authors",
+      "alt": "One-Shot Imitation Learning — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1511,
+      "height": 686,
+      "note": "Original paper Figure 2, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 2.",
+      "sourceSha256": "2096fc214d67c2aa4588124bc5d029e66d414313a585589304aab1df734a0027"
+    }
+  },
+  "prompt-dt": {
+    "policy": {
+      "path": "/images/catalog/survey-context-prompt-dt-policy.webp",
+      "original": "https://arxiv.org/pdf/2206.13499",
+      "page": "https://arxiv.org/abs/2206.13499",
+      "credit": "Prompt-DT authors",
+      "alt": "Prompt-DT — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1921,
+      "height": 427,
+      "note": "Original paper Figure 1, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 1.",
+      "sourceSha256": "de7ed3953c1c4e71741f884116b772543aa93b27feeabb5b0d90c6ca4711f1fe"
+    }
+  },
+  "mil": {
+    "policy": {
+      "path": "/images/catalog/survey-context-mil-policy.webp",
+      "original": "https://arxiv.org/pdf/1709.04905",
+      "page": "https://arxiv.org/abs/1709.04905",
+      "credit": "Meta-Imitation Learning (MIL) authors",
+      "alt": "Meta-Imitation Learning (MIL) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 898,
+      "height": 434,
+      "note": "Original paper Figure 2, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 2.",
+      "sourceSha256": "c4291d65abf691a1ddc9c69684496c4db624afecf32817ba1d485504bb44b3c4"
+    }
+  },
+  "daml": {
+    "policy": {
+      "path": "/images/catalog/survey-context-daml-policy.webp",
+      "original": "https://arxiv.org/pdf/1802.01557",
+      "page": "https://arxiv.org/abs/1802.01557",
+      "credit": "DAML authors",
+      "alt": "DAML — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1052,
+      "height": 489,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "67bef80d06894ee19b9dbf9f848718ec4b05372031ba7b8c877d9a19ada90e87"
+    }
+  },
+  "mosaic": {
+    "policy": {
+      "path": "/images/catalog/survey-context-mosaic-policy.webp",
+      "original": "https://arxiv.org/pdf/2110.13423",
+      "page": "https://arxiv.org/abs/2110.13423",
+      "credit": "MOSAIC authors",
+      "alt": "MOSAIC — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1142,
+      "height": 391,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "13d5a2657be338d246bb01475f0cdb7d8e34e944b304e1aa2354eca32a5c5ea8"
+    },
+    "benchmark": {
+      "path": "/images/catalog/survey-context-mosaic-benchmark.webp",
+      "original": "https://arxiv.org/pdf/2110.13423",
+      "page": "https://arxiv.org/abs/2110.13423",
+      "credit": "MOSAIC authors",
+      "alt": "MOSAIC Task Suite — task-suite overview",
+      "kind": "task-overview",
+      "reviewed": "2026-10-17",
+      "width": 1015,
+      "height": 790,
+      "note": "Original paper Figure 11, PDF page 10; complete seven-family task overview. Source PDF page 10; Figure 11.",
+      "sourceSha256": "13d5a2657be338d246bb01475f0cdb7d8e34e944b304e1aa2354eca32a5c5ea8"
+    }
+  },
+  "vid2robot": {
+    "policy": {
+      "path": "/images/catalog/survey-context-vid2robot-policy.webp",
+      "original": "https://arxiv.org/pdf/2403.12943",
+      "page": "https://arxiv.org/abs/2403.12943",
+      "credit": "Vid2Robot authors",
+      "alt": "Vid2Robot — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1302,
+      "height": 342,
+      "note": "Original paper Figure 3, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 3.",
+      "sourceSha256": "76a20b2d5b2244299ed47ef46dc13f1c29e23c95ac9ee44a87a15604bb72ddea"
+    }
+  },
+  "icwm": {
+    "policy": {
+      "path": "/images/catalog/survey-context-icwm-policy.webp",
+      "original": "https://arxiv.org/pdf/2606.26025",
+      "page": "https://arxiv.org/abs/2606.26025",
+      "credit": "In-Context World Modeling (ICWM) authors",
+      "alt": "In-Context World Modeling (ICWM) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1191,
+      "height": 378,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "bed8a7b1984aa1bfef368a9631fab096330b0f71762cdab0ccef84f5c895bbb5"
+    }
+  },
+  "mem-pi06": {
+    "policy": {
+      "path": "/images/catalog/survey-context-mem-pi06-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.03596",
+      "page": "https://arxiv.org/abs/2603.03596",
+      "credit": "MEM / π0.6-MEM authors",
+      "alt": "MEM / π0.6-MEM — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1272,
+      "height": 369,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "213bbe173026561d1ca4b9aaa626e51991bcfb49d343516ed7fd6658709e5475"
+    }
+  },
+  "rt-x": {
+    "policy": {
+      "path": "/images/catalog/survey-context-rt-x-policy.webp",
+      "original": "https://arxiv.org/pdf/2310.08864",
+      "page": "https://arxiv.org/abs/2310.08864",
+      "credit": "Open X-Embodiment / RT-X authors",
+      "alt": "Open X-Embodiment / RT-X — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1121,
+      "height": 288,
+      "note": "Original paper Figure 3, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 3.",
+      "sourceSha256": "13f16aff5afdee583dc25b3c570e9bb0cf6baefb59b539928d919588cd8d9246"
+    }
+  },
+  "crossformer": {
+    "policy": {
+      "path": "/images/catalog/survey-context-crossformer-policy.webp",
+      "original": "https://arxiv.org/pdf/2408.11812",
+      "page": "https://arxiv.org/abs/2408.11812",
+      "credit": "CrossFormer authors",
+      "alt": "CrossFormer — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1005,
+      "height": 283,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "509826f25f8058b858ad680581a20cd47ecb80c0346b2c27fd42b6eef3482769"
+    }
+  },
+  "up-osi": {
+    "policy": {
+      "path": "/images/catalog/survey-context-up-osi-policy.webp",
+      "original": "https://arxiv.org/pdf/1702.02453",
+      "page": "https://arxiv.org/abs/1702.02453",
+      "credit": "UP-OSI authors",
+      "alt": "UP-OSI — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 634,
+      "height": 310,
+      "note": "Original paper Figure 1, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 1.",
+      "sourceSha256": "f4abcaa147175a471b6fa217758aecd80d42df11f6f19b70a7dfba66021d24ca"
+    }
+  },
+  "watch-try-learn": {
+    "policy": {
+      "path": "/images/catalog/survey-context-watch-try-learn-policy.webp",
+      "original": "https://arxiv.org/pdf/1906.03352",
+      "page": "https://arxiv.org/abs/1906.03352",
+      "credit": "Watch, Try, Learn (WTL) authors",
+      "alt": "Watch, Try, Learn (WTL) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1603,
+      "height": 686,
+      "note": "Original paper Figure 3, PDF page 6; method diagram, cropped without surrounding body text. Source PDF page 6; Figure 3.",
+      "sourceSha256": "0bd9f480b937ae38352141bc62c19471c2a0fd0494a38725dcc5c5a1381f18bd"
+    }
+  },
+  "bc-z": {
+    "policy": {
+      "path": "/images/catalog/survey-context-bc-z-policy.webp",
+      "original": "https://arxiv.org/pdf/2202.02005",
+      "page": "https://arxiv.org/abs/2202.02005",
+      "credit": "BC-Z authors",
+      "alt": "BC-Z — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1009,
+      "height": 328,
+      "note": "Original paper Figure 3, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 3.",
+      "sourceSha256": "c97954c589aa9ab0fd91516cd9432242629d75bf6b00489b49f52df5f10f8fc0"
+    }
+  },
+  "regent": {
+    "policy": {
+      "path": "/images/catalog/survey-context-regent-policy.webp",
+      "original": "https://arxiv.org/pdf/2412.04759",
+      "page": "https://arxiv.org/abs/2412.04759",
+      "credit": "REGENT authors",
+      "alt": "REGENT — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1601,
+      "height": 838,
+      "note": "Original paper Figure 3, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 3.",
+      "sourceSha256": "b7a537c904692a861b9c4f925cbf2bc91a2b3cdb09578ae0dfbcad0df55c2d16"
+    }
+  },
+  "demodiffusion": {
+    "policy": {
+      "path": "/images/catalog/survey-context-demodiffusion-policy.webp",
+      "original": "https://arxiv.org/pdf/2506.20668",
+      "page": "https://arxiv.org/abs/2506.20668",
+      "credit": "DemoDiffusion authors",
+      "alt": "DemoDiffusion — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1272,
+      "height": 658,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "13126eba77f29b12224df225bb8ee4b041310021f58261581256b51e469a17a1"
+    }
+  },
+  "tecnet": {
+    "policy": {
+      "path": "/images/catalog/survey-context-tecnet-policy.webp",
+      "original": "https://arxiv.org/pdf/1810.03237",
+      "page": "https://arxiv.org/abs/1810.03237",
+      "credit": "Task-Embedded Control Networks (TecNets) authors",
+      "alt": "Task-Embedded Control Networks (TecNets) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1011,
+      "height": 247,
+      "note": "Original paper Figure 2, PDF page 2; method diagram, cropped without surrounding body text. Source PDF page 2; Figure 2.",
+      "sourceSha256": "536488e3071ff2006a6d73a989987e43e5e15fa1ec7a6f75476f812c8f8b49e4"
+    }
+  },
+  "t-osil": {
+    "policy": {
+      "path": "/images/catalog/survey-context-t-osil-policy.webp",
+      "original": "https://arxiv.org/pdf/2011.05970",
+      "page": "https://arxiv.org/abs/2011.05970",
+      "credit": "Transformers for One-Shot Visual Imitation (T-OSIL) authors",
+      "alt": "Transformers for One-Shot Visual Imitation (T-OSIL) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1011,
+      "height": 522,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "d7c9a00bfaa65478faab90ab1fdb5c6f82bcfd6e1b81d64d704c5d0014985f83"
+    }
+  },
+  "vivla": {
+    "policy": {
+      "path": "/images/catalog/survey-context-vivla-policy.webp",
+      "original": "https://arxiv.org/pdf/2512.07582",
+      "page": "https://arxiv.org/abs/2512.07582",
+      "credit": "ViVLA authors",
+      "alt": "ViVLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1304,
+      "height": 496,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "165460863e8cf16468ab9306bf742d19ad2a2d30dd4ef5635aad8b7ae77fdf79"
+    }
+  },
+  "vla-talker": {
+    "policy": {
+      "path": "/images/catalog/survey-context-vla-talker-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.05738",
+      "page": "https://arxiv.org/abs/2608.05738",
+      "credit": "In-Context VLA / VLA-Talker authors",
+      "alt": "In-Context VLA / VLA-Talker — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1245,
+      "height": 484,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "61aab83da8f7e36bbe3d7c2af1bb577f9c46bec8bafa070a9e1e9d6451417e72"
+    }
+  },
+  "seetraceact": {
+    "policy": {
+      "path": "/images/catalog/survey-context-seetraceact-policy.webp",
+      "original": "https://arxiv.org/pdf/2606.02745",
+      "page": "https://arxiv.org/abs/2606.02745",
+      "credit": "SeeTraceAct authors",
+      "alt": "SeeTraceAct — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1009,
+      "height": 442,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "f0c9eb603295048f810d4ad923efaf6fefb4f7b1a1aa2281924aa6da44ecbca2"
+    }
+  },
+  "rtcf": {
+    "policy": {
+      "path": "/images/catalog/survey-context-rtcf-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.04527",
+      "page": "https://arxiv.org/abs/2608.04527",
+      "credit": "RTCF authors",
+      "alt": "RTCF — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1063,
+      "height": 540,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "2a3b7eeb637851a5a64e0eb563ef931360b15cae6bab38d8b81b28b4eedb06dd"
+    }
+  },
+  "remem-vla": {
+    "policy": {
+      "path": "/images/catalog/survey-context-remem-vla-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.12942",
+      "page": "https://arxiv.org/abs/2603.12942",
+      "credit": "ReMem-VLA authors",
+      "alt": "ReMem-VLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1329,
+      "height": 634,
+      "note": "Original paper Figure 2, PDF page 7; method diagram, cropped without surrounding body text. Source PDF page 7; Figure 2.",
+      "sourceSha256": "6fc134eb086b08a2ced09f69c1cf5e09324e29fcfd46dfe7df55e8fe1b84d80c"
+    }
+  },
+  "robust-instant-policy": {
+    "policy": {
+      "path": "/images/catalog/survey-context-robust-instant-policy-policy.webp",
+      "original": "https://arxiv.org/pdf/2506.15157",
+      "page": "https://arxiv.org/abs/2506.15157",
+      "credit": "Robust Instant Policy (RIP) authors",
+      "alt": "Robust Instant Policy (RIP) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1150,
+      "height": 406,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "25d8415cc9ca03b09ecc9b1fd675d57c2d0b8e7238940ba1f4c5334793203977"
+    }
+  },
+  "amago": {
+    "policy": {
+      "path": "/images/catalog/survey-context-amago-policy.webp",
+      "original": "https://arxiv.org/pdf/2310.09971v2",
+      "page": "https://arxiv.org/abs/2310.09971",
+      "credit": "AMAGO authors",
+      "alt": "AMAGO — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 994,
+      "height": 334,
+      "note": "Original paper Figure 1, PDF page 2; method diagram, cropped without surrounding body text. Source PDF page 2; Figure 1.",
+      "sourceSha256": "5524579c521aa937bd39f5b3eff1e002e451b1b13302d9cc78bce28132911f9b"
+    }
+  },
+  "temporalflow-vla": {
+    "policy": {
+      "path": "/images/catalog/survey-context-temporalflow-vla-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.26821",
+      "page": "https://arxiv.org/abs/2608.26821",
+      "credit": "TemporalFlow-VLA authors",
+      "alt": "TemporalFlow-VLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1277,
+      "height": 631,
+      "note": "Original paper Figure 3, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 3.",
+      "sourceSha256": "03c6e36df3574314c338446edf2e533ddec5438e17a840115308ba0cce4ceedb"
+    }
+  },
+  "q-planning": {
+    "policy": {
+      "path": "/images/catalog/survey-context-q-planning-policy.webp",
+      "original": "https://arxiv.org/pdf/2608.21204",
+      "page": "https://arxiv.org/abs/2608.21204",
+      "credit": "Q-Planning authors",
+      "alt": "Q-Planning — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1415,
+      "height": 376,
+      "note": "Original paper Figure 1, PDF page 1; method diagram, cropped without surrounding body text. Source PDF page 1; Figure 1.",
+      "sourceSha256": "4620ce1fad22d26eee2b7d41c6c144527e52c0ae0b6d79dffb186c318db99140"
+    }
+  },
+  "past-token-prediction": {
+    "policy": {
+      "path": "/images/catalog/survey-context-past-token-prediction-policy.webp",
+      "original": "https://arxiv.org/pdf/2505.09561",
+      "page": "https://arxiv.org/abs/2505.09561",
+      "credit": "Past-Token Prediction (PTP) authors",
+      "alt": "Past-Token Prediction (PTP) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 782,
+      "height": 600,
+      "note": "Original paper Figure 1, PDF page 2, method panels only: past-token prediction, cached pretrained visual features and inference-time verification. The adjacent performance plot is excluded. Source PDF page 2; Figure 1.",
+      "sourceSha256": "21ce7d0c3dd59b45c4ed61bc9a4d6eed17ff1a3bfce110796e733735acfab766"
+    }
+  },
+  "roboagent": {
+    "policy": {
+      "path": "/images/catalog/survey-context-roboagent-policy.webp",
+      "original": "https://arxiv.org/pdf/2309.01918",
+      "page": "https://arxiv.org/abs/2309.01918",
+      "credit": "RoboAgent / MT-ACT authors",
+      "alt": "RoboAgent / MT-ACT — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 953,
+      "height": 327,
+      "note": "Original paper Figure 5, PDF page 7; method diagram, cropped without surrounding body text. Source PDF page 7; Figure 5.",
+      "sourceSha256": "df2c99345b59a877dba8810c3c2130ef8bcf8746cab8118c40cd02c5bff84143"
+    }
+  },
+  "xr2": {
+    "policy": {
+      "path": "/images/catalog/survey-context-xr2-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.03591",
+      "page": "https://arxiv.org/abs/2609.03591",
+      "credit": "XR-2 authors",
+      "alt": "XR-2 — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1303,
+      "height": 377,
+      "note": "Original paper Figure 4, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 4.",
+      "sourceSha256": "9be5729580e8761de9c06aabe17b27180f309d83fd3e854f70a94caddc4289b5"
+    }
+  },
+  "tecnet-humans": {
+    "policy": {
+      "path": "/images/catalog/survey-context-tecnet-humans-policy.webp",
+      "original": "https://arxiv.org/pdf/1911.01103",
+      "page": "https://arxiv.org/abs/1911.01103",
+      "credit": "TecNets: Humans without Humans authors",
+      "alt": "TecNets: Humans without Humans — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1255,
+      "height": 317,
+      "note": "Original paper Figure 2, PDF page 2; method diagram, cropped without surrounding body text. Source PDF page 2; Figure 2.",
+      "sourceSha256": "1c353d4ec9ec411a06217247bd304f8251d9076520cd4c309b33fcef582b7f1f"
+    }
+  },
+  "dream2fix": {
+    "policy": {
+      "path": "/images/catalog/survey-context-dream2fix-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.13528",
+      "page": "https://arxiv.org/abs/2603.13528",
+      "credit": "Dream2Fix authors",
+      "alt": "Dream2Fix — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1234,
+      "height": 414,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "6f454411ccaa4e51975727199a35fd8b4431eec6310e80bc9c7e4c3c1afe752f"
+    }
+  },
+  "rt1": {
+    "policy": {
+      "path": "/images/catalog/survey-context-rt1-policy.webp",
+      "original": "https://arxiv.org/pdf/2212.06817",
+      "page": "https://arxiv.org/abs/2212.06817",
+      "credit": "RT-1 authors",
+      "alt": "RT-1 — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 941,
+      "height": 1570,
+      "note": "Original paper Figure 3, PDF page 6; method diagram, cropped without surrounding body text. Source PDF page 6; Figure 3.",
+      "sourceSha256": "81efe669c8fa50ffc7097886dc78a442fa7a8f7f2451684b93069cb9fbeda767"
+    }
+  },
+  "rt2": {
+    "policy": {
+      "path": "/images/catalog/survey-context-rt2-policy.webp",
+      "original": "https://arxiv.org/pdf/2307.15818",
+      "page": "https://arxiv.org/abs/2307.15818",
+      "credit": "RT-2 authors",
+      "alt": "RT-2 — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1875,
+      "height": 695,
+      "note": "Original paper Figure 1, PDF page 2; method diagram, cropped without surrounding body text. Source PDF page 2; Figure 1.",
+      "sourceSha256": "0a62dc36bbbfdea232ad45a0ab75c82e9cf535b55333ff22c02d5da1897ccac3"
+    }
+  },
+  "human-to-robot-vla-transfer": {
+    "policy": {
+      "path": "/images/catalog/survey-context-human-to-robot-vla-transfer-policy.webp",
+      "original": "https://arxiv.org/pdf/2512.22414",
+      "page": "https://arxiv.org/abs/2512.22414",
+      "credit": "Human-to-Robot VLA Transfer authors",
+      "alt": "Human-to-Robot VLA Transfer — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 634,
+      "height": 363,
+      "note": "Original paper Figure 4, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 4.",
+      "sourceSha256": "e29e2545d0968988b7591ada7b329b478e879e3f476ef388780e4ad5294cc645"
+    }
+  },
+  "hist-at": {
+    "policy": {
+      "path": "/images/catalog/survey-context-hist-at-policy.webp",
+      "original": "https://arxiv.org/pdf/2604.15215",
+      "page": "https://arxiv.org/abs/2604.15215",
+      "credit": "HiST-AT authors",
+      "alt": "HiST-AT — action-tokenizer component architecture",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1724,
+      "height": 711,
+      "note": "Original paper Figure 2, PDF page 4: HiST-AT action-tokenizer component architecture used by the evaluated in-context policy; not the entire visual policy. Source PDF page 4; Figure 2.",
+      "sourceSha256": "42689b93a9bdcff5c3738b2f7525071a81f2b309df5ac24796229dbeb065af1a"
+    }
+  },
+  "cr-vla-force": {
+    "policy": {
+      "path": "/images/catalog/survey-context-cr-vla-force-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.05832",
+      "page": "https://arxiv.org/abs/2609.05832v1",
+      "credit": "CR-VLA-Force / CC-VLA authors",
+      "alt": "CR-VLA-Force / CC-VLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1520,
+      "height": 910,
+      "note": "Original paper Figure 2, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 2.",
+      "sourceSha256": "b0f4145b3a4a8a32201833d64ddd448017a7204f569931214825d03ec3747192"
+    }
+  },
+  "metacure": {
+    "policy": {
+      "path": "/images/catalog/survey-context-metacure-policy.webp",
+      "original": "https://arxiv.org/pdf/2006.08170",
+      "page": "https://arxiv.org/abs/2006.08170",
+      "credit": "MetaCURE authors",
+      "alt": "MetaCURE — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1237,
+      "height": 694,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "591fe59580f3fb84546897608a075bb673fc5c2f4d2f872b021e3e14301e5708"
+    }
+  },
+  "robomonkey": {
+    "policy": {
+      "path": "/images/catalog/survey-context-robomonkey-policy.webp",
+      "original": "https://arxiv.org/pdf/2506.17811",
+      "page": "https://arxiv.org/abs/2506.17811",
+      "credit": "RoboMonkey authors",
+      "alt": "RoboMonkey — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1570,
+      "height": 698,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "43ebed0cc8293890b81a8ddb240e30e791bc391093b75b3dc6d07fff772e9583"
+    }
+  },
+  "sail": {
+    "policy": {
+      "path": "/images/catalog/survey-context-sail-policy.webp",
+      "original": "https://arxiv.org/pdf/2603.08269",
+      "page": "https://arxiv.org/abs/2603.08269",
+      "credit": "SAIL authors",
+      "alt": "SAIL — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1200,
+      "height": 656,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "cf3abf5d44ae444a3e3e9b94696d4682b5ebb1b3c1acadffe6fb342e2d414040"
+    }
+  },
+  "vlaw": {
+    "policy": {
+      "path": "/images/catalog/survey-context-vlaw-policy.webp",
+      "original": "https://arxiv.org/pdf/2602.12063",
+      "page": "https://arxiv.org/abs/2602.12063",
+      "credit": "VLAW authors",
+      "alt": "VLAW — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1927,
+      "height": 521,
+      "note": "Original paper Figure 3, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 3.",
+      "sourceSha256": "34ba87492a0fca9d382c366a80884eef99bc1101d973bbbb64125ae78bedffb8"
+    }
+  },
+  "behavioral-exploration": {
+    "policy": {
+      "path": "/images/catalog/survey-context-behavioral-exploration-policy.webp",
+      "original": "https://arxiv.org/pdf/2507.09041",
+      "page": "https://arxiv.org/abs/2507.09041",
+      "credit": "Behavioral Exploration authors",
+      "alt": "Behavioral Exploration — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1957,
+      "height": 316,
+      "note": "Original paper Figure 1, PDF page 2; method diagram, cropped without surrounding body text. Source PDF page 2; Figure 1.",
+      "sourceSha256": "1291d3c399e5450b2704e74a86a28d53fbc8094d39459e1b599227e9397bf267"
+    }
+  },
+  "lifd": {
+    "policy": {
+      "path": "/images/catalog/survey-context-lifd-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.19796",
+      "page": "https://arxiv.org/abs/2609.19796",
+      "credit": "LIFD authors",
+      "alt": "LIFD — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1278,
+      "height": 595,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "eb296d4c44472919bd1c35b4e2dc13af28ed7ab15d7b65637d3f724d511020fa"
+    }
+  },
+  "skipvla": {
+    "policy": {
+      "path": "/images/catalog/survey-context-skipvla-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.20648",
+      "page": "https://arxiv.org/abs/2609.20648",
+      "credit": "SkipVLA authors",
+      "alt": "SkipVLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1245,
+      "height": 488,
+      "note": "Original paper Figure 3, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 3.",
+      "sourceSha256": "2f9e82cc7a924066f2686f1d3164e50079cadd35da99ce741de98052778f2048"
+    }
+  },
+  "hil-umi": {
+    "policy": {
+      "path": "/images/catalog/survey-context-hil-umi-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.20659",
+      "page": "https://arxiv.org/abs/2609.20659",
+      "credit": "HIL-UMI authors",
+      "alt": "HIL-UMI — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1277,
+      "height": 458,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "d25a7e7e7f27ee4ecb56bac750e743c4ec6ccf218771d0c58fa12569d903da14"
+    }
+  },
+  "ropeformer": {
+    "policy": {
+      "path": "/images/catalog/survey-context-ropeformer-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.23432",
+      "page": "https://arxiv.org/abs/2609.23432",
+      "credit": "RopeFormer authors",
+      "alt": "RopeFormer — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1220,
+      "height": 589,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "fad9602710ff57dfc5fc6d8022679fb672d98a0879a7279aba0d71e9036f5bf8"
+    }
+  },
+  "tp-flow": {
+    "policy": {
+      "path": "/images/catalog/survey-context-tp-flow-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.27780",
+      "page": "https://arxiv.org/abs/2609.27780",
+      "credit": "TP-Flow authors",
+      "alt": "TP-Flow — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1651,
+      "height": 979,
+      "note": "Original paper Figure 1, PDF page 7; method diagram, cropped without surrounding body text. Source PDF page 7; Figure 1.",
+      "sourceSha256": "10806ab165893e6cb842a1e08acd07bd3c58c4328a1bf63a23b5607f7dbd9e19"
+    }
+  },
+  "arms": {
+    "policy": {
+      "path": "/images/catalog/survey-context-arms-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.28429",
+      "page": "https://arxiv.org/abs/2609.28429",
+      "credit": "ARMS authors",
+      "alt": "ARMS — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1010,
+      "height": 249,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "bc3b0690a88fcdb2a97fb4fd58ed211866ddf2cd3e9bc64d81d9cd9b753d24c8"
+    }
+  },
+  "behavior-predictive-control": {
+    "policy": {
+      "path": "/images/catalog/survey-context-behavior-predictive-control-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.30134",
+      "page": "https://arxiv.org/abs/2609.30134",
+      "credit": "Behavior Predictive Control (BPC) authors",
+      "alt": "Behavior Predictive Control (BPC) — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1032,
+      "height": 552,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "4bd8943c340e2f4b14cab628dddd2478ca34bbeb283d3c116b5a7fc0ec7bf018"
+    }
+  },
+  "self-adaptive-vla": {
+    "policy": {
+      "path": "/images/catalog/survey-context-self-adaptive-vla-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.30092",
+      "page": "https://arxiv.org/abs/2609.30092",
+      "credit": "Self-Adaptive VLA authors",
+      "alt": "Self-Adaptive VLA — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1274,
+      "height": 424,
+      "note": "Original paper Figure 2, PDF page 3; method diagram, cropped without surrounding body text. Source PDF page 3; Figure 2.",
+      "sourceSha256": "18afb6eb08ef9baf73b87aeb3bfa956e3cc3fbea42eb4cd4e139acf0d08cef2b"
+    }
+  },
+  "workspace-models": {
+    "policy": {
+      "path": "/images/catalog/survey-context-workspace-models-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.20820",
+      "page": "https://arxiv.org/abs/2609.20820",
+      "credit": "Workspace Models authors",
+      "alt": "Workspace Models — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1854,
+      "height": 812,
+      "note": "Original paper Figure 3, PDF page 5; method diagram, cropped without surrounding body text. Source PDF page 5; Figure 3.",
+      "sourceSha256": "6ae5e8296f0b59f5f64ba737a03bebdd87f4d01f08f53ce0afc30f73fcc19d38"
+    }
+  },
+  "hire": {
+    "policy": {
+      "path": "/images/catalog/survey-context-hire-policy.webp",
+      "original": "https://arxiv.org/pdf/2609.30828",
+      "page": "https://arxiv.org/abs/2609.30828",
+      "credit": "HIRE authors",
+      "alt": "HIRE — policy architecture and method",
+      "kind": "architecture",
+      "reviewed": "2026-10-17",
+      "width": 1278,
+      "height": 395,
+      "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2.",
+      "sourceSha256": "e5000477da096083ba95fa330e5f6ad7aedf861bc94ec0eb3a8dcf55a1b08341"
+    }
   }
 }

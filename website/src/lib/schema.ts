@@ -39,6 +39,8 @@ export interface Work {
   links: Record<string, string>;
   benchmark?: Record<string, string | string[]>;
   policy?: Record<string, string | string[]>;
+  survey?: Record<string, string | string[]>;
+  surveyAuditId?: string;
   release: Record<string, string>;
   releaseByCollection?: Partial<Record<Collection, Record<string, string>>>;
   evidence: Evidence[];
@@ -117,7 +119,7 @@ export const CATEGORIES: Record<
       id: "agent-rsi-icl",
       label: "Agent / RSI / ICL",
       description:
-        "Robot agents, recursive or feedback-driven self-improvement, and in-context adaptation. Each record identifies what changes and how robot actions are executed.",
+        "Robot agents, feedback-driven self-improvement, in-context adaptation and related surveys. Method records identify what changes and how robot actions are executed; surveys describe their literature scope.",
     },
     {
       id: "generalist-foundation",
@@ -153,6 +155,16 @@ export const POLICY_FIELDS: [string, string][] = [
   ["controlRate", "Inference & control rates"],
   ["evaluation", "Evaluation scope"],
 ];
+export const SURVEY_FIELDS: [string, string][] = [
+  ["scope", "Review scope"],
+  ["taxonomy", "Organizing taxonomy"],
+  ["adaptationRegimes", "Adaptation mechanisms"],
+  ["contextSources", "Context and evidence"],
+  ["evaluationAxes", "Evaluation dimensions"],
+  ["corpus", "Literature corpus and snapshot"],
+  ["reviewMethod", "Literature selection"],
+  ["coverageLimits", "Coverage boundaries"],
+];
 export const display = (v: unknown): string =>
   Array.isArray(v)
     ? v.join(" · ")
@@ -176,14 +188,16 @@ export const releaseFor = (w: Work, c: Collection) =>
   w.releaseByCollection?.[c] || w.release;
 
 export const resourceLabel = (w: Work) =>
-  w.categories.includes("supporting-resources")
-    ? {
-        dataset: "Supporting dataset",
-        simulator: "Supporting simulator",
-        benchmark: "Perception benchmark",
-        "evaluation-tool": "Supporting evaluation tool",
-      }[w.resourceType] || "Supporting resource"
-    : "";
+  w.resourceType === "survey"
+    ? "Survey"
+    : w.categories.includes("supporting-resources")
+      ? {
+          dataset: "Supporting dataset",
+          simulator: "Supporting simulator",
+          benchmark: "Perception benchmark",
+          "evaluation-tool": "Supporting evaluation tool",
+        }[w.resourceType] || "Supporting resource"
+      : "";
 
 export const summaryFor = (w: Work, c: Collection) =>
   c === "policy"

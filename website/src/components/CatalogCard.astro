@@ -13,8 +13,9 @@ const { work: w, collection: c = "benchmark" } = Astro.props as {
   collection: Collection;
 };
 const f = figureFor(w, c);
-const facts =
-  c === "benchmark"
+const facts = w.survey
+  ? ["Survey", display(w.survey.scope)]
+  : c === "benchmark"
     ? [display(w.benchmark?.simulator), display(w.benchmark?.taskCount)]
     : [display(w.policy?.family), display(w.policy?.baseModel)];
 ---
@@ -38,7 +39,11 @@ const facts =
     ) : (
       <span class="text-cover">
         <small>
-          {c === "benchmark" ? "Research benchmark" : "Manipulation policy"}
+          {w.survey
+            ? "Research survey"
+            : c === "benchmark"
+              ? "Research benchmark"
+              : "Manipulation policy"}
         </small>
         <strong>{nameFor(w, c)}</strong>
         <span>View primary-source details ↗</span>

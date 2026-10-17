@@ -7,6 +7,7 @@ Maintain a public-facing research reference, never a private project plan.
 - `data/works.json` is the single structured source. `README.md` and the static website derive from it; regenerate with `python3 scripts/generate.py`.
 - `data/media.json` stores per-collection figures and source provenance. Benchmark covers show task coverage/taxonomy; policy covers show architecture/pipeline.
 - Supporting simulators, datasets and perception tests have explicit resource types under Benchmarks / Tools & data. Do not count them as closed-loop manipulation benchmarks.
+- Surveys use `resourceType: survey` and a `survey` scope/taxonomy object within relevant existing categories. Do not give them fictional policy, training or deployment fields or add them to executable-policy counts. Survey figures may show conceptual taxonomies.
 - Scope includes precise/contact-rich manipulation, tactile and force policies, observed RGB-D/3D policies, and relevant generalist/visual/RL foundations. Avoid a generic CV bibliography.
 - No unpublished proposed tasks, project-specific guidance, internal meetings, private notes, people assignments or paper strategy.
 
@@ -19,6 +20,7 @@ Maintain a public-facing research reference, never a private project plan.
 - Preserve paper vs current release differences. Version-specific checkpoints, licenses and install instructions matter.
 - Code, weights and data releases are independent. Actual LICENSE files outrank contradictory README summaries. Per-collection release fields preserve policy/benchmark differences.
 - Audit benchmark paper baselines, official leaderboard participants and adapter registries separately; an integration is not an evaluated result. Map aliases to canonical works.
+- Use survey bibliographies to discover and reconcile methods. Store citation dispositions in `data/survey-source-audit.json`; a survey citation does not replace evidence from the original method paper.
 - Agent / RSI / ICL records distinguish in-context feedback, code/prompt/memory adaptation and weight updates. Describe the executable robot agent, not only its base LLM.
 - Present artifacts as Paper, Project, Code, Data, then other links. Highlight the first available artifact; insertion order must not change this.
 - Figures retain source URL, credit and original rights; use real official figures, inspect them visually and optimize local copies. Never synthesize scientific results or pipeline diagrams.

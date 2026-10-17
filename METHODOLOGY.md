@@ -1,5 +1,13 @@
 # Curation methodology
 
+Surveys are reading resources within the existing research categories. Their
+details describe literature scope, taxonomy, selection and evidence boundaries,
+and their conceptual diagrams are labeled accordingly. They do not introduce
+deployment observations or increase the executable-policy count. Survey
+reference audits preserve indexed methods, scope exclusions, background,
+adjacent data resources and candidates; method specifications still require
+original primary sources.
+
 ## Research boundary
 
 The main collections are **Benchmarks** and **Policies** for precise and

@@ -8,10 +8,14 @@ import {
   inCollection,
   isUnknown,
   policySourceAudit,
+  surveySourceAudit,
   nameFor,
 } from "../lib/catalog";
 const bench = works.filter((w) => inCollection(w, "benchmark"));
-const policies = works.filter((w) => inCollection(w, "policy"));
+const policies = works.filter(
+  (w) => inCollection(w, "policy") && w.resourceType !== "survey",
+);
+const surveys = works.filter((w) => w.resourceType === "survey");
 const support = works.filter((w) =>
   w.categories.includes("supporting-resources"),
 );
@@ -37,6 +41,13 @@ const auditKinds = {
   "paper-baselines": "Paper baselines",
   leaderboard: "Leaderboard snapshot",
   "adapter-registry": "Integration registry",
+};
+const referenceStates = {
+  indexed: "Indexed in this atlas",
+  "outside-scope": "Outside manipulation scope",
+  background: "Background reference",
+  "adjacent-resource": "Adjacent data resource",
+  candidate: "Candidate for a separate audit",
 };
 ---
 
@@ -68,8 +79,11 @@ const auditKinds = {
     <p>
       Some papers contribute to both collections, so collection counts cannot be
       added. {support.length} supporting resources are accessible under Tools &
-      data. {imageCount} records have locally stored, credited figures;{" "}
-      {sources.size} distinct primary-source URLs support the catalog.
+      data. {surveys.length} surveys appear in relevant categories and are
+      counted separately from policies. Their details describe the review scope
+      and taxonomy, without deployment or training claims. {imageCount} records
+      have locally stored, credited figures; {sources.size} distinct
+      primary-source URLs support the catalog.
     </p>
     <h2>Benchmark coverage</h2>
     <table class="coverage-table">
@@ -187,6 +201,110 @@ const auditKinds = {
     <p>
       <a href="/policy-source-audit.json" download>
         Download the source-to-record mappings ↗
+      </a>
+    </p>
+    <h2 id="survey-source-audit">From surveys to original methods</h2>
+    <p>
+      Surveys supply taxonomy and citation trails. Their references are
+      reconciled below; technical claims in each indexed method still cite its
+      own paper or official release. Background, adjacent resources and
+      candidates remain visible without being counted as verified policies.
+    </p>
+    {surveySourceAudit.sources.map((source) => (
+      <section>
+        <h3>
+          <a href={"/?collection=policy&item=" + source.workId + "#library"}>
+            {source.label}
+          </a>
+        </h3>
+        <p>
+          {source.scope} Snapshot: {source.snapshot}.
+        </p>
+        <p>
+          <a
+            href={source.referencesUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Author reference inventory ↗
+          </a>
+          {" · "}
+          <a href={source.corpusUrl} target="_blank" rel="noopener noreferrer">
+            Author method corpus ↗
+          </a>
+        </p>
+        {Object.entries(referenceStates).map(([state, label]) => {
+          const entries = source.entries.filter(
+            (entry) => entry.status === state,
+          );
+          if (!entries.length) return null;
+          return (
+            <details>
+              <summary>
+                {label} · {entries.length}
+              </summary>
+              <ul>
+                {entries.map((entry) => {
+                  const work = works.find((w) => w.id === entry.workId);
+                  return (
+                    <li>
+                      {work ? (
+                        <a
+                          href={
+                            "/?collection=" +
+                            (work.collections.includes("policy")
+                              ? "policy"
+                              : "benchmark") +
+                            "&item=" +
+                            work.id +
+                            "#library"
+                          }
+                        >
+                          {work.name}
+                        </a>
+                      ) : (
+                        <a
+                          href={entry.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {entry.title} ↗
+                        </a>
+                      )}
+                      <small>
+                        {" · Reference " +
+                          entry.number +
+                          " · " +
+                          (entry.methodFamily || entry.role)}
+                      </small>
+                      {work && (
+                        <>
+                          {" · "}
+                          <a
+                            href={entry.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Cited source ↗
+                          </a>
+                          {entry.title !== work.title && (
+                            <p>Cited as: {entry.title}</p>
+                          )}
+                        </>
+                      )}
+                      <p>{entry.note}</p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </details>
+          );
+        })}
+      </section>
+    ))}
+    <p>
+      <a href="/survey-source-audit.json" download>
+        Download the survey reference mappings ↗
       </a>
     </p>
     <h2>What the papers disclose</h2>

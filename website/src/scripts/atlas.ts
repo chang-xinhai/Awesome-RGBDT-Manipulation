@@ -2,6 +2,7 @@ import {
   CATEGORIES,
   BENCH_FIELDS,
   POLICY_FIELDS,
+  SURVEY_FIELDS,
   display,
   isUnknown,
   nameFor,
@@ -151,13 +152,14 @@ function factSection(
 function card(w: Work) {
   const f = imageFor(w),
     s = selected.has(w.id),
-    items =
-      collection === "benchmark"
+    items = w.survey
+      ? ["Survey", display(w.survey.scope)]
+      : collection === "benchmark"
         ? [display(w.benchmark?.simulator), display(w.benchmark?.taskCount)]
         : [display(w.policy?.family), display(w.policy?.baseModel)];
   const cover = f
     ? `<img src="${esc(f.path)}" alt="${esc(f.alt)}" width="640" height="360" loading="lazy" decoding="async"/>`
-    : `<span class="text-cover"><small>${collection === "benchmark" ? "Research benchmark" : "Manipulation policy"}</small><strong>${esc(nameFor(w, collection))}</strong><span>View primary-source details ↗</span></span>`;
+    : `<span class="text-cover"><small>${w.survey ? "Research survey" : collection === "benchmark" ? "Research benchmark" : "Manipulation policy"}</small><strong>${esc(nameFor(w, collection))}</strong><span>View primary-source details ↗</span></span>`;
   return `<article class="library-card feed-enter${s ? " is-selected" : ""}" data-id="${esc(w.id)}"><button type="button" class="card-cover" data-detail="${esc(w.id)}" aria-label="View ${esc(nameFor(w, collection))}">${cover}</button><div class="card-copy"><p class="card-meta">${esc(w.institution)}<span>·</span>${w.year || "Undated"}</p><h2><button type="button" data-detail="${esc(w.id)}" title="${esc(w.title)}">${esc(nameFor(w, collection))}</button></h2><p class="card-description">${esc(summaryFor(w, collection))}</p><div class="card-facts">${items.map((x) => `<span title="${esc(x)}">${esc(x)}</span>`).join("")}</div><div class="card-tags">${resourceLabel(w) ? `<span>${esc(resourceLabel(w))}</span>` : ""}${w.modalities
     .filter((x) => !["Proprioception", "Language"].includes(x))
     .map((x) => `<span>${esc(x)}</span>`)
@@ -179,7 +181,7 @@ function filtered() {
 }
 function indexTable() {
   const isBench = collection === "benchmark";
-  return `<div class="index-wrap"><table class="index-table"><thead><tr><th>Work</th><th>${isBench ? "Simulator" : "Architecture"}</th><th>${isBench ? "Tasks & scope" : "Deployment inputs"}</th><th>${isBench ? "Evaluation domain" : "Training data"}</th><th>Code</th><th>Compare</th></tr></thead><tbody>${current.map((w) => `<tr><td><button class="index-title" type="button" data-detail="${esc(w.id)}">${esc(nameFor(w, collection))}</button><small>${esc(w.date || "Undated")} · ${esc(w.venue)}</small></td><td>${esc(display(isBench ? w.benchmark?.simulator : w.policy?.family))}</td><td>${esc(display(isBench ? w.benchmark?.taskCount : w.policy?.inputs))}</td><td>${esc(display(isBench ? w.environments : w.policy?.trainingData))}</td><td>${esc(releaseFor(w, collection).code)}</td><td><button type="button" class="compare-toggle" data-compare="${esc(w.id)}" aria-pressed="${selected.has(w.id)}">${selected.has(w.id) ? "✓" : "+"} Compare</button></td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="index-wrap"><table class="index-table"><thead><tr><th>Work</th><th>${isBench ? "Simulator" : "Type / architecture"}</th><th>${isBench ? "Tasks & scope" : "Inputs / review scope"}</th><th>${isBench ? "Evaluation domain" : "Data / literature corpus"}</th><th>Code</th><th>Compare</th></tr></thead><tbody>${current.map((w) => `<tr><td><button class="index-title" type="button" data-detail="${esc(w.id)}">${esc(nameFor(w, collection))}</button><small>${esc(w.date || "Undated")} · ${esc(w.venue)}</small></td><td>${esc(display(w.survey ? "Survey" : isBench ? w.benchmark?.simulator : w.policy?.family))}</td><td>${esc(display(w.survey ? w.survey.scope : isBench ? w.benchmark?.taskCount : w.policy?.inputs))}</td><td>${esc(display(w.survey ? w.survey.corpus : isBench ? w.environments : w.policy?.trainingData))}</td><td>${esc(releaseFor(w, collection).code)}</td><td><button type="button" class="compare-toggle" data-compare="${esc(w.id)}" aria-pressed="${selected.has(w.id)}">${selected.has(w.id) ? "✓" : "+"} Compare</button></td></tr>`).join("")}</tbody></table></div>`;
 }
 function renderCategories() {
   const nav = $("category-options"),
@@ -188,7 +190,8 @@ function renderCategories() {
   const options = [
     {
       id: "all",
-      label: collection === "benchmark" ? "All benchmarks" : "All policies",
+      label:
+        collection === "benchmark" ? "All benchmarks" : "All policy research",
       description: "All curated works in this collection.",
     },
     ...CATEGORIES[collection],
@@ -354,7 +357,10 @@ function render() {
           ? "research resources"
           : "benchmarks"
       : "policies";
-  $("result-count").textContent = `${current.length} ${label}`;
+  const surveyCount = current.filter((w) => w.resourceType === "survey").length;
+  $("result-count").textContent = surveyCount
+    ? `${current.length} records · ${current.length - surveyCount} ${label} · ${surveyCount} ${surveyCount === 1 ? "survey" : "surveys"}`
+    : `${current.length} ${label}`;
   $("catalog-empty").hidden = current.length > 0;
   $("feed-error").hidden = true;
   $("feed-end").hidden = true;
@@ -464,6 +470,26 @@ function benchmarkSections(w: Work) {
   );
 }
 function policySections(w: Work) {
+  if (w.survey)
+    return (
+      factSection(
+        w,
+        "Survey scope & taxonomy",
+        "survey",
+        SURVEY_FIELDS.slice(0, 4),
+        w.survey,
+      ) +
+      factSection(
+        w,
+        "Review evidence & boundaries",
+        "survey",
+        SURVEY_FIELDS.slice(4),
+        w.survey,
+      ) +
+      (w.surveyAuditId
+        ? `<section class="detail-section"><h3>Follow the literature</h3><p class="detail-summary">${external(location.origin + "/coverage/#survey-source-audit", "Browse the reference-to-record audit ↗")}</p><p class="task-scope">Citation mappings identify indexed methods, adjacent resources and exclusions. Each indexed method retains evidence from its own primary sources.</p></section>`
+        : "")
+    );
   if (!w.policy) return "";
   return (
     factSection(
@@ -500,19 +526,26 @@ function openDetail(id: string, restore = false) {
         ? `<details class="detail-secondary"><summary>Benchmark introduced in this work</summary>${benchmarkSections(w)}</details>`
         : "";
   $("detail-content").innerHTML =
-    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${collection === "benchmark" ? "Task coverage & benchmark overview" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(f.path)}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p><dl class="facts">${factRows(
+    `<div class="detail-layout"><aside class="detail-media">${f ? `<p class="media-label">${w.survey ? "Survey taxonomy & conceptual framework" : collection === "benchmark" ? "Task coverage & benchmark overview" : "Policy architecture & pipeline"}</p><button type="button" data-figure="${esc(w.id)}" aria-label="Enlarge ${esc(nameFor(w, collection))} figure"><img src="${esc(f.path)}" alt="${esc(f.alt)}"/></button>${caption(f)}` : `<p class="media-label">Primary-source research record</p><div class="text-cover"><strong>${esc(nameFor(w, collection))}</strong><span>A suitable official figure has not been verified.</span></div>`}<p class="detail-summary">${esc(summaryFor(w, collection))}</p>${w.survey ? '<p class="media-label">Survey · literature review, without a new executable policy</p>' : ""}<dl class="facts">${factRows(
       w,
       "",
-      [
-        [
-          "modalities",
-          collection === "benchmark"
-            ? "Listed observations"
-            : "Deployment modalities",
-        ],
-        ["environments", "Evaluation domain"],
-        ["embodiments", "Embodiment"],
-      ],
+      w.survey
+        ? [
+            ["resourceType", "Record type"],
+            ["environments", "Review format"],
+          ]
+        : [
+            [
+              "modalities",
+              collection === "benchmark"
+                ? "Listed observations"
+                : w.survey
+                  ? "Deployment modalities (not applicable)"
+                  : "Deployment modalities",
+            ],
+            ["environments", "Evaluation domain"],
+            ["embodiments", "Embodiment"],
+          ],
       w as unknown as Record<string, unknown>,
     )}</dl>${related.length ? `<div class="detail-related"><strong>Related research record</strong>${related.map((x) => `<button type="button" data-related="${esc(x.id)}">${esc(nameFor(x, collection))} ↗</button>`).join("<br>")}</div>` : ""}</aside><div class="detail-copy"><p class="detail-kicker">${esc(w.venue)} · ${esc(w.date || "Undated")} · ${esc(w.institution)}</p><h2>${esc(nameFor(w, collection))}</h2><p class="detail-paper-title">${esc(w.title)}</p><div class="detail-links">${artifactLinks(
       w.links,
@@ -573,28 +606,43 @@ function openCompare() {
   const list = [...selected].map((id) => byId.get(id)!).filter(Boolean);
   if (list.length < 2) return;
   const c = collection,
+    hasSurveys = list.some((w) => !!w.survey),
+    onlySurveys = list.every((w) => !!w.survey),
     fieldList =
       c === "benchmark"
         ? [
             ...BENCH_FIELDS,
             ["tasks", "Published task names"] as [string, string],
           ]
-        : POLICY_FIELDS;
+        : onlySurveys
+          ? SURVEY_FIELDS
+          : hasSurveys
+            ? [...POLICY_FIELDS, ...SURVEY_FIELDS]
+            : POLICY_FIELDS;
   const row = (label: string, fn: (w: Work) => string) =>
     `<tr><th scope="row">${esc(label)}</th>${list.map((w) => `<td>${fn(w)}</td>`).join("")}</tr>`;
   $("compare-content").innerHTML =
-    `<div class="compare-heading"><h2>${c === "benchmark" ? "Compare benchmarks" : "Compare policies"}</h2><p>${c === "benchmark" ? "Task counts, simulator versions and protocols retain their paper or release scope." : "Architecture, deployment observations and training resources are compared separately."} Different evaluation settings do not form a common performance ranking.</p></div><div class="compare-table-wrap"><table class="comparison-table" style="min-width:${155 + list.length * 245}px"><thead><tr><th scope="col">${c === "benchmark" ? "Benchmark" : "Policy"}</th>${list
+    `<div class="compare-heading"><h2>${hasSurveys ? "Compare research" : c === "benchmark" ? "Compare benchmarks" : "Compare policies"}</h2><p>${hasSurveys ? "Surveys describe literature scope; methods describe executable policies. Fields that do not apply remain labeled." : c === "benchmark" ? "Task counts, simulator versions and protocols retain their paper or release scope." : "Architecture, deployment observations and training resources are compared separately."} Different evaluation settings do not form a common performance ranking.</p></div><div class="compare-table-wrap"><table class="comparison-table" style="min-width:${155 + list.length * 245}px"><thead><tr><th scope="col">${hasSurveys ? "Research record" : c === "benchmark" ? "Benchmark" : "Policy"}</th>${list
       .map((w) => {
         const f = imageFor(w);
         return `<th scope="col">${f ? `<img src="${esc(f.path)}" alt="${esc(f.alt)}"/>` : ""}<strong>${esc(nameFor(w, collection))}</strong><span>${esc(w.date || "Undated")} · ${esc(w.venue)}</span></th>`;
       })
       .join(
         "",
-      )}</tr></thead><tbody>${row("Deployment / observations", (w) => esc(w.modalities.join(" · ")))}${row("Evaluation domain", (w) => esc(w.environments.join(" · ")))}${row("Embodiment", (w) => esc(w.embodiments.join(" · ")))}${fieldList
+      )}</tr></thead><tbody>${row("Record type", (w) => esc(w.survey ? "Survey" : c === "benchmark" ? "Benchmark" : "Policy"))}${row("Deployment / observations", (w) => (w.survey ? "Not applicable — survey" : esc(w.modalities.join(" · "))))}${row("Evaluation domain", (w) => esc(w.environments.join(" · ")))}${row("Embodiment", (w) => (w.survey ? "Not applicable — survey" : esc(w.embodiments.join(" · "))))}${fieldList
       .map(([key, label]) =>
         row(label, (w) => {
-          const val = (c === "benchmark" ? w.benchmark : w.policy)?.[key];
-          return `<span class="${isUnknown(val) ? "unknown" : ""}">${esc(display(val))}</span>${isUnknown(val) ? "" : cite(w, `${c}.${key}`)}`;
+          const prefix = SURVEY_FIELDS.some(([k]) => k === key) ? "survey" : c;
+          const obj =
+            prefix === "survey"
+              ? w.survey
+              : c === "benchmark"
+                ? w.benchmark
+                : w.policy;
+          if (!obj)
+            return `<span class="unknown">Not applicable — ${w.survey ? "survey" : "method record"}</span>`;
+          const val = obj[key];
+          return `<span class="${isUnknown(val) ? "unknown" : ""}">${esc(display(val))}</span>${isUnknown(val) ? "" : cite(w, `${prefix}.${key}`)}`;
         }),
       )
       .join(
@@ -798,15 +846,19 @@ $("clear-compare").addEventListener("click", () => {
 $("open-compare").addEventListener("click", openCompare);
 $("retry-load").addEventListener("click", () => void load());
 $("export-view").addEventListener("click", () => {
+  const hasSurveys = current.some((w) => !!w.survey);
   const fields =
     collection === "benchmark"
       ? [...BENCH_FIELDS, ["tasks", "Published task names"] as [string, string]]
-      : POLICY_FIELDS;
+      : hasSurveys
+        ? [...POLICY_FIELDS, ...SURVEY_FIELDS]
+        : POLICY_FIELDS;
   const quote = (x: unknown) => '"' + display(x).replaceAll('"', '""') + '"';
   const lines = [
     [
       "Name",
       "Title",
+      "Record type",
       "Publication date",
       "Paper",
       "Project",
@@ -819,6 +871,11 @@ $("export-view").addEventListener("click", () => {
     ...current.map((w) => [
       nameFor(w, collection),
       w.title,
+      w.resourceType === "survey"
+        ? "Survey"
+        : collection === "policy"
+          ? "Policy"
+          : resourceLabel(w) || "Benchmark",
       w.date || "Undated",
       w.links.paper || "",
       w.links.project || "",
@@ -827,7 +884,13 @@ $("export-view").addEventListener("click", () => {
       w.links.weights || "",
       w.modalities.join("; "),
       ...fields.map(
-        ([key]) => (collection === "benchmark" ? w.benchmark : w.policy)?.[key],
+        ([key]) =>
+          (SURVEY_FIELDS.some(([k]) => k === key)
+            ? w.survey
+            : collection === "benchmark"
+              ? w.benchmark
+              : w.policy)?.[key] ??
+          (w.survey || hasSurveys ? "Not applicable" : "Not reported"),
       ),
     ]),
   ];

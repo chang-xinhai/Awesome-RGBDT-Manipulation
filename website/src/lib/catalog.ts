@@ -2,6 +2,7 @@ import meta from "../../../data/meta.json";
 import records from "../../../data/works.json";
 import media from "../../../data/media.json";
 import policyAudit from "../../../data/policy-source-audit.json";
+import surveyAudit from "../../../data/survey-source-audit.json";
 import type { Work, Collection, Figure } from "./schema";
 export * from "./schema";
 export const works = (records as unknown as Work[]).sort(
@@ -25,6 +26,37 @@ export interface PolicySourceAudit {
   }[];
 }
 export const policySourceAudit = policyAudit as PolicySourceAudit;
+export interface SurveySourceAudit {
+  reviewed: string;
+  sources: {
+    id: string;
+    workId: string;
+    label: string;
+    url: string;
+    referencesUrl: string;
+    corpusUrl: string;
+    snapshot: string;
+    scope: string;
+    entries: {
+      number: number;
+      key: string;
+      title: string;
+      url: string;
+      role: string;
+      methodFamily?: string;
+      status:
+        | "indexed"
+        | "outside-scope"
+        | "background"
+        | "adjacent-resource"
+        | "candidate";
+      workId?: string;
+      note: string;
+      decisionSource?: string;
+    }[];
+  }[];
+}
+export const surveySourceAudit = surveyAudit as SurveySourceAudit;
 export const figureFor = (w: Work, c: Collection) => figures[w.id]?.[c];
 export const REVIEWED = meta.reviewed;
 export const REVIEW_LABEL = new Intl.DateTimeFormat("en-GB", {

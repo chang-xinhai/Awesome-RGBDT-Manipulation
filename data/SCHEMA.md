@@ -25,6 +25,23 @@ Policy fields: `family`, `baseModel`, `modelSize`, `inputs`, `outputs`,
 `trainingMethod`, `trainingData`, `trainingTime`, `trainingHardware`,
 `controlRate`, `evaluation`.
 
+Surveys use `resourceType: survey`, retain the relevant existing collection and
+categories, and have a `survey` object instead of `policy` / `benchmark` fields:
+`scope`, `taxonomy`, `adaptationRegimes`, `contextSources`, `evaluationAxes`,
+`corpus`, `reviewMethod`, and `coverageLimits`. They have no deployment modality
+or robot embodiment claim. Their figures may be taxonomy diagrams. Survey
+counts are separate from policy counts; mixed comparisons and CSV exports
+retain the record type and mark inapplicable fields.
+
+Optional `surveyAuditId` links a survey to a source in
+`survey-source-audit.json`. Each source identifies its author inventory,
+snapshot and scope. Reference entries retain their original key, number,
+title, URL, role, optional method family and disposition (`indexed`,
+`outside-scope`, `background`, `adjacent-resource`, `candidate`). Indexed entries
+link to a canonical `workId`; every other disposition requires an explanation.
+A citation match is discovery provenance, not evidence for a policy's resource
+or performance claims.
+
 Policy categories include `agent-rsi-icl` for robot agents, feedback-driven
 self-improvement and in-context adaptation. These are overlapping routes:
 in-context examples, persistent code/memory, prompt optimization and gradient

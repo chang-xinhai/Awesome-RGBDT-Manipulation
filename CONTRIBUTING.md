@@ -32,6 +32,13 @@ the missing model's original paper/project before adding its factual fields.
 Present artifact links as Paper → Project → Code → Data → other artifacts,
 highlighting the first available link.
 
+Include relevant surveys in the existing categories using the survey resource
+type and review-specific fields. Use their conceptual taxonomy figures; do not
+invent model size, deployment inputs or training costs for a literature review.
+Reconcile citation trails in `data/survey-source-audit.json`, and return to each
+original method paper before adding its technical record. Keep adjacent data,
+background references and unreviewed candidates explicitly distinct.
+
 ```sh
 python3 scripts/generate.py
 python3 scripts/validate.py

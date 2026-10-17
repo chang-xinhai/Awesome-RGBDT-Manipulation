@@ -33,6 +33,7 @@ export const FACETS: Record<Collection, { key: string; label: string }[]> = {
     { key: "year", label: "Year" },
   ],
   policy: [
+    { key: "type", label: "Record type" },
     { key: "family", label: "Policy family" },
     { key: "environment", label: "Evaluation domain" },
     { key: "embodiment", label: "Embodiment" },
@@ -49,7 +50,10 @@ export function values(
   if (key === "embodiment") return w.embodiments;
   if (key === "year") return [String(w.year)];
   if (key === "code") return [releaseFor(w, c).code || "Not verified"];
-  if (key === "family") return [display(w.policy?.family)];
+  if (key === "type")
+    return [w.resourceType === "survey" ? "Survey" : "Policy"];
+  if (key === "family")
+    return [w.resourceType === "survey" ? "Survey" : display(w.policy?.family)];
   if (key === "simulator") {
     const s = display(w.benchmark?.simulator);
     const known = [
@@ -107,16 +111,19 @@ export function matches(
         w.policyName,
         w.benchmarkName,
         w.title,
+        w.links.paper,
         w.summary,
         w.policySummary,
         w.benchmarkSummary,
         w.institution,
         w.categories,
+        w.resourceType,
         w.modalities,
         w.environments,
         w.embodiments,
         w.benchmark,
         w.policy,
+        w.survey,
         w.release,
         w.caveats,
       ]),

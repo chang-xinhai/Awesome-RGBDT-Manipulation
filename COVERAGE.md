@@ -1,21 +1,21 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-17. 333 unique records; 43 benchmark records; 284 policy records; 12 supporting resources. Collection and category counts overlap.
+Review cutoff: 2026-10-17. 508 unique records; 45 benchmark records; 455 policy records; 4 surveys; 12 supporting resources. Collection and category counts overlap. Surveys have their own scope fields and do not add to the policy count.
 
 ## Search areas
 
 - Visuo-Tactile Benchmarks: 18 records with this classification.
 - Precision and Assembly: 23 records with this classification.
 - Dexterous Manipulation: 10 records with this classification.
-- General Manipulation: 10 records with this classification.
+- General Manipulation: 12 records with this classification.
 - Robustness and Evaluation: 11 records with this classification.
 - Supporting Tools and Data: 12 records with this classification.
 - Visuo-Tactile Policy Learning: 33 records with this classification.
-- Tactile VLA and World-Action Models: 31 records with this classification.
-- RGB-D and 3D Policies: 65 records with this classification.
-- Visual Precision and Reinforcement Learning: 13 records with this classification.
-- Agent / RSI / ICL: 88 records with this classification.
-- Generalist Policy Foundations: 105 records with this classification.
+- Tactile VLA and World-Action Models: 33 records with this classification.
+- RGB-D and 3D Policies: 95 records with this classification.
+- Visual Precision and Reinforcement Learning: 23 records with this classification.
+- Agent / RSI / ICL: 248 records with this classification.
+- Generalist Policy Foundations: 129 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -31,6 +31,14 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 56 / 58 |
 | [RoboDojo live leaderboard: real robots](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 11 / 11 |
 | [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab) | adapter-registry | 63 / 63 |
+
+## Survey citation trails
+
+Surveys are reading resources with their own taxonomy and evidence boundaries, not additional executable policies. Reference mappings retain indexed records, scope exclusions, background, adjacent data resources and candidates for separate review. A survey citation is discovery provenance; method specifications use original sources. Full mappings: [data/survey-source-audit.json](data/survey-source-audit.json).
+
+| Survey | References reconciled | Indexed canonical links |
+| :-- | :-- | :-- |
+| [In-Context Learning for Robots: Methods and Applications](https://arxiv.org/abs/2609.36012) | 412 | 239 |
 
 ## Evidence methodology
 

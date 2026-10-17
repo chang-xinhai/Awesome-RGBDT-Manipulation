@@ -148,3 +148,31 @@ test("Common model spellings resolve punctuation and Greek names", () => {
     matches(w("vpp2"), "policy", { ...emptyView(), query: "VPP2 Preview" }),
   );
 });
+test("Surveys retain a research route without claiming executable policy fields", () => {
+  const x = w("robot-icl-survey");
+  assert.equal(x.resourceType, "survey");
+  assert.ok(x.survey.taxonomy.length === 4);
+  assert.equal(x.policy, undefined);
+  assert.ok(inCollection(x, "policy", "agent-rsi-icl"));
+  assert.ok(!inCollection(x, "benchmark"));
+  assert.deepEqual(values(x, "type", "policy"), ["Survey"]);
+  assert.deepEqual(values(x, "family", "policy"), ["Survey"]);
+  assert.ok(!matches(x, "policy", { ...emptyView(), modalities: ["Depth"] }));
+});
+test("Survey-specific scope search and type filter survive URL state", () => {
+  const v = {
+    ...emptyView(),
+    category: "agent-rsi-icl",
+    query: "geometric demonstration transfer",
+    filters: { type: "Survey" },
+  };
+  assert.ok(matches(w("robot-icl-survey"), "policy", v));
+  assert.ok(!matches(w("roboicl"), "policy", { ...v, query: "" }));
+  assert.deepEqual(fromParams(toParams("policy", v), "policy"), v);
+  assert.ok(
+    matches(w("robot-icl-survey"), "policy", {
+      ...emptyView(),
+      query: "2609.36012",
+    }),
+  );
+});
