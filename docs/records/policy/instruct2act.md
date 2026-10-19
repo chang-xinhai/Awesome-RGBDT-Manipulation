@@ -33,11 +33,11 @@ Maps multimodal instructions into executable robot programs through a modular vi
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — VIMABench implementation [3](https://github.com/OpenGVLab/Instruct2Act)  |
+| Release: weights | Not applicable [3](https://github.com/OpenGVLab/Instruct2Act)  |
+| Release: data | Not verified [3](https://github.com/OpenGVLab/Instruct2Act)  |
+| Release: license | No root repository LICENSE found in the inspected tree; upstream SAM/CLIP and simulator terms remain separate. [3](https://github.com/OpenGVLab/Instruct2Act)  |
+| Release: notes | Actual perception/tool execution, online/offline program generation, prompts and VIMABench evaluation source are public. This does not include a complete physical-robot perception/deployment stack or new base-model checkpoint; related ManipVQA/A3VLM releases are separate works. [3](https://github.com/OpenGVLab/Instruct2Act)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,4 @@ Maps multimodal instructions into executable robot programs through a modular vi
 
 1. [Primary paper, full text](https://arxiv.org/abs/2305.11176) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/OpenGVLab/Instruct2Act) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/OpenGVLab/Instruct2Act) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

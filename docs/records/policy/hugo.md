@@ -8,7 +8,7 @@ HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation
 
 **2026-09-24 · Preprint · University of California, Berkeley; ShanghaiTech University; Google DeepMind; Nomagic**
 
-**[Paper](https://arxiv.org/abs/2609.30594)** · [Project](https://iconlab.negarmehr.com/HuGo/) · [Code](https://github.com/labicon/HuGo)
+**[Paper](https://arxiv.org/abs/2609.30594)** · [Project](https://iconlab.negarmehr.com/HuGo/) · [Code](https://github.com/labicon/HuGo) · [Data](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement)
 
 Generates and iteratively refines high-level whole-body policy code over a frozen humanoid controller using numerical rollouts and selected video evidence.
 
@@ -33,11 +33,11 @@ Generates and iteratively refines high-level whole-body policy code over a froze
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Humanoid |
-| Release: code | Not released [2](https://raw.githubusercontent.com/labicon/HuGo/main/README.md)  |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Author repository is a placeholder; substantive implementation is not released in its current README. The frozen agent itself has no separately trained method-specific checkpoint; upstream model access has its own terms. [2](https://raw.githubusercontent.com/labicon/HuGo/main/README.md)  |
+| Release: code | Partial — selected generated policies and refinement analyses [3](https://github.com/labicon/HuGo) [4](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement)  |
+| Release: weights | Not applicable [3](https://github.com/labicon/HuGo) [4](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement)  |
+| Release: data | Partial — selected public rollout/refinement traces [3](https://github.com/labicon/HuGo) [4](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement)  |
+| Release: license | No root repository LICENSE found in the inspected tree; paper, recordings and dependency rights remain separate. [3](https://github.com/labicon/HuGo) [4](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement)  |
+| Release: notes | The current official repository includes selected generated policy_code.txt files, refinement diffs/prompts/responses, executable analysis_code.py and simulation/physical rollout videos under docs/static/. It does not release a complete code-generation framework or the upstream whole-body policy weights; the selected examples must not be described as an empty placeholder. [3](https://github.com/labicon/HuGo) [4](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement)  |
 
 **Scope and qualifications**
 
@@ -48,4 +48,6 @@ Generates and iteratively refines high-level whole-body policy code over a froze
 **Primary evidence**
 
 1. [Original primary paper and appendix](https://arxiv.org/abs/2609.30594) — Survey citation is used only for discovery. Method and deployment facts come from the original paper; the date is its first submission where available. Affiliations are transcribed from the PDF author block / footnotes; LMPC affiliation is confirmed by its official project page.
-2. [Author repository README](https://raw.githubusercontent.com/labicon/HuGo/main/README.md) — Author repository is a placeholder; substantive implementation is not released in its current README.
+2. [Author repository README](https://raw.githubusercontent.com/labicon/HuGo/main/README.md) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Current artifact inventory and release scope](https://github.com/labicon/HuGo) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

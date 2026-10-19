@@ -36,7 +36,7 @@ Aligns sequential tactile observations with force dynamics and supplies the forc
 | Release: code | Partial [2](https://github.com/mrHuangyz/TaF-VLA)  |
 | Release: weights | Not verified [2](https://github.com/mrHuangyz/TaF-VLA)  |
 | Release: data | Not verified [2](https://github.com/mrHuangyz/TaF-VLA)  |
-| Release: license | Not verified [2](https://github.com/mrHuangyz/TaF-VLA)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/mrHuangyz/TaF-VLA) [4](https://github.com/mrHuangyz/TaF-VLA/blob/main/LICENSE)  |
 | Release: notes | Author repository is public; checked download scope does not establish complete policy/checkpoint availability. [2](https://github.com/mrHuangyz/TaF-VLA)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Aligns sequential tactile observations with force dynamics and supplies the forc
 1. [Author manuscript and submission history](https://arxiv.org/abs/2601.20321) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/mrHuangyz/TaF-VLA) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2601.20321) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/mrHuangyz/TaF-VLA/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

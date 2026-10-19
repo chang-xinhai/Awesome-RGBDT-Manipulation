@@ -8,7 +8,7 @@ CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Con
 
 **2026-08-02 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2608.01102)**
+**[Paper](https://arxiv.org/abs/2608.01102)** · [Project](https://mrjiangjm.github.io/caat/)
 
 Masks background tactile appearance and scales attention by contact to improve data efficiency across multiple policy backbones.
 
@@ -33,11 +33,11 @@ Masks background tactile appearance and scales attention by contact to improve d
 | Observations / modalities | RGB · Tactile · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
+| Release: code | Not released |
 | Release: weights | Not verified |
 | Release: data | Not verified |
 | Release: license | Not verified |
-| Release: notes | No verified public download found in the inspected primary sources. |
+| Release: notes | The current author code repository contains only README.md and explicitly states training/evaluation code is coming soon. The official project is now accessible; paper plots and the code-repository description do not establish an implementation/checkpoint/dataset release. |
 
 **Scope and qualifications**
 

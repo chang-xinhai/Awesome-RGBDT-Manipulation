@@ -8,7 +8,7 @@ EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics
 
 **2026-09-23 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.27308)** · [Project](https://embodiedswe.github.io) · [Code](https://github.com/EmbodiedSWE/EmbodiedSWE)
+**[Paper](https://arxiv.org/abs/2609.27308)** · [Project](https://embodiedswe.github.io) · [Code](https://github.com/EmbodiedSWE/EmbodiedSWE) · [Data](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets)
 
 Uses coding agents to solve long-horizon simulator-control tasks, then diversifies verified programs into demonstrations for visuomotor policy training.
 
@@ -33,11 +33,11 @@ Uses coding agents to solve long-horizon simulator-control tasks, then diversifi
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Dexterous hand · Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [3](https://github.com/EmbodiedSWE/EmbodiedSWE) [4](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets)  |
+| Release: weights | Not verified [3](https://github.com/EmbodiedSWE/EmbodiedSWE) [4](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets)  |
+| Release: data | Partial — task assets and generation tooling [3](https://github.com/EmbodiedSWE/EmbodiedSWE) [4](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets)  |
+| Release: license | Apache-2.0 code, verified from LICENSE; the task-asset card declares Apache-2.0 with NOTICE/provenance qualifications. External assets and models retain separate terms. [3](https://github.com/EmbodiedSWE/EmbodiedSWE) [4](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets)  |
+| Release: notes | The current tree contains benchmark/task execution, coding-agent evaluation, RL, trajectory-diversification and VLA conversion/training tools. EmbodiedSWE/robobench-assets contains actual task/robot/room tar bundles, not a released corpus of every generated demonstration or the reported sim-to-real policy checkpoint. [3](https://github.com/EmbodiedSWE/EmbodiedSWE) [4](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ Uses coding agents to solve long-horizon simulator-control tasks, then diversifi
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.27308) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/EmbodiedSWE/EmbodiedSWE) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/EmbodiedSWE/EmbodiedSWE) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/datasets/EmbodiedSWE/robobench-assets) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

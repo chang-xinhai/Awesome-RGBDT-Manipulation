@@ -8,7 +8,7 @@ Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical I
 
 **2026-08-17 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2608.16590)** · [Project](https://air-embodied-brain.github.io/zetta)
+**[Paper](https://arxiv.org/abs/2608.16590)** · [Project](https://air-embodied-brain.github.io/zetta) · [Code](https://github.com/air-embodied-brain/Zetta-Embodiment)
 
 Supports a frozen VLA with action-frequency critics, episodic recoveries and validated skill evolution at three time scales.
 
@@ -33,11 +33,11 @@ Supports a frozen VLA with action-frequency critics, episodic recoveries and val
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/air-embodied-brain/Zetta-Embodiment)  |
+| Release: weights | Not applicable [2](https://github.com/air-embodied-brain/Zetta-Embodiment)  |
+| Release: data | Not verified [2](https://github.com/air-embodied-brain/Zetta-Embodiment)  |
+| Release: license | No root repository LICENSE found in the inspected tree; bundled and external dependency/model licenses remain separate. [2](https://github.com/air-embodied-brain/Zetta-Embodiment)  |
+| Release: notes | Actual LIBERO/RoboCasa/RoboTwin agent/critic implementations, skill evolution and local/Ray rollout infrastructure are public. Simulator dependencies, licensed assets and pretrained policy checkpoints are configured separately; a new Zetta-specific weight or complete rollout-corpus release was not verified. [2](https://github.com/air-embodied-brain/Zetta-Embodiment)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,4 @@ Supports a frozen VLA with action-frequency critics, episodic recoveries and val
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2608.16590) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Current artifact inventory and release scope](https://github.com/air-embodied-brain/Zetta-Embodiment) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

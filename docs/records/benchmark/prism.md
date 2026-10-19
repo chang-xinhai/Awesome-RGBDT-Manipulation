@@ -8,7 +8,7 @@ PRISM: Precision and contact-rich Real-world Industrial Skill dataset with Multi
 
 **2026-08-18 · IROS 2026 · Peking University / Delta Intelligence**
 
-**[Paper](https://arxiv.org/abs/2608.17962)** · [Project](https://tengbo-yu.github.io/PRISM/) · [Code](https://github.com/Tengbo-Yu/PRISM) · [Data](https://modelscope.cn/datasets/Turboyuuuu/PRISM)
+**[Paper](https://arxiv.org/abs/2608.17962)** · [Project](https://tengbo-yu.github.io/PRISM/) · [Data](https://modelscope.cn/datasets/Turboyuuuu/PRISM) · [Repository](https://github.com/Tengbo-Yu/PRISM)
 
 Industrial contact-rich demonstrations with synchronized RGB-D, wrist force/torque, robot state and tactile observations for a subset of episodes.
 
@@ -34,11 +34,11 @@ Industrial contact-rich demonstrations with synchronized RGB-D, wrist force/torq
 | Observations / modalities | RGB · Depth · Force/Torque · Tactile · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper · Dexterous hand |
-| Release: code | Available [3](https://github.com/Tengbo-Yu/PRISM)  |
-| Release: weights | Not verified [3](https://github.com/Tengbo-Yu/PRISM)  |
-| Release: data | Available [3](https://github.com/Tengbo-Yu/PRISM)  |
-| Release: license | Not verified [3](https://github.com/Tengbo-Yu/PRISM)  |
-| Release: notes | Official page links data and code; inspect per-platform modality availability in metadata. [3](https://github.com/Tengbo-Yu/PRISM)  |
+| Release: code | Not released — inspected repository is the project website [6](https://modelscope.cn/datasets/Turboyuuuu/PRISM)  |
+| Release: weights | Not verified [6](https://modelscope.cn/datasets/Turboyuuuu/PRISM)  |
+| Release: data | Available [6](https://modelscope.cn/datasets/Turboyuuuu/PRISM)  |
+| Release: license | Not verified [6](https://modelscope.cn/datasets/Turboyuuuu/PRISM)  |
+| Release: notes | The official GitHub tree contains README/index, site styles, figures and paper PDF, without dataset-processing, collection or policy implementation files and with no release assets. The ModelScope dataset is a separate artifact; website source must not be presented as a released robot/data-processing implementation. [6](https://modelscope.cn/datasets/Turboyuuuu/PRISM)  |
 
 **Task names — Examples explicitly named in paper/project; complete released task manifest must be consulted per platform.:**
 
@@ -58,6 +58,7 @@ Industrial contact-rich demonstrations with synchronized RGB-D, wrist force/torq
 
 1. [Paper](https://arxiv.org/abs/2608.17962) — Published paper / arXiv record and manuscript.
 2. [Official project](https://tengbo-yu.github.io/PRISM/) — Public project page.
-3. [Official repository](https://github.com/Tengbo-Yu/PRISM) — Current public repository; implementation scope may differ from paper.
+3. [Official repository](https://github.com/Tengbo-Yu/PRISM) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
 4. [Author publication list](https://tengbo-yu.github.io/) — Primary author homepage labels PRISM IROS 2026.
 5. [Data collection method and scope](https://arxiv.org/abs/2608.17962) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+6. [Current artifact inventory and release scope](https://modelscope.cn/datasets/Turboyuuuu/PRISM) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

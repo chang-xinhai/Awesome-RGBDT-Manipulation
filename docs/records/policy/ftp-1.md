@@ -36,7 +36,7 @@ A cross-sensor tactile foundation policy that maps image, array and state sensor
 | Release: code | Available [2](https://github.com/michaelyuancb/ftp1-policy)  |
 | Release: weights | Available [2](https://github.com/michaelyuancb/ftp1-policy)  |
 | Release: data | Available [2](https://github.com/michaelyuancb/ftp1-policy)  |
-| Release: license | Not verified [2](https://github.com/michaelyuancb/ftp1-policy)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/michaelyuancb/ftp1-policy) [4](https://github.com/michaelyuancb/ftp1-policy/blob/main/LICENSE)  |
 | Release: notes | Official repository links pretraining and six UniVTAC checkpoints, dataset and fine-tuning/deployment recipes. [2](https://github.com/michaelyuancb/ftp1-policy)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ A cross-sensor tactile foundation policy that maps image, array and state sensor
 1. [Author manuscript and submission history](https://arxiv.org/abs/2606.13102) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/michaelyuancb/ftp1-policy) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2606.13102) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/michaelyuancb/ftp1-policy/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

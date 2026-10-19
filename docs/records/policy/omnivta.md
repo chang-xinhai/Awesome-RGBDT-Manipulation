@@ -33,11 +33,11 @@ Combines tactile representation learning, short-horizon visuotactile world model
 | Observations / modalities | RGB · Tactile · Proprioception |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [2](https://github.com/MrSecant/OmniVTA)  |
-| Release: weights | Not verified [2](https://github.com/MrSecant/OmniVTA)  |
-| Release: data | Available [2](https://github.com/MrSecant/OmniVTA)  |
-| Release: license | Not verified [2](https://github.com/MrSecant/OmniVTA)  |
-| Release: notes | Project links learning code, hardware and dataset; model checkpoint scope not independently verified. [2](https://github.com/MrSecant/OmniVTA)  |
+| Release: code | Not released — repository contains license and website material only [5](https://github.com/MrSecant/OmniVTA) [6](https://huggingface.co/datasets/tars-robotics/OmniVitac)  |
+| Release: weights | Not verified [5](https://github.com/MrSecant/OmniVTA) [6](https://huggingface.co/datasets/tars-robotics/OmniVitac)  |
+| Release: data | Available [5](https://github.com/MrSecant/OmniVTA) [6](https://huggingface.co/datasets/tars-robotics/OmniVitac)  |
+| Release: license | MIT for currently published repository material, verified from LICENSE; no policy implementation release was found, and data/model terms remain separate. [4](https://github.com/MrSecant/OmniVTA/blob/main/LICENSE) [5](https://github.com/MrSecant/OmniVTA) [6](https://huggingface.co/datasets/tars-robotics/OmniVitac)  |
+| Release: notes | The current main branch contains only LICENSE; the webpage branch contains project-site material and there are no GitHub release assets. This does not establish the advertised learning/hardware implementation. The separately linked OmniVitac dataset remains independently available; code, data and weights are distinct. [5](https://github.com/MrSecant/OmniVTA) [6](https://huggingface.co/datasets/tars-robotics/OmniVitac)  |
 
 **Scope and qualifications**
 
@@ -47,5 +47,8 @@ Combines tactile representation learning, short-horizon visuotactile world model
 **Primary evidence**
 
 1. [Author manuscript and submission history](https://arxiv.org/abs/2603.19201) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
-2. [Official repository](https://github.com/MrSecant/OmniVTA) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
+2. [Official repository](https://github.com/MrSecant/OmniVTA) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2603.19201) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/MrSecant/OmniVTA/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.
+5. [Current artifact inventory and release scope](https://github.com/MrSecant/OmniVTA) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+6. [Current artifact inventory and release scope](https://huggingface.co/datasets/tars-robotics/OmniVitac) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

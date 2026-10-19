@@ -37,7 +37,7 @@ Challenge combining tactile-only transfer, tactile-plus-depth fusion and tactile
 | Release: code | Available [3](https://github.com/cyliizyz/ManiSkill-ViTac2025) [4](https://github.com/cyliizyz/ManiSkill-ViTac2025)  |
 | Release: weights | Available [3](https://github.com/cyliizyz/ManiSkill-ViTac2025) [4](https://github.com/cyliizyz/ManiSkill-ViTac2025)  |
 | Release: data | Not reported [3](https://github.com/cyliizyz/ManiSkill-ViTac2025) [4](https://github.com/cyliizyz/ManiSkill-ViTac2025)  |
-| Release: license | Not verified [3](https://github.com/cyliizyz/ManiSkill-ViTac2025) [4](https://github.com/cyliizyz/ManiSkill-ViTac2025)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [3](https://github.com/cyliizyz/ManiSkill-ViTac2025) [4](https://github.com/cyliizyz/ManiSkill-ViTac2025) [6](https://github.com/chuanyune/ManiSkill-ViTac2025/blob/main/LICENSE)  |
 | Release: notes | Official repository and cyliizyz/ManiSkill-ViTac2025_ckpt checkpoint link verified. [3](https://github.com/cyliizyz/ManiSkill-ViTac2025) [4](https://github.com/cyliizyz/ManiSkill-ViTac2025)  |
 
 **Task names — Complete manipulation task families; tracks and object-shape variants are not separate tasks.:**
@@ -58,3 +58,4 @@ Challenge combining tactile-only transfer, tactile-plus-depth fusion and tactile
 3. [Official repository](https://github.com/cyliizyz/ManiSkill-ViTac2025) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/cyliizyz/ManiSkill-ViTac2025) — Official challenge page linked cyliizyz repository, not the earlier provisional guessed owner.
 5. [Data collection method and scope](https://arxiv.org/abs/2411.12503) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+6. [Actual repository code license](https://github.com/chuanyune/ManiSkill-ViTac2025/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

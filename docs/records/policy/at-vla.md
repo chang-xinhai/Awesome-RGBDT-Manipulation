@@ -36,7 +36,7 @@ Adaptively gates tactile injection and uses a faster tactile stream to adjust ac
 | Release: code | Partial [2](https://github.com/clorislili/AT-VLA)  |
 | Release: weights | Not verified [2](https://github.com/clorislili/AT-VLA)  |
 | Release: data | Not verified [2](https://github.com/clorislili/AT-VLA)  |
-| Release: license | Not verified [2](https://github.com/clorislili/AT-VLA)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/clorislili/AT-VLA) [4](https://github.com/clorislili/AT-VLA/blob/main/LICENSE)  |
 | Release: notes | Official repository primarily exposes inference; external GO-1 backbone required. [2](https://github.com/clorislili/AT-VLA)  |
 
 **Scope and qualifications**
@@ -48,3 +48,4 @@ Adaptively gates tactile injection and uses a faster tactile stream to adjust ac
 1. [Author manuscript and submission history](https://arxiv.org/abs/2605.07308) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/clorislili/AT-VLA) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2605.07308) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/clorislili/AT-VLA/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

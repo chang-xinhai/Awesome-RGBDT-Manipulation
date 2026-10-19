@@ -33,11 +33,11 @@ Open-weight world-action model jointly predicts robot action chunks and visual o
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [3](https://github.com/black-forest-labs/flux-action)  |
-| Release: weights | Available [3](https://github.com/black-forest-labs/flux-action)  |
-| Release: data | Not verified [3](https://github.com/black-forest-labs/flux-action)  |
-| Release: license | Apache-2.0 (official code); model/data terms not verified [3](https://github.com/black-forest-labs/flux-action)  |
-| Release: notes | Official standalone training/inference code and base/DROID/SO101 weights released. [3](https://github.com/black-forest-labs/flux-action)  |
+| Release: code | Available [4](https://github.com/black-forest-labs/flux-action) [5](https://huggingface.co/black-forest-labs/flux-3-action-droid)  |
+| Release: weights | Gated — automatic Hugging Face access terms [4](https://github.com/black-forest-labs/flux-action) [5](https://huggingface.co/black-forest-labs/flux-3-action-droid)  |
+| Release: data | Not verified [4](https://github.com/black-forest-labs/flux-action) [5](https://huggingface.co/black-forest-labs/flux-3-action-droid)  |
+| Release: license | Apache-2.0 (official code); model/data terms not verified [4](https://github.com/black-forest-labs/flux-action) [5](https://huggingface.co/black-forest-labs/flux-3-action-droid)  |
+| Release: notes | Official standalone training/inference code and base/DROID/SO101 weights released. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed. [4](https://github.com/black-forest-labs/flux-action) [5](https://huggingface.co/black-forest-labs/flux-3-action-droid)  |
 
 **Scope and qualifications**
 
@@ -48,4 +48,6 @@ Open-weight world-action model jointly predicts robot action chunks and visual o
 
 1. [Paper / technical report](https://bfl.ai/models/flux-3-action) — Main paper and supplementary implementation sections; v1 date retained.
 2. [Author project page](https://bfl.ai/models/flux-3-action) — Official project, not an independent replication.
-3. [Official released code](https://github.com/black-forest-labs/flux-action) — Base/guidance-distilled/step-distilled packages and deployment.
+3. [Official released code](https://github.com/black-forest-labs/flux-action) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Current artifact inventory and release scope](https://github.com/black-forest-labs/flux-action) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Current artifact inventory and release scope](https://huggingface.co/black-forest-labs/flux-3-action-droid) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

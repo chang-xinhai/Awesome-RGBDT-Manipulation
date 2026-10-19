@@ -36,7 +36,7 @@ Encodes language and initial views into fixed VLM KV memory once per episode, th
 | Release: code | Available [2](https://garfield-kh.github.io/FastVLA) [3](https://github.com/Garfield-kh/FastVLA)  |
 | Release: weights | Available [2](https://garfield-kh.github.io/FastVLA) [3](https://github.com/Garfield-kh/FastVLA)  |
 | Release: data | Not verified [2](https://garfield-kh.github.io/FastVLA)  |
-| Release: license | Not reported [2](https://garfield-kh.github.io/FastVLA)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://garfield-kh.github.io/FastVLA) [4](https://github.com/Garfield-kh/FastVLA/blob/main/LICENSE)  |
 | Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [2](https://garfield-kh.github.io/FastVLA)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Encodes language and initial views into fixed VLM KV memory once per episode, th
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2610.21389) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
 2. [Official policy implementation](https://garfield-kh.github.io/FastVLA) — Source and checkpoint availability checked separately; no local policy execution was performed.
 3. [Official executable release linked from project](https://github.com/Garfield-kh/FastVLA) — Repository provides policy training, evaluation and model links.
+4. [Actual repository code license](https://github.com/Garfield-kh/FastVLA/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

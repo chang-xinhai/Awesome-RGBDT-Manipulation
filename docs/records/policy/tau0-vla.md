@@ -33,11 +33,11 @@ Memory-aware high-level proposals are expanded with a world model, value model a
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Bimanual · Mobile manipulator |
-| Release: code | Available [2](https://tau0-vla.github.io/) [3](https://github.com/sii-research/tau-0-vla)  |
-| Release: weights | Not verified [2](https://tau0-vla.github.io/) [3](https://github.com/sii-research/tau-0-vla)  |
-| Release: data | Not verified [2](https://tau0-vla.github.io/) [3](https://github.com/sii-research/tau-0-vla)  |
-| Release: license | Apache-2.0 code; model/data/backbone terms separate [2](https://tau0-vla.github.io/) [3](https://github.com/sii-research/tau-0-vla) [4](https://raw.githubusercontent.com/sii-research/tau-0-vla/main/LICENSE)  |
-| Release: notes | Author-linked repository and actual README/tree inspected; weights/data are tracked separately. No installation or reproduction attempted. [2](https://tau0-vla.github.io/) [3](https://github.com/sii-research/tau-0-vla)  |
+| Release: code | Available [5](https://github.com/sii-research/tau-0-vla) [6](https://huggingface.co/sii-research/tau-0-vla)  |
+| Release: weights | Partial — released low-level VLA checkpoint [5](https://github.com/sii-research/tau-0-vla) [6](https://huggingface.co/sii-research/tau-0-vla)  |
+| Release: data | Not verified [5](https://github.com/sii-research/tau-0-vla) [6](https://huggingface.co/sii-research/tau-0-vla)  |
+| Release: license | Apache-2.0 code verified from LICENSE; official low-level checkpoint card also declares Apache-2.0. External high-level/world-model components retain separate terms. [5](https://github.com/sii-research/tau-0-vla) [6](https://huggingface.co/sii-research/tau-0-vla)  |
+| Release: notes | The official model inventory contains model.safetensors and the low-level VLA configuration. This verifies a low-level checkpoint, not every separate high-level proposal/value/reflection model or the full multi-model system. No complete training corpus was independently verified. [5](https://github.com/sii-research/tau-0-vla) [6](https://huggingface.co/sii-research/tau-0-vla)  |
 
 **Scope and qualifications**
 
@@ -47,6 +47,8 @@ Memory-aware high-level proposals are expanded with a world model, value model a
 **Primary evidence**
 
 1. [Original manuscript and first submission history](https://arxiv.org/abs/2608.16885) — Original method, evaluation and available implementation/appendix sections inspected. The survey is discovery evidence only.
-2. [Official project](https://tau0-vla.github.io/) — Author-linked source. Component and artifact release terms may differ.
-3. [Official code](https://github.com/sii-research/tau-0-vla) — Author-linked source. Component and artifact release terms may differ.
-4. [Actual source license file](https://raw.githubusercontent.com/sii-research/tau-0-vla/main/LICENSE) — Scope limited to the file/repository subtree carrying these terms, not paper figures or external models/data.
+2. [Official project](https://tau0-vla.github.io/) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Official code](https://github.com/sii-research/tau-0-vla) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Actual source license file](https://raw.githubusercontent.com/sii-research/tau-0-vla/main/LICENSE) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+5. [Current artifact inventory and release scope](https://github.com/sii-research/tau-0-vla) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+6. [Current artifact inventory and release scope](https://huggingface.co/sii-research/tau-0-vla) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

@@ -8,7 +8,7 @@ In-Context Learning Enables Robot Action Prediction in LLMs
 
 **2024-10-16 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2410.12782)**
+**[Paper](https://arxiv.org/abs/2410.12782)** · [Project](https://davidyyd.github.io/roboprompt) · [Code](https://github.com/davidyyd/roboprompt)
 
 Uses object-pose descriptions and demonstrated end-effector keyframes to predict robot action sequences with a frozen LLM.
 
@@ -33,11 +33,11 @@ Uses object-pose descriptions and demonstrated end-effector keyframes to predict
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/davidyyd/roboprompt)  |
+| Release: weights | Not applicable [2](https://github.com/davidyyd/roboprompt)  |
+| Release: data | Not verified [2](https://github.com/davidyyd/roboprompt)  |
+| Release: license | MIT original code, verified from LICENSE; vendored PyRep/RLBench/PerAct and external models retain separate terms. [2](https://github.com/davidyyd/roboprompt)  |
+| Release: notes | Actual in-context demonstration construction, LLM action prediction, RLBench evaluation and installation source are public. Demonstration/train/test episodes are generated separately with RLBench; no new model weights are needed for the frozen-LLM method and a complete pregenerated episode corpus was not verified. [2](https://github.com/davidyyd/roboprompt)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Uses object-pose descriptions and demonstrated end-effector keyframes to predict
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2410.12782) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Current artifact inventory and release scope](https://github.com/davidyyd/roboprompt) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

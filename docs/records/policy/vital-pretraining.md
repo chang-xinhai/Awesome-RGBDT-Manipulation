@@ -36,7 +36,7 @@ Visuo-tactile representation pretraining improves both tactile-conditioned and v
 | Release: code | Available [2](https://github.com/Abraham190137/TactileACT)  |
 | Release: weights | Not verified [2](https://github.com/Abraham190137/TactileACT)  |
 | Release: data | Not verified [2](https://github.com/Abraham190137/TactileACT)  |
-| Release: license | Not verified [2](https://github.com/Abraham190137/TactileACT)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/Abraham190137/TactileACT) [4](https://github.com/Abraham190137/TactileACT/blob/main/LICENSE)  |
 | Release: notes | Project links the TactileACT implementation. [2](https://github.com/Abraham190137/TactileACT)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Visuo-tactile representation pretraining improves both tactile-conditioned and v
 1. [Author manuscript and submission history](https://arxiv.org/abs/2403.11898) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/Abraham190137/TactileACT) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2403.11898) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/Abraham190137/TactileACT/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

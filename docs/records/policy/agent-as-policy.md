@@ -8,7 +8,7 @@ Agent as Policy for Robotic Manipulation
 
 **2026-09-11 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.12541)** · [Project](https://agent-as-policy-2026.github.io/) · [Code](https://github.com/agent-as-policy-2026/agent-as-policy)
+**[Paper](https://arxiv.org/abs/2609.12541)** · [Project](https://agent-as-policy-2026.github.io/) · [Code](https://github.com/agent-as-policy-2026/agent-as-policy) · [Data](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy)
 
 General coding agents write and select robot programs from multimodal feedback on physical manipulation tasks, while experience files support repeated-run refinement and transfer.
 
@@ -33,11 +33,11 @@ General coding agents write and select robot programs from multimodal feedback o
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Uses a hosted or pre-existing frozen model; the paper introduces a robot interface or agent system rather than new base-model weights. |
+| Release: code | Available [3](https://github.com/agent-as-policy-2026/agent-as-policy) [4](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy)  |
+| Release: weights | Not applicable [3](https://github.com/agent-as-policy-2026/agent-as-policy) [4](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy)  |
+| Release: data | Available — published session/trajectory bundles [3](https://github.com/agent-as-policy-2026/agent-as-policy) [4](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy)  |
+| Release: license | Apache-2.0 original code, verified from LICENSE; published dataset card declares CC BY 4.0. Vendored SDK/connectors retain MIT/Apache notices. [3](https://github.com/agent-as-policy-2026/agent-as-policy) [4](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy)  |
+| Release: notes | Current source contains real-arm/camera bridge, calibration, experiment harness, task-result artifacts and a separate RoboDojo adapter. The official HF dataset inventory includes captures/ tar bundles, videos/, traces/ and trials/ files for observations, video, joints and agent traces; coverage is the published sessions, not an inferred complete reproduction of every trial. [3](https://github.com/agent-as-policy-2026/agent-as-policy) [4](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ General coding agents write and select robot programs from multimodal feedback o
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.12541) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/agent-as-policy-2026/agent-as-policy) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/agent-as-policy-2026/agent-as-policy) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

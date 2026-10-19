@@ -37,7 +37,7 @@ GPU-parallel visual/language/action robustness evaluation across 28 single-arm a
 | Release: code | Available [3](https://github.com/jstmn/ColosseumV2)  |
 | Release: weights | Not verified [3](https://github.com/jstmn/ColosseumV2)  |
 | Release: data | Available [3](https://github.com/jstmn/ColosseumV2)  |
-| Release: license | Not verified [3](https://github.com/jstmn/ColosseumV2)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [3](https://github.com/jstmn/ColosseumV2) [5](https://github.com/jstmn/ColosseumV2/blob/main/LICENSE)  |
 | Release: notes | Official code, task/perturbation catalogue and appendix public. [3](https://github.com/jstmn/ColosseumV2)  |
 
 **Task names — Complete 28-task official project catalogue.:**
@@ -82,3 +82,4 @@ GPU-parallel visual/language/action robustness evaluation across 28 single-arm a
 2. [Official project](https://colosseum-v2.github.io/) — Public project page.
 3. [Official repository](https://github.com/jstmn/ColosseumV2) — Current public repository; implementation scope may differ from paper.
 4. [Data collection method and scope](https://arxiv.org/abs/2605.27759) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+5. [Actual repository code license](https://github.com/jstmn/ColosseumV2/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

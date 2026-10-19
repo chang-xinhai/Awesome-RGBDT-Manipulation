@@ -33,11 +33,11 @@ Learns a unified human/robot hand-action space from egocentric video, then adapt
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Bimanual · Dexterous hand · Humanoid |
-| Release: code | Available [2](https://github.com/RchalYang/EgoVLA_Release)  |
-| Release: weights | Available [2](https://github.com/RchalYang/EgoVLA_Release)  |
-| Release: data | Available [2](https://github.com/RchalYang/EgoVLA_Release)  |
-| Release: license | Apache-2.0 [2](https://github.com/RchalYang/EgoVLA_Release) [3](https://raw.githubusercontent.com/RchalYang/EgoVLA_Release/main/LICENSE)  |
-| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [2](https://github.com/RchalYang/EgoVLA_Release)  |
+| Release: code | Available [4](https://github.com/RchalYang/EgoVLA_Release) [5](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim) [6](https://huggingface.co/rchal97/egovla)  |
+| Release: weights | Available [4](https://github.com/RchalYang/EgoVLA_Release) [5](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim) [6](https://huggingface.co/rchal97/egovla)  |
+| Release: data | Available [4](https://github.com/RchalYang/EgoVLA_Release) [5](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim) [6](https://huggingface.co/rchal97/egovla)  |
+| Release: license | MIT original code, verified from actual LICENSE; derived VILA portions retain Apache-2.0 notices and model/data terms remain separate. [4](https://github.com/RchalYang/EgoVLA_Release) [5](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim) [6](https://huggingface.co/rchal97/egovla)  |
+| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [4](https://github.com/RchalYang/EgoVLA_Release) [5](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim) [6](https://huggingface.co/rchal97/egovla)  |
 
 **Scope and qualifications**
 
@@ -46,5 +46,8 @@ Learns a unified human/robot hand-action space from egocentric video, then adapt
 **Primary evidence**
 
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2507.12440) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
-2. [Official policy implementation](https://github.com/RchalYang/EgoVLA_Release) — Source and checkpoint availability checked separately; no local policy execution was performed.
-3. [Repository license file](https://raw.githubusercontent.com/RchalYang/EgoVLA_Release/main/LICENSE) — Code scope; model, data and third-party component terms can differ.
+2. [Official policy implementation](https://github.com/RchalYang/EgoVLA_Release) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Repository license file](https://raw.githubusercontent.com/RchalYang/EgoVLA_Release/main/LICENSE) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Current artifact inventory and release scope](https://github.com/RchalYang/EgoVLA_Release) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Current artifact inventory and release scope](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+6. [Current artifact inventory and release scope](https://huggingface.co/rchal97/egovla) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

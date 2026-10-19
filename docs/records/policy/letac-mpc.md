@@ -8,7 +8,7 @@ LeTac-MPC: Learning Model Predictive Control for Tactile-reactive Grasping
 
 **2024-03-07 · IEEE Transactions on Robotics 2024 · Purdue University**
 
-**[Paper](https://arxiv.org/abs/2403.04934)** · [Code](https://github.com/ZhengtongXu/LeTac-MPC)
+**[Paper](https://arxiv.org/abs/2403.04934)** · [Code](https://github.com/ZhengtongXu/LeTac-MPC) · [Data](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset)
 
 A learned tactile embedding and differentiable MPC layer provide reactive grasp regulation across object properties.
 
@@ -33,11 +33,11 @@ A learned tactile embedding and differentiable MPC layer provide reactive grasp 
 | Observations / modalities | Tactile · Proprioception |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [2](https://github.com/ZhengtongXu/LeTac-MPC)  |
-| Release: weights | Not verified [2](https://github.com/ZhengtongXu/LeTac-MPC)  |
-| Release: data | Not verified [2](https://github.com/ZhengtongXu/LeTac-MPC)  |
-| Release: license | Not verified; no unambiguous repository license identified. [2](https://github.com/ZhengtongXu/LeTac-MPC)  |
-| Release: notes | Author-linked repository and actual LICENSE inspected; code, checkpoints anddatasets have independent availability. [2](https://github.com/ZhengtongXu/LeTac-MPC)  |
+| Release: code | Available [3](https://github.com/ZhengtongXu/LeTac-MPC) [4](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset)  |
+| Release: weights | Not verified [3](https://github.com/ZhengtongXu/LeTac-MPC) [4](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset)  |
+| Release: data | Available — bundled tactile-image dataset [3](https://github.com/ZhengtongXu/LeTac-MPC) [4](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset)  |
+| Release: license | Not verified; no unambiguous repository license identified. [3](https://github.com/ZhengtongXu/LeTac-MPC) [4](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset)  |
+| Release: notes | Actual nested LeTac-MPC/scripts/training.py is retrievable; the repository also contains the named tactile-image dataset directory and files. Large recursive listings can truncate before implementation paths. No unambiguous repository license or separate pretrained checkpoint release was verified; code/data availability does not imply either. [3](https://github.com/ZhengtongXu/LeTac-MPC) [4](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset)  |
 
 **Scope and qualifications**
 
@@ -46,4 +46,6 @@ A learned tactile embedding and differentiable MPC layer provide reactive grasp 
 **Primary evidence**
 
 1. [Original paper and supplementary implementation details](https://arxiv.org/abs/2403.04934) — Primary full text reviewed; dataset, deployment modalities and training-only privileges are scoped separately.
-2. [Official released implementation and LICENSE](https://github.com/ZhengtongXu/LeTac-MPC) — Repository metadata,README and actualNone inspected; availability scoped to the listed component.
+2. [Official released implementation and LICENSE](https://github.com/ZhengtongXu/LeTac-MPC) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Current artifact inventory and release scope](https://github.com/ZhengtongXu/LeTac-MPC) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

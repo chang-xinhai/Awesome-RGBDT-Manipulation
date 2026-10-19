@@ -8,7 +8,7 @@ RISE: Self-Improving Robot Policy with Compositional World Model
 
 **2026-02-11 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2602.11075)** · [Project](https://opendrivelab.com/RISE/) · [Code](https://github.com/OpenDriveLab/RISE)
+**[Paper](https://arxiv.org/abs/2602.11075)** · [Project](https://opendrivelab.com/RISE/) · [Code](https://github.com/OpenDriveLab/RISE) · [Data](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) · [Weights](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained)
 
 Learns a compositional visual world model and progress-based value model, then improves a robot policy through imagined rollouts rather than repeated physical exploration.
 
@@ -33,11 +33,11 @@ Learns a compositional visual world model and progress-based value model, then i
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [3](https://github.com/OpenDriveLab/RISE) [4](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) [5](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained)  |
+| Release: weights | Partial — pretrained dynamics model [3](https://github.com/OpenDriveLab/RISE) [4](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) [5](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained)  |
+| Release: data | Partial — sample HDF5 trajectories [3](https://github.com/OpenDriveLab/RISE) [4](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) [5](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained)  |
+| Release: license | README declares Apache-2.0 code but no root LICENSE was found; bundled upstream notices remain separate. Official RISE_Assets card declares CC BY-NC-SA 4.0 for released dynamics/sample assets. [3](https://github.com/OpenDriveLab/RISE) [4](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) [5](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained)  |
+| Release: notes | Training code for offline policy/value, dynamics and online RL plus Piper deployment is present. The official RISE_Assets inventory contains dynamics_model/pretrained/diffusion_pytorch_model.safetensors and sample_data/hdf5/ backpack-packing episodes. These artifacts do not establish release of every optimized task-policy checkpoint or the full training corpus. [3](https://github.com/OpenDriveLab/RISE) [4](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) [5](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,6 @@ Learns a compositional visual world model and progress-based value model, then i
 
 1. [Primary paper, full text](https://arxiv.org/abs/2602.11075) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/OpenDriveLab/RISE) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/OpenDriveLab/RISE) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Current artifact inventory and release scope](https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

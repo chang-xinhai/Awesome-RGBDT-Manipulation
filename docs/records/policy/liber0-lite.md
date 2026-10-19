@@ -38,7 +38,7 @@ Releases an author-contributed checkpoint and self-contained inference backend f
 | Release: code | Partial [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite) [2](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite)  |
 | Release: weights | Available [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite)  |
 | Release: data | Not verified [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite)  |
-| Release: license | Not verified; component notices in adapter NOTICE.md [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite) [3](https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE)  |
 | Release: notes | Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite)  |
 
 **Scope and qualifications**
@@ -50,3 +50,4 @@ Releases an author-contributed checkpoint and self-contained inference backend f
 
 1. [Official model project / technical release](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite) — Research-report facts and current executable release are scoped separately; undated releases retain an unknown publication date.
 2. [Official implementation / author-contributed adapter](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Liber_0_lite) — Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation.
+3. [Actual repository code license](https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

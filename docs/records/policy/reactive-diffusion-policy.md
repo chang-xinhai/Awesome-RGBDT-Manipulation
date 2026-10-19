@@ -36,7 +36,7 @@ A slow latent diffusion planner and fast asymmetric tokenizer enable tactile/for
 | Release: code | Available [2](https://github.com/xiaoxiaoxh/reactive_diffusion_policy)  |
 | Release: weights | Available [2](https://github.com/xiaoxiaoxh/reactive_diffusion_policy)  |
 | Release: data | Available [2](https://github.com/xiaoxiaoxh/reactive_diffusion_policy)  |
-| Release: license | Not verified [2](https://github.com/xiaoxiaoxh/reactive_diffusion_policy)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/xiaoxiaoxh/reactive_diffusion_policy) [4](https://github.com/xiaoxiaoxh/reactive_diffusion_policy/blob/main/LICENSE)  |
 | Release: notes | Author repository links dataset/checkpoints, TactAR and training/deployment. [2](https://github.com/xiaoxiaoxh/reactive_diffusion_policy)  |
 
 **Scope and qualifications**
@@ -48,3 +48,4 @@ A slow latent diffusion planner and fast asymmetric tokenizer enable tactile/for
 1. [Author manuscript and submission history](https://arxiv.org/abs/2503.02881) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/xiaoxiaoxh/reactive_diffusion_policy) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2503.02881) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/xiaoxiaoxh/reactive_diffusion_policy/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

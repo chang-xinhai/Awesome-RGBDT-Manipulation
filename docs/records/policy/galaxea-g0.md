@@ -33,11 +33,11 @@ Uses a high-level VLM planner and a fast flow-matching VLA controller, trained w
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual · Mobile manipulator |
-| Release: code | Available [2](https://github.com/OpenGalaxea/GalaxeaVLA)  |
-| Release: weights | Available [2](https://github.com/OpenGalaxea/GalaxeaVLA)  |
-| Release: data | Available [2](https://github.com/OpenGalaxea/GalaxeaVLA)  |
-| Release: license | Not reported [2](https://github.com/OpenGalaxea/GalaxeaVLA)  |
-| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [2](https://github.com/OpenGalaxea/GalaxeaVLA)  |
+| Release: code | Available [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) [5](https://huggingface.co/OpenGalaxea/G0-VLA)  |
+| Release: weights | Available [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) [5](https://huggingface.co/OpenGalaxea/G0-VLA)  |
+| Release: data | Gated — automatic Hugging Face access terms [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) [5](https://huggingface.co/OpenGalaxea/G0-VLA)  |
+| Release: license | Not reported [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) [5](https://huggingface.co/OpenGalaxea/G0-VLA)  |
+| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed. [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) [5](https://huggingface.co/OpenGalaxea/G0-VLA)  |
 
 **Scope and qualifications**
 
@@ -47,4 +47,7 @@ Uses a high-level VLM planner and a fast flow-matching VLA controller, trained w
 **Primary evidence**
 
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2509.00576) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
-2. [Official policy implementation](https://github.com/OpenGalaxea/GalaxeaVLA) — Source and checkpoint availability checked separately; no local policy execution was performed.
+2. [Official policy implementation](https://github.com/OpenGalaxea/GalaxeaVLA) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Current artifact inventory and release scope](https://github.com/OpenGalaxea/GalaxeaVLA) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Current artifact inventory and release scope](https://huggingface.co/OpenGalaxea/G0-VLA) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

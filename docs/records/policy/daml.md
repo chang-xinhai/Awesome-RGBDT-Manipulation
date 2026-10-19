@@ -36,7 +36,7 @@ Domain-adaptive meta-learning lets a robot imitate one human demonstration despi
 | Release: code | Available [2](https://sites.google.com/view/daml) [3](https://github.com/tianheyu927/mil)  |
 | Release: weights | Not verified [2](https://sites.google.com/view/daml)  |
 | Release: data | Partial [2](https://sites.google.com/view/daml)  |
-| Release: license | Not verified [2](https://sites.google.com/view/daml)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://sites.google.com/view/daml) [4](https://github.com/tianheyu927/mil/blob/master/LICENSE)  |
 | Release: notes | The shared original MIL repository explicitly implements both papers and documents the July 2018 learned-temporal-loss DAML experiment. No separate tianheyu927/daml repository is assumed. [2](https://sites.google.com/view/daml)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Domain-adaptive meta-learning lets a robot imitate one human demonstration despi
 1. [Original paper / author report](https://arxiv.org/abs/1802.01557) — Original full paper and supplementary experimental / implementation details; deployment inputs are separated from supervision and benchmark state.
 2. [Official project](https://sites.google.com/view/daml) — Author-linked project and current release checked on the catalog cutoff.
 3. [Verified official code artifact](https://github.com/tianheyu927/mil) — Author project / repository cross-link verified; current release distinguished from original paper experiments.
+4. [Actual repository code license](https://github.com/tianheyu927/mil/blob/master/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

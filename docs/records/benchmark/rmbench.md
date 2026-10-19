@@ -8,7 +8,7 @@ RMBench: Memory-Dependent Robotic Manipulation Benchmark with Insights into Poli
 
 **2026-03-01 · Preprint · HKU / Peking University / Shanghai AI Laboratory**
 
-**[Paper](https://arxiv.org/abs/2603.01229)** · [Project](https://rmbench.github.io/) · [Code](https://github.com/RoboTwin-Platform/RMBench) · [Data](https://huggingface.co/qiuly/Mem-0-m1mix-dataset-RMBench) · [Weights](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench)
+**[Paper](https://arxiv.org/abs/2603.01229)** · [Project](https://rmbench.github.io/) · [Code](https://github.com/RoboTwin-Platform/RMBench) · [Data](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench) · [Weights](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench)
 
 Introduces nine history-dependent tasks and a modular policy that combines explicit planning memories, visual execution memory and learned subtask termination.
 
@@ -34,11 +34,11 @@ Introduces nine history-dependent tasks and a modular policy that combines expli
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Available [2](https://github.com/RoboTwin-Platform/RMBench) [3](https://github.com/RoboTwin-Platform/RMBench#-updates)  |
-| Release: weights | Available [2](https://github.com/RoboTwin-Platform/RMBench) [3](https://github.com/RoboTwin-Platform/RMBench#-updates)  |
-| Release: data | Available [2](https://github.com/RoboTwin-Platform/RMBench) [3](https://github.com/RoboTwin-Platform/RMBench#-updates)  |
-| Release: license | Not reported [2](https://github.com/RoboTwin-Platform/RMBench) [3](https://github.com/RoboTwin-Platform/RMBench#-updates)  |
-| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [2](https://github.com/RoboTwin-Platform/RMBench) [3](https://github.com/RoboTwin-Platform/RMBench#-updates)  |
+| Release: code | Available [6](https://github.com/RoboTwin-Platform/RMBench) [7](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench) [8](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench)  |
+| Release: weights | Available [6](https://github.com/RoboTwin-Platform/RMBench) [7](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench) [8](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench)  |
+| Release: data | Available [6](https://github.com/RoboTwin-Platform/RMBench) [7](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench) [8](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [5](https://github.com/RoboTwin-Platform/RMBench/blob/main/LICENSE) [6](https://github.com/RoboTwin-Platform/RMBench) [7](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench)  |
+| Release: notes | The author README links the actual HF datasets/qiuly/Mem-0-m1mix-dataset-RMBench repository, whose inventory contains LeRobot episode parquet and media files. The prior catalog URL omitted /datasets/; it is corrected independently of the separate Mem-0 model repositories. Full paper-scale reproduction was not attempted. [6](https://github.com/RoboTwin-Platform/RMBench) [7](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench) [8](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench)  |
 
 **Task names — Complete published9-task simulation suite:**
 
@@ -60,6 +60,10 @@ Introduces nine history-dependent tasks and a modular policy that combines expli
 **Primary evidence**
 
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2603.01229) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
-2. [Official policy implementation](https://github.com/RoboTwin-Platform/RMBench) — Source and checkpoint availability checked separately; no local policy execution was performed.
-3. [Official checkpoint release update, 2026-07-14](https://github.com/RoboTwin-Platform/RMBench#-updates) — Original weights lost; released M(1) jointly retrained and M(n) per-task execution checkpoints need version qualification.
+2. [Official policy implementation](https://github.com/RoboTwin-Platform/RMBench) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Official checkpoint release update, 2026-07-14](https://github.com/RoboTwin-Platform/RMBench#-updates) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
 4. [Data collection method and scope](https://arxiv.org/abs/2603.01229) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+5. [Actual repository code license](https://github.com/RoboTwin-Platform/RMBench/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.
+6. [Current artifact inventory and release scope](https://github.com/RoboTwin-Platform/RMBench) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+7. [Current artifact inventory and release scope](https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+8. [Current artifact inventory and release scope](https://huggingface.co/qiuly/Mem-0-m1mix-RMBench) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

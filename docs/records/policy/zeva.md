@@ -8,7 +8,7 @@ Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation
 
 **2026-08-31 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2608.30880)** · [Project](https://air-embodied-brain.github.io/Zeva)
+**[Paper](https://arxiv.org/abs/2608.30880)** · [Project](https://air-embodied-brain.github.io/Zeva) · [Code](https://github.com/air-embodied-brain/Zeva) · [Weights](https://huggingface.co/chen123fu/zeva-robocasa)
 
 Uses a learned causal transition encoder and two-timescale interaction memory to condition a frozen robot policy on observed action effects.
 
@@ -33,11 +33,11 @@ Uses a learned causal transition encoder and two-timescale interaction memory to
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — RoboCasa overlay and case-study implementation [2](https://github.com/air-embodied-brain/Zeva) [3](https://huggingface.co/chen123fu/zeva-robocasa)  |
+| Release: weights | Partial — RoboCasa checkpoint and memory adapters [2](https://github.com/air-embodied-brain/Zeva) [3](https://huggingface.co/chen123fu/zeva-robocasa)  |
+| Release: data | Not verified [2](https://github.com/air-embodied-brain/Zeva) [3](https://huggingface.co/chen123fu/zeva-robocasa)  |
+| Release: license | OpenMDW-1.1 in actual code LICENSE and released RoboCasa model LICENSE; external Cosmos/GR00T models and datasets retain separate terms. [2](https://github.com/air-embodied-brain/Zeva) [3](https://huggingface.co/chen123fu/zeva-robocasa)  |
+| Release: notes | Official code is an overlay for Cosmos-RL with a locked five-task RoboCasa reproduction protocol and cross-attempt case studies. The public zeva-robocasa inventory contains stage1/stage2 weights, PIM adapter and stage3 case-study checkpoints. The generic chen123fu/zeva endpoint returned 401, so availability is scoped to the independently verified RoboCasa release. [2](https://github.com/air-embodied-brain/Zeva) [3](https://huggingface.co/chen123fu/zeva-robocasa)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,5 @@ Uses a learned causal transition encoder and two-timescale interaction memory to
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2608.30880) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Current artifact inventory and release scope](https://github.com/air-embodied-brain/Zeva) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+3. [Current artifact inventory and release scope](https://huggingface.co/chen123fu/zeva-robocasa) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

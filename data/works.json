@@ -139,7 +139,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Not reported",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
     },
     "evidence": [
@@ -175,6 +175,14 @@
           "links"
         ],
         "note": "Repository provides policy training, evaluation and model links."
+      },
+      {
+        "url": "https://github.com/Garfield-kh/FastVLA/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -190,7 +198,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "adarsi",
@@ -1242,11 +1250,11 @@
       "evaluation": "Real-world mobile cleanup and simulation on LIBERO, LIBERO-Pro, LIBERO-Plus and RoboTwin."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "Apache-2.0 for repository code, verified from LICENSE; external models, simulator assets and datasets retain separate terms.",
+      "notes": "Public agent, hierarchical skill-evolution and evaluation implementations are present, including LIBERO/PRO/Plus reproduction scripts, RoboTwin integration and robot-interface guides. Upstream LIBERO-Pro assets are dependencies, not a newly released RoboRSI training corpus; no separate learned task-policy checkpoint was verified."
     },
     "evidence": [
       {
@@ -1270,6 +1278,15 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/nssmd/RoboRSI",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -1285,7 +1302,7 @@
         "note": "Figure 2: A multi-agent skill hierarchy uses Top-down Skill Refinement to diagnose execution failures and revise reusable base, atomic and compound skills."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "coap",
@@ -2112,7 +2129,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Available",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official repository contains training/evaluation recipes and UniVTAC-derived data instructions."
     },
     "evidence": [
@@ -2155,6 +2172,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/Kenn3o3/Vista/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -2170,13 +2195,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Available",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official repository contains training/evaluation recipes and UniVTAC-derived data instructions."
       }
     },
@@ -2234,7 +2259,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Project links official implementation and model hub; dataset release not independently resolved."
     },
     "evidence": [
@@ -2277,6 +2302,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/ccyydd/SimpleTouch/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -2292,13 +2325,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Available",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Project links official implementation and model hub; dataset release not independently resolved."
       }
     },
@@ -2757,7 +2790,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2610.01939",
       "project": "https://dagroup-pku.github.io/PyRUA-Lean/",
-      "code": "https://github.com/DAGroup-PKU/PyRUA-Lean"
+      "code": "https://github.com/DAGroup-PKU/PyRUA-Lean",
+      "weights": "https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B"
     },
     "policy": {
       "family": "Robot agent",
@@ -2773,11 +2807,11 @@
       "evaluation": "700 instances across LIBERO-Pro, RoboTwin 2.0 and RoboCasa365; additional RoboDojo evaluation without a VLA or privileged state."
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not applicable",
+      "code": "Available",
+      "weights": "Available — PyRUA-Lean Coder v0.1-4B",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "Apache-2.0 code and Coder checkpoint, verified from repository LICENSE and model LICENSE; external backbones/assets retain separate terms.",
+      "notes": "Actual Python-cell runtime, simulator backends and RoboDojo/XPolicyLab adapter are public. The separate GRPO-trained Coder v0.1-4B repository contains model.safetensors and model-extra-00001.safetensors. Physical-robot integration is still marked coming soon; hosted Astra and the released trained coder are separate branches."
     },
     "evidence": [
       {
@@ -2801,6 +2835,24 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/DAGroup-PKU/PyRUA-Lean",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -2816,7 +2868,7 @@
         "note": "Figure 2: Uses Python cells to compose existing robot primitives with control flow and selective feedback, reducing repeated model calls relative to tool-by-tool execution."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "urai",
@@ -3751,11 +3803,11 @@
       "evaluation": "Six RMBench tasks, knowledge-repair audits and zero-shot frozen-knowledge transfer to RoboDojo. Three real AgileX Cobot Magic tasks compare transferred frozen knowledge with knowledge refined through physical interaction: Cover with Assigned Cups, Press by Digit–Color Mapping, and Uncover, Count, and Press."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "Apache-2.0 original code, verified from LICENSE; vendored code, external policies, datasets and simulator assets retain separate terms.",
+      "notes": "Public implementation contains the agent, hierarchical knowledge evolution, RMBench/LIBERO-Pro/RoboDojo integrations and run configurations. External simulator assets and policy/SAM3 checkpoints are installed separately; no new method-specific weight or full rollout-corpus release was verified."
     },
     "evidence": [
       {
@@ -3779,6 +3831,15 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/RUCKBReasoning/RoboHarn-Evo",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -3794,7 +3855,7 @@
         "note": "Figure 2: Retains task-level and action-level physical knowledge and repairs or deactivates entries using interaction evidence."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "astra-embodied-policies",
@@ -5242,7 +5303,8 @@
       "Humanoid"
     ],
     "links": {
-      "paper": "https://arxiv.org/abs/2609.29166"
+      "paper": "https://arxiv.org/abs/2609.29166",
+      "project": "https://darwin-agent.github.io/HarnessPAI/"
     },
     "policy": {
       "family": "Hybrid",
@@ -5258,11 +5320,11 @@
       "evaluation": "RoboCasa, BEHAVIOR-1K and diverse physical platforms, including desktop arms, vacuum / mobile systems and legged robots."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Not released",
       "weights": "Not verified",
       "data": "Not verified",
       "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "notes": "The official homepage and author repository are accessible, but the repository release-status section marks code coming soon; the tree contains presentation assets and no actual implementation. No method-specific weight or data release was independently verified."
     },
     "evidence": [
       {
@@ -5293,7 +5355,7 @@
         "note": "Figure 8: Task, skill and executable-code memories surround a planner that invokes perception, control and action-model primitives."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "adahvla",
@@ -5326,7 +5388,8 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2609.29204",
-      "code": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA"
+      "code": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA",
+      "data": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz"
     },
     "policy": {
       "family": "Hybrid",
@@ -5342,11 +5405,11 @@
       "evaluation": "Long-horizon manipulation and NaVILA-LH navigation, including real deployments and multiple frozen VLA backbones."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Partial — navigation harness and adaptation implementation",
       "weights": "Not applicable",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "data": "Partial — bundled NaVILA-LH episode definitions",
+      "license": "Apache-2.0 code, verified from LICENSE; navigation assets and upstream NaVILA weights retain separate terms.",
+      "notes": "Actual harness.py, adaptation.py and evaluation scripts are released for the Go2/NaVILA navigation setting, with benchmarks/navila-LH/dataset.json.gz (50 episode definitions). This does not establish a complete release of the manipulation experiments; the NaVILA checkpoint is an upstream dependency, not an AdaHVLA-trained model."
     },
     "evidence": [
       {
@@ -5370,6 +5433,24 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -5385,7 +5466,7 @@
         "note": "Figure 2: Adapts an executable harness around frozen robot / navigation policies through isolated analysis, revision and assessment contexts."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "embodiedswe",
@@ -5420,7 +5501,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2609.27308",
       "project": "https://embodiedswe.github.io",
-      "code": "https://github.com/EmbodiedSWE/EmbodiedSWE"
+      "code": "https://github.com/EmbodiedSWE/EmbodiedSWE",
+      "data": "https://huggingface.co/datasets/EmbodiedSWE/robobench-assets"
     },
     "policy": {
       "family": "Hybrid",
@@ -5436,11 +5518,11 @@
       "evaluation": "28 long-horizon simulated tasks, including dexterous / contact / deformable settings, and a selected real-transfer policy."
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not applicable",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "code": "Available",
+      "weights": "Not verified",
+      "data": "Partial — task assets and generation tooling",
+      "license": "Apache-2.0 code, verified from LICENSE; the task-asset card declares Apache-2.0 with NOTICE/provenance qualifications. External assets and models retain separate terms.",
+      "notes": "The current tree contains benchmark/task execution, coding-agent evaluation, RL, trajectory-diversification and VLA conversion/training tools. EmbodiedSWE/robobench-assets contains actual task/robot/room tar bundles, not a released corpus of every generated demonstration or the reported sim-to-real policy checkpoint."
     },
     "evidence": [
       {
@@ -5464,6 +5546,24 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/EmbodiedSWE/EmbodiedSWE",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/EmbodiedSWE/robobench-assets",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -5479,7 +5579,7 @@
         "note": "Figure 1: Uses coding agents to solve long-horizon simulator-control tasks, then diversifies verified programs into demonstrations for visuomotor policy training."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "rsi-123-rounds",
@@ -5986,7 +6086,9 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2609.24271",
-      "code": "https://github.com/MachEmbodied/ME-Brain-1.0"
+      "code": "https://github.com/MachEmbodied/Focus-VLWA",
+      "project": "https://github.com/MachEmbodied/ME-Brain-1.0",
+      "weights": "https://huggingface.co/zhengjingxie/focus-vlwa"
     },
     "policy": {
       "family": "Hybrid",
@@ -6002,11 +6104,11 @@
       "evaluation": "Embodied manipulation benchmarks and real-world experience-transfer / adaptation studies, with separate Cognitive Core and action-model ablations."
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
+      "code": "Partial — Focus-VLWA action component",
+      "weights": "Partial — Focus-VLWA action checkpoint",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "Apache-2.0 for Focus-VLWA and umbrella repository code, verified from their LICENSE files; model checkpoint license not stated in the inspected HF card. External backbones retain separate terms.",
+      "notes": "The ME-Brain umbrella is primarily a component index. Its linked Focus-VLWA repository actually contains post-training, data conversion and inference implementation; the official checkpoint inventory includes model.safetensors, model_config.json and ARX-X5 normalization statistics. This is an action-component release, not a verified complete Cognitive Core/Evolvable Memory stack or full-system checkpoint."
     },
     "evidence": [
       {
@@ -6030,6 +6132,24 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/MachEmbodied/Focus-VLWA",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/zhengjingxie/focus-vlwa",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -6044,7 +6164,7 @@
         "note": "Figure 1: Combines hierarchical multimodal memory, a skill-using Cognitive Core and a world-aware action model to retain experience across deployment."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "robodawn",
@@ -6507,7 +6627,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2609.19138",
       "project": "https://cheng-haha.github.io/GPT-Policy",
-      "code": "https://github.com/cheng-haha/GPT-Policy"
+      "code": "https://github.com/cheng-haha/GPT-Policy",
+      "data": "https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts"
     },
     "policy": {
       "family": "Robot agent",
@@ -6523,11 +6644,11 @@
       "evaluation": "Ten real-robot tasks with three trials per task / context condition; reference and model ablations."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available — source for review/evaluation; redistribution license pending",
       "weights": "Not applicable",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Uses a hosted or pre-existing frozen model; the paper introduces a robot interface or agent system rather than new base-model weights."
+      "data": "Partial — ten-task RoboDojo demonstration contexts",
+      "license": "License pending: actual repository LICENSE grants no redistribution or commercial-use license. Context dataset has separate LICENSE.txt/THIRD_PARTY.md terms; no blanket open-source claim.",
+      "notes": "Actual ARX/YAM harness, hardware adapters and RoboDojo backend are public. The dataset contains ten-task context packages, selected frames and numeric action references, reproduction tools and integrity checks. It does not include all physical experiment prompts/recordings. The actual LICENSE restricts this preview to review/evaluation rather than granting redistribution or commercial use."
     },
     "evidence": [
       {
@@ -6551,6 +6672,24 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/cheng-haha/GPT-Policy",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -6566,7 +6705,7 @@
         "note": "Figure 2: A frozen VLM combines task references, current observations and persistent interaction history to select constrained Cartesian robot tools."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "unidex-vitac",
@@ -7007,7 +7146,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2609.12541",
       "project": "https://agent-as-policy-2026.github.io/",
-      "code": "https://github.com/agent-as-policy-2026/agent-as-policy"
+      "code": "https://github.com/agent-as-policy-2026/agent-as-policy",
+      "data": "https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy"
     },
     "policy": {
       "family": "Robot agent",
@@ -7023,11 +7163,11 @@
       "evaluation": "Physical video-guided assembly, image-guided construction, dice flipping, targeted throwing and bimanual towel folding."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not applicable",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Uses a hosted or pre-existing frozen model; the paper introduces a robot interface or agent system rather than new base-model weights."
+      "data": "Available — published session/trajectory bundles",
+      "license": "Apache-2.0 original code, verified from LICENSE; published dataset card declares CC BY 4.0. Vendored SDK/connectors retain MIT/Apache notices.",
+      "notes": "Current source contains real-arm/camera bridge, calibration, experiment harness, task-result artifacts and a separate RoboDojo adapter. The official HF dataset inventory includes captures/ tar bundles, videos/, traces/ and trials/ files for observations, video, joints and agent traces; coverage is the published sessions, not an inferred complete reproduction of every trial."
     },
     "evidence": [
       {
@@ -7051,6 +7191,24 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/agent-as-policy-2026/agent-as-policy",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -7066,7 +7224,7 @@
         "note": "Figure 1: General coding agents write and select robot programs from multimodal feedback on physical manipulation tasks, while experience files support repeated-run refinement and transfer."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "mopa",
@@ -7118,7 +7276,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not reported",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
     },
     "evidence": [
@@ -7144,6 +7302,14 @@
           "release"
         ],
         "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -7158,7 +7324,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "attention-dp3",
@@ -8204,10 +8370,10 @@
     },
     "release": {
       "code": "Available",
-      "weights": "Available",
+      "weights": "Gated — automatic Hugging Face access terms",
       "data": "Not verified",
       "license": "Apache-2.0 (official code); model/data terms not verified",
-      "notes": "Official standalone training/inference code and base/DROID/SO101 weights released."
+      "notes": "Official standalone training/inference code and base/DROID/SO101 weights released. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
     },
     "evidence": [
       {
@@ -8233,10 +8399,27 @@
         "url": "https://github.com/black-forest-labs/flux-action",
         "label": "Official released code",
         "fields": [
-          "release",
           "policy.controlRate"
         ],
-        "note": "Base/guidance-distilled/step-distilled packages and deployment."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/black-forest-labs/flux-action",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/black-forest-labs/flux-3-action-droid",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -8252,14 +8435,14 @@
         "note": "Official Figure3 is inline SVG. Exact author vector extracted to sources/rgbd/flux3-action-official-architecture.svg for local rendering; attribution remains this report."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
-        "weights": "Available",
+        "weights": "Gated — automatic Hugging Face access terms",
         "data": "Not verified",
         "license": "Apache-2.0 (official code); model/data terms not verified",
-        "notes": "Official standalone training/inference code and base/DROID/SO101 weights released."
+        "notes": "Official standalone training/inference code and base/DROID/SO101 weights released. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
       }
     },
     "relatedIds": []
@@ -8294,7 +8477,9 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2608.30880",
-      "project": "https://air-embodied-brain.github.io/Zeva"
+      "project": "https://air-embodied-brain.github.io/Zeva",
+      "code": "https://github.com/air-embodied-brain/Zeva",
+      "weights": "https://huggingface.co/chen123fu/zeva-robocasa"
     },
     "policy": {
       "family": "Hybrid",
@@ -8310,11 +8495,11 @@
       "evaluation": "RoboCasa365 and real ChemLab-Evo, with randomized episodes and repeated-attempt fixed-initialization studies."
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
+      "code": "Partial — RoboCasa overlay and case-study implementation",
+      "weights": "Partial — RoboCasa checkpoint and memory adapters",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "OpenMDW-1.1 in actual code LICENSE and released RoboCasa model LICENSE; external Cosmos/GR00T models and datasets retain separate terms.",
+      "notes": "Official code is an overlay for Cosmos-RL with a locked five-task RoboCasa reproduction protocol and cross-attempt case studies. The public zeva-robocasa inventory contains stage1/stage2 weights, PIM adapter and stage3 case-study checkpoints. The generic chen123fu/zeva endpoint returned 401, so availability is scoped to the independently verified RoboCasa release."
     },
     "evidence": [
       {
@@ -8330,6 +8515,24 @@
           "imageCandidates"
         ],
         "note": "Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning."
+      },
+      {
+        "url": "https://github.com/air-embodied-brain/Zeva",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/chen123fu/zeva-robocasa",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -8345,7 +8548,7 @@
         "note": "Figure 2: Uses a learned causal transition encoder and two-timescale interaction memory to condition a frozen robot policy on observed action effects."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "motus2",
@@ -8788,8 +8991,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2608.17962",
       "project": "https://tengbo-yu.github.io/PRISM/",
-      "code": "https://github.com/Tengbo-Yu/PRISM",
-      "data": "https://modelscope.cn/datasets/Turboyuuuu/PRISM"
+      "data": "https://modelscope.cn/datasets/Turboyuuuu/PRISM",
+      "repository": "https://github.com/Tengbo-Yu/PRISM"
     },
     "benchmark": {
       "simulator": "Not applicable — physical dataset",
@@ -8819,11 +9022,11 @@
       "baselines": "Multimodal imitation baselines with controlled sensor / teleoperation comparison; exact model table in paper."
     },
     "release": {
-      "code": "Available",
+      "code": "Not released — inspected repository is the project website",
       "weights": "Not verified",
       "data": "Available",
       "license": "Not verified",
-      "notes": "Official page links data and code; inspect per-platform modality availability in metadata."
+      "notes": "The official GitHub tree contains README/index, site styles, figures and paper PDF, without dataset-processing, collection or policy implementation files and with no release assets. The ModelScope dataset is a separate artifact; website source must not be presented as a released robot/data-processing implementation."
     },
     "evidence": [
       {
@@ -8850,10 +9053,9 @@
         "url": "https://github.com/Tengbo-Yu/PRISM",
         "label": "Official repository",
         "fields": [
-          "release",
           "benchmark.simulatorVersion"
         ],
-        "note": "Current public repository; implementation scope may differ from paper."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://tengbo-yu.github.io/",
@@ -8870,6 +9072,15 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://modelscope.cn/datasets/Turboyuuuu/PRISM",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -8885,14 +9096,14 @@
         "note": "Industrial tasks, robot platforms and sensing breadth."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "benchmark": {
-        "code": "Available",
+        "code": "Not released — inspected repository is the project website",
         "weights": "Not verified",
         "data": "Available",
         "license": "Not verified",
-        "notes": "Official page links data and code; inspect per-platform modality availability in metadata."
+        "notes": "The official GitHub tree contains README/index, site styles, figures and paper PDF, without dataset-processing, collection or policy implementation files and with no release assets. The ModelScope dataset is a separate artifact; website source must not be presented as a released robot/data-processing implementation."
       }
     },
     "relatedIds": []
@@ -8927,7 +9138,8 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2608.16590",
-      "project": "https://air-embodied-brain.github.io/zetta"
+      "project": "https://air-embodied-brain.github.io/zetta",
+      "code": "https://github.com/air-embodied-brain/Zetta-Embodiment"
     },
     "policy": {
       "family": "Hybrid",
@@ -8943,11 +9155,11 @@
       "evaluation": "18 RoboCasa Atomic-Seen tasks, LIBERO-Pro and additional deployment studies."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "No root repository LICENSE found in the inspected tree; bundled and external dependency/model licenses remain separate.",
+      "notes": "Actual LIBERO/RoboCasa/RoboTwin agent/critic implementations, skill evolution and local/Ray rollout infrastructure are public. Simulator dependencies, licensed assets and pretrained policy checkpoints are configured separately; a new Zetta-specific weight or complete rollout-corpus release was not verified."
     },
     "evidence": [
       {
@@ -8963,6 +9175,15 @@
           "imageCandidates"
         ],
         "note": "Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning."
+      },
+      {
+        "url": "https://github.com/air-embodied-brain/Zetta-Embodiment",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -8979,7 +9200,7 @@
         "note": "Figure 2: Supports a frozen VLA with action-frequency critics, episodic recoveries and validated skill evolution at three time scales."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "gigabrain07",
@@ -9601,7 +9822,8 @@
       "Parallel-jaw gripper"
     ],
     "links": {
-      "paper": "https://arxiv.org/abs/2608.01102"
+      "paper": "https://arxiv.org/abs/2608.01102",
+      "project": "https://mrjiangjm.github.io/caat/"
     },
     "policy": {
       "family": "Hybrid",
@@ -9617,11 +9839,11 @@
       "evaluation": "Five UniVTAC tasks; Lift Bottle, Open Box and another real contact task (examples only)"
     },
     "release": {
-      "code": "Not verified",
+      "code": "Not released",
       "weights": "Not verified",
       "data": "Not verified",
       "license": "Not verified",
-      "notes": "No verified public download found in the inspected primary sources."
+      "notes": "The current author code repository contains only README.md and explicitly states training/evaluation code is coming soon. The official project is now accessible; paper plots and the code-repository description do not establish an implementation/checkpoint/dataset release."
     },
     "evidence": [
       {
@@ -9669,14 +9891,14 @@
         "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
-        "code": "Not verified",
+        "code": "Not released",
         "weights": "Not verified",
         "data": "Not verified",
         "license": "Not verified",
-        "notes": "No verified public download found in the inspected primary sources."
+        "notes": "The current author code repository contains only README.md and explicitly states training/evaluation code is coming soon. The official project is now accessible; paper plots and the code-repository description do not establish an implementation/checkpoint/dataset release."
       }
     },
     "relatedIds": []
@@ -10965,7 +11187,7 @@
       "code": "Partial",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified; pretrained backbones and data retain separate terms",
+      "license": "Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Paper and project describe 2.0; the shared repository retains original VA artifacts. Complete 2.0 checkpoint availability remains unresolved."
     },
     "evidence": [
@@ -10999,6 +11221,14 @@
           "release"
         ],
         "note": "Author project and links; scientific figure keeps original rights."
+      },
+      {
+        "url": "https://github.com/Robbyant/lingbot-va/blob/main/LICENSE.txt",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -11014,7 +11244,7 @@
         "note": "Architecture or method overview showing the paper’s observation encoders, learning pathway, and action prediction components."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "harness-vla",
@@ -12170,7 +12400,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Not reported",
+      "license": "Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
     },
     "evidence": [
@@ -12196,6 +12426,14 @@
           "release"
         ],
         "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+      },
+      {
+        "url": "https://github.com/amap-cvlab/ABot-Manipulation/blob/main/LICENSE.txt",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -12210,7 +12448,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "aspire",
@@ -12555,9 +12793,9 @@
     "release": {
       "code": "Available",
       "weights": "Not verified",
-      "data": "Available",
+      "data": "Gated — automatic Hugging Face access terms",
       "license": "Not verified",
-      "notes": "Project/data public; code and per-dataset terms should be inspected separately."
+      "notes": "Project/data public; code and per-dataset terms should be inspected separately. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
     },
     "evidence": [
       {
@@ -12584,10 +12822,9 @@
         "url": "https://github.com/LannWei/Tactile_Database",
         "label": "Official repository",
         "fields": [
-          "release",
           "benchmark.simulatorVersion"
         ],
-        "note": "Current public repository; implementation scope may differ from paper."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.70169",
@@ -12606,6 +12843,24 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/LannWei/Tactile_Database",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/Lan-2025/Tactile",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -12628,14 +12883,14 @@
         "note": "Official perception task materials."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
         "weights": "Not verified",
-        "data": "Available",
+        "data": "Gated — automatic Hugging Face access terms",
         "license": "Not verified",
-        "notes": "Project/data public; code and per-dataset terms should be inspected separately."
+        "notes": "Project/data public; code and per-dataset terms should be inspected separately. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
       }
     },
     "relatedIds": []
@@ -12900,7 +13155,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not reported",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
     },
     "evidence": [
@@ -12926,6 +13181,14 @@
           "release"
         ],
         "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -12941,7 +13204,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "enpire",
@@ -12992,11 +13255,11 @@
       "evaluation": "Real bimanual YAM manipulation including pin-box, zip-tie and tool-use settings; Gym-PushT and RoboCasa365 simulations."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "Apache-2.0 code, verified from LICENSE; THIRD_PARTY_NOTICES.md and THIRD_PARTY_LICENSES.md preserve external terms.",
+      "notes": "Actual environment/station APIs, code-as-policy agent, autonomous experiment tooling and actor/learner training runtime are public. Real runs require station calibration, reset/reward definitions and external model/asset setup. No standalone final policy checkpoint or full interaction corpus was independently identified."
     },
     "evidence": [
       {
@@ -13020,6 +13283,15 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/NVlabs/ENPIRE",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -13036,7 +13308,7 @@
         "note": "Figure 2: Environment preparation, policy improvement, rollout collection and coding-agent evolution form the autonomous robot-learning loop."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "playful",
@@ -13413,7 +13685,7 @@
       "weights": "Not applicable",
       "data": "Not verified",
       "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "notes": "The official project links HELIX, a general codebase-evolution framework. Its source and BSD-3-Clause LICENSE do not independently establish release of the robot-specific Rho runtime, task checkpoints or corpus; those remain unverified."
     },
     "evidence": [
       {
@@ -13444,7 +13716,7 @@
         "note": "Figure 1: A tool-enabled coding agent mutates complete robot-policy repositories; gated evaluation and a Pareto frontier retain useful program variants."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "lawam",
@@ -13829,7 +14101,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official repository links pretraining and six UniVTAC checkpoints, dataset and fine-tuning/deployment recipes."
     },
     "evidence": [
@@ -13872,6 +14144,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/michaelyuancb/ftp1-policy/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -13887,13 +14167,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Available",
         "data": "Available",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official repository links pretraining and six UniVTAC checkpoints, dataset and fine-tuning/deployment recipes."
       }
     },
@@ -14248,7 +14528,7 @@
       "weights": "Not verified",
       "data": "Not verified",
       "license": "Not verified",
-      "notes": "No verified public download found in the inspected primary sources."
+      "notes": "The current official project links openpi-RLT, whose actual implementation identifies itself as an RLT-style real-robot reproduction. This does not establish release of the paper’s full wrench-aware TORL-VLA system, task-specific checkpoint or corpus; those remain unverified."
     },
     "evidence": [
       {
@@ -14268,10 +14548,9 @@
         "url": "https://torl-vla.github.io/",
         "label": "Author project page",
         "fields": [
-          "release",
           "links"
         ],
-        "note": "Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://arxiv.org/html/2606.09337",
@@ -14305,14 +14584,14 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Not verified",
         "weights": "Not verified",
         "data": "Not verified",
         "license": "Not verified",
-        "notes": "No verified public download found in the inspected primary sources."
+        "notes": "The current official project links openpi-RLT, whose actual implementation identifies itself as an RLT-style real-robot reproduction. This does not establish release of the paper’s full wrench-aware TORL-VLA system, task-specific checkpoint or corpus; those remain unverified."
       }
     },
     "relatedIds": []
@@ -14562,7 +14841,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official repository contains training/inference and model download instructions."
     },
     "evidence": [
@@ -14605,6 +14884,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/LYFCLOUDFAN/Dream-Tac/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -14620,13 +14907,13 @@
         "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Available",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official repository contains training/inference and model download instructions."
       }
     },
@@ -15002,10 +15289,10 @@
     },
     "release": {
       "code": "Available",
-      "weights": "Available",
+      "weights": "Gated — automatic Hugging Face access terms",
       "data": "Not verified",
       "license": "Not verified",
-      "notes": "Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy."
+      "notes": "Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
     },
     "evidence": [
       {
@@ -15014,20 +15301,36 @@
         "fields": [
           "title",
           "date",
-          "policy",
-          "release"
+          "policy"
         ],
-        "note": "Research-report facts and current executable release are scoped separately; undated releases retain an unknown publication date."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/OpenGalaxea/GalaxeaVLA",
         "label": "Official implementation / author-contributed adapter",
         "fields": [
           "policy.inputs",
-          "policy.outputs",
-          "release.code"
+          "policy.outputs"
         ],
-        "note": "Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/OpenGalaxea/GalaxeaVLA",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/OpenGalaxea/G05",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -15042,7 +15345,7 @@
         "note": "Figure 1 top-left is the autoregressive RGB/state→reasoning/action-code→ActionCodec pipeline; crop method panel from page1."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "tau0-wm",
@@ -15633,7 +15936,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Available",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official code, task/perturbation catalogue and appendix public."
     },
     "evidence": [
@@ -15673,6 +15976,14 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/jstmn/ColosseumV2/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -15688,13 +15999,13 @@
         "note": "Official 28-task and perturbation overview."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Available",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official code, task/perturbation catalogue and appendix public."
       }
     },
@@ -16427,7 +16738,7 @@
       "code": "Partial",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official repository primarily exposes inference; external GO-1 backbone required."
     },
     "evidence": [
@@ -16470,6 +16781,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/clorislili/AT-VLA/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -16484,13 +16803,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Partial",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official repository primarily exposes inference; external GO-1 backbone required."
       }
     },
@@ -18439,11 +18758,11 @@
       "evaluation": "Six interaction categories, unseen objects/geometries and external disturbances"
     },
     "release": {
-      "code": "Available",
+      "code": "Not released — repository contains license and website material only",
       "weights": "Not verified",
       "data": "Available",
-      "license": "Not verified",
-      "notes": "Project links learning code, hardware and dataset; model checkpoint scope not independently verified."
+      "license": "MIT for currently published repository material, verified from LICENSE; no policy implementation release was found, and data/model terms remain separate.",
+      "notes": "The current main branch contains only LICENSE; the webpage branch contains project-site material and there are no GitHub release assets. This does not establish the advertised learning/hardware implementation. The separately linked OmniVitac dataset remains independently available; code, data and weights are distinct."
     },
     "evidence": [
       {
@@ -18463,10 +18782,9 @@
         "url": "https://github.com/MrSecant/OmniVTA",
         "label": "Official repository",
         "fields": [
-          "release",
           "links"
         ],
-        "note": "Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://arxiv.org/html/2603.19201",
@@ -18485,6 +18803,32 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/MrSecant/OmniVTA/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
+      },
+      {
+        "url": "https://github.com/MrSecant/OmniVTA",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/tars-robotics/OmniVitac",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -18500,14 +18844,14 @@
         "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
-        "code": "Available",
+        "code": "Not released — repository contains license and website material only",
         "weights": "Not verified",
         "data": "Available",
-        "license": "Not verified",
-        "notes": "Project links learning code, hardware and dataset; model checkpoint scope not independently verified."
+        "license": "MIT for currently published repository material, verified from LICENSE; no policy implementation release was found, and data/model terms remain separate.",
+        "notes": "The current main branch contains only LICENSE; the webpage branch contains project-site material and there are no GitHub release assets. This does not establish the advertised learning/hardware implementation. The separately linked OmniVitac dataset remains independently available; code, data and weights are distinct."
       }
     },
     "relatedIds": []
@@ -20012,7 +20356,7 @@
       "paper": "https://arxiv.org/abs/2603.01229",
       "project": "https://rmbench.github.io/",
       "code": "https://github.com/RoboTwin-Platform/RMBench",
-      "data": "https://huggingface.co/qiuly/Mem-0-m1mix-dataset-RMBench",
+      "data": "https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench",
       "weights": "https://huggingface.co/qiuly/Mem-0-m1mix-RMBench"
     },
     "policy": {
@@ -20032,8 +20376,8 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not reported",
-      "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
+      "notes": "The author README links the actual HF datasets/qiuly/Mem-0-m1mix-dataset-RMBench repository, whose inventory contains LeRobot episode parquet and media files. The prior catalog URL omitted /datasets/; it is corrected independently of the separate Mem-0 model repositories. Full paper-scale reproduction was not attempted."
     },
     "evidence": [
       {
@@ -20054,20 +20398,18 @@
         "url": "https://github.com/RoboTwin-Platform/RMBench",
         "label": "Official policy implementation",
         "fields": [
-          "links",
-          "release"
+          "links"
         ],
-        "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/RoboTwin-Platform/RMBench#-updates",
         "label": "Official checkpoint release update, 2026-07-14",
         "fields": [
-          "release",
           "caveats",
           "benchmark.protocol"
         ],
-        "note": "Original weights lost; released M(1) jointly retrained and M(n) per-task execution checkpoints need version qualification."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://arxiv.org/abs/2603.01229",
@@ -20076,6 +20418,41 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/RoboTwin-Platform/RMBench/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
+      },
+      {
+        "url": "https://github.com/RoboTwin-Platform/RMBench",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/qiuly/Mem-0-m1mix-dataset-RMBench",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/qiuly/Mem-0-m1mix-RMBench",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -20098,7 +20475,7 @@
         "note": "Figure 1 presents all 9memory-dependent task families and execution steps; use this in benchmark context."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "benchmarkName": "RMBench",
     "policyName": "Mem-0",
     "collectionSummaries": {
@@ -20605,7 +20982,9 @@
     "links": {
       "paper": "https://arxiv.org/abs/2602.11075",
       "project": "https://opendrivelab.com/RISE/",
-      "code": "https://github.com/OpenDriveLab/RISE"
+      "code": "https://github.com/OpenDriveLab/RISE",
+      "weights": "https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained",
+      "data": "https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data"
     },
     "policy": {
       "family": "World-action model",
@@ -20621,11 +21000,11 @@
       "evaluation": "Three real-world tasks: Dynamic Brick Sorting, Backpack Packing and Box Closing."
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "code": "Available",
+      "weights": "Partial — pretrained dynamics model",
+      "data": "Partial — sample HDF5 trajectories",
+      "license": "README declares Apache-2.0 code but no root LICENSE was found; bundled upstream notices remain separate. Official RISE_Assets card declares CC BY-NC-SA 4.0 for released dynamics/sample assets.",
+      "notes": "Training code for offline policy/value, dynamics and online RL plus Piper deployment is present. The official RISE_Assets inventory contains dynamics_model/pretrained/diffusion_pytorch_model.safetensors and sample_data/hdf5/ backpack-packing episodes. These artifacts do not establish release of every optimized task-policy checkpoint or the full training corpus."
     },
     "evidence": [
       {
@@ -20649,6 +21028,33 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/OpenDriveLab/RISE",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/sample_data",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/OpenDriveLab-org/RISE_Assets/tree/main/dynamics_model/pretrained",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -20664,7 +21070,7 @@
         "note": "Figure 4: Learns a compositional visual world model and progress-based value model, then improves a robot policy through imagined rollouts rather than repeated physical exploration."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "abot-m0",
@@ -20717,7 +21123,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Not reported",
+      "license": "Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
     },
     "evidence": [
@@ -20743,6 +21149,14 @@
           "release"
         ],
         "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+      },
+      {
+        "url": "https://github.com/amap-cvlab/ABot-Manipulation/blob/main/LICENSE.txt",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -20758,7 +21172,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "vla-jepa",
@@ -21728,7 +22142,7 @@
       "code": "Partial",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Author repository is public; checked download scope does not establish complete policy/checkpoint availability."
     },
     "evidence": [
@@ -21771,6 +22185,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/mrHuangyz/TaF-VLA/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -21786,13 +22208,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Partial",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Author repository is public; checked download scope does not establish complete policy/checkpoint availability."
       }
     },
@@ -22178,7 +22600,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Apache-2.0 model card; exact repository and third-party component terms separate",
+      "license": "MIT repository code, verified from actual LICENSE; the linked model card separately declares Apache-2.0 for its checkpoint. Third-party terms remain separate.",
       "notes": "Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy."
     },
     "evidence": [
@@ -22188,27 +22610,43 @@
         "fields": [
           "title",
           "date",
-          "policy",
-          "release"
+          "policy"
         ],
-        "note": "Research-report facts and current executable release are scoped separately; undated releases retain an unknown publication date."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/Spirit-AI-Team/spirit-v1.5",
         "label": "Official implementation / author-contributed adapter",
         "fields": [
           "policy.inputs",
-          "policy.outputs",
-          "release.code"
+          "policy.outputs"
         ],
-        "note": "Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/Spirit-AI-Team/spirit-v1.5",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
       "Official blog provides data/benchmark figures but no verified policy-architecture figure; no results plot substituted."
     ],
     "imageCandidates": [],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "internvla-a1",
@@ -22785,7 +23223,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Benchmark implementation, dataset conversion, checkpoints and leaderboard public."
     },
     "evidence": [
@@ -22825,6 +23263,14 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/PKU-Alignment/VLA-Arena/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -22840,13 +23286,13 @@
         "note": "Four capability dimensions, task levels and independent perturbation structure."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
         "weights": "Available",
         "data": "Available",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Benchmark implementation, dataset conversion, checkpoints and leaderboard public."
       }
     },
@@ -24629,7 +25075,7 @@
       "code": "Available",
       "weights": "Partial",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Repository provides training/evaluation; simulation checkpoint is not evidence for full real RGBDT release."
     },
     "evidence": [
@@ -24672,6 +25118,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/ZhuoyangLiu2005/MLA/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -24687,13 +25141,13 @@
         "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Partial",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Repository provides training/evaluation; simulation checkpoint is not evidence for full real RGBDT release."
       }
     },
@@ -24981,9 +25435,9 @@
     "release": {
       "code": "Available",
       "weights": "Available",
-      "data": "Available",
+      "data": "Gated — automatic Hugging Face access terms",
       "license": "Not reported",
-      "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
+      "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
     },
     "evidence": [
       {
@@ -25004,10 +25458,36 @@
         "url": "https://github.com/OpenGalaxea/GalaxeaVLA",
         "label": "Official policy implementation",
         "fields": [
+          "links"
+        ],
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/OpenGalaxea/GalaxeaVLA",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
           "links",
           "release"
         ],
-        "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/OpenGalaxea/G0-VLA",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -25023,7 +25503,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "memoryvla",
@@ -25840,7 +26320,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Apache-2.0",
+      "license": "MIT original code, verified from actual LICENSE; derived VILA portions retain Apache-2.0 notices and model/data terms remain separate.",
       "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
     },
     "evidence": [
@@ -25862,18 +26342,44 @@
         "url": "https://github.com/RchalYang/EgoVLA_Release",
         "label": "Official policy implementation",
         "fields": [
-          "links",
-          "release"
+          "links"
         ],
-        "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://raw.githubusercontent.com/RchalYang/EgoVLA_Release/main/LICENSE",
         "label": "Repository license file",
         "fields": [
-          "release.license"
+          "links"
         ],
-        "note": "Code scope; model, data and third-party component terms can differ."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/RchalYang/EgoVLA_Release",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/rchal97/egovla",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -25888,7 +26394,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "tactile-vla",
@@ -26237,7 +26743,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Author project links implementation; weights/data download scope not verified."
     },
     "evidence": [
@@ -26280,6 +26786,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/RoboVerseOrg/ViTacFormer/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -26294,13 +26808,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Author project links implementation; weights/data download scope not verified."
       }
     },
@@ -26471,7 +26985,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official local skill training/deployment implementation available."
     },
     "evidence": [
@@ -26514,6 +27028,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/Exiam6/ViTaL/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -26530,13 +27052,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official local skill training/deployment implementation available."
       }
     },
@@ -27751,9 +28273,9 @@
     "release": {
       "code": "Available",
       "weights": "Available",
-      "data": "Available",
+      "data": "Gated — automatic Hugging Face access terms",
       "license": "Not reported",
-      "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested."
+      "notes": "Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed."
     },
     "evidence": [
       {
@@ -27774,10 +28296,36 @@
         "url": "https://github.com/OpenDriveLab/AgiBot-World",
         "label": "Official policy implementation",
         "fields": [
+          "links"
+        ],
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/OpenDriveLab/AgiBot-World",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
           "links",
           "release"
         ],
-        "note": "Source and checkpoint availability checked separately; no local policy execution was performed."
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/agibot-world/GO-1",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -27792,7 +28340,7 @@
         "note": "Original method architecture / policy pipeline, selected from the primary manuscript."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "rise2",
@@ -27956,7 +28504,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Author repository links dataset/checkpoints, TactAR and training/deployment."
     },
     "evidence": [
@@ -27999,6 +28547,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/xiaoxiaoxh/reactive_diffusion_policy/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -28013,13 +28569,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Available",
         "data": "Available",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Author repository links dataset/checkpoints, TactAR and training/deployment."
       }
     },
@@ -28658,7 +29214,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official project labels linked Hub resources as dataset and models."
     },
     "evidence": [
@@ -28712,6 +29268,14 @@
           "policy.trainingHardware"
         ],
         "note": "Main Octo and additional PaliGemma variants are distinct backbones; the multimodal finetuning schedule is separate from the VLA OXE initialization stage."
+      },
+      {
+        "url": "https://github.com/fuse-model/FuSe/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -28726,13 +29290,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Available",
         "data": "Available",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official project labels linked Hub resources as dataset and models."
       }
     },
@@ -28957,7 +29521,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Not reported",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official repository and cyliizyz/ManiSkill-ViTac2025_ckpt checkpoint link verified."
     },
     "evidence": [
@@ -29006,6 +29570,14 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/chuanyune/ManiSkill-ViTac2025/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -29021,13 +29593,13 @@
         "note": "Challenge task and sensor figure, with tracks explicitly labeled."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
         "weights": "Available",
         "data": "Not reported",
-        "license": "Not verified",
+        "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official repository and cyliizyz/ManiSkill-ViTac2025_ckpt checkpoint link verified."
       }
     },
@@ -29945,7 +30517,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Project links policy code; data/weights scope not independently verified."
     },
     "evidence": [
@@ -29988,6 +30560,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/raunaqbhirangi/visuoskin/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -30002,13 +30582,13 @@
         "note": "Fig. 1 : ViSk uses AnySkin with a simple transformer-based architecture to solve precise, contact-rich tasks."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Project links policy code; data/weights scope not independently verified."
       }
     },
@@ -30045,7 +30625,9 @@
       "Parallel-jaw gripper"
     ],
     "links": {
-      "paper": "https://arxiv.org/abs/2410.12782"
+      "paper": "https://arxiv.org/abs/2410.12782",
+      "project": "https://davidyyd.github.io/roboprompt",
+      "code": "https://github.com/davidyyd/roboprompt"
     },
     "policy": {
       "family": "Robot agent",
@@ -30061,11 +30643,11 @@
       "evaluation": "RLBench simulation and physical manipulation experiments."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "MIT original code, verified from LICENSE; vendored PyRep/RLBench/PerAct and external models retain separate terms.",
+      "notes": "Actual in-context demonstration construction, LLM action prediction, RLBench evaluation and installation source are public. Demonstration/train/test episodes are generated separately with RLBench; no new model weights are needed for the frozen-LLM method and a complete pregenerated episode corpus was not verified."
     },
     "evidence": [
       {
@@ -30081,6 +30663,15 @@
           "imageCandidates"
         ],
         "note": "Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning."
+      },
+      {
+        "url": "https://github.com/davidyyd/roboprompt",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -30096,7 +30687,7 @@
         "note": "Figure 1: Object-pose and demonstrated keyframe encodings form the context for language-model action prediction."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "idp3",
@@ -30954,7 +31545,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official project links code, ICRT checkpoints and ICRT-MT dataset; component licenses require separate inspection."
     },
     "evidence": [
@@ -30979,6 +31570,14 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/Max-Fu/icrt/blob/main/LICENSE.txt",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -30994,7 +31593,7 @@
         "note": "Figure 3: A causal sensorimotor transformer learns to imitate a prompted task from demonstration trajectories without target-task fine-tuning."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "tacsl",
@@ -31185,7 +31784,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not applicable",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official project links tactile simulation and learning code."
     },
     "evidence": [
@@ -31228,6 +31827,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/jessicayin/tactile_skin_model/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -31243,13 +31850,13 @@
         "note": "Author method diagram showing sensory encoding,multimodal computation and action/control pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not applicable",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Official project links tactile simulation and learning code."
       }
     },
@@ -32428,7 +33035,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Project links the TactileACT implementation."
     },
     "evidence": [
@@ -32471,6 +33078,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/Abraham190137/TactileACT/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -32486,13 +33101,13 @@
         "note": "Author method diagram showing the observation, representation and action-generation pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Project links the TactileACT implementation."
       }
     },
@@ -33263,11 +33878,11 @@
       "evaluation": "Generated manipulation and other embodied skill-acquisition tasks in physics simulation."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Partial — PyBullet reimplementation",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "Apache-2.0 code, verified from LICENSE; parsed PartNet/Objaverse resources and dependencies retain separate terms.",
+      "notes": "Actual task/scene generation, rigid-manipulation/locomotion skill learning, execution and example-task source are public. The official README identifies this as a PyBullet reimplementation and excludes the full original soft-body/Genesis pipeline. Pre-generated tasks and data-generation tools are distinct from a verified complete learned-policy checkpoint or dataset release."
     },
     "evidence": [
       {
@@ -33291,6 +33906,23 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/Genesis-Embodied-AI/RoboGen/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
+      },
+      {
+        "url": "https://github.com/Genesis-Embodied-AI/RoboGen",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -33306,7 +33938,7 @@
         "note": "Figure 2: A generative simulation pipeline proposes robot tasks, assets and learning supervision, then chooses reinforcement learning, motion planning or trajectory optimization to acquire skills."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "mimictouch",
@@ -33663,7 +34295,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified (code); model and data terms not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Availability refers to linked author release; no installation or training was performed."
     },
     "evidence": [
@@ -33694,6 +34326,14 @@
           "imageCandidates"
         ],
         "note": "Official project, not an independent replication."
+      },
+      {
+        "url": "https://github.com/vlc-robot/polarnet/blob/master/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -33709,13 +34349,13 @@
         "note": "Figure 6: Detailed architecture of PolarNet for language guided robotic manipulation. The model takes the input of point cloud { p 1 , … , p N v } \\{p_{1},...,p_{N_{v}}\\} and instr"
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not verified",
-        "license": "Not verified (code); model and data terms not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Availability refers to linked author release; no installation or training was performed."
       }
     },
@@ -34127,11 +34767,11 @@
       "evaluation": "Simulated and physical tabletop manipulation, including articulated-object and contact-rich interactions."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Partial — RLBench demo implementation",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "MIT code, verified from actual LICENSE; external language/vision models and RLBench assets retain separate terms.",
+      "notes": "Actual LMP, voxel interfaces, planner, controller, dynamics and RLBench notebook implementation are public. The author explicitly excludes the real-world object-mask perception pipeline; simulator object masks are used in the demo, which is not a full released physical deployment or evaluation benchmark."
     },
     "evidence": [
       {
@@ -34155,6 +34795,23 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/huangwl18/VoxPoser/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
+      },
+      {
+        "url": "https://github.com/huangwl18/VoxPoser",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -34170,7 +34827,7 @@
         "note": "Figure 2: Composes 3D value maps from language-model programs and visual grounding, then optimizes robot motion within those maps."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "act3d",
@@ -35072,11 +35729,11 @@
       "evaluation": "VIMA-Bench multimodal manipulation tasks and physical UR5 manipulation."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Partial — VIMABench implementation",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The paper is public; implementation and artifact availability require separate verification."
+      "license": "No root repository LICENSE found in the inspected tree; upstream SAM/CLIP and simulator terms remain separate.",
+      "notes": "Actual perception/tool execution, online/offline program generation, prompts and VIMABench evaluation source are public. This does not include a complete physical-robot perception/deployment stack or new base-model checkpoint; related ManipVQA/A3VLM releases are separate works."
     },
     "evidence": [
       {
@@ -35100,6 +35757,15 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://github.com/OpenGVLab/Instruct2Act",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -35115,7 +35781,7 @@
         "note": "Figure 2: Maps multimodal instructions into executable robot programs through a modular visual-perception and action API."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "ramp",
@@ -35315,7 +35981,7 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "MIT code; asset terms separately inspected",
+      "license": "Apache-2.0 repository code, verified from actual LICENSE; object assets, pretrained vision models and RL checkpoints retain separate terms.",
       "notes": "Code, object assets, vision pretraining and RL checkpoints linked by official repository."
     },
     "evidence": [
@@ -35343,10 +36009,9 @@
         "url": "https://github.com/Kami-code/dexart-release",
         "label": "Official repository",
         "fields": [
-          "release",
           "benchmark.simulatorVersion"
         ],
-        "note": "Current public repository; implementation scope may differ from paper."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://arxiv.org/abs/2305.05706",
@@ -35355,6 +36020,15 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/Kami-code/dexart-release",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -35370,13 +36044,13 @@
         "pdfPage": 3
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
         "weights": "Available",
         "data": "Available",
-        "license": "MIT code; asset terms separately inspected",
+        "license": "Apache-2.0 repository code, verified from actual LICENSE; object assets, pretrained vision models and RL checkpoints retain separate terms.",
         "notes": "Code, object assets, vision pretraining and RL checkpoints linked by official repository."
       }
     },
@@ -35547,7 +36221,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not applicable",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Author project links in-hand rotation implementation."
     },
     "evidence": [
@@ -35590,6 +36264,14 @@
           "imageCandidates"
         ],
         "note": "Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control."
+      },
+      {
+        "url": "https://github.com/YingYuan0414/in-hand-rotation/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -35604,13 +36286,13 @@
         "note": "Author method diagram: observation processing, multimodal learning and action/control pathways."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Not verified",
         "data": "Not applicable",
-        "license": "Not verified",
+        "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
         "notes": "Author project links in-hand rotation implementation."
       }
     },
@@ -37715,7 +38397,7 @@
       "code": "Partial",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy."
     },
     "evidence": [
@@ -37739,6 +38421,14 @@
           "release.code"
         ],
         "note": "Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -37746,7 +38436,7 @@
       "Required mmabc_pretrain_200k checkpoint is not distributed by adapter; no independent weights URL or architecture figure verified."
     ],
     "imageCandidates": [],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "liber0-lite",
@@ -37798,7 +38488,7 @@
       "code": "Partial",
       "weights": "Available",
       "data": "Not verified",
-      "license": "Not verified; component notices in adapter NOTICE.md",
+      "license": "Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy."
     },
     "evidence": [
@@ -37822,6 +38512,14 @@
           "release.code"
         ],
         "note": "Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -37829,7 +38527,7 @@
       "No manuscript or original architecture figure verified."
     ],
     "imageCandidates": [],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "relatedIds": [
       "liber0-preview"
     ]
@@ -39139,10 +39837,10 @@
     },
     "release": {
       "code": "Available",
-      "weights": "Not verified",
+      "weights": "Partial — released low-level VLA checkpoint",
       "data": "Not verified",
-      "license": "Apache-2.0 code; model/data/backbone terms separate",
-      "notes": "Author-linked repository and actual README/tree inspected; weights/data are tracked separately. No installation or reproduction attempted."
+      "license": "Apache-2.0 code verified from LICENSE; official low-level checkpoint card also declares Apache-2.0. External high-level/world-model components retain separate terms.",
+      "notes": "The official model inventory contains model.safetensors and the low-level VLA configuration. This verifies a low-level checkpoint, not every separate high-level proposal/value/reflection model or the full multi-model system. No complete training corpus was independently verified."
     },
     "evidence": [
       {
@@ -39161,27 +39859,43 @@
         "url": "https://tau0-vla.github.io/",
         "label": "Official project",
         "fields": [
-          "release",
           "imageCandidates"
         ],
-        "note": "Author-linked source. Component and artifact release terms may differ."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/sii-research/tau-0-vla",
         "label": "Official code",
         "fields": [
-          "release",
           "imageCandidates"
         ],
-        "note": "Author-linked source. Component and artifact release terms may differ."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://raw.githubusercontent.com/sii-research/tau-0-vla/main/LICENSE",
         "label": "Actual source license file",
         "fields": [
-          "release.license"
+          "links"
         ],
-        "note": "Scope limited to the file/repository subtree carrying these terms, not paper figures or external models/data."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/sii-research/tau-0-vla",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/sii-research/tau-0-vla",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -39197,7 +39911,7 @@
         "note": "Author method/policy pipeline; figure text and boundaries reviewed during media preparation."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "silvr",
@@ -42398,7 +43112,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Partial",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "The shared original MIL repository explicitly implements both papers and documents the July 2018 learned-temporal-loss DAML experiment. No separate tianheyu927/daml repository is assumed."
     },
     "evidence": [
@@ -42432,6 +43146,14 @@
           "release.code"
         ],
         "note": "Author project / repository cross-link verified; current release distinguished from original paper experiments."
+      },
+      {
+        "url": "https://github.com/tianheyu927/mil/blob/master/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -42447,7 +43169,7 @@
         "note": "Original paper Figure 2, PDF page 4; method diagram, cropped without surrounding body text. Source PDF page 4; Figure 2."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "mosaic",
@@ -45921,7 +46643,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Not applicable",
-      "license": "Not verified",
+      "license": "MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official method code; online-RL experience is generated during training. The paper’s eight-hour POPGym run is not a manipulation training budget."
     },
     "evidence": [
@@ -45955,6 +46677,14 @@
           "release"
         ],
         "note": "Current repository documentation; paper settings and subsequently released artifacts are distinguished."
+      },
+      {
+        "url": "https://github.com/UT-Austin-RPL/amago/blob/main/LICENSE",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -45970,7 +46700,7 @@
         "note": "Original paper Figure 1, PDF page 2; method diagram, cropped without surrounding body text. Source PDF page 2; Figure 1."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "halo",
@@ -46022,7 +46752,7 @@
       "code": "Available",
       "weights": "Not verified",
       "data": "Available",
-      "license": "Not verified",
+      "license": "Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms.",
       "notes": "Official training/evaluation code and ReMemBench dataset are public; an upstream visual encoder checkpoint is not the final HALO policy checkpoint."
     },
     "evidence": [
@@ -46056,6 +46786,14 @@
           "release"
         ],
         "note": "Current repository documentation; paper settings and subsequently released artifacts are distinguished."
+      },
+      {
+        "url": "https://github.com/UT-Austin-RobIn/HALO/blob/main/LICENSE.txt",
+        "label": "Actual repository code license",
+        "fields": [
+          "release.license"
+        ],
+        "note": "2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets."
       }
     ],
     "caveats": [
@@ -46070,7 +46808,7 @@
         "note": "Author-provided method architecture; static scientific figure."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "temporalflow-vla",
@@ -49663,7 +50401,7 @@
     "links": {
       "paper": "https://arxiv.org/abs/1710.01813",
       "project": "https://stanfordvl.github.io/ntp/",
-      "code": "https://github.com/StanfordVL/ntp"
+      "code": "https://github.com/StanfordVL/NTP-vat-release"
     },
     "policy": {
       "family": "Hierarchical imitation",
@@ -49679,11 +50417,11 @@
       "evaluation": "Object Sorting, Block Stacking and other hierarchical manipulation in Bullet, with PR2 gripper / Sawyer simulation and selected real Sawyer experiments."
     },
     "release": {
-      "code": "Available",
+      "code": "Partial — Bullet/PR2-gripper simulation framework",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "MIT (code); model, dependency and dataset terms are separate.",
-      "notes": "Public author repository includes implementation / execution instructions; this does not certify every physical setup or experiment artifact."
+      "license": "MIT for the linked VAT environment and original project material, verified from their actual LICENSE files; model/data and external dependency terms remain separate.",
+      "notes": "The original ntp repository contains paper/implementation documentation. Its author-linked NTP-vat-release contains actual vat environment code, expert demo.py and the PR2-gripper block-stacking environment, pinned to PyBullet 1.2.9. The full Sawyer environment is marked forthcoming; this is not a verified learned NTP model/training/checkpoint release."
     },
     "evidence": [
       {
@@ -49704,19 +50442,26 @@
         "url": "https://raw.githubusercontent.com/StanfordVL/ntp/master/README.md",
         "label": "Author repository README",
         "fields": [
-          "links.code",
-          "release.code",
-          "release.notes"
+          "links.code"
         ],
-        "note": "Public author repository includes implementation / execution instructions; this does not certify every physical setup or experiment artifact."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://raw.githubusercontent.com/StanfordVL/ntp/master/LICENSE",
         "label": "Repository LICENSE",
         "fields": [
-          "release.license"
+          "links"
         ],
-        "note": "Code-license text checked directly; this license is not automatically assigned to model weights or third-party data."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/StanfordVL/NTP-vat-release",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -49732,7 +50477,7 @@
         "note": "Figure 2: Recursively decomposes a demonstrated task into subtasks and callable neural programs, with information scoping to support compositional generalization."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "xskill",
@@ -53217,7 +53962,9 @@
       "Parallel-jaw gripper"
     ],
     "links": {
-      "paper": "https://arxiv.org/abs/2508.07606"
+      "paper": "https://arxiv.org/abs/2508.07606",
+      "project": "https://iclhf.github.io",
+      "code": "https://github.com/ICLHF/ICLHF"
     },
     "policy": {
       "family": "Robot agent",
@@ -53233,11 +53980,11 @@
       "evaluation": "Four categories of household chores in OmniGibson; table-arrangement geometry comparisons and real robot table-tidying experiments."
     },
     "release": {
-      "code": "Not verified",
+      "code": "Available",
       "weights": "Not applicable",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The original paper is public; code, model and dataset release scopes are verified separately where established. The frozen agent itself has no separately trained method-specific checkpoint; upstream model access has its own terms."
+      "license": "MIT original code, verified from LICENSE; OmniGibson assets and model dependencies retain separate terms.",
+      "notes": "Actual simulator/environment wrappers, LLM and physical-object-graph planners, worker/scene configurations and main entry point are public. Local model endpoints and OmniGibson assets must be installed separately; no method-specific checkpoint or independent full interaction-corpus release was verified."
     },
     "evidence": [
       {
@@ -53253,6 +54000,15 @@
           "institution"
         ],
         "note": "Survey citation is used only for discovery. Method and deployment facts come from the original paper; the date is its first submission where available. Affiliations are transcribed from the PDF author block / footnotes; LMPC affiliation is confirmed by its official project page."
+      },
+      {
+        "url": "https://github.com/ICLHF/ICLHF",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -53268,7 +54024,7 @@
         "note": "Figure 2: Uses textual human feedback and physical-constraint feedback to revise a household task plan while a graph-based optimizer grounds spatial relations."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "longact-holomind",
@@ -54446,7 +55202,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2609.30594",
       "project": "https://iconlab.negarmehr.com/HuGo/",
-      "code": "https://github.com/labicon/HuGo"
+      "code": "https://github.com/labicon/HuGo",
+      "data": "https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement"
     },
     "policy": {
       "family": "Robot agent",
@@ -54462,11 +55219,11 @@
       "evaluation": "Five Unitree G1 simulated tasks, including pushing / lifting, and physical Lift Box / Push Button transfer with fifteen trials per selected policy."
     },
     "release": {
-      "code": "Not released",
+      "code": "Partial — selected generated policies and refinement analyses",
       "weights": "Not applicable",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Author repository is a placeholder; substantive implementation is not released in its current README. The frozen agent itself has no separately trained method-specific checkpoint; upstream model access has its own terms."
+      "data": "Partial — selected public rollout/refinement traces",
+      "license": "No root repository LICENSE found in the inspected tree; paper, recordings and dependency rights remain separate.",
+      "notes": "The current official repository includes selected generated policy_code.txt files, refinement diffs/prompts/responses, executable analysis_code.py and simulation/physical rollout videos under docs/static/. It does not release a complete code-generation framework or the upstream whole-body policy weights; the selected examples must not be described as an empty placeholder."
     },
     "evidence": [
       {
@@ -54487,11 +55244,27 @@
         "url": "https://raw.githubusercontent.com/labicon/HuGo/main/README.md",
         "label": "Author repository README",
         "fields": [
-          "links.code",
-          "release.code",
-          "release.notes"
+          "links.code"
         ],
-        "note": "Author repository is a placeholder; substantive implementation is not released in its current README."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/labicon/HuGo",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://github.com/labicon/HuGo/tree/main/docs/static/hardware_refinement",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -54508,7 +55281,7 @@
         "note": "PDF page 1, Figure 1: Generates and iteratively refines high-level whole-body policy code over a frozen humanoid controller using numerical rollouts and selected video evidence."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "dualmanip",
@@ -60235,7 +61008,8 @@
     "links": {
       "paper": "https://arxiv.org/abs/2505.07455",
       "project": "https://gelfusion.github.io/",
-      "code": "https://github.com/GelFusion/GelFusion"
+      "code": "https://github.com/GelFusion/GelFusion",
+      "data": "https://huggingface.co/datasets/shu1ong/GelFusion"
     },
     "policy": {
       "family": "Diffusion",
@@ -60251,11 +61025,11 @@
       "evaluation": "Three real contact-rich tasks with visual ambiguity/occlusion."
     },
     "release": {
-      "code": "Available",
+      "code": "Not released — implementation files absent from current repository",
       "weights": "Not verified",
-      "data": "Not verified",
+      "data": "Available — three processed tactile dataset archives",
       "license": "MIT",
-      "notes": "Author-linked repository and actual LICENSE inspected; code, checkpoints anddatasets have independent availability."
+      "notes": "The current only branch and GitHub release inventory contain README, LICENSE, environment.yml and an illustration, with no actual implementation despite README references to DataCollection/train.py. The official linked HF dataset does contain ChipPick_replay_buffer.zip, Insertation_replay_buffer.zip and wiping_replay_buffer.zip; code and data availability are independent."
     },
     "evidence": [
       {
@@ -60275,19 +61049,35 @@
         "url": "https://gelfusion.github.io/",
         "label": "Official author project",
         "fields": [
-          "links",
-          "release"
+          "links"
         ],
-        "note": "Live project artifact links inspected on2026-10-17."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/GelFusion/GelFusion",
         "label": "Official released implementation and LICENSE",
         "fields": [
+          "links"
+        ],
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/GelFusion/GelFusion",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
           "links",
           "release"
         ],
-        "note": "Repository metadata,README and actualLICENSE inspected; availability scoped to the listed component."
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/shu1ong/GelFusion",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -60302,7 +61092,7 @@
         "note": "Author figure S3.F3. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "simshear",
@@ -62206,7 +62996,8 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2403.04934",
-      "code": "https://github.com/ZhengtongXu/LeTac-MPC"
+      "code": "https://github.com/ZhengtongXu/LeTac-MPC",
+      "data": "https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset"
     },
     "policy": {
       "family": "Model-based planning",
@@ -62224,9 +63015,9 @@
     "release": {
       "code": "Available",
       "weights": "Not verified",
-      "data": "Not verified",
+      "data": "Available — bundled tactile-image dataset",
       "license": "Not verified; no unambiguous repository license identified.",
-      "notes": "Author-linked repository and actual LICENSE inspected; code, checkpoints anddatasets have independent availability."
+      "notes": "Actual nested LeTac-MPC/scripts/training.py is retrievable; the repository also contains the named tactile-image dataset directory and files. Large recursive listings can truncate before implementation paths. No unambiguous repository license or separate pretrained checkpoint release was verified; code/data availability does not imply either."
     },
     "evidence": [
       {
@@ -62246,10 +63037,27 @@
         "url": "https://github.com/ZhengtongXu/LeTac-MPC",
         "label": "Official released implementation and LICENSE",
         "fields": [
+          "links"
+        ],
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/ZhengtongXu/LeTac-MPC",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
           "links",
           "release"
         ],
-        "note": "Repository metadata,README and actualNone inspected; availability scoped to the listed component."
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://github.com/ZhengtongXu/LeTac-MPC/tree/main/LeTac-MPC/dataset",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
@@ -62264,7 +63072,7 @@
         "note": "Author figure S3.F1. Original method architecture / learning pipeline. Optimized local copy; original figure rights retained."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-19"
   },
   {
     "id": "t-dex",
@@ -64524,14 +65332,15 @@
     "links": {
       "paper": "https://arxiv.org/abs/2605.22882",
       "project": "https://gem-4d.github.io/",
-      "code": "https://github.com/kaichen-z/GEM-4d"
+      "code": "https://github.com/kaichen-z/GEM-4d",
+      "weights": "https://huggingface.co/datasets/zhouk777/gem4d-weight"
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
+      "code": "Partial — geometry-enhanced video world model",
+      "weights": "Partial — CogVideoX world-model checkpoints",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Project advertises official code URL; actual runnable repository contents could not be verified. Do not equate project link with released implementation."
+      "license": "No root project LICENSE found in the inspected code tree; bundled DA3/CogVideoX and other pretrained components retain their own terms. A blanket project/weight license was not independently verified.",
+      "notes": "Actual Geometry DiT, frozen-teacher, training and inference source is released. The official HF weight inventory contains two CogVideoX checkpoint exports with safetensors shards. The adaptive inverse-dynamics action module and VGGT/depth-target ablations are explicitly absent; the added Wan2.2-TI2V-5B backbone has no released GEM-4D weights."
     },
     "evidence": [
       {
@@ -64553,33 +65362,50 @@
         "label": "Official author project",
         "fields": [
           "institution",
-          "release",
           "imageCandidates"
         ],
-        "note": "Public author-linked project; figure and downstream scope verified separately."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/kaichen-z/GEM-4d",
         "label": "Official implementation and release scope",
         "fields": [
-          "release"
+          "links"
         ],
-        "note": "Availability of research implementation does not establish public task-policy checkpoints."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/kaichen-z/GEM-4d/tree/main",
         "label": "Actual repository content inventory",
         "fields": [
-          "release.code"
+          "links"
         ],
-        "note": "0 tracked paths inspected; code release is distinguished from a README/project/figure-only repository."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/kaichen-z/GEM-4d",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/datasets/zhouk777/gem4d-weight",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
       "The geometry branch is training-only; the action-extraction pipeline has separate geometric assumptions.",
       "Generated-video success judgements and actual robot-execution success are separate measurements."
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "policy": {
       "family": "World-action model",
       "baseModel": "Video DiT plus training-only geometry flow branch; adaptive inverse-dynamics tracking, pose fallback and action synthesis.",
@@ -66406,11 +67232,11 @@
       "weights": "https://huggingface.co/anyeZHY/tesseract"
     },
     "release": {
-      "code": "Available",
-      "weights": "Not verified",
+      "code": "Partial — world-model training/inference; task inverse dynamics unverified",
+      "weights": "Partial — released RGB/RGB-D-normal world-model checkpoints",
       "data": "Not verified",
       "license": "MIT for repository code; pretrained models, data and figure rights remain separate",
-      "notes": "Code, data and weights are checked independently; an upstream pretrained model is not a released task policy."
+      "notes": "The official HF inventory contains an RGB LoRA and three RGB-D-normal SFT safetensors shards. These establish a world-model checkpoint release; the separate task-specific inverse-dynamics policy/checkpoint remains unverified. Code, world-model weights and executable task policies are separate artifacts."
     },
     "evidence": [
       {
@@ -66432,49 +67258,66 @@
         "label": "Official author project",
         "fields": [
           "institution",
-          "release",
           "imageCandidates"
         ],
-        "note": "Public author-linked project; figure and downstream scope verified separately."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/UMass-Embodied-AGI/TesserAct",
         "label": "Official implementation and release scope",
         "fields": [
-          "release"
+          "links"
         ],
-        "note": "Availability of research implementation does not establish public task-policy checkpoints."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/UMass-Embodied-AGI/TesserAct/blob/main/LICENSE",
         "label": "Actual license file in released source",
         "fields": [
-          "release.license"
+          "links"
         ],
-        "note": "Only source code covered by this file; not a blanket license for paper figures or upstream weights."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://github.com/UMass-Embodied-AGI/TesserAct/tree/main",
         "label": "Actual repository content inventory",
         "fields": [
-          "release.code"
+          "links"
         ],
-        "note": "51 tracked paths inspected; code release is distinguished from a README/project/figure-only repository."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
       },
       {
         "url": "https://huggingface.co/anyeZHY/tesseract",
         "label": "Official weights release destination",
         "fields": [
-          "release.weights"
+          "links"
         ],
-        "note": "Destination linked by the official project/repository; component release scope is retained in release notes."
+        "note": "Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories."
+      },
+      {
+        "url": "https://github.com/UMass-Embodied-AGI/TesserAct",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://huggingface.co/anyeZHY/tesseract",
+        "label": "Current artifact inventory and release scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
       }
     ],
     "caveats": [
       "Generated future geometry is not measured sensory feedback.",
       "Public world-model code/checkpoints and the task-specific inverse-dynamics release are separate; the latter is not verified."
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-19",
     "policy": {
       "family": "World-action model",
       "baseModel": "CogVideoX-based multistream video diffusion, geometric consistency and inverse-dynamics action extraction.",

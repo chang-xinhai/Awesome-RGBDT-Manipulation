@@ -283,6 +283,11 @@
       "url": "https://github.com/SJTU-DENG-Lab/Streaming-WAM"
     },
     {
+      "work": "harnesspai",
+      "kind": "project",
+      "url": "https://darwin-agent.github.io/HarnessPAI/"
+    },
+    {
       "work": "adahvla",
       "kind": "code",
       "url": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA"
@@ -319,8 +324,13 @@
     },
     {
       "work": "me-brain-1",
-      "kind": "code",
+      "kind": "project",
       "url": "https://github.com/MachEmbodied/ME-Brain-1.0"
+    },
+    {
+      "work": "me-brain-1",
+      "kind": "code",
+      "url": "https://github.com/MachEmbodied/Focus-VLWA"
     },
     {
       "work": "me-dex-1",
@@ -473,6 +483,11 @@
       "url": "https://air-embodied-brain.github.io/Zeva"
     },
     {
+      "work": "zeva",
+      "kind": "code",
+      "url": "https://github.com/air-embodied-brain/Zeva"
+    },
+    {
       "work": "motus2",
       "kind": "project",
       "url": "https://motus-robotics.github.io/motus2/"
@@ -508,14 +523,14 @@
       "url": "https://tengbo-yu.github.io/PRISM/"
     },
     {
-      "work": "prism",
-      "kind": "code",
-      "url": "https://github.com/Tengbo-Yu/PRISM"
-    },
-    {
       "work": "zetta",
       "kind": "project",
       "url": "https://air-embodied-brain.github.io/zetta"
+    },
+    {
+      "work": "zetta",
+      "kind": "code",
+      "url": "https://github.com/air-embodied-brain/Zetta-Embodiment"
     },
     {
       "work": "gigabrain07",
@@ -546,6 +561,11 @@
       "work": "bridgevla-plus",
       "kind": "code",
       "url": "https://github.com/BridgeVLA/BridgeVLA/tree/main"
+    },
+    {
+      "work": "caat",
+      "kind": "project",
+      "url": "https://mrjiangjm.github.io/caat/"
     },
     {
       "work": "kinrt",
@@ -1873,6 +1893,16 @@
       "url": "https://github.com/raunaqbhirangi/visuoskin"
     },
     {
+      "work": "roboprompt",
+      "kind": "project",
+      "url": "https://davidyyd.github.io/roboprompt"
+    },
+    {
+      "work": "roboprompt",
+      "kind": "code",
+      "url": "https://github.com/davidyyd/roboprompt"
+    },
+    {
       "work": "idp3",
       "kind": "project",
       "url": "https://humanoid-manipulation.github.io/"
@@ -3093,11 +3123,6 @@
       "url": "https://air-embodied-brain.github.io/Zeva-Ego"
     },
     {
-      "work": "zeva-ego",
-      "kind": "code",
-      "url": "https://github.com/air-embodied-brain/Zeva"
-    },
-    {
       "work": "ropeformer",
       "kind": "project",
       "url": "https://ropeformer.github.io/"
@@ -3135,7 +3160,7 @@
     {
       "work": "neural-task-programming",
       "kind": "code",
-      "url": "https://github.com/StanfordVL/ntp"
+      "url": "https://github.com/StanfordVL/NTP-vat-release"
     },
     {
       "work": "xskill",
@@ -3366,6 +3391,16 @@
       "work": "volo",
       "kind": "code",
       "url": "https://github.com/NVlabs/VoLoAgent"
+    },
+    {
+      "work": "iclhf",
+      "kind": "project",
+      "url": "https://iclhf.github.io"
+    },
+    {
+      "work": "iclhf",
+      "kind": "code",
+      "url": "https://github.com/ICLHF/ICLHF"
     },
     {
       "work": "va-bench",

@@ -33,11 +33,11 @@ Uses diverse, uncontrolled robot interaction data with a Qwen-based diffusion-tr
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Available [1](https://www.spirit-ai.com/en/blog/spirit-v1-5) [2](https://github.com/Spirit-AI-Team/spirit-v1.5)  |
-| Release: weights | Available [1](https://www.spirit-ai.com/en/blog/spirit-v1-5)  |
-| Release: data | Not verified [1](https://www.spirit-ai.com/en/blog/spirit-v1-5)  |
-| Release: license | Apache-2.0 model card; exact repository and third-party component terms separate [1](https://www.spirit-ai.com/en/blog/spirit-v1-5)  |
-| Release: notes | Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. [1](https://www.spirit-ai.com/en/blog/spirit-v1-5)  |
+| Release: code | Available [3](https://github.com/Spirit-AI-Team/spirit-v1.5) [4](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5)  |
+| Release: weights | Available [3](https://github.com/Spirit-AI-Team/spirit-v1.5) [4](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5)  |
+| Release: data | Not verified [3](https://github.com/Spirit-AI-Team/spirit-v1.5) [4](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5)  |
+| Release: license | MIT repository code, verified from actual LICENSE; the linked model card separately declares Apache-2.0 for its checkpoint. Third-party terms remain separate. [3](https://github.com/Spirit-AI-Team/spirit-v1.5) [4](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5)  |
+| Release: notes | Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. [3](https://github.com/Spirit-AI-Team/spirit-v1.5) [4](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5)  |
 
 **Scope and qualifications**
 
@@ -45,5 +45,7 @@ Uses diverse, uncontrolled robot interaction data with a Qwen-based diffusion-tr
 
 **Primary evidence**
 
-1. [Official model project / technical release](https://www.spirit-ai.com/en/blog/spirit-v1-5) — Research-report facts and current executable release are scoped separately; undated releases retain an unknown publication date.
-2. [Official implementation / author-contributed adapter](https://github.com/Spirit-AI-Team/spirit-v1.5) — Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation.
+1. [Official model project / technical release](https://www.spirit-ai.com/en/blog/spirit-v1-5) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+2. [Official implementation / author-contributed adapter](https://github.com/Spirit-AI-Team/spirit-v1.5) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Current artifact inventory and release scope](https://github.com/Spirit-AI-Team/spirit-v1.5) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

@@ -36,7 +36,7 @@ Transfers tactile RL policies that use ternary shear and binary normal skin sign
 | Release: code | Available [2](https://github.com/jessicayin/tactile_skin_model)  |
 | Release: weights | Not verified [2](https://github.com/jessicayin/tactile_skin_model)  |
 | Release: data | Not applicable [2](https://github.com/jessicayin/tactile_skin_model)  |
-| Release: license | Not verified [2](https://github.com/jessicayin/tactile_skin_model)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/jessicayin/tactile_skin_model) [4](https://github.com/jessicayin/tactile_skin_model/blob/main/LICENSE)  |
 | Release: notes | Official project links tactile simulation and learning code. [2](https://github.com/jessicayin/tactile_skin_model)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Transfers tactile RL policies that use ternary shear and binary normal skin sign
 1. [Author manuscript and submission history](https://arxiv.org/abs/2407.07885) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/jessicayin/tactile_skin_model) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2407.07885) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/jessicayin/tactile_skin_model/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

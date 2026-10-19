@@ -8,7 +8,7 @@ In-situ Value-aligned Human-Robot Interactions with Physical Constraints
 
 **2025-08-11 · Preprint · Hohai University; Beijing Institute for General Artificial Intelligence**
 
-**[Paper](https://arxiv.org/abs/2508.07606)**
+**[Paper](https://arxiv.org/abs/2508.07606)** · [Project](https://iclhf.github.io) · [Code](https://github.com/ICLHF/ICLHF)
 
 Uses textual human feedback and physical-constraint feedback to revise a household task plan while a graph-based optimizer grounds spatial relations.
 
@@ -33,11 +33,11 @@ Uses textual human feedback and physical-constraint feedback to revise a househo
 | Observations / modalities | Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The original paper is public; code, model and dataset release scopes are verified separately where established. The frozen agent itself has no separately trained method-specific checkpoint; upstream model access has its own terms. |
+| Release: code | Available [2](https://github.com/ICLHF/ICLHF)  |
+| Release: weights | Not applicable [2](https://github.com/ICLHF/ICLHF)  |
+| Release: data | Not verified [2](https://github.com/ICLHF/ICLHF)  |
+| Release: license | MIT original code, verified from LICENSE; OmniGibson assets and model dependencies retain separate terms. [2](https://github.com/ICLHF/ICLHF)  |
+| Release: notes | Actual simulator/environment wrappers, LLM and physical-object-graph planners, worker/scene configurations and main entry point are public. Local model endpoints and OmniGibson assets must be installed separately; no method-specific checkpoint or independent full interaction-corpus release was verified. [2](https://github.com/ICLHF/ICLHF)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Uses textual human feedback and physical-constraint feedback to revise a househo
 **Primary evidence**
 
 1. [Original primary paper and appendix](https://arxiv.org/abs/2508.07606) — Survey citation is used only for discovery. Method and deployment facts come from the original paper; the date is its first submission where available. Affiliations are transcribed from the PDF author block / footnotes; LMPC affiliation is confirmed by its official project page.
+2. [Current artifact inventory and release scope](https://github.com/ICLHF/ICLHF) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

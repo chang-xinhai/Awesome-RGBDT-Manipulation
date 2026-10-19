@@ -8,7 +8,7 @@ In-Context Robot Learning with VLM Agents
 
 **2026-09-16 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.19138)** · [Project](https://cheng-haha.github.io/GPT-Policy) · [Code](https://github.com/cheng-haha/GPT-Policy)
+**[Paper](https://arxiv.org/abs/2609.19138)** · [Project](https://cheng-haha.github.io/GPT-Policy) · [Code](https://github.com/cheng-haha/GPT-Policy) · [Data](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)
 
 A frozen VLM combines task references, current observations and persistent interaction history to select constrained Cartesian robot tools.
 
@@ -33,11 +33,11 @@ A frozen VLM combines task references, current observations and persistent inter
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Uses a hosted or pre-existing frozen model; the paper introduces a robot interface or agent system rather than new base-model weights. |
+| Release: code | Available — source for review/evaluation; redistribution license pending [3](https://github.com/cheng-haha/GPT-Policy) [4](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)  |
+| Release: weights | Not applicable [3](https://github.com/cheng-haha/GPT-Policy) [4](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)  |
+| Release: data | Partial — ten-task RoboDojo demonstration contexts [3](https://github.com/cheng-haha/GPT-Policy) [4](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)  |
+| Release: license | License pending: actual repository LICENSE grants no redistribution or commercial-use license. Context dataset has separate LICENSE.txt/THIRD_PARTY.md terms; no blanket open-source claim. [3](https://github.com/cheng-haha/GPT-Policy) [4](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)  |
+| Release: notes | Actual ARX/YAM harness, hardware adapters and RoboDojo backend are public. The dataset contains ten-task context packages, selected frames and numeric action references, reproduction tools and integrity checks. It does not include all physical experiment prompts/recordings. The actual LICENSE restricts this preview to review/evaluation rather than granting redistribution or commercial use. [3](https://github.com/cheng-haha/GPT-Policy) [4](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ A frozen VLM combines task references, current observations and persistent inter
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.19138) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/cheng-haha/GPT-Policy) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/cheng-haha/GPT-Policy) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

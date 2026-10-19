@@ -36,7 +36,7 @@ Native causal video-action pretraining adds semantic action-aware tokenization, 
 | Release: code | Partial [2](https://github.com/Robbyant/lingbot-va) [3](https://technology.robbyant.com/lingbot-va-v2)  |
 | Release: weights | Not verified [2](https://github.com/Robbyant/lingbot-va) [3](https://technology.robbyant.com/lingbot-va-v2)  |
 | Release: data | Not verified [2](https://github.com/Robbyant/lingbot-va) [3](https://technology.robbyant.com/lingbot-va-v2)  |
-| Release: license | Not verified; pretrained backbones and data retain separate terms [2](https://github.com/Robbyant/lingbot-va) [3](https://technology.robbyant.com/lingbot-va-v2)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/Robbyant/lingbot-va) [3](https://technology.robbyant.com/lingbot-va-v2) [4](https://github.com/Robbyant/lingbot-va/blob/main/LICENSE.txt)  |
 | Release: notes | Paper and project describe 2.0; the shared repository retains original VA artifacts. Complete 2.0 checkpoint availability remains unresolved. [2](https://github.com/Robbyant/lingbot-va) [3](https://technology.robbyant.com/lingbot-va-v2)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Native causal video-action pretraining adds semantic action-aware tokenization, 
 1. [Author manuscript and submission history](https://arxiv.org/abs/2607.08639) — Read full manuscript; first arXiv submission retained separately from current revision. Numeric costs and observations have setting-specific scope.
 2. [Official implementation](https://github.com/Robbyant/lingbot-va) — Author-linked code and artifact instructions; current release may differ from the original manuscript.
 3. [Official project](https://technology.robbyant.com/lingbot-va-v2) — Author project and links; scientific figure keeps original rights.
+4. [Actual repository code license](https://github.com/Robbyant/lingbot-va/blob/main/LICENSE.txt) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

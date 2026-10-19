@@ -36,7 +36,7 @@ An off-policy transformer learns contextual adaptation over long interaction his
 | Release: code | Available [2](https://ut-austin-rpl.github.io/amago/) [3](https://github.com/UT-Austin-RPL/amago)  |
 | Release: weights | Not verified [2](https://ut-austin-rpl.github.io/amago/) [3](https://github.com/UT-Austin-RPL/amago)  |
 | Release: data | Not applicable [2](https://ut-austin-rpl.github.io/amago/) [3](https://github.com/UT-Austin-RPL/amago)  |
-| Release: license | Not verified [2](https://ut-austin-rpl.github.io/amago/) [3](https://github.com/UT-Austin-RPL/amago)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://ut-austin-rpl.github.io/amago/) [3](https://github.com/UT-Austin-RPL/amago) [4](https://github.com/UT-Austin-RPL/amago/blob/main/LICENSE)  |
 | Release: notes | Official method code; online-RL experience is generated during training. The paper’s eight-hour POPGym run is not a manipulation training budget. [2](https://ut-austin-rpl.github.io/amago/) [3](https://github.com/UT-Austin-RPL/amago)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ An off-policy transformer learns contextual adaptation over long interaction his
 1. [Original paper / author report](https://arxiv.org/abs/2310.09971) — Original full paper and supplementary experimental / implementation details; deployment inputs are separated from supervision and benchmark state.
 2. [Official project](https://ut-austin-rpl.github.io/amago/) — Author-linked project and current release checked on the catalog cutoff.
 3. [Official code / release documentation](https://github.com/UT-Austin-RPL/amago) — Current repository documentation; paper settings and subsequently released artifacts are distinguished.
+4. [Actual repository code license](https://github.com/UT-Austin-RPL/amago/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

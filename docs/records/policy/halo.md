@@ -36,7 +36,7 @@ Attention-based memory retrieval learns long-horizon visuomotor control using VL
 | Release: code | Available [2](https://robin-lab.cs.utexas.edu/HALO) [3](https://github.com/UT-Austin-RobIn/HALO)  |
 | Release: weights | Not verified [2](https://robin-lab.cs.utexas.edu/HALO) [3](https://github.com/UT-Austin-RobIn/HALO)  |
 | Release: data | Available [2](https://robin-lab.cs.utexas.edu/HALO) [3](https://github.com/UT-Austin-RobIn/HALO)  |
-| Release: license | Not verified [2](https://robin-lab.cs.utexas.edu/HALO) [3](https://github.com/UT-Austin-RobIn/HALO)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://robin-lab.cs.utexas.edu/HALO) [3](https://github.com/UT-Austin-RobIn/HALO) [4](https://github.com/UT-Austin-RobIn/HALO/blob/main/LICENSE.txt)  |
 | Release: notes | Official training/evaluation code and ReMemBench dataset are public; an upstream visual encoder checkpoint is not the final HALO policy checkpoint. [2](https://robin-lab.cs.utexas.edu/HALO) [3](https://github.com/UT-Austin-RobIn/HALO)  |
 
 **Scope and qualifications**
@@ -48,3 +48,4 @@ Attention-based memory retrieval learns long-horizon visuomotor control using VL
 1. [Original paper / author report](https://arxiv.org/abs/2606.25136) — Original full paper and supplementary experimental / implementation details; deployment inputs are separated from supervision and benchmark state.
 2. [Official project](https://robin-lab.cs.utexas.edu/HALO) — Author-linked project and current release checked on the catalog cutoff.
 3. [Official code / release documentation](https://github.com/UT-Austin-RobIn/HALO) — Current repository documentation; paper settings and subsequently released artifacts are distinguished.
+4. [Actual repository code license](https://github.com/UT-Austin-RobIn/HALO/blob/main/LICENSE.txt) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

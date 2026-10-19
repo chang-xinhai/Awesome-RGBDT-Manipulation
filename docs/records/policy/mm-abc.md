@@ -38,7 +38,7 @@ Uses subsystem-aware flow actions for a mobile dual-arm dexterous robot with a p
 | Release: code | Partial [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC) [2](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC)  |
 | Release: weights | Not verified [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC)  |
 | Release: data | Not verified [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC)  |
-| Release: license | Not verified [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC) [3](https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE)  |
 | Release: notes | Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. [1](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC)  |
 
 **Scope and qualifications**
@@ -50,3 +50,4 @@ Uses subsystem-aware flow actions for a mobile dual-arm dexterous robot with a p
 
 1. [Official model project / technical release](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC) — Research-report facts and current executable release are scoped separately; undated releases retain an unknown publication date.
 2. [Official implementation / author-contributed adapter](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/MM_ABC) — Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation.
+3. [Actual repository code license](https://github.com/XPolicyLab/XPolicyLab/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

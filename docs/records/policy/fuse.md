@@ -36,7 +36,7 @@ Grounds heterogeneous sensor modalities in language to adapt pretrained generali
 | Release: code | Available [2](https://github.com/fuse-model/FuSe)  |
 | Release: weights | Available [2](https://github.com/fuse-model/FuSe)  |
 | Release: data | Available [2](https://github.com/fuse-model/FuSe)  |
-| Release: license | Not verified [2](https://github.com/fuse-model/FuSe)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/fuse-model/FuSe) [5](https://github.com/fuse-model/FuSe/blob/main/LICENSE)  |
 | Release: notes | Official project labels linked Hub resources as dataset and models. [2](https://github.com/fuse-model/FuSe)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Grounds heterogeneous sensor modalities in language to adapt pretrained generali
 2. [Official repository](https://github.com/fuse-model/FuSe) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2501.04693) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
 4. [Independent review: dataset overview, SectionIII implementation details and SectionIV-G VLA variant](https://arxiv.org/html/2501.04693v3) — Main Octo and additional PaliGemma variants are distinct backbones; the multimodal finetuning schedule is separate from the VLA OXE initialization stage.
+5. [Actual repository code license](https://github.com/fuse-model/FuSe/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

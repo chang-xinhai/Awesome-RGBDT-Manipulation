@@ -33,11 +33,11 @@ A multi-agent skill hierarchy uses Top-down Skill Refinement to diagnose executi
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Mobile manipulator · Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [3](https://github.com/nssmd/RoboRSI)  |
+| Release: weights | Not applicable [3](https://github.com/nssmd/RoboRSI)  |
+| Release: data | Not verified [3](https://github.com/nssmd/RoboRSI)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; external models, simulator assets and datasets retain separate terms. [3](https://github.com/nssmd/RoboRSI)  |
+| Release: notes | Public agent, hierarchical skill-evolution and evaluation implementations are present, including LIBERO/PRO/Plus reproduction scripts, RoboTwin integration and robot-interface guides. Upstream LIBERO-Pro assets are dependencies, not a newly released RoboRSI training corpus; no separate learned task-policy checkpoint was verified. [3](https://github.com/nssmd/RoboRSI)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,4 @@ A multi-agent skill hierarchy uses Top-down Skill Refinement to diagnose executi
 
 1. [Primary paper, full text](https://arxiv.org/abs/2610.12424) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/nssmd/RoboRSI) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/nssmd/RoboRSI) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

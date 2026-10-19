@@ -8,7 +8,7 @@ GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation
 
 **2026-05-20 · arXiv preprint · Harvard University; MIT; Princeton University; MIT-IBM Watson AI Lab**
 
-**[Paper](https://arxiv.org/abs/2605.22882)** · [Project](https://gem-4d.github.io/) · [Code](https://github.com/kaichen-z/GEM-4d)
+**[Paper](https://arxiv.org/abs/2605.22882)** · [Project](https://gem-4d.github.io/) · [Code](https://github.com/kaichen-z/GEM-4d) · [Weights](https://huggingface.co/datasets/zhouk777/gem4d-weight)
 
 Geometry-supervised video generation is paired with a geometric inverse-dynamics system to recover executable manipulation trajectories.
 
@@ -33,11 +33,11 @@ Geometry-supervised video generation is paired with a geometric inverse-dynamics
 | Observations / modalities | RGB · Language · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified [2](https://gem-4d.github.io/) [3](https://github.com/kaichen-z/GEM-4d) [4](https://github.com/kaichen-z/GEM-4d/tree/main)  |
-| Release: weights | Not verified [2](https://gem-4d.github.io/) [3](https://github.com/kaichen-z/GEM-4d)  |
-| Release: data | Not verified [2](https://gem-4d.github.io/) [3](https://github.com/kaichen-z/GEM-4d)  |
-| Release: license | Not verified [2](https://gem-4d.github.io/) [3](https://github.com/kaichen-z/GEM-4d)  |
-| Release: notes | Project advertises official code URL; actual runnable repository contents could not be verified. Do not equate project link with released implementation. [2](https://gem-4d.github.io/) [3](https://github.com/kaichen-z/GEM-4d)  |
+| Release: code | Partial — geometry-enhanced video world model [5](https://github.com/kaichen-z/GEM-4d) [6](https://huggingface.co/datasets/zhouk777/gem4d-weight)  |
+| Release: weights | Partial — CogVideoX world-model checkpoints [5](https://github.com/kaichen-z/GEM-4d) [6](https://huggingface.co/datasets/zhouk777/gem4d-weight)  |
+| Release: data | Not verified [5](https://github.com/kaichen-z/GEM-4d) [6](https://huggingface.co/datasets/zhouk777/gem4d-weight)  |
+| Release: license | No root project LICENSE found in the inspected code tree; bundled DA3/CogVideoX and other pretrained components retain their own terms. A blanket project/weight license was not independently verified. [5](https://github.com/kaichen-z/GEM-4d) [6](https://huggingface.co/datasets/zhouk777/gem4d-weight)  |
+| Release: notes | Actual Geometry DiT, frozen-teacher, training and inference source is released. The official HF weight inventory contains two CogVideoX checkpoint exports with safetensors shards. The adaptive inverse-dynamics action module and VGGT/depth-target ablations are explicitly absent; the added Wan2.2-TI2V-5B backbone has no released GEM-4D weights. [5](https://github.com/kaichen-z/GEM-4d) [6](https://huggingface.co/datasets/zhouk777/gem4d-weight)  |
 
 **Scope and qualifications**
 
@@ -47,6 +47,8 @@ Geometry-supervised video generation is paired with a geometric inverse-dynamics
 **Primary evidence**
 
 1. [Original manuscript and first submission history](https://arxiv.org/abs/2605.22882) — Full author HTML method/evaluation/appendix inspected; depth observations, pseudo-labels and generated outputs retain distinct roles.
-2. [Official author project](https://gem-4d.github.io/) — Public author-linked project; figure and downstream scope verified separately.
-3. [Official implementation and release scope](https://github.com/kaichen-z/GEM-4d) — Availability of research implementation does not establish public task-policy checkpoints.
-4. [Actual repository content inventory](https://github.com/kaichen-z/GEM-4d/tree/main) — 0 tracked paths inspected; code release is distinguished from a README/project/figure-only repository.
+2. [Official author project](https://gem-4d.github.io/) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Official implementation and release scope](https://github.com/kaichen-z/GEM-4d) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Actual repository content inventory](https://github.com/kaichen-z/GEM-4d/tree/main) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+5. [Current artifact inventory and release scope](https://github.com/kaichen-z/GEM-4d) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+6. [Current artifact inventory and release scope](https://huggingface.co/datasets/zhouk777/gem4d-weight) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

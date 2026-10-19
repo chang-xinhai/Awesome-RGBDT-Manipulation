@@ -8,7 +8,7 @@ Neural Task Programming: Learning to Generalize Across Hierarchical Tasks
 
 **2017-10-04 · Preprint · Stanford University; California Institute of Technology**
 
-**[Paper](https://arxiv.org/abs/1710.01813)** · [Project](https://stanfordvl.github.io/ntp/) · [Code](https://github.com/StanfordVL/ntp)
+**[Paper](https://arxiv.org/abs/1710.01813)** · [Project](https://stanfordvl.github.io/ntp/) · [Code](https://github.com/StanfordVL/NTP-vat-release)
 
 Recursively decomposes a demonstrated task into subtasks and callable neural programs, with information scoping to support compositional generalization.
 
@@ -33,11 +33,11 @@ Recursively decomposes a demonstrated task into subtasks and callable neural pro
 | Observations / modalities | RGB · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [2](https://raw.githubusercontent.com/StanfordVL/ntp/master/README.md)  |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | MIT (code); model, dependency and dataset terms are separate. [3](https://raw.githubusercontent.com/StanfordVL/ntp/master/LICENSE)  |
-| Release: notes | Public author repository includes implementation / execution instructions; this does not certify every physical setup or experiment artifact. [2](https://raw.githubusercontent.com/StanfordVL/ntp/master/README.md)  |
+| Release: code | Partial — Bullet/PR2-gripper simulation framework [4](https://github.com/StanfordVL/NTP-vat-release)  |
+| Release: weights | Not verified [4](https://github.com/StanfordVL/NTP-vat-release)  |
+| Release: data | Not verified [4](https://github.com/StanfordVL/NTP-vat-release)  |
+| Release: license | MIT for the linked VAT environment and original project material, verified from their actual LICENSE files; model/data and external dependency terms remain separate. [4](https://github.com/StanfordVL/NTP-vat-release)  |
+| Release: notes | The original ntp repository contains paper/implementation documentation. Its author-linked NTP-vat-release contains actual vat environment code, expert demo.py and the PR2-gripper block-stacking environment, pinned to PyBullet 1.2.9. The full Sawyer environment is marked forthcoming; this is not a verified learned NTP model/training/checkpoint release. [4](https://github.com/StanfordVL/NTP-vat-release)  |
 
 **Scope and qualifications**
 
@@ -47,5 +47,6 @@ Recursively decomposes a demonstrated task into subtasks and callable neural pro
 **Primary evidence**
 
 1. [Original primary paper and appendix](https://arxiv.org/abs/1710.01813) — Survey citation is used only for discovery. Method and deployment facts come from the original paper; the date is its first submission where available. Affiliations are transcribed from the PDF author block / footnotes; LMPC affiliation is confirmed by its official project page.
-2. [Author repository README](https://raw.githubusercontent.com/StanfordVL/ntp/master/README.md) — Public author repository includes implementation / execution instructions; this does not certify every physical setup or experiment artifact.
-3. [Repository LICENSE](https://raw.githubusercontent.com/StanfordVL/ntp/master/LICENSE) — Code-license text checked directly; this license is not automatically assigned to model weights or third-party data.
+2. [Author repository README](https://raw.githubusercontent.com/StanfordVL/ntp/master/README.md) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Repository LICENSE](https://raw.githubusercontent.com/StanfordVL/ntp/master/LICENSE) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Current artifact inventory and release scope](https://github.com/StanfordVL/NTP-vat-release) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

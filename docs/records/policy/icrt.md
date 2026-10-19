@@ -36,7 +36,7 @@ A causal sensorimotor transformer learns to imitate a prompted task from demonst
 | Release: code | Available |
 | Release: weights | Available |
 | Release: data | Available |
-| Release: license | Not verified |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms. [3](https://github.com/Max-Fu/icrt/blob/main/LICENSE.txt)  |
 | Release: notes | Official project links code, ICRT checkpoints and ICRT-MT dataset; component licenses require separate inspection. |
 
 **Scope and qualifications**
@@ -48,3 +48,4 @@ A causal sensorimotor transformer learns to imitate a prompted task from demonst
 
 1. [Primary paper, full text](https://arxiv.org/abs/2408.15980) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/Max-Fu/icrt) — Repository identity; code and checkpoint release status are stated separately.
+3. [Actual repository code license](https://github.com/Max-Fu/icrt/blob/main/LICENSE.txt) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

@@ -34,11 +34,11 @@ Dexterous articulated-object manipulation benchmark centered on transfer to unse
 | Observations / modalities | Depth · Proprioception |
 | Evaluation domain | Simulation |
 | Embodiment | Dexterous hand |
-| Release: code | Available [3](https://github.com/Kami-code/dexart-release)  |
-| Release: weights | Available [3](https://github.com/Kami-code/dexart-release)  |
-| Release: data | Available [3](https://github.com/Kami-code/dexart-release)  |
-| Release: license | MIT code; asset terms separately inspected [3](https://github.com/Kami-code/dexart-release)  |
-| Release: notes | Code, object assets, vision pretraining and RL checkpoints linked by official repository. [3](https://github.com/Kami-code/dexart-release)  |
+| Release: code | Available [5](https://github.com/Kami-code/dexart-release)  |
+| Release: weights | Available [5](https://github.com/Kami-code/dexart-release)  |
+| Release: data | Available [5](https://github.com/Kami-code/dexart-release)  |
+| Release: license | Apache-2.0 repository code, verified from actual LICENSE; object assets, pretrained vision models and RL checkpoints retain separate terms. [5](https://github.com/Kami-code/dexart-release)  |
+| Release: notes | Code, object assets, vision pretraining and RL checkpoints linked by official repository. [5](https://github.com/Kami-code/dexart-release)  |
 
 **Task names — Complete four task families; object-instance splits are separate generalization configurations.:**
 
@@ -55,5 +55,6 @@ Dexterous articulated-object manipulation benchmark centered on transfer to unse
 
 1. [Paper](https://arxiv.org/abs/2305.05706) — Published paper / arXiv record and manuscript.
 2. [Official project](https://www.chenbao.tech/dexart/) — Public project page.
-3. [Official repository](https://github.com/Kami-code/dexart-release) — Current public repository; implementation scope may differ from paper.
+3. [Official repository](https://github.com/Kami-code/dexart-release) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
 4. [Data collection method and scope](https://arxiv.org/abs/2305.05706) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+5. [Current artifact inventory and release scope](https://github.com/Kami-code/dexart-release) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

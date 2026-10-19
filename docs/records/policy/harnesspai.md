@@ -8,7 +8,7 @@ HarnessPAI: An Evolving Harness for Physical AI
 
 **2026-09-24 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.29166)**
+**[Paper](https://arxiv.org/abs/2609.29166)** · [Project](https://darwin-agent.github.io/HarnessPAI/)
 
 Evolves reusable executable control harnesses across robot platforms while keeping action models fixed within the described adaptation.
 
@@ -33,11 +33,11 @@ Evolves reusable executable control harnesses across robot platforms while keepi
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Mobile manipulator · Legged robot · Humanoid |
-| Release: code | Not verified |
+| Release: code | Not released |
 | Release: weights | Not verified |
 | Release: data | Not verified |
 | Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: notes | The official homepage and author repository are accessible, but the repository release-status section marks code coming soon; the tree contains presentation assets and no actual implementation. No method-specific weight or data release was independently verified. |
 
 **Scope and qualifications**
 

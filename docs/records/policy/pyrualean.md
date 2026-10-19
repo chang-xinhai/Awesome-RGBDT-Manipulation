@@ -8,7 +8,7 @@ Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Ra
 
 **2026-10-01 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2610.01939)** · [Project](https://dagroup-pku.github.io/PyRUA-Lean/) · [Code](https://github.com/DAGroup-PKU/PyRUA-Lean)
+**[Paper](https://arxiv.org/abs/2610.01939)** · [Project](https://dagroup-pku.github.io/PyRUA-Lean/) · [Code](https://github.com/DAGroup-PKU/PyRUA-Lean) · [Weights](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)
 
 Uses Python cells to compose existing robot primitives with control flow and selective feedback, reducing repeated model calls relative to tool-by-tool execution.
 
@@ -33,11 +33,11 @@ Uses Python cells to compose existing robot primitives with control flow and sel
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [3](https://github.com/DAGroup-PKU/PyRUA-Lean) [4](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)  |
+| Release: weights | Available — PyRUA-Lean Coder v0.1-4B [3](https://github.com/DAGroup-PKU/PyRUA-Lean) [4](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)  |
+| Release: data | Not verified [3](https://github.com/DAGroup-PKU/PyRUA-Lean) [4](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)  |
+| Release: license | Apache-2.0 code and Coder checkpoint, verified from repository LICENSE and model LICENSE; external backbones/assets retain separate terms. [3](https://github.com/DAGroup-PKU/PyRUA-Lean) [4](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)  |
+| Release: notes | Actual Python-cell runtime, simulator backends and RoboDojo/XPolicyLab adapter are public. The separate GRPO-trained Coder v0.1-4B repository contains model.safetensors and model-extra-00001.safetensors. Physical-robot integration is still marked coming soon; hosted Astra and the released trained coder are separate branches. [3](https://github.com/DAGroup-PKU/PyRUA-Lean) [4](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ Uses Python cells to compose existing robot primitives with control flow and sel
 
 1. [Primary paper, full text](https://arxiv.org/abs/2610.01939) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/DAGroup-PKU/PyRUA-Lean) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/DAGroup-PKU/PyRUA-Lean) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

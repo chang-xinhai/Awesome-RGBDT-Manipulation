@@ -33,11 +33,11 @@ Uses one autoregressive Qwen transformer for interleaved reasoning/action tokens
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual · Mobile manipulator |
-| Release: code | Available [1](https://opengalaxea.github.io/G05/) [2](https://github.com/OpenGalaxea/GalaxeaVLA)  |
-| Release: weights | Available [1](https://opengalaxea.github.io/G05/)  |
-| Release: data | Not verified [1](https://opengalaxea.github.io/G05/)  |
-| Release: license | Not verified [1](https://opengalaxea.github.io/G05/)  |
-| Release: notes | Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. [1](https://opengalaxea.github.io/G05/)  |
+| Release: code | Available [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/OpenGalaxea/G05)  |
+| Release: weights | Gated — automatic Hugging Face access terms [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/OpenGalaxea/G05)  |
+| Release: data | Not verified [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/OpenGalaxea/G05)  |
+| Release: license | Not verified [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/OpenGalaxea/G05)  |
+| Release: notes | Public project and model release; undisclosed training details remain explicitly unknown. A manuscript is not required to identify the released policy. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed. [3](https://github.com/OpenGalaxea/GalaxeaVLA) [4](https://huggingface.co/OpenGalaxea/G05)  |
 
 **Scope and qualifications**
 
@@ -45,5 +45,7 @@ Uses one autoregressive Qwen transformer for interleaved reasoning/action tokens
 
 **Primary evidence**
 
-1. [Official model project / technical release](https://opengalaxea.github.io/G05/) — Research-report facts and current executable release are scoped separately; undated releases retain an unknown publication date.
-2. [Official implementation / author-contributed adapter](https://github.com/OpenGalaxea/GalaxeaVLA) — Actual deployment contract is checked; adapter presence alone is not evidence of benchmark participation.
+1. [Official model project / technical release](https://opengalaxea.github.io/G05/) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+2. [Official implementation / author-contributed adapter](https://github.com/OpenGalaxea/GalaxeaVLA) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Current artifact inventory and release scope](https://github.com/OpenGalaxea/GalaxeaVLA) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/OpenGalaxea/G05) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

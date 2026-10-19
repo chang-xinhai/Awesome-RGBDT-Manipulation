@@ -37,7 +37,7 @@ A tool-enabled coding agent mutates complete robot-policy repositories; gated ev
 | Release: weights | Not applicable |
 | Release: data | Not verified |
 | Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: notes | The official project links HELIX, a general codebase-evolution framework. Its source and BSD-3-Clause LICENSE do not independently establish release of the robot-specific Rho runtime, task checkpoints or corpus; those remain unverified. |
 
 **Scope and qualifications**
 

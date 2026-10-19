@@ -33,11 +33,11 @@ Retains task-level and action-level physical knowledge and repairs or deactivate
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [3](https://github.com/RUCKBReasoning/RoboHarn-Evo)  |
+| Release: weights | Not applicable [3](https://github.com/RUCKBReasoning/RoboHarn-Evo)  |
+| Release: data | Not verified [3](https://github.com/RUCKBReasoning/RoboHarn-Evo)  |
+| Release: license | Apache-2.0 original code, verified from LICENSE; vendored code, external policies, datasets and simulator assets retain separate terms. [3](https://github.com/RUCKBReasoning/RoboHarn-Evo)  |
+| Release: notes | Public implementation contains the agent, hierarchical knowledge evolution, RMBench/LIBERO-Pro/RoboDojo integrations and run configurations. External simulator assets and policy/SAM3 checkpoints are installed separately; no new method-specific weight or full rollout-corpus release was verified. [3](https://github.com/RUCKBReasoning/RoboHarn-Evo)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,4 @@ Retains task-level and action-level physical knowledge and repairs or deactivate
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.37583) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/RUCKBReasoning/RoboHarn-Evo) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/RUCKBReasoning/RoboHarn-Evo) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

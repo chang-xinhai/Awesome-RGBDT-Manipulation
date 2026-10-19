@@ -33,11 +33,11 @@ Pairs an InternVL backbone and latent-action planner with a diffusion action exp
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual · Dexterous hand |
-| Release: code | Available [2](https://github.com/OpenDriveLab/AgiBot-World)  |
-| Release: weights | Available [2](https://github.com/OpenDriveLab/AgiBot-World)  |
-| Release: data | Available [2](https://github.com/OpenDriveLab/AgiBot-World)  |
-| Release: license | Not reported [2](https://github.com/OpenDriveLab/AgiBot-World)  |
-| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [2](https://github.com/OpenDriveLab/AgiBot-World)  |
+| Release: code | Available [3](https://github.com/OpenDriveLab/AgiBot-World) [4](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta) [5](https://huggingface.co/agibot-world/GO-1)  |
+| Release: weights | Available [3](https://github.com/OpenDriveLab/AgiBot-World) [4](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta) [5](https://huggingface.co/agibot-world/GO-1)  |
+| Release: data | Gated — automatic Hugging Face access terms [3](https://github.com/OpenDriveLab/AgiBot-World) [4](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta) [5](https://huggingface.co/agibot-world/GO-1)  |
+| Release: license | Not reported [3](https://github.com/OpenDriveLab/AgiBot-World) [4](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta) [5](https://huggingface.co/agibot-world/GO-1)  |
+| Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed. [3](https://github.com/OpenDriveLab/AgiBot-World) [4](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta) [5](https://huggingface.co/agibot-world/GO-1)  |
 
 **Scope and qualifications**
 
@@ -46,4 +46,7 @@ Pairs an InternVL backbone and latent-action planner with a diffusion action exp
 **Primary evidence**
 
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2503.06669) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
-2. [Official policy implementation](https://github.com/OpenDriveLab/AgiBot-World) — Source and checkpoint availability checked separately; no local policy execution was performed.
+2. [Official policy implementation](https://github.com/OpenDriveLab/AgiBot-World) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Current artifact inventory and release scope](https://github.com/OpenDriveLab/AgiBot-World) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Current artifact inventory and release scope](https://huggingface.co/agibot-world/GO-1) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

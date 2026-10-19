@@ -33,11 +33,11 @@ Joint RGB/depth/normal video generation provides 4D forecasts that can be paired
 | Observations / modalities | RGB · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [2](https://tesseractworld.github.io/) [3](https://github.com/UMass-Embodied-AGI/TesserAct) [5](https://github.com/UMass-Embodied-AGI/TesserAct/tree/main)  |
-| Release: weights | Not verified [2](https://tesseractworld.github.io/) [3](https://github.com/UMass-Embodied-AGI/TesserAct) [6](https://huggingface.co/anyeZHY/tesseract)  |
-| Release: data | Not verified [2](https://tesseractworld.github.io/) [3](https://github.com/UMass-Embodied-AGI/TesserAct)  |
-| Release: license | MIT for repository code; pretrained models, data and figure rights remain separate [2](https://tesseractworld.github.io/) [3](https://github.com/UMass-Embodied-AGI/TesserAct) [4](https://github.com/UMass-Embodied-AGI/TesserAct/blob/main/LICENSE)  |
-| Release: notes | Code, data and weights are checked independently; an upstream pretrained model is not a released task policy. [2](https://tesseractworld.github.io/) [3](https://github.com/UMass-Embodied-AGI/TesserAct)  |
+| Release: code | Partial — world-model training/inference; task inverse dynamics unverified [7](https://github.com/UMass-Embodied-AGI/TesserAct) [8](https://huggingface.co/anyeZHY/tesseract)  |
+| Release: weights | Partial — released RGB/RGB-D-normal world-model checkpoints [7](https://github.com/UMass-Embodied-AGI/TesserAct) [8](https://huggingface.co/anyeZHY/tesseract)  |
+| Release: data | Not verified [7](https://github.com/UMass-Embodied-AGI/TesserAct) [8](https://huggingface.co/anyeZHY/tesseract)  |
+| Release: license | MIT for repository code; pretrained models, data and figure rights remain separate [7](https://github.com/UMass-Embodied-AGI/TesserAct) [8](https://huggingface.co/anyeZHY/tesseract)  |
+| Release: notes | The official HF inventory contains an RGB LoRA and three RGB-D-normal SFT safetensors shards. These establish a world-model checkpoint release; the separate task-specific inverse-dynamics policy/checkpoint remains unverified. Code, world-model weights and executable task policies are separate artifacts. [7](https://github.com/UMass-Embodied-AGI/TesserAct) [8](https://huggingface.co/anyeZHY/tesseract)  |
 
 **Scope and qualifications**
 
@@ -47,8 +47,10 @@ Joint RGB/depth/normal video generation provides 4D forecasts that can be paired
 **Primary evidence**
 
 1. [Original manuscript and first submission history](https://arxiv.org/abs/2504.20995) — Full author HTML method/evaluation/appendix inspected; depth observations, pseudo-labels and generated outputs retain distinct roles.
-2. [Official author project](https://tesseractworld.github.io/) — Public author-linked project; figure and downstream scope verified separately.
-3. [Official implementation and release scope](https://github.com/UMass-Embodied-AGI/TesserAct) — Availability of research implementation does not establish public task-policy checkpoints.
-4. [Actual license file in released source](https://github.com/UMass-Embodied-AGI/TesserAct/blob/main/LICENSE) — Only source code covered by this file; not a blanket license for paper figures or upstream weights.
-5. [Actual repository content inventory](https://github.com/UMass-Embodied-AGI/TesserAct/tree/main) — 51 tracked paths inspected; code release is distinguished from a README/project/figure-only repository.
-6. [Official weights release destination](https://huggingface.co/anyeZHY/tesseract) — Destination linked by the official project/repository; component release scope is retained in release notes.
+2. [Official author project](https://tesseractworld.github.io/) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Official implementation and release scope](https://github.com/UMass-Embodied-AGI/TesserAct) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Actual license file in released source](https://github.com/UMass-Embodied-AGI/TesserAct/blob/main/LICENSE) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+5. [Actual repository content inventory](https://github.com/UMass-Embodied-AGI/TesserAct/tree/main) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+6. [Official weights release destination](https://huggingface.co/anyeZHY/tesseract) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+7. [Current artifact inventory and release scope](https://github.com/UMass-Embodied-AGI/TesserAct) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+8. [Current artifact inventory and release scope](https://huggingface.co/anyeZHY/tesseract) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

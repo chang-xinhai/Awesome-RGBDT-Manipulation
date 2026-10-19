@@ -33,11 +33,11 @@ Refines a frozen tactile-wrench-aware VLA online using stage-wise RL and an inte
 | Observations / modalities | RGB · Tactile · Force/Torque · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified [2](https://torl-vla.github.io/)  |
-| Release: weights | Not verified [2](https://torl-vla.github.io/)  |
-| Release: data | Not verified [2](https://torl-vla.github.io/)  |
-| Release: license | Not verified [2](https://torl-vla.github.io/)  |
-| Release: notes | No verified public download found in the inspected primary sources. [2](https://torl-vla.github.io/)  |
+| Release: code | Not verified |
+| Release: weights | Not verified |
+| Release: data | Not verified |
+| Release: license | Not verified |
+| Release: notes | The current official project links openpi-RLT, whose actual implementation identifies itself as an RLT-style real-robot reproduction. This does not establish release of the paper’s full wrench-aware TORL-VLA system, task-specific checkpoint or corpus; those remain unverified. |
 
 **Scope and qualifications**
 
@@ -47,5 +47,5 @@ Refines a frozen tactile-wrench-aware VLA online using stage-wise RL and an inte
 **Primary evidence**
 
 1. [Author manuscript and submission history](https://arxiv.org/abs/2606.09337) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
-2. [Author project page](https://torl-vla.github.io/) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
+2. [Author project page](https://torl-vla.github.io/) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2606.09337) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.

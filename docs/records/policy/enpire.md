@@ -33,11 +33,11 @@ Organizes real-world robot self-improvement around autonomous environment prepar
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Bimanual · Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [3](https://github.com/NVlabs/ENPIRE)  |
+| Release: weights | Not verified [3](https://github.com/NVlabs/ENPIRE)  |
+| Release: data | Not verified [3](https://github.com/NVlabs/ENPIRE)  |
+| Release: license | Apache-2.0 code, verified from LICENSE; THIRD_PARTY_NOTICES.md and THIRD_PARTY_LICENSES.md preserve external terms. [3](https://github.com/NVlabs/ENPIRE)  |
+| Release: notes | Actual environment/station APIs, code-as-policy agent, autonomous experiment tooling and actor/learner training runtime are public. Real runs require station calibration, reset/reward definitions and external model/asset setup. No standalone final policy checkpoint or full interaction corpus was independently identified. [3](https://github.com/NVlabs/ENPIRE)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,4 @@ Organizes real-world robot self-improvement around autonomous environment prepar
 
 1. [Primary paper, full text](https://arxiv.org/abs/2606.19980) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/NVlabs/ENPIRE) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/NVlabs/ENPIRE) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

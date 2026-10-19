@@ -33,11 +33,11 @@ Composes 3D value maps from language-model programs and visual grounding, then o
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — RLBench demo implementation [4](https://github.com/huangwl18/VoxPoser)  |
+| Release: weights | Not applicable [4](https://github.com/huangwl18/VoxPoser)  |
+| Release: data | Not verified [4](https://github.com/huangwl18/VoxPoser)  |
+| Release: license | MIT code, verified from actual LICENSE; external language/vision models and RLBench assets retain separate terms. [3](https://github.com/huangwl18/VoxPoser/blob/main/LICENSE) [4](https://github.com/huangwl18/VoxPoser)  |
+| Release: notes | Actual LMP, voxel interfaces, planner, controller, dynamics and RLBench notebook implementation are public. The author explicitly excludes the real-world object-mask perception pipeline; simulator object masks are used in the demo, which is not a full released physical deployment or evaluation benchmark. [4](https://github.com/huangwl18/VoxPoser)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ Composes 3D value maps from language-model programs and visual grounding, then o
 
 1. [Primary paper, full text](https://arxiv.org/abs/2307.05973) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/huangwl18/VoxPoser) — Repository identity; code and checkpoint release status are stated separately.
+3. [Actual repository code license](https://github.com/huangwl18/VoxPoser/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.
+4. [Current artifact inventory and release scope](https://github.com/huangwl18/VoxPoser) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

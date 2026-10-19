@@ -37,7 +37,7 @@ Structured task difficulty and orthogonal language/visual perturbations evaluate
 | Release: code | Available [3](https://github.com/PKU-Alignment/VLA-Arena)  |
 | Release: weights | Available [3](https://github.com/PKU-Alignment/VLA-Arena)  |
 | Release: data | Available [3](https://github.com/PKU-Alignment/VLA-Arena)  |
-| Release: license | Not verified [3](https://github.com/PKU-Alignment/VLA-Arena)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [3](https://github.com/PKU-Alignment/VLA-Arena) [5](https://github.com/PKU-Alignment/VLA-Arena/blob/main/LICENSE)  |
 | Release: notes | Benchmark implementation, dataset conversion, checkpoints and leaderboard public. [3](https://github.com/PKU-Alignment/VLA-Arena)  |
 
 **Task names — Current official source task identifiers across 11 suites with level prefixes; counted combinations may differ from paper grouping.:**
@@ -224,3 +224,4 @@ Structured task difficulty and orthogonal language/visual perturbations evaluate
 2. [Official project](https://vla-arena.github.io/) — Public project page.
 3. [Official repository](https://github.com/PKU-Alignment/VLA-Arena) — Current public repository; implementation scope may differ from paper.
 4. [Data collection method and scope](https://arxiv.org/abs/2512.22539) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+5. [Actual repository code license](https://github.com/PKU-Alignment/VLA-Arena/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

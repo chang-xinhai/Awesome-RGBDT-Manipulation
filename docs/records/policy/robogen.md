@@ -33,11 +33,11 @@ A generative simulation pipeline proposes robot tasks, assets and learning super
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper · Dexterous hand · Mobile manipulator |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — PyBullet reimplementation [4](https://github.com/Genesis-Embodied-AI/RoboGen)  |
+| Release: weights | Not verified [4](https://github.com/Genesis-Embodied-AI/RoboGen)  |
+| Release: data | Not verified [4](https://github.com/Genesis-Embodied-AI/RoboGen)  |
+| Release: license | Apache-2.0 code, verified from LICENSE; parsed PartNet/Objaverse resources and dependencies retain separate terms. [3](https://github.com/Genesis-Embodied-AI/RoboGen/blob/main/LICENSE) [4](https://github.com/Genesis-Embodied-AI/RoboGen)  |
+| Release: notes | Actual task/scene generation, rigid-manipulation/locomotion skill learning, execution and example-task source are public. The official README identifies this as a PyBullet reimplementation and excludes the full original soft-body/Genesis pipeline. Pre-generated tasks and data-generation tools are distinct from a verified complete learned-policy checkpoint or dataset release. [4](https://github.com/Genesis-Embodied-AI/RoboGen)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ A generative simulation pipeline proposes robot tasks, assets and learning super
 
 1. [Primary paper, full text](https://arxiv.org/abs/2311.01455) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/Genesis-Embodied-AI/RoboGen) — Repository identity; code and checkpoint release status are stated separately.
+3. [Actual repository code license](https://github.com/Genesis-Embodied-AI/RoboGen/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.
+4. [Current artifact inventory and release scope](https://github.com/Genesis-Embodied-AI/RoboGen) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

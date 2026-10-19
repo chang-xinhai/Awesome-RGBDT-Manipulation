@@ -36,7 +36,7 @@ Aligns image, point-cloud and tactile tokens inside an LLM-based policy with aux
 | Release: code | Available [2](https://github.com/ZhuoyangLiu2005/MLA)  |
 | Release: weights | Partial [2](https://github.com/ZhuoyangLiu2005/MLA)  |
 | Release: data | Not verified [2](https://github.com/ZhuoyangLiu2005/MLA)  |
-| Release: license | Not verified [2](https://github.com/ZhuoyangLiu2005/MLA)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/ZhuoyangLiu2005/MLA) [4](https://github.com/ZhuoyangLiu2005/MLA/blob/main/LICENSE)  |
 | Release: notes | Repository provides training/evaluation; simulation checkpoint is not evidence for full real RGBDT release. [2](https://github.com/ZhuoyangLiu2005/MLA)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Aligns image, point-cloud and tactile tokens inside an LLM-based policy with aux
 1. [Author manuscript and submission history](https://arxiv.org/abs/2509.26642) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/ZhuoyangLiu2005/MLA) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2509.26642) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Actual repository code license](https://github.com/ZhuoyangLiu2005/MLA/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

@@ -36,7 +36,7 @@ Models future video, frame-level latent actions and separate mobility/manipulati
 | Release: code | Available [2](https://github.com/amap-cvlab/ABot-Manipulation)  |
 | Release: weights | Available [2](https://github.com/amap-cvlab/ABot-Manipulation)  |
 | Release: data | Not verified [2](https://github.com/amap-cvlab/ABot-Manipulation)  |
-| Release: license | Not reported [2](https://github.com/amap-cvlab/ABot-Manipulation)  |
+| Release: license | Apache-2.0 for repository code, verified from LICENSE.txt; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/amap-cvlab/ABot-Manipulation) [3](https://github.com/amap-cvlab/ABot-Manipulation/blob/main/LICENSE.txt)  |
 | Release: notes | Availability reflects public source/model links; complete paper-scale reproduction and all dataset access terms were not tested. [2](https://github.com/amap-cvlab/ABot-Manipulation)  |
 
 **Scope and qualifications**
@@ -47,3 +47,4 @@ Models future video, frame-level latent actions and separate mobility/manipulati
 
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2607.00678) — Latest available full manuscript inspected; publication date retains the first arXiv submission. Sizes, training cost and deployment rates keep their experimental scope.
 2. [Official policy implementation](https://github.com/amap-cvlab/ABot-Manipulation) — Source and checkpoint availability checked separately; no local policy execution was performed.
+3. [Actual repository code license](https://github.com/amap-cvlab/ABot-Manipulation/blob/main/LICENSE.txt) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

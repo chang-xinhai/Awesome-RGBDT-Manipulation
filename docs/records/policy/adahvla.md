@@ -8,7 +8,7 @@ AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution
 
 **2026-09-24 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.29204)** · [Code](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA)
+**[Paper](https://arxiv.org/abs/2609.29204)** · [Code](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) · [Data](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz)
 
 Adapts an executable harness around frozen robot / navigation policies through isolated analysis, revision and assessment contexts.
 
@@ -33,11 +33,11 @@ Adapts an executable harness around frozen robot / navigation policies through i
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Mobile manipulator |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — navigation harness and adaptation implementation [3](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) [4](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz)  |
+| Release: weights | Not applicable [3](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) [4](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz)  |
+| Release: data | Partial — bundled NaVILA-LH episode definitions [3](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) [4](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz)  |
+| Release: license | Apache-2.0 code, verified from LICENSE; navigation assets and upstream NaVILA weights retain separate terms. [3](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) [4](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz)  |
+| Release: notes | Actual harness.py, adaptation.py and evaluation scripts are released for the Go2/NaVILA navigation setting, with benchmarks/navila-LH/dataset.json.gz (50 episode definitions). This does not establish a complete release of the manipulation experiments; the NaVILA checkpoint is an upstream dependency, not an AdaHVLA-trained model. [3](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) [4](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ Adapts an executable harness around frozen robot / navigation policies through i
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.29204) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/main/benchmarks/navila-LH/dataset.json.gz) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

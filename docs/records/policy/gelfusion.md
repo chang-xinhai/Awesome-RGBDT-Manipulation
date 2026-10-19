@@ -8,7 +8,7 @@ GelFusion: Enhancing Robotic Manipulation under Visual Constraints via Visuotact
 
 **2025-05-12 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2505.07455)** · [Project](https://gelfusion.github.io/) · [Code](https://github.com/GelFusion/GelFusion)
+**[Paper](https://arxiv.org/abs/2505.07455)** · [Project](https://gelfusion.github.io/) · [Code](https://github.com/GelFusion/GelFusion) · [Data](https://huggingface.co/datasets/shu1ong/GelFusion)
 
 Vision-dominated cross-attention fuses tactile geometry and interaction dynamics for manipulation under visual constraints.
 
@@ -33,11 +33,11 @@ Vision-dominated cross-attention fuses tactile geometry and interaction dynamics
 | Observations / modalities | RGB · Tactile · Proprioception |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [2](https://gelfusion.github.io/) [3](https://github.com/GelFusion/GelFusion)  |
-| Release: weights | Not verified [2](https://gelfusion.github.io/) [3](https://github.com/GelFusion/GelFusion)  |
-| Release: data | Not verified [2](https://gelfusion.github.io/) [3](https://github.com/GelFusion/GelFusion)  |
-| Release: license | MIT [2](https://gelfusion.github.io/) [3](https://github.com/GelFusion/GelFusion)  |
-| Release: notes | Author-linked repository and actual LICENSE inspected; code, checkpoints anddatasets have independent availability. [2](https://gelfusion.github.io/) [3](https://github.com/GelFusion/GelFusion)  |
+| Release: code | Not released — implementation files absent from current repository [4](https://github.com/GelFusion/GelFusion) [5](https://huggingface.co/datasets/shu1ong/GelFusion)  |
+| Release: weights | Not verified [4](https://github.com/GelFusion/GelFusion) [5](https://huggingface.co/datasets/shu1ong/GelFusion)  |
+| Release: data | Available — three processed tactile dataset archives [4](https://github.com/GelFusion/GelFusion) [5](https://huggingface.co/datasets/shu1ong/GelFusion)  |
+| Release: license | MIT [4](https://github.com/GelFusion/GelFusion) [5](https://huggingface.co/datasets/shu1ong/GelFusion)  |
+| Release: notes | The current only branch and GitHub release inventory contain README, LICENSE, environment.yml and an illustration, with no actual implementation despite README references to DataCollection/train.py. The official linked HF dataset does contain ChipPick_replay_buffer.zip, Insertation_replay_buffer.zip and wiping_replay_buffer.zip; code and data availability are independent. [4](https://github.com/GelFusion/GelFusion) [5](https://huggingface.co/datasets/shu1ong/GelFusion)  |
 
 **Scope and qualifications**
 
@@ -46,5 +46,7 @@ Vision-dominated cross-attention fuses tactile geometry and interaction dynamics
 **Primary evidence**
 
 1. [Original paper and supplementary implementation details](https://arxiv.org/abs/2505.07455) — Primary full text reviewed; dataset, deployment modalities and training-only privileges are scoped separately.
-2. [Official author project](https://gelfusion.github.io/) — Live project artifact links inspected on2026-10-17.
-3. [Official released implementation and LICENSE](https://github.com/GelFusion/GelFusion) — Repository metadata,README and actualLICENSE inspected; availability scoped to the listed component.
+2. [Official author project](https://gelfusion.github.io/) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+3. [Official released implementation and LICENSE](https://github.com/GelFusion/GelFusion) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
+4. [Current artifact inventory and release scope](https://github.com/GelFusion/GelFusion) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Current artifact inventory and release scope](https://huggingface.co/datasets/shu1ong/GelFusion) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

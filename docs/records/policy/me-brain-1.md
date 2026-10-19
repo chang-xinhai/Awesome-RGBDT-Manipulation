@@ -8,7 +8,7 @@ ME-Brain-1.0: Memory, Cognition and Action for Evolving Embodied Intelligence
 
 **2026-09-21 · Preprint · Mach Embodied**
 
-**[Paper](https://arxiv.org/abs/2609.24271)** · [Code](https://github.com/MachEmbodied/ME-Brain-1.0)
+**[Paper](https://arxiv.org/abs/2609.24271)** · [Project](https://github.com/MachEmbodied/ME-Brain-1.0) · [Code](https://github.com/MachEmbodied/Focus-VLWA) · [Weights](https://huggingface.co/zhengjingxie/focus-vlwa)
 
 Combines hierarchical multimodal memory, a skill-using Cognitive Core and a world-aware action model to retain experience across deployment.
 
@@ -33,11 +33,11 @@ Combines hierarchical multimodal memory, a skill-using Cognitive Core and a worl
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — Focus-VLWA action component [3](https://github.com/MachEmbodied/Focus-VLWA) [4](https://huggingface.co/zhengjingxie/focus-vlwa)  |
+| Release: weights | Partial — Focus-VLWA action checkpoint [3](https://github.com/MachEmbodied/Focus-VLWA) [4](https://huggingface.co/zhengjingxie/focus-vlwa)  |
+| Release: data | Not verified [3](https://github.com/MachEmbodied/Focus-VLWA) [4](https://huggingface.co/zhengjingxie/focus-vlwa)  |
+| Release: license | Apache-2.0 for Focus-VLWA and umbrella repository code, verified from their LICENSE files; model checkpoint license not stated in the inspected HF card. External backbones retain separate terms. [3](https://github.com/MachEmbodied/Focus-VLWA) [4](https://huggingface.co/zhengjingxie/focus-vlwa)  |
+| Release: notes | The ME-Brain umbrella is primarily a component index. Its linked Focus-VLWA repository actually contains post-training, data conversion and inference implementation; the official checkpoint inventory includes model.safetensors, model_config.json and ARX-X5 normalization statistics. This is an action-component release, not a verified complete Cognitive Core/Evolvable Memory stack or full-system checkpoint. [3](https://github.com/MachEmbodied/Focus-VLWA) [4](https://huggingface.co/zhengjingxie/focus-vlwa)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,5 @@ Combines hierarchical multimodal memory, a skill-using Cognitive Core and a worl
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.24271) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/MachEmbodied/ME-Brain-1.0) — Repository identity; code and checkpoint release status are stated separately.
+3. [Current artifact inventory and release scope](https://github.com/MachEmbodied/Focus-VLWA) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+4. [Current artifact inventory and release scope](https://huggingface.co/zhengjingxie/focus-vlwa) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.

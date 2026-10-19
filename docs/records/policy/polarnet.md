@@ -36,7 +36,7 @@ Predicts language-conditioned keyframe actions directly from point clouds with p
 | Release: code | Available [2](https://github.com/vlc-robot/polarnet)  |
 | Release: weights | Not verified [2](https://github.com/vlc-robot/polarnet)  |
 | Release: data | Not verified [2](https://github.com/vlc-robot/polarnet)  |
-| Release: license | Not verified (code); model and data terms not verified [2](https://github.com/vlc-robot/polarnet)  |
+| Release: license | MIT for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/vlc-robot/polarnet) [4](https://github.com/vlc-robot/polarnet/blob/master/LICENSE)  |
 | Release: notes | Availability refers to linked author release; no installation or training was performed. [2](https://github.com/vlc-robot/polarnet)  |
 
 **Scope and qualifications**
@@ -49,3 +49,4 @@ Predicts language-conditioned keyframe actions directly from point clouds with p
 1. [Paper / technical report](https://arxiv.org/abs/2309.15596) — Main paper and supplementary implementation sections; v1 date retained.
 2. [Official repository](https://github.com/vlc-robot/polarnet) — Release and deployment scope checked in README.
 3. [Author project page](https://www.di.ens.fr/willow/research/polarnet/) — Official project, not an independent replication.
+4. [Actual repository code license](https://github.com/vlc-robot/polarnet/blob/master/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.

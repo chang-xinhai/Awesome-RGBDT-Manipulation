@@ -34,11 +34,11 @@ Controlled tactile perception dataset assessing within-sensor learning, zero-sho
 | Observations / modalities | Tactile |
 | Evaluation domain | Real world |
 | Embodiment | Sensor-level resource |
-| Release: code | Available [3](https://github.com/LannWei/Tactile_Database)  |
-| Release: weights | Not verified [3](https://github.com/LannWei/Tactile_Database)  |
-| Release: data | Available [3](https://github.com/LannWei/Tactile_Database)  |
-| Release: license | Not verified [3](https://github.com/LannWei/Tactile_Database)  |
-| Release: notes | Project/data public; code and per-dataset terms should be inspected separately. [3](https://github.com/LannWei/Tactile_Database)  |
+| Release: code | Available [6](https://github.com/LannWei/Tactile_Database) [7](https://huggingface.co/datasets/Lan-2025/Tactile)  |
+| Release: weights | Not verified [6](https://github.com/LannWei/Tactile_Database) [7](https://huggingface.co/datasets/Lan-2025/Tactile)  |
+| Release: data | Gated — automatic Hugging Face access terms [6](https://github.com/LannWei/Tactile_Database) [7](https://huggingface.co/datasets/Lan-2025/Tactile)  |
+| Release: license | Not verified [6](https://github.com/LannWei/Tactile_Database) [7](https://huggingface.co/datasets/Lan-2025/Tactile)  |
+| Release: notes | Project/data public; code and per-dataset terms should be inspected separately. The current official artifact inventory is gated (automatic access terms); files are listed but anonymous unrestricted download is not claimed. [6](https://github.com/LannWei/Tactile_Database) [7](https://huggingface.co/datasets/Lan-2025/Tactile)  |
 
 **Task names — Complete three-task perception benchmark.:**
 
@@ -55,6 +55,8 @@ Controlled tactile perception dataset assessing within-sensor learning, zero-sho
 
 1. [Paper](https://arxiv.org/abs/2606.25877) — Published paper / arXiv record and manuscript.
 2. [Official project](https://lannwei.github.io/Tactile_Database/) — Public project page.
-3. [Official repository](https://github.com/LannWei/Tactile_Database) — Current public repository; implementation scope may differ from paper.
+3. [Official repository](https://github.com/LannWei/Tactile_Database) — Research/project provenance; current artifact availability and licensing are superseded by the separately cited 2026-10-19 file inventories.
 4. [Publisher full text](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.70169) — Advanced Robotics Research, first published 25 September 2026. Section4 gives leakage-controlled chronological split, fixed-source transfer, force-only few-shot protocol and backbone study. Entry date retains arXiv v1.
 5. [Data collection method and scope](https://arxiv.org/abs/2606.25877) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+6. [Current artifact inventory and release scope](https://github.com/LannWei/Tactile_Database) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+7. [Current artifact inventory and release scope](https://huggingface.co/datasets/Lan-2025/Tactile) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
