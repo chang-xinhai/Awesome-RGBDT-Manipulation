@@ -8,7 +8,7 @@ GWM: Towards Scalable Gaussian World Models for Robotic Manipulation
 
 **2025-08-25 · ICCV 2025 · Tsinghua University; BIGAI; Nanyang Technological University**
 
-**[Paper](https://arxiv.org/abs/2508.17600)** · [Project](https://gaussian-world-model.github.io/)
+**[Paper](https://arxiv.org/abs/2508.17600)** · [Project](https://gaussian-world-model.github.io/) · [Code](https://github.com/Gaussian-World-Model/gaussianwm)
 
 Action-conditioned Gaussian scene dynamics supply geometric features and a neural simulator for robot policy learning.
 
@@ -34,11 +34,11 @@ Action-conditioned Gaussian scene dynamics supply geometric features and a neura
 | Observations / modalities | RGB · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment |  |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Code, data and weights are checked independently; an upstream pretrained model is not a released task policy. |
+| Release: code | Partial — work-in-progress training implementation [2](https://github.com/Gaussian-World-Model/gaussianwm)  |
+| Release: weights | Not verified [2](https://github.com/Gaussian-World-Model/gaussianwm)  |
+| Release: data | Not verified [2](https://github.com/Gaussian-World-Model/gaussianwm)  |
+| Release: license | MIT [2](https://github.com/Gaussian-World-Model/gaussianwm)  |
+| Release: notes | Official repository identifies itself as work in progress and releases training code. Upstream Splatt3r weights are not a released GWM checkpoint. [2](https://github.com/Gaussian-World-Model/gaussianwm)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Action-conditioned Gaussian scene dynamics supply geometric features and a neura
 **Primary evidence**
 
 1. [Original manuscript and first submission history](https://arxiv.org/abs/2508.17600) — Full author HTML method/evaluation/appendix inspected; depth observations, pseudo-labels and generated outputs retain distinct roles.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/Gaussian-World-Model/gaussianwm) — Official repository identifies itself as work in progress and releases training code. Upstream Splatt3r weights are not a released GWM checkpoint. MIT.

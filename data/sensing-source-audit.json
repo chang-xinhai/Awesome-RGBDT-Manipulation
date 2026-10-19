@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-17",
+  "reviewed": "2026-10-19",
   "scope": "Source-by-source tactile and manipulation-relevant geometry discovery. Source aliases can overlap; inclusion specifications use original papers and releases.",
   "sources": [
     {
@@ -2764,6 +2764,130 @@
           "url": "https://arxiv.org/abs/2610.21349v1",
           "status": "adjacent-resource",
           "note": "Differentiable contact simulator discovery; retained as an adjacent tool requiring separate primary review."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-update-20261019",
+      "label": "19 October update: arXiv, Awesome-Touch and official release follow-up",
+      "url": "https://github.com/linchangyi1/Awesome-Touch",
+      "scope": "Recent precision/contact-rich policies and manipulation-relevant predictive models, verified against original papers; official release review is separate from discovery feeds.",
+      "entries": [
+        {
+          "name": "Blind Precise Assembly",
+          "url": "https://arxiv.org/abs/2610.23849",
+          "status": "indexed",
+          "workId": "blind-precise-assembly",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "No Eyes, No Problem: Blind Baoding Manipulation",
+          "url": "https://arxiv.org/abs/2610.23438",
+          "status": "indexed",
+          "workId": "blind-baoding",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "ORD-WM",
+          "url": "https://arxiv.org/abs/2610.23156",
+          "status": "indexed",
+          "workId": "ord-wm",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "Ego2Contact",
+          "url": "https://arxiv.org/abs/2610.22932",
+          "status": "indexed",
+          "workId": "ego2contact",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "DefFlow",
+          "url": "https://arxiv.org/abs/2610.22827",
+          "status": "indexed",
+          "workId": "defflow",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "DSP: Dexterity from Supervised Play",
+          "url": "https://arxiv.org/abs/2610.22340",
+          "status": "indexed",
+          "workId": "dexterity-supervised-play",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "ForceWAM",
+          "url": "https://arxiv.org/abs/2610.18852",
+          "status": "indexed",
+          "workId": "forcewam",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "Contact Trajectory Prompting (CTP)",
+          "url": "https://arxiv.org/abs/2610.18848",
+          "status": "indexed",
+          "workId": "contact-trajectory-prompting",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "ForeTac",
+          "url": "https://arxiv.org/abs/2610.18118",
+          "status": "indexed",
+          "workId": "foretac",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "DexNinja",
+          "url": "https://arxiv.org/abs/2610.17208",
+          "status": "indexed",
+          "workId": "dexninja",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "FOMO-Dex",
+          "url": "https://arxiv.org/abs/2610.17161",
+          "status": "indexed",
+          "workId": "fomo-dex",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "DEFT-VLA",
+          "url": "https://arxiv.org/abs/2610.14854",
+          "status": "indexed",
+          "workId": "deft-vla",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "Residual Compliant Policy",
+          "url": "https://arxiv.org/abs/2610.14035",
+          "status": "indexed",
+          "workId": "residual-compliant-policy",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "TacZero",
+          "url": "https://arxiv.org/abs/2610.07621",
+          "status": "indexed",
+          "workId": "taczero",
+          "note": "Original v1 date, full method and deployed observations verified; no release is inferred from a paper or project page."
+        },
+        {
+          "name": "DT-TacVLA",
+          "url": "https://dt-tacvla.github.io/",
+          "status": "unresolved",
+          "note": "Anonymous project presentation has no verified canonical paper/date or identifiable author provenance; held outside reviewed records."
+        },
+        {
+          "name": "Stereopatch project-page source",
+          "url": "https://github.com/YananZHOU5555/stereopatch",
+          "status": "background",
+          "note": "Repository is the Astro project page; it is not a manipulation-policy implementation release."
+        },
+        {
+          "name": "TORL-VLA linked RLT reproduction",
+          "url": "https://github.com/Yyshadow/openpi-RLT",
+          "status": "background",
+          "note": "Linked repository describes an RLT reproduction rather than a verified TORL-VLA implementation; do not upgrade official release status from that link."
         }
       ]
     }

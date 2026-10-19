@@ -8,7 +8,7 @@ ICLR: In-Context Imitation Learning with Visual Reasoning
 
 **2026-03-08 · IROS 2026 · Not reported**
 
-**[Paper](https://arxiv.org/abs/2603.07530)** · [Project](https://toannguyen1904.github.io/ICLR)
+**[Paper](https://arxiv.org/abs/2603.07530)** · [Project](https://toannguyen1904.github.io/ICLR) · [Code](https://github.com/toannguyen1904/ICLR)
 
 Augments demonstration-conditioned sensorimotor prediction with explicit image-space future keypoint traces that are generated before robot actions.
 
@@ -33,11 +33,11 @@ Augments demonstration-conditioned sensorimotor prediction with explicit image-s
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/toannguyen1904/ICLR)  |
+| Release: weights | Not verified [2](https://github.com/toannguyen1904/ICLR)  |
+| Release: data | Not verified [2](https://github.com/toannguyen1904/ICLR)  |
+| Release: license | Apache-2.0 [2](https://github.com/toannguyen1904/ICLR)  |
+| Release: notes | Official IROS 2026 implementation contains LIBERO and physical-robot training/evaluation scripts. [2](https://github.com/toannguyen1904/ICLR)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Augments demonstration-conditioned sensorimotor prediction with explicit image-s
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2603.07530) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/toannguyen1904/ICLR) — Official IROS 2026 implementation contains LIBERO and physical-robot training/evaluation scripts. Apache-2.0.

@@ -1,6 +1,6 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-17. 684 unique records; 50 benchmark records; 579 policy records; 47 models; 9 surveys; 12 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-10-19. 698 unique records; 50 benchmark records; 591 policy records; 49 models; 9 surveys; 12 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
@@ -10,13 +10,13 @@ Review cutoff: 2026-10-17. 684 unique records; 50 benchmark records; 579 policy 
 - General Manipulation: 13 records with this classification.
 - Robustness and Evaluation: 14 records with this classification.
 - Supporting Tools and Data: 12 records with this classification.
-- Visuo-Tactile Policy Learning: 68 records with this classification.
-- Tactile VLA and World-Action Models: 108 records with this classification.
-- RGB-D and 3D Policies: 155 records with this classification.
-- Tactile Representations and Pretraining: 41 records with this classification.
-- Geometry and Predictive Models: 17 records with this classification.
-- Visual Precision and Reinforcement Learning: 37 records with this classification.
-- Agent / RSI / ICL: 251 records with this classification.
+- Visuo-Tactile Policy Learning: 74 records with this classification.
+- Tactile VLA and World-Action Models: 110 records with this classification.
+- RGB-D and 3D Policies: 157 records with this classification.
+- Tactile Representations and Pretraining: 42 records with this classification.
+- Geometry and Predictive Models: 18 records with this classification.
+- Visual Precision and Reinforcement Learning: 41 records with this classification.
+- Agent / RSI / ICL: 253 records with this classification.
 - Generalist Policy Foundations: 139 records with this classification.
 
 ## Benchmark-to-policy source audit
@@ -71,6 +71,7 @@ Source aliases are discovery provenance, not primary method evidence. Indexed ma
 | [Tactile-guided survey control gaps](https://arxiv.org/abs/2610.20134) | 10 / 10 |
 | [Evo-DexBench KineDex baseline — original policy](https://arxiv.org/abs/2610.21180) | 1 / 1 |
 | [Recent official arXiv — scoped sensing/contact additions](https://export.arxiv.org/api/query?search_query=cat%3Acs.RO&sortBy=submittedDate&sortOrder=descending) | 3 / 8 |
+| [19 October update: arXiv, Awesome-Touch and official release follow-up](https://github.com/linchangyi1/Awesome-Touch) | 14 / 17 |
 
 ## Evidence methodology
 

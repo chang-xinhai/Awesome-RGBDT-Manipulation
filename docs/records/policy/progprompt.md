@@ -8,7 +8,7 @@ ProgPrompt: Generating Situated Robot Task Plans using Large Language Models
 
 **2022-09-22 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2209.11302)** · [Project](https://progprompt.github.io/)
+**[Paper](https://arxiv.org/abs/2209.11302)** · [Project](https://progprompt.github.io/) · [Code](https://github.com/NVlabs/progprompt-vh)
 
 Prompts an LLM to produce situated robot programs using an allowed action API, object inventory and assertion-style feedback.
 
@@ -33,11 +33,11 @@ Prompts an LLM to produce situated robot programs using an allowed action API, o
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — VirtualHome implementation [2](https://github.com/NVlabs/progprompt-vh)  |
+| Release: weights | Not applicable [2](https://github.com/NVlabs/progprompt-vh)  |
+| Release: data | Not verified [2](https://github.com/NVlabs/progprompt-vh)  |
+| Release: license | NVIDIA License — see repository LICENSE for restrictions [2](https://github.com/NVlabs/progprompt-vh)  |
+| Release: notes | Official release explicitly targets VirtualHome experiments; physical-robot integration is not established by this repository. [2](https://github.com/NVlabs/progprompt-vh)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Prompts an LLM to produce situated robot programs using an allowed action API, o
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2209.11302) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/NVlabs/progprompt-vh) — Official release explicitly targets VirtualHome experiments; physical-robot integration is not established by this repository. NVIDIA License — see repository LICENSE for restrictions.

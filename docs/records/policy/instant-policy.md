@@ -8,7 +8,7 @@ Instant Policy: In-Context Imitation Learning via Graph Diffusion
 
 **2024-11-19 · ICLR 2025 · Not reported**
 
-**[Paper](https://arxiv.org/abs/2411.12633)** · [Project](https://www.robot-learning.uk/instant-policy)
+**[Paper](https://arxiv.org/abs/2411.12633)** · [Project](https://www.robot-learning.uk/instant-policy) · [Code](https://github.com/vv19/instant_policy)
 
 A graph-based diffusion model adapts manipulation behavior from one or two demonstration trajectories using segmented point-cloud geometry.
 
@@ -33,11 +33,11 @@ A graph-based diffusion model adapts manipulation behavior from one or two demon
 | Observations / modalities | Depth · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — deployment code and compiled model [2](https://github.com/vv19/instant_policy)  |
+| Release: weights | Not verified [2](https://github.com/vv19/instant_policy)  |
+| Release: data | Not verified [2](https://github.com/vv19/instant_policy)  |
+| Release: license | PolyForm Noncommercial 1.0.0 [2](https://github.com/vv19/instant_policy)  |
+| Release: notes | Repository provides deployment utilities and instant_policy.so/pyi; this is not a complete source/training release and has noncommercial terms. [2](https://github.com/vv19/instant_policy)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,4 @@ A graph-based diffusion model adapts manipulation behavior from one or two demon
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2411.12633) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/vv19/instant_policy) — Repository provides deployment utilities and instant_policy.so/pyi; this is not a complete source/training release and has noncommercial terms. PolyForm Noncommercial 1.0.0.

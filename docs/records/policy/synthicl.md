@@ -6,9 +6,9 @@
 
 SynthICL: Scalable In-context Imitation Learning with Synthetic Data
 
-**2026-06-06 · Preprint · Not reported**
+**2026-06-06 · CoRL 2026 · Not reported**
 
-**[Paper](https://arxiv.org/abs/2606.08154)** · [Project](https://synth-icl.github.io)
+**[Paper](https://arxiv.org/abs/2606.08154)** · [Project](https://synth-icl.github.io) · [Code](https://github.com/sNiper-Qian/synthicl)
 
 A visual-context flow-matching policy learns in-context imitation from synthetic pseudo-demonstrations and an auxiliary subgoal-image objective.
 
@@ -33,11 +33,11 @@ A visual-context flow-matching policy learns in-context imitation from synthetic
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/sNiper-Qian/synthicl)  |
+| Release: weights | Not verified [2](https://github.com/sNiper-Qian/synthicl)  |
+| Release: data | Not verified [2](https://github.com/sNiper-Qian/synthicl)  |
+| Release: license | Apache-2.0 code; DINOv3 backbone remains subject to its own gated terms [2](https://github.com/sNiper-Qian/synthicl)  |
+| Release: notes | Official training implementation includes ICIL package and scripts. Upstream gated DINOv3 weights do not establish a released trained SynthICL checkpoint. [2](https://github.com/sNiper-Qian/synthicl)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ A visual-context flow-matching policy learns in-context imitation from synthetic
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2606.08154) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/sNiper-Qian/synthicl) — Official training implementation includes ICIL package and scripts. Upstream gated DINOv3 weights do not establish a released trained SynthICL checkpoint. Apache-2.0 code; DINOv3 backbone remains subject to its own gated terms.

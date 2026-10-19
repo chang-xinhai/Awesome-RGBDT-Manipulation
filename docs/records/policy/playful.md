@@ -6,9 +6,9 @@
 
 Playful Agentic Robot Learning
 
-**2026-06-17 · Preprint · Not reported**
+**2026-06-17 · CoRL 2026 Spotlight · Not reported**
 
-**[Paper](https://arxiv.org/abs/2606.19419)** · [Project](https://playful-rats.github.io)
+**[Paper](https://arxiv.org/abs/2606.19419)** · [Project](https://playful-rats.github.io) · [Code](https://github.com/Playful-RATs/rats)
 
 Learns a reusable skill library through self-directed play before receiving downstream task requests, selecting experiences that balance novelty and learnability.
 
@@ -33,11 +33,11 @@ Learns a reusable skill library through self-directed play before receiving down
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/Playful-RATs/rats)  |
+| Release: weights | Not applicable [2](https://github.com/Playful-RATs/rats)  |
+| Release: data | Not verified [2](https://github.com/Playful-RATs/rats)  |
+| Release: license | Apache-2.0 [2](https://github.com/Playful-RATs/rats)  |
+| Release: notes | Official RATs implementation releases skill-acquisition/evaluation runtime and benchmark configuration. Agent skill memory is distinct from model weights. [2](https://github.com/Playful-RATs/rats)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Learns a reusable skill library through self-directed play before receiving down
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2606.19419) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/Playful-RATs/rats) — Official RATs implementation releases skill-acquisition/evaluation runtime and benchmark configuration. Agent skill memory is distinct from model weights. Apache-2.0.

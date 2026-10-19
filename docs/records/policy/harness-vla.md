@@ -8,7 +8,7 @@ Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memo
 
 **2026-07-09 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2607.08448)** · [Project](https://harnessvla.github.io)
+**[Paper](https://arxiv.org/abs/2607.08448)** · [Project](https://harnessvla.github.io) · [Code](https://github.com/RLinf/RPent)
 
 An agent composes analytic primitives and a frozen VLA, using memory to invoke the learned policy within more reliable operating conditions.
 
@@ -33,11 +33,11 @@ An agent composes analytic primitives and a frozen VLA, using memory to invoke t
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual · Mobile manipulator |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/RLinf/RPent)  |
+| Release: weights | Not applicable [2](https://github.com/RLinf/RPent)  |
+| Release: data | Not verified [2](https://github.com/RLinf/RPent)  |
+| Release: license | Apache-2.0 runtime; external VLA/model/simulator terms separate [2](https://github.com/RLinf/RPent)  |
+| Release: notes | RPent explicitly identifies Harness VLA (arXiv:2607.08448) as its first publication and releases agent runtime, planner configuration and benchmark execution. [2](https://github.com/RLinf/RPent)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ An agent composes analytic primitives and a frozen VLA, using memory to invoke t
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2607.08448) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/RLinf/RPent) — RPent explicitly identifies Harness VLA (arXiv:2607.08448) as its first publication and releases agent runtime, planner configuration and benchmark execution. Apache-2.0 runtime; external VLA/model/simulator terms separate.

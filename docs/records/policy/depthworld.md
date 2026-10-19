@@ -6,9 +6,9 @@
 
 DepthWorld: 3D World Model for Robot Manipulation
 
-**2026-10-06 · arXiv preprint · Czech Technical University in Prague, CIIRC**
+**2026-10-06 · CoRL 2026 · Czech Technical University in Prague, CIIRC**
 
-**[Paper](https://arxiv.org/abs/2610.08780)** · [Project](https://www.jaibardhan.com/depthworld)
+**[Paper](https://arxiv.org/abs/2610.08780)** · [Project](https://www.jaibardhan.com/depthworld) · [Code](https://github.com/Jai2500/depthworld) · [Data](https://huggingface.co/datasets/jaibrdhn/droid_3d_extrinsics) · [Weights](https://huggingface.co/jaibrdhn/depthworld) · [Dataset-Access](https://forms.gle/E84Kg4BedVpgMe436)
 
 An action-conditioned robot world model jointly predicts multi-view RGB and metric depth using recalibrated DROID-3D supervision.
 
@@ -34,11 +34,11 @@ An action-conditioned robot world model jointly predicts multi-view RGB and metr
 | Observations / modalities | RGB · Depth · Proprioception |
 | Evaluation domain | Real-world recordings |
 | Embodiment |  |
-| Release: code | Not verified [2](https://www.jaibardhan.com/depthworld)  |
-| Release: weights | Not verified [2](https://www.jaibardhan.com/depthworld)  |
-| Release: data | Not verified [2](https://www.jaibardhan.com/depthworld)  |
-| Release: license | Not verified [2](https://www.jaibardhan.com/depthworld)  |
-| Release: notes | Code, data and weights are checked independently; an upstream pretrained model is not a released task policy. [2](https://www.jaibardhan.com/depthworld)  |
+| Release: code | Available [2](https://www.jaibardhan.com/depthworld) [3](https://github.com/Jai2500/depthworld)  |
+| Release: weights | Available [2](https://www.jaibardhan.com/depthworld) [3](https://github.com/Jai2500/depthworld) [4](https://huggingface.co/jaibrdhn/depthworld)  |
+| Release: data | Partial — DROID-3D calibration/extrinsics; image/depth corpus access by request [2](https://www.jaibardhan.com/depthworld) [3](https://github.com/Jai2500/depthworld) [5](https://huggingface.co/datasets/jaibrdhn/droid_3d_extrinsics)  |
+| Release: license | MIT code; SVD-derived checkpoints retain Stability AI Community License; DROID-3D extrinsics CC BY 4.0 [2](https://www.jaibardhan.com/depthworld) [3](https://github.com/Jai2500/depthworld)  |
+| Release: notes | Training/inference and 90k-step EMA checkpoint files are verified. Calibration/extrinsics are public; DROID-3D image/depth access uses a separate request form. The unreleased 40k warm-start checkpoint is not conflated with the 90k release. [2](https://www.jaibardhan.com/depthworld) [3](https://github.com/Jai2500/depthworld)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,6 @@ An action-conditioned robot world model jointly predicts multi-view RGB and metr
 
 1. [Original manuscript and first submission history](https://arxiv.org/abs/2610.08780) — Full author HTML method/evaluation/appendix inspected; depth observations, pseudo-labels and generated outputs retain distinct roles.
 2. [Official author project](https://www.jaibardhan.com/depthworld) — Public author-linked project; figure and downstream scope verified separately.
+3. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/Jai2500/depthworld) — Training/inference and 90k-step EMA checkpoint files are verified. Calibration/extrinsics are public; DROID-3D image/depth access uses a separate request form. The unreleased 40k warm-start checkpoint is not conflated with the 90k release. MIT code; SVD-derived checkpoints retain Stability AI Community License; DROID-3D extrinsics CC BY 4.0.
+4. [Official released artifact inventory and model/dataset card](https://huggingface.co/jaibrdhn/depthworld) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.
+5. [Official released artifact inventory and model/dataset card](https://huggingface.co/datasets/jaibrdhn/droid_3d_extrinsics) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.

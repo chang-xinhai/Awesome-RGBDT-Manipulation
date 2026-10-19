@@ -8,7 +8,7 @@ Eureka: Human-Level Reward Design via Coding Large Language Models
 
 **2023-10-19 · Preprint · NVIDIA; University of Pennsylvania; California Institute of Technology**
 
-**[Paper](https://arxiv.org/abs/2310.12931)** · [Project](https://eureka-research.github.io)
+**[Paper](https://arxiv.org/abs/2310.12931)** · [Project](https://eureka-research.github.io) · [Code](https://github.com/eureka-research/Eureka)
 
 Uses language-model reward-code generation and evolutionary reward reflection to train robot skills through reinforcement learning.
 
@@ -33,11 +33,11 @@ Uses language-model reward-code generation and evolutionary reward reflection to
 | Observations / modalities | Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Dexterous hand · Parallel-jaw gripper · Legged robot |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/eureka-research/Eureka)  |
+| Release: weights | Not applicable [2](https://github.com/eureka-research/Eureka)  |
+| Release: data | Not verified [2](https://github.com/eureka-research/Eureka)  |
+| Release: license | MIT [2](https://github.com/eureka-research/Eureka)  |
+| Release: notes | Official repository contains reward generation, IsaacGym environments and RL training code; references to VIMA are baselines rather than Eureka-specific artifacts. [2](https://github.com/eureka-research/Eureka)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Uses language-model reward-code generation and evolutionary reward reflection to
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2310.12931) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/eureka-research/Eureka) — Official repository contains reward generation, IsaacGym environments and RL training code; references to VIMA are baselines rather than Eureka-specific artifacts. MIT.

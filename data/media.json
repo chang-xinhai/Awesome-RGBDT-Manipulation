@@ -10298,5 +10298,187 @@
       "note": "Data transcribed from the official 2026-10-17 leaderboard snapshot. This is an evaluation-source preview, not a policy architecture figure. Score and success rate are separate metrics.",
       "sourceSha256": "3e38ae8a6dfea357faf623b0e0f26be4bf30dfb99933f5fc02bb9c2ef6aa0484"
     }
+  },
+  "blind-precise-assembly": {
+    "policy": {
+      "path": "/images/works/blind-precise-assembly-policy.webp",
+      "original": "https://arxiv.org/html/2610.23849v1/fig_architecture.png",
+      "page": "https://arxiv.org/html/2610.23849v1",
+      "credit": "Blind Precise Assembly authors; original rights retained.",
+      "alt": "Blind Precise Assembly method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 647,
+      "height": 190
+    }
+  },
+  "blind-baoding": {
+    "policy": {
+      "path": "/images/works/blind-baoding-policy.webp",
+      "original": "https://arxiv.org/html/2610.23438v1/IEEEtranBST/method_icra8.drawio.png",
+      "page": "https://arxiv.org/html/2610.23438v1",
+      "credit": "Blind Baoding authors; original rights retained.",
+      "alt": "Blind Baoding method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 1086
+    }
+  },
+  "ord-wm": {
+    "policy": {
+      "path": "/images/works/ord-wm-policy.webp",
+      "original": "https://arxiv.org/html/2610.23156v1/overall3.png",
+      "page": "https://arxiv.org/html/2610.23156v1",
+      "credit": "Ord Wm authors; original rights retained.",
+      "alt": "Ord Wm method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1474,
+      "height": 695
+    }
+  },
+  "ego2contact": {
+    "policy": {
+      "path": "/images/works/ego2contact-policy.webp",
+      "original": "https://arxiv.org/html/2610.22932v1/human_touch_prior.png",
+      "page": "https://arxiv.org/html/2610.22932v1",
+      "credit": "Ego2Contact authors; original rights retained.",
+      "alt": "Ego2Contact method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1004,
+      "height": 326
+    }
+  },
+  "defflow": {
+    "policy": {
+      "path": "/images/works/defflow-policy.webp",
+      "original": "https://arxiv.org/html/2610.22827v1/Images/arch_v14.png",
+      "page": "https://arxiv.org/html/2610.22827v1",
+      "credit": "Defflow authors; original rights retained.",
+      "alt": "Defflow method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1400,
+      "height": 1416
+    }
+  },
+  "dexterity-supervised-play": {
+    "policy": {
+      "path": "/images/works/dexterity-supervised-play-policy.webp",
+      "original": "https://arxiv.org/html/2610.22340v1/method.png",
+      "page": "https://arxiv.org/html/2610.22340v1",
+      "credit": "Dexterity Supervised Play authors; original rights retained.",
+      "alt": "Dexterity Supervised Play method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1370,
+      "height": 396
+    }
+  },
+  "forcewam": {
+    "policy": {
+      "path": "/images/works/forcewam-policy.webp",
+      "original": "https://arxiv.org/html/2610.18852v1/force_wam-pipeline.png",
+      "page": "https://arxiv.org/html/2610.18852v1",
+      "credit": "Forcewam authors; original rights retained.",
+      "alt": "Forcewam method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 781
+    }
+  },
+  "contact-trajectory-prompting": {
+    "policy": {
+      "path": "/images/works/contact-trajectory-prompting-policy.webp",
+      "original": "https://arxiv.org/html/2610.18848v1/pipeline.png",
+      "page": "https://arxiv.org/html/2610.18848v1",
+      "credit": "Contact Trajectory Prompting authors; original rights retained.",
+      "alt": "Contact Trajectory Prompting method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 783
+    }
+  },
+  "foretac": {
+    "policy": {
+      "path": "/images/works/foretac-policy.webp",
+      "original": "https://foretac.github.io/static/images/manuscript/foretac_method_fig2.png",
+      "page": "https://foretac.github.io/",
+      "credit": "Foretac authors; original rights retained.",
+      "alt": "Foretac method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 727
+    }
+  },
+  "dexninja": {
+    "policy": {
+      "path": "/images/works/dexninja-policy.webp",
+      "original": "https://arxiv.org/html/2610.17208v1/pipeline_new_v7.png",
+      "page": "https://arxiv.org/html/2610.17208v1",
+      "credit": "Dexninja authors; original rights retained.",
+      "alt": "Dexninja method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 827,
+      "height": 279
+    }
+  },
+  "fomo-dex": {
+    "policy": {
+      "path": "/images/works/fomo-dex-policy.webp",
+      "original": "https://arxiv.org/html/2610.17161v1/force-illustration-fixed.png",
+      "page": "https://arxiv.org/html/2610.17161v1",
+      "credit": "Fomo Dex authors; original rights retained.",
+      "alt": "Fomo Dex method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 518
+    }
+  },
+  "deft-vla": {
+    "policy": {
+      "path": "/images/works/deft-vla-policy.webp",
+      "original": "https://arxiv.org/html/2610.14854v1/figures/method.png",
+      "page": "https://arxiv.org/html/2610.14854v1",
+      "credit": "Deft Vla authors; original rights retained.",
+      "alt": "Deft Vla method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 626
+    }
+  },
+  "residual-compliant-policy": {
+    "policy": {
+      "path": "/images/works/residual-compliant-policy-policy.webp",
+      "original": "https://arxiv.org/html/2610.14035v1/figures/pipeline_fig_final.png",
+      "page": "https://arxiv.org/html/2610.14035v1",
+      "credit": "Residual Compliant Policy authors; original rights retained.",
+      "alt": "Residual Compliant Policy method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 1600,
+      "height": 661
+    }
+  },
+  "taczero": {
+    "policy": {
+      "path": "/images/works/taczero-policy.webp",
+      "original": "https://arxiv.org/html/2610.07621v1/method.png",
+      "page": "https://arxiv.org/html/2610.07621v1",
+      "credit": "Taczero authors; original rights retained.",
+      "alt": "Taczero method diagram from the author paper.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-19",
+      "width": 402,
+      "height": 238
+    }
   }
 }

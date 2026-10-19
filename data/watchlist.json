@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-10-17",
+  "reviewed": "2026-10-19",
   "sources": [
     {
       "work": "sensenova-roborsi",
@@ -268,6 +268,11 @@
       "url": "https://fangyzzz.github.io/FIND.github.io"
     },
     {
+      "work": "find",
+      "kind": "code",
+      "url": "https://github.com/FangYzzz/FIND"
+    },
+    {
       "work": "streaming-wam",
       "kind": "project",
       "url": "https://sjtu-deng-lab.github.io/Streaming-WAM/"
@@ -396,6 +401,11 @@
       "work": "show-harness",
       "kind": "project",
       "url": "https://showlab.github.io/Show-Harness"
+    },
+    {
+      "work": "show-harness",
+      "kind": "code",
+      "url": "https://github.com/showlab/Show-Harness"
     },
     {
       "work": "wm-craftnet",
@@ -628,6 +638,11 @@
       "url": "https://harnessvla.github.io"
     },
     {
+      "work": "harness-vla",
+      "kind": "code",
+      "url": "https://github.com/RLinf/RPent"
+    },
+    {
       "work": "dexverse",
       "kind": "project",
       "url": "https://ycyao216.github.io/DexVerse.site/"
@@ -743,6 +758,11 @@
       "url": "https://playful-rats.github.io"
     },
     {
+      "work": "playful",
+      "kind": "code",
+      "url": "https://github.com/Playful-RATs/rats"
+    },
+    {
       "work": "qwen-robotmanip",
       "kind": "project",
       "url": "https://qwen.ai/blog?id=qwen-robotmanip"
@@ -841,6 +861,11 @@
       "work": "synthicl",
       "kind": "project",
       "url": "https://synth-icl.github.io"
+    },
+    {
+      "work": "synthicl",
+      "kind": "code",
+      "url": "https://github.com/sNiper-Qian/synthicl"
     },
     {
       "work": "wla",
@@ -1111,6 +1136,11 @@
       "work": "iclr-visual-reasoning",
       "kind": "project",
       "url": "https://toannguyen1904.github.io/ICLR"
+    },
+    {
+      "work": "iclr-visual-reasoning",
+      "kind": "code",
+      "url": "https://github.com/toannguyen1904/ICLR"
     },
     {
       "work": "robocasa365",
@@ -1518,6 +1548,11 @@
       "url": "https://ricl-vla.github.io"
     },
     {
+      "work": "ricl",
+      "kind": "code",
+      "url": "https://github.com/ricl-vla/ricl_openpi"
+    },
+    {
       "work": "h-rdt",
       "kind": "project",
       "url": "https://embodiedfoundation.github.io/hrdt"
@@ -1773,6 +1808,11 @@
       "url": "https://www.robot-learning.uk/instant-policy"
     },
     {
+      "work": "instant-policy",
+      "kind": "code",
+      "url": "https://github.com/vv19/instant_policy"
+    },
+    {
       "work": "tacex",
       "kind": "project",
       "url": "https://github.com/DH-Ng/TacEx"
@@ -1883,6 +1923,11 @@
       "url": "https://rekep-robot.github.io/"
     },
     {
+      "work": "rekep",
+      "kind": "code",
+      "url": "https://github.com/huangwl18/ReKep"
+    },
+    {
       "work": "dppo",
       "kind": "project",
       "url": "https://diffusion-ppo.github.io/"
@@ -1966,6 +2011,11 @@
       "work": "dreureka",
       "kind": "project",
       "url": "https://eureka-research.github.io/dr-eureka"
+    },
+    {
+      "work": "dreureka",
+      "kind": "code",
+      "url": "https://github.com/eureka-research/DrEureka"
     },
     {
       "work": "octo",
@@ -2096,6 +2146,11 @@
       "work": "eureka",
       "kind": "project",
       "url": "https://eureka-research.github.io"
+    },
+    {
+      "work": "eureka",
+      "kind": "code",
+      "url": "https://github.com/eureka-research/Eureka"
     },
     {
       "work": "polarnet",
@@ -2243,14 +2298,29 @@
       "url": "https://vimalabs.github.io"
     },
     {
+      "work": "vima",
+      "kind": "code",
+      "url": "https://github.com/vimalabs/VIMA"
+    },
+    {
       "work": "progprompt",
       "kind": "project",
       "url": "https://progprompt.github.io/"
     },
     {
+      "work": "progprompt",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/progprompt-vh"
+    },
+    {
       "work": "code-as-policies",
       "kind": "project",
       "url": "https://code-as-policies.github.io"
+    },
+    {
+      "work": "code-as-policies",
+      "kind": "code",
+      "url": "https://github.com/google-research/google-research/tree/master/code_as_policies"
     },
     {
       "work": "peract",
@@ -2291,6 +2361,11 @@
       "work": "saycan",
       "kind": "project",
       "url": "https://say-can.github.io"
+    },
+    {
+      "work": "saycan",
+      "kind": "code",
+      "url": "https://github.com/google-research/google-research/tree/master/saycan"
     },
     {
       "work": "taxim",
@@ -3086,6 +3161,11 @@
       "work": "droc",
       "kind": "project",
       "url": "https://sites.google.com/stanford.edu/droc"
+    },
+    {
+      "work": "droc",
+      "kind": "code",
+      "url": "https://github.com/Stanford-ILIAD/droc"
     },
     {
       "work": "architect",
@@ -3983,6 +4063,11 @@
       "url": "https://www.jaibardhan.com/depthworld"
     },
     {
+      "work": "depthworld",
+      "kind": "code",
+      "url": "https://github.com/Jai2500/depthworld"
+    },
+    {
       "work": "foreact3d",
       "kind": "code",
       "url": "https://github.com/anthonytao80-crypto/ForeAct3D"
@@ -4013,9 +4098,19 @@
       "url": "https://mutianxu.github.io/Kinema4D-project-page/"
     },
     {
+      "work": "kinema4d",
+      "kind": "code",
+      "url": "https://github.com/mutianxu/Kinema4D"
+    },
+    {
       "work": "gaussian-world-model",
       "kind": "project",
       "url": "https://gaussian-world-model.github.io/"
+    },
+    {
+      "work": "gaussian-world-model",
+      "kind": "code",
+      "url": "https://github.com/Gaussian-World-Model/gaussianwm"
     },
     {
       "work": "3d-vla",
@@ -4361,6 +4456,71 @@
       "work": "rex-m1-preview",
       "kind": "project",
       "url": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Rex_M1_preview"
+    },
+    {
+      "work": "blind-precise-assembly",
+      "kind": "project",
+      "url": "https://younghyopark.me/blind-proprioceptive-assembly/"
+    },
+    {
+      "work": "blind-precise-assembly",
+      "kind": "code",
+      "url": "https://github.com/younghyopark/mjfit"
+    },
+    {
+      "work": "ord-wm",
+      "kind": "project",
+      "url": "https://hitsz-wyy.github.io/ORD-WM/"
+    },
+    {
+      "work": "defflow",
+      "kind": "project",
+      "url": "https://def-flow.github.io/"
+    },
+    {
+      "work": "dexterity-supervised-play",
+      "kind": "project",
+      "url": "https://play-policy.github.io/"
+    },
+    {
+      "work": "dexterity-supervised-play",
+      "kind": "code",
+      "url": "https://github.com/FAR-hands/play_policy"
+    },
+    {
+      "work": "forcewam",
+      "kind": "project",
+      "url": "https://force-wam.github.io/"
+    },
+    {
+      "work": "contact-trajectory-prompting",
+      "kind": "project",
+      "url": "https://ctp-robotics.github.io/project_page/"
+    },
+    {
+      "work": "foretac",
+      "kind": "project",
+      "url": "https://foretac.github.io/"
+    },
+    {
+      "work": "dexninja",
+      "kind": "project",
+      "url": "https://dex-ninja.github.io/"
+    },
+    {
+      "work": "fomo-dex",
+      "kind": "project",
+      "url": "https://yingyuan0414.github.io/fomo-dex/"
+    },
+    {
+      "work": "residual-compliant-policy",
+      "kind": "project",
+      "url": "https://residual-compliant-policy.github.io/"
+    },
+    {
+      "work": "taczero",
+      "kind": "project",
+      "url": "https://omron-sinicx.github.io/taczero/"
     }
   ]
 }

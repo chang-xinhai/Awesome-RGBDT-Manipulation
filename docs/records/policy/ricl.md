@@ -8,7 +8,7 @@ RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Model
 
 **2025-08-04 · CoRL 2025 · Not reported**
 
-**[Paper](https://arxiv.org/abs/2508.02062)** · [Project](https://ricl-vla.github.io)
+**[Paper](https://arxiv.org/abs/2508.02062)** · [Project](https://ricl-vla.github.io) · [Code](https://github.com/ricl-vla/ricl_openpi) · [Data](https://huggingface.co/datasets/ricl-vla/collected_demos_training) · [Weights](https://huggingface.co/ricl-vla/pi0_fast_droid_ricl_checkpoint) · [Retrieval-Data](https://huggingface.co/datasets/ricl-vla/collected_demos)
 
 Post-trains a pretrained VLA to use retrieved demonstration groups, enabling new-task adaptation through context without mandatory task-specific weight updates.
 
@@ -33,11 +33,11 @@ Post-trains a pretrained VLA to use retrieved demonstration groups, enabling new
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/ricl-vla/ricl_openpi)  |
+| Release: weights | Available [2](https://github.com/ricl-vla/ricl_openpi) [3](https://huggingface.co/ricl-vla/pi0_fast_droid_ricl_checkpoint)  |
+| Release: data | Available [2](https://github.com/ricl-vla/ricl_openpi) [4](https://huggingface.co/datasets/ricl-vla/collected_demos_training) [5](https://huggingface.co/datasets/ricl-vla/collected_demos)  |
+| Release: license | Apache-2.0 code; checkpoint and collected-demo cards specify MIT [2](https://github.com/ricl-vla/ricl_openpi)  |
+| Release: notes | Official openpi implementation and separately hosted trained checkpoint, priming data and retrieval demonstrations are public. [2](https://github.com/ricl-vla/ricl_openpi)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,7 @@ Post-trains a pretrained VLA to use retrieved demonstration groups, enabling new
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2508.02062) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/ricl-vla/ricl_openpi) — Official openpi implementation and separately hosted trained checkpoint, priming data and retrieval demonstrations are public. Apache-2.0 code; checkpoint and collected-demo cards specify MIT.
+3. [Official released artifact inventory and model/dataset card](https://huggingface.co/ricl-vla/pi0_fast_droid_ricl_checkpoint) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.
+4. [Official released artifact inventory and model/dataset card](https://huggingface.co/datasets/ricl-vla/collected_demos_training) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.
+5. [Official released artifact inventory and model/dataset card](https://huggingface.co/datasets/ricl-vla/collected_demos) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.

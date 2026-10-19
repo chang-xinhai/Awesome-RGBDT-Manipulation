@@ -8,7 +8,7 @@ Show-Harness: Just a VLM Agent Can Play Robots
 
 **2026-09-09 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.10522)** · [Project](https://showlab.github.io/Show-Harness) · [Data](https://huggingface.co/datasets/showlab/Show-Harness-Data)
+**[Paper](https://arxiv.org/abs/2609.10522)** · [Project](https://showlab.github.io/Show-Harness) · [Code](https://github.com/showlab/Show-Harness) · [Data](https://huggingface.co/datasets/showlab/Show-Harness-Data) · [Weights](https://huggingface.co/showlab/Show-Harness-VLMs)
 
 A shared semantic action interface connects VLM perception and reasoning to robot motion across embodiments, with frozen frontier-model and adapted compact-model variants.
 
@@ -33,11 +33,11 @@ A shared semantic action interface connects VLM perception and reasoning to robo
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/showlab/Show-Harness)  |
+| Release: weights | Available [2](https://github.com/showlab/Show-Harness) [3](https://huggingface.co/showlab/Show-Harness-VLMs)  |
+| Release: data | Available [2](https://github.com/showlab/Show-Harness) [4](https://huggingface.co/datasets/showlab/Show-Harness-Data)  |
+| Release: license | Apache-2.0 code; released adapters/data have separate model-card terms [2](https://github.com/showlab/Show-Harness)  |
+| Release: notes | Official repository includes core execution, interpreters, plugins and training. Model and dataset inventories were verified separately. [2](https://github.com/showlab/Show-Harness)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,6 @@ A shared semantic action interface connects VLM perception and reasoning to robo
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.10522) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/showlab/Show-Harness) — Official repository includes core execution, interpreters, plugins and training. Model and dataset inventories were verified separately. Apache-2.0 code; released adapters/data have separate model-card terms.
+3. [Official released artifact inventory and model/dataset card](https://huggingface.co/showlab/Show-Harness-VLMs) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.
+4. [Official released artifact inventory and model/dataset card](https://huggingface.co/datasets/showlab/Show-Harness-Data) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.

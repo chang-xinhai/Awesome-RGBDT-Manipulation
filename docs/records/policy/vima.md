@@ -6,9 +6,9 @@
 
 VIMA: General Robot Manipulation with Multimodal Prompts
 
-**2022-10-06 · Preprint · Not reported**
+**2022-10-06 · ICML 2023 · Not reported**
 
-**[Paper](https://arxiv.org/abs/2210.03094)** · [Project](https://vimalabs.github.io)
+**[Paper](https://arxiv.org/abs/2210.03094)** · [Project](https://vimalabs.github.io) · [Code](https://github.com/vimalabs/VIMA) · [Data](https://huggingface.co/datasets/VIMA/VIMA-Data) · [Benchmark](https://github.com/vimalabs/VimaBench)
 
 A transformer policy follows interleaved text-and-image prompts using object-centric scene tokens and prompt cross-attention.
 
@@ -33,11 +33,11 @@ A transformer policy follows interleaved text-and-image prompts using object-cen
 | Observations / modalities | RGB · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/vimalabs/VIMA)  |
+| Release: weights | Not verified [2](https://github.com/vimalabs/VIMA)  |
+| Release: data | Available [2](https://github.com/vimalabs/VIMA) [3](https://huggingface.co/datasets/VIMA/VIMA-Data)  |
+| Release: license | MIT code; model and dataset terms separate [2](https://github.com/vimalabs/VIMA)  |
+| Release: notes | Official VIMA implementation and VIMA-Bench simulator are distinct repositories. Model-card instructions link pretrained weights; dataset access is tracked independently. [2](https://github.com/vimalabs/VIMA)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,5 @@ A transformer policy follows interleaved text-and-image prompts using object-cen
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2210.03094) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/vimalabs/VIMA) — Official VIMA implementation and VIMA-Bench simulator are distinct repositories. Model-card instructions link pretrained weights; dataset access is tracked independently. MIT code; model and dataset terms separate.
+3. [Official dataset file inventory](https://huggingface.co/datasets/VIMA/VIMA-Data) — Official Hugging Face dataset API lists vima.zip with ungated access; dataset terms remain separate from MIT implementation licensing.

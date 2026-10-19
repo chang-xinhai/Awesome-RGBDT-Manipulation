@@ -8,7 +8,7 @@ Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
 **2022-04-04 · Preprint · Google Research**
 
-**[Paper](https://arxiv.org/abs/2204.01691)** · [Project](https://say-can.github.io)
+**[Paper](https://arxiv.org/abs/2204.01691)** · [Project](https://say-can.github.io) · [Code](https://github.com/google-research/google-research/tree/master/saycan)
 
 Combines language-model task relevance with learned skill-affordance values to select executable robot behaviors.
 
@@ -33,11 +33,11 @@ Combines language-model task relevance with learned skill-affordance values to s
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Mobile manipulator · Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — demonstration material [2](https://github.com/google-research/google-research/tree/master/saycan)  |
+| Release: weights | Not applicable [2](https://github.com/google-research/google-research/tree/master/saycan)  |
+| Release: data | Not verified [2](https://github.com/google-research/google-research/tree/master/saycan)  |
+| Release: license | Apache-2.0 for repository code; hosted models and physical skill policies separate [2](https://github.com/google-research/google-research/tree/master/saycan)  |
+| Release: notes | Project-linked saycan subdirectory is a scoped public example; it is not evidence that the complete physical skill policy stack is released. [2](https://github.com/google-research/google-research/tree/master/saycan)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Combines language-model task relevance with learned skill-affordance values to s
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2204.01691) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/google-research/google-research/tree/master/saycan) — Project-linked saycan subdirectory is a scoped public example; it is not evidence that the complete physical skill policy stack is released. Apache-2.0 for repository code; hosted models and physical skill policies separate.

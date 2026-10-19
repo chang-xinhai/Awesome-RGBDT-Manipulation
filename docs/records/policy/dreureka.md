@@ -8,7 +8,7 @@ DrEureka: Language Model Guided Sim-To-Real Transfer
 
 **2024-06-04 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2406.01967)** · [Project](https://eureka-research.github.io/dr-eureka)
+**[Paper](https://arxiv.org/abs/2406.01967)** · [Project](https://eureka-research.github.io/dr-eureka) · [Code](https://github.com/eureka-research/DrEureka)
 
 Generates reward functions and domain-randomization configurations with an LLM to support sim-to-real reinforcement learning.
 
@@ -33,11 +33,11 @@ Generates reward functions and domain-randomization configurations with an LLM t
 | Observations / modalities | Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Dexterous hand · Legged robot |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Partial — generation framework and locomotion environments [2](https://github.com/eureka-research/DrEureka)  |
+| Release: weights | Not applicable [2](https://github.com/eureka-research/DrEureka)  |
+| Release: data | Not verified [2](https://github.com/eureka-research/DrEureka)  |
+| Release: license | MIT [2](https://github.com/eureka-research/DrEureka)  |
+| Release: notes | Repository releases reward/domain-randomization generation with forward-locomotion and globe-walking environments. This does not verify a released dexterous-manipulation environment. [2](https://github.com/eureka-research/DrEureka)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Generates reward functions and domain-randomization configurations with an LLM t
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2406.01967) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/eureka-research/DrEureka) — Repository releases reward/domain-randomization generation with forward-locomotion and globe-walking environments. This does not verify a released dexterous-manipulation environment. MIT.

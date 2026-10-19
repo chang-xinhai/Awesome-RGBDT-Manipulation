@@ -8,7 +8,7 @@ Find Something You Can't Do: Agentic Real-World Reinforcement Learning for Self-
 
 **2026-09-25 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.32069)** · [Project](https://fangyzzz.github.io/FIND.github.io)
+**[Paper](https://arxiv.org/abs/2609.32069)** · [Project](https://fangyzzz.github.io/FIND.github.io) · [Code](https://github.com/FangYzzz/FIND)
 
 Runs real-world policy improvement in a persistent workspace by choosing feasible weak tasks and evaluating outcomes from before / after images.
 
@@ -33,11 +33,11 @@ Runs real-world policy improvement in a persistent workspace by choosing feasibl
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The paper is public; implementation and artifact availability require separate verification. |
+| Release: code | Available [2](https://github.com/FangYzzz/FIND)  |
+| Release: weights | Not verified [2](https://github.com/FangYzzz/FIND)  |
+| Release: data | Not verified [2](https://github.com/FangYzzz/FIND)  |
+| Release: license | Not reported — no repository license found [2](https://github.com/FangYzzz/FIND)  |
+| Release: notes | Official paper-matched repository includes residual RL, DROID and policy training/rollout scripts; public code does not by itself grant an open-source license. [2](https://github.com/FangYzzz/FIND)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Runs real-world policy improvement in a persistent workspace by choosing feasibl
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.32069) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/FangYzzz/FIND) — Official paper-matched repository includes residual RL, DROID and policy training/rollout scripts; public code does not by itself grant an open-source license. Not reported — no repository license found.

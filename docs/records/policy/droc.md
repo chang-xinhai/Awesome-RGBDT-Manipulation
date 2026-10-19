@@ -8,7 +8,7 @@ Distilling and Retrieving Generalizable Knowledge for Robot Manipulation via Lan
 
 **2023-11-17 · Preprint · Stanford University; Google DeepMind**
 
-**[Paper](https://arxiv.org/abs/2311.10678)** · [Project](https://sites.google.com/stanford.edu/droc)
+**[Paper](https://arxiv.org/abs/2311.10678)** · [Project](https://sites.google.com/stanford.edu/droc) · [Code](https://github.com/Stanford-ILIAD/droc)
 
 Distills reusable knowledge from online language corrections and retrieves past visual / textual experiences to correct robot plans and skill parameters.
 
@@ -33,11 +33,11 @@ Distills reusable knowledge from online language corrections and retrieves past 
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not verified |
-| Release: weights | Not applicable |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The original paper is public; code, model and dataset release scopes are verified separately where established. The frozen agent itself has no separately trained method-specific checkpoint; upstream model access has its own terms. |
+| Release: code | Available [2](https://github.com/Stanford-ILIAD/droc)  |
+| Release: weights | Not applicable [2](https://github.com/Stanford-ILIAD/droc)  |
+| Release: data | Not verified [2](https://github.com/Stanford-ILIAD/droc)  |
+| Release: license | Not reported — no repository license found [2](https://github.com/Stanford-ILIAD/droc)  |
+| Release: notes | Official paper-linked repository contains correction prompts, cache, utilities and execution scripts. A public repository is not treated as proof of licensed open source. [2](https://github.com/Stanford-ILIAD/droc)  |
 
 **Scope and qualifications**
 
@@ -47,3 +47,4 @@ Distills reusable knowledge from online language corrections and retrieves past 
 **Primary evidence**
 
 1. [Original primary paper and appendix](https://arxiv.org/abs/2311.10678) — Survey citation is used only for discovery. Method and deployment facts come from the original paper; the date is its first submission where available. Affiliations are transcribed from the PDF author block / footnotes; LMPC affiliation is confirmed by its official project page.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/Stanford-ILIAD/droc) — Official paper-linked repository contains correction prompts, cache, utilities and execution scripts. A public repository is not treated as proof of licensed open source. Not reported — no repository license found.

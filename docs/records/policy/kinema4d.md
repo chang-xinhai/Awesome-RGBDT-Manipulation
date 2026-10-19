@@ -8,7 +8,7 @@ Kinema4D: Kinematic 4D World Modeling for Spatiotemporal Embodied Simulation
 
 **2026-03-17 · arXiv preprint · S-Lab, Nanyang Technological University; CUHK Shenzhen**
 
-**[Paper](https://arxiv.org/abs/2603.16669)** · [Project](https://mutianxu.github.io/Kinema4D-project-page/)
+**[Paper](https://arxiv.org/abs/2603.16669)** · [Project](https://mutianxu.github.io/Kinema4D-project-page/) · [Code](https://github.com/mutianxu/Kinema4D) · [Data](https://huggingface.co/datasets/Minoday/Robo4D-200k) · [Weights](https://huggingface.co/Minoday/Kinema4D)
 
 A neural simulator combines exact robot kinematics with generative 4D environmental reactions.
 
@@ -34,11 +34,11 @@ A neural simulator combines exact robot kinematics with generative 4D environmen
 | Observations / modalities | RGB · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment |  |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Code, data and weights are checked independently; an upstream pretrained model is not a released task policy. |
+| Release: code | Available [2](https://github.com/mutianxu/Kinema4D)  |
+| Release: weights | Available [2](https://github.com/mutianxu/Kinema4D) [3](https://huggingface.co/Minoday/Kinema4D)  |
+| Release: data | Available [2](https://github.com/mutianxu/Kinema4D) [4](https://huggingface.co/datasets/Minoday/Robo4D-200k)  |
+| Release: license | Apache-2.0 repository, model and dataset cards; upstream pretrained backbones retain separate terms [2](https://github.com/mutianxu/Kinema4D)  |
+| Release: notes | Official repository includes training, inference and preprocessing. Kinema4D checkpoint files and Robo4D-200k dataset shards were verified independently. [2](https://github.com/mutianxu/Kinema4D)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,6 @@ A neural simulator combines exact robot kinematics with generative 4D environmen
 **Primary evidence**
 
 1. [Original manuscript and first submission history](https://arxiv.org/abs/2603.16669) — Full author HTML method/evaluation/appendix inspected; depth observations, pseudo-labels and generated outputs retain distinct roles.
+2. [Official implementation, README and file/license inspection on 19 October 2026](https://github.com/mutianxu/Kinema4D) — Official repository includes training, inference and preprocessing. Kinema4D checkpoint files and Robo4D-200k dataset shards were verified independently. Apache-2.0 repository, model and dataset cards; upstream pretrained backbones retain separate terms.
+3. [Official released artifact inventory and model/dataset card](https://huggingface.co/Minoday/Kinema4D) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.
+4. [Official released artifact inventory and model/dataset card](https://huggingface.co/datasets/Minoday/Robo4D-200k) — File inventory and artifact-specific terms checked independently; no upstream artifact is counted as this work’s trained release.
