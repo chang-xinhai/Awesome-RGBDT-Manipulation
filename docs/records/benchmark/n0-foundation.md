@@ -34,11 +34,11 @@ Ten physical NeoReal tasks and twelve NeoSim task settings test contact regulati
 | Observations / modalities | RGB · Tactile |
 | Evaluation domain | Real world · Simulation |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Available — NeoSim collection/evaluation implementation [4](https://github.com/neoteai/N0-Foundation/tree/main/neoforce) [5](https://github.com/neoteai/N0-Foundation/blob/main/neosim/docs/EnvironmentLock.md)  |
-| Release: weights | Not applicable — benchmark; baseline checkpoint completeness not verified [6](https://huggingface.co/NeoteAI/NeoForce)  |
-| Release: data | Gated — OpenNeoData; separate task demonstrations follow their release documentation [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData)  |
+| Release: code | Available — NeoSim collection/evaluation implementation [4](https://github.com/neoteai/N0-Foundation/tree/main/neoforce) [5](https://github.com/neoteai/N0-Foundation/blob/main/neosim/docs/EnvironmentLock.md) [12](https://huggingface.co/NeoteAI/NeoForce)  |
+| Release: weights | Not applicable — benchmark; baseline checkpoint completeness not verified [6](https://huggingface.co/NeoteAI/NeoForce) [12](https://huggingface.co/NeoteAI/NeoForce)  |
+| Release: data | Gated — OpenNeoData; separate task demonstrations follow their release documentation [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData) [12](https://huggingface.co/NeoteAI/NeoForce)  |
 | Release: license | NeoSim code MIT, including NOTICE for UniVTAC/TacEx; data and documentation retain separate terms. [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData) [8](https://github.com/neoteai/N0-Foundation/blob/main/neoforce/LICENSE) [9](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)  |
-| Release: notes | Published evaluation suites and the larger implementation task registry are scoped separately. |
+| Release: notes | Published evaluation suites and the larger implementation task registry are scoped separately. [12](https://huggingface.co/NeoteAI/NeoForce)  |
 
 **Task names — Complete named paper suites, with suite prefixes. Extra implementation task files are not added to the paper evaluation count.:**
 
@@ -85,3 +85,4 @@ Ten physical NeoReal tasks and twelve NeoSim task settings test contact regulati
 9. [NeoSim MIT license](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)
 10. [Root documentation license](https://github.com/neoteai/N0-Foundation/blob/main/LICENSE)
 11. [Data collection method and scope](https://arxiv.org/abs/2608.29601) — NeoSim appendix describes scripted cuRobo collection; NeoData pretraining capture is not treated as the NeoReal task collector.
+12. [Official current source / artifact inventory — 21 October 2026](https://huggingface.co/NeoteAI/NeoForce) — Current actual neoforce/neoforce.pt and visuo_tactile_conversion/visuo_tactile_conversion.pt inventory and MIT model card reviewed; gated OpenNeoData and benchmark code terms remain separate.

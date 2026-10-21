@@ -34,11 +34,11 @@ NeoForce learns visual–tactile contact features with force reconstruction and 
 | Observations / modalities | RGB · Tactile |
 | Evaluation domain | Real world · Simulation |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Available [4](https://github.com/neoteai/N0-Foundation/tree/main/neoforce) [5](https://github.com/neoteai/N0-Foundation/blob/main/neosim/docs/EnvironmentLock.md)  |
-| Release: weights | Available — NeoForce and tactile converter checkpoints [6](https://huggingface.co/NeoteAI/NeoForce)  |
-| Release: data | Gated — OpenNeoData requires Hugging Face access terms [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData)  |
-| Release: license | NeoForce and NeoSim subdirectories: MIT; root documentation and OpenNeoData: CC BY-NC-SA 4.0. Checkpoint terms remain artifact-specific. [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData) [8](https://github.com/neoteai/N0-Foundation/blob/main/neoforce/LICENSE) [9](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)  |
-| Release: notes | Code and checkpoint files were inspected. The complete 30,000-hour NeoData corpus is distinct from the 5,000-hour OpenNeoData subset; hardware access and live training were not tested. |
+| Release: code | Available [4](https://github.com/neoteai/N0-Foundation/tree/main/neoforce) [5](https://github.com/neoteai/N0-Foundation/blob/main/neosim/docs/EnvironmentLock.md) [12](https://huggingface.co/NeoteAI/NeoForce)  |
+| Release: weights | Available — NeoForce and tactile converter checkpoints [6](https://huggingface.co/NeoteAI/NeoForce) [12](https://huggingface.co/NeoteAI/NeoForce)  |
+| Release: data | Gated — OpenNeoData requires Hugging Face access terms [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData) [12](https://huggingface.co/NeoteAI/NeoForce)  |
+| Release: license | NeoForce and NeoSim code subdirectories MIT; root documentation and OpenNeoData CC BY-NC-SA 4.0. NeoForce checkpoint model card specifically declares MIT; other artifacts retain their individual terms. [7](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData) [8](https://github.com/neoteai/N0-Foundation/blob/main/neoforce/LICENSE) [9](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)  |
+| Release: notes | Code and checkpoint files were inspected. The complete 30,000-hour NeoData corpus is distinct from the 5,000-hour OpenNeoData subset; hardware access and live training were not tested. [12](https://huggingface.co/NeoteAI/NeoForce)  |
 
 **Scope and qualifications**
 
@@ -60,3 +60,4 @@ NeoForce learns visual–tactile contact features with force reconstruction and 
 9. [NeoSim MIT license](https://github.com/neoteai/N0-Foundation/blob/main/neosim/LICENSE)
 10. [Root documentation license](https://github.com/neoteai/N0-Foundation/blob/main/LICENSE)
 11. [Data collection method and scope](https://arxiv.org/abs/2608.29601) — NeoSim appendix describes scripted cuRobo collection; NeoData pretraining capture is not treated as the NeoReal task collector.
+12. [Official current source / artifact inventory — 21 October 2026](https://huggingface.co/NeoteAI/NeoForce) — Current actual neoforce/neoforce.pt and visuo_tactile_conversion/visuo_tactile_conversion.pt inventory and MIT model card reviewed; gated OpenNeoData and benchmark code terms remain separate.

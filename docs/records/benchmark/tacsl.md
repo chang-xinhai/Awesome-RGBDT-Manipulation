@@ -20,7 +20,7 @@ GPU tactile image and spatial force-field simulation with contact-task learning 
 | :-- | :-- |
 | Record type | simulator |
 | Simulator | Original Isaac Gym; current Isaac Lab integration with PhysX [1](https://arxiv.org/abs/2408.06506) [2](https://iakinola23.github.io/tacsl/)  |
-| Simulator version and scope | Legacy learning toolkit is Isaac Gym-based. Current official docs snapshot: Isaac Lab v3.0.0-beta2 (updated Oct 16 2026), PhysX simulation only; this is not the original paper stack. [1](https://arxiv.org/abs/2408.06506) [2](https://iakinola23.github.io/tacsl/) [3](https://github.com/isaac-sim/IsaacLab)  |
+| Simulator version and scope | Original toolkit is Isaac Gym-based. Current Isaac Lab main README lists Isaac Sim6.2 compatibility; this current integration stack is distinct from the paper and earlier Isaac Lab beta snapshots. [1](https://arxiv.org/abs/2408.06506) [2](https://iakinola23.github.io/tacsl/) [3](https://github.com/isaac-sim/IsaacLab)  |
 | Task count and scope | 3 contact-task families; paper control results report 2, with Bolt-on-Nut left as a challenge [1](https://arxiv.org/abs/2408.06506) [2](https://iakinola23.github.io/tacsl/)  |
 | Task-list scope | Complete original learning-task suite; quantitative results focus on placement and insertion. [1](https://arxiv.org/abs/2408.06506) [2](https://iakinola23.github.io/tacsl/)  |
 | Capability dimensions | Optical tactile rendering · Normal/shear force fields · Asymmetric RL distillation · Sim-to-real tactile policy learning [1](https://arxiv.org/abs/2408.06506) [2](https://iakinola23.github.io/tacsl/)  |
@@ -59,3 +59,4 @@ GPU tactile image and spatial force-field simulation with contact-task learning 
 3. [Official repository](https://github.com/isaac-sim/IsaacLab) — Current public repository; implementation scope may differ from paper.
 4. [Official implementation / documentation](https://isaac-sim.github.io/IsaacLab/v3.0.0-beta2/source/experimental-features/visuo_tactile_sensor.html) — Versioned current integration: SDF penalty fields, tactile outputs and PhysX-only support.
 5. [Data collection method and scope](https://arxiv.org/abs/2408.06506) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+6. [Official current source / artifact inventory — 21 October 2026](https://github.com/isaac-sim/IsaacLab) — Current main README compatibility table and repository inventory reviewed; historical toolkit and current simulator stack remain distinct.

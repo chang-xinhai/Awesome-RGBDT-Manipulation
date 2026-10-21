@@ -8,7 +8,7 @@ SenseNova-RoboRSI: Recursive Self-Improvement for Embodied Agents
 
 **2026-10-16 · Official project report · Not reported**
 
-**[Project](https://github.com/OpenSenseNova/SenseNova-RoboRSI)** · [Code](https://github.com/OpenSenseNova/SenseNova-RoboRSI) · [Report](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/assets/has_gpt-6_achieved_embodied_intelligence.pdf)
+**[Project](https://github.com/OpenSenseNova/SenseNova-RoboRSI)** · [Code](https://github.com/OpenSenseNova/SenseNova-RoboRSI) · [Report](https://www.sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
 
 A shared robot-agent runtime improves harnesses from execution traces; a distinct 27B Preview branch converts validated interaction experience into model-training supervision.
 
@@ -19,25 +19,25 @@ A shared robot-agent runtime improves harnesses from execution traces; a distinc
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
-| Policy family | Hybrid [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Base model and architecture | Frozen frontier-model harness configurations, including GPT-6 Astra; the learned SenseNova-RoboRSI-27B-Preview is based on Qwen3.8-27B. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Model size and component | 27B base model for the Preview branch; hosted frontier-model counts are not disclosed. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Deployment inputs | Task, robot / simulator observations, skill and MCP tool interfaces, context / memory and complete execution traces. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Action outputs and horizon | VLA skill calls, scripted robot actions or end-effector tool requests; model training additionally learns goal understanding, decisions and feedback-based correction. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Training method | Two branches: frozen-model harness revision with retesting, and joint model–harness RSI that updates the Qwen3.8-27B-derived Preview model. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Training data | Validated multimodal interaction traces support Preview model training. Exact data scale and training budget are not disclosed in the current repository. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Training duration | Not reported [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Training hardware | Not reported [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Inference and control rates | Not reported [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Evaluation scope | Author-reported RoboDojo, LIBERO-Pro and RoboCasa365 results; real and simulated demonstrations. Runtime code currently releases LIBERO-family integrations. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Observations / modalities | RGB · Proprioception · Language |
+| Policy family | Hybrid [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Base model and architecture | Frozen frontier-model harness configurations, including GPT-6 Astra; the learned SenseNova-RoboRSI-27B-Preview is based on Qwen3.8-27B. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Model size and component | 27B base model for the Preview branch; hosted frontier-model counts are not disclosed. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Deployment inputs | Task, robot/simulator observations, skill/MCP interfaces, context/memory and traces. The released BEHAVIOR-1K adapter supplies RGB-D and the native 21D interface; other adapters retain benchmark-specific observations. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Action outputs and horizon | VLA skill calls, scripted robot actions or end-effector tool requests; model training additionally learns goal understanding, decisions and feedback-based correction. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Training method | Two branches: frozen-model harness revision with retesting, and joint model–harness RSI that updates the Qwen3.8-27B-derived Preview model. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Training data | Validated multimodal interaction traces support Preview model training. Exact data scale and training budget are not disclosed in the current repository. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Training duration | Not reported [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Training hardware | Not reported [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Inference and control rates | Not reported [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Evaluation scope | Author-reported RoboDojo, LIBERO-Pro and RoboCasa365 comparisons remain protocol-specific. Released runtime integrations now include LIBERO-family, BEHAVIOR-1K, Bench2Dex and DexJoCo; integration availability is not a new scored leaderboard entry. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Partial [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Release: weights | Not released [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Release: data | Not verified [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Release: license | Apache-2.0 for the public runtime; external models, simulators and datasets retain separate terms. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
-| Release: notes | Initial runtime code and LIBERO-family guides were announced October 16. Preview weights are planned for October 20, after this catalog cutoff; a technical report is announced to follow. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI)  |
+| Release: code | Partial [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Release: weights | Not verified — announced Preview model endpoint is not publicly inspectable [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Release: data | Not verified [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Release: license | Apache-2.0 for the public runtime; external models, simulators and datasets retain separate terms. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
+| Release: notes | October 20 source release adds BEHAVIOR-1K RGB-D/native-21D service plus Bench2Dex and DexJoCo adapters/build guides. The 27B Preview release was announced for October 20, but its HF API returned401 on October 21; no publicly downloadable weight inventory is established. RoboDojo runtime remains marked coming soon. [1](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [2](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py)  |
 
 **Scope and qualifications**
 
@@ -45,7 +45,9 @@ A shared robot-agent runtime improves harnesses from execution traces; a distinc
 - RoboDojo results were still being submitted to the official leaderboard; final official results may differ.
 - The README distinguishes LIBERO-Pro Task / Swap aggregates and RoboCasa Target50 from other published leaderboard protocols.
 - The distinct learned Preview branch is included once; the generic GPT-6 base product is not a robot-policy record.
+- Measured depth is an adapter-specific BEHAVIOR-1K observation, not a universal observation claim for every agent/model branch.
 
 **Primary evidence**
 
 1. [Official project / author report](https://github.com/OpenSenseNova/SenseNova-RoboRSI) — Project-only evidence; any reported date is an explicit public report or code-release event, not a manuscript submission.
+2. [Official current source / artifact inventory — 21 October 2026](https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/robots/behavior_1k/roborsi_adapter.py) — Actual RGB-D adapter and native action interface inspected alongside new Bench2Dex/DexJoCo source; the Preview model/API and reported benchmark scores are separate.

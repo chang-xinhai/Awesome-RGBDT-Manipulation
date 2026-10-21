@@ -10480,5 +10480,350 @@
       "width": 402,
       "height": 238
     }
+  },
+  "tactalent": {
+    "policy": {
+      "path": "/images/catalog/tactalent-policy.webp",
+      "original": "https://arxiv.org/html/2610.26846v1/method.png",
+      "page": "https://arxiv.org/abs/2610.26846",
+      "credit": "TacTalent authors; original rights retained",
+      "alt": "TacTalent — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "89fd2e008b24afabcd93649d6687770bd158be1487ba69c18a3677b1eecc9fbf",
+      "width": 1207,
+      "height": 624,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "hexashell": {
+    "policy": {
+      "path": "/images/catalog/hexashell-policy.webp",
+      "original": "https://raw.githubusercontent.com/HexaFuture/HexaShell/main/assets/paper-figure-1.png",
+      "page": "https://arxiv.org/abs/2610.23479",
+      "credit": "HexaShell / Preview authors; original rights retained",
+      "alt": "HexaShell / Preview — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "f03e278421eea6a35e0a8b7e7bdad400931b2d4686648b1cdb70eb6881efbf71",
+      "width": 1500,
+      "height": 500,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "claro": {
+    "policy": {
+      "path": "/images/catalog/claro-policy.webp",
+      "original": "https://arxiv.org/html/2610.24016v1/fig/claro_method_v8.png",
+      "page": "https://arxiv.org/abs/2610.24016",
+      "credit": "CLARO authors; original rights retained",
+      "alt": "CLARO — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "bc806ea18f52191f2691cd9b5b1b7e554f6a3e2e36bcb0d04939c8a8b29ce714",
+      "width": 1500,
+      "height": 553,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "law": {
+    "policy": {
+      "path": "/images/catalog/law-policy.webp",
+      "original": "https://arxiv.org/html/2610.23334v1/figures/LAW_main.png",
+      "page": "https://arxiv.org/abs/2610.23334",
+      "credit": "LAW authors; original rights retained",
+      "alt": "LAW — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "1f21b5658435845f9e2d8a0ee88f3415e285236753f09661915d699adfe36991",
+      "width": 1500,
+      "height": 821,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "contactkernels": {
+    "policy": {
+      "path": "/images/catalog/contactkernels-policy.webp",
+      "original": "https://arxiv.org/html/2610.23887v1/figures/contact_kernel_pipeline.png",
+      "page": "https://arxiv.org/abs/2610.23887",
+      "credit": "ContactKernels authors; original rights retained",
+      "alt": "ContactKernels — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "b5fbae96bb5b2522f60531de6f871a395d2bb03df85c82ffb493e57a22b8597b",
+      "width": 608,
+      "height": 502,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "handson": {
+    "benchmark": {
+      "path": "/images/catalog/handson-benchmark.webp",
+      "original": "https://raw.githubusercontent.com/TsinghuaC3I/HandsOn/main/docs/pics/handson-overview.png",
+      "page": "https://arxiv.org/abs/2610.26765",
+      "credit": "HandsOn authors; original rights retained",
+      "alt": "HandsOn — task coverage",
+      "kind": "task-overview",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "cd313bff73f9307c46025f7657acd33e5979e8063357767698451fed4ebbd076",
+      "width": 1500,
+      "height": 676,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "bidex100": {
+    "benchmark": {
+      "path": "/images/catalog/bidex100-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.25459v1/task_atlas_106.png",
+      "page": "https://arxiv.org/abs/2610.25459",
+      "credit": "BiDex-100 authors; original rights retained",
+      "alt": "BiDex-100 — task coverage",
+      "kind": "task-overview",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "97c4574fcca53af3345d8e26dbd2080a20564c051f4926d959b6d4bd38dc80a0",
+      "width": 1080,
+      "height": 966,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "contactpolicy": {
+    "policy": {
+      "path": "/images/catalog/contactpolicy-policy.webp",
+      "original": "https://arxiv.org/html/2610.24485v1/method_system_compact_notitle_v1.png",
+      "page": "https://arxiv.org/abs/2610.24485",
+      "credit": "ContactPolicy authors; original rights retained",
+      "alt": "ContactPolicy — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "93ab58afeb335ad1356c7d295b1f04f463abc090e0578b3eeb5ec21151424bcb",
+      "width": 935,
+      "height": 315,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "modex": {
+    "policy": {
+      "path": "/images/catalog/modex-policy.webp",
+      "original": "https://arxiv.org/html/2610.23888v1/figures/method.png",
+      "page": "https://arxiv.org/abs/2610.23888",
+      "credit": "MoDex authors; original rights retained",
+      "alt": "MoDex — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "f2a003e3e6e57b806d58f11281688e504031eb321e6e12a0e3befcdf86e219f9",
+      "width": 1500,
+      "height": 620,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "fr-vla": {
+    "policy": {
+      "path": "/images/catalog/fr-vla-policy.webp",
+      "original": "https://arxiv.org/html/2610.25981v1/figures/pipeline.jpg",
+      "page": "https://arxiv.org/abs/2610.25981",
+      "credit": "FR-VLA authors; original rights retained",
+      "alt": "FR-VLA — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "b19f5882331851c3444c4198ffe04eecf8057b6bed7648cdfabc0f218bf33e41",
+      "width": 1483,
+      "height": 1046,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "agentic-rsr": {
+    "policy": {
+      "path": "/images/catalog/agentic-rsr-policy.webp",
+      "original": "https://arxiv.org/html/2610.10479v2/fig_teaser.png",
+      "page": "https://arxiv.org/abs/2610.10479",
+      "credit": "Agentic RSR authors; original rights retained",
+      "alt": "Agentic RSR — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "1de5e112b1ba339e8fdcc1a0db9c2ac741249f884d0b89fc8842b5e5d53be17b",
+      "width": 1500,
+      "height": 767,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "roboreact": {
+    "policy": {
+      "path": "/images/catalog/roboreact-policy.webp",
+      "original": "https://arxiv.org/html/2608.03387v2/figuresMain/1.png",
+      "page": "https://arxiv.org/abs/2608.03387",
+      "credit": "RoboReact authors; original rights retained",
+      "alt": "RoboReact — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "f5b6ae0318d14bf1bb651e7371791fa8a4cb168c4c52e19dda375ced93d49d73",
+      "width": 1500,
+      "height": 665,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "contactbench": {
+    "benchmark": {
+      "path": "/images/catalog/contactbench-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.24512v1/Figures/skills.png",
+      "page": "https://arxiv.org/abs/2610.24512",
+      "credit": "ContactBench1.0 authors; original rights retained",
+      "alt": "ContactBench1.0 — task coverage",
+      "kind": "task-overview",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "cf0beaff461c8af85fae2ec88255b84d9e4c2c01307527711e8c63d0e206215e",
+      "width": 1500,
+      "height": 459,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "gen2dex": {
+    "policy": {
+      "path": "/images/catalog/gen2dex-policy.webp",
+      "original": "https://arxiv.org/html/2610.24392v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2610.24392",
+      "credit": "Gen2Dex authors; original rights retained",
+      "alt": "Gen2Dex — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "f17c9043fb4f973922e24d2d59d65df07a3952d6d535a559c1a2a9849e79892f",
+      "width": 1500,
+      "height": 779,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "acts": {
+    "policy": {
+      "path": "/images/catalog/acts-policy.webp",
+      "original": "https://arxiv.org/html/2610.24285v1/ACTS_method.png",
+      "page": "https://arxiv.org/abs/2610.24285",
+      "credit": "ACTS / React authors; original rights retained",
+      "alt": "ACTS / React — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "a81e1b5f9677182c783e4bad396c28b7f4abc7e07f968a842e074a4a47eaf1a6",
+      "width": 1375,
+      "height": 980,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "trograsp2": {
+    "policy": {
+      "path": "/images/catalog/trograsp2-policy.webp",
+      "original": "https://arxiv.org/html/2610.25410v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2610.25410",
+      "credit": "T(R,O) Grasp++ authors; original rights retained",
+      "alt": "T(R,O) Grasp++ — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "97f25ceada310f4008854e2ff7862bb010ce2451c4bac547318993dd4ec20a06",
+      "width": 1094,
+      "height": 281,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "nise": {
+    "policy": {
+      "path": "/images/catalog/nise-policy.webp",
+      "original": "https://arxiv.org/html/2610.24674v1/nise_pipeline_camera_ready_v9.png",
+      "page": "https://arxiv.org/abs/2610.24674",
+      "credit": "NISE authors; original rights retained",
+      "alt": "NISE — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "815044823ea3bebbd4614f9747eb1cd107397456d058221da5ea5845a8c3d069",
+      "width": 1432,
+      "height": 479,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "tgrasp6d": {
+    "policy": {
+      "path": "/images/catalog/tgrasp6d-policy.webp",
+      "original": "https://arxiv.org/html/2610.20901v1/approach5-compressed.png",
+      "page": "https://arxiv.org/abs/2610.20901",
+      "credit": "TGrasp6D authors; original rights retained",
+      "alt": "TGrasp6D — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "763cc899b624f1d1b92671136bcc8298974b14a3a52869d523cf8dcdf3aad847",
+      "width": 976,
+      "height": 532,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "ropedia-w0": {
+    "policy": {
+      "path": "/images/catalog/ropedia-w0-policy.webp",
+      "original": "https://arxiv.org/html/2610.26855v1/architecture.png",
+      "page": "https://arxiv.org/abs/2610.26855",
+      "credit": "Ropedia W0 authors; original rights retained",
+      "alt": "Ropedia W0 — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "9295214c7f79ce0e567296b14e7ea723959919436c695bbe8e0b1fc9d6500906",
+      "width": 660,
+      "height": 357,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "tactile-hand-morphology": {
+    "policy": {
+      "path": "/images/catalog/tactile-hand-morphology-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.26759#page=2",
+      "page": "https://arxiv.org/abs/2610.26759",
+      "credit": "Tactile rotation — hand morphology authors; original rights retained",
+      "alt": "Tactile rotation — hand morphology — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "61ea139fd6008222210ef3563c0c5188dd235f60666bbfb8d019e91f634fb533",
+      "width": 1220,
+      "height": 569,
+      "note": "Original PDF page2 Figure1, cropped to the author workflow; HTML image failed."
+    }
+  },
+  "mocap": {
+    "policy": {
+      "path": "/images/catalog/mocap-policy.webp",
+      "original": "https://arxiv.org/html/2610.20998v1/mocap_teaser_v3.png",
+      "page": "https://arxiv.org/abs/2610.20998",
+      "credit": "MoCaP authors; original rights retained",
+      "alt": "MoCaP — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "84aa37e556f700033aeb8380793ddd67846a30ebb6ff94cad49f80183447480b",
+      "width": 1442,
+      "height": 921,
+      "note": "Original author figure, visually inspected October21; optimized local copy retains original scientific content and source rights."
+    }
+  },
+  "gta2": {
+    "policy": {
+      "path": "/images/catalog/gta2-policy.webp",
+      "original": "https://arxiv.org/html/2609.09808v1/Figures/gta2.png",
+      "page": "https://arxiv.org/abs/2609.09808",
+      "credit": "GTA-2 authors; original rights retained",
+      "alt": "GTA-2 — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "f8a38b39c9fa8e793359d87fb9385a3385d4c0f4bdf8d4537a3cc4029c6fe521",
+      "width": 1500,
+      "height": 599,
+      "note": "Original author pipeline; visually inspected and locally optimized without changing scientific content."
+    }
+  },
+  "grasptwin": {
+    "policy": {
+      "path": "/images/catalog/grasptwin-policy.webp",
+      "original": "https://arxiv.org/html/2609.30543v1/method.png",
+      "page": "https://arxiv.org/abs/2609.30543",
+      "credit": "GraspTwin authors; original rights retained",
+      "alt": "GraspTwin — method overview",
+      "kind": "architecture",
+      "reviewed": "2026-10-21",
+      "sourceSha256": "53a50604c3e13b4e6f195bc89b79714ea7f07fc28d970ce3e4aefd182b7418b7",
+      "width": 775,
+      "height": 249,
+      "note": "Original author pipeline; visually inspected and locally optimized without changing scientific content."
+    }
   }
 }

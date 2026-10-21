@@ -1,7 +1,122 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-10-19",
+  "reviewed": "2026-10-21",
   "sources": [
+    {
+      "work": "gta2",
+      "kind": "project",
+      "url": "https://gta2-project.github.io/"
+    },
+    {
+      "work": "gta2",
+      "kind": "code",
+      "url": "https://github.com/gta2-project/GTA-2"
+    },
+    {
+      "work": "grasptwin",
+      "kind": "code",
+      "url": "https://github.com/VT-Collab/GraspTwin"
+    },
+    {
+      "work": "tactalent",
+      "kind": "project",
+      "url": "https://tactalent.github.io/"
+    },
+    {
+      "work": "tactalent",
+      "kind": "code",
+      "url": "https://github.com/ccyydd/TacTalent"
+    },
+    {
+      "work": "hexashell",
+      "kind": "project",
+      "url": "https://github.com/HexaFuture/HexaShell"
+    },
+    {
+      "work": "law",
+      "kind": "project",
+      "url": "https://hey-cjj.github.io/LAW-project/"
+    },
+    {
+      "work": "law",
+      "kind": "code",
+      "url": "https://github.com/hey-cjj/LAW"
+    },
+    {
+      "work": "modex",
+      "kind": "code",
+      "url": "https://github.com/Aurora-Xiong/MoDex"
+    },
+    {
+      "work": "roboreact",
+      "kind": "project",
+      "url": "https://roboreact.github.io/"
+    },
+    {
+      "work": "acts",
+      "kind": "project",
+      "url": "https://acts-anon.github.io/"
+    },
+    {
+      "work": "trograsp2",
+      "kind": "project",
+      "url": "https://nus-lins-lab.github.io/TROGrasp2Web/"
+    },
+    {
+      "work": "trograsp2",
+      "kind": "code",
+      "url": "https://github.com/Barrybarry-Smith/TROGraspV2"
+    },
+    {
+      "work": "nise",
+      "kind": "project",
+      "url": "https://nise-robotics.github.io/"
+    },
+    {
+      "work": "ropedia-w0",
+      "kind": "project",
+      "url": "https://ropedia.github.io/ropedia-w0/"
+    },
+    {
+      "work": "ropedia-w0",
+      "kind": "code",
+      "url": "https://github.com/Ropedia/ropedia-w0"
+    },
+    {
+      "work": "handson",
+      "kind": "project",
+      "url": "https://llltttwww.github.io/HandsOn-website/"
+    },
+    {
+      "work": "handson",
+      "kind": "code",
+      "url": "https://github.com/TsinghuaC3I/HandsOn"
+    },
+    {
+      "work": "bidex100",
+      "kind": "project",
+      "url": "https://BiDex-100.github.io/BiDex-100/"
+    },
+    {
+      "work": "bidex100",
+      "kind": "code",
+      "url": "https://github.com/robbyant-research/BiDex-100"
+    },
+    {
+      "work": "contactbench",
+      "kind": "project",
+      "url": "https://jingyi-xiang.github.io/contactbench"
+    },
+    {
+      "work": "mocap",
+      "kind": "project",
+      "url": "https://mocap-7.github.io/MoCAP-page/"
+    },
+    {
+      "work": "mocap",
+      "kind": "code",
+      "url": "https://github.com/MoCAP-7/MoCAP"
+    },
     {
       "work": "sensenova-roborsi",
       "kind": "project",

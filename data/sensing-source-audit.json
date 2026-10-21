@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-19",
+  "reviewed": "2026-10-21",
   "scope": "Source-by-source tactile and manipulation-relevant geometry discovery. Source aliases can overlap; inclusion specifications use original papers and releases.",
   "sources": [
     {
@@ -2888,6 +2888,194 @@
           "url": "https://github.com/Yyshadow/openpi-RLT",
           "status": "background",
           "note": "Linked repository describes an RLT reproduction rather than a verified TORL-VLA implementation; do not upgrade official release status from that link."
+        }
+      ]
+    },
+    {
+      "id": "recent-manipulation-20261021",
+      "label": "October21 primary manipulation expansion and independent Agent/RGB-D review",
+      "url": "https://arxiv.org/list/cs.RO/recent",
+      "kind": "primary-expansion",
+      "scope": "Recent arXiv cs.RO/cs.CV, official GitHub project releases, Awesome-list/daily-feed discovery and independent official leaderboard review. Entries below are indexed only after their own primary method/resource sources were inspected.",
+      "entries": [
+        {
+          "name": "GTA-2",
+          "url": "https://arxiv.org/abs/2609.09808",
+          "status": "indexed",
+          "workId": "gta2",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "GraspTwin",
+          "url": "https://arxiv.org/abs/2609.30543",
+          "status": "indexed",
+          "workId": "grasptwin",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "TacTalent",
+          "url": "https://arxiv.org/abs/2610.26846",
+          "status": "indexed",
+          "workId": "tactalent",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "HexaShell / Preview",
+          "url": "https://arxiv.org/abs/2610.23479",
+          "status": "indexed",
+          "workId": "hexashell",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "CLARO",
+          "url": "https://arxiv.org/abs/2610.24016",
+          "status": "indexed",
+          "workId": "claro",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "LAW",
+          "url": "https://arxiv.org/abs/2610.23334",
+          "status": "indexed",
+          "workId": "law",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "ContactKernels",
+          "url": "https://arxiv.org/abs/2610.23887",
+          "status": "indexed",
+          "workId": "contactkernels",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "ContactPolicy",
+          "url": "https://arxiv.org/abs/2610.24485",
+          "status": "indexed",
+          "workId": "contactpolicy",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "MoDex",
+          "url": "https://arxiv.org/abs/2610.23888",
+          "status": "indexed",
+          "workId": "modex",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "FR-VLA",
+          "url": "https://arxiv.org/abs/2610.25981",
+          "status": "indexed",
+          "workId": "fr-vla",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "Agentic RSR",
+          "url": "https://arxiv.org/abs/2610.10479",
+          "status": "indexed",
+          "workId": "agentic-rsr",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "RoboReact",
+          "url": "https://arxiv.org/abs/2608.03387",
+          "status": "indexed",
+          "workId": "roboreact",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "Tactile rotation — hand morphology",
+          "url": "https://arxiv.org/abs/2610.26759",
+          "status": "indexed",
+          "workId": "tactile-hand-morphology",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "Gen2Dex",
+          "url": "https://arxiv.org/abs/2610.24392",
+          "status": "indexed",
+          "workId": "gen2dex",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "ACTS / React",
+          "url": "https://arxiv.org/abs/2610.24285",
+          "status": "indexed",
+          "workId": "acts",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "T(R,O) Grasp++",
+          "url": "https://arxiv.org/abs/2610.25410",
+          "status": "indexed",
+          "workId": "trograsp2",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "NISE",
+          "url": "https://arxiv.org/abs/2610.24674",
+          "status": "indexed",
+          "workId": "nise",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "TGrasp6D",
+          "url": "https://arxiv.org/abs/2610.20901",
+          "status": "indexed",
+          "workId": "tgrasp6d",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "Ropedia W0",
+          "url": "https://arxiv.org/abs/2610.26855",
+          "status": "indexed",
+          "workId": "ropedia-w0",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "HandsOn",
+          "url": "https://arxiv.org/abs/2610.26765",
+          "status": "indexed",
+          "workId": "handson",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "BiDex-100",
+          "url": "https://arxiv.org/abs/2610.25459",
+          "status": "indexed",
+          "workId": "bidex100",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "ContactBench 1.0",
+          "url": "https://arxiv.org/abs/2610.24512",
+          "status": "indexed",
+          "workId": "contactbench",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "MoCaP",
+          "url": "https://arxiv.org/abs/2610.20998",
+          "status": "indexed",
+          "workId": "mocap",
+          "note": "Original full paper and observation/control/resource scope reviewed; v1 date retained. Code, weights and data are independently scoped."
+        },
+        {
+          "name": "CognitiveReality",
+          "url": "https://arxiv.org/abs/2609.31418",
+          "status": "outside-scope",
+          "note": "RGB-D mapping/VR assistant with navigation/re-observation evaluation; no manipulation-control evidence established for this catalog."
+        },
+        {
+          "name": "Policy Search in Code Space for Multi-Agent Pathfinding",
+          "url": "https://arxiv.org/abs/2610.25946",
+          "status": "outside-scope",
+          "note": "Warehouse pathfinding/coordination rather than manipulation."
+        },
+        {
+          "name": "PhantomTac",
+          "url": "https://arxiv.org/abs/2610.26174",
+          "status": "adjacent-resource",
+          "note": "Tactile-system attack study; not a new manipulation policy/benchmark and not expanded into attack implementation details."
         }
       ]
     }

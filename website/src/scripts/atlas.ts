@@ -961,6 +961,11 @@ $("export-view").addEventListener("click", () => {
       "Weights",
       "Modalities",
       ...fields.map((f) => f[2]),
+      "Code availability",
+      "Weights availability",
+      "Data availability",
+      "License & artifact scope",
+      "Release details",
     ],
     ...current.map((w) => [
       nameFor(w, collection),
@@ -984,6 +989,9 @@ $("export-view").addEventListener("click", () => {
                 : w.policy;
         return obj?.[key] ?? (!obj ? "Not applicable" : "Not reported");
       }),
+      ...["code", "weights", "data", "license", "notes"].map(
+        (key) => releaseFor(w, collection)[key] ?? "Not verified",
+      ),
     ]),
   ];
   const blob = new Blob(

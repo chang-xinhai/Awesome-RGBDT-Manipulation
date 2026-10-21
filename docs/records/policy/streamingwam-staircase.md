@@ -29,7 +29,7 @@ Maintains a persistent noisy action buffer and amortizes denoising across replan
 | Training duration | Benchmark-specific extra streaming optimization; wall-clock Not reported [1](https://arxiv.org/abs/2610.15585)  |
 | Training hardware | Training Not reported; physical inference on RTX 5090 [1](https://arxiv.org/abs/2610.15585)  |
 | Inference and control rates | Steady-state replanning takes 57.3 ms on the physical setup and 72.9 ms in simulation. Physical execution is 15 Hz. Once-per-episode initialization is timed separately. [1](https://arxiv.org/abs/2610.15585)  |
-| Evaluation scope | LIBERO, LIBERO-Plus, and RoboTwin 2.0; six real task families: block stacking, open drawer, weigh-and-place, conveyor handover, car pursuit, and whack-a-mole. [1](https://arxiv.org/abs/2610.15585)  |
+| Evaluation scope | LIBERO, LIBERO-Plus, and RoboTwin 2.0; six real task families: block stacking, open drawer, weigh-and-place, conveyor handover, car pursuit, and whack-a-mole. Official release distinguishes corrected LIBERO-Plus clean instructions:82.12% (8,237/10,030) versus legacy raw-instruction protocol79.36% (7,960/10,030), using the same verified checkpoint; training is unchanged. [1](https://arxiv.org/abs/2610.15585) [5](https://github.com/renshaojie233/StreamingWAM/blob/main/docs/evaluation/README.md)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
@@ -50,3 +50,4 @@ Maintains a persistent noisy action buffer and amortizes denoising across replan
 2. [Official project](https://renshaojie233.github.io/StreamingWAM/) — Author project and links; scientific figure keeps original rights.
 3. [Author project](https://renshaojie233.github.io/StreamingWAM/) — Resources section scopes code to LIBERO-Plus and links the checkpoint and 590-trajectory dataset; populated Hugging Face files verified.
 4. [Code license](https://github.com/renshaojie233/StreamingWAM/blob/main/LICENSE)
+5. [Official current source / artifact inventory — 21 October 2026](https://github.com/renshaojie233/StreamingWAM/blob/main/docs/evaluation/README.md) — Current release separates corrected/legacy instruction protocols and checkpoint identity; no new training performance is inferred.

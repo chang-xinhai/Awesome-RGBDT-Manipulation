@@ -19,25 +19,25 @@ Egocentric-video mid-training and a causal interaction-context encoder improve V
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
-| Policy family | VLA [1](https://arxiv.org/abs/2609.24411)  |
-| Base model and architecture | π0.5 / PaliGemma action policy with Action-Centric Encoder (ACE) and In-Context Causal Learning (ICCL). [1](https://arxiv.org/abs/2609.24411)  |
-| Model size and component | Not reported [1](https://arxiv.org/abs/2609.24411)  |
-| Deployment inputs | Robot RGB views, proprioception, instruction and previous action-effect interaction context; human videos supply mid-training supervision. [1](https://arxiv.org/abs/2609.24411)  |
-| Action outputs and horizon | 16-D dual-end-effector action chunks; mid-training horizon 50 and later robot policy horizon 30 in the reported configurations. [1](https://arxiv.org/abs/2609.24411)  |
-| Training method | ACE-based action-centered video mid-training, then policy learning with context fed directly to the action expert; deployment context accumulates without weight updates. [1](https://arxiv.org/abs/2609.24411)  |
-| Training data | Egocentric scaling up to 10k video-hours, with reported task-stratified human datasets and a fixed 1:1 robot-data mix during specified training stages. [1](https://arxiv.org/abs/2609.24411)  |
-| Training duration | Not reported [1](https://arxiv.org/abs/2609.24411)  |
-| Training hardware | Not reported [1](https://arxiv.org/abs/2609.24411)  |
-| Inference and control rates | Not reported [1](https://arxiv.org/abs/2609.24411)  |
-| Evaluation scope | RoboTwin data scaling and real manipulation with multi-attempt causal-context adaptation. [1](https://arxiv.org/abs/2609.24411)  |
+| Policy family | VLA [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Base model and architecture | π0.5 / PaliGemma action policy with Action-Centric Encoder (ACE) and In-Context Causal Learning (ICCL). [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Model size and component | Not reported [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Deployment inputs | Robot RGB views, proprioception, instruction and previous action-effect interaction context; human videos supply mid-training supervision. [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Action outputs and horizon | 16-D dual-end-effector action chunks; mid-training horizon 50 and later robot policy horizon 30 in the reported configurations. [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Training method | ACE-based action-centered video mid-training, then policy learning with context fed directly to the action expert; deployment context accumulates without weight updates. [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Training data | Egocentric scaling up to 10k video-hours, with reported task-stratified human datasets and a fixed 1:1 robot-data mix during specified training stages. [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Training duration | Not reported [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Training hardware | Not reported [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Inference and control rates | Not reported [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Evaluation scope | RoboTwin data scaling and real manipulation with multi-attempt causal-context adaptation. [1](https://arxiv.org/abs/2609.24411) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Bimanual |
-| Release: code | Available [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva)  |
-| Release: weights | Available [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva)  |
-| Release: data | Partial [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva)  |
-| Release: license | Not verified [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva)  |
-| Release: notes | Official Zeva repository and Zeva-Ego model/checkpoint collection; upstream human-video datasets have separate terms. [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva)  |
+| Release: code | Available [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Release: weights | Available [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Release: data | Partial [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Release: license | OpenMDW-1.1 for the linked Zeva code/materials (actual repository LICENSE); the released Zeva-Ego π0.5 JAX checkpoint retains actual Gemma Terms of Use in LICENSE_GEMMA.txt. Upstream human-video data have separate terms. [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
+| Release: notes | Official Zeva repository and Zeva-Ego model/checkpoint collection; upstream human-video datasets have separate terms. The pi05-jax-55k checkpoint inventory contains real sharded parameter arrays and an actual Gemma license; its terms are not inferred from the host collection. [2](https://air-embodied-brain.github.io/Zeva-Ego) [3](https://github.com/air-embodied-brain/Zeva) [4](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,4 @@ Egocentric-video mid-training and a causal interaction-context encoder improve V
 1. [Original paper / author report](https://arxiv.org/abs/2609.24411) — Original full paper and supplementary experimental / implementation details; deployment inputs are separated from supervision and benchmark state.
 2. [Official project](https://air-embodied-brain.github.io/Zeva-Ego) — Author-linked project and current release checked on the catalog cutoff.
 3. [Official code / release documentation](https://github.com/air-embodied-brain/Zeva) — Current repository documentation; paper settings and subsequently released artifacts are distinguished.
+4. [Official current source / artifact inventory — 21 October 2026](https://huggingface.co/BEN12324/zeva-ego-pi05-jax-55k/blob/main/LICENSE_GEMMA.txt) — Actual checkpoint-specific Gemma Terms file and sharded JAX parameter inventory reviewed; repository root is separately OpenMDW 1.1.

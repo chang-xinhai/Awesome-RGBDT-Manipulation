@@ -19,25 +19,25 @@ Combines event-level progress memory, short visual history and latent subgoal re
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
-| Policy family | World-action model [1](https://arxiv.org/abs/2607.18840)  |
-| Base model and architecture | Wan2.2-5B video/action DiTs, Qwen3-VL-4B latent reasoner and T5 instruction conditioning. [1](https://arxiv.org/abs/2607.18840)  |
-| Model size and component | 5B video backbone and 4B reasoning component; complete aggregate not reported. [1](https://arxiv.org/abs/2607.18840)  |
-| Deployment inputs | RGB views, language, state and memory; goal images or reference videos can persist as visual prefill for ICL. [1](https://arxiv.org/abs/2607.18840)  |
-| Action outputs and horizon | Paper uses a raw 20D bimanual end-effector representation. Released RoboTwin adapter uses absolute joint control with a 24-step horizon. [1](https://arxiv.org/abs/2607.18840)  |
-| Training method | Event-grounded pretraining, semantic forcing for latent planning and interactive posttraining; reasoning-augmented short/long-term memory. [1](https://arxiv.org/abs/2607.18840)  |
-| Training data | ManipEvent-5M: nearly five million segments with actions, event captions, goal images and video references. RoboTwin uses clean plus randomized posttraining data. [1](https://arxiv.org/abs/2607.18840)  |
-| Training duration | 50k posttraining steps, batch 128; full wall-clock duration not reported. [1](https://arxiv.org/abs/2607.18840)  |
-| Training hardware | Not reported [1](https://arxiv.org/abs/2607.18840)  |
-| Inference and control rates | Not reported as a common deployment frequency. [1](https://arxiv.org/abs/2607.18840)  |
-| Evaluation scope | 50 RoboTwin tasks, 100 trials per task/setting; physical AgileX planning, memory, cross-embodiment ICL and sequential control, 20 trials per task. [1](https://arxiv.org/abs/2607.18840)  |
+| Policy family | World-action model [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Base model and architecture | Wan2.2-5B video/action DiTs, Qwen3-VL-4B latent reasoner and T5 instruction conditioning. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Model size and component | 5B video backbone and 4B reasoning component; complete aggregate not reported. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Deployment inputs | RGB views, language, state and memory; goal images or reference videos can persist as visual prefill for ICL. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Action outputs and horizon | Paper uses a raw 20D bimanual end-effector representation. Released RoboTwin adapter uses absolute joint control with a 24-step horizon. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Training method | Event-grounded pretraining, semantic forcing for latent planning and interactive posttraining; reasoning-augmented short/long-term memory. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Training data | ManipEvent-5M: nearly five million segments with actions, event captions, goal images and video references. RoboTwin uses clean plus randomized posttraining data. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Training duration | 50k posttraining steps, batch 128; full wall-clock duration not reported. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Training hardware | Not reported [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Inference and control rates | Not reported as a common deployment frequency. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Evaluation scope | 50 RoboTwin tasks, 100 trials per task/setting; physical AgileX planning, memory, cross-embodiment ICL and sequential control, 20 trials per task. [1](https://arxiv.org/abs/2607.18840) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Available [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/)  |
-| Release: weights | Available [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/)  |
-| Release: data | Not verified [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/)  |
-| Release: license | Apache-2.0 code; weights/data/backbone terms separate [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/)  |
-| Release: notes | Availability concerns author-linked artifacts; no training or installation reproduced. [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/)  |
+| Release: code | Available [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Release: weights | Available [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Release: data | Not verified [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Release: license | Apache-2.0 original code and current WorldScape-Policy-2 model-card grant; upstream backbones/assets/data retain separate terms. [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
+| Release: notes | Current model inventory contains base/midtrain and RoboTwin2 post-training safetensor shards, including clean-to-random and auto variants with checkpoint manifests/configs/provenance. These are WorldScape Policy 2.0 artifacts, not a public R²SI or 2.5 release. [2](https://github.com/manifoldai-research/WorldScape-Policy) [3](https://manifoldai-research.github.io/WorldScape-Policy/) [4](https://huggingface.co/manifoldai-research/WorldScape-Policy-2)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,4 @@ Combines event-level progress memory, short visual history and latent subgoal re
 1. [Author manuscript and submission history](https://arxiv.org/abs/2607.18840) — Read full manuscript; first arXiv submission retained separately from current revision. Numeric costs and observations have setting-specific scope.
 2. [Official implementation](https://github.com/manifoldai-research/WorldScape-Policy) — Author-linked code and artifact instructions; current release may differ from the original manuscript.
 3. [Official project](https://manifoldai-research.github.io/WorldScape-Policy/) — Author project and links; scientific figure keeps original rights.
+4. [Official current source / artifact inventory — 21 October 2026](https://huggingface.co/manifoldai-research/WorldScape-Policy-2) — October 21 inventory of 82 files includes c2r_auto checkpoint shards and manifests. Version identity remains2.0; no R²SI release is inferred. This clarifies the existing version-specific artifact scope; file inventory does not establish a new checkpoint release on the review date.

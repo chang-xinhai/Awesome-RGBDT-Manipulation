@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-19",
+  "reviewed": "2026-10-21",
   "sources": [
     {
       "id": "robotwin2-paper",
@@ -342,7 +342,7 @@
       "label": "RoboDojo live leaderboard: simulation",
       "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
       "kind": "leaderboard",
-      "scope": "Official generated-data snapshot updated 2026-10-17. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
+      "scope": "Official generated snapshot updated2026-10-20. Simulation60rows, including 7 Agent-track submissions; real11rows. Model labels, variant checkpoints and per-track membership are preserved, separate from frozen paper baselines.",
       "entries": [
         {
           "name": "EmbodiedEvo",
@@ -601,6 +601,11 @@
           "name": "WorldScape-R²SI",
           "workId": "worldscape-r2si",
           "note": "Distinct R²SI simulation submission (2026-10-17 snapshot). Identity/team/results are official; architecture and improvement descriptions remain attributed launch coverage, without inheriting WorldScape Policy 2.0 artifacts."
+        },
+        {
+          "name": "HexaShell-Preview",
+          "workId": "hexashell",
+          "note": "Agent track; official Score53.18/SR46.85%. Frozen RGB tools and partial harness artifact release, not a measured-depth or learned-policy checkpoint."
         }
       ]
     },
@@ -610,7 +615,7 @@
       "label": "RoboDojo live leaderboard: real robots",
       "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
       "kind": "leaderboard",
-      "scope": "Official generated-data snapshot updated 2026-10-17. Model labels and memberships preserved; includes later submissions absent from paper, and differently scoped preview/single-task assets.",
+      "scope": "Official generated snapshot updated2026-10-20. Simulation60rows, including 7 Agent-track submissions; real11rows. Model labels, variant checkpoints and per-track membership are preserved, separate from frozen paper baselines.",
       "entries": [
         {
           "name": "OpenWAM-α",
@@ -664,9 +669,9 @@
       "id": "xpolicylab-registry",
       "benchmarkId": "robodojo",
       "label": "XPolicyLab integrated adapter registry",
-      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/94dbf9505f2f87cf59c3ee8ba5912cd236781771/policy",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/5d0be1499634d3176258c8f2e31f5fe816497b0a/policy",
       "kind": "adapter-registry",
-      "scope": "68 integrated policy adapters at commit 94dbf9505f2f87cf59c3ee8ba5912cd236781771, reviewed 2026-10-17; integration/serving availability only, not evidence that all adapters were evaluated on RoboTwin or RoboDojo. demo_policy scaffold excluded.",
+      "scope": "69 actual integrated policy adapters at commit 5d0be1499634d3176258c8f2e31f5fe816497b0a, reviewed October 21; demo_policy excluded. Integration/serving is not evidence of evaluated RoboDojo/RoboTwin performance.",
       "entries": [
         {
           "name": "Mem-0",
@@ -956,6 +961,10 @@
           "name": "ViGAR",
           "workId": "vigar",
           "note": "Existing canonical ViGAR; adapter directly cites the same paper and author repository."
+        },
+        {
+          "name": "CloudRobo_WM",
+          "note": "New adapter integration only; unambiguous original work and independent primary technical report are not established. No scored leaderboard result or speculative new paper is created."
         }
       ]
     },
@@ -1180,6 +1189,51 @@
           "name": "Spark-0 Scratch / Visual PT / 100H / 1000H",
           "workId": "spark-0",
           "note": "Within-paper variants and pretraining budgets, not additional canonical papers."
+        }
+      ]
+    },
+    {
+      "id": "robodojo-board-agent-track",
+      "benchmarkId": "robodojo",
+      "label": "RoboDojo official Agent / Agent+VLA / Agent+WAM track",
+      "url": "https://robodojo-benchmark.com/leaderboard",
+      "kind": "leaderboard",
+      "scope": "October 20 JSON and official app system-type map;7 submission aliases map to 5 canonical robot systems. Three base-LLM rows share the RoboProbe Direct-EEF adapter. Agent labels do not imply measured depth, neural-weight updates or complete source release.",
+      "entries": [
+        {
+          "name": "EmbodiedEvo",
+          "workId": "embodiedevo",
+          "note": "Official system type agent; Score 45.08, success 38.95%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+        },
+        {
+          "name": "PhysicalRSI",
+          "workId": "physicalrsi",
+          "note": "Official system type agent-vla; Score 36.27, success 31.38%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+        },
+        {
+          "name": "GPT-6-Astra",
+          "workId": "roboprobe",
+          "note": "Official system type agent; Score 28.97, success 22.48%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+        },
+        {
+          "name": "DeepSeek-Flash",
+          "workId": "roboprobe",
+          "note": "Official system type agent; Score 2.99, success 1.92%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+        },
+        {
+          "name": "GPT-5.5",
+          "workId": "roboprobe",
+          "note": "Official system type agent; Score 1.13, success 0.88%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+        },
+        {
+          "name": "WorldScape-R²SI",
+          "workId": "worldscape-r2si",
+          "note": "Official system type agent-wam; Score 46.58, success 39.35%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+        },
+        {
+          "name": "HexaShell-Preview",
+          "workId": "hexashell",
+          "note": "Official system type agent; Score 53.18, success 46.85%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
         }
       ]
     }
