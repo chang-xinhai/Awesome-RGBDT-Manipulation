@@ -371,6 +371,14 @@
           "release"
         ],
         "note": "597 real files; frozen task tools, results and import contracts inspected; root LICENSE is Apache-2.0."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Fresh official scored submission —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system."
       }
     ],
     "caveats": [
@@ -379,7 +387,7 @@
       "The official board’s precise 53.18 Score / 46.85% success differs from the README’s rounded 53.2 / 46.9.",
       "No real-robot transfer is established; tools and API calls are not learned policy weights."
     ],
-    "verified": "2026-10-21",
+    "verified": "2026-10-26",
     "policy": {
       "family": "Robot agent",
       "baseModel": "Codex with GPT-6-Astra for both execution and repair agents",
@@ -391,7 +399,7 @@
       "trainingTime": "Not reported",
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
-      "evaluation": "Official RoboDojo: 42 tasks × 50 episodes; Generalization is 25 standard +25 cluttered. October 20 board: Score 53.18, success 46.85%. Author new-layout retest: Score 48.0, success 39.7%; not the same test."
+      "evaluation": "Official RoboDojo: 42 tasks × 50 episodes; Generalization is 25 standard +25 cluttered. Earlier October 20 board: Score 53.18, success 46.85%. Author new-layout retest: Score 48.0, success 39.7%; not the same test. Current official October 24 snapshot: HexaShell-Preview:Score 53.18, success 46.85%. These live-board results remain separate from the manuscript/development protocols."
     },
     "relatedIds": [
       "roboprobe"
@@ -2491,7 +2499,8 @@
     "links": {
       "project": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
       "code": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
-      "report": "https://www.sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence"
+      "report": "https://www.sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence",
+      "weights": "https://huggingface.co/sensenova/sensenova-roborsi-27b-preview"
     },
     "policy": {
       "family": "Hybrid",
@@ -2504,14 +2513,14 @@
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
       "trainingMethod": "Two branches: frozen-model harness revision with retesting, and joint model–harness RSI that updates the Qwen3.8-27B-derived Preview model.",
-      "evaluation": "Author-reported RoboDojo, LIBERO-Pro and RoboCasa365 comparisons remain protocol-specific. Released runtime integrations now include LIBERO-family, BEHAVIOR-1K, Bench2Dex and DexJoCo; integration availability is not a new scored leaderboard entry."
+      "evaluation": "Hosted GPT-6 Astra harness author result: RoboDojo Score 60.08/SR 54.17%, still submitted to the official board. Distinct learned 27B Preview author result: RoboDojo:26.13/20.83% with VLA assistance; LIBERO-Pro:92.5% VLA-assisted and 95% direct VLM; RoboCasa365:26.0% to 46.5% over its Qwen base. Settings and model branches must not be mixed. Current official RoboDojo snapshot does not list SenseNova."
     },
     "release": {
       "code": "Partial",
-      "weights": "Not verified — announced Preview model endpoint is not publicly inspectable",
+      "weights": "Available — 27B Preview, 12 safetensor shards",
       "data": "Not verified",
-      "license": "Apache-2.0 for the public runtime; external models, simulators and datasets retain separate terms.",
-      "notes": "October 20 source release adds BEHAVIOR-1K RGB-D/native-21D service plus Bench2Dex and DexJoCo adapters/build guides. The 27B Preview release was announced for October 20, but its HF API returned401 on October 21; no publicly downloadable weight inventory is established. RoboDojo runtime remains marked coming soon."
+      "license": "Apache-2.0 public runtime and 27B Preview checkpoint, verified actual LICENSE and upstream Qwen NOTICE; external models, simulators and datasets retain separate terms.",
+      "notes": "The 27B Preview endpoint is now public with 12 safetensor shards, index, config/tokenizer, LICENSE and NOTICE; a binary shard Range 206 is verified. Released source adds 27B LIBERO-Pro and RoboCasa365 inference/evaluation. BEHAVIOR-1K, Bench2Dex and DexJoCo runtime integrations remain separately scoped. RoboDojo runtime/reproduction is still coming soon; full training traces are not released."
     },
     "evidence": [
       {
@@ -2535,7 +2544,26 @@
           "links",
           "policy"
         ],
-        "note": "Actual RGB-D adapter and native action interface inspected alongside new Bench2Dex/DexJoCo source; the Preview model/API and reported benchmark scores are separate."
+        "note": "Historical source snapshot verified BEHAVIOR-1K RGB-D and Bench2Dex/DexJoCo integrations; the current model release supersedes the earlier unresolved endpoint status."
+      },
+      {
+        "url": "https://huggingface.co/sensenova/sensenova-roborsi-27b-preview",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "release",
+          "links",
+          "policy.evaluation"
+        ],
+        "note": "Actual12model shards and206binary sample, model LICENSE and NOTICE read. This supersedes the earlier401 observation."
+      },
+      {
+        "url": "https://github.com/OpenSenseNova/SenseNova-RoboRSI/blob/main/docs/sensenova-roborsi-27b-preview.md",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "release",
+          "policy"
+        ],
+        "note": "Current model guide and runtime source preserve VLA-assisted/direct-VLM evaluation and RoboDojo forthcoming status."
       }
     ],
     "caveats": [
@@ -2554,7 +2582,7 @@
         "note": "Official runtime overview shows model / skill interfaces, benchmark execution, trace collection and recursive harness improvement."
       }
     ],
-    "verified": "2026-10-21",
+    "verified": "2026-10-26",
     "relatedIds": [
       "astra-embodied-policies"
     ]
@@ -2890,14 +2918,14 @@
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
       "trainingMethod": "Frozen model weights; recursive improvement changes programs, Skills and Lessons, then freezes the resulting harness for test.",
-      "evaluation": "RoboDojo: 42 tasks, 210 development scenes and a 2,100-scene full test set; task and controller variants have separately reported protocols."
+      "evaluation": "RoboDojo: 42 tasks, 210 development scenes and a 2,100-scene full test set; task and controller variants have separately reported protocols. Current official October 24 snapshot: EmbodiedEvo:Score 45.08, success 38.95%. These live-board results remain separate from the manuscript/development protocols."
     },
     "release": {
-      "code": "Available",
+      "code": "Available — unlicensed source preview",
       "weights": "Not applicable",
       "data": "Partial",
-      "license": "Repository-wide license not verified; bundled skill recipes have separate terms.",
-      "notes": "Public control framework and recipes; evaluation archives and hosted-model access are separate from code availability."
+      "license": "Original repository license pending: current README explicitly calls this a release preparation without a selected project license. Included RoboProbe recipes retain separate Apache-2.0 grants; no blanket redistribution/commercial-use license is established.",
+      "notes": "Actual control/runtime and recipes are public, but the author explicitly states this is not yet a licensed public release. Hosted-model access and evaluation archives remain separate resources."
     },
     "evidence": [
       {
@@ -2921,6 +2949,22 @@
           "links.code"
         ],
         "note": "Repository identity; code and checkpoint release status are stated separately."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Fresh official scored submission —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system."
+      },
+      {
+        "url": "https://github.com/Einsia/EmbodiedEvo",
+        "label": "Actual README license scope,26October2026",
+        "fields": [
+          "release"
+        ],
+        "note": "No root LICENSE in current tree; author explicitly describes release preparation with project license unselected. Bundled third-party Apache permissions remain separate."
       }
     ],
     "caveats": [
@@ -2936,7 +2980,7 @@
         "note": "Figure 1: A coding agent develops executable robot-control programs and reusable Skills and Lessons through Playground interaction."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-26"
   },
   {
     "id": "pace",
@@ -5275,7 +5319,7 @@
     ],
     "resourceType": "policy",
     "summary": "Uses Python cells to compose existing robot primitives with control flow and selective feedback, reducing repeated model calls relative to tool-by-tool execution.",
-    "institution": "Not reported",
+    "institution": "Peking University",
     "venue": "Preprint",
     "modalities": [
       "RGB",
@@ -5305,7 +5349,7 @@
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
       "trainingMethod": "Frozen Astra with a code-execution interface in the main experiment; reinforcement training updates the compact coder in a separate study.",
-      "evaluation": "700 instances across LIBERO-Pro, RoboTwin 2.0 and RoboCasa365; additional RoboDojo evaluation without a VLA or privileged state."
+      "evaluation": "700 instances across LIBERO-Pro, RoboTwin2.0 and RoboCasa365. Official October 24 RoboDojo result: Score 55.26 / success 50.35%. The author’s independent seed0 evaluation covers all 42 tasks /2,100 episodes and reports 58.20 /51.62%; this is a different test protocol. Hosted Astra and the GRPO-trained 4B Coder remain distinct branches."
     },
     "release": {
       "code": "Available",
@@ -5354,6 +5398,30 @@
           "release"
         ],
         "note": "2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction."
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.01939",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "institution"
+        ],
+        "note": "PDF title page first numbered affiliation1is Peking University."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/DAGroup-PKU/PyRUA-Lean/main/integrations/xpolicylab/evaluation/robodojo_summary_official.md",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "Actual newly released official summary distinguishes current official55.26/50.35from author58.20/51.62."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "Fresh current snapshot updatedOctober24; official score and success are independent of the paper seed0 comparison."
       }
     ],
     "caveats": [
@@ -5369,7 +5437,7 @@
         "note": "Figure 2: Uses Python cells to compose existing robot primitives with control flow and selective feedback, reducing repeated model calls relative to tool-by-tool execution."
       }
     ],
-    "verified": "2026-10-19"
+    "verified": "2026-10-26"
   },
   {
     "id": "urai",
@@ -7337,7 +7405,7 @@
       "trainingHardware": "Pretraining uses 256 A800 GPUs with batch 16 per GPU and global batch 4,096.",
       "controlRate": "Physical execution 30 Hz, replan every 16 actions; optimized controller-observed RTT 152.8 ms on RTX 5090",
       "trainingMethod": "World/action flow matching, Causal Imprint future supervision, cached 4D geometry/motion distillation and asynchronous prefix-conditioned action inference",
-      "evaluation": "Simulation including LIBERO-Plus/RoboTwin C2R and four real robot platforms, including dexterous hands"
+      "evaluation": "Simulation including LIBERO-Plus/RoboTwin C2R and four real robot platforms, including dexterous hands; current official RoboDojo-RealWorld October 24 adds InternW0-Δ with Score 38.9and success 31.7%. This is separate from paper-specific multi-platform trials."
     },
     "release": {
       "code": "Available",
@@ -7386,6 +7454,14 @@
           "links.weights"
         ],
         "note": "Base, LIBERO, RoboTwin, and RoboDojo policy checkpoints resolve to populated Hugging Face repositories."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "Fresh physical board now lists12submissions including InternW0-Δ; preserve official versus author-paper protocols."
       }
     ],
     "caveats": [
@@ -7401,7 +7477,7 @@
         "note": "Figure 1: complete InternW0-Delta architecture with video, action, and geometry distillation components."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-26"
   },
   {
     "id": "find",
@@ -8498,7 +8574,7 @@
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
       "trainingMethod": "Frozen model; repeated observation–tool-action feedback. The low-level adapter is analytic rather than a learned motor policy.",
-      "evaluation": "2,100 RoboDojo episodes across 42 tasks; complementary real-robot manipulation and dexterous-piano case studies."
+      "evaluation": "2,100 RoboDojo episodes across 42 tasks; complementary real-robot manipulation and dexterous-piano case studies. Current official October 24 snapshot: GPT-6-Astra:Score 28.97, success 22.48%; DeepSeek-Flash:Score 2.99, success 1.92%; GPT-5.5:Score 1.13, success 0.88%. These live-board results remain separate from the manuscript/development protocols."
     },
     "release": {
       "code": "Available",
@@ -8538,6 +8614,14 @@
           "caveats"
         ],
         "note": "Implementation scope and repository license are verified separately from model access and full benchmark reproducibility."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Fresh official scored submission —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system."
       }
     ],
     "caveats": [
@@ -8554,7 +8638,7 @@
         "note": "Figure 2: A frozen frontier model selects end-effector targets from RGB and robot state."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-26"
   },
   {
     "id": "me-brain-1",
@@ -12218,7 +12302,7 @@
       "project": "https://bridgevla-plus.github.io/",
       "code": "https://github.com/BridgeVLA/BridgeVLA/tree/main",
       "data": "https://huggingface.co/datasets/LPY/BridgeVLA",
-      "weights": "https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints"
+      "weights": "https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus"
     },
     "policy": {
       "family": "VLA",
@@ -12237,8 +12321,8 @@
       "code": "Available",
       "weights": "Available",
       "data": "Partial",
-      "license": "Apache-2.0 code; PaliGemma/Gemma and data terms separate",
-      "notes": "Main branch releases five-benchmark training/evaluation and checkpoint download scripts; grounding/simulation data linked; self-collected real data not published."
+      "license": "Apache-2.0 code; HF dataset card declares Apache-2.0 for distributed assets. PaliGemma/Gemma and upstream corpora retain separate terms.",
+      "notes": "Actual HF inventory now includes dedicated BridgeVLA++ checkpoints for RLBench, COLOSSEUM, GemBench and MemoryBench, plus the separately listed RMBench task checkpoints and shared grounding pretraining. Main-branch training/evaluation source is public; self-collected real demonstrations remain unpublished."
     },
     "evidence": [
       {
@@ -12287,6 +12371,15 @@
           "release.license"
         ],
         "note": "Code scope only."
+      },
+      {
+        "url": "https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "release",
+          "links"
+        ],
+        "note": "Four newly present model_{rlbench,colosseum,gembench,memorybench}.pth files verified independently from legacy BridgeVLA and existing RMBench checkpoints."
       }
     ],
     "caveats": [
@@ -12303,14 +12396,14 @@
         "note": "Fig2:grounding/action pipeline with temporal and spatial memory injection."
       }
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-10-26",
     "releaseByCollection": {
       "policy": {
         "code": "Available",
         "weights": "Available",
         "data": "Partial",
-        "license": "Apache-2.0 code; PaliGemma/Gemma and data terms separate",
-        "notes": "Main branch releases five-benchmark training/evaluation and checkpoint download scripts; grounding/simulation data linked; self-collected real data not published."
+        "license": "Apache-2.0 code; HF dataset card declares Apache-2.0 for distributed assets. PaliGemma/Gemma and upstream corpora retain separate terms.",
+        "notes": "Actual HF inventory now includes dedicated BridgeVLA++ checkpoints for RLBench, COLOSSEUM, GemBench and MemoryBench, plus the separately listed RMBench task checkpoints and shared grounding pretraining. Main-branch training/evaluation source is public; self-collected real demonstrations remain unpublished."
       }
     },
     "relatedIds": []
@@ -14682,7 +14775,7 @@
       "dataCollection": "Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation.",
       "data": "Demonstration data downloadable by task; exact current total count varies by release.",
       "protocol": "Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation.",
-      "baselines": "Paper:30 policy baselines. Official October 20 snapshot: 60 named simulation submissions (7 Agent-track rows and53 non-Agent rows) and11 real submissions. GPT-6-Astra/GPT-5.5/DeepSeek-Flash are variants of one RoboProbe interface. XPolicyLab:69 integrated adapters at 5d0be14, separately scoped from scored submissions."
+      "baselines": "Frozen paper: 30 simulation and 10 physical baselines. Current official October 24 snapshot: 62 simulation submissions, including8 Agent aliases mapping to 6canonical robot systems; 12 physical submissions. PyRUA-Lean is newly listed; GPT-6-Astra, GPT-5.5 and DeepSeek-Flash share RoboProbe Direct-EEF. XPolicyLab currently has73actual adapter directories excluding demo_policy at commit c43a74653bec480ebe82c84770664e8035bc56c9. Integrations do not establish scored submissions."
     },
     "release": {
       "code": "Available",
@@ -14743,7 +14836,7 @@
         "fields": [
           "benchmark.baselines"
         ],
-        "note": "October 20 official JSON has 60 simulation / 11 real rows; official app system-type map identifies 7 agent rows. Paper baselines, live submission aliases and integrations remain separate."
+        "note": "Historical October20 snapshot is retained only as previous evidence; current leaderboard/registry are updated below and must not inherit these old counts."
       },
       {
         "url": "https://github.com/XPolicyLab/XPolicyLab/tree/5d0be1499634d3176258c8f2e31f5fe816497b0a/policy",
@@ -14751,7 +14844,23 @@
         "fields": [
           "benchmark.baselines"
         ],
-        "note": "69 actual policy directories excluding demo_policy; CloudRobo-WM newly integrated. Integration does not establish a leaderboard score."
+        "note": "Historical October20 snapshot is retained only as previous evidence; current leaderboard/registry are updated below and must not inherit these old counts."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "benchmark.baselines"
+        ],
+        "note": "Fresh official generated JSON updated2026-10-24:62simulation/12physical. App system-type map identifies8Agent aliases; score membership and adapter availability are independent."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/c43a74653bec480ebe82c84770664e8035bc56c9/policy",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "benchmark.baselines"
+        ],
+        "note": "Actual API directory listing:73adapter directories excluding demo_policy, not README inferred totals."
       }
     ],
     "caveats": [
@@ -14768,7 +14877,7 @@
         "pdfPage": 6
       }
     ],
-    "verified": "2026-10-21",
+    "verified": "2026-10-26",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
@@ -40848,7 +40957,7 @@
       "trainingHardware": "Not reported",
       "controlRate": "The website labels 0.1–1 Hz planning and 20–50 Hz control as illustrative estimates, not measured policy throughput.",
       "trainingMethod": "Frozen agent model in the illustrated harness-evolution loop: vary candidate programs, evaluate, select and inherit. This is distinct from training a new VLA checkpoint.",
-      "evaluation": "RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies."
+      "evaluation": "RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. Current official October 24 snapshot: PhysicalRSI:Score 36.27, success 31.38%. These live-board results remain separate from the manuscript/development protocols."
     },
     "release": {
       "code": "Partial",
@@ -40870,6 +40979,14 @@
           "caveats"
         ],
         "note": "Project-only evidence; any reported date is an explicit public report or code-release event, not a manuscript submission."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Fresh official scored submission —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system."
       }
     ],
     "caveats": [
@@ -40886,7 +41003,7 @@
         "note": "The official HTML architecture canvas shows evidence-driven harness revision, skill routing and the physical execution loop."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-26"
   },
   {
     "id": "mm-abc",
@@ -64441,7 +64558,7 @@
       "family": "Diffusion",
       "baseModel": "DINO ViT-B/16 RGB encoder, shared Point Net tactile encoder and diffusion policy.",
       "modelSize": "Not reported",
-      "inputs": "RGB,256-point local tactile deformation point clouds and proprioception.",
+      "inputs": "RGB, 256-point local tactile deformation point clouds and proprioception.",
       "outputs": "Bimanual end-effector/gripper action sequences.",
       "trainingData": "Four bimanual manipulation task datasets; exact retained demonstrations Not reported in inspected text.",
       "trainingTime": "Not reported",
@@ -64454,8 +64571,8 @@
       "code": "Available",
       "weights": "Available",
       "data": "Available",
-      "license": "Not verified; no unambiguous repository license identified.",
-      "notes": "Official linked Hugging Face file inventory contains four task-specific .ckpt policy files and datasets; no unambiguous top-level code LICENSE found."
+      "license": "MIT for released datasets and four task policy checkpoints, verified actual HF LICENSE; original GitHub code license remains Not verified because no root code LICENSE is present.",
+      "notes": "Official HF inventory includes four task-specific.ckpt files, four processed task archives and rawdata.zip. The newly published HF LICENSE explicitly applies MIT to these released data/weights; it does not silently license the separate unlicensed code repository."
     },
     "evidence": [
       {
@@ -64487,7 +64604,7 @@
           "links",
           "release"
         ],
-        "note": "Repository metadata,README and actualNone inspected; availability scoped to the listed component."
+        "note": "Substantive implementation is public, but no original root code LICENSE was verified. The HF data/checkpoint LICENSE has separate scope."
       },
       {
         "url": "https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt",
@@ -64497,13 +64614,22 @@
           "release"
         ],
         "note": "Public repository file inventory inspected; component/data scope follows model/dataset card."
+      },
+      {
+        "url": "https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt/blob/main/LICENSE",
+        "label": "Official current source / actual release —26October2026",
+        "fields": [
+          "release",
+          "links"
+        ],
+        "note": "Actual MIT text newly verified for the HF artifacts; no inference about separate original-code redistribution permission."
       }
     ],
     "caveats": [
       "Tactile deformation point clouds describe sensor surface geometry, not an external RGB-D stream."
     ],
     "imageCandidates": [],
-    "verified": "2026-10-17"
+    "verified": "2026-10-26"
   },
   {
     "id": "tacthru-umi",
@@ -75362,7 +75488,7 @@
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
       "trainingMethod": "Launch coverage describes an inner Robot Agent executing task skills and an outer Recursion Agent revising skills, testing versions and optionally training WSP. The complete improvement loop and any meta-level self-modification are not independently verified.",
-      "evaluation": "Official RoboDojo-Sim snapshot 2026-10-17: average Score 46.58 and success rate 39.35%; Precision Score 23.51 and success rate 15.50%. The simulation entry is separate from the real-world leaderboard; this listing does not independently establish the launch article’s recursive-improvement claims."
+      "evaluation": "Historical RoboDojo-Sim snapshot 2026-10-17: average Score 46.58 and success rate 39.35%; Precision Score 23.51 and success rate 15.50%. The simulation entry is separate from the real-world leaderboard; this listing does not independently establish the launch article’s recursive-improvement claims. Current official October 24 snapshot: WorldScape-R²SI:Score 46.58, success 39.35%. These live-board results remain separate from the manuscript/development protocols."
     },
     "release": {
       "code": "Not verified — no R²SI-specific public implementation was located.",
@@ -75420,6 +75546,14 @@
         ],
         "note": "Article read through a normal Chrome browser. This supports only explicitly attributed launch descriptions and the report-publication event. It is not primary technical evidence; no R²SI paper or author technical release was located.",
         "sourceType": "secondary"
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Fresh official scored submission —26October2026",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system."
       }
     ],
     "caveats": [
@@ -75427,12 +75561,12 @@
       "Technical descriptions are explicitly attributed to launch coverage. The official leaderboard independently confirms the entry, contributor and reported metrics, not the internal architecture or improvement mechanism.",
       "The launch article also mentions WorldScape Policy 2.5. No separate primary technical report or version-specific release was located; it is not treated as a renamed WorldScape Policy 2.0 checkpoint or a separately verified model here.",
       "No measured depth or tactile input is established for R²SI. The source illustration labels RGB-only deployment, but primary implementation evidence remains unavailable.",
-      "R²SI is distinct from R²-WAM (arXiv:2610.04913), a separate repair-and-reject post-training method."
+      "R²SI is distinct from R²-WAM (arXiv: 2610.04913), a separate repair-and-reject post-training method."
     ],
     "relatedIds": [
       "worldscape-policy2"
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-10-26"
   },
   {
     "id": "blind-precise-assembly",
@@ -76749,5 +76883,2677 @@
       "trainingMethod": "Frozen-VLM action selection using observation/action history.",
       "evaluation": "Physical cylindrical and square peg insertion with numerical/graphical tactile variants."
     }
+  },
+  {
+    "id": "forca",
+    "name": "FORCA",
+    "title": "FORCA: A Force-Aware Coding Agent for Contact-Rich Robot Manipulation",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d",
+      "visual-precision-rl"
+    ],
+    "resourceType": "policy",
+    "summary": "A coding agent revises force-responsive manipulation programs using measured wrist wrench and visual execution records.",
+    "institution": "University of Illinois Urbana-Champaign",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Force/Torque",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.31841",
+      "project": "https://tanoom.github.io/forca/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project provides paper and demonstrations; no author implementation or method checkpoint is linked."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.31841",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://tanoom.github.io/forca/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Wrist wrench is not distributed skin tactile.",
+      "Development permits up to 20 rollouts and four hours per run; human scene operations, execution authorization and final acceptance remain.",
+      "The foundation model is not queried inside the 100 Hz feedback loop."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Claude Fable 5; SAM3, GraspGen and PyRoKi skills.",
+      "modelSize": "Not reported",
+      "inputs": "Language, RealSense D455 RGB-D, robot state and measured UR5e wrist F/T; live and recorded wrench.",
+      "outputs": "Complete Python programs with contact probes and Cartesian velocity-feedback control.",
+      "trainingMethod": "Frozen model; physical rollouts revise code and routines, then freeze the final program for repeated evaluation.",
+      "trainingData": "No demonstrations or task-specific neural training; real execution traces refine programs.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Five real tasks: drawer, door handle, cube-to-target, vase wiping and cucumber peeling. Frozen programs succeed 10/10 on drawer and door, versus 4/10 and 1/10 vision-only.",
+      "controlRate": "100 Hz host-side wrench-feedback loop; coding-agent revision takes minutes."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.31841v1/method_skills.png",
+        "page": "https://arxiv.org/abs/2610.31841",
+        "kind": "pipeline",
+        "credit": "FORCA authors",
+        "note": "Fig. 2: Predefined skill modules. The agent is initialized with these modules, assembled from open-source components under human supervision.\n(a) SAM 3 [ 31 ] localizes the tool named in the instruction.\n(b) GraspGen [ 32 ] proposes candidate grasps, and the VLM selects one.\n(c) PyRoKi [ 30 ] plans the trajectory.\n(d) The robot executes the resulting routine to acquire the tool."
+      }
+    ]
+  },
+  {
+    "id": "sera",
+    "name": "SERA",
+    "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
+    "date": "2026-10-21",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "An editable planner harness retains task context and evolves from rollouts while a fixed VLA executes grounded subgoals.",
+    "institution": "University of Science and Technology of China",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.29560",
+      "project": "https://stevenkkxs.github.io/sera-webpage/",
+      "code": "https://github.com/StevenKKXS/SERA"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Apache-2.0 original code; Gemma/PaliGemma and other upstream components retain separate terms.",
+      "notes": "Actual planning/runtime, self-evolution and RoboMME evaluation source is released. The repository links executor checkpoints separately; no newly trained SERA planner weights are required."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.29560",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://stevenkkxs.github.io/sera-webpage/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/StevenKKXS/SERA",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.29560",
+        "label": "PDF title page: numbered affiliation1",
+        "fields": [
+          "institution"
+        ],
+        "note": "First numbered affiliation is USTC; grouped HTML affiliations alone were not used."
+      }
+    ],
+    "caveats": [
+      "Published leaderboard baselines and the paper’s local MemER reproduction are separate comparisons.",
+      "Self-evolution uses development experience; evaluation uses the selected frozen harness."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "gpt-5.6-sol via Codex, high reasoning effort; fixed VLA executor.",
+      "modelSize": "Not reported",
+      "inputs": "RGB observations, task, normalized image grounding points and execution/context history.",
+      "outputs": "Validated subgoal templates and image-point bindings for the fixed low-level executor.",
+      "trainingMethod": "No planner weight updates; propose, verify and select harness revisions on development rollouts, then freeze before held-out testing.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "RoboMME 16 memory tasks, 50 episodes/task: 51.38% with autonomous harness selection versus 44.38% without evolution.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.29560v1/motivation_image.png",
+        "page": "https://arxiv.org/abs/2610.29560",
+        "kind": "pipeline",
+        "credit": "SERA authors",
+        "note": "Figure 1: From planner to agent for history-dependent manipulation. Top: Similar observations can require different decisions depending on task progress.\n(a) Memory-augmented policies equip VLA models with memory mechanisms to retain and use\nhistorical information. (b) Hierarchical planning separates high-level planning from\nlow-level execution. (c) SERA uses an editable harness to organize the VLM as an agent that maintains\ntask context from observation and interaction history. Execution-driven self-evolution\nrefines the harness using rollout feedback. The dashed arrow denotes the selected\nharness, fixed before testing."
+      }
+    ]
+  },
+  {
+    "id": "aw0",
+    "name": "AW-0",
+    "title": "Agentic World Action Models",
+    "date": "2026-10-21",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A trained world-action model jointly generates executable skill code, future video and motor actions, with a hybrid program/action execution interface.",
+    "institution": "University of California, Berkeley",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.30136",
+      "project": "https://agentic-wam.github.io/",
+      "code": "https://github.com/ZhuoyangLiu2005/agentic-wam",
+      "weights": "https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Available — YAM+ego pretraining checkpoint",
+      "data": "Not verified",
+      "license": "BSD-2-Clause code; released pretraining checkpoint card declares BSD-2-Clause. Frozen upstream models and corpora retain separate terms.",
+      "notes": "Actual annotation/training/inference source and agenticwam_pretrain.pt are released; binary Range 206 verified. This is the YAM+ego pretraining checkpoint, not every task-tuned robot checkpoint or the raw training corpus."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.30136",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://agentic-wam.github.io/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/ZhuoyangLiu2005/agentic-wam",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1",
+        "label": "Official weights source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "This model learns code/video/action weights; it is not merely a frozen hosted coding-agent wrapper.",
+      "Retargeted human hand labels are training data; they do not establish physical deployment on a dexterous hand."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Cosmos-Predict2.5 video expert, SDAR/LLaDA-style code expert, frozen Qwen3-VL vision tower and action DiT.",
+      "modelSize": "Not reported",
+      "inputs": "Current multiview RGB, instruction, robot state and prior program slices.",
+      "outputs": "Joint skill-program tokens, future video latents and action chunks; hybrid executor selects program or action branch.",
+      "trainingMethod": "Joint masked code diffusion and video/action flow matching; agentic annotation discovers reusable skills, followed by task fine-tuning.",
+      "trainingData": "73,101 robot episodes / 1,919.3 h plus 175,541 human episodes / 993.9 h: 248,642 episodes and 2,913.2 h total; 50 consolidated skills.",
+      "trainingTime": "One pretraining epoch; wall-clock duration not reported.",
+      "trainingHardware": "48 NVIDIA H100 across six nodes for the stated pretraining recipe.",
+      "evaluation": "RoboTwin2 simulation and physical YAM/Tianji bimanual manipulation; paper separates program, action and hybrid execution.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.30136v1/method_v6_0926.png",
+        "page": "https://arxiv.org/abs/2610.30136",
+        "kind": "pipeline",
+        "credit": "AW-0 authors",
+        "note": "Figure 2: AW-0 Framework. AW-0 includes a Mixture-of-Transformers backbone with three experts generating code, video and action, respectively, which are denoised jointly, with video and action under continuous flow matching and the code under discrete masked diffusion."
+      }
+    ]
+  },
+  {
+    "id": "agenticroborl",
+    "name": "AgenticRoboRL",
+    "title": "AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "Supervised and multi-turn reinforcement post-training improve a compact robot planner inside fixed execution harnesses.",
+    "institution": "University of Central Florida",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.28589",
+      "code": "https://github.com/xinxinliu-ai/AgenticRoboRL",
+      "weights": "https://huggingface.co/ciciciciliu/AgenticRoboRL-Qwen3.5-9B"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Available",
+      "data": "Not verified",
+      "license": "Apache-2.0 original code; checkpoint scope follows its model card and upstream Qwen terms. Vendored harness notices remain separate.",
+      "notes": "Actual SFT/RL/evaluation source is public; HF contains separate complete sft/model.safetensors and rl-v006/model.safetensors checkpoints, tokenizer/processor and checksums. These are trained 9B planner weights, not the frozen VLA executor."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.28589",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://github.com/xinxinliu-ai/AgenticRoboRL",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://huggingface.co/ciciciciliu/AgenticRoboRL-Qwen3.5-9B",
+        "label": "Official weights source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Planner post-training is a neural weight update, unlike frozen-model code/memory revision.",
+      "The memory-enabled hosted-model baseline is not a capacity- or context-matched 9B comparison."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Qwen3.5-9B student; Qwen3.8-27B teacher; frozen RPent/CaP-X execution components.",
+      "modelSize": "9B student; 27B teacher.",
+      "inputs": "Task, RGB observations and harness/tool feedback; optional separately evaluated external memory.",
+      "outputs": "Planner code and tool calls to frozen VLA/robot harnesses.",
+      "trainingMethod": "SFT on successful trajectories followed by multi-turn RL updates planner weights; executor remains frozen.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "LIBERO-PRO planner improves 18.1% to 71.0% without memory; Codex GPT-5.5 with external memory scores 72.1% under the stated protocol.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.28589v1/fig_teaser.png",
+        "page": "https://arxiv.org/abs/2610.28589",
+        "kind": "pipeline",
+        "credit": "AgenticRoboRL authors",
+        "note": "Figure 1: Overview of AgenticRoboRL. (a) Agentic robotics systems combine planners with robot harnesses for multi-turn interaction with the environment. (b) We post-train planners through SFT on successful trajectories followed by multi-turn RL. (c) On LIBERO-PRO, post-training improves a 9B planner’s success rate from 18.1% to 71.0%, approaching the 72.1% achieved by Codex (GPT-5.5)with memory. Mem denotes external memory."
+      }
+    ]
+  },
+  {
+    "id": "fit-mac",
+    "name": "FIT-MAC",
+    "title": "FIT-MAC: A Closed-Loop Multi-Agent Framework for Robust Vision-Language-Action Models",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "Planner, Grounder, Verifier and Correction modules route target-binding and execution errors to bounded recovery around a pretrained VLA.",
+    "institution": "Lanzhou University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.28109",
+      "project": "https://fitmac-research.pages.dev/",
+      "code": "https://anonymous.4open.science/r/research-artifact-B431"
+    },
+    "release": {
+      "code": "Available — anonymous research artifact",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Anonymous artifact contains substantive fit_mac modules, grounding server and evaluation runtime. Original-code licensing is not verified; no method checkpoint release is established."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.28109",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://fitmac-research.pages.dev/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://anonymous.4open.science/r/research-artifact-B431",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "No measured-depth input is established for this wrapper.",
+      "Robustness comparisons preserve each backbone, seed and perturbation setting."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "OpenVLA, π0 and π0.5 evaluated as frozen action backbones.",
+      "modelSize": "Not reported",
+      "inputs": "Task, current RGB, proprioception and execution feedback; explicit target binding and controller state.",
+      "outputs": "Subgoals, corrected target bindings and bounded local rescue actions around VLA predictions.",
+      "trainingMethod": "Inference-time modular feedback and recovery; no backbone parameter updates are needed by the wrapper.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "LIBERO-Object/Spatial under five LIBERO-PRO perturbation types; OpenVLA+FIT-MAC reports 85.4% and 72.0% suite averages.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.28109v1/mov.png",
+        "page": "https://arxiv.org/abs/2610.28109",
+        "kind": "pipeline",
+        "credit": "FIT-MAC authors",
+        "note": "Figure 1: Comparison of standard VLA execution and FIT-MAC. Top: a VLA policy predicts actions from visual observations and a language instruction. Bottom: FIT-MAC augments the pretrained policy with specialized agents."
+      }
+    ]
+  },
+  {
+    "id": "eventsync",
+    "name": "EventSync",
+    "title": "EventSync: Event-Driven Memory Updates for History-Dependent Manipulation",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A learned event monitor updates explicit task memory only after execution evidence supports subgoal completion.",
+    "institution": "Renmin University of China",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.27917",
+      "project": "https://zjjJacinthe.github.io/eventsync-project",
+      "weights": "https://huggingface.co/zjjJacinthe/EventSync-Reasoner",
+      "weights-monitor": "https://huggingface.co/zjjJacinthe/EventSync-Monitor",
+      "weights-executor": "https://huggingface.co/zjjJacinthe/EventSync-Executor",
+      "weights-history-executor": "https://huggingface.co/zjjJacinthe/EventSync-Executor-FrameSamp-Modul"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Available — reasoner adapter, monitor and two executor variants",
+      "data": "Not verified",
+      "license": "EventSync Non-Commercial Research License1.0 for contributed checkpoints/adapters/modifications; separate Qwen, DINOv2, Apache and Gemma upstream terms remain applicable.",
+      "notes": "Four actual HF inventories contain reasoner adapter_model.safetensors, monitor best.pt and complete Orbax/OCDBT executor variants. Their cards link github.com/zjjJacinthe/EventSync, but that runtime endpoint returns 404 on26 October; no runnable method source release is verified. Model availability does not establish code availability."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.27917",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://zjjJacinthe.github.io/eventsync-project",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://huggingface.co/zjjJacinthe/EventSync-Reasoner",
+        "label": "Actual checkpoint inventory and noncommercial LICENSE",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Original EventSync additions use a noncommercial research license; upstream model grants are separately preserved."
+      },
+      {
+        "url": "https://huggingface.co/zjjJacinthe/EventSync-Monitor",
+        "label": "Actual checkpoint inventory and noncommercial LICENSE",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Original EventSync additions use a noncommercial research license; upstream model grants are separately preserved."
+      },
+      {
+        "url": "https://huggingface.co/zjjJacinthe/EventSync-Executor",
+        "label": "Actual checkpoint inventory and noncommercial LICENSE",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Original EventSync additions use a noncommercial research license; upstream model grants are separately preserved."
+      },
+      {
+        "url": "https://huggingface.co/zjjJacinthe/EventSync-Executor-FrameSamp-Modul",
+        "label": "Actual checkpoint inventory and noncommercial LICENSE",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Original EventSync additions use a noncommercial research license; upstream model grants are separately preserved."
+      }
+    ],
+    "caveats": [
+      "A past observation and the current execution phase are different sources of memory.",
+      "The left physical camera records evaluation only; executor uses right/wrist and reasoner/monitor use the right external view."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Qwen3-VL-4B LoRA Memory Reasoner, DINOv2 Event Monitor and π0.5 action executor; optional FrameSamp+Modul visual history.",
+      "modelSize": "87.39M total Event Monitor parameters; 4B base reasoner;executor capacity separate.",
+      "inputs": "Instruction, RGB history, external/wrist observations and end-effector trajectories; memory stores completed subgoals.",
+      "outputs": "Subgoal instructions and low-level robot actions, gated by learned completion events.",
+      "trainingMethod": "Fine-tune reasoner and monitor using demonstration/event labels; inference updates task memory and plans rather than online model weights.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "16 RoboMME tasks ×50 episodes: 64.5% with visual history; four real Franka tasks cover counting, permanence, reference and imitation.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.27917v1/method_figure.png",
+        "page": "https://arxiv.org/abs/2610.27917",
+        "kind": "pipeline",
+        "credit": "EventSync authors",
+        "note": "Fig. 2: Overview of EventSync. Top: the Memory Reasoner combines task memory and current context to generate grounded subgoals for the Action Executor. Completion evidence from the Event Monitor updates the completed-subgoal history and triggers subsequent reasoning. Bottom: visual, trajectory, and event-condition tokens feed shared Transformer fusion for completion prediction and recurrent event-increment prediction."
+      }
+    ]
+  },
+  {
+    "id": "wholebodymem",
+    "name": "WholeBodyMem",
+    "title": "Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Object-event memory preserves pre-goal cues for a whole-body humanoid VLA after the cue leaves the camera view.",
+    "institution": "Mohamed bin Zayed University of Artificial Intelligence",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Humanoid",
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.31166",
+      "project": "https://memory-before-goal.github.io"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Current official project still identifies itself as an anonymous draft with unreleased artifacts; primary paper supplies authors and final evaluated numbers. No method implementation/checkpoints established."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.31166",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://memory-before-goal.github.io",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "RealSense hardware does not by itself establish that depth is fed to the policy.",
+      "Memory-task results, standard SIMPLE tasks and real tasks have different episode budgets.",
+      "Project contains draft/TBD labels; manuscript evidence takes precedence for reported results."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Diffusion",
+      "baseModel": "Ψ0 whole-body VLA, SAM3 tracking; AMO/SONIC lower-body controllers are setup-specific.",
+      "modelSize": "Not reported",
+      "inputs": "Head RGB, robot state, object/event-selected historical images and instruction.",
+      "outputs": "Simulation 36-D whole-body actions; real SONIC motion token plus 14 hand targets.",
+      "trainingMethod": "Imitation learning on memory-task demonstrations with object-guided memory and decision supervision.",
+      "trainingData": "90 real demonstrations, 15/task, whole-body PICO teleoperation; simulated demonstrations are scripted.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "One RTX5090 for real policy inference; training hardware not reported.",
+      "evaluation": "Six memory tasks: 72.6% sim versus 29.1% base; six real G1 tasks: 53/60 =88.3% versus 22/60 =36.7%. Standard 14 SIMPLE tasks remain separate.",
+      "controlRate": "Real SONIC execution50 Hz; 24 of30 predicted actions/chunk; SAM3 about 1.25 Hz."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.31166v1/ral_pipeline.png",
+        "page": "https://arxiv.org/abs/2610.31166",
+        "kind": "pipeline",
+        "credit": "WholeBodyMem authors",
+        "note": "Fig. 3: Overview of WholeBodyMem. × L \\times L : the L = 6 L{=}6 DiT blocks of the action expert."
+      }
+    ]
+  },
+  {
+    "id": "uniflowwam",
+    "name": "UniFlowWAM",
+    "title": "UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Joint visual, action and scene-flow experts use geometric training supervision while deploying as a direct policy without flow input.",
+    "institution": "Shanghai Jiao Tong University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper",
+      "Humanoid"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.30991",
+      "project": "https://kksham111.github.io/UniFlowWAM_ProjectPage/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project still marks code coming soon; no method checkpoint/data inventory is linked."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.30991",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://kksham111.github.io/UniFlowWAM_ProjectPage/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Derived 3D flow is training supervision; there is no measured-depth/flow requirement for the deployed policy.",
+      "RoboCasa best-seed58.9% and eleven-seed mean 56.4% are different statistics."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Diffusion",
+      "baseModel": "Qwen3-VL-4B visual conditioning and a three-expert diffusion transformer.",
+      "modelSize": "Not reported",
+      "inputs": "Current RGB, language and robot state at policy deployment; 3D flow derived from training RGB videos with Track4World.",
+      "outputs": "Direct action chunks; joint model can also predict future visual features or scene flow under other role assignments.",
+      "trainingMethod": "Mid-training followed by benchmark fine-tuning under ten modality-role objectives.",
+      "trainingData": "214,443 mid-training episodes across 10 embodiments; 50 real demonstrations/task in four-task suite.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "RoboCasa-GR1 mean 56.4% over 11 seeds versus 52.1% base; LIBERO-Plus 87.7%; four real bimanual tasks87.0% versus 68.5% π0.5.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.30991v1/UniFlowWAM-pipeline.png",
+        "page": "https://arxiv.org/abs/2610.30991",
+        "kind": "pipeline",
+        "credit": "UniFlowWAM authors",
+        "note": "Figure 2: Network architecture. Actions, scene-level 3D flow, and future visual features are three modalities of one diffusion transformer, each processed by its own expert; the experts exchange information only through joint self-attention. The objective decides which modalities are noised targets and which are clean conditions. Predicted flow latents are decoded by the 4D VAE into point maps and scene flow."
+      }
+    ]
+  },
+  {
+    "id": "dynaslots",
+    "name": "DynaSlots",
+    "title": "DynaSlots: Slot-Centric 3D Dynamics Pretraining for Robot Manipulation",
+    "date": "2026-10-23",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Temporally propagated 3D object slots and latent dynamics provide geometry-aware context for a downstream diffusion policy.",
+    "institution": "Beihang University",
+    "venue": "Preprint",
+    "modalities": [
+      "Depth",
+      "Point cloud",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.32330",
+      "project": "https://zhucezhanghao12345-source.github.io/DynaSlots-Anonymous/",
+      "code": "https://github.com/zhucezhanghao12345-source/DynaSlots-Anonymous"
+    },
+    "release": {
+      "code": "Partial — simulation training/evaluation and generation",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified for original DynaSlots code; upstream/vendored dependencies retain their own licenses.",
+      "notes": "Substantive simulation training/evaluation/data-generation source is public. Checkpoints and Zarr datasets are not stored or publicly linked; real-robot deployment source is not established by the simulation release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.32330",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://zhucezhanghao12345-source.github.io/DynaSlots-Anonymous/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/zhucezhanghao12345-source/DynaSlots-Anonymous",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Slot consistency is local to the context window, not persistent identity tracking over an entire episode.",
+      "Simulation baseline values are imported from AFRO rather than all re-run under identical source."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Diffusion",
+      "baseModel": "Point Transformer, six soft object slots, slot-level latent-action/dynamics modules and diffusion policy.",
+      "modelSize": "Not reported",
+      "inputs": "Three-frame point-cloud context; real fixed eye-to-hand RealSense RGB-D calibrated to robot base.",
+      "outputs": "Diffusion-policy action sequences conditioned on learned slots.",
+      "trainingMethod": "Action-free slot dynamics pretraining followed by demonstration-trained downstream control; compare target-task and RH20T pretraining separately.",
+      "trainingData": "100 expert trajectories/task in four real tasks; RH20T pretraining is a separate experimental setting.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "MetaWorld:80.8%, Adroit:88.0%; four real RM65-B placement tasks: 79% target-task and 73% RH20T-pretrain suite averages.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.32330v1/fig2.png",
+        "page": "https://arxiv.org/abs/2610.32330",
+        "kind": "pipeline",
+        "credit": "DynaSlots authors",
+        "note": "Fig. 2: DynaSlots framework. (a) Three point-cloud frames are encoded by a shared Point Transformer and propagated by a temporal slot binder into K = 6 K{=}6 aligned soft slots. The IDM extracts per-slot latent actions from feature differences, and the cross-slot encoder conditions a diffusion FDM on current slot features, centroids, and actions. An EMA target branch supplies noised future slot features, while an auxiliary interaction head predicts pairwise proximity-and-motion relations. The displayed losses are noise prediction, slot VICReg, relation BCE, and assignment entropy. (b) Previous slots query current point tokens through competitive assignment, weighted aggregation, and residual refinement, repeated three times per frame. (c) Two observed point clouds and the robot state produce slot condition tokens for the diffusion policy, which predicts the action sequence using cross-attention and FiLM."
+      }
+    ]
+  },
+  {
+    "id": "depstate-jepa",
+    "name": "DepState-JEPA",
+    "title": "DepState-JEPA: Learning Depth-Grounded State Representation for Visual Perception and Manipulation",
+    "date": "2026-10-21",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A metric RGB-D latent state supports spatial readout and action-conditioned forecasting, evaluated through separate policy-learning and MPC wrappers.",
+    "institution": "Fudan University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.29246",
+      "project": "https://shawnleung-sii.github.io/depstate-jepa/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official linked GitHub repository is a website with app.js, media and paper; explicitly code coming soon. It is not model implementation or a checkpoint release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.29246",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "model",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://shawnleung-sii.github.io/depstate-jepa/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.29246",
+        "label": "PDF title page, numbered affiliation1",
+        "fields": [
+          "institution"
+        ],
+        "note": "PDF first page lists1Fudan,2SII,3SJTU; grouped HTML author markup alone was not used."
+      }
+    ],
+    "caveats": [
+      "Learned predictor requires an external controller/planner; predicting geometry is not direct action generation.",
+      "Reported-proprioception forecasting and predicted-proprioception planning are distinct protocols.",
+      "Fixed calibrated camera, embodiment-specific training and matched workspaces limit demonstrated transfer."
+    ],
+    "verified": "2026-10-26",
+    "model": {
+      "family": "Predictive representation",
+      "baseModel": "Independent RGB/depth V-JEPA2.1 ViT-g/16 encoders with metric positional grounding.",
+      "modelSize": "Not reported",
+      "inputs": "Registered RGB, measured metric depth and camera intrinsics; current frame initializes robot prediction, future observations supervise training only.",
+      "outputs": "Shared/private latent state, predicted RGB/depth features, proprioception and object-motion readouts.",
+      "trainingMethod": "Dense JEPA representation learning plus action-conditioned transitions and soft forward-kinematics regularization.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Spatial transfer, feature prediction, DMC/MetaWorld policy learning and latent MPC; matched real drawer/cup MPC across 3 seeds×30 trials, robot-execution budget 60 s excludes search/inference.",
+      "inference": "Not reported",
+      "role": "A metric RGB-D latent state supports spatial readout and action-conditioned forecasting, evaluated through separate policy-learning and MPC wrappers."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.29246v1/newoverview.png",
+        "page": "https://arxiv.org/abs/2610.29246",
+        "kind": "architecture",
+        "credit": "DepState-JEPA authors",
+        "note": "Figure 2: Architectural Overview of DepState-JEPA. RGB–Depth features are grounded, factorized, and aggregated into DepState.\nSpatial queries read local content; action-conditioned transitions advance\nthe state and reuse the visual decoders with initial private features.\nPhysical readouts predict robot state and object motion, with FK\nregularizing independent joint/TCP outputs."
+      }
+    ]
+  },
+  {
+    "id": "dexplicit",
+    "name": "DeXplicit",
+    "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Explicit metric object dynamics conditioned on supplied hand motion are rendered into future RGB for dexterous interaction prediction.",
+    "institution": "Nanyang Technological University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Point cloud"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand",
+      "Bimanual"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.30781",
+      "project": "https://dexplicit.github.io/",
+      "code": "https://github.com/Abecid/DeXplicit",
+      "weights": "https://huggingface.co/Abecid/DeXplicit"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Available",
+      "data": "Not verified",
+      "license": "Apache-2.0 original code and four released method tensor files, verified LICENSE/ LICENSE-WEIGHTS; upstream Wan, MANO, DINOv3 and datasets retain separate terms.",
+      "notes": "Actual training/inference code and four safetensors (3D, high-noise renderer, low-noise renderer, compact renderer) released; 3D tensor Range 206 verified. Raw corpora and upstream assets are not redistributed."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.30781",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "model",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://dexplicit.github.io/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/Abecid/DeXplicit",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://huggingface.co/Abecid/DeXplicit",
+        "label": "Official weights source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Future hand actions are inputs, not a generated policy or proof of autonomous robot execution.",
+      "Initial metric geometry is required; do not call the deployed model monocular-only.",
+      "Metric initial scene points are supplied inputs; this does not establish a measured camera-depth observation stream."
+    ],
+    "verified": "2026-10-26",
+    "model": {
+      "family": "Predictive representation",
+      "baseModel": "425M 3D dynamics model; Wan-based14B renderer with separate compact option.",
+      "modelSize": "425M learned 3D model; 14B default video backbone; compact variant separate.",
+      "inputs": "Initial RGB/metric scene features, calibrated cameras and externally supplied future hand trajectories.",
+      "outputs": "Forecast metric object point motion and rendered future video; no robot action selection.",
+      "trainingMethod": "Train explicit 3D dynamics then rendering with predicted geometry; recorded future frames supervise training without future-object observation leakage.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "HOT3D, OakInk2 and PhysTwin physical-interaction prediction; causal rollout and geometry/video fidelity, not closed-loop policy success.",
+      "inference": "Not reported",
+      "role": "Explicit metric object dynamics conditioned on supplied hand motion are rendered into future RGB for dexterous interaction prediction."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.30781v1/pipeline.png",
+        "page": "https://arxiv.org/abs/2610.30781",
+        "kind": "architecture",
+        "credit": "DeXplicit authors",
+        "note": "Figure 2: Overview of DeXplicit. Joint-aware action encoding drives object-centric metric dynamics with shared object transport and local deformation. Metric-aligned refinement corrects object pose, and projected geometry, hand conditioning, and appearance transport condition the confidence-gated visual readout."
+      }
+    ]
+  },
+  {
+    "id": "cw-wam",
+    "name": "CW-WAM",
+    "title": "CW-WAM: A Structured Contact-Wrench World Action Model for Force-Sensitive Manipulation",
+    "date": "2026-10-21",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "visual-precision-rl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A world-action model predicts paired motion and contact wrench, using wrench history and an admittance controller for force-sensitive execution.",
+    "institution": "Ant Group",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Force/Torque",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.30117",
+      "project": "https://cw-wam-project.github.io/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project offers paper/results; no substantive method code, checkpoint or demonstration corpus linked."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.30117",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://cw-wam-project.github.io/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "RealSense D405/D455 cameras supply three RGB views here; a depth sensor model does not establish a depth-policy input.",
+      "20 Hz admittance is controller execution, not WAM-query rate; wrist F/T is not skin tactile."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Diffusion",
+      "baseModel": "Shared visual WAM backbone with paired motion/wrench tokens and long-term wrench memory.",
+      "modelSize": "Not reported",
+      "inputs": "Three RGB views, language, robot state and measured wrist wrench history.",
+      "outputs": "Future RGB, motion commands and wrench references for a slow–fast controller.",
+      "trainingMethod": "Demonstration-based joint video/action/wrench prediction with temporal contact memory.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Eight NVIDIA H20 training GPUs.",
+      "evaluation": "Real square-peg insertion 70% versus 25% no-wrench WAM; power-adapter insertion 95% versus 40%; wiping and load-dependent lifting evaluated separately.",
+      "controlRate": "20 Hz outer-loop admittance; images/motion recorded 15 Hz; WAM-query rate not reported."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.30117v1/figure1-HD.png",
+        "page": "https://arxiv.org/abs/2610.30117",
+        "kind": "pipeline",
+        "credit": "CW-WAM authors",
+        "note": "Fig. 2: CW-WAM jointly predicts video, motion, and wrench from visual observations,\nlanguage, robot state, and interaction history. Paired motion–wrench tokens\ncapture recent interactions, while long-term wrench memory retains earlier\ncontact information. Pair-causal attention links each future wrench to its paired action\nand earlier pairs. The model jointly denoises the three streams using separate prediction heads.\nPredicted motion and wrench trajectories provide paired references for robot control."
+      }
+    ]
+  },
+  {
+    "id": "uniwalm",
+    "name": "UniWALM",
+    "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A shared diffusion model co-generates video, actions and language memory, with corrective flow training for action deviations.",
+    "institution": "Brown University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.28626",
+      "project": "https://rahulsajnani.github.io/projects/uniwalm/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Linked UniWALM repository currently contains 20 publication/media files and no substantive method implementation or checkpoints. Do not classify its website/media as code."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.28626",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://rahulsajnani.github.io/projects/uniwalm/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Language generation is learned jointly with actions, not evidence of an independent coding-agent harness.",
+      "This work uses RGB deployment observations; no measured-depth claim is established."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Diffusion",
+      "baseModel": "Mixture-of-transformers world/action/language experts on a pretrained video backbone.",
+      "modelSize": "Not reported",
+      "inputs": "Current RGB, language, robot state and generated natural-language memory.",
+      "outputs": "Future video, low-level action chunks and updated language memory.",
+      "trainingMethod": "Joint multimodal denoising with Flow Matching with Correction; language is a co-generated state rather than a separate hosted planner.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "MolmoSpaces and RMBench simulation; real long-horizon FindItem average improves 11.1% to 61.1% in the reported comparison.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.28626v1/Architecture_UniWALM_memory.png",
+        "page": "https://arxiv.org/abs/2610.28626",
+        "kind": "pipeline",
+        "credit": "UniWALM authors",
+        "note": "Figure 2: Overview of UniWALM .\nUniWALM is a unified mixture-of-transformers (MoT) world-action-language model that co-denoises video, language, and action in a single shared representation.\nGiven the current observation, task instruction, proprioception, an optional visual memory ℱ \\mathcal{F} (one or more frames; in our experiments a single anchor at episode start), and the previously generated textual memory , UniWALM processes inputs through a (a) video , (b) language , and (c) action DiT that share features via unified self-attention.\nThe language stream emits a subtask together with a textual memory string, which is re-consumed as the prompt on the next control step, closing a language-as-memory loop across time. Video generation is disabled at inference, so the language and action DiTs run without producing future frames."
+      }
+    ]
+  },
+  {
+    "id": "gpt-as-tactile-policy",
+    "name": "GPT-as-Tactile-Policy",
+    "title": "GPT-6-Astra Understands Touch and Outperform Vision--Tactile--Language--Action Models",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "A frozen multimodal model uses demonstration-derived task knowledge, tactile references and interaction history to choose contact-responsive actions.",
+    "institution": "Sun Yat-sen University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.28457",
+      "project": "https://gpt-as-tactile-policy.github.io/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project marks code coming soon. No author method weights or full context/data corpus is released."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.28457",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://gpt-as-tactile-policy.github.io/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Distinct from TacTalent: five UniVTAC tasks rather than TacTalent’s eight+eleven task suites.",
+      "Simulation tactile observations do not establish a physical-robot release or real tactile success.",
+      "Tactile ablation also changes corresponding fixed task guidance."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Frozen GPT-6-Astra as sole action-decision model.",
+      "modelSize": "Not reported",
+      "inputs": "Scene/wrist RGB, proprioception and bilateral fingertip tactile observations; fixed task skill and tactile reference context.",
+      "outputs": "Numerical end-effector/gripper targets with a short execution horizon through generic IK control.",
+      "trainingMethod": "Summarize demonstrations offline into fixed task context; online feedback revises action decisions without robot-specific pretraining or task fine-tuning.",
+      "trainingData": "50 expert demonstrations/task split 40 context-construction /10 offline-validation; test episodes separate.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Five UniVTAC simulation tasks, 100 fixedepisodes/task: 93.8% task mean; paired InsertHole tactile ablation 31% to 99%.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.28457v1/overview.png",
+        "page": "https://arxiv.org/abs/2610.28457",
+        "kind": "pipeline",
+        "credit": "GPT-as-Tactile-Policy authors",
+        "note": "Figure 1: GPT-as-Tactile-Policy for contact-rich manipulation. (A) Offline task knowledge construction and online\nclosed-loop control. (B) Contact-guided insertion using visual and bilateral\ntactile feedback. (C) Task-wise success rates and average performance\non UniVTAC."
+      }
+    ]
+  },
+  {
+    "id": "physcanvas",
+    "name": "PhysCanvas",
+    "title": "Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Learning",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-representation",
+      "tactile-foundation"
+    ],
+    "resourceType": "model",
+    "summary": "A unified visual–tactile predictive canvas supports robot-policy evaluation and imagined-rollout reinforcement before physical fine-tuning.",
+    "institution": "Institute of Automation, Chinese Academy of Sciences",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.28613",
+      "project": "https://zebinx.github.io/PhysCanvas_HomePage/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project marks Code and Model coming soon; website videos/materials are not a full executable simulator or training-data release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.28613",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "model",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://zebinx.github.io/PhysCanvas_HomePage/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "World-model predictions and downstream policy-action generation are separate interfaces.",
+      "Tactile contact displacement is not external scene depth.",
+      "Website-template CC BY-SA does not license the unreleased research code/model."
+    ],
+    "verified": "2026-10-26",
+    "model": {
+      "family": "Predictive representation",
+      "baseModel": "Wan2.2 video world model; separate ResNet18 consistency/reward models and policy interfaces.",
+      "modelSize": "Not reported",
+      "inputs": "Multiview RGB, four Xense fingertip tactile images/marker displacement, robot state and supplied actions.",
+      "outputs": "Action-conditioned future multimodal observations and consistency scores; separate policies provide actions.",
+      "trainingMethod": "Train visual/tactile/state canvas dynamics and rewards; imagined GRPO refines a tactile-augmented policy before real SFT.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Four ARX AC One bimanual real tasks; task-mean policy-evaluation correlation 0.602 to 0.885; π0.5 real performance 59.1% to 70.8% with the stated reinforcement/SFT recipe.",
+      "inference": "Not reported",
+      "role": "A unified visual–tactile predictive canvas supports robot-policy evaluation and imagined-rollout reinforcement before physical fine-tuning."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.28613v1/main_fig.png",
+        "page": "https://arxiv.org/abs/2610.28613",
+        "kind": "architecture",
+        "credit": "PhysCanvas authors",
+        "note": "Figure 3: Overview of PhysCanvas . A unified canvas supports action-conditioned multimodal generation, with scene, state, and modality consistency guiding post-training."
+      }
+    ]
+  },
+  {
+    "id": "rax",
+    "name": "RAX",
+    "title": "Scaling Online Exploration for Robot Agents",
+    "date": "2026-10-15",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Coding agents turn online RGB-D exploration into reusable programs and skills across simulation and physical robot embodiments.",
+    "institution": "Harvard University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper",
+      "Bimanual",
+      "Dexterous hand",
+      "Humanoid"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.22496",
+      "project": "https://robot-agent-exploration.com/",
+      "code": "https://github.com/robot-agent-exploration/rax",
+      "data": "https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Not verified",
+      "data": "Partial — published physical session archives",
+      "license": "Apache-2.0 verified in DexJoCo, HumanoidArena and LIBERO branch LICENSE files. Real/Franka, real/Rainbow and RoboDojo–BEHAVIOR branches lack an explicit branch LICENSE. Session dataset card declares CC BY4.0; upstream components retain separate terms.",
+      "notes": "Ten substantive experiment branches plus main index are public: simulation container/native harnesses and real FR3/RB-Y1 tools. Five FR3 and seven RB-Y1 published session logs contain actual tar/video bundles. Main-only inspection would miss implementation. No method checkpoint is needed for frozen hosted agents."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.22496",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://robot-agent-exploration.com/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/robot-agent-exploration/rax",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs",
+        "label": "Official data source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Not an official RoboDojo live-leaderboard entry: seven-task paper experiments have their own exploration/evaluation budgets.",
+      "DexJoCo receives three completion images, not action demonstrations; HumanoidArena supplies three teleoperated demonstrations only during exploration.",
+      "BEHAVIOR evaluates five agent-in-loop tasks; three receive reviewer reports from the other nine public test instances. This cross-instance feedback differs from isolated test episodes.",
+      "RGB-only ablations must not be confused with the primary calibrated RGB-D setting."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Claude Code / Codex with frozen foundation models; benchmark-specific robot and perception tools.",
+      "modelSize": "Not reported",
+      "inputs": "Task instructions, calibrated RGB-D, robot/tool feedback, persistent code/notes; completion images or demonstrations vary by benchmark.",
+      "outputs": "Executable control/perception programs; most benchmarks evaluate the frozen program alone, while specified BEHAVIOR tasks retain the agent loop.",
+      "trainingMethod": "No agent-model weight fine-tuning; training-scene exploration revises code and skills, then held-out programs execute under benchmark protocols.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "RoboDojo7 tasks, BEHAVIOR:6, HumanoidArena:7, DexJoCo:11 and LIBERO/Pro; physical FR3 five tabletop tasks and RB-Y1 logistical sequences.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.22496v1/architecture_loop.png",
+        "page": "https://arxiv.org/abs/2610.22496",
+        "kind": "pipeline",
+        "credit": "RAX authors",
+        "note": "Figure 2 : System architecture and self-improving loop of RAX. The coding agent, powered by a frozen LLM, interacts with physical hardware across an isolation boundary using multimodal perception and control SDK interfaces. By reflecting on execution outcomes, the agent continually updates a persistent memory system containing working context, task notes, and a versioned repository of verified skills. During exploration, the agent compiles its perception and planning logic into standalone Python control programs that execute high-frequency loops directly on the robot. When encountering perception or planning failures due to environment variations, the program raises an exception ( raise Unsure() ), delegating control back to the agent to make adjustments and refine the codebase."
+      }
+    ]
+  },
+  {
+    "id": "tarl",
+    "name": "TaRL",
+    "title": "TaRL: Learning General and Physical Rewards from Tactile Demonstrations",
+    "date": "2026-09-29",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-representation",
+      "visual-precision-rl"
+    ],
+    "resourceType": "model",
+    "summary": "A tactile progress-reward model learned from successful and failed interactions shapes separately trained contact-rich RL policies.",
+    "institution": "National Taiwan University",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2609.36785",
+      "project": "https://embodiedai-ntu.github.io/tarl"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project provides manuscript and videos but no substantive method source, trained reward checkpoint or full trajectory inventory."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2609.36785",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "model",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://embodiedai-ntu.github.io/tarl",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Reward prediction and the downstream learned action policy are different interfaces.",
+      "Peg pickup and peg insertion are phases of one physical task, not two independent tasks.",
+      "Dense progress reward is not a wrist F/T stream."
+    ],
+    "verified": "2026-10-26",
+    "model": {
+      "family": "Predictive representation",
+      "baseModel": "Tactile reward encoder; downstream SAC/IQL control is a separate component.",
+      "modelSize": "Not reported",
+      "inputs": "Tactile deformation observations and demonstration progress/context; camera/proprioceptive policy inputs are separately scoped.",
+      "outputs": "Dense task-progress rewards, not direct robot motor commands.",
+      "trainingMethod": "Learn reward from successful, failed and temporally rewound demonstrations; combine dense tactile reward with sparse completion reward for RL.",
+      "trainingData": "Real reward model: 40 successful+40 failed teleoperated trajectories at one position; downstream offline RL: 90 successful+90 failed at new positions.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Four simulated tasks and two real tasks. Real cube pickup37% to 97%; real peg pickup/insertion improve under matched fixed offline datasets.",
+      "inference": "Not reported",
+      "role": "A tactile progress-reward model learned from successful and failed interactions shapes separately trained contact-rich RL policies."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2609.36785v1/figures/Teaser/Demonstration-5.png",
+        "page": "https://arxiv.org/abs/2609.36785",
+        "kind": "architecture",
+        "credit": "TaRL authors",
+        "note": "Figure 2: Overview of TaRL. Left: It is trained with successful, rewound and failed demonstrations. Middle: It conditions on tactile deformation maps and outputs task-progress rewards. Right: It is applied to downstream RL, offering dense rewards."
+      }
+    ]
+  },
+  {
+    "id": "tactile-object-centric",
+    "name": "Object-centric Tactile Interactive Perception",
+    "title": "Learning with Object-centric Representations of Tactile Interactive Perception for Robot Manipulation",
+    "date": "2026-09-27",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il",
+      "tactile-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Active tactile exploration infers object properties as semantic context for subsequent reactive manipulation.",
+    "institution": "Carnegie Mellon University",
+    "venue": "CoRL2026",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Force/Torque",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper",
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2609.33235",
+      "project": "https://xinyiyxyx.github.io/tactile-object-centric/"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project marks Code coming soon; no author checkpoint or complete dataset release verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2609.33235",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://xinyiyxyx.github.io/tactile-object-centric/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Tactile evidence is vibrotactile sensing, not gel-image deformation or external scene depth.",
+      "Unseen-object manipulation split differs from representation-learning held-out objects.",
+      "Exploration-derived semantic context is not a general-purpose online coding agent."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Diffusion",
+      "baseModel": "Tactile/force/velocity encoder with top-K token selection and language-aligned object context; ACT downstream policy.",
+      "modelSize": "Not reported",
+      "inputs": "Exploration vibrotactile contact-microphone signals, forces and end-effector velocity; downstream vision and optional live vibrotactile feedback.",
+      "outputs": "Object-context-conditioned ACT action chunks for grasp/placement, pouring and dexterous box opening.",
+      "trainingMethod": "Learn physical-property representations from exploration; behavior-clone policies using inferred tactile/text context, with oracle labels separated.",
+      "trainingData": "136exploration trajectories over 23 property configurations; 180 rearrangement, 80 pouring and 50 box-opening demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Three real tasks on Franka gripper and DeltaHand. Aggregate text-context+touch policy 154/167 seen and 43/64 unseen trials; baseline 69/167 and 12/64.",
+      "controlRate": "ACT predicts 64-step chunks and executes 32 actions at 15 Hz."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2609.33235v1/figs/policy-module-simple.png",
+        "page": "https://arxiv.org/abs/2609.33235",
+        "kind": "pipeline",
+        "credit": "Object-centric Tactile Interactive Perception authors",
+        "note": "Figure 3: Object-centric and context-aware manipulation policy learning. Built on the Action Chunking Transformer, the policy conditions on learned object context and object position to focus on target-specific visual, tactile, and proprioceptive observations for adaptive manipulation."
+      }
+    ]
+  },
+  {
+    "id": "vlmpose",
+    "name": "VLMPose",
+    "title": "Text-Guided 6D Object Pose Rearrangement via Closed-Loop VLM Agents",
+    "date": "2026-04-10",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "A VLM evaluator/proposer loop refines a target object’s 6D pose in a rendered scene, then a separate grasping/planning stack executes it.",
+    "institution": "Seoul National University",
+    "venue": "ECCV2026 (official repository)",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.09781",
+      "project": "https://tlb-miss.github.io/vlmpose/",
+      "code": "https://github.com/snuvclab/vlmpose"
+    },
+    "release": {
+      "code": "Partial — pose-refinement runtime and demos",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified: no root LICENSE found in the official source; hosted models and SAM3 remain separately licensed.",
+      "notes": "Actual pose-refinement/runtime source and small RGB-D/mesh demos are public. Grasp/planner integrations and evaluation corpora are separate dependencies; no new method neural checkpoint."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2604.09781",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://tlb-miss.github.io/vlmpose/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/snuvclab/vlmpose",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "The agent loop edits/render-checks object goal poses; it does not directly close the physical robot motor-feedback loop.",
+      "SIMPLER results are simulated, despite real-hardware-inspired configuration.",
+      "Initial metric RGB-D/meshes are required; no claim of monocular metric reconstruction."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "GPT-5.2 main evaluation; Gemini2.5FlashLite and InternVL3-14B compared.",
+      "modelSize": "Not reported",
+      "inputs": "RGB-D plus intrinsics or object meshes, text instruction, rendered multiview scenes and pose-update history.",
+      "outputs": "Incremental object translations/axis rotations; final6D goal passed to GraspNet and OMPL robot execution.",
+      "trainingMethod": "Training-free VLM inference with coordinate-axis visualization, iterative multiview checking and accumulated context.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Open6DORV2 pose inference 4,370valid tasks; separate 528 task LIBERO/Franka robot-execution subset; four SIMPLER/WidowX tasks in simulation.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2604.09781v2/method.png",
+        "page": "https://arxiv.org/abs/2604.09781",
+        "kind": "pipeline",
+        "credit": "VLMPose authors",
+        "note": "Figure 2 : Our Method Overview. (a) We first ask the evaluator to assess how well the rendered multi-view images satisfy the input text instruction. If the current scene is judged inconsistent with the instruction, we provide the proposer with the supporting view, augmented with coordinate system visualization, that best explains the evaluator’s judgment. Based on this input, the proposer predicts an incremental 6D pose update. The predicted update is then applied to the target object, and this process is repeated iteratively. Throughout all iterations, both roles receive the accumulated context memory. (b) Example of iterative pose updates produced by our method for a scene containing a teacup and a teapot on a table, given the text instruction “Pour tea into a teacup using a teapot.”"
+      }
+    ]
+  },
+  {
+    "id": "soft-garment-icl",
+    "name": "ICL Soft-Garment World Model",
+    "title": "In-Context Learning World Models for Robot Dual-Arm Manipulation of Soft Garment with Partial Observations",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A partial-point-cloud world model uses interaction context for material adaptation, supporting a separate goal-conditioned garment planner.",
+    "institution": "The Chinese University of Hong Kong",
+    "venue": "Preprint",
+    "modalities": [
+      "Depth",
+      "Point cloud"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Humanoid"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.30988"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "No official project, substantive implementation, trained model or dataset release is established beyond the public paper."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.30988",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "model",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      }
+    ],
+    "caveats": [
+      "Predictive world model and goal-conditioned action planner are separate.",
+      "Paper lists repeated observation/reconstruction/replanning as future work; do not present the current pipeline as demonstrated closed-loop MPC.",
+      "Sensor model and simulator version are not disclosed."
+    ],
+    "verified": "2026-10-26",
+    "model": {
+      "family": "Predictive representation",
+      "baseModel": "State-estimation flow model, supervised dynamics Transformer and goal-conditioned flow action proposal.",
+      "modelSize": "Not reported",
+      "inputs": "Camera-depth partial point-cloud history, action sequence and context interactions; world model operates on garment geometry.",
+      "outputs": "Estimated full garment state and future point clouds used to rank separately generated action proposals.",
+      "trainingMethod": "Synthetic randomized material/geometry folding data; exemplar context changes inference conditioning without per-instance weight updates.",
+      "trainingData": "100,000 randomized demonstrations per soft-object category, 110 timesteps each; real context collected by master-arm teleoperation.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "IsaacLab and physical X-trainer/Tiangong bimanual garment folding; compare reconstruction, dynamics and task performance across embodiments.",
+      "inference": "Not reported",
+      "role": "A partial-point-cloud world model uses interaction context for material adaptation, supporting a separate goal-conditioned garment planner."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.30988v1/figs/pipeline.png",
+        "page": "https://arxiv.org/abs/2610.30988",
+        "kind": "architecture",
+        "credit": "ICL Soft-Garment World Model authors",
+        "note": "Fig. 2: Overview of the proposed pipeline, comprising three stages. i) Synthetic soft object manipulation demonstrations are collected in simulation using Isaac Lab, capturing partial point cloud observations and bimanual actions across randomized material properties and grasping configurations. ii) For each garment category, an expert model consists of training two components: a State Estimation Diffusion Model via flow matching; and a Dynamics Prediction Model via supervised learning. iii) Integrate the world model to evaluate action proposals generated via a Goal Conditioned Flow Matching policy."
+      }
+    ]
+  },
+  {
+    "id": "opentac",
+    "name": "OpenTac",
+    "title": "OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "An open flex-PCB tactile ecosystem combines custom CAD, shear-sensitive bumps, reusable readout, simulation, transfer and policy-learning examples.",
+    "institution": "Johns Hopkins University",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.31661",
+      "project": "https://opentac.github.io/",
+      "code": "https://github.com/opentac/opentac"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Not applicable",
+      "data": "Not verified",
+      "license": "MIT original software; CERN-OHL-P-2.0 hardware design; CC BY4.0 documentation/media, verified separate LICENSE files.",
+      "notes": "Actual CAD, firmware/readout, simulation and transfer source and fabrication designs released. Policy checkpoints and a full training/characterization corpus are not verified; source tool availability is not their release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.31661",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "benchmark",
+          "benchmark.dataCollection",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://opentac.github.io/",
+        "label": "Official project source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/opentac/opentac",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Partial-frame acquisition rate is not full-array frame rate or a robot policy control rate.",
+      "CoRL2026 live demo announcement is not an accepted conference-paper venue.",
+      "CAD simulation animations and fabricated sensor experiments retain separate scope."
+    ],
+    "verified": "2026-10-26",
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.31661v1/tactile_examples_1x4.png",
+        "page": "https://arxiv.org/abs/2610.31661",
+        "kind": "resource-overview",
+        "credit": "OpenTac authors",
+        "note": "Figure 1 : Tactile samples recorded with OpenTac skins. Heatmaps indicate normal load; cyan arrows denote per-bump shear; white arcs denote rotation estimates. (a) 64×64 skin, twisting a dome and clippers. (b) 9×9 fingertip, opposite thumb twists. (c) UMI gripper, 29×6 finger skins: can and ball rocked in the grasp. (d) Extrinsic contact: screwdriver moved down and up."
+      }
+    ],
+    "benchmark": {
+      "simulator": "OpenTac-Sim",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Not a closed-loop benchmark",
+      "tasks": [],
+      "taskListScope": "Sensor/tool characterization and downstream demonstrations, not a standard policy task suite.",
+      "capabilities": [
+        "Contact sensing",
+        "Force estimation"
+      ],
+      "metrics": "Sensor calibration, force/response accuracy and scoped downstream demonstrations.",
+      "robots": "Examples include UMI gripper skins, SO-101 and bimanual YAM policy tasks, and Dexmate Vega-1Pro slip control; more than 30 designs fabricated.",
+      "sensors": "Piezoresistive flex-PCB taxels with printed shear bumps; normal and two shear components. Adaptive partial 16-taxel updates reach1,286 frames/s on1,024 taxels; full raster67 frames/s.",
+      "dataCollection": "Sensor calibration and physical contact trials; downstream policy demonstrations are described separately.",
+      "data": "Not verified — no complete sensor-characterization or policy-training corpus established.",
+      "protocol": "Hardware characterization and scoped robot demonstrations; not a common cross-policy leaderboard.",
+      "baselines": "Sensor/component comparisons, not a roster of standardized robot policies."
+    }
+  },
+  {
+    "id": "vectile",
+    "name": "VecTile",
+    "title": "VecTile: A Low-Cost Flexible Tactile Array for 3-DoF Force Sensing",
+    "date": "2026-10-22",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "A low-cost flexible three-axis tactile array measures normal and shear contact through a modular force-sensitive construction.",
+    "institution": "Imperial College London",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.31472"
+    },
+    "release": {
+      "code": "Not released",
+      "weights": "Not applicable",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper promises designs/code upon acceptance; no actual released hardware files, implementation or calibration corpus is verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.31472",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "benchmark",
+          "benchmark.dataCollection",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      }
+    ],
+    "caveats": [
+      "Submitted to ICRA2027 is not accepted.",
+      "A sensor demonstration is not a new executable policy or standardized manipulation benchmark."
+    ],
+    "verified": "2026-10-26",
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.31472v1/Figure/ICRA_VecTile-01.jpg",
+        "page": "https://arxiv.org/abs/2610.31472",
+        "kind": "resource-overview",
+        "credit": "VecTile authors",
+        "note": "Fig. 1: VecTile on Fin-Ray type fingers during plug insertion. Color denotes normal response and arrows indicate shear magnitude and direction."
+      }
+    ],
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Not a closed-loop benchmark",
+      "tasks": [],
+      "taskListScope": "Sensor/tool characterization and downstream demonstrations, not a standard policy task suite.",
+      "capabilities": [
+        "Contact sensing",
+        "Force estimation"
+      ],
+      "metrics": "Sensor calibration, force/response accuracy and scoped downstream demonstrations.",
+      "robots": "Fin-Ray-type fingers in plug-insertion demonstrations.",
+      "sensors": "Flexible arrays measure normal/shear contact response.",
+      "dataCollection": "Sensor calibration and physical contact trials; downstream policy demonstrations are described separately.",
+      "data": "Not verified — no complete sensor-characterization or policy-training corpus established.",
+      "protocol": "Hardware characterization and scoped robot demonstrations; not a common cross-policy leaderboard.",
+      "baselines": "Sensor/component comparisons, not a roster of standardized robot policies."
+    }
+  },
+  {
+    "id": "robocasa-shift",
+    "name": "RoboCasa-Shift",
+    "title": "RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "robustness-evaluation",
+      "general-manipulation"
+    ],
+    "resourceType": "benchmark",
+    "summary": "Matched clean/perturbed rollouts and audited simulator-state stages diagnose VLA robustness on clean-qualified long-horizon tasks.",
+    "institution": "Fudan University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.27861",
+      "code": "https://github.com/HaochengWang23/RoboCasa-Shift",
+      "data": "https://huggingface.co/datasets/HaochengWang23/robocasa-shift"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Not applicable",
+      "data": "Available",
+      "license": "MIT original evaluation source; formal-record dataset card declares CC BY4.0. RoboCasa and evaluated models retain separate terms.",
+      "notes": "Actual perturbation/evaluation/audit source and structured formal rollout records are released; policy checkpoints are external dependencies."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.27861",
+        "label": "Primary manuscript and first-submission history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "benchmark",
+          "benchmark.dataCollection",
+          "caveats"
+        ],
+        "note": "Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes."
+      },
+      {
+        "url": "https://github.com/HaochengWang23/RoboCasa-Shift",
+        "label": "Official code source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://huggingface.co/datasets/HaochengWang23/robocasa-shift",
+        "label": "Official data source and actual artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      }
+    ],
+    "caveats": [
+      "Formal perturbation evaluation covers only GR00T N1.5 and four qualified tasks; other screened policies did not pass the clean-competence gate.",
+      "Stage predicates are audited simulator diagnostics, not official ground-truth temporal annotations.",
+      "Equal severity indices across perturbation factors do not imply equivalent physical changes."
+    ],
+    "verified": "2026-10-26",
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.27861v1/imgs/V0/Intro_overview_v1.png",
+        "page": "https://arxiv.org/abs/2610.27861",
+        "kind": "task-overview",
+        "credit": "RoboCasa-Shift authors",
+        "note": "Fig. 1: Overview of RoboCasa-Shift. RoboCasa-Shift evaluates VLA robustness on selected long-horizon RoboCasa tasks under controlled single-factor distribution shifts with multiple frozen severity levels.\nStrictly matched clean-perturbed rollouts enable counterfactual comparison under shared task conditions, while robustness is characterized jointly through end-to-end task outcomes and stage-aware semantic execution diagnostics.\nRepresentative findings illustrate that aggregate success rates can mask substantial episode-level outcome changes, similar end-to-end degradation can correspond to different failure locations, and severe visual corruption can shift failures toward earlier stages of task execution."
+      }
+    ],
+    "benchmark": {
+      "simulator": "RoboCasa365 / MuJoCo",
+      "simulatorVersion": "OSMesa rendering; exact simulator version not verified.",
+      "taskCount": "Four clean-qualified tasks from 16 candidates; 1,040 formal rollouts.",
+      "tasks": [
+        "PreSoakPan",
+        "RinseSinkBasin",
+        "StackBowlsCabinet",
+        "WashLettuce"
+      ],
+      "taskListScope": "Complete four-task formal suite. Each task uses 20 fixed base episodes and 13 conditions (clean plus four factors×three severities).",
+      "capabilities": [
+        "Long-horizon execution",
+        "Robustness",
+        "Stage-aware failure diagnosis"
+      ],
+      "metrics": "Official binary success; paired success degradation, equal-task macro mean and 10,000 pair-bootstrap confidence intervals; stage diagnostics separate.",
+      "robots": "RoboCasa mobile bimanual manipulation embodiment.",
+      "sensors": "External and wrist RGB plus native proprioception; simulator-state predicates used for diagnostics, not added policy observations.",
+      "dataCollection": "No new imitation corpus; formal records arise from fixed-checkpoint policy rollouts on matched simulator states.",
+      "data": "Structured formal-evaluation records; not a new full robot-training corpus.",
+      "protocol": "Clean-performance qualification precedes four independent factors×three severities. Preserve initial state/policy seed/rendering across paired trials; native task horizon.",
+      "baselines": "GR00T N1.5 Composite-Seen formal evaluation. SmolVLA and π0 screened only, 1/40and2/40clean successes, no qualified tasks."
+    }
+  },
+  {
+    "id": "prismwam",
+    "name": "PrismWAM",
+    "title": "PrismWAM: Decoupling State Representations in World Action Models",
+    "date": "2026-10-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "RGB semantic context conditions a measured-depth rollout, from which a joint diffusion action expert reads motor commands.",
+    "institution": "Tsinghua University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.26564",
+      "project": "https://prism-wam.github.io/",
+      "code": "https://github.com/THUSI-Lab/PrismWAM",
+      "weights": "https://huggingface.co/THUSI-Lab/PrismWAM"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Available",
+      "data": "Not verified",
+      "license": "MIT original code with separate Apache components; own model-weight license is not verified in the HF card/inventory. Upstream Wan/T5 and datasets retain their own terms.",
+      "notes": "Substantive training/evaluation/HTTP-serving source plus actual RoboTwin, RoboDojo and LIBERO policy.pt files, depth/RGB VAEs and initializer weights are released. Separately linked PrismWAM-Star is not evidence that every15B benchmark checkpoint is released."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.26564",
+        "label": "Primary paper, full text and arXiv v1 history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript verified independently of discovery collections and leaderboard labels."
+      },
+      {
+        "url": "https://prism-wam.github.io/",
+        "label": "Official author project",
+        "fields": [
+          "institution",
+          "imageCandidates"
+        ],
+        "note": "Author/institution and actual figure provenance."
+      },
+      {
+        "url": "https://github.com/THUSI-Lab/PrismWAM",
+        "label": "Actual source tree and LICENSE",
+        "fields": [
+          "release",
+          "links"
+        ],
+        "note": "Substantive implementation verified; code license is not automatically a model-weight license."
+      },
+      {
+        "url": "https://huggingface.co/THUSI-Lab/PrismWAM",
+        "label": "Actual checkpoint inventory, card and binary sample",
+        "fields": [
+          "release",
+          "links"
+        ],
+        "note": "Method checkpoint files verified through inventory and HTTP206 binary sample; upstream components and own license scopes stay separate."
+      }
+    ],
+    "caveats": [
+      "Depth-camera observations are genuinely required; unlike RGB-derived geometry, the policy starts from current metric depth.",
+      "Noise studies train and test a separate model per corruption level, not one fixed model tested at all levels.",
+      "Main6B and starred15B results, official-board rows and paper three-seed summaries must remain separate.",
+      "Depth-only adaptation and action training affect performance; cross-paper margins do not isolate a causal benefit of semantic/physics decoupling."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "World-action model",
+      "baseModel": "Wan2.2-5B for 6B PrismWAM; exploratory 15B PrismWAM* uses Wan2.1-14B and additional video-only pretraining.",
+      "modelSize": "6B main model; 15B starred variant is separate.",
+      "inputs": "Observed RGB history/current image, current aligned metric depth, robot state and language. Current depth is required at test time; future RGB is training-only.",
+      "outputs": "Jointly denoised future depth and action chunks; 14D absolute joints on bimanual suites, 7D delta end-effector/gripper on LIBERO.",
+      "trainingMethod": "Depth-VAE pretraining, depth-only adaptation and joint RGB/depth/action flow matching under one-way chain attention. No embodied action pretraining in the stated setting.",
+      "trainingData": "Approximately 2,300 hours of depth for VAE training, then benchmark-specific demonstrations; this is not no-pretraining.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "32-step predicted joint-action horizon; execution/query timing is recipe-dependent.",
+      "evaluation": "Main6B RoboDojo:25.10/18.55% Score/SR and RoboTwin clean/random mean 70.57%; starred15B:36.23/29.30% and 83.67% use a separate variant/protocol. LIBERO:99.35%, Plus 79.44%, Pro:54.48%; scoped real-robot trials."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.26564v1/method_architecture_and_attention.png",
+        "page": "https://arxiv.org/abs/2610.26564",
+        "kind": "architecture",
+        "credit": "PrismWAM authors",
+        "note": "Official method architecture from the primary manuscript; no scientific content altered."
+      }
+    ]
+  },
+  {
+    "id": "ewam-emergent",
+    "name": "EWAM (Emergent Specialization)",
+    "title": "EWAM: Emergent Depth-Wise Specialization in a Unified Embodied Model -- From Semantic Understanding through Visual Foresight to Action",
+    "date": "2026-09-30",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "An asymmetric joint transformer lets action tokens combine semantics, current/future visual features and prior action information across network layers.",
+    "institution": "Yinwang Intelligent Technology Co. Ltd.",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper",
+      "Humanoid"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2609.39973",
+      "project": "https://wanghao00pro.github.io/EWAM-project/",
+      "code": "https://github.com/Wanghao00pro/EWAM",
+      "weights": "https://huggingface.co/HaoWang00/EWAM"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Available",
+      "data": "Not verified",
+      "license": "Apache-2.0 code, verified actual LICENSE; model card declares Apache-2.0 for EWAM contributions. Upstream Wan/Qwen components retain their own terms.",
+      "notes": "Actual training/inference source and DeepSpeed-style model-state checkpoints exist for pretraining, RoboTwin C2R/in-domain, LIBERO and RoboDojo; binary RoboDojo checkpoint Range 206 verified. Raw robot/human training corpora are not inferred released."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2609.39973",
+        "label": "Primary paper, full text and arXiv v1 history",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Current primary manuscript verified independently of discovery collections and leaderboard labels."
+      },
+      {
+        "url": "https://wanghao00pro.github.io/EWAM-project/",
+        "label": "Official author project",
+        "fields": [
+          "institution",
+          "imageCandidates"
+        ],
+        "note": "Author/institution and actual figure provenance."
+      },
+      {
+        "url": "https://github.com/Wanghao00pro/EWAM",
+        "label": "Actual source tree and LICENSE",
+        "fields": [
+          "release",
+          "links"
+        ],
+        "note": "Substantive implementation verified; code license is not automatically a model-weight license."
+      },
+      {
+        "url": "https://huggingface.co/HaoWang00/EWAM",
+        "label": "Actual checkpoint inventory, card and binary sample",
+        "fields": [
+          "release",
+          "links"
+        ],
+        "note": "Method checkpoint files verified through inventory and HTTP206 binary sample; upstream components and own license scopes stay separate."
+      }
+    ],
+    "caveats": [
+      "Depth-wise refers to transformer-layer specialization, not a measured depth-policy stream.",
+      "Distinct from the June 2026 Enhanced World Action Model with the same acronym.",
+      "Robot-trajectory and human-egocentric pretraining are separate regimes; do not merge their transfer results.",
+      "The newly listed official RoboDojo EWAM alias is not linked to this paper without an unambiguous author/benchmark cross-reference."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "World-action model",
+      "baseModel": "Qwen3-VL-2B semantic expert and Wan2.2 video expert with an aligned action diffusion stream.",
+      "modelSize": "Not reported",
+      "inputs": "Current RGB image, language and robot state; future video is predicted, while time-of-flight depth belongs to human-data capture/retargeting.",
+      "outputs": "Joint future-video and robot-action chunks.",
+      "trainingMethod": "Separate robot-trajectory and human-egocentric pretraining regimes; task-specific post-training with optional subtask-phase labels. Emergent layer-wise attention transitions are measured, not architecturally enforced stage gates.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "RoboTwin clean-to-random82.2/72.1/77.2%; in-domain93.0/92.8/92.9%; LIBERO:98.8%. Seven real tasks across Franka, Dobot and UnitreeG1-D retain separate trial counts and embodiment settings."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2609.39973v1/figure2.png",
+        "page": "https://arxiv.org/abs/2609.39973",
+        "kind": "architecture",
+        "credit": "EWAM (Emergent Specialization) authors",
+        "note": "Official method architecture from the primary manuscript; no scientific content altered."
+      }
+    ]
+  },
+  {
+    "id": "tactile-eta",
+    "name": "Tactile-ETA",
+    "title": "Embodied Task Agents Can Perform Fine Manipulation through Tactile In-Context Learning",
+    "date": "2026-10-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "A frozen embodied task agent conditions robot tools on action-aligned visual, tactile and motion demonstrations with selectively retained contact transitions.",
+    "institution": "Fudan University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.27613",
+      "project": "https://no-518.github.io/tactile-eta/",
+      "code": "https://github.com/No-518/Tactile-ETA",
+      "data": "https://github.com/No-518/Tactile-ETA/tree/main/demonstrations"
+    },
+    "release": {
+      "code": "Partial — simulation method/runtime and demonstration construction",
+      "weights": "Not applicable — hosted frozen model",
+      "data": "Partial — two packaged simulated expert episodes per task",
+      "license": "Apache-2.0 original code, verified actual LICENSE; included expert demonstrations preserve UniVTAC attribution/terms and are not silently relicensed as original data. Hosted model and simulator terms separate.",
+      "notes": "Substantive agent runtime, tactile-history selection, UniVTAC execution and expert-context generation are released, with JSON/image-strip packages for four sim tasks. Physical reBot B601-RS/vitai GF225 deployment and physical demo corpus are not established by this simulation release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2610.27613",
+        "label": "Primary full text, Sections3–4 and AppendixE",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "arXiv v1October20; first numbered affiliationFudan. Physical setup is reBotArmB601-RS/vitaiGF225, with wristOrbbec and externalD435i cameras; only RGB deployment input is established."
+      },
+      {
+        "url": "https://github.com/No-518/Tactile-ETA",
+        "label": "Official actual simulation method source and Apache LICENSE",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "50substantive Python sources, tactile selection and execution functions reviewed independently of the physical experiments."
+      },
+      {
+        "url": "https://github.com/No-518/Tactile-ETA/tree/main/demonstrations",
+        "label": "Actual packaged simulated expert context",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Two successful UniVTAC episodes/task packaged as JSON and image strips; not a released physical-demonstration corpus."
+      }
+    ],
+    "caveats": [
+      "Distinct from TacTalent and GPT-as-Tactile-Policy; demonstrations, task suites and evaluation denominators differ.",
+      "Physical evidence is five trials per method/task with human success assessment; 60% is3/5, not a large benchmark result.",
+      "Orbbec/RealSense camera hardware does not establish a measured depth-policy input.",
+      "Selection/compression operates on action-aligned tactile observations without changing base-model weights."
+    ],
+    "verified": "2026-10-26",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Frozen GPT-6 Astra via Codex CLI with low reasoning effort; other agent models compared separately.",
+      "modelSize": "Not reported",
+      "inputs": "Current scene/wrist RGB, bilateral fingertip touch and proprioception; action-aligned expert context retains tactile endpoints and a neighboring high-change pair.",
+      "outputs": "General robot-tool calls for end-effector motion, gripper control and observation; no learned action head or neural updates.",
+      "trainingMethod": "In-context conditioning only. Sim comparisons add tactile history to the same two expert episodes while current sensing and execution remain fixed.",
+      "trainingData": "Two successful UniVTAC demonstrations per simulated task; physical experiments use one manually recorded multimodal demonstration per task.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "evaluation": "Four UniVTAC tasks, 100 trials per condition: two-demo tactile context raises mean success 15.75% to 24.00%. Two physical tasks (board wiping/chip pickup), five trials per configuration: each improves 0/5 to 3/5 with one demo.",
+      "controlRate": "Not reported"
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.27613v1/fig2_method.png",
+        "page": "https://arxiv.org/abs/2610.27613",
+        "kind": "pipeline",
+        "credit": "Tactile-ETA authors",
+        "note": "Figure2: action-aligned tactile endpoint/change selection and agent context assembly."
+      }
+    ]
   }
 ]

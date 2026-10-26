@@ -10825,5 +10825,395 @@
       "height": 249,
       "note": "Original author pipeline; visually inspected and locally optimized without changing scientific content."
     }
+  },
+  "forca": {
+    "policy": {
+      "path": "/images/catalog/forca-policy.webp",
+      "original": "https://arxiv.org/html/2610.31841v1/method_skills.png",
+      "page": "https://arxiv.org/abs/2610.31841",
+      "credit": "FORCA authors",
+      "alt": "Fig. 2: Predefined skill modules. The agent is initialized with these modules, assembled from open-source components under human supervision.\n(a) SAM 3 [ 31 ] localizes the tool named in the instruction.\n(b) GraspGen [ 32 ] proposes candidate grasps, and the VLM selects one.\n(c) PyRoKi [ 30 ] plans the trajectory.\n(d) The robot executes the resulting routine to acquire the tool.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 857,
+      "height": 184,
+      "sourceSha256": "2476561fcd04f8f441e6f42007b668a3a94c6b37d0202ef0323b9673c28d7138",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 2: Predefined skill modules. The agent is initialized with these modules, assembled from open-source components under human supervision.\n(a) SAM 3 [ 31 ] localizes the tool named in the instruction.\n(b) GraspGen [ 32 ] proposes candidate grasps, and the VLM selects one.\n(c) PyRoKi [ 30 ] plans the trajectory.\n(d) The robot executes the resulting routine to acquire the tool."
+    }
+  },
+  "sera": {
+    "policy": {
+      "path": "/images/catalog/sera-policy.webp",
+      "original": "https://arxiv.org/html/2610.29560v1/motivation_image.png",
+      "page": "https://arxiv.org/abs/2610.29560",
+      "credit": "SERA authors",
+      "alt": "Figure 1: From planner to agent for history-dependent manipulation. Top: Similar observations can require different decisions depending on task progress.\n(a) Memory-augmented policies equip VLA models with memory mechanisms to retain and use\nhistorical information. (b) Hierarchical planning separates high-level planning from\nlow-level execution. (c) SERA uses an editable harness to organize the VLM as an agent that maintains\ntask context from observation and interaction history. Execution-driven",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 1034,
+      "sourceSha256": "bd2f2ca0aa09e0e1f7dc312daa300d1d74b6b00c76d89cde520d210604ac6fde",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 1: From planner to agent for history-dependent manipulation. Top: Similar observations can require different decisions depending on task progress.\n(a) Memory-augmented policies equip VLA models with memory mechanisms to retain and use\nhistorical information. (b) Hierarchical planning separates high-level planning from\nlow-level execution. (c) SERA uses an editable harness to organize the VLM as an agent that maintains\ntask context from observation and interaction history. Execution-driven self-evolution\nrefines the harness using rollout feedback. The dashed arrow denotes the selected\nha"
+    }
+  },
+  "aw0": {
+    "policy": {
+      "path": "/images/catalog/aw0-policy.webp",
+      "original": "https://arxiv.org/html/2610.30136v1/method_v6_0926.png",
+      "page": "https://arxiv.org/abs/2610.30136",
+      "credit": "AW-0 authors",
+      "alt": "Figure 2: AW-0 Framework. AW-0 includes a Mixture-of-Transformers backbone with three experts generating code, video and action, respectively, which are denoised jointly, with video and action under continuous flow matching and the code under discrete masked diffusion.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 1280,
+      "sourceSha256": "21ab4e483b478f732d86e433ec7d364f6f619637ad50883be97d37af87a96c03",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2: AW-0 Framework. AW-0 includes a Mixture-of-Transformers backbone with three experts generating code, video and action, respectively, which are denoised jointly, with video and action under continuous flow matching and the code under discrete masked diffusion."
+    }
+  },
+  "agenticroborl": {
+    "policy": {
+      "path": "/images/catalog/agenticroborl-policy.webp",
+      "original": "https://arxiv.org/html/2610.28589v1/fig_teaser.png",
+      "page": "https://arxiv.org/abs/2610.28589",
+      "credit": "AgenticRoboRL authors",
+      "alt": "Figure 1: Overview of AgenticRoboRL. (a) Agentic robotics systems combine planners with robot harnesses for multi-turn interaction with the environment. (b) We post-train planners through SFT on successful trajectories followed by multi-turn RL. (c) On LIBERO-PRO, post-training improves a 9B planner’s success rate from 18.1% to 71.0%, approaching the 72.1% achieved by Codex (GPT-5.5)with memory. Mem denotes external memory.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1510,
+      "height": 1009,
+      "sourceSha256": "e6353b919ed7bbcfa815f7871278e307e2e76fce68a51505ee3c91627d221482",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 1: Overview of AgenticRoboRL. (a) Agentic robotics systems combine planners with robot harnesses for multi-turn interaction with the environment. (b) We post-train planners through SFT on successful trajectories followed by multi-turn RL. (c) On LIBERO-PRO, post-training improves a 9B planner’s success rate from 18.1% to 71.0%, approaching the 72.1% achieved by Codex (GPT-5.5)with memory. Mem denotes external memory."
+    }
+  },
+  "fit-mac": {
+    "policy": {
+      "path": "/images/catalog/fit-mac-policy.webp",
+      "original": "https://arxiv.org/html/2610.28109v1/mov.png",
+      "page": "https://arxiv.org/abs/2610.28109",
+      "credit": "FIT-MAC authors",
+      "alt": "Figure 1: Comparison of standard VLA execution and FIT-MAC. Top: a VLA policy predicts actions from visual observations and a language instruction. Bottom: FIT-MAC augments the pretrained policy with specialized agents.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1133,
+      "height": 901,
+      "sourceSha256": "d7cd4014acb7f900c6e886b95a45be2f709cd01be971539240b95a216048ac09",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 1: Comparison of standard VLA execution and FIT-MAC. Top: a VLA policy predicts actions from visual observations and a language instruction. Bottom: FIT-MAC augments the pretrained policy with specialized agents."
+    }
+  },
+  "eventsync": {
+    "policy": {
+      "path": "/images/catalog/eventsync-policy.webp",
+      "original": "https://arxiv.org/html/2610.27917v1/method_figure.png",
+      "page": "https://arxiv.org/abs/2610.27917",
+      "credit": "EventSync authors",
+      "alt": "Fig. 2: Overview of EventSync. Top: the Memory Reasoner combines task memory and current context to generate grounded subgoals for the Action Executor. Completion evidence from the Event Monitor updates the completed-subgoal history and triggers subsequent reasoning. Bottom: visual, trajectory, and event-condition tokens feed shared Transformer fusion for completion prediction and recurrent event-increment prediction.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 850,
+      "height": 446,
+      "sourceSha256": "25097086460388cc5ef1da1c4c6b5acb4609f65b0e2a50749cd282abe26da95f",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 2: Overview of EventSync. Top: the Memory Reasoner combines task memory and current context to generate grounded subgoals for the Action Executor. Completion evidence from the Event Monitor updates the completed-subgoal history and triggers subsequent reasoning. Bottom: visual, trajectory, and event-condition tokens feed shared Transformer fusion for completion prediction and recurrent event-increment prediction."
+    }
+  },
+  "wholebodymem": {
+    "policy": {
+      "path": "/images/catalog/wholebodymem-policy.webp",
+      "original": "https://arxiv.org/html/2610.31166v1/ral_pipeline.png",
+      "page": "https://arxiv.org/abs/2610.31166",
+      "credit": "WholeBodyMem authors",
+      "alt": "Fig. 3: Overview of WholeBodyMem. × L \\times L : the L = 6 L{=}6 DiT blocks of the action expert.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 524,
+      "sourceSha256": "8c8054cb1cd3145587751416cdceacdbb038a1aac6051cc822ce36d88f90336d",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 3: Overview of WholeBodyMem. × L \\times L : the L = 6 L{=}6 DiT blocks of the action expert."
+    }
+  },
+  "uniflowwam": {
+    "policy": {
+      "path": "/images/catalog/uniflowwam-policy.webp",
+      "original": "https://arxiv.org/html/2610.30991v1/UniFlowWAM-pipeline.png",
+      "page": "https://arxiv.org/abs/2610.30991",
+      "credit": "UniFlowWAM authors",
+      "alt": "Figure 2: Network architecture. Actions, scene-level 3D flow, and future visual features are three modalities of one diffusion transformer, each processed by its own expert; the experts exchange information only through joint self-attention. The objective decides which modalities are noised targets and which are clean conditions. Predicted flow latents are decoded by the 4D VAE into point maps and scene flow.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 911,
+      "sourceSha256": "75596cb5fc7725bc895ac337597d6c9f86806c3fb73c16de806b925191f5cfd3",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2: Network architecture. Actions, scene-level 3D flow, and future visual features are three modalities of one diffusion transformer, each processed by its own expert; the experts exchange information only through joint self-attention. The objective decides which modalities are noised targets and which are clean conditions. Predicted flow latents are decoded by the 4D VAE into point maps and scene flow."
+    }
+  },
+  "dynaslots": {
+    "policy": {
+      "path": "/images/catalog/dynaslots-policy.webp",
+      "original": "https://arxiv.org/html/2610.32330v1/fig2.png",
+      "page": "https://arxiv.org/abs/2610.32330",
+      "credit": "DynaSlots authors",
+      "alt": "Fig. 2: DynaSlots framework. (a) Three point-cloud frames are encoded by a shared Point Transformer and propagated by a temporal slot binder into K = 6 K{=}6 aligned soft slots. The IDM extracts per-slot latent actions from feature differences, and the cross-slot encoder conditions a diffusion FDM on current slot features, centroids, and actions. An EMA target branch supplies noised future slot features, while an auxiliary interaction head predicts pairwise proximity-and-motion relations. The di",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 915,
+      "sourceSha256": "2aa425d8c9b2a81cd94bf8a034bdca0d0cdc2fb6416118add51d64ce0f4111a7",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 2: DynaSlots framework. (a) Three point-cloud frames are encoded by a shared Point Transformer and propagated by a temporal slot binder into K = 6 K{=}6 aligned soft slots. The IDM extracts per-slot latent actions from feature differences, and the cross-slot encoder conditions a diffusion FDM on current slot features, centroids, and actions. An EMA target branch supplies noised future slot features, while an auxiliary interaction head predicts pairwise proximity-and-motion relations. The displayed losses are noise prediction, slot VICReg, relation BCE, and assignment entropy. (b) Previous"
+    }
+  },
+  "depstate-jepa": {
+    "policy": {
+      "path": "/images/catalog/depstate-jepa-policy.webp",
+      "original": "https://arxiv.org/html/2610.29246v1/newoverview.png",
+      "page": "https://arxiv.org/abs/2610.29246",
+      "credit": "DepState-JEPA authors",
+      "alt": "Figure 2: Architectural Overview of DepState-JEPA. RGB–Depth features are grounded, factorized, and aggregated into DepState.\nSpatial queries read local content; action-conditioned transitions advance\nthe state and reuse the visual decoders with initial private features.\nPhysical readouts predict robot state and object motion, with FK\nregularizing independent joint/TCP outputs.",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1554,
+      "height": 909,
+      "sourceSha256": "5f94407c005a4d827aadc8b6b475f0cc4ea6dd2d0a721ee3bbf9d6f08943fb8b",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2: Architectural Overview of DepState-JEPA. RGB–Depth features are grounded, factorized, and aggregated into DepState.\nSpatial queries read local content; action-conditioned transitions advance\nthe state and reuse the visual decoders with initial private features.\nPhysical readouts predict robot state and object motion, with FK\nregularizing independent joint/TCP outputs."
+    }
+  },
+  "dexplicit": {
+    "policy": {
+      "path": "/images/catalog/dexplicit-policy.webp",
+      "original": "https://arxiv.org/html/2610.30781v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2610.30781",
+      "credit": "DeXplicit authors",
+      "alt": "Figure 2: Overview of DeXplicit. Joint-aware action encoding drives object-centric metric dynamics with shared object transport and local deformation. Metric-aligned refinement corrects object pose, and projected geometry, hand conditioning, and appearance transport condition the confidence-gated visual readout.",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 607,
+      "sourceSha256": "3df74617029ff0da2772282e3b35f6b35b2b8755a0e8559c0d4e28cdd39c511b",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2: Overview of DeXplicit. Joint-aware action encoding drives object-centric metric dynamics with shared object transport and local deformation. Metric-aligned refinement corrects object pose, and projected geometry, hand conditioning, and appearance transport condition the confidence-gated visual readout."
+    }
+  },
+  "cw-wam": {
+    "policy": {
+      "path": "/images/catalog/cw-wam-policy.webp",
+      "original": "https://arxiv.org/html/2610.30117v1/figure1-HD.png",
+      "page": "https://arxiv.org/abs/2610.30117",
+      "credit": "CW-WAM authors",
+      "alt": "Fig. 2: CW-WAM jointly predicts video, motion, and wrench from visual observations,\nlanguage, robot state, and interaction history. Paired motion–wrench tokens\ncapture recent interactions, while long-term wrench memory retains earlier\ncontact information. Pair-causal attention links each future wrench to its paired action\nand earlier pairs. The model jointly denoises the three streams using separate prediction heads.\nPredicted motion and wrench trajectories provide paired references for robot co",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 900,
+      "sourceSha256": "4f1d29ea5117d7a9802e5fc379c0549c98fcbed0a448886e187c15afcaf3c359",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 2: CW-WAM jointly predicts video, motion, and wrench from visual observations,\nlanguage, robot state, and interaction history. Paired motion–wrench tokens\ncapture recent interactions, while long-term wrench memory retains earlier\ncontact information. Pair-causal attention links each future wrench to its paired action\nand earlier pairs. The model jointly denoises the three streams using separate prediction heads.\nPredicted motion and wrench trajectories provide paired references for robot control."
+    }
+  },
+  "uniwalm": {
+    "policy": {
+      "path": "/images/catalog/uniwalm-policy.webp",
+      "original": "https://arxiv.org/html/2610.28626v1/Architecture_UniWALM_memory.png",
+      "page": "https://arxiv.org/abs/2610.28626",
+      "credit": "UniWALM authors",
+      "alt": "Figure 2: Overview of UniWALM .\nUniWALM is a unified mixture-of-transformers (MoT) world-action-language model that co-denoises video, language, and action in a single shared representation.\nGiven the current observation, task instruction, proprioception, an optional visual memory ℱ \\mathcal{F} (one or more frames; in our experiments a single anchor at episode start), and the previously generated textual memory , UniWALM processes inputs through a (a) video , (b) language , and (c) action DiT th",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 466,
+      "sourceSha256": "4ce5612a7975723be7e18fef04b1ab80278209c6d63a4e84b35ab5691ee60116",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2: Overview of UniWALM .\nUniWALM is a unified mixture-of-transformers (MoT) world-action-language model that co-denoises video, language, and action in a single shared representation.\nGiven the current observation, task instruction, proprioception, an optional visual memory ℱ \\mathcal{F} (one or more frames; in our experiments a single anchor at episode start), and the previously generated textual memory , UniWALM processes inputs through a (a) video , (b) language , and (c) action DiT that share features via unified self-attention.\nThe language stream emits a subtask together with a te"
+    }
+  },
+  "gpt-as-tactile-policy": {
+    "policy": {
+      "path": "/images/catalog/gpt-as-tactile-policy-policy.webp",
+      "original": "https://arxiv.org/html/2610.28457v1/overview.png",
+      "page": "https://arxiv.org/abs/2610.28457",
+      "credit": "GPT-as-Tactile-Policy authors",
+      "alt": "Figure 1: GPT-as-Tactile-Policy for contact-rich manipulation. (A) Offline task knowledge construction and online\nclosed-loop control. (B) Contact-guided insertion using visual and bilateral\ntactile feedback. (C) Task-wise success rates and average performance\non UniVTAC.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 965,
+      "sourceSha256": "8161ecd04630e7d6c1e10fe16e8c6593ef78fe10959d44402270c6303d71c42b",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 1: GPT-as-Tactile-Policy for contact-rich manipulation. (A) Offline task knowledge construction and online\nclosed-loop control. (B) Contact-guided insertion using visual and bilateral\ntactile feedback. (C) Task-wise success rates and average performance\non UniVTAC."
+    }
+  },
+  "physcanvas": {
+    "policy": {
+      "path": "/images/catalog/physcanvas-policy.webp",
+      "original": "https://arxiv.org/html/2610.28613v1/main_fig.png",
+      "page": "https://arxiv.org/abs/2610.28613",
+      "credit": "PhysCanvas authors",
+      "alt": "Figure 3: Overview of PhysCanvas . A unified canvas supports action-conditioned multimodal generation, with scene, state, and modality consistency guiding post-training.",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 880,
+      "sourceSha256": "94bbb9babaf5ab6c95ee9c1f3dff13dffa9046b3f734d79cd40593513635826b",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 3: Overview of PhysCanvas . A unified canvas supports action-conditioned multimodal generation, with scene, state, and modality consistency guiding post-training."
+    }
+  },
+  "rax": {
+    "policy": {
+      "path": "/images/catalog/rax-policy.webp",
+      "original": "https://arxiv.org/html/2610.22496v1/architecture_loop.png",
+      "page": "https://arxiv.org/abs/2610.22496",
+      "credit": "RAX authors",
+      "alt": "Figure 2 : System architecture and self-improving loop of RAX. The coding agent, powered by a frozen LLM, interacts with physical hardware across an isolation boundary using multimodal perception and control SDK interfaces. By reflecting on execution outcomes, the agent continually updates a persistent memory system containing working context, task notes, and a versioned repository of verified skills. During exploration, the agent compiles its perception and planning logic into standalone Python",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1400,
+      "height": 699,
+      "sourceSha256": "1e19763a724261fa3b1842af31dcdbbfde862dd8d6b6524afeb593779815ea37",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2 : System architecture and self-improving loop of RAX. The coding agent, powered by a frozen LLM, interacts with physical hardware across an isolation boundary using multimodal perception and control SDK interfaces. By reflecting on execution outcomes, the agent continually updates a persistent memory system containing working context, task notes, and a versioned repository of verified skills. During exploration, the agent compiles its perception and planning logic into standalone Python control programs that execute high-frequency loops directly on the robot. When encountering percept"
+    }
+  },
+  "tarl": {
+    "policy": {
+      "path": "/images/catalog/tarl-policy.webp",
+      "original": "https://arxiv.org/html/2609.36785v1/figures/Teaser/Demonstration-5.png",
+      "page": "https://arxiv.org/abs/2609.36785",
+      "credit": "TaRL authors",
+      "alt": "Figure 2: Overview of TaRL. Left: It is trained with successful, rewound and failed demonstrations. Middle: It conditions on tactile deformation maps and outputs task-progress rewards. Right: It is applied to downstream RL, offering dense rewards.",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 552,
+      "sourceSha256": "5df19b2dbcf03370f9880f97afa3489e89dca566fef1ef238dc178ce37fe93a1",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2: Overview of TaRL. Left: It is trained with successful, rewound and failed demonstrations. Middle: It conditions on tactile deformation maps and outputs task-progress rewards. Right: It is applied to downstream RL, offering dense rewards."
+    }
+  },
+  "tactile-object-centric": {
+    "policy": {
+      "path": "/images/catalog/tactile-object-centric-policy.webp",
+      "original": "https://arxiv.org/html/2609.33235v1/figs/policy-module-simple.png",
+      "page": "https://arxiv.org/abs/2609.33235",
+      "credit": "Object-centric Tactile Interactive Perception authors",
+      "alt": "Figure 3: Object-centric and context-aware manipulation policy learning. Built on the Action Chunking Transformer, the policy conditions on learned object context and object position to focus on target-specific visual, tactile, and proprioceptive observations for adaptive manipulation.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 414,
+      "sourceSha256": "4b1a3279d0e0559e957ecdf8260b41dbc0fa1b20fa5ba9a6347061fb9a3105ec",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 3: Object-centric and context-aware manipulation policy learning. Built on the Action Chunking Transformer, the policy conditions on learned object context and object position to focus on target-specific visual, tactile, and proprioceptive observations for adaptive manipulation."
+    }
+  },
+  "vlmpose": {
+    "policy": {
+      "path": "/images/catalog/vlmpose-policy.webp",
+      "original": "https://arxiv.org/html/2604.09781v2/method.png",
+      "page": "https://arxiv.org/abs/2604.09781",
+      "credit": "VLMPose authors",
+      "alt": "Figure 2 : Our Method Overview. (a) We first ask the evaluator to assess how well the rendered multi-view images satisfy the input text instruction. If the current scene is judged inconsistent with the instruction, we provide the proposer with the supporting view, augmented with coordinate system visualization, that best explains the evaluator’s judgment. Based on this input, the proposer predicts an incremental 6D pose update. The predicted update is then applied to the target object, and this ",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 614,
+      "sourceSha256": "b2c558a7c10c7b5d79072e517b5dcd8e786798f5685d327ffbae31655c39eb50",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 2 : Our Method Overview. (a) We first ask the evaluator to assess how well the rendered multi-view images satisfy the input text instruction. If the current scene is judged inconsistent with the instruction, we provide the proposer with the supporting view, augmented with coordinate system visualization, that best explains the evaluator’s judgment. Based on this input, the proposer predicts an incremental 6D pose update. The predicted update is then applied to the target object, and this process is repeated iteratively. Throughout all iterations, both roles receive the accumulated conte"
+    }
+  },
+  "soft-garment-icl": {
+    "policy": {
+      "path": "/images/catalog/soft-garment-icl-policy.webp",
+      "original": "https://arxiv.org/html/2610.30988v1/figs/pipeline.png",
+      "page": "https://arxiv.org/abs/2610.30988",
+      "credit": "ICL Soft-Garment World Model authors",
+      "alt": "Fig. 2: Overview of the proposed pipeline, comprising three stages. i) Synthetic soft object manipulation demonstrations are collected in simulation using Isaac Lab, capturing partial point cloud observations and bimanual actions across randomized material properties and grasping configurations. ii) For each garment category, an expert model consists of training two components: a State Estimation Diffusion Model via flow matching; and a Dynamics Prediction Model via supervised learning. iii) Int",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 723,
+      "sourceSha256": "d1ebb99f1297ad8e1cc75f0c7a69f40476f7fae19dc662b24773f2f2195b4d2e",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 2: Overview of the proposed pipeline, comprising three stages. i) Synthetic soft object manipulation demonstrations are collected in simulation using Isaac Lab, capturing partial point cloud observations and bimanual actions across randomized material properties and grasping configurations. ii) For each garment category, an expert model consists of training two components: a State Estimation Diffusion Model via flow matching; and a Dynamics Prediction Model via supervised learning. iii) Integrate the world model to evaluate action proposals generated via a Goal Conditioned Flow Matching p"
+    }
+  },
+  "opentac": {
+    "benchmark": {
+      "path": "/images/catalog/opentac-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.31661v1/tactile_examples_1x4.png",
+      "page": "https://arxiv.org/abs/2610.31661",
+      "credit": "OpenTac authors",
+      "alt": "Figure 1 : Tactile samples recorded with OpenTac skins. Heatmaps indicate normal load; cyan arrows denote per-bump shear; white arcs denote rotation estimates. (a) 64×64 skin, twisting a dome and clippers. (b) 9×9 fingertip, opposite thumb twists. (c) UMI gripper, 29×6 finger skins: can and ball rocked in the grasp. (d) Extrinsic contact: screwdriver moved down and up.",
+      "kind": "resource-overview",
+      "reviewed": "2026-10-26",
+      "width": 860,
+      "height": 221,
+      "sourceSha256": "602987f3f0ffacde21ff29627c0efaf78b52a26f7eab383da1bc76a37f8ce81f",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure 1 : Tactile samples recorded with OpenTac skins. Heatmaps indicate normal load; cyan arrows denote per-bump shear; white arcs denote rotation estimates. (a) 64×64 skin, twisting a dome and clippers. (b) 9×9 fingertip, opposite thumb twists. (c) UMI gripper, 29×6 finger skins: can and ball rocked in the grasp. (d) Extrinsic contact: screwdriver moved down and up."
+    }
+  },
+  "vectile": {
+    "benchmark": {
+      "path": "/images/catalog/vectile-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.31472v1/Figure/ICRA_VecTile-01.jpg",
+      "page": "https://arxiv.org/abs/2610.31472",
+      "credit": "VecTile authors",
+      "alt": "Fig. 1: VecTile on Fin-Ray type fingers during plug insertion. Color denotes normal response and arrows indicate shear magnitude and direction.",
+      "kind": "resource-overview",
+      "reviewed": "2026-10-26",
+      "width": 1050,
+      "height": 660,
+      "sourceSha256": "82d20bd52e91f8d2671d6adfa66aee8a315e5213845cc6774c149e08cff64d25",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 1: VecTile on Fin-Ray type fingers during plug insertion. Color denotes normal response and arrows indicate shear magnitude and direction."
+    }
+  },
+  "robocasa-shift": {
+    "benchmark": {
+      "path": "/images/catalog/robocasa-shift-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.27861v1/imgs/V0/Intro_overview_v1.png",
+      "page": "https://arxiv.org/abs/2610.27861",
+      "credit": "RoboCasa-Shift authors",
+      "alt": "Fig. 1: Overview of RoboCasa-Shift. RoboCasa-Shift evaluates VLA robustness on selected long-horizon RoboCasa tasks under controlled single-factor distribution shifts with multiple frozen severity levels.\nStrictly matched clean-perturbed rollouts enable counterfactual comparison under shared task conditions, while robustness is characterized jointly through end-to-end task outcomes and stage-aware semantic execution diagnostics.\nRepresentative findings illustrate that aggregate success rates can",
+      "kind": "task-overview",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 1244,
+      "sourceSha256": "f2c5557798b30878a5a6814505134c119177037c74f1b0291cbe92886e77f2bd",
+      "note": "Official manuscript figure, optimized without changing scientific content. Fig. 1: Overview of RoboCasa-Shift. RoboCasa-Shift evaluates VLA robustness on selected long-horizon RoboCasa tasks under controlled single-factor distribution shifts with multiple frozen severity levels.\nStrictly matched clean-perturbed rollouts enable counterfactual comparison under shared task conditions, while robustness is characterized jointly through end-to-end task outcomes and stage-aware semantic execution diagnostics.\nRepresentative findings illustrate that aggregate success rates can mask substantial episode-level outcome changes, similar end-to-end degradation can correspond to di"
+    }
+  },
+  "prismwam": {
+    "policy": {
+      "path": "/images/catalog/prismwam-policy.webp",
+      "original": "https://arxiv.org/html/2610.26564v1/method_architecture_and_attention.png",
+      "page": "https://arxiv.org/abs/2610.26564",
+      "credit": "PrismWAM authors",
+      "alt": "Official method architecture from the primary manuscript; no scientific content altered.",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1600,
+      "height": 636,
+      "sourceSha256": "c586abb3547d0fedf0b1566b370a7fd37ce2f8c250c86e209a9e12258a53301d",
+      "note": "Official manuscript figure, optimized without changing scientific content. Official method architecture from the primary manuscript; no scientific content altered."
+    }
+  },
+  "ewam-emergent": {
+    "policy": {
+      "path": "/images/catalog/ewam-emergent-policy.webp",
+      "original": "https://arxiv.org/html/2609.39973v1/figure2.png",
+      "page": "https://arxiv.org/abs/2609.39973",
+      "credit": "EWAM (Emergent Specialization) authors",
+      "alt": "Official method architecture from the primary manuscript; no scientific content altered.",
+      "kind": "architecture",
+      "reviewed": "2026-10-26",
+      "width": 1559,
+      "height": 1148,
+      "sourceSha256": "3271213bcd75459ee87f20f1ec150139f5187dcf92011580a1fd5e9d624c35bf",
+      "note": "Official manuscript figure, optimized without changing scientific content. Official method architecture from the primary manuscript; no scientific content altered."
+    }
+  },
+  "tactile-eta": {
+    "policy": {
+      "path": "/images/catalog/tactile-eta-policy.webp",
+      "original": "https://arxiv.org/html/2610.27613v1/fig2_method.png",
+      "page": "https://arxiv.org/abs/2610.27613",
+      "credit": "Tactile-ETA authors",
+      "alt": "Figure2: action-aligned tactile endpoint/change selection and agent context assembly.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-26",
+      "width": 660,
+      "height": 259,
+      "sourceSha256": "0d96083d85c3c50932c80d35c2a3be070996b6536c10c1d76b1ff8e9747c491b",
+      "note": "Official manuscript figure, optimized without changing scientific content. Figure2: action-aligned tactile endpoint/change selection and agent context assembly."
+    }
   }
 }

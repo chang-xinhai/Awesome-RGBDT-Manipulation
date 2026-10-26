@@ -1,23 +1,23 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-21. 721 unique records; 53 benchmark records; 606 policy records; 54 models; 9 surveys; 12 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-10-26. 747 unique records; 54 benchmark records; 624 policy records; 59 models; 9 surveys; 14 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
 - Visuo-Tactile Benchmarks: 22 records with this classification.
 - Precision and Assembly: 26 records with this classification.
 - Dexterous Manipulation: 14 records with this classification.
-- General Manipulation: 13 records with this classification.
-- Robustness and Evaluation: 15 records with this classification.
-- Supporting Tools and Data: 12 records with this classification.
-- Visuo-Tactile Policy Learning: 78 records with this classification.
-- Tactile VLA and World-Action Models: 110 records with this classification.
-- RGB-D and 3D Policies: 168 records with this classification.
-- Tactile Representations and Pretraining: 43 records with this classification.
-- Geometry and Predictive Models: 23 records with this classification.
-- Visual Precision and Reinforcement Learning: 44 records with this classification.
-- Agent / RSI / ICL: 261 records with this classification.
-- Generalist Policy Foundations: 142 records with this classification.
+- General Manipulation: 14 records with this classification.
+- Robustness and Evaluation: 16 records with this classification.
+- Supporting Tools and Data: 14 records with this classification.
+- Visuo-Tactile Policy Learning: 81 records with this classification.
+- Tactile VLA and World-Action Models: 112 records with this classification.
+- RGB-D and 3D Policies: 176 records with this classification.
+- Tactile Representations and Pretraining: 45 records with this classification.
+- Geometry and Predictive Models: 26 records with this classification.
+- Visual Precision and Reinforcement Learning: 47 records with this classification.
+- Agent / RSI / ICL: 271 records with this classification.
+- Generalist Policy Foundations: 150 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -30,14 +30,14 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [RoboTwin2 leaderboard: single-task](https://robotwin-platform.github.io/data/robotwin_leaderboard.json) | leaderboard | 5 / 5 |
 | [RoboDojo paper: simulation baselines](https://arxiv.org/abs/2607.04434) | paper-baselines | 30 / 30 |
 | [RoboDojo paper: real-robot baselines](https://arxiv.org/abs/2607.04434) | paper-baselines | 10 / 10 |
-| [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 60 / 60 |
-| [RoboDojo live leaderboard: real robots](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 11 / 11 |
-| [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab/tree/5d0be1499634d3176258c8f2e31f5fe816497b0a/policy) | adapter-registry | 68 / 69 |
+| [RoboDojo live leaderboard: simulation](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 61 / 62 |
+| [RoboDojo live leaderboard: real robots](https://robodojo-benchmark.com/data/leaderboard.generated.json) | leaderboard | 12 / 12 |
+| [XPolicyLab integrated adapter registry](https://github.com/XPolicyLab/XPolicyLab/tree/5d0be1499634d3176258c8f2e31f5fe816497b0a/policy) | adapter-registry | 69 / 73 |
 | [N₀-Foundation NeoReal / NeoSim baseline rosters](https://arxiv.org/html/2608.29601v2#S6) | paper-baselines | 9 / 9 |
 | [Evo-DexBench evaluated policies and No-Touch ablation](https://arxiv.org/abs/2610.21180) | paper-baselines | 6 / 6 |
 | [ForceBench simulation comparison](https://arxiv.org/abs/2610.19604) | paper-baselines | 9 / 10 |
 | [SparkArena simulation / hardware paper baselines](https://arxiv.org/abs/2610.22342) | paper-baselines | 11 / 13 |
-| [RoboDojo official Agent / Agent+VLA / Agent+WAM track](https://robodojo-benchmark.com/leaderboard) | leaderboard | 7 / 7 |
+| [RoboDojo official Agent / Agent+VLA / Agent+WAM track](https://robodojo-benchmark.com/leaderboard) | leaderboard | 8 / 8 |
 
 ## Survey citation trails
 
@@ -74,6 +74,7 @@ Source aliases are discovery provenance, not primary method evidence. Indexed ma
 | [Recent official arXiv — scoped sensing/contact additions](https://export.arxiv.org/api/query?search_query=cat%3Acs.RO&sortBy=submittedDate&sortOrder=descending) | 3 / 8 |
 | [19 October update: arXiv, Awesome-Touch and official release follow-up](https://github.com/linchangyi1/Awesome-Touch) | 14 / 17 |
 | [October21 primary manipulation expansion and independent Agent/RGB-D review](https://arxiv.org/list/cs.RO/recent) | 23 / 26 |
+| [Fresh Agent/RGB-D/visual–tactile primary expansion](https://arxiv.org/list/cs.RO/recent) | 26 / 27 |
 
 ## Evidence methodology
 

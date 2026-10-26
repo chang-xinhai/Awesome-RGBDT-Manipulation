@@ -29,7 +29,7 @@ A frozen frontier model selects end-effector targets from RGB and robot state. A
 | Training duration | Not reported [1](https://arxiv.org/abs/2609.24170)  |
 | Training hardware | Not reported [1](https://arxiv.org/abs/2609.24170)  |
 | Inference and control rates | Not reported [1](https://arxiv.org/abs/2609.24170)  |
-| Evaluation scope | 2,100 RoboDojo episodes across 42 tasks; complementary real-robot manipulation and dexterous-piano case studies. [1](https://arxiv.org/abs/2609.24170)  |
+| Evaluation scope | 2,100 RoboDojo episodes across 42 tasks; complementary real-robot manipulation and dexterous-piano case studies. Current official October 24 snapshot: GPT-6-Astra:Score 28.97, success 22.48%; DeepSeek-Flash:Score 2.99, success 1.92%; GPT-5.5:Score 1.13, success 0.88%. These live-board results remain separate from the manuscript/development protocols. [1](https://arxiv.org/abs/2609.24170) [4](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Bimanual · Parallel-jaw gripper · Dexterous hand |
@@ -50,3 +50,4 @@ A frozen frontier model selects end-effector targets from RGB and robot state. A
 1. [Primary paper, full text](https://arxiv.org/abs/2609.24170) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/RoboProbe/RoboProbe) — Repository identity; code and checkpoint release status are stated separately.
 3. [Official repository README and LICENSE](https://github.com/RoboProbe/RoboProbe) — Implementation scope and repository license are verified separately from model access and full benchmark reproducibility.
+4. [Fresh official scored submission —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system.

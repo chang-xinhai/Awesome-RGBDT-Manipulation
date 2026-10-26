@@ -29,7 +29,7 @@ A multimodal agent revises an executable harness that selects and composes code-
 | Training duration | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
 | Training hardware | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
 | Inference and control rates | The website labels 0.1–1 Hz planning and 20–50 Hz control as illustrative estimates, not measured policy throughput. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Evaluation scope | RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
+| Evaluation scope | RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. Current official October 24 snapshot: PhysicalRSI:Score 36.27, success 31.38%. These live-board results remain separate from the manuscript/development protocols. [1](https://yanming03.github.io/PhysicalRSI/v2/) [2](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper · Bimanual |
@@ -48,3 +48,4 @@ A multimodal agent revises an executable harness that selects and composes code-
 **Primary evidence**
 
 1. [Official project / author report](https://yanming03.github.io/PhysicalRSI/v2/) — Project-only evidence; any reported date is an explicit public report or code-release event, not a manuscript submission.
+2. [Fresh official scored submission —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system.

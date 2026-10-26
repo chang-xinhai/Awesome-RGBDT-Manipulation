@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-21",
+  "reviewed": "2026-10-26",
   "scope": "Source-by-source tactile and manipulation-relevant geometry discovery. Source aliases can overlap; inclusion specifications use original papers and releases.",
   "sources": [
     {
@@ -3076,6 +3076,204 @@
           "url": "https://arxiv.org/abs/2610.26174",
           "status": "adjacent-resource",
           "note": "Tactile-system attack study; not a new manipulation policy/benchmark and not expanded into attack implementation details."
+        }
+      ]
+    },
+    {
+      "id": "rgbdt-primary-expansion-20261026",
+      "label": "Fresh Agent/RGB-D/visual–tactile primary expansion",
+      "url": "https://arxiv.org/list/cs.RO/recent",
+      "kind": "primary-expansion",
+      "snapshot": "2026-10-26",
+      "scope": "Discovery from official arXivRO/CV, author projects, XPolicyLab current registry and awesome-embodied-agents. Indexing follows original-method full-text, deployment-input and actual artifact review. No duplicate TacTalent/HexaShell records.",
+      "entries": [
+        {
+          "name": "FORCA",
+          "url": "https://arxiv.org/abs/2610.31841",
+          "status": "indexed",
+          "workId": "forca",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "SERA",
+          "url": "https://arxiv.org/abs/2610.29560",
+          "status": "indexed",
+          "workId": "sera",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "AW-0",
+          "url": "https://arxiv.org/abs/2610.30136",
+          "status": "indexed",
+          "workId": "aw0",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "AgenticRoboRL",
+          "url": "https://arxiv.org/abs/2610.28589",
+          "status": "indexed",
+          "workId": "agenticroborl",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "FIT-MAC",
+          "url": "https://arxiv.org/abs/2610.28109",
+          "status": "indexed",
+          "workId": "fit-mac",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "EventSync",
+          "url": "https://arxiv.org/abs/2610.27917",
+          "status": "indexed",
+          "workId": "eventsync",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "WholeBodyMem",
+          "url": "https://arxiv.org/abs/2610.31166",
+          "status": "indexed",
+          "workId": "wholebodymem",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "UniFlowWAM",
+          "url": "https://arxiv.org/abs/2610.30991",
+          "status": "indexed",
+          "workId": "uniflowwam",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "DynaSlots",
+          "url": "https://arxiv.org/abs/2610.32330",
+          "status": "indexed",
+          "workId": "dynaslots",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "DepState-JEPA",
+          "url": "https://arxiv.org/abs/2610.29246",
+          "status": "indexed",
+          "workId": "depstate-jepa",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "DeXplicit",
+          "url": "https://arxiv.org/abs/2610.30781",
+          "status": "indexed",
+          "workId": "dexplicit",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "CW-WAM",
+          "url": "https://arxiv.org/abs/2610.30117",
+          "status": "indexed",
+          "workId": "cw-wam",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "UniWALM",
+          "url": "https://arxiv.org/abs/2610.28626",
+          "status": "indexed",
+          "workId": "uniwalm",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "GPT-as-Tactile-Policy",
+          "url": "https://arxiv.org/abs/2610.28457",
+          "status": "indexed",
+          "workId": "gpt-as-tactile-policy",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "PhysCanvas",
+          "url": "https://arxiv.org/abs/2610.28613",
+          "status": "indexed",
+          "workId": "physcanvas",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "RAX",
+          "url": "https://arxiv.org/abs/2610.22496",
+          "status": "indexed",
+          "workId": "rax",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "TaRL",
+          "url": "https://arxiv.org/abs/2609.36785",
+          "status": "indexed",
+          "workId": "tarl",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "Object-centric Tactile Interactive Perception",
+          "url": "https://arxiv.org/abs/2609.33235",
+          "status": "indexed",
+          "workId": "tactile-object-centric",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "VLMPose",
+          "url": "https://arxiv.org/abs/2604.09781",
+          "status": "indexed",
+          "workId": "vlmpose",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "ICL Soft-Garment World Model",
+          "url": "https://arxiv.org/abs/2610.30988",
+          "status": "indexed",
+          "workId": "soft-garment-icl",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "OpenTac",
+          "url": "https://arxiv.org/abs/2610.31661",
+          "status": "indexed",
+          "workId": "opentac",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "VecTile",
+          "url": "https://arxiv.org/abs/2610.31472",
+          "status": "indexed",
+          "workId": "vectile",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "RoboCasa-Shift",
+          "url": "https://arxiv.org/abs/2610.27861",
+          "status": "indexed",
+          "workId": "robocasa-shift",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "PrismWAM",
+          "url": "https://arxiv.org/abs/2610.26564",
+          "status": "indexed",
+          "workId": "prismwam",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "EWAM (Emergent Specialization)",
+          "url": "https://arxiv.org/abs/2609.39973",
+          "status": "indexed",
+          "workId": "ewam-emergent",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "Tactile-ETA",
+          "url": "https://arxiv.org/abs/2610.27613",
+          "status": "indexed",
+          "workId": "tactile-eta",
+          "note": "Original manuscript v1 date, method/input scope, official figures and actual release/license independently reviewed."
+        },
+        {
+          "name": "Phoenix-MWA",
+          "url": "https://openphoenix-team.github.io/Phoenix-pages/",
+          "status": "candidate",
+          "note": "Substantive pretraining/adapter code exists, but supplied weight NOTICE states inference tensors unchanged from upstream Wan; do not label these as verified trained method weights. Candidate withheld pending coherent artifact provenance."
         }
       ]
     }

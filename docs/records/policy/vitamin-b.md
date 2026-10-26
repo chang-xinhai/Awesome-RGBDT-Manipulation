@@ -22,7 +22,7 @@ Bimanual handheld demonstrations and tactile deformation point clouds improve cr
 | Policy family | Diffusion [1](https://arxiv.org/abs/2511.05858)  |
 | Base model and architecture | DINO ViT-B/16 RGB encoder, shared Point Net tactile encoder and diffusion policy. [1](https://arxiv.org/abs/2511.05858)  |
 | Model size and component | Not reported [1](https://arxiv.org/abs/2511.05858)  |
-| Deployment inputs | RGB,256-point local tactile deformation point clouds and proprioception. [1](https://arxiv.org/abs/2511.05858)  |
+| Deployment inputs | RGB, 256-point local tactile deformation point clouds and proprioception. [1](https://arxiv.org/abs/2511.05858)  |
 | Action outputs and horizon | Bimanual end-effector/gripper action sequences. [1](https://arxiv.org/abs/2511.05858)  |
 | Training method | Diffusion imitation on synchronized Meta Quest-tracked human demonstrations; compare tactile image/pointcloud representations. [1](https://arxiv.org/abs/2511.05858)  |
 | Training data | Four bimanual manipulation task datasets; exact retained demonstrations Not reported in inspected text. [1](https://arxiv.org/abs/2511.05858)  |
@@ -36,8 +36,8 @@ Bimanual handheld demonstrations and tactile deformation point clouds improve cr
 | Release: code | Available [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
 | Release: weights | Available [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
 | Release: data | Available [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
-| Release: license | Not verified; no unambiguous repository license identified. [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
-| Release: notes | Official linked Hugging Face file inventory contains four task-specific .ckpt policy files and datasets; no unambiguous top-level code LICENSE found. [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
+| Release: license | MIT for released datasets and four task policy checkpoints, verified actual HF LICENSE; original GitHub code license remains Not verified because no root code LICENSE is present. [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
+| Release: notes | Official HF inventory includes four task-specific.ckpt files, four processed task archives and rawdata.zip. The newly published HF LICENSE explicitly applies MIT to these released data/weights; it does not silently license the separate unlicensed code repository. [2](https://chuanyune.github.io/ViTaMIn-B_page/) [3](https://github.com/chuanyune/ViTaMIn-B_code) [4](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt)  |
 
 **Scope and qualifications**
 
@@ -47,5 +47,6 @@ Bimanual handheld demonstrations and tactile deformation point clouds improve cr
 
 1. [Original paper and supplementary implementation details](https://arxiv.org/abs/2511.05858) — Primary full text reviewed; dataset, deployment modalities and training-only privileges are scoped separately.
 2. [Official author project](https://chuanyune.github.io/ViTaMIn-B_page/) — Live artifact status reviewed separately from paper claims.
-3. [Official released implementation and LICENSE](https://github.com/chuanyune/ViTaMIn-B_code) — Repository metadata,README and actualNone inspected; availability scoped to the listed component.
+3. [Official released implementation and LICENSE](https://github.com/chuanyune/ViTaMIn-B_code) — Substantive implementation is public, but no original root code LICENSE was verified. The HF data/checkpoint LICENSE has separate scope.
 4. [Author-linked released dataset](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt) — Public repository file inventory inspected; component/data scope follows model/dataset card.
+5. [Official current source / actual release —26October2026](https://huggingface.co/datasets/chuanyune/ViTaMIn-B_data_and_ckpt/blob/main/LICENSE) — Actual MIT text newly verified for the HF artifacts; no inference about separate original-code redistribution permission.

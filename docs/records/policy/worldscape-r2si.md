@@ -31,7 +31,7 @@ A launch-reported two-level robot agent that revises reusable skills and can upd
 | Training duration | Not reported |
 | Training hardware | Not reported |
 | Inference and control rates | Not reported |
-| Evaluation scope | Official RoboDojo-Sim snapshot 2026-10-17: average Score 46.58 and success rate 39.35%; Precision Score 23.51 and success rate 15.50%. The simulation entry is separate from the real-world leaderboard; this listing does not independently establish the launch article’s recursive-improvement claims. [1](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
+| Evaluation scope | Historical RoboDojo-Sim snapshot 2026-10-17: average Score 46.58 and success rate 39.35%; Precision Score 23.51 and success rate 15.50%. The simulation entry is separate from the real-world leaderboard; this listing does not independently establish the launch article’s recursive-improvement claims. Current official October 24 snapshot: WorldScape-R²SI:Score 46.58, success 39.35%. These live-board results remain separate from the manuscript/development protocols. [1](https://robodojo-benchmark.com/data/leaderboard.generated.json) [5](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities |  |
 | Evaluation domain | Simulation |
 | Embodiment |  |
@@ -47,13 +47,14 @@ A launch-reported two-level robot agent that revises reusable skills and can upd
 - Technical descriptions are explicitly attributed to launch coverage. The official leaderboard independently confirms the entry, contributor and reported metrics, not the internal architecture or improvement mechanism.
 - The launch article also mentions WorldScape Policy 2.5. No separate primary technical report or version-specific release was located; it is not treated as a renamed WorldScape Policy 2.0 checkpoint or a separately verified model here.
 - No measured depth or tactile input is established for R²SI. The source illustration labels RGB-only deployment, but primary implementation evidence remains unavailable.
-- R²SI is distinct from R²-WAM (arXiv:2610.04913), a separate repair-and-reject post-training method.
+- R²SI is distinct from R²-WAM (arXiv: 2610.04913), a separate repair-and-reject post-training method.
 
 **Primary evidence**
 
 1. [Official RoboDojo-Sim leaderboard — 2026-10-17 snapshot](https://robodojo-benchmark.com/data/leaderboard.generated.json) — The new row names WorldScape-R²SI, contributor Manifold AI, and per-dimension simulation metrics. The row supplies no paper, project, code, data, weights or implementation details. The snapshot date is not treated as a paper submission date.
 2. [Author release-scope audit — existing WorldScape Policy 2.0](https://github.com/manifoldai-research/WorldScape-Policy) — Current main README and published webpage branch identify WorldScape Policy 2.0. This is a related-release scope check, not R²SI code or proof that no private implementation exists.
 3. [Author weight-release scope — WorldScape Policy 2.0](https://huggingface.co/manifoldai-research/WorldScape-Policy-2) — The public model card/checkpoints are labeled WorldScape Policy 2.0. No R²SI-specific or WorldScape Policy 2.5 checkpoint was established from this reviewed release.
+5. [Fresh official scored submission —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system.
 
 **Attributed launch coverage (secondary)**
 

@@ -29,7 +29,7 @@ Combines video/action experts, frozen semantic context and training-only 4D dist
 | Training duration | 245k pretraining steps, approximately 14 days; target posttraining separate [1](https://arxiv.org/abs/2609.31394)  |
 | Training hardware | Pretraining uses 256 A800 GPUs with batch 16 per GPU and global batch 4,096. [1](https://arxiv.org/abs/2609.31394)  |
 | Inference and control rates | Physical execution 30 Hz, replan every 16 actions; optimized controller-observed RTT 152.8 ms on RTX 5090 [1](https://arxiv.org/abs/2609.31394)  |
-| Evaluation scope | Simulation including LIBERO-Plus/RoboTwin C2R and four real robot platforms, including dexterous hands [1](https://arxiv.org/abs/2609.31394)  |
+| Evaluation scope | Simulation including LIBERO-Plus/RoboTwin C2R and four real robot platforms, including dexterous hands; current official RoboDojo-RealWorld October 24 adds InternW0-Δ with Score 38.9and success 31.7%. This is separate from paper-specific multi-platform trials. [1](https://arxiv.org/abs/2609.31394) [5](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Dexterous hand · Bimanual |
@@ -50,3 +50,4 @@ Combines video/action experts, frozen semantic context and training-only 4D dist
 2. [Official implementation](https://github.com/InternRobotics/InternW0-Delta) — Author-linked code and artifact instructions; current release may differ from the original manuscript.
 3. [Official project](https://internrobotics.github.io/InternW0-Delta/) — Author project and links; scientific figure keeps original rights.
 4. [Author model guide](https://github.com/InternRobotics/InternW0-Delta/blob/main/docs/models.md) — Base, LIBERO, RoboTwin, and RoboDojo policy checkpoints resolve to populated Hugging Face repositories.
+5. [Official current source / actual release —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — Fresh physical board now lists12submissions including InternW0-Δ; preserve official versus author-paper protocols.

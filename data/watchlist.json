@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-10-21",
+  "reviewed": "2026-10-26",
   "sources": [
     {
       "work": "gta2",
@@ -4671,6 +4671,181 @@
       "work": "taczero",
       "kind": "project",
       "url": "https://omron-sinicx.github.io/taczero/"
+    },
+    {
+      "work": "forca",
+      "kind": "project",
+      "url": "https://tanoom.github.io/forca/"
+    },
+    {
+      "work": "sera",
+      "kind": "project",
+      "url": "https://stevenkkxs.github.io/sera-webpage/"
+    },
+    {
+      "work": "sera",
+      "kind": "code",
+      "url": "https://github.com/StevenKKXS/SERA"
+    },
+    {
+      "work": "aw0",
+      "kind": "project",
+      "url": "https://agentic-wam.github.io/"
+    },
+    {
+      "work": "aw0",
+      "kind": "code",
+      "url": "https://github.com/ZhuoyangLiu2005/agentic-wam"
+    },
+    {
+      "work": "agenticroborl",
+      "kind": "code",
+      "url": "https://github.com/xinxinliu-ai/AgenticRoboRL"
+    },
+    {
+      "work": "fit-mac",
+      "kind": "project",
+      "url": "https://fitmac-research.pages.dev/"
+    },
+    {
+      "work": "fit-mac",
+      "kind": "code",
+      "url": "https://anonymous.4open.science/r/research-artifact-B431"
+    },
+    {
+      "work": "eventsync",
+      "kind": "project",
+      "url": "https://zjjJacinthe.github.io/eventsync-project"
+    },
+    {
+      "work": "wholebodymem",
+      "kind": "project",
+      "url": "https://memory-before-goal.github.io"
+    },
+    {
+      "work": "uniflowwam",
+      "kind": "project",
+      "url": "https://kksham111.github.io/UniFlowWAM_ProjectPage/"
+    },
+    {
+      "work": "dynaslots",
+      "kind": "project",
+      "url": "https://zhucezhanghao12345-source.github.io/DynaSlots-Anonymous/"
+    },
+    {
+      "work": "dynaslots",
+      "kind": "code",
+      "url": "https://github.com/zhucezhanghao12345-source/DynaSlots-Anonymous"
+    },
+    {
+      "work": "depstate-jepa",
+      "kind": "project",
+      "url": "https://shawnleung-sii.github.io/depstate-jepa/"
+    },
+    {
+      "work": "dexplicit",
+      "kind": "project",
+      "url": "https://dexplicit.github.io/"
+    },
+    {
+      "work": "dexplicit",
+      "kind": "code",
+      "url": "https://github.com/Abecid/DeXplicit"
+    },
+    {
+      "work": "cw-wam",
+      "kind": "project",
+      "url": "https://cw-wam-project.github.io/"
+    },
+    {
+      "work": "uniwalm",
+      "kind": "project",
+      "url": "https://rahulsajnani.github.io/projects/uniwalm/"
+    },
+    {
+      "work": "gpt-as-tactile-policy",
+      "kind": "project",
+      "url": "https://gpt-as-tactile-policy.github.io/"
+    },
+    {
+      "work": "physcanvas",
+      "kind": "project",
+      "url": "https://zebinx.github.io/PhysCanvas_HomePage/"
+    },
+    {
+      "work": "rax",
+      "kind": "project",
+      "url": "https://robot-agent-exploration.com/"
+    },
+    {
+      "work": "rax",
+      "kind": "code",
+      "url": "https://github.com/robot-agent-exploration/rax"
+    },
+    {
+      "work": "tarl",
+      "kind": "project",
+      "url": "https://embodiedai-ntu.github.io/tarl"
+    },
+    {
+      "work": "tactile-object-centric",
+      "kind": "project",
+      "url": "https://xinyiyxyx.github.io/tactile-object-centric/"
+    },
+    {
+      "work": "vlmpose",
+      "kind": "project",
+      "url": "https://tlb-miss.github.io/vlmpose/"
+    },
+    {
+      "work": "vlmpose",
+      "kind": "code",
+      "url": "https://github.com/snuvclab/vlmpose"
+    },
+    {
+      "work": "opentac",
+      "kind": "project",
+      "url": "https://opentac.github.io/"
+    },
+    {
+      "work": "opentac",
+      "kind": "code",
+      "url": "https://github.com/opentac/opentac"
+    },
+    {
+      "work": "robocasa-shift",
+      "kind": "code",
+      "url": "https://github.com/HaochengWang23/RoboCasa-Shift"
+    },
+    {
+      "work": "prismwam",
+      "kind": "project",
+      "url": "https://prism-wam.github.io/"
+    },
+    {
+      "work": "prismwam",
+      "kind": "code",
+      "url": "https://github.com/THUSI-Lab/PrismWAM"
+    },
+    {
+      "work": "ewam-emergent",
+      "kind": "project",
+      "url": "https://wanghao00pro.github.io/EWAM-project/"
+    },
+    {
+      "work": "ewam-emergent",
+      "kind": "code",
+      "url": "https://github.com/Wanghao00pro/EWAM"
+    },
+    {
+      "work": "tactile-eta",
+      "kind": "project",
+      "url": "https://no-518.github.io/tactile-eta/"
+    },
+    {
+      "work": "tactile-eta",
+      "kind": "code",
+      "url": "https://github.com/No-518/Tactile-ETA"
     }
   ]
 }

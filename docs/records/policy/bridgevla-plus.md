@@ -8,7 +8,7 @@ BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Langua
 
 **2026-08-05 · Preprint; submitted toTPAMI · CASIA / UCAS / FiveAges / ByteDance Seed**
 
-**[Paper](https://arxiv.org/abs/2608.05042)** · [Project](https://bridgevla-plus.github.io/) · [Code](https://github.com/BridgeVLA/BridgeVLA/tree/main) · [Data](https://huggingface.co/datasets/LPY/BridgeVLA) · [Weights](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints)
+**[Paper](https://arxiv.org/abs/2608.05042)** · [Project](https://bridgevla-plus.github.io/) · [Code](https://github.com/BridgeVLA/BridgeVLA/tree/main) · [Data](https://huggingface.co/datasets/LPY/BridgeVLA) · [Weights](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus)
 
 Adds temporal keyframe memory and re-rendered spatial memory to heatmap-based 3D manipulation, including bimanual control.
 
@@ -33,11 +33,11 @@ Adds temporal keyframe memory and re-rendered spatial memory to heatmap-based 3D
 | Observations / modalities | RGB · Depth · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Available [3](https://github.com/BridgeVLA/BridgeVLA/tree/main)  |
-| Release: weights | Available [3](https://github.com/BridgeVLA/BridgeVLA/tree/main)  |
-| Release: data | Partial [3](https://github.com/BridgeVLA/BridgeVLA/tree/main)  |
-| Release: license | Apache-2.0 code; PaliGemma/Gemma and data terms separate [3](https://github.com/BridgeVLA/BridgeVLA/tree/main) [5](https://raw.githubusercontent.com/BridgeVLA/BridgeVLA/main/LICENSE)  |
-| Release: notes | Main branch releases five-benchmark training/evaluation and checkpoint download scripts; grounding/simulation data linked; self-collected real data not published. [3](https://github.com/BridgeVLA/BridgeVLA/tree/main)  |
+| Release: code | Available [3](https://github.com/BridgeVLA/BridgeVLA/tree/main) [6](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus)  |
+| Release: weights | Available [3](https://github.com/BridgeVLA/BridgeVLA/tree/main) [6](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus)  |
+| Release: data | Partial [3](https://github.com/BridgeVLA/BridgeVLA/tree/main) [6](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus)  |
+| Release: license | Apache-2.0 code; HF dataset card declares Apache-2.0 for distributed assets. PaliGemma/Gemma and upstream corpora retain separate terms. [3](https://github.com/BridgeVLA/BridgeVLA/tree/main) [5](https://raw.githubusercontent.com/BridgeVLA/BridgeVLA/main/LICENSE) [6](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus)  |
+| Release: notes | Actual HF inventory now includes dedicated BridgeVLA++ checkpoints for RLBench, COLOSSEUM, GemBench and MemoryBench, plus the separately listed RMBench task checkpoints and shared grounding pretraining. Main-branch training/evaluation source is public; self-collected real demonstrations remain unpublished. [3](https://github.com/BridgeVLA/BridgeVLA/tree/main) [6](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus)  |
 
 **Scope and qualifications**
 
@@ -52,3 +52,4 @@ Adds temporal keyframe memory and re-rendered spatial memory to heatmap-based 3D
 3. [Official BridgeVLA++ release](https://github.com/BridgeVLA/BridgeVLA/tree/main) — README distinguishes original bridgevla branch, exposes code/checkpoint download recipes and states real data unpublished.
 4. [Author architecture diagram](https://bridgevla-plus.github.io/) — Fig2 includes the observation/action interface and new memory path.
 5. [Code license](https://raw.githubusercontent.com/BridgeVLA/BridgeVLA/main/LICENSE) — Code scope only.
+6. [Official current source / actual release —26October2026](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla_plus) — Four newly present model_{rlbench,colosseum,gembench,memorybench}.pth files verified independently from legacy BridgeVLA and existing RMBench checkpoints.

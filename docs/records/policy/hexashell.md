@@ -29,7 +29,7 @@ A coding agent drives a robot from calibrated RGB images and preserves failure-d
 | Training duration | Not reported [1](https://arxiv.org/html/2610.23479)  |
 | Training hardware | Not reported [1](https://arxiv.org/html/2610.23479)  |
 | Inference and control rates | Not reported [1](https://arxiv.org/html/2610.23479)  |
-| Evaluation scope | Official RoboDojo: 42 tasks × 50 episodes; Generalization is 25 standard +25 cluttered. October 20 board: Score 53.18, success 46.85%. Author new-layout retest: Score 48.0, success 39.7%; not the same test. [1](https://arxiv.org/html/2610.23479)  |
+| Evaluation scope | Official RoboDojo: 42 tasks × 50 episodes; Generalization is 25 standard +25 cluttered. Earlier October 20 board: Score 53.18, success 46.85%. Author new-layout retest: Score 48.0, success 39.7%; not the same test. Current official October 24 snapshot: HexaShell-Preview:Score 53.18, success 46.85%. These live-board results remain separate from the manuscript/development protocols. [1](https://arxiv.org/html/2610.23479) [3](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Bimanual · Parallel-jaw gripper |
@@ -50,3 +50,4 @@ A coding agent drives a robot from calibrated RGB images and preserves failure-d
 
 1. [Original full paper, methods and evaluation](https://arxiv.org/html/2610.23479) — Publication date is arXiv v1; implementation and deployment observations are distinguished from training supervision, generated geometry and base-model identity.
 2. [Official artifact: actual source files, inventory and license](https://github.com/HexaFuture/HexaShell) — 597 real files; frozen task tools, results and import contracts inspected; root LICENSE is Apache-2.0.
+3. [Fresh official scored submission —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system.

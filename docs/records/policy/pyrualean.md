@@ -6,7 +6,7 @@
 
 Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens
 
-**2026-10-01 · Preprint · Not reported**
+**2026-10-01 · Preprint · Peking University**
 
 **[Paper](https://arxiv.org/abs/2610.01939)** · [Project](https://dagroup-pku.github.io/PyRUA-Lean/) · [Code](https://github.com/DAGroup-PKU/PyRUA-Lean) · [Weights](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B)
 
@@ -29,7 +29,7 @@ Uses Python cells to compose existing robot primitives with control flow and sel
 | Training duration | Not reported [1](https://arxiv.org/abs/2610.01939)  |
 | Training hardware | Not reported [1](https://arxiv.org/abs/2610.01939)  |
 | Inference and control rates | Not reported [1](https://arxiv.org/abs/2610.01939)  |
-| Evaluation scope | 700 instances across LIBERO-Pro, RoboTwin 2.0 and RoboCasa365; additional RoboDojo evaluation without a VLA or privileged state. [1](https://arxiv.org/abs/2610.01939)  |
+| Evaluation scope | 700 instances across LIBERO-Pro, RoboTwin2.0 and RoboCasa365. Official October 24 RoboDojo result: Score 55.26 / success 50.35%. The author’s independent seed0 evaluation covers all 42 tasks /2,100 episodes and reports 58.20 /51.62%; this is a different test protocol. Hosted Astra and the GRPO-trained 4B Coder remain distinct branches. [1](https://arxiv.org/abs/2610.01939) [6](https://raw.githubusercontent.com/DAGroup-PKU/PyRUA-Lean/main/integrations/xpolicylab/evaluation/robodojo_summary_official.md) [7](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper |
@@ -50,3 +50,6 @@ Uses Python cells to compose existing robot primitives with control flow and sel
 2. [Author-linked repository](https://github.com/DAGroup-PKU/PyRUA-Lean) — Repository identity; code and checkpoint release status are stated separately.
 3. [Current artifact inventory and release scope](https://github.com/DAGroup-PKU/PyRUA-Lean) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
 4. [Current artifact inventory and release scope](https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
+5. [Official current source / actual release —26October2026](https://arxiv.org/pdf/2610.01939) — PDF title page first numbered affiliation1is Peking University.
+6. [Official current source / actual release —26October2026](https://raw.githubusercontent.com/DAGroup-PKU/PyRUA-Lean/main/integrations/xpolicylab/evaluation/robodojo_summary_official.md) — Actual newly released official summary distinguishes current official55.26/50.35from author58.20/51.62.
+7. [Official current source / actual release —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — Fresh current snapshot updatedOctober24; official score and success are independent of the paper seed0 comparison.

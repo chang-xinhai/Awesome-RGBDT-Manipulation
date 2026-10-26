@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-21",
+  "reviewed": "2026-10-26",
   "sources": [
     {
       "id": "robotwin2-paper",
@@ -342,7 +342,7 @@
       "label": "RoboDojo live leaderboard: simulation",
       "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
       "kind": "leaderboard",
-      "scope": "Official generated snapshot updated2026-10-20. Simulation60rows, including 7 Agent-track submissions; real11rows. Model labels, variant checkpoints and per-track membership are preserved, separate from frozen paper baselines.",
+      "scope": "Fresh official JSON updated2026-10-24, fetched2026-10-26:62simulation rows including8Agent aliases,12physical rows. Preserve checkpoint labels and per-track membership separately from frozen paper comparisons and adapter integrations.",
       "entries": [
         {
           "name": "EmbodiedEvo",
@@ -379,7 +379,8 @@
         },
         {
           "name": "InternW0-Δ",
-          "workId": "internw0-delta"
+          "workId": "internw0-delta",
+          "note": "New physical submission:Score38.9/SR31.7%; separate from earlier simulation results."
         },
         {
           "name": "Liber-0 Preview",
@@ -606,6 +607,15 @@
           "name": "HexaShell-Preview",
           "workId": "hexashell",
           "note": "Agent track; official Score53.18/SR46.85%. Frozen RGB tools and partial harness artifact release, not a measured-depth or learned-policy checkpoint."
+        },
+        {
+          "name": "EWAM",
+          "note": "Official WAM submission:Score15.20/SR9.37%. Same-name June Enhanced WAM and September Emergent WAM papers exist; official roster does not unambiguously cross-link a primary system. No identity or checkpoint is guessed."
+        },
+        {
+          "workId": "pyrualean",
+          "name": "PyRUA-Lean",
+          "note": "Official Agent submission:Score55.26/SR50.35%; author seed0 result58.20/51.62% is a separate protocol."
         }
       ]
     },
@@ -615,8 +625,13 @@
       "label": "RoboDojo live leaderboard: real robots",
       "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
       "kind": "leaderboard",
-      "scope": "Official generated snapshot updated2026-10-20. Simulation60rows, including 7 Agent-track submissions; real11rows. Model labels, variant checkpoints and per-track membership are preserved, separate from frozen paper baselines.",
+      "scope": "Fresh official JSON updated2026-10-24, fetched2026-10-26:62simulation rows including8Agent aliases,12physical rows. Preserve checkpoint labels and per-track membership separately from frozen paper comparisons and adapter integrations.",
       "entries": [
+        {
+          "name": "InternW0-Δ",
+          "workId": "internw0-delta",
+          "note": "New physical submission:Score38.9/SR31.7%; separate from earlier simulation results."
+        },
         {
           "name": "OpenWAM-α",
           "workId": "openwam"
@@ -671,192 +686,121 @@
       "label": "XPolicyLab integrated adapter registry",
       "url": "https://github.com/XPolicyLab/XPolicyLab/tree/5d0be1499634d3176258c8f2e31f5fe816497b0a/policy",
       "kind": "adapter-registry",
-      "scope": "69 actual integrated policy adapters at commit 5d0be1499634d3176258c8f2e31f5fe816497b0a, reviewed October 21; demo_policy excluded. Integration/serving is not evidence of evaluated RoboDojo/RoboTwin performance.",
+      "scope": "73actual adapter directories excluding demo_policy at commitc43a74653bec480ebe82c84770664e8035bc56c9, fetched26October2026. Counts use the API tree, not README labels or scored-submission totals. Adapter, vendored model and checkpoint licensing retain separate scope.",
       "entries": [
-        {
-          "name": "Mem-0",
-          "workId": "rmbench",
-          "note": "Learned reference policy introduced by RMBench; one cross-listed benchmark/policy work, with separate retrained July checkpoints."
-        },
-        {
-          "name": "StarVLA",
-          "workId": "starvla",
-          "note": "Family / codebase label. α, OFT, GR00T and PI configurations have distinct recipes and scores; exact leaderboard head is not inferred where unspecified."
-        },
         {
           "name": "A1",
           "workId": "a1"
-        },
-        {
-          "name": "AHA-WAM",
-          "workId": "aha-wam"
-        },
-        {
-          "name": "ABot-M0",
-          "workId": "abot-m0"
-        },
-        {
-          "name": "Being-H05",
-          "workId": "being-h05"
-        },
-        {
-          "name": "DM0",
-          "workId": "dm0"
-        },
-        {
-          "name": "Dexora-1B",
-          "workId": "dexora"
-        },
-        {
-          "name": "DreamZero",
-          "workId": "dreamzero"
-        },
-        {
-          "name": "EventVLA",
-          "workId": "eventvla"
-        },
-        {
-          "name": "FastWAM",
-          "workId": "fast-wam"
-        },
-        {
-          "name": "G0",
-          "workId": "galaxea-g0"
-        },
-        {
-          "name": "G0.5",
-          "workId": "galaxea-g05"
-        },
-        {
-          "name": "GO-1",
-          "workId": "go1"
-        },
-        {
-          "name": "GR00T-N1.7",
-          "workId": "grootn17"
-        },
-        {
-          "name": "GigaWorld-Policy",
-          "workId": "gigaworld-policy"
-        },
-        {
-          "name": "H-RDT",
-          "workId": "h-rdt"
-        },
-        {
-          "name": "Hy-Embodied-0.5-VLA",
-          "workId": "hy-embodied05"
-        },
-        {
-          "name": "InternVLA-A1",
-          "workId": "internvla-a1"
-        },
-        {
-          "name": "InternVLA-A1.5",
-          "workId": "internvla-a15"
-        },
-        {
-          "name": "LDA-1B",
-          "workId": "lda1b"
-        },
-        {
-          "name": "LingBot-VA",
-          "workId": "lingbot-va"
-        },
-        {
-          "name": "LingBot-VLA",
-          "workId": "lingbot-vla"
-        },
-        {
-          "name": "Meituan-Robotics-0",
-          "workId": "starvla",
-          "note": "Evaluation-only StarVLA-family checkpoint (Qwen3.5-4B / MMDiT-Psi0); no distinct paper released in adapter. Mapping describes implementation lineage, not identical weights/scores."
-        },
-        {
-          "name": "MolmoAct2",
-          "workId": "molmoact2"
-        },
-        {
-          "name": "OLA-SEM",
-          "workId": "uniwam",
-          "note": "Official RoboTwin news (2026-10-10) renames OLA-Sem to UniWAM; this is an alias, not a second paper."
-        },
-        {
-          "name": "OpenDM",
-          "workId": "dm05"
-        },
-        {
-          "name": "OpenVLA-OFT",
-          "workId": "oft"
-        },
-        {
-          "name": "OpenWAM",
-          "workId": "openwam"
-        },
-        {
-          "name": "π0",
-          "workId": "pi0"
-        },
-        {
-          "name": "π0.5",
-          "workId": "pi05"
-        },
-        {
-          "name": "π0-Fast",
-          "workId": "pifast"
-        },
-        {
-          "name": "RDT-1B",
-          "workId": "rdt"
-        },
-        {
-          "name": "RISE",
-          "workId": "rise-opendrivelab",
-          "note": "OpenDriveLab self-improving policy2602.11075; distinct from the RGB-D RISE2404.12281 work."
-        },
-        {
-          "name": "SmolVLA",
-          "workId": "smolvla"
-        },
-        {
-          "name": "Spatial Forcing",
-          "workId": "spatial-forcing"
-        },
-        {
-          "name": "Spirit v1.5",
-          "workId": "spirit-v15"
-        },
-        {
-          "name": "TinyVLA",
-          "workId": "tinyvla"
-        },
-        {
-          "name": "X-VLA",
-          "workId": "xvla"
-        },
-        {
-          "name": "X-WAM",
-          "workId": "x-wam"
-        },
-        {
-          "name": "Xiaomi-Robotics-0",
-          "workId": "xiaomi0"
-        },
-        {
-          "name": "Xiaomi-Robotics-1 (XR-1)",
-          "workId": "xiaomi1"
         },
         {
           "name": "ACT",
           "workId": "act"
         },
         {
+          "name": "AHA_WAM",
+          "workId": "aha-wam"
+        },
+        {
+          "name": "Abot_M0",
+          "workId": "abot-m0"
+        },
+        {
+          "name": "Awomo05",
+          "workId": "awomo05",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "Being_H05",
+          "workId": "being-h05"
+        },
+        {
+          "name": "CloudRobo_WM",
+          "note": "New adapter integration only; unambiguous original work and independent primary technical report are not established. No scored leaderboard result or speculative new paper is created."
+        },
+        {
           "name": "DP",
           "workId": "dp"
         },
         {
-          "name": "Evo-1",
+          "name": "Dexbotic_DM0",
+          "workId": "dm0"
+        },
+        {
+          "name": "Dexora_1B",
+          "workId": "dexora"
+        },
+        {
+          "name": "Discrete_Forcing",
+          "workId": "discrete-forcing"
+        },
+        {
+          "name": "DreamZero",
+          "workId": "dreamzero"
+        },
+        {
+          "name": "EgoVLA",
+          "workId": "egovla"
+        },
+        {
+          "name": "EventVLA",
+          "workId": "eventvla"
+        },
+        {
+          "name": "Evo_1",
           "workId": "evo1"
+        },
+        {
+          "name": "FastWAM",
+          "workId": "fast-wam"
+        },
+        {
+          "name": "G05",
+          "workId": "galaxea-g05"
+        },
+        {
+          "name": "GO1",
+          "workId": "go1"
+        },
+        {
+          "name": "GO_3_Nano_preview",
+          "note": "Actual inference/SFT adapter references GE-Act2.0 only as a method reference; a distinct original GO-3Nano manuscript and independently scoped model identity are not established. Not a new paper or RoboDojo score."
+        },
+        {
+          "name": "GPT_6_Astra_Direct_EEF",
+          "workId": "roboprobe",
+          "note": "RoboProbe frozen API policy with Direct-EEF interface and local Cartesian planner."
+        },
+        {
+          "name": "GR00T_N17",
+          "workId": "grootn17"
+        },
+        {
+          "name": "GalaxeaVLA",
+          "workId": "galaxea-g0"
+        },
+        {
+          "name": "GigaWorldPolicy",
+          "workId": "gigaworld-policy"
+        },
+        {
+          "name": "HWM_CogWAM",
+          "workId": "cogwam"
+        },
+        {
+          "name": "H_RDT",
+          "workId": "h-rdt"
+        },
+        {
+          "name": "Hy_Embodied_05_VLA",
+          "workId": "hy-embodied05"
+        },
+        {
+          "name": "InternVLA_A1",
+          "workId": "internvla-a1"
+        },
+        {
+          "name": "InternVLA_A1_5",
+          "workId": "internvla-a15"
         },
         {
           "name": "InternW0_delta",
@@ -867,25 +811,115 @@
           "workId": "kinrt"
         },
         {
-          "name": "PatchWAM-Lite",
-          "workId": "patchwam",
-          "note": "Integrated Lite checkpoint/configuration; shares the PatchWAM paper identity, not necessarily the full model cost."
+          "name": "LDA_1B",
+          "workId": "lda1b"
         },
         {
-          "name": "Awomo-0.5",
-          "workId": "awomo05",
+          "name": "Liber_0_lite",
+          "workId": "liber0-lite",
           "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "Liber_0_preview",
+          "workId": "liber0-preview",
+          "note": "Separate Preview checkpoint and hierarchical context controller, sharing the Lite runtime."
+        },
+        {
+          "name": "LingBot_VA",
+          "workId": "lingbot-va"
+        },
+        {
+          "name": "LingBot_VLA",
+          "workId": "lingbot-vla"
+        },
+        {
+          "workId": "me-brain-1",
+          "name": "ME_Brain_1"
+        },
+        {
+          "name": "ME_Dex_1_0",
+          "workId": "me-dex-1",
+          "note": "Existing ME-Dex manuscript and official source; the released RoboTwin interface zeros observed tactile, separately from tactile replay supervision."
+        },
+        {
+          "name": "MM_ABC",
+          "workId": "mm-abc",
+          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
+        },
+        {
+          "name": "MachEmbodied-U0",
+          "workId": "me-u0"
+        },
+        {
+          "name": "Meituan_Robotics_0",
+          "workId": "starvla",
+          "note": "Evaluation-only StarVLA-family checkpoint (Qwen3.5-4B / MMDiT-Psi0); no distinct paper released in adapter. Mapping describes implementation lineage, not identical weights/scores."
+        },
+        {
+          "name": "Mem_0",
+          "workId": "rmbench",
+          "note": "Learned reference policy introduced by RMBench; one cross-listed benchmark/policy work, with separate retrained July checkpoints."
         },
         {
           "name": "MoPA",
           "workId": "mopa"
         },
         {
-          "name": "PhysicalRSI",
-          "workId": "physicalrsi"
+          "name": "MolmoAct2",
+          "workId": "molmoact2"
         },
         {
-          "name": "Simate-beta",
+          "name": "OpenDM",
+          "workId": "dm05"
+        },
+        {
+          "name": "OpenVLA_OFT",
+          "workId": "oft"
+        },
+        {
+          "name": "OpenWAM",
+          "workId": "openwam"
+        },
+        {
+          "name": "PatchWAM",
+          "workId": "patchwam"
+        },
+        {
+          "name": "Phoenix_MWA",
+          "note": "Actual RoboTwin runtime/training adapter points to Phoenix-MWA. Candidate original project is retained outside the catalog while resource fidelity is unresolved: HF NOTICE says distributed policy tensors are unchanged from upstream Wan; file presence does not establish trained Phoenix weights."
+        },
+        {
+          "name": "Pi_0",
+          "workId": "pi0"
+        },
+        {
+          "name": "Pi_05",
+          "workId": "pi05"
+        },
+        {
+          "name": "Pi_0_Fast",
+          "workId": "pifast"
+        },
+        {
+          "workId": "prismwam",
+          "name": "PrismWAM"
+        },
+        {
+          "name": "RDT_1B",
+          "workId": "rdt"
+        },
+        {
+          "name": "RISE",
+          "workId": "rise-opendrivelab",
+          "note": "OpenDriveLab self-improving policy2602.11075; distinct from the RGB-D RISE2404.12281 work."
+        },
+        {
+          "name": "Rex_M1_preview",
+          "workId": "rex-m1-preview",
+          "note": "Independent long-context derivative checkpoint and released inference interface."
+        },
+        {
+          "name": "Simate_beta",
           "workId": "simate-beta",
           "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
         },
@@ -894,13 +928,34 @@
           "workId": "simplememvla"
         },
         {
-          "name": "WorldScape Policy 2.0",
-          "workId": "worldscape-policy2"
+          "name": "SmolVLA",
+          "workId": "smolvla"
         },
         {
-          "name": "GPT-6-Astra-Direct-EEF",
-          "workId": "roboprobe",
-          "note": "RoboProbe frozen API policy with Direct-EEF interface and local Cartesian planner."
+          "name": "Spark_0",
+          "workId": "spark-0",
+          "note": "Existing canonical Spark-0; standalone source is MIT, adapter and vendored components retain their own licenses."
+        },
+        {
+          "name": "Spatial_Forcing",
+          "workId": "spatial-forcing"
+        },
+        {
+          "name": "Spirit_v15",
+          "workId": "spirit-v15"
+        },
+        {
+          "name": "StarVLA",
+          "workId": "starvla",
+          "note": "Family / codebase label. α, OFT, GR00T and PI configurations have distinct recipes and scores; exact leaderboard head is not inferred where unspecified."
+        },
+        {
+          "name": "TinyVLA",
+          "workId": "tinyvla"
+        },
+        {
+          "name": "UniWAM",
+          "workId": "uniwam"
         },
         {
           "name": "VPP2",
@@ -908,63 +963,37 @@
           "note": "Final-name leaderboard asset; do not merge its score with VPP2-Preview."
         },
         {
-          "name": "Liber_0_lite",
-          "workId": "liber0-lite",
-          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
-        },
-        {
-          "name": "Discrete Forcing",
-          "workId": "discrete-forcing"
-        },
-        {
-          "name": "EgoVLA",
-          "workId": "egovla"
-        },
-        {
-          "name": "MM-ABC",
-          "workId": "mm-abc",
-          "note": "Identifiable official project / author-contributed model release; manuscript or original architecture figure not provided. Training and release limitations are preserved in the policy record."
-        },
-        {
-          "name": "HWM-CogWAM",
-          "workId": "cogwam"
-        },
-        {
-          "name": "ME-Brain-1.0",
-          "workId": "me-brain-1"
-        },
-        {
-          "name": "ME-U0",
-          "workId": "me-u0"
-        },
-        {
-          "name": "Liber-0 Preview",
-          "workId": "liber0-preview",
-          "note": "Separate Preview checkpoint and hierarchical context controller, sharing the Lite runtime."
-        },
-        {
-          "name": "ME-Dex 1.0",
-          "workId": "me-dex-1",
-          "note": "Existing ME-Dex manuscript and official source; the released RoboTwin interface zeros observed tactile, separately from tactile replay supervision."
-        },
-        {
-          "name": "Rex-M1 Preview",
-          "workId": "rex-m1-preview",
-          "note": "Independent long-context derivative checkpoint and released inference interface."
-        },
-        {
-          "name": "Spark-0",
-          "workId": "spark-0",
-          "note": "Existing canonical Spark-0; standalone source is MIT, adapter and vendored components retain their own licenses."
-        },
-        {
           "name": "ViGAR",
           "workId": "vigar",
           "note": "Existing canonical ViGAR; adapter directly cites the same paper and author repository."
         },
         {
-          "name": "CloudRobo_WM",
-          "note": "New adapter integration only; unambiguous original work and independent primary technical report are not established. No scored leaderboard result or speculative new paper is created."
+          "name": "WorldLA",
+          "note": "Actual integrated adapter verified; original-system paper identity and its independent release scope remain unresolved. Not evidence of an official scored RoboDojo submission."
+        },
+        {
+          "workId": "worldscape-policy2",
+          "name": "WorldScape_Policy_2"
+        },
+        {
+          "name": "X_VLA",
+          "workId": "xvla"
+        },
+        {
+          "name": "X_WAM",
+          "workId": "x-wam"
+        },
+        {
+          "name": "Xiaomi_Robotics_0",
+          "workId": "xiaomi0"
+        },
+        {
+          "name": "Xiaomi_Robotics_1",
+          "workId": "xiaomi1"
+        },
+        {
+          "name": "physicalRSI",
+          "workId": "physicalrsi"
         }
       ]
     },
@@ -1198,42 +1227,47 @@
       "label": "RoboDojo official Agent / Agent+VLA / Agent+WAM track",
       "url": "https://robodojo-benchmark.com/leaderboard",
       "kind": "leaderboard",
-      "scope": "October 20 JSON and official app system-type map;7 submission aliases map to 5 canonical robot systems. Three base-LLM rows share the RoboProbe Direct-EEF adapter. Agent labels do not imply measured depth, neural-weight updates or complete source release.",
+      "scope": "October24official JSON and current app index-RYa85brG.js system-type map:8submission aliases→6canonical robot systems. Three base-model rows share RoboProbe Direct-EEF. All current Agent entries reviewed against their original paper/project and actual release inventories; official type, input modality and adaptation mechanisms remain distinct.",
       "entries": [
         {
           "name": "EmbodiedEvo",
           "workId": "embodiedevo",
-          "note": "Official system type agent; Score 45.08, success 38.95%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent;Score45.08/SR38.95%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         },
         {
           "name": "PhysicalRSI",
           "workId": "physicalrsi",
-          "note": "Official system type agent-vla; Score 36.27, success 31.38%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent-vla;Score36.27/SR31.38%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         },
         {
           "name": "GPT-6-Astra",
           "workId": "roboprobe",
-          "note": "Official system type agent; Score 28.97, success 22.48%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent;Score28.97/SR22.48%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         },
         {
           "name": "DeepSeek-Flash",
           "workId": "roboprobe",
-          "note": "Official system type agent; Score 2.99, success 1.92%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent;Score2.99/SR1.92%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         },
         {
           "name": "GPT-5.5",
           "workId": "roboprobe",
-          "note": "Official system type agent; Score 1.13, success 0.88%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent;Score1.13/SR0.88%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         },
         {
           "name": "WorldScape-R²SI",
           "workId": "worldscape-r2si",
-          "note": "Official system type agent-wam; Score 46.58, success 39.35%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent-wam;Score46.58/SR39.35%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         },
         {
           "name": "HexaShell-Preview",
           "workId": "hexashell",
-          "note": "Official system type agent; Score 53.18, success 46.85%. Observation/adaptation/release mechanism is reviewed from the original robot system, not inferred from this type label."
+          "note": "Official system typeagent;Score53.18/SR46.85%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
+        },
+        {
+          "name": "PyRUA-Lean",
+          "workId": "pyrualean",
+          "note": "Official system typeagent;Score55.26/SR50.35%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
         }
       ]
     }

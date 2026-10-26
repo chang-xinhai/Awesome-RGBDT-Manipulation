@@ -29,15 +29,15 @@ A coding agent develops executable robot-control programs and reusable Skills an
 | Training duration | Up to 100 accepted code executions per task in the reported Playground protocol; wall-clock time is not reported as neural training time. [1](https://arxiv.org/abs/2610.18867)  |
 | Training hardware | Not reported [1](https://arxiv.org/abs/2610.18867)  |
 | Inference and control rates | Not reported [1](https://arxiv.org/abs/2610.18867)  |
-| Evaluation scope | RoboDojo: 42 tasks, 210 development scenes and a 2,100-scene full test set; task and controller variants have separately reported protocols. [1](https://arxiv.org/abs/2610.18867)  |
+| Evaluation scope | RoboDojo: 42 tasks, 210 development scenes and a 2,100-scene full test set; task and controller variants have separately reported protocols. Current official October 24 snapshot: EmbodiedEvo:Score 45.08, success 38.95%. These live-board results remain separate from the manuscript/development protocols. [1](https://arxiv.org/abs/2610.18867) [3](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Bimanual · Parallel-jaw gripper |
-| Release: code | Available |
-| Release: weights | Not applicable |
-| Release: data | Partial |
-| Release: license | Repository-wide license not verified; bundled skill recipes have separate terms. |
-| Release: notes | Public control framework and recipes; evaluation archives and hosted-model access are separate from code availability. |
+| Release: code | Available — unlicensed source preview [4](https://github.com/Einsia/EmbodiedEvo)  |
+| Release: weights | Not applicable [4](https://github.com/Einsia/EmbodiedEvo)  |
+| Release: data | Partial [4](https://github.com/Einsia/EmbodiedEvo)  |
+| Release: license | Original repository license pending: current README explicitly calls this a release preparation without a selected project license. Included RoboProbe recipes retain separate Apache-2.0 grants; no blanket redistribution/commercial-use license is established. [4](https://github.com/Einsia/EmbodiedEvo)  |
+| Release: notes | Actual control/runtime and recipes are public, but the author explicitly states this is not yet a licensed public release. Hosted-model access and evaluation archives remain separate resources. [4](https://github.com/Einsia/EmbodiedEvo)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ A coding agent develops executable robot-control programs and reusable Skills an
 
 1. [Primary paper, full text](https://arxiv.org/abs/2610.18867) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
 2. [Author-linked repository](https://github.com/Einsia/EmbodiedEvo) — Repository identity; code and checkpoint release status are stated separately.
+3. [Fresh official scored submission —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system.
+4. [Actual README license scope,26October2026](https://github.com/Einsia/EmbodiedEvo) — No root LICENSE in current tree; author explicitly describes release preparation with project license unselected. Bundled third-party Apache permissions remain separate.
