@@ -77334,7 +77334,7 @@
     "links": {
       "paper": "https://arxiv.org/abs/2610.28109",
       "project": "https://fitmac-research.pages.dev/",
-      "code": "https://anonymous.4open.science/r/research-artifact-B431"
+      "code": "https://anonymous.4open.science/r/research-artifact-B431/README.md"
     },
     "release": {
       "code": "Available — anonymous research artifact",
@@ -77375,6 +77375,15 @@
           "release"
         ],
         "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://anonymous.4open.science/r/research-artifact-B431",
+        "label": "Official anonymous artifact: landing access limitation and readable source entry",
+        "fields": [
+          "links.code",
+          "release"
+        ],
+        "note": "Canonical repository landing currently redirects to an API root returning401. Its official README.md and substantive evaluation/grounding source-file APIs return200. Code link uses that readable entry; anonymous artifact licensing remains Not verified."
       }
     ],
     "caveats": [

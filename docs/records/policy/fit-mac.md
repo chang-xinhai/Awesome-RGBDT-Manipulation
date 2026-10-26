@@ -8,7 +8,7 @@ FIT-MAC: A Closed-Loop Multi-Agent Framework for Robust Vision-Language-Action M
 
 **2026-10-20 · Preprint · Lanzhou University**
 
-**[Paper](https://arxiv.org/abs/2610.28109)** · [Project](https://fitmac-research.pages.dev/) · [Code](https://anonymous.4open.science/r/research-artifact-B431)
+**[Paper](https://arxiv.org/abs/2610.28109)** · [Project](https://fitmac-research.pages.dev/) · [Code](https://anonymous.4open.science/r/research-artifact-B431/README.md)
 
 Planner, Grounder, Verifier and Correction modules route target-binding and execution errors to bounded recovery around a pretrained VLA.
 
@@ -33,11 +33,11 @@ Planner, Grounder, Verifier and Correction modules route target-binding and exec
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available — anonymous research artifact [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431)  |
-| Release: weights | Not verified [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431)  |
-| Release: data | Not verified [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431)  |
-| Release: license | Not verified [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431)  |
-| Release: notes | Anonymous artifact contains substantive fit_mac modules, grounding server and evaluation runtime. Original-code licensing is not verified; no method checkpoint release is established. [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431)  |
+| Release: code | Available — anonymous research artifact [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431) [4](https://anonymous.4open.science/r/research-artifact-B431)  |
+| Release: weights | Not verified [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431) [4](https://anonymous.4open.science/r/research-artifact-B431)  |
+| Release: data | Not verified [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431) [4](https://anonymous.4open.science/r/research-artifact-B431)  |
+| Release: license | Not verified [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431) [4](https://anonymous.4open.science/r/research-artifact-B431)  |
+| Release: notes | Anonymous artifact contains substantive fit_mac modules, grounding server and evaluation runtime. Original-code licensing is not verified; no method checkpoint release is established. [2](https://fitmac-research.pages.dev/) [3](https://anonymous.4open.science/r/research-artifact-B431) [4](https://anonymous.4open.science/r/research-artifact-B431)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,4 @@ Planner, Grounder, Verifier and Correction modules route target-binding and exec
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2610.28109) — Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes.
 2. [Official project source and actual artifact inventory](https://fitmac-research.pages.dev/) — Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results.
 3. [Official code source and actual artifact inventory](https://anonymous.4open.science/r/research-artifact-B431) — Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results.
+4. [Official anonymous artifact: landing access limitation and readable source entry](https://anonymous.4open.science/r/research-artifact-B431) — Canonical repository landing currently redirects to an API root returning401. Its official README.md and substantive evaluation/grounding source-file APIs return200. Code link uses that readable entry; anonymous artifact licensing remains Not verified.
