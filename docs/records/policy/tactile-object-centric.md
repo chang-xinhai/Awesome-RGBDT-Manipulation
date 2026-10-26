@@ -19,7 +19,7 @@ Active tactile exploration infers object properties as semantic context for subs
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
-| Policy family | Diffusion [1](https://arxiv.org/abs/2609.33235)  |
+| Policy family | Transformer [1](https://arxiv.org/abs/2609.33235)  |
 | Base model and architecture | Tactile/force/velocity encoder with top-K token selection and language-aligned object context; ACT downstream policy. [1](https://arxiv.org/abs/2609.33235)  |
 | Model size and component | Not reported [1](https://arxiv.org/abs/2609.33235)  |
 | Deployment inputs | Exploration vibrotactile contact-microphone signals, forces and end-effector velocity; downstream vision and optional live vibrotactile feedback. [1](https://arxiv.org/abs/2609.33235)  |

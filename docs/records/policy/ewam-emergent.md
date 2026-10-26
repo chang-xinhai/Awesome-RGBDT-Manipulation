@@ -6,7 +6,7 @@
 
 EWAM: Emergent Depth-Wise Specialization in a Unified Embodied Model -- From Semantic Understanding through Visual Foresight to Action
 
-**2026-09-30 · Preprint · Yinwang Intelligent Technology Co. Ltd.**
+**2026-09-30 · Preprint · Sun Yat-sen University**
 
 **[Paper](https://arxiv.org/abs/2609.39973)** · [Project](https://wanghao00pro.github.io/EWAM-project/) · [Code](https://github.com/Wanghao00pro/EWAM) · [Weights](https://huggingface.co/HaoWang00/EWAM)
 
@@ -45,6 +45,7 @@ An asymmetric joint transformer lets action tokens combine semantics, current/fu
 - Distinct from the June 2026 Enhanced World Action Model with the same acronym.
 - Robot-trajectory and human-egocentric pretraining are separate regimes; do not merge their transfer results.
 - The newly listed official RoboDojo EWAM alias is not linked to this paper without an unambiguous author/benchmark cross-reference.
+- The report frontmatter is corporately attributed to Yinwang Intelligent Technology Co. Ltd.; this catalog institution follows first contributor Hao Wang’s numbered affiliation1, Sun Yat-sen University.
 
 **Primary evidence**
 
@@ -52,3 +53,4 @@ An asymmetric joint transformer lets action tokens combine semantics, current/fu
 2. [Official author project](https://wanghao00pro.github.io/EWAM-project/) — Author/institution and actual figure provenance.
 3. [Actual source tree and LICENSE](https://github.com/Wanghao00pro/EWAM) — Substantive implementation verified; code license is not automatically a model-weight license.
 4. [Actual checkpoint inventory, card and binary sample](https://huggingface.co/HaoWang00/EWAM) — Method checkpoint files verified through inventory and HTTP206 binary sample; upstream components and own license scopes stay separate.
+5. [Authors section: first numbered affiliation and corporate attribution](https://arxiv.org/html/2609.39973v1) — Main frontmatter attributes the report to Yinwang Intelligent Technology Co. Ltd. The Authors section identifies first contributor Hao Wang (1,2):1Sun Yat-sen University;2Beijing Zhongguancun Academy;9Yinwang. Institution follows the first numbered affiliation, not corporate frontmatter.

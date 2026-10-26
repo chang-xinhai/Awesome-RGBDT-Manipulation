@@ -78707,7 +78707,7 @@
     ],
     "verified": "2026-10-26",
     "policy": {
-      "family": "Diffusion",
+      "family": "Transformer",
       "baseModel": "Tactile/force/velocity encoder with top-K token selection and language-aligned object context; ACT downstream policy.",
       "modelSize": "Not reported",
       "inputs": "Exploration vibrotactile contact-microphone signals, forces and end-effector velocity; downstream vision and optional live vibrotactile feedback.",
@@ -79347,7 +79347,7 @@
     ],
     "resourceType": "policy",
     "summary": "An asymmetric joint transformer lets action tokens combine semantics, current/future visual features and prior action information across network layers.",
-    "institution": "Yinwang Intelligent Technology Co. Ltd.",
+    "institution": "Sun Yat-sen University",
     "venue": "Preprint",
     "modalities": [
       "RGB",
@@ -79417,13 +79417,23 @@
           "links"
         ],
         "note": "Method checkpoint files verified through inventory and HTTP206 binary sample; upstream components and own license scopes stay separate."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.39973v1",
+        "label": "Authors section: first numbered affiliation and corporate attribution",
+        "fields": [
+          "institution",
+          "caveats"
+        ],
+        "note": "Main frontmatter attributes the report to Yinwang Intelligent Technology Co. Ltd. The Authors section identifies first contributor Hao Wang (1,2):1Sun Yat-sen University;2Beijing Zhongguancun Academy;9Yinwang. Institution follows the first numbered affiliation, not corporate frontmatter."
       }
     ],
     "caveats": [
       "Depth-wise refers to transformer-layer specialization, not a measured depth-policy stream.",
       "Distinct from the June 2026 Enhanced World Action Model with the same acronym.",
       "Robot-trajectory and human-egocentric pretraining are separate regimes; do not merge their transfer results.",
-      "The newly listed official RoboDojo EWAM alias is not linked to this paper without an unambiguous author/benchmark cross-reference."
+      "The newly listed official RoboDojo EWAM alias is not linked to this paper without an unambiguous author/benchmark cross-reference.",
+      "The report frontmatter is corporately attributed to Yinwang Intelligent Technology Co. Ltd.; this catalog institution follows first contributor Hao Wang’s numbered affiliation1, Sun Yat-sen University."
     ],
     "verified": "2026-10-26",
     "policy": {
