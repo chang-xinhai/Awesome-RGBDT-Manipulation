@@ -16,6 +16,8 @@ A vision-language subtask planner with visual and semantic memory and joint vide
 
 *Horizon Robotics · [Figure source](https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo) · Original rights retained.*
 
+**Preview scope:** Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |

@@ -16,6 +16,8 @@ Robot agent submitted to the official RoboDojo simulation leaderboard. Architect
 
 *RoboDojo benchmark team · [Figure source](https://robodojo-benchmark.com/) · Original rights retained.*
 
+**Preview scope:** Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.
+
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
