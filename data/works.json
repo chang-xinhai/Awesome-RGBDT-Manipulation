@@ -14775,7 +14775,7 @@
       "dataCollection": "Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation.",
       "data": "Demonstration data downloadable by task; exact current total count varies by release.",
       "protocol": "Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation.",
-      "baselines": "Frozen paper: 30 simulation and 10 physical baselines. Current official October 24 snapshot: 62 simulation submissions, including8 Agent aliases mapping to 6canonical robot systems; 12 physical submissions. PyRUA-Lean is newly listed; GPT-6-Astra, GPT-5.5 and DeepSeek-Flash share RoboProbe Direct-EEF. XPolicyLab currently has73actual adapter directories excluding demo_policy at commit c43a74653bec480ebe82c84770664e8035bc56c9. Integrations do not establish scored submissions."
+      "baselines": "Frozen paper: 30 simulation and 10 physical baselines. Official 30 October 2026 generated snapshot: 66 simulation and 13 physical submission rows, including 10 Agent / Agent+WAM / Agent+VLA aliases mapping to 8 canonical systems; the three GPT/DeepSeek rows share RoboProbe. GO-3 Nano Preview and Q0-Preview are new Agent-track entries. Adapter integrations do not establish scored submissions."
     },
     "release": {
       "code": "Available",
@@ -14861,6 +14861,14 @@
           "benchmark.baselines"
         ],
         "note": "Actual API directory listing:73adapter directories excluding demo_policy, not README inferred totals."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official leaderboard snapshot — 30 October 2026",
+        "fields": [
+          "benchmark.baselines"
+        ],
+        "note": "66 sim / 13 real rows; current application type map identifies Q0-Preview and GO-3 Nano Preview as Agent-track systems."
       }
     ],
     "caveats": [
@@ -14877,7 +14885,7 @@
         "pdfPage": 6
       }
     ],
-    "verified": "2026-10-26",
+    "verified": "2026-10-30",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
@@ -79574,5 +79582,386 @@
         "note": "Figure2: action-aligned tactile endpoint/change selection and agent context assembly."
       }
     ]
+  },
+  {
+    "id": "q0-preview",
+    "name": "Q0-Preview",
+    "title": "Q0-Preview",
+    "date": "2026-10-30",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "Robot agent submitted to the official RoboDojo simulation leaderboard. Architecture and release details have not been independently disclosed.",
+    "institution": "Qoo Tech",
+    "venue": "Leaderboard / preview",
+    "modalities": [],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "project": "https://robodojo-benchmark.com/leaderboard?bench=sim"
+    },
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Not verified",
+      "outputs": "Not verified",
+      "trainingMethod": "Not verified",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Official RoboDojo simulation snapshot 30 October 2026: score 73.33; success 68.00%."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "A scored leaderboard row does not establish a public implementation or checkpoint."
+    },
+    "evidence": [
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official RoboDojo simulation results",
+        "fields": [
+          "title",
+          "institution",
+          "policy.evaluation"
+        ],
+        "note": "Snapshot updated 2026-10-30; system type Agent is specified by the leaderboard app."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/",
+        "label": "Official leaderboard announcement",
+        "fields": [
+          "date"
+        ],
+        "note": "October 30 dates its leaderboard announcement, not a technical paper."
+      }
+    ],
+    "caveats": [
+      "No author method report or deployment inputs verified; leaderboard type does not establish measured depth, weight updates or a public release.",
+      "The date records the official leaderboard announcement, not a paper submission."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "go3-nano-preview",
+    "name": "GO-3 Nano Preview",
+    "title": "GO-3 Nano Preview",
+    "date": "2026-10-27",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Preview system entered on RoboDojo’s agent-and-world-action-model simulation track.",
+    "institution": "AGIBOT",
+    "venue": "Leaderboard / preview",
+    "modalities": [],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "project": "https://robodojo-benchmark.com/leaderboard?bench=sim"
+    },
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Not verified",
+      "outputs": "Not verified",
+      "trainingMethod": "Not verified",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Official RoboDojo simulation snapshot 30 October 2026: score 61.90; success 56.42%."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "A scored leaderboard row does not establish a public implementation or checkpoint."
+    },
+    "evidence": [
+      {
+        "url": "https://robodojo-benchmark.com/",
+        "label": "Official RoboDojo announcement",
+        "fields": [
+          "date",
+          "title",
+          "institution"
+        ],
+        "note": "Oct 27 announcement dates the public leaderboard entry, not a technical paper."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official RoboDojo simulation results",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "The official app labels this entry Agent + WAM."
+      }
+    ],
+    "caveats": [
+      "This is the Nano Preview submission, not a score for GO-3 Preview.",
+      "Detailed architecture, training and accessible artifacts have not been verified; do not infer deployment inputs from a benchmark track."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "hwm-0-preview",
+    "name": "HWM-0 Preview",
+    "title": "HWM-0 Preview",
+    "date": "",
+    "year": 0,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A vision-language subtask planner with visual and semantic memory and joint video/action flow matching for dual-arm manipulation.",
+    "institution": "Horizon Robotics",
+    "venue": "Leaderboard / preview",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "project": "https://robodojo-benchmark.com/leaderboard?bench=sim",
+      "weights": "https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo"
+    },
+    "policy": {
+      "family": "World-action model",
+      "baseModel": "VLM planner with video and action flow-matching components",
+      "modelSize": "17,162,844,810 stored tensor elements; 60,000-step EMA checkpoint",
+      "inputs": "Head and two wrist RGB views, state and task instruction.",
+      "outputs": "48 absolute joint-position targets; model card reports 30 execution steps per replan.",
+      "trainingMethod": "Not reported",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Official RoboDojo simulation 30 October snapshot: score 32.81; success 27.17%."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Available — RoboDojo inference checkpoint and assets",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Model card lists 34,326,694,240-byte model.pt; a byte-range request returned HTTP 206. Card references XPolicyLab HWM_0_preview adapter, but this directory returned 404 in the current default branch. No root LICENSE was found in the model inventory."
+    },
+    "evidence": [
+      {
+        "url": "https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo",
+        "label": "Official model card and inference assets",
+        "fields": [
+          "title",
+          "summary",
+          "modalities",
+          "policy",
+          "links",
+          "release"
+        ],
+        "note": "Model inventory and first 100 checkpoint bytes verified; actual runtime integration was not established."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official simulation results",
+        "fields": [
+          "policy.evaluation"
+        ],
+        "note": "The leaderboard app labels this system VLA + VLM, separate from Agent track."
+      }
+    ],
+    "caveats": [
+      "Checkpoint tensor count is not a verified trainable-parameter count.",
+      "Do not infer an implementation license from model-card tags; the linked integration was not available at the expected main-branch path."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "zap",
+    "name": "ZAP",
+    "title": "Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent",
+    "date": "2026-10-26",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "A simulation-trained tool-calling VLM agent uses measured depth and perception queries to issue robot poses, transferring from simulation to real YAM arms.",
+    "institution": "Luma AI",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.35817"
+    },
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Qwen 3.6 27B plus SAM 3.1 for queried object masks",
+      "modelSize": "27B VLM",
+      "inputs": "Camera images and calibrated depth, object 3D readouts, robot pose and controller feedback.",
+      "outputs": "Tool calls for end-effector poses, gripper, perception query, task list and episode completion.",
+      "trainingMethod": "Supervised fine-tuning on mined successful simulated rollouts followed by GRPO; policy weights are updated before deployment.",
+      "trainingData": "40 simulated pick/place, stacking and reorientation tasks; no real robot training data.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Real bimanual YAM: 10 tasks × 3 trials, 96.7% success; single-arm Franka RoboLab-120: 55.9% in simulation."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper is public; no author-linked implementation or checkpoint identified in the inspected paper."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.35817v1",
+        "label": "Original full paper",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "release"
+        ],
+        "note": "Sections 3–4 specify calibrated depth, simulation training and three real trials per task; paper links do not establish public implementation."
+      }
+    ],
+    "caveats": [
+      "Real-robot comparison uses only three trials per task.",
+      "Franka RoboLab-120 evaluation is simulation, separate from the real YAM evaluation.",
+      "Real-time SAM masks and depth geometry are components of the evaluation harness, not proof of depth-free deployment."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "dexsafe",
+    "name": "DexSafe",
+    "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+    "date": "2026-10-27",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "visual-precision-rl"
+    ],
+    "resourceType": "policy",
+    "summary": "A simulated RL policy and learned residual safety filter perform in-hand object pose reaching with a motion-capture state or wrist-depth perception.",
+    "institution": "University of California, Berkeley",
+    "venue": "Preprint",
+    "modalities": [
+      "Depth",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.37652",
+      "project": "https://ian-chuang.github.io/dexsafe/"
+    },
+    "policy": {
+      "family": "Reinforcement learning",
+      "baseModel": "State policy and depth-distilled policy with optional learned residual safety filter.",
+      "modelSize": "Not reported",
+      "inputs": "Joint proprioception and goal; either motion-capture object pose or wrist-mounted depth images in separate real-world conditions.",
+      "outputs": "LEAP hand joint commands, optionally corrected by the residual safety filter.",
+      "trainingMethod": "PPO in simulation with staged state and depth distillation, adaptive friction curriculum and a separately learned residual safety filter.",
+      "trainingData": "Generated grasp dataset and simulation; no human demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Real state-based motion-capture condition: 4,800 goals across four objects, 95.2% reaching success; with filter 91.5% success and 75% fewer drops. Wrist-depth evaluations are separate."
+    },
+    "release": {
+      "code": "Forthcoming",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Official project says code coming soon; public paper and videos do not establish released training source or weights."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.37652v1",
+        "label": "Original paper, methods and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy"
+        ],
+        "note": "Depth vs motion-capture conditions and filter results are reported separately in Sections IV–VI."
+      },
+      {
+        "url": "https://ian-chuang.github.io/dexsafe/",
+        "label": "Official project and release status",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Project labels code coming soon."
+      }
+    ],
+    "caveats": [
+      "The reported 95.2% and 75% fewer drops are state-based motion-capture measurements, not a claim for wrist-depth inference.",
+      "Object pose reaching and object-drop avoidance are distinct metrics."
+    ],
+    "verified": "2026-10-30"
   }
 ]

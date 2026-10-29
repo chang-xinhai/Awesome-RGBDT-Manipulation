@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-26",
+  "reviewed": "2026-10-30",
   "sources": [
     {
       "id": "robotwin2-paper",
@@ -1227,7 +1227,7 @@
       "label": "RoboDojo official Agent / Agent+VLA / Agent+WAM track",
       "url": "https://robodojo-benchmark.com/leaderboard",
       "kind": "leaderboard",
-      "scope": "October24official JSON and current app index-RYa85brG.js system-type map:8submission aliases→6canonical robot systems. Three base-model rows share RoboProbe Direct-EEF. All current Agent entries reviewed against their original paper/project and actual release inventories; official type, input modality and adaptation mechanisms remain distinct.",
+      "scope": "Official JSON updated 30 October 2026 and application system-type map: 10 Agent-track rows mapping to 8 canonical systems. Three model rows share RoboProbe. GO-3 Nano and Q0 are board-only preview records with undisclosed implementation details.",
       "entries": [
         {
           "name": "EmbodiedEvo",
@@ -1268,6 +1268,16 @@
           "name": "PyRUA-Lean",
           "workId": "pyrualean",
           "note": "Official system typeagent;Score55.26/SR50.35%. Original system inputs, adaptation mechanism and actual artifacts are audited separately; this type label alone does not imply depth observations or weight updates."
+        },
+        {
+          "name": "GO-3 Nano Preview",
+          "workId": "go3-nano-preview",
+          "note": "Official Agent + WAM row, score 61.90, success 56.42%; method details and release are not verified."
+        },
+        {
+          "name": "Q0-Preview",
+          "workId": "q0-preview",
+          "note": "Official Agent row, score 73.33, success 68%; method details and release are not verified."
         }
       ]
     }

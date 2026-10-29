@@ -1,6 +1,6 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-10-26. 747 unique records; 54 benchmark records; 624 policy records; 59 models; 9 surveys; 14 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-10-30. 752 unique records; 54 benchmark records; 629 policy records; 59 models; 9 surveys; 14 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
@@ -12,12 +12,12 @@ Review cutoff: 2026-10-26. 747 unique records; 54 benchmark records; 624 policy 
 - Supporting Tools and Data: 14 records with this classification.
 - Visuo-Tactile Policy Learning: 81 records with this classification.
 - Tactile VLA and World-Action Models: 112 records with this classification.
-- RGB-D and 3D Policies: 176 records with this classification.
+- RGB-D and 3D Policies: 178 records with this classification.
 - Tactile Representations and Pretraining: 45 records with this classification.
 - Geometry and Predictive Models: 26 records with this classification.
-- Visual Precision and Reinforcement Learning: 47 records with this classification.
-- Agent / RSI / ICL: 271 records with this classification.
-- Generalist Policy Foundations: 150 records with this classification.
+- Visual Precision and Reinforcement Learning: 48 records with this classification.
+- Agent / RSI / ICL: 274 records with this classification.
+- Generalist Policy Foundations: 152 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -37,7 +37,7 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [Evo-DexBench evaluated policies and No-Touch ablation](https://arxiv.org/abs/2610.21180) | paper-baselines | 6 / 6 |
 | [ForceBench simulation comparison](https://arxiv.org/abs/2610.19604) | paper-baselines | 9 / 10 |
 | [SparkArena simulation / hardware paper baselines](https://arxiv.org/abs/2610.22342) | paper-baselines | 11 / 13 |
-| [RoboDojo official Agent / Agent+VLA / Agent+WAM track](https://robodojo-benchmark.com/leaderboard) | leaderboard | 8 / 8 |
+| [RoboDojo official Agent / Agent+VLA / Agent+WAM track](https://robodojo-benchmark.com/leaderboard) | leaderboard | 10 / 10 |
 
 ## Survey citation trails
 

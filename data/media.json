@@ -11215,5 +11215,80 @@
       "sourceSha256": "0d96083d85c3c50932c80d35c2a3be070996b6536c10c1d76b1ff8e9747c491b",
       "note": "Official manuscript figure, optimized without changing scientific content. Figure2: action-aligned tactile endpoint/change selection and agent context assembly."
     }
+  },
+  "q0-preview": {
+    "policy": {
+      "path": "/images/catalog/q0-preview-source.webp",
+      "original": "https://robodojo-benchmark.com/",
+      "page": "https://robodojo-benchmark.com/",
+      "credit": "RoboDojo benchmark team",
+      "alt": "Official leaderboard announcement for Q0-Preview.",
+      "kind": "source-preview",
+      "reviewed": "2026-10-30",
+      "width": 1008,
+      "height": 62,
+      "note": "Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.",
+      "sourceSha256": "7454700b99bbe80ad5a68b3fac8e7283c846355147d49c443616d397500a7fb0"
+    }
+  },
+  "go3-nano-preview": {
+    "policy": {
+      "path": "/images/catalog/go3-nano-preview-source.webp",
+      "original": "https://robodojo-benchmark.com/",
+      "page": "https://robodojo-benchmark.com/",
+      "credit": "RoboDojo benchmark team",
+      "alt": "Official leaderboard announcement for GO-3 Nano Preview.",
+      "kind": "source-preview",
+      "reviewed": "2026-10-30",
+      "width": 1008,
+      "height": 40,
+      "note": "Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.",
+      "sourceSha256": "6b25deb17a3e5dc5ba2550cc300891082b444697a633e64f2527496542468fbb"
+    }
+  },
+  "hwm-0-preview": {
+    "policy": {
+      "path": "/images/catalog/hwm-0-preview-source.webp",
+      "original": "https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo",
+      "page": "https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo",
+      "credit": "Horizon Robotics",
+      "alt": "Official model card preview, including checkpoint and architecture description.",
+      "kind": "source-preview",
+      "reviewed": "2026-10-30",
+      "width": 1440,
+      "height": 1000,
+      "note": "Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.",
+      "sourceSha256": "462c2b5803cc388c58183743755f9948e827caa339c1d69ed2b2eaa29dac780b"
+    }
+  },
+  "zap": {
+    "policy": {
+      "path": "/images/catalog/zap-source.webp",
+      "original": "https://arxiv.org/html/2610.35817v1/figures/interface/yam_real.jpg",
+      "page": "https://arxiv.org/html/2610.35817v1/figures/interface/yam_real.jpg",
+      "credit": "ZAP authors",
+      "alt": "Real YAM camera image from Figure 2, annotated object detections.",
+      "kind": "source-preview",
+      "reviewed": "2026-10-30",
+      "width": 640,
+      "height": 360,
+      "note": "Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.",
+      "sourceSha256": "44b661376761d6b47b81ff35db7060df3d01d119d4667b307bdc377996b50bdc"
+    }
+  },
+  "dexsafe": {
+    "policy": {
+      "path": "/images/catalog/dexsafe-source.webp",
+      "original": "https://arxiv.org/html/2610.37652v1/combined13_color_aux_v8.png",
+      "page": "https://arxiv.org/html/2610.37652v1/combined13_color_aux_v8.png",
+      "credit": "DexSafe authors",
+      "alt": "Paper Figure 4: training and deployment of state and depth policies and residual safety filter.",
+      "kind": "pipeline",
+      "reviewed": "2026-10-30",
+      "width": 837,
+      "height": 418,
+      "note": "Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.",
+      "sourceSha256": "5eb5714b43d91b2d6ead51983e74ea4711329d86925e1c16056c707c15a244c2"
+    }
   }
 }

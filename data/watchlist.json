@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-10-26",
+  "reviewed": "2026-10-30",
   "sources": [
     {
       "work": "gta2",
@@ -4846,6 +4846,16 @@
       "work": "tactile-eta",
       "kind": "code",
       "url": "https://github.com/No-518/Tactile-ETA"
+    },
+    {
+      "work": "q0-preview",
+      "kind": "project",
+      "url": "https://robodojo-benchmark.com/leaderboard?bench=sim"
+    },
+    {
+      "work": "dexsafe",
+      "kind": "project",
+      "url": "https://ian-chuang.github.io/dexsafe/"
     }
   ]
 }
