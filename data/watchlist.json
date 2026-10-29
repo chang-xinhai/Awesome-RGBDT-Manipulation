@@ -4856,6 +4856,111 @@
       "work": "dexsafe",
       "kind": "project",
       "url": "https://ian-chuang.github.io/dexsafe/"
+    },
+    {
+      "work": "unidex",
+      "kind": "project",
+      "url": "https://unidex-ai.github.io/"
+    },
+    {
+      "work": "unidex",
+      "kind": "code",
+      "url": "https://github.com/unidex-ai/UniDex"
+    },
+    {
+      "work": "egoavflow",
+      "kind": "project",
+      "url": "https://dscho1234.github.io/egoavflow/"
+    },
+    {
+      "work": "egoavflow",
+      "kind": "code",
+      "url": "https://github.com/dscho1234/Ego-AV-Flow"
+    },
+    {
+      "work": "humanego",
+      "kind": "project",
+      "url": "https://humanego-ai.github.io/"
+    },
+    {
+      "work": "humanego",
+      "kind": "code",
+      "url": "https://github.com/TX-Leo/HumanEgo"
+    },
+    {
+      "work": "egoengine",
+      "kind": "project",
+      "url": "https://egoengine.github.io/"
+    },
+    {
+      "work": "egoengine",
+      "kind": "code",
+      "url": "https://github.com/GaTech-RL2/EgoEngine-CoRL2026"
+    },
+    {
+      "work": "egomimic",
+      "kind": "project",
+      "url": "https://egomimic.github.io/"
+    },
+    {
+      "work": "egomimic",
+      "kind": "code",
+      "url": "https://github.com/SimarKareer/EgoMimic"
+    },
+    {
+      "work": "egozero",
+      "kind": "project",
+      "url": "https://egozero-robot.github.io/"
+    },
+    {
+      "work": "egozero",
+      "kind": "code",
+      "url": "https://github.com/vliu15/egozero"
+    },
+    {
+      "work": "egosteer",
+      "kind": "project",
+      "url": "https://egosteer.github.io/"
+    },
+    {
+      "work": "egosteer",
+      "kind": "code",
+      "url": "https://github.com/egosteer/egosteer"
+    },
+    {
+      "work": "egoscale",
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/gear/egoscale/"
+    },
+    {
+      "work": "ego2robot",
+      "kind": "project",
+      "url": "https://www-ye.github.io/ego2robot_blog/"
+    },
+    {
+      "work": "dex-x",
+      "kind": "project",
+      "url": "https://dexx-code.github.io/dexx-code/"
+    },
+    {
+      "work": "dex-x",
+      "kind": "code",
+      "url": "https://github.com/gcfy63821/dexx_lab"
+    },
+    {
+      "work": "aetherock",
+      "kind": "project",
+      "url": "https://www.rhos.ai/research/AetheRock"
+    },
+    {
+      "work": "manipforce",
+      "kind": "project",
+      "url": "https://sites.google.com/view/manipforce/"
+    },
+    {
+      "work": "manipforce",
+      "kind": "code",
+      "url": "https://github.com/gist-ailab/ManipForce"
     }
   ]
 }

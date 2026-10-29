@@ -11290,5 +11290,230 @@
       "note": "Directly captured or reproduced from the cited primary source; original rights retained. Source previews are not asserted to be architecture diagrams.",
       "sourceSha256": "5eb5714b43d91b2d6ead51983e74ea4711329d86925e1c16056c707c15a244c2"
     }
+  },
+  "unidex": {
+    "policy": {
+      "path": "/images/catalog/unidex-policy.webp",
+      "original": "https://arxiv.org/html/2603.22264v1/model.png",
+      "page": "https://arxiv.org/html/2603.22264v1",
+      "credit": "UniDex authors",
+      "alt": "UniDex — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "3c314b4b32fdd8e2324eb6fdacf84579a6b9effe3277fbeadb8cf19c5f6d9b8b",
+      "width": 1600,
+      "height": 393,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egoavflow": {
+    "policy": {
+      "path": "/images/catalog/egoavflow-policy.webp",
+      "original": "https://arxiv.org/html/2602.22461v1/method-v5.png",
+      "page": "https://arxiv.org/html/2602.22461v1",
+      "credit": "EgoAVFlow authors",
+      "alt": "EgoAVFlow — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "fda750d7aefc4ec579a127820f633e7950753bf6e163706b19d66a725bd96959",
+      "width": 1600,
+      "height": 545,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "humanego": {
+    "policy": {
+      "path": "/images/catalog/humanego-policy.webp",
+      "original": "https://arxiv.org/html/2605.24934v1/architecture.png",
+      "page": "https://arxiv.org/html/2605.24934v1",
+      "credit": "HumanEgo authors",
+      "alt": "HumanEgo — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "f7a2d73b49cfffb3dd6d7e5131dffe491d277236ee43ec7d12b9c51ce0f338b0",
+      "width": 1496,
+      "height": 794,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egoengine": {
+    "policy": {
+      "path": "/images/catalog/egoengine-policy.webp",
+      "original": "https://arxiv.org/html/2606.12604v1/algorithm.png",
+      "page": "https://arxiv.org/html/2606.12604v1",
+      "credit": "EgoEngine authors",
+      "alt": "EgoEngine — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "327e86444d344f142aa7a20af5a9bcc375c41955be296e2a1496ba0b0563d013",
+      "width": 719,
+      "height": 432,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egomimic": {
+    "policy": {
+      "path": "/images/catalog/egomimic-policy.webp",
+      "original": "https://arxiv.org/html/2410.24221v1/figures/arch.png",
+      "page": "https://arxiv.org/html/2410.24221v1",
+      "credit": "EgoMimic authors",
+      "alt": "EgoMimic — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "23ff8968ec952ec966478aeba317615488f013224211f065228dd7c0725586ea",
+      "width": 1446,
+      "height": 672,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egozero": {
+    "policy": {
+      "path": "/images/catalog/egozero-policy.webp",
+      "original": "https://egozero-robot.github.io/static/images/architecture.png",
+      "page": "https://arxiv.org/html/2505.20290v1",
+      "credit": "EgoZero authors",
+      "alt": "EgoZero — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "76e803d9600436c9bde6d245f5a55ed510e8cd4b5466038574c624c4e290a588",
+      "width": 1600,
+      "height": 1110,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egosteer": {
+    "policy": {
+      "path": "/images/catalog/egosteer-policy.webp",
+      "original": "https://arxiv.org/html/2607.09701v1/model-arch.png",
+      "page": "https://arxiv.org/html/2607.09701v1",
+      "credit": "EgoSteer authors",
+      "alt": "EgoSteer — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "54975f87ac3457c061fa8ca327bf7b973cffc19ac747135a026ef4e2372a584f",
+      "width": 1600,
+      "height": 508,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egoscale": {
+    "policy": {
+      "path": "/images/catalog/egoscale-policy.webp",
+      "original": "https://arxiv.org/html/2602.16710v1/architecture.png",
+      "page": "https://arxiv.org/html/2602.16710v1",
+      "credit": "EgoScale authors",
+      "alt": "EgoScale — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "361d25414307b6a3275cf1ec749a32e9a374896d34f3c453f2723ad6439cb2e9",
+      "width": 1600,
+      "height": 1010,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "ego-cevr": {
+    "policy": {
+      "path": "/images/catalog/ego-cevr-policy.webp",
+      "original": "https://arxiv.org/html/2610.37509v1/fig2.png",
+      "page": "https://arxiv.org/html/2610.37509v1",
+      "credit": "Ego-CEVR authors",
+      "alt": "Ego-CEVR — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "f2f004c2deb0bc930bb49ddb8786be96f04ffb96c7d71f9ddfc90083e52e10d2",
+      "width": 1600,
+      "height": 656,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "exe-ego": {
+    "policy": {
+      "path": "/images/catalog/exe-ego-policy.webp",
+      "original": "https://arxiv.org/html/2610.33685v1/framework.png",
+      "page": "https://arxiv.org/html/2610.33685v1",
+      "credit": "EXE authors",
+      "alt": "EXE — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "9e265a44e249c9c07654caa90acb35de34f9da60f84b899d9ada162b063c96e3",
+      "width": 944,
+      "height": 532,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "egoaero": {
+    "policy": {
+      "path": "/images/catalog/egoaero-policy.webp",
+      "original": "https://arxiv.org/html/2606.08057v1/frame-work.png",
+      "page": "https://arxiv.org/html/2606.08057v1",
+      "credit": "EgoAERO authors",
+      "alt": "EgoAERO — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "b98489f8aa697967b6021770a6d40c73ad17d903ce89fca3dcbed84cc68d9f4a",
+      "width": 1600,
+      "height": 1117,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "ego2robot": {
+    "policy": {
+      "path": "/images/catalog/ego2robot-policy.webp",
+      "original": "https://arxiv.org/html/2608.02580v1/fig1_ego2r_pipeline.png",
+      "page": "https://arxiv.org/html/2608.02580v1",
+      "credit": "Ego2Robot authors",
+      "alt": "Ego2Robot — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "fe80db6aaadaa1f9b37e7461c40c4e691fec372f6ac93d52c51e112130ee4b44",
+      "width": 1251,
+      "height": 734,
+      "note": "Author paper method figure; reduced for display without changing scientific content."
+    }
+  },
+  "dex-x": {
+    "policy": {
+      "path": "/images/catalog/dex-x-policy.webp",
+      "original": "https://arxiv.org/html/2609.07747v1/pipeline_2.png",
+      "page": "https://arxiv.org/html/2609.07747v1",
+      "credit": "Dex-X authors",
+      "alt": "Dex-X — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "2599e99c5fd28d4e6ce7191b2c874f27be88d7e0f86adf22ed8f8ee0768e58da",
+      "width": 836,
+      "height": 225,
+      "note": "Original author method diagram, resized without altering scientific content."
+    }
+  },
+  "aetherock": {
+    "policy": {
+      "path": "/images/catalog/aetherock-policy.webp",
+      "original": "https://arxiv.org/html/2606.09777v1/methods.png",
+      "page": "https://arxiv.org/html/2606.09777v1",
+      "credit": "AetheRock / ForceVT authors",
+      "alt": "AetheRock / ForceVT — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "f955747f2886261bfa3ca15e383a72282893e829875e7958476ea4ce10f2a7ae",
+      "width": 1600,
+      "height": 725,
+      "note": "Original author method diagram resized for display."
+    }
+  },
+  "manipforce": {
+    "policy": {
+      "path": "/images/catalog/manipforce-policy.webp",
+      "original": "https://arxiv.org/html/2509.19047v1/figures/model.jpg",
+      "page": "https://arxiv.org/html/2509.19047v1",
+      "credit": "ManipForce / FMT authors",
+      "alt": "ManipForce / FMT — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-10-30",
+      "sourceSha256": "e41ad23979f94977813e70e3f40513f42a95b1d448007c694c5ca5068903ce01",
+      "width": 1600,
+      "height": 765,
+      "note": "Original author method diagram resized for display."
+    }
   }
 }

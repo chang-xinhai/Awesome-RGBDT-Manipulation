@@ -79963,5 +79963,1333 @@
       "Object pose reaching and object-drop avoidance are distinct metrics."
     ],
     "verified": "2026-10-30"
+  },
+  {
+    "id": "unidex",
+    "name": "UniDex",
+    "title": "UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos",
+    "date": "2026-03-23",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Unifies multiple dexterous-hand embodiments through an egocentric RGB-D point-cloud VLA and human-to-robot retargeting.",
+    "institution": "Tsinghua University",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.22264",
+      "project": "https://unidex-ai.github.io/",
+      "code": "https://github.com/unidex-ai/UniDex",
+      "weights": "https://huggingface.co/UniDex-ai/UniDex"
+    },
+    "policy": {
+      "family": "3D vision-language-action",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "RGB-D point cloud from Intel RealSense L515, language and proprioception.",
+      "outputs": "Wrist and dexterous-hand actions in a shared function-actuator-aligned space.",
+      "trainingMethod": "Flow-matching VLA pretrained on retargeted human data and post-trained with task demonstrations.",
+      "trainingData": "52K trajectories across eight hand embodiments; UniDex-Cap records aligned Vision Pro poses and RGB-D.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Real tool-use experiments across Inspire and Oymotion hands; separate cross-hand transfer and object generalization."
+    },
+    "release": {
+      "code": "Available — source and retargeting tools",
+      "weights": "Available — 3- and 32-epoch checkpoints",
+      "data": "Partial — annotation archives; full dataset access not independently verified",
+      "license": "No root code license or model-card license verified",
+      "notes": "60 source files; checkpoint 3-epochs.ckpt Range HTTP 206; upstream model/assets retain separate terms."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2603.22264v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://unidex-ai.github.io/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/unidex-ai/UniDex",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://huggingface.co/UniDex-ai/UniDex",
+        "label": "Official weights and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egoavflow",
+    "name": "EgoAVFlow",
+    "title": "EgoAVFlow: Robot Policy Learning with Active Vision from Human Egocentric Videos via 3D Flow",
+    "date": "2026-02-25",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "visual-precision-rl"
+    ],
+    "resourceType": "policy",
+    "summary": "Learns 3D-flow manipulation and active-viewpoint policies from human egocentric RGB-D demonstrations.",
+    "institution": "Georgia Institute of Technology",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.22461",
+      "project": "https://dscho1234.github.io/egoavflow/",
+      "code": "https://github.com/dscho1234/Ego-AV-Flow"
+    },
+    "policy": {
+      "family": "3D flow diffusion policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Tracked 3D point flow from RGB-D, with visibility and scene geometry for view control.",
+      "outputs": "End-effector and camera viewpoint actions from separate manipulation and view policies.",
+      "trainingMethod": "Human-demo imitation using flow representation; visibility-aware view policy.",
+      "trainingData": "150 head-mounted D435 human videos per task; no robot demonstrations in primary comparison.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Four real manipulation tasks, WidowX manipulation plus Unitree Z1 mounted D435 camera."
+    },
+    "release": {
+      "code": "Available — code",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "MIT code license",
+      "notes": "Actual Python implementation and LICENSE inspected; no data or weight availability inferred."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2602.22461v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://dscho1234.github.io/egoavflow/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/dscho1234/Ego-AV-Flow",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "humanego",
+    "name": "HumanEgo",
+    "title": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos",
+    "date": "2026-05-24",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Converts egocentric human demonstrations into interaction-centric tokens for zero-shot robot manipulation.",
+    "institution": "University of Maryland",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper",
+      "Bimanual"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.24934",
+      "project": "https://humanego-ai.github.io/",
+      "code": "https://github.com/TX-Leo/HumanEgo",
+      "data": "https://huggingface.co/datasets/Leo-TX/HumanEgo"
+    },
+    "policy": {
+      "family": "Flow-matching policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Robot RGB observations and interaction-centric hand/object tokens derived by the visual pipeline.",
+      "outputs": "Robot action chunks for task manipulation.",
+      "trainingMethod": "Human-only flow matching with dense auxiliary supervision; no robot demonstration training.",
+      "trainingData": "Human egocentric videos; 15 or 30 minutes per task in reported comparison.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Four real tasks on Trossen WidowX, with separate cross-robot and camera tests."
+    },
+    "release": {
+      "code": "Available — preprocessing, training and inference",
+      "weights": "Not verified",
+      "data": "Available — human demonstrations and processed data",
+      "license": "PolyForm Noncommercial 1.0 code; CC BY-NC 4.0 dataset card",
+      "notes": "126 source files and real human tracking CSV verified; separate hardware/software dependencies have their own terms."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2605.24934v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://humanego-ai.github.io/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/TX-Leo/HumanEgo",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://huggingface.co/datasets/Leo-TX/HumanEgo",
+        "label": "Official data and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages.",
+      "Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egoengine",
+    "name": "EgoEngine",
+    "title": "EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations",
+    "date": "2026-06-10",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Transforms human egocentric video into aligned robot observations and executable dexterous trajectories for policy learning.",
+    "institution": "Georgia Institute of Technology",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.12604",
+      "project": "https://egoengine.github.io/",
+      "code": "https://github.com/GaTech-RL2/EgoEngine-CoRL2026"
+    },
+    "policy": {
+      "family": "Human-to-robot data synthesis and flow-matching policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Human egocentric RGB for conversion; robot observation images for downstream policy.",
+      "outputs": "Rendered robot observations and retargeted robot actions; distilled policy produces actions.",
+      "trainingMethod": "Digital-twin action retargeting, visual translation and downstream imitation policy distillation.",
+      "trainingData": "TACO and Aria human video; generated trajectories; robot teleoperation is a separate baseline.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Simulation action comparisons and zero-shot physical dexterous robot experiments."
+    },
+    "release": {
+      "code": "Available — action and visual source",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Mixed: action/SPIDER CC BY-NC 4.0; visual/robosuite MIT; upstream assets retain their terms",
+      "notes": "418 source files checked. The complete stack is not uniformly MIT; the action component remains noncommercial."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2606.12604v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://egoengine.github.io/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/GaTech-RL2/EgoEngine-CoRL2026",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages.",
+      "Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egomimic",
+    "name": "EgoMimic",
+    "title": "EgoMimic: Scaling Imitation Learning via Egocentric Video",
+    "date": "2024-10-31",
+    "year": 2024,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Jointly trains a shared imitation policy on tracked egocentric human and teleoperated bimanual robot data.",
+    "institution": "Georgia Institute of Technology",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.24221",
+      "project": "https://egomimic.github.io/",
+      "code": "https://github.com/SimarKareer/EgoMimic",
+      "data": "https://huggingface.co/datasets/gatech/EgoMimic"
+    },
+    "policy": {
+      "family": "Action chunking transformer",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Egocentric camera image; tracked 3D hand supervision for human demonstrations.",
+      "outputs": "Hand trajectory predictions and robot joint-action predictions through separate heads.",
+      "trainingMethod": "Co-training shared visual encoder and ACT policy on human and robot data.",
+      "trainingData": "Project Aria video and tracked hands paired with separately collected bimanual robot demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Three physical tabletop manipulation tasks with scaling and ablation comparisons."
+    },
+    "release": {
+      "code": "Available — training and hardware source",
+      "weights": "Not verified",
+      "data": "Available — human and robot HDF5 datasets",
+      "license": "MIT code; dataset license not verified",
+      "notes": "Actual source and human HDF5 Range HTTP 206 verified. Wrist RealSense hardware alone does not establish depth as a policy input."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2410.24221v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://egomimic.github.io/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/SimarKareer/EgoMimic",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://huggingface.co/datasets/gatech/EgoMimic",
+        "label": "Official data and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages.",
+      "Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egozero",
+    "name": "EgoZero",
+    "title": "EgoZero: Robot Learning from Smart Glasses",
+    "date": "2025-05-26",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Learns closed-loop gripper policies from smart-glasses human demonstrations using morphology-agnostic 3D representations.",
+    "institution": "New York University",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.20290",
+      "project": "https://egozero-robot.github.io/",
+      "code": "https://github.com/vliu15/egozero"
+    },
+    "policy": {
+      "family": "Point-based imitation policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "RGB and reconstructed 3D interaction points; geometry comes from triangulation or monocular depth estimation.",
+      "outputs": "Robot-executable action points and gripper control.",
+      "trainingMethod": "Human-only demonstration extraction and imitation; no robot training demonstrations.",
+      "trainingData": "Project Aria glasses egocentric demonstrations, 100 demonstrations per task.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Seven real Franka manipulation tasks with 70% reported success and zero-shot transfer."
+    },
+    "release": {
+      "code": "Available — source",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "MIT code license",
+      "notes": "Real policy and data-processing sources verified; no independently verified weights or dataset release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2505.20290v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://egozero-robot.github.io/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/vliu15/egozero",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages.",
+      "Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egosteer",
+    "name": "EgoSteer",
+    "title": "EgoSteer: An Open-Source Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+    "date": "2026-06-21",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Scales a dexterous language-conditioned policy through egocentric human pretraining and robot post-training.",
+    "institution": "Peking University",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Language",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand",
+      "Bimanual"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2607.09701",
+      "project": "https://egosteer.github.io/",
+      "code": "https://github.com/egosteer/egosteer",
+      "weights": "https://huggingface.co/EgoSteer/EgoSteer-3B-RealMan",
+      "data": "https://huggingface.co/datasets/EgoSteer/EgoSteer-RealWorld"
+    },
+    "policy": {
+      "family": "World-model-enhanced VLA",
+      "baseModel": "Not reported",
+      "modelSize": "3B",
+      "inputs": "Head/chest RGB views, language and robot state; D455 depth supports calibration, not a verified policy depth stream.",
+      "outputs": "Camera-frame wrist trajectories and hand keypoints for bimanual robot control.",
+      "trainingMethod": "9.6K hours egocentric pretraining, robot post-training and DAgger corrections.",
+      "trainingData": "Human-video corpus plus real teleoperation and correction episodes; released real-world data is a distinct subset.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "RealMan and AgiBot G1 evaluations; 40+ language tasks and long-horizon adaptation."
+    },
+    "release": {
+      "code": "Available — policy, EgoSmith and robot stack",
+      "weights": "Available — 3B base and 3B RealMan",
+      "data": "Partial — real-world collection; 9.6K-hour human corpus not independently established as fully released",
+      "license": "Apache-2.0 policy source and model card; verify third-party dependencies and data terms separately",
+      "notes": "Actual policy/processing/robot source trees, checkpoint byte range and public dataset files checked."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2607.09701v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://egosteer.github.io/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://github.com/egosteer/egosteer",
+        "label": "Official code and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://huggingface.co/EgoSteer/EgoSteer-3B-RealMan",
+        "label": "Official weights and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      },
+      {
+        "url": "https://huggingface.co/datasets/EgoSteer/EgoSteer-RealWorld",
+        "label": "Official data and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages.",
+      "Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egoscale",
+    "name": "EgoScale",
+    "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+    "date": "2026-02-18",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Studies human-video scale and alignment for a dexterous VLA transferred to real robots.",
+    "institution": "NVIDIA",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Language",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.16710",
+      "project": "https://research.nvidia.com/labs/gear/egoscale/"
+    },
+    "policy": {
+      "family": "Flow-matching vision-language-action",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Egocentric image and language, with robot state during robot adaptation.",
+      "outputs": "Wrist motion and dexterous hand actions.",
+      "trainingMethod": "Pretrain on human video action labels followed by human-robot mid-training and robot post-training.",
+      "trainingData": "20,854 hours of action-labeled human egocentric video in the reported training corpus.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Real dexterous robot tasks and scaling-law analyses; human-only pretraining and robot adaptation are separate stages."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Project and manuscript establish research results; no public model, data, or training implementation is assumed."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2602.16710v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://research.nvidia.com/labs/gear/egoscale/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "ego-cevr",
+    "name": "Ego-CEVR",
+    "title": "Ego-CEVR: Learning Cross-Embodiment Visual Representations from Human Egocentric Videos",
+    "date": "2026-10-27",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Aligns global egocentric video representations with wrist-level robot interaction for cross-embodiment policy learning.",
+    "institution": "Maniformer",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.37509"
+    },
+    "policy": {
+      "family": "Hierarchical visual representation and VLA",
+      "baseModel": "π0.5 with separate global and local representations",
+      "modelSize": "Not reported",
+      "inputs": "Global egocentric RGB and local wrist images with language.",
+      "outputs": "Robot action predictions through the downstream π0.5 policy.",
+      "trainingMethod": "Global future-video representation pretraining, robot interaction mid-training and cross-embodiment post-training.",
+      "trainingData": "Human/robot videos for global pretraining; robot demonstrations for action-aligned mid-training.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "LIBERO, LIBERO-Plus, RoboTwin 2.0 and physical manipulation experiments."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "The linked LIBERO-CF repository is a distinct benchmark and is not counted as released Ego-CEVR implementation."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.37509v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "exe-ego",
+    "name": "EXE",
+    "title": "EXE: Egocentric Cross-Embodiment Pretraining via Factorized Latent Actions for VLA Models",
+    "date": "2026-10-24",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Factorizes shared and embodiment-specific latent actions for human egocentric pretraining of robot VLAs.",
+    "institution": "ROBOTERA",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.33685"
+    },
+    "policy": {
+      "family": "Latent-action VLA pretraining",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Egocentric human video during pretraining; RGB and instruction for the downstream policy.",
+      "outputs": "Robot action sequences after cross-embodiment action decoding and robot training.",
+      "trainingMethod": "Shared and human-specific latent action tokenization, followed by embodiment-specific VLA training.",
+      "trainingData": "Egocentric human videos, simulated robot training and separate real robot demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "RoboTwin 2.0, RoboCasa GR1 and physical AgileX Piper bimanual evaluation. "
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Public manuscript verified; no project-specific implementation or checkpoints established."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.33685v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "egoaero",
+    "name": "EgoAERO",
+    "title": "EgoAERO: Learning Dexterous Manipulation from a Single Egocentric Video without Object Assets",
+    "date": "2026-06-06",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "visual-precision-rl"
+    ],
+    "resourceType": "policy",
+    "summary": "Converts a single egocentric RGB-D human demonstration into dexterous manipulation through asset-free contact-aware reconstruction.",
+    "institution": "Harbin Institute of Technology",
+    "venue": "arXiv preprint",
+    "modalities": [],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.08057"
+    },
+    "policy": {
+      "family": "Contact-aware retargeting and residual learning",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Simulated hand/object state and reconstructed reference trajectories; real deployment-time observations are not specified.",
+      "outputs": "Reconstructed object/hand trajectories and closed-loop robot control.",
+      "trainingMethod": "Asset-free tracking, adaptive contact optimization and two-stage residual policy learning.",
+      "trainingData": "Single human RGB-D demonstrations; EgoDex-R described as a 4.3M-frame resource.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Simulation and physical hand experiments; measured training RGB-D should not be assumed as a deployed live depth input. "
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Manuscript establishes the 4.3M-frame dataset claim but not independent downloadable data or implementation."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2606.08057v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      }
+    ],
+    "caveats": [
+      "RGB-D is measured for the human demonstration and offline trajectory reconstruction; the manuscript does not establish a live depth input during robot execution.",
+      "Physical hardware execution tracks a policy-generated trajectory; do not infer closed-loop deployment sensing or reported success counts."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "ego2robot",
+    "name": "Ego2Robot",
+    "title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
+    "date": "2026-08-03",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Synthesizes retargeted robot observations and actions from egocentric human data for downstream manipulation policy pretraining.",
+    "institution": "Renmin University of China",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2608.02580",
+      "project": "https://www-ye.github.io/ego2robot_blog/"
+    },
+    "policy": {
+      "family": "Human-to-robot data synthesis and flow-matching policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Human egocentric video and hand trajectories for synthesis; robot visual observations and language for policy.",
+      "outputs": "Robotized image trajectories and executable end-effector actions.",
+      "trainingMethod": "Retargeting and depth-aware rendering generate pretraining data, followed by task-specific robot fine-tuning.",
+      "trainingData": "Reported 18,561 hours across 15 robot morphologies; generated corpus is distinct from real demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "EBench simulation perturbations and real robot evaluations."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Project and manuscript demonstrate the pipeline; a downloadable implementation or full corpus was not independently verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2608.02580v1",
+        "label": "Author manuscript and initial submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Original manuscript distinguishes human capture, training labels and deployment observations."
+      },
+      {
+        "url": "https://www-ye.github.io/ego2robot_blog/",
+        "label": "Official project and release evidence",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Current repository contents and access are assessed independently of paper claims."
+      }
+    ],
+    "caveats": [
+      "Human egocentric data and actual robot training/deployment observations are separate stages.",
+      "Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "dex-x",
+    "name": "Dex-X",
+    "title": "Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction",
+    "date": "2026-09-07",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Replays monocular human demonstrations in simulation to distill a visual-tactile dexterous policy for real robots.",
+    "institution": "Tsinghua University",
+    "venue": "CoRL 2026",
+    "modalities": [
+      "Depth",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Dexterous hand"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2609.07747",
+      "project": "https://dexx-code.github.io/dexx-code/",
+      "code": "https://github.com/gcfy63821/dexx_lab"
+    },
+    "policy": {
+      "family": "Privileged RL teacher and distilled policy",
+      "baseModel": "PPO teacher with PointNet-based DAgger student",
+      "modelSize": "Not reported",
+      "inputs": "Point cloud from depth, hand proprioception and measured tactile sensing; no privileged object pose at deployment.",
+      "outputs": "Arm and dexterous-hand actions.",
+      "trainingMethod": "Human video retargeting, simulated contact teacher and DAgger distillation.",
+      "trainingData": "Monocular human demonstrations retargeted into simulation; the tutorial release contains four sample demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "30 Hz in tutorial deployment",
+      "evaluation": "Six simulated task categories; separately reported real cube picking and table-cleaning experiments."
+    },
+    "release": {
+      "code": "Partial — tutorial version",
+      "weights": "Partial — tutorial teacher and student checkpoints",
+      "data": "Partial — four demonstration examples",
+      "license": "MIT original code; bundled third-party assets retain separate terms",
+      "notes": "374 repository files including actual teacher/student checkpoints. Authors note tutorial excludes additional paper augmentation and is not a complete paper reproduction."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2609.07747v1",
+        "label": "Original author manuscript",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "policy",
+          "modalities",
+          "institution"
+        ],
+        "note": "The student policy uses visual and tactile observations; human video supplies no direct touch."
+      },
+      {
+        "url": "https://github.com/gcfy63821/dexx_lab",
+        "label": "Official tutorial source and artifact inventory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Source files, sample trajectories, checkpoint sizes, LICENSE and release limitations checked."
+      },
+      {
+        "url": "https://github.com/gcfy63821/dexx_lab/blob/main/checkpoints/README.md",
+        "label": "Tutorial checkpoint scope",
+        "fields": [
+          "release",
+          "caveats"
+        ],
+        "note": "The tutorial setup and its reference scores are not a full paper reproduction."
+      }
+    ],
+    "caveats": [
+      "Tactile supervision is simulated during teacher training; real deployment uses measured tactile observations.",
+      "Tutorial checkpoints and four demos do not establish release of all paper assets or full training data."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "aetherock",
+    "name": "AetheRock / ForceVT",
+    "title": "AetheRock: An Arm-Worn Robot Teaching System for Force-Guided Vision-Tactile Learning",
+    "date": "2026-06-08",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "An arm-worn demonstrator and force-guided representation learning make visual-tactile manipulation robust to sensor variation.",
+    "institution": "Shanghai Jiao Tong University",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Tactile"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.09777",
+      "project": "https://www.rhos.ai/research/AetheRock"
+    },
+    "policy": {
+      "family": "Vision-tactile representation and imitation",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "RGB and vision-based fingertip tactile images; gripper force guides tactile representation training.",
+      "outputs": "End-effector relative pose, gripper width and force.",
+      "trainingMethod": "Force-guided tactile learning and real robot imitation from collected demonstrations.",
+      "trainingData": "Human demonstrations collected with the described wearable or handheld interface.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Real-world experiments evaluate tactile degradation and contact-rich robot manipulation."
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "No implementation, data or weight release is inferred from the project page."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2606.09777v1",
+        "label": "Author paper and experimental details",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "policy",
+          "modalities"
+        ],
+        "note": "Observed deployment sensors are distinguished from training-only labels."
+      },
+      {
+        "url": "https://www.rhos.ai/research/AetheRock",
+        "label": "Official project",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Project release and available links inspected."
+      }
+    ],
+    "caveats": [
+      "The predicted tactile representation and actual measured deployment signals must not be conflated."
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "manipforce",
+    "name": "ManipForce / FMT",
+    "title": "ManipForce: Force-Guided Policy Learning with Frequency-Aware Representation for Contact-Rich Manipulation",
+    "date": "2025-09-23",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "A handheld F/T and RGB collection system trains a frequency-aware diffusion policy for contact-rich manipulation.",
+    "institution": "Gwangju Institute of Science and Technology",
+    "venue": "arXiv preprint",
+    "modalities": [
+      "RGB",
+      "Force/Torque"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2509.19047",
+      "project": "https://sites.google.com/view/manipforce/",
+      "code": "https://github.com/gist-ailab/ManipForce"
+    },
+    "policy": {
+      "family": "Frequency-aware multimodal diffusion policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "RGB imagery and high-frequency wrist force/torque observations.",
+      "outputs": "Robot manipulation action chunks.",
+      "trainingMethod": "Handheld demonstrations and frequency-aware cross-modal transformer diffusion training.",
+      "trainingData": "Human demonstrations collected with the described wearable or handheld interface.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Six real robot contact-rich tasks, including gear assembly and insertion."
+    },
+    "release": {
+      "code": "Available — source",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "No root license verified",
+      "notes": "147 files with training, sensor calibration and robot interfaces; no blanket license inferred."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2509.19047v1",
+        "label": "Author paper and experimental details",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "policy",
+          "modalities"
+        ],
+        "note": "Observed deployment sensors are distinguished from training-only labels."
+      },
+      {
+        "url": "https://sites.google.com/view/manipforce/",
+        "label": "Official project",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Project release and available links inspected."
+      },
+      {
+        "url": "https://github.com/gist-ailab/ManipForce",
+        "label": "Official source tree",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Actual file inventory and root license checked."
+      }
+    ],
+    "caveats": [
+      "Wrist force/torque is distinct from fingertip skin tactile sensing."
+    ],
+    "verified": "2026-10-30"
   }
 ]
