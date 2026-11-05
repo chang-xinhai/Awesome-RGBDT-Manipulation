@@ -8,7 +8,7 @@ Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Le
 
 **2026-10-20 · Preprint · Institute of Automation, Chinese Academy of Sciences**
 
-**[Paper](https://arxiv.org/abs/2610.28613)** · [Project](https://zebinx.github.io/PhysCanvas_HomePage/)
+**[Paper](https://arxiv.org/abs/2610.28613)** · [Project](https://zebinx.github.io/PhysCanvas_HomePage/) · [Code](https://github.com/OpenPhoenix-Team/PhysCanvas) · [Data](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode)
 
 A unified visual–tactile predictive canvas supports robot-policy evaluation and imagined-rollout reinforcement before physical fine-tuning.
 
@@ -34,19 +34,22 @@ A unified visual–tactile predictive canvas supports robot-policy evaluation an
 | Observations / modalities | RGB · Tactile · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Bimanual · Parallel-jaw gripper |
-| Release: code | Not released [2](https://zebinx.github.io/PhysCanvas_HomePage/)  |
-| Release: weights | Not verified [2](https://zebinx.github.io/PhysCanvas_HomePage/)  |
-| Release: data | Not verified [2](https://zebinx.github.io/PhysCanvas_HomePage/)  |
-| Release: license | Not verified [2](https://zebinx.github.io/PhysCanvas_HomePage/)  |
-| Release: notes | Official project marks Code and Model coming soon; website videos/materials are not a full executable simulator or training-data release. [2](https://zebinx.github.io/PhysCanvas_HomePage/)  |
+| Release: code | Partial — inference and evaluation code available; training and post-training code pending [2](https://zebinx.github.io/PhysCanvas_HomePage/) [3](https://github.com/OpenPhoenix-Team/PhysCanvas) [4](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode)  |
+| Release: weights | Not verified [2](https://zebinx.github.io/PhysCanvas_HomePage/) [3](https://github.com/OpenPhoenix-Team/PhysCanvas) [4](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode)  |
+| Release: data | Available — 20 full-episode evaluation archives [2](https://zebinx.github.io/PhysCanvas_HomePage/) [3](https://github.com/OpenPhoenix-Team/PhysCanvas) [4](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode)  |
+| Release: license | Apache-2.0 for repository; datasets, weights and dependencies carry separate terms. [2](https://zebinx.github.io/PhysCanvas_HomePage/) [3](https://github.com/OpenPhoenix-Team/PhysCanvas) [4](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode)  |
+| Release: notes | Official repository includes inference and evaluation; author-hosted evaluation archives are accessible. Repository claims epoch-30 inference weights on ModelScope, but availability has not been independently verified; training and post-training code remain pending. [2](https://zebinx.github.io/PhysCanvas_HomePage/) [3](https://github.com/OpenPhoenix-Team/PhysCanvas) [4](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode)  |
 
 **Scope and qualifications**
 
 - World-model predictions and downstream policy-action generation are separate interfaces.
 - Tactile contact displacement is not external scene depth.
-- Website-template CC BY-SA does not license the unreleased research code/model.
+- The website-template license does not govern the separate research code, model or data.
+- The released code covers inference and evaluation; world-model training and policy post-training code remain pending.
 
 **Primary evidence**
 
 1. [Primary manuscript and first-submission history](https://arxiv.org/abs/2610.28613) — Current primary manuscript reviewed; first-public date uses arXiv v1. Observations, training privileges and deployed interfaces retain their separate scopes.
 2. [Official project source and actual artifact inventory](https://zebinx.github.io/PhysCanvas_HomePage/) — Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results.
+3. [Official repository: implementation files and current release scope](https://github.com/OpenPhoenix-Team/PhysCanvas) — Repository source files and root license checked on 2026-11-05; installation and external artifact requirements remain separate.
+4. [Official 20-episode evaluation archive](https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode) — Public episode file tested by HTTP byte-range request.

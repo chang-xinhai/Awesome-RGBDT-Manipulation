@@ -403,6 +403,11 @@
       "url": "https://darwin-agent.github.io/HarnessPAI/"
     },
     {
+      "work": "harnesspai",
+      "kind": "code",
+      "url": "https://github.com/Darwin-Agent/HarnessPAI"
+    },
+    {
       "work": "adahvla",
       "kind": "code",
       "url": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA"
@@ -4593,6 +4598,11 @@
       "url": "https://forcebench-platform.github.io/"
     },
     {
+      "work": "forcebench",
+      "kind": "code",
+      "url": "https://github.com/forcebench-platform/ForceBench"
+    },
+    {
       "work": "evo-dexbench",
       "kind": "code",
       "url": "https://github.com/MINT-SJTU/Evo-DexBench"
@@ -4771,6 +4781,11 @@
       "work": "physcanvas",
       "kind": "project",
       "url": "https://zebinx.github.io/PhysCanvas_HomePage/"
+    },
+    {
+      "work": "physcanvas",
+      "kind": "code",
+      "url": "https://github.com/OpenPhoenix-Team/PhysCanvas"
     },
     {
       "work": "rax",

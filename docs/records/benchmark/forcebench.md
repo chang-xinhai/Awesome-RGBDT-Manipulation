@@ -8,7 +8,7 @@ ForceBench: Benchmarking Force Integration for Robotic Manipulation
 
 **2026-10-14 · arXiv preprint · Peking University / UC Berkeley / National University of Singapore / ePyBot Intelligence**
 
-**[Paper](https://arxiv.org/abs/2610.19604)** · [Project](https://forcebench-platform.github.io/)
+**[Paper](https://arxiv.org/abs/2610.19604)** · [Project](https://forcebench-platform.github.io/) · [Code](https://github.com/forcebench-platform/ForceBench)
 
 Eight simulation tasks and five separate physical tasks compare wrist force integration under a common demonstration, controller and evaluation protocol.
 
@@ -34,11 +34,11 @@ Eight simulation tasks and five separate physical tasks compare wrist force inte
 | Observations / modalities | RGB · Force/Torque · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not released [2](https://forcebench-platform.github.io/)  |
-| Release: weights | Not released [2](https://forcebench-platform.github.io/)  |
-| Release: data | Not released [2](https://forcebench-platform.github.io/)  |
-| Release: license | Not verified; source figures retain original rights [2](https://forcebench-platform.github.io/)  |
-| Release: notes | Official Resources section explicitly provides no code, demonstrations or checkpoint downloads. Its stale no-paper-download notice is superseded by the public arXiv manuscript; result tables are available separately. [2](https://forcebench-platform.github.io/)  |
+| Release: code | Available — task definitions, simulation, adapters and benchmark code [2](https://forcebench-platform.github.io/) [4](https://github.com/forcebench-platform/ForceBench)  |
+| Release: weights | Not released [2](https://forcebench-platform.github.io/) [4](https://github.com/forcebench-platform/ForceBench)  |
+| Release: data | Not released [2](https://forcebench-platform.github.io/) [4](https://github.com/forcebench-platform/ForceBench)  |
+| Release: license | MIT for ForceBench-owned code; third-party assets, code, data and weights have separate terms. [2](https://forcebench-platform.github.io/) [4](https://github.com/forcebench-platform/ForceBench)  |
+| Release: notes | Official repository includes benchmark and policy-adapter implementations. External task assets, simulator and model weights require separate acquisition; short execution checks do not reproduce published success rates. [2](https://forcebench-platform.github.io/) [4](https://github.com/forcebench-platform/ForceBench)  |
 
 **Task names — Complete simulation task list (§III-B) and separate hardware study (Appendix C-B). Weight Sort occurs in both tracks.:**
 
@@ -61,9 +61,11 @@ Eight simulation tasks and five separate physical tasks compare wrist force inte
 - Wrist F/T is not skin tactile; force varies through physical properties that may also affect visible motion and proprioception.
 - Single simulated embodiment and one assembly task limit scope; 20 real trials/task do not establish a general sim-to-real ranking correlation.
 - The best two simulation means differ by three successful episodes out of1600; no significance claim is inferred.
+- Released validation covers short execution checks; it does not reproduce the paper success rates.
 
 **Primary evidence**
 
 1. [Original full manuscript and appendices](https://arxiv.org/html/2610.19604) — Method, evaluation and appendix read; observations, training-only labels, rates and task scopes remain distinct.
 2. [Official benchmark, task/protocol pages and release notice](https://forcebench-platform.github.io/) — Live project inspected; implementation/data/weights are independently distinguished from paper and published result tables.
 3. [Data collection method and scope](https://arxiv.org/abs/2610.19604) — Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly.
+4. [Official repository: implementation files and current release scope](https://github.com/forcebench-platform/ForceBench) — Repository source files and root license checked on 2026-11-05; installation and external artifact requirements remain separate.

@@ -8,7 +8,7 @@ HarnessPAI: An Evolving Harness for Physical AI
 
 **2026-09-24 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.29166)** · [Project](https://darwin-agent.github.io/HarnessPAI/)
+**[Paper](https://arxiv.org/abs/2609.29166)** · [Project](https://darwin-agent.github.io/HarnessPAI/) · [Code](https://github.com/Darwin-Agent/HarnessPAI)
 
 Evolves reusable executable control harnesses across robot platforms while keeping action models fixed within the described adaptation.
 
@@ -33,17 +33,19 @@ Evolves reusable executable control harnesses across robot platforms while keepi
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Mobile manipulator · Legged robot · Humanoid |
-| Release: code | Not released |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | The official homepage and author repository are accessible, but the repository release-status section marks code coming soon; the tree contains presentation assets and no actual implementation. No method-specific weight or data release was independently verified. |
+| Release: code | Available — official executable harness and environment integrations [2](https://github.com/Darwin-Agent/HarnessPAI)  |
+| Release: weights | Not verified [2](https://github.com/Darwin-Agent/HarnessPAI)  |
+| Release: data | Not verified [2](https://github.com/Darwin-Agent/HarnessPAI)  |
+| Release: license | Not verified — no root LICENSE found [2](https://github.com/Darwin-Agent/HarnessPAI)  |
+| Release: notes | Official repository now contains harness, configurations and environment integration source; backend models and external simulators have separate requirements. [2](https://github.com/Darwin-Agent/HarnessPAI)  |
 
 **Scope and qualifications**
 
 - BEHAVIOR zero-shot and adapted variants have different test access: the latter re-evolves on previously failing test seeds.
 - A heterogeneous framework does not imply one identical observation or action interface across platforms.
+- The reference harness is now public; its underlying models, external assets, and simulators have independent availability and terms.
 
 **Primary evidence**
 
 1. [Primary paper, full text](https://arxiv.org/abs/2609.29166) — Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning.
+2. [Official repository: implementation files and current release scope](https://github.com/Darwin-Agent/HarnessPAI) — Repository source files and root license checked on 2026-11-05; installation and external artifact requirements remain separate.

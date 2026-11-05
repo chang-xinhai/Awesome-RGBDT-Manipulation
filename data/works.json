@@ -7885,7 +7885,8 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2609.29166",
-      "project": "https://darwin-agent.github.io/HarnessPAI/"
+      "project": "https://darwin-agent.github.io/HarnessPAI/",
+      "code": "https://github.com/Darwin-Agent/HarnessPAI"
     },
     "policy": {
       "family": "Hybrid",
@@ -7901,11 +7902,11 @@
       "evaluation": "RoboCasa, BEHAVIOR-1K and diverse physical platforms, including desktop arms, vacuum / mobile systems and legged robots."
     },
     "release": {
-      "code": "Not released",
+      "code": "Available — official executable harness and environment integrations",
       "weights": "Not verified",
       "data": "Not verified",
-      "license": "Not verified",
-      "notes": "The official homepage and author repository are accessible, but the repository release-status section marks code coming soon; the tree contains presentation assets and no actual implementation. No method-specific weight or data release was independently verified."
+      "license": "Not verified — no root LICENSE found",
+      "notes": "Official repository now contains harness, configurations and environment integration source; backend models and external simulators have separate requirements."
     },
     "evidence": [
       {
@@ -7921,11 +7922,22 @@
           "imageCandidates"
         ],
         "note": "Publication date is the first arXiv submission. Policy fields distinguish model calls, controller execution and learning."
+      },
+      {
+        "url": "https://github.com/Darwin-Agent/HarnessPAI",
+        "label": "Official repository: implementation files and current release scope",
+        "fields": [
+          "links",
+          "release",
+          "caveats"
+        ],
+        "note": "Repository source files and root license checked on 2026-11-05; installation and external artifact requirements remain separate."
       }
     ],
     "caveats": [
       "BEHAVIOR zero-shot and adapted variants have different test access: the latter re-evolves on previously failing test seeds.",
-      "A heterogeneous framework does not imply one identical observation or action interface across platforms."
+      "A heterogeneous framework does not imply one identical observation or action interface across platforms.",
+      "The reference harness is now public; its underlying models, external assets, and simulators have independent availability and terms."
     ],
     "imageCandidates": [
       {
@@ -7936,7 +7948,7 @@
         "note": "Figure 8: Task, skill and executable-code memories surround a planner that invokes perception, control and action-model primitives."
       }
     ],
-    "verified": "2026-10-19"
+    "verified": "2026-11-05"
   },
   {
     "id": "adahvla",
@@ -74926,14 +74938,15 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2610.19604",
-      "project": "https://forcebench-platform.github.io/"
+      "project": "https://forcebench-platform.github.io/",
+      "code": "https://github.com/forcebench-platform/ForceBench"
     },
     "release": {
-      "code": "Not released",
+      "code": "Available — task definitions, simulation, adapters and benchmark code",
       "weights": "Not released",
       "data": "Not released",
-      "license": "Not verified; source figures retain original rights",
-      "notes": "Official Resources section explicitly provides no code, demonstrations or checkpoint downloads. Its stale no-paper-download notice is superseded by the public arXiv manuscript; result tables are available separately."
+      "license": "MIT for ForceBench-owned code; third-party assets, code, data and weights have separate terms.",
+      "notes": "Official repository includes benchmark and policy-adapter implementations. External task assets, simulator and model weights require separate acquisition; short execution checks do not reproduce published success rates."
     },
     "evidence": [
       {
@@ -74970,14 +74983,25 @@
           "benchmark.dataCollection"
         ],
         "note": "Original method/data protocol reviewed for the collection mechanism. Data volume, evaluation rollouts and downstream training remain separate; undisclosed or unresolved interfaces are labeled explicitly."
+      },
+      {
+        "url": "https://github.com/forcebench-platform/ForceBench",
+        "label": "Official repository: implementation files and current release scope",
+        "fields": [
+          "links",
+          "release",
+          "caveats"
+        ],
+        "note": "Repository source files and root license checked on 2026-11-05; installation and external artifact requirements remain separate."
       }
     ],
     "caveats": [
       "Wrist F/T is not skin tactile; force varies through physical properties that may also affect visible motion and proprioception.",
       "Single simulated embodiment and one assembly task limit scope; 20 real trials/task do not establish a general sim-to-real ranking correlation.",
-      "The best two simulation means differ by three successful episodes out of1600; no significance claim is inferred."
+      "The best two simulation means differ by three successful episodes out of1600; no significance claim is inferred.",
+      "Released validation covers short execution checks; it does not reproduce the paper success rates."
     ],
-    "verified": "2026-10-17",
+    "verified": "2026-11-05",
     "benchmarkName": "ForceBench",
     "policyName": "ForceBench force-integration policies",
     "benchmarkSummary": "Eight simulation tasks and five separate physical tasks compare wrist force integration under a common demonstration, controller and evaluation protocol.",
@@ -78379,14 +78403,16 @@
     ],
     "links": {
       "paper": "https://arxiv.org/abs/2610.28613",
-      "project": "https://zebinx.github.io/PhysCanvas_HomePage/"
+      "project": "https://zebinx.github.io/PhysCanvas_HomePage/",
+      "code": "https://github.com/OpenPhoenix-Team/PhysCanvas",
+      "data": "https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode"
     },
     "release": {
-      "code": "Not released",
+      "code": "Partial — inference and evaluation code available; training and post-training code pending",
       "weights": "Not verified",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Official project marks Code and Model coming soon; website videos/materials are not a full executable simulator or training-data release."
+      "data": "Available — 20 full-episode evaluation archives",
+      "license": "Apache-2.0 for repository; datasets, weights and dependencies carry separate terms.",
+      "notes": "Official repository includes inference and evaluation; author-hosted evaluation archives are accessible. Repository claims epoch-30 inference weights on ModelScope, but availability has not been independently verified; training and post-training code remain pending."
     },
     "evidence": [
       {
@@ -78411,14 +78437,34 @@
           "release"
         ],
         "note": "Reviewed 26 October 2026. Availability and licensing apply only to the described released component, independently of paper results."
+      },
+      {
+        "url": "https://github.com/OpenPhoenix-Team/PhysCanvas",
+        "label": "Official repository: implementation files and current release scope",
+        "fields": [
+          "links",
+          "release",
+          "caveats"
+        ],
+        "note": "Repository source files and root license checked on 2026-11-05; installation and external artifact requirements remain separate."
+      },
+      {
+        "url": "https://huggingface.co/XXXXing/PhysCanvas_model/tree/main/evaluation-data/full-episode",
+        "label": "Official 20-episode evaluation archive",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Public episode file tested by HTTP byte-range request."
       }
     ],
     "caveats": [
       "World-model predictions and downstream policy-action generation are separate interfaces.",
       "Tactile contact displacement is not external scene depth.",
-      "Website-template CC BY-SA does not license the unreleased research code/model."
+      "The website-template license does not govern the separate research code, model or data.",
+      "The released code covers inference and evaluation; world-model training and policy post-training code remain pending."
     ],
-    "verified": "2026-10-26",
+    "verified": "2026-11-05",
     "model": {
       "family": "Predictive representation",
       "baseModel": "Wan2.2 video world model; separate ResNet18 consistency/reward models and policy interfaces.",
