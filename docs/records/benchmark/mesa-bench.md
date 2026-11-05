@@ -51,4 +51,4 @@ Task names not reported or not verified in the cited sources.
 **Primary evidence**
 
 1. [Author paper or official project: methods and evaluation scope](https://arxiv.org/abs/2611.05567)
-2. [Official repository: release inventory and scope](https://github.com/pairlab/mesa-env) — Release availability, assets and third-party licenses are independently scoped; no end-to-end reproduction is implied.
+2. [Official repository: release inventory and scope](https://github.com/pairlab/mesa-env) — Official README includes source inventory, MIT license and CoRL 2026 citation; external dataset and model licenses are separate.

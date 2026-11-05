@@ -480,9 +480,10 @@
         "label": "Official repository: release inventory and scope",
         "fields": [
           "links",
-          "release"
+          "release",
+          "venue"
         ],
-        "note": "Release availability, assets and third-party licenses are independently scoped; no end-to-end reproduction is implied."
+        "note": "Official README includes source inventory, MIT license and CoRL 2026 citation; external dataset and model licenses are separate."
       }
     ],
     "caveats": [
