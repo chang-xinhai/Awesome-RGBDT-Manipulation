@@ -11515,5 +11515,213 @@
       "height": 765,
       "note": "Original author method diagram resized for display."
     }
+  },
+  "geometric-abstraction-agent": {
+    "policy": {
+      "path": "/images/catalog/geometric-abstraction-agent-policy.webp",
+      "original": "https://arxiv.org/html/2611.05058v1/Figure2.png",
+      "page": "https://arxiv.org/abs/2611.05058",
+      "credit": "Geometric Abstraction authors",
+      "alt": "Geometric Abstraction — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "12115ae7d1952cf89448b0ad3244d90aecf2deec9236f1c24f03035a09652148",
+      "width": 1500,
+      "height": 658,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "panotac": {
+    "policy": {
+      "path": "/images/catalog/panotac-policy.webp",
+      "original": "https://arxiv.org/html/2611.03520v1/system_v6.png",
+      "page": "https://arxiv.org/abs/2611.03520",
+      "credit": "PanoTac authors",
+      "alt": "PanoTac — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "48436f67631cf28e5dab5d3a0f49f7633131a210086d7f1f6d36bdf32ebd440d",
+      "width": 1126,
+      "height": 524,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "forceldm": {
+    "policy": {
+      "path": "/images/catalog/forceldm-policy.webp",
+      "original": "https://arxiv.org/html/2611.03294v1/figure2.png",
+      "page": "https://arxiv.org/abs/2611.03294",
+      "credit": "ForceLDM authors",
+      "alt": "ForceLDM — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "bb07180bc254667a768fe40944ae2386c9e7cb02fe2bd7035ab283438cfbe220",
+      "width": 1073,
+      "height": 549,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "pointpilot": {
+    "policy": {
+      "path": "/images/catalog/pointpilot-policy.webp",
+      "original": "https://arxiv.org/html/2611.02930v1/figure/method.png",
+      "page": "https://arxiv.org/abs/2611.02930",
+      "credit": "PointPilot authors",
+      "alt": "PointPilot — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "de288cc79a778ecaf5775b98b42a0d5a4570aec5ddc0ad335dfb7ee5e1790753",
+      "width": 1500,
+      "height": 958,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "openrua": {
+    "policy": {
+      "path": "/images/catalog/openrua-policy.webp",
+      "original": "https://arxiv.org/html/2611.01560v1/figs/overview/overview.png",
+      "page": "https://arxiv.org/abs/2611.01560",
+      "credit": "OpenRUA authors",
+      "alt": "OpenRUA — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "6bed1760b0fcc3d491122a244fdabc1dc8630354b756da26c9f8a55caf53e80e",
+      "width": 1500,
+      "height": 1043,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "tf2-steering": {
+    "policy": {
+      "path": "/images/catalog/tf2-steering-policy.webp",
+      "original": "https://arxiv.org/html/2611.01483v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2611.01483",
+      "credit": "TF²-Steering authors",
+      "alt": "TF²-Steering — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "1a7533fa40205ed63ec4ace47caa72cabd22d515cc33fb10b94a78ce8175b294",
+      "width": 1387,
+      "height": 770,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "auriga": {
+    "policy": {
+      "path": "/images/catalog/auriga-policy.webp",
+      "original": "https://arxiv.org/html/2611.01112v1/auriga-overview-v2.png",
+      "page": "https://arxiv.org/abs/2611.01112",
+      "credit": "Auriga authors",
+      "alt": "Auriga — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "d2030e7440c9dcb6f38c674341e90b3e79b40cc1911a4b4d46e7d38a7f1a95da",
+      "width": 785,
+      "height": 469,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "captain-code-policy": {
+    "policy": {
+      "path": "/images/catalog/captain-code-policy-policy.webp",
+      "original": "https://arxiv.org/html/2610.40799v1/fig1_harness.png",
+      "page": "https://arxiv.org/abs/2610.40799",
+      "credit": "CaPtain authors",
+      "alt": "CaPtain — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "2a49e3b41d7210f6c0c79f2d2cea43c4099845ba599a5ac38f57846cda0237a3",
+      "width": 1500,
+      "height": 780,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "touchbridge": {
+    "policy": {
+      "path": "/images/catalog/touchbridge-policy.webp",
+      "original": "https://arxiv.org/html/2610.40349v1/tactile_retarget_new.png",
+      "page": "https://arxiv.org/abs/2610.40349",
+      "credit": "TouchBridge authors",
+      "alt": "TouchBridge — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "d555719d4c2d2ade493edfc626342f92e9c47e930d292debe9cf6cb506a47865",
+      "width": 1307,
+      "height": 449,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
+  },
+  "cimi": {
+    "policy": {
+      "path": "/images/catalog/cimi-policy.webp",
+      "original": "https://arxiv.org/html/2610.41028v1/pipeline.png",
+      "page": "https://arxiv.org/abs/2610.41028",
+      "credit": "cimi authors",
+      "alt": "cimi — author architecture diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "2d46fc22bf7c5634440b021a5b75929c18c0c7449dac268b2830fad052275f5f",
+      "width": 1500,
+      "height": 532,
+      "note": "Locally optimized author figure; rights remain with the original authors."
+    }
+  },
+  "dexarena": {
+    "benchmark": {
+      "path": "/images/catalog/dexarena-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.02629v1/overview_3.png",
+      "page": "https://arxiv.org/abs/2611.02629",
+      "credit": "dexarena authors",
+      "alt": "dexarena — author simulation-overview diagram",
+      "kind": "simulation-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "cbe0fd171207e46b8b448082927aec212f0586c128315193ce4056f46533df0a",
+      "width": 1500,
+      "height": 1028,
+      "note": "Locally optimized author figure; rights remain with the original authors."
+    }
+  },
+  "tacmind": {
+    "benchmark": {
+      "path": "/images/catalog/tacmind-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.00455v1/benchmark_stat.png",
+      "page": "https://arxiv.org/abs/2611.00455",
+      "credit": "tacmind authors",
+      "alt": "tacmind — author simulation-overview diagram",
+      "kind": "simulation-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "8f64236fee07b6f91ee8b2a664ccc6d48574724fe9e4aaa0a3b136ae003dd1b4",
+      "width": 1500,
+      "height": 772,
+      "note": "Locally optimized author figure; rights remain with the original authors."
+    },
+    "policy": {
+      "path": "/images/catalog/tacmind-policy.webp",
+      "original": "https://arxiv.org/html/2611.00455v1/teaser.png",
+      "page": "https://arxiv.org/abs/2611.00455",
+      "credit": "tacmind authors",
+      "alt": "TacMind-0 tactile policy and benchmark overview",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "6e62ac88b52090a1c1434cc2a5a776ff95715c0b9e90a4f9f41e5d1e26b0a553",
+      "width": 1500,
+      "height": 672,
+      "note": "Author overview includes the policy and its tactile-prediction component; rights remain with the original authors."
+    }
+  },
+  "astra-three-tier-robomme": {
+    "policy": {
+      "path": "/images/catalog/astra-three-tier-robomme-policy.webp",
+      "original": "https://arxiv.org/html/2611.06184v1/three-tier-overview.png",
+      "page": "https://arxiv.org/abs/2611.06184",
+      "credit": "Astra Three-Tier RoboMME authors",
+      "alt": "Astra Three-Tier RoboMME — author method diagram",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "3a234c6336c5b4e597b49c518b448924e331f1cfcf2cb3fc98a18c9554c1b9eb",
+      "width": 1267,
+      "height": 400,
+      "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
+    }
   }
 }

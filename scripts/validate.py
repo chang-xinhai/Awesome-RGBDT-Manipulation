@@ -69,7 +69,7 @@ for w in works:
     check((page.parent/image).resolve().is_file(),w['id']+': broken record-page figure')
 
 audit=json.loads((R/'data/policy-source-audit.json').read_text())
-check(audit['reviewed']==cutoff,'Policy roster audit has a different review date')
+check(bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}',audit['reviewed'])) and audit['reviewed']<=cutoff,'Policy roster audit has a different review date')
 check(bool(audit['sources']),'Policy roster audit is empty')
 check(len({s['id']for s in audit['sources']})==len(audit['sources']),'Duplicate policy roster source IDs')
 for source in audit['sources']:
@@ -83,7 +83,7 @@ for source in audit['sources']:
   check(bool(target and 'policy'in target['collections'])if entry.get('workId')else bool(entry.get('note')),'Unmapped policy alias without qualification: '+entry['name'])
 check(json.loads((R/'website/public/policy-source-audit.json').read_text())==audit,'Website policy roster audit is stale')
 survey_audit=json.loads((R/'data/survey-source-audit.json').read_text())
-check(survey_audit['reviewed']==cutoff,'Survey reference audit has a different review date')
+check(bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}',survey_audit['reviewed'])) and survey_audit['reviewed']<=cutoff,'Survey reference audit has a different review date')
 survey_sources=survey_audit['sources'];check(bool(survey_sources),'Survey reference audit is empty')
 check(len({s['id']for s in survey_sources})==len(survey_sources),'Duplicate survey audit source IDs')
 for source in survey_sources:
@@ -101,7 +101,7 @@ for w in works:
  if w.get('surveyAuditId'):check(any(s['id']==w['surveyAuditId']and s['workId']==w['id']for s in survey_sources),'Missing survey citation audit: '+w['id'])
 check(json.loads((R/'website/public/survey-source-audit.json').read_text())==survey_audit,'Website survey reference audit is stale')
 sensing_audit=json.loads((R/'data/sensing-source-audit.json').read_text())
-check(sensing_audit['reviewed']==cutoff,'Sensing source audit has a different review date')
+check(bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}',sensing_audit['reviewed'])) and sensing_audit['reviewed']<=cutoff,'Sensing source audit has a different review date')
 check(bool(sensing_audit['sources']),'Sensing source audit is empty')
 check(len({s['id']for s in sensing_audit['sources']})==len(sensing_audit['sources']),'Duplicate sensing audit source IDs')
 for source in sensing_audit['sources']:

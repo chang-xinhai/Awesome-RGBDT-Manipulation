@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-10-30",
+  "reviewed": "2026-11-05",
   "sources": [
     {
       "work": "gta2",
@@ -4961,6 +4961,96 @@
       "work": "manipforce",
       "kind": "code",
       "url": "https://github.com/gist-ailab/ManipForce"
+    },
+    {
+      "work": "geometric-abstraction-agent",
+      "kind": "project",
+      "url": "https://geometric-abstraction.github.io/"
+    },
+    {
+      "work": "geometric-abstraction-agent",
+      "kind": "code",
+      "url": "https://github.com/Spectraorder/geometric-abstraction"
+    },
+    {
+      "work": "panotac",
+      "kind": "project",
+      "url": "https://panotac.github.io/"
+    },
+    {
+      "work": "forceldm",
+      "kind": "project",
+      "url": "https://tpy001.github.io/ForceLDM/"
+    },
+    {
+      "work": "forceldm",
+      "kind": "code",
+      "url": "https://github.com/tpy001/ForceLDM-code/tree/forceldm"
+    },
+    {
+      "work": "tf2-steering",
+      "kind": "project",
+      "url": "https://yiming-cc.github.io/tf2-steering/"
+    },
+    {
+      "work": "auriga",
+      "kind": "code",
+      "url": "https://github.com/lose4578/Auriga"
+    },
+    {
+      "work": "captain-code-policy",
+      "kind": "project",
+      "url": "https://waltstephen.github.io/captain/"
+    },
+    {
+      "work": "captain-code-policy",
+      "kind": "code",
+      "url": "https://github.com/waltstephen/CaPtain"
+    },
+    {
+      "work": "touchbridge",
+      "kind": "project",
+      "url": "https://touchbridge2026.github.io/"
+    },
+    {
+      "work": "cimi",
+      "kind": "project",
+      "url": "https://nus-lins-lab.github.io/CIMIWeb/"
+    },
+    {
+      "work": "cimi",
+      "kind": "code",
+      "url": "https://github.com/ariszxxu/CIMI"
+    },
+    {
+      "work": "dexarena",
+      "kind": "project",
+      "url": "https://sipair-elastic.github.io/DexArena-website/"
+    },
+    {
+      "work": "dexarena",
+      "kind": "code",
+      "url": "https://github.com/SIPAIR-Elastic/DexArena"
+    },
+    {
+      "work": "tacmind",
+      "kind": "project",
+      "url": "https://tacmind-bench.github.io/"
+    },
+    {
+      "work": "tacmind",
+      "kind": "code",
+      "url": "https://github.com/Tacmind-Bench/TacMind"
+    },
+    {
+      "work": "astra-three-tier-robomme",
+      "kind": "project",
+      "url": "https://bingaochen.github.io/Astra-on-RoboMME/"
+    },
+    {
+      "work": "astra-three-tier-robomme",
+      "kind": "code",
+      "url": "https://github.com/bingaochen/Astra-on-RoboMME"
     }
   ]
 }

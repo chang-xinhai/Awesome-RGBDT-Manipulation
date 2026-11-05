@@ -3341,7 +3341,8 @@
     "caveats": [
       "The reported run had not been validated by benchmark maintainers when the paper was published.",
       "Waypoint control and the privileged oracle-skill diagnostic are separate protocols.",
-      "Only one full run is reported, whereas the submission template asks for three. Configuration and interface notes were informed by earlier test-split runs, so this is not an untouched held-out evaluation."
+      "Only one full run is reported, whereas the submission template asks for three. Configuration and interface notes were informed by earlier test-split runs, so this is not an untouched held-out evaluation.",
+      "A separate three-tier Astra + π0.5 monitor architecture is indexed under Astra Three-Tier RoboMME."
     ],
     "imageCandidates": [
       {
@@ -3352,7 +3353,10 @@
         "note": "Figure 2: A full-context frontier VLM retains the episode video and prior responses while commanding every end-effector waypoint in memory-dependent manipulation."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-11-05",
+    "relatedIds": [
+      "astra-three-tier-robomme"
+    ]
   },
   {
     "id": "streamingwam-staircase",
@@ -81291,5 +81295,1178 @@
       "Wrist force/torque is distinct from fingertip skin tactile sensing."
     ],
     "verified": "2026-10-30"
+  },
+  {
+    "id": "geometric-abstraction-agent",
+    "name": "Geometric Abstraction",
+    "title": "Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action",
+    "date": "2026-11-03",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "An agent uses calibrated RGB-D and geometric scene abstractions for spatial reasoning and manipulation.",
+    "institution": "Independent Researcher; Georgia Institute of Technology; HKUST",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.05058",
+      "project": "https://geometric-abstraction.github.io/",
+      "code": "https://github.com/Spectraorder/geometric-abstraction"
+    },
+    "release": {
+      "code": "Available — official source repository",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "MIT",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.05058v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      },
+      {
+        "url": "https://github.com/Spectraorder/geometric-abstraction",
+        "label": "Official repository, source files and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Evaluation is simulation; geometric abstractions do not establish physical-robot performance."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Multimodal language model with geometric tools",
+      "modelSize": "Not reported",
+      "inputs": "Side and wrist RGB-D observations, task instructions and geometric references",
+      "outputs": "Grounded manipulation actions",
+      "trainingMethod": "Geometric abstraction provides a symbolic interface for agent reasoning.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Simulated SO-100 manipulation experiments."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.05058v1/Figure2.png",
+        "page": "https://arxiv.org/abs/2611.05058",
+        "kind": "architecture",
+        "credit": "Geometric Abstraction authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "panotac",
+    "name": "PanoTac",
+    "title": "PanoTac: A Dense Three-Axis Tactile Sensor for Robust Touch-Centric Manipulation",
+    "date": "2026-11-02",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "A compliant dense three-axis tactile fingertip supports touch-centric visuomotor manipulation.",
+    "institution": "New York University; Columbia University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.03520",
+      "project": "https://panotac.github.io/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.03520v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      }
+    ],
+    "caveats": [
+      "The sensor supplies distributed contact measurements; it is distinct from a wrist force/torque sensor."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Visuotactile manipulation policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "RGB, robot state and a 12 × 32 × 3 normal/shear tactile representation.",
+      "outputs": "Manipulation actions",
+      "trainingMethod": "Touch-centric visuomotor learning evaluated with a dense fingertip sensor.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Three real tasks include test-tube preparation, grain scooping and salt pouring."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.03520v1/system_v6.png",
+        "page": "https://arxiv.org/abs/2611.03520",
+        "kind": "architecture",
+        "credit": "PanoTac authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "forceldm",
+    "name": "ForceLDM",
+    "title": "ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation",
+    "date": "2026-11-02",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "visual-precision-rl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Force-aware latent dynamics supervision improves a contact-rich manipulation policy.",
+    "institution": "Xi’an Jiaotong University; University of Science and Technology of China",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Force/Torque",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.03294",
+      "project": "https://tpy001.github.io/ForceLDM/",
+      "code": "https://github.com/tpy001/ForceLDM-code/tree/forceldm",
+      "data": "https://huggingface.co/datasets/PeiYuan001/forceldm-dataset"
+    },
+    "release": {
+      "code": "Available — official source repository",
+      "weights": "Not verified",
+      "data": "Available — official dataset",
+      "license": "Apache-2.0",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.03294v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      },
+      {
+        "url": "https://github.com/tpy001/ForceLDM-code/tree/forceldm",
+        "label": "Official repository, source files and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/PeiYuan001/forceldm-dataset",
+        "label": "Official recorded dataset",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Wrist force/torque is not a skin-tactile input; pretrained task-specific policy weights have not been verified."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Force-aware VLA policy",
+      "baseModel": "π0",
+      "modelSize": "Not reported",
+      "inputs": "RGB, language, robot state and wrist force/torque",
+      "outputs": "Robot actions",
+      "trainingMethod": "Distills predicted force and flow dynamics into a force-aware manipulation policy.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Real-world contact-rich manipulation on five tasks."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.03294v1/figure2.png",
+        "page": "https://arxiv.org/abs/2611.03294",
+        "kind": "architecture",
+        "credit": "ForceLDM authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "pointpilot",
+    "name": "PointPilot",
+    "title": "PointPilot: Unified Robotic Manipulation via Object-Centric 3D Point Flow Prediction",
+    "date": "2026-11-02",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Object-centric 3D point-flow prediction guides manipulation across simulation and physical robots.",
+    "institution": "The Chinese University of Hong Kong, Shenzhen; DexForce Technology",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.02930"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.02930v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      }
+    ],
+    "caveats": [
+      "The inferred 3D geometry should not be interpreted as a verified physical depth sensor input."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "3D flow manipulation policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Multi-view RGB images and language; point geometry is inferred. Depth estimates are used for offline reconstruction only.",
+      "outputs": "Object-centric 3D point flows and robot actions",
+      "trainingMethod": "Learns to predict point flows for unified manipulation.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Manipulation experiments in simulation and on physical robots."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.02930v1/figure/method.png",
+        "page": "https://arxiv.org/abs/2611.02930",
+        "kind": "architecture",
+        "credit": "PointPilot authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "openrua",
+    "name": "OpenRUA",
+    "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+    "date": "2026-11-01",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "An open-model robot-use agent uses a unified tool harness for simulated and real manipulation.",
+    "institution": "Tsinghua University; University of California, Berkeley",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.01560"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.01560v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      }
+    ],
+    "caveats": [
+      "RoboDojo score and physical task results use different protocols; check the paper before comparing them."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Qwen3.8-Flash-Next",
+      "modelSize": "Not reported",
+      "inputs": "Visual observations and language task instructions",
+      "outputs": "Tool calls and robot manipulation commands",
+      "trainingMethod": "Agent reasoning and a unified execution harness.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Authors report 31.39 on RoboDojo and physical evaluation on 19 tasks."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.01560v1/figs/overview/overview.png",
+        "page": "https://arxiv.org/abs/2611.01560",
+        "kind": "architecture",
+        "credit": "OpenRUA authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "tf2-steering",
+    "name": "TF²-Steering",
+    "title": "TF²-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering",
+    "date": "2026-11-01",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "Predicted tactile outcomes and tactile feedback steer a flow-based manipulation policy at inference time.",
+    "institution": "Zhejiang University; Shanghai Innovation Institute; Westlake University; Fudan University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.01483",
+      "project": "https://yiming-cc.github.io/tf2-steering/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.01483v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      }
+    ],
+    "caveats": [
+      "Tactile forecasting and measured tactile feedback play different roles in the inference procedure."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Visuotactile flow policy",
+      "baseModel": "Flow-based expert policy",
+      "modelSize": "Not reported",
+      "inputs": "Visual observations, tactile feedback and robot state",
+      "outputs": "Refined manipulation action velocities",
+      "trainingMethod": "Tactile forecast and observed feedback steer the pretrained expert velocity field.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Six simulated and six physical manipulation tasks."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.01483v1/pipeline.png",
+        "page": "https://arxiv.org/abs/2611.01483",
+        "kind": "architecture",
+        "credit": "TF²-Steering authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "auriga",
+    "name": "Auriga",
+    "title": "Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation",
+    "date": "2026-10-31",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "A task-agnostic harness couples a vision-language agent with grounded perception and execution for zero-shot manipulation.",
+    "institution": "StellarEdge AI",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.01112",
+      "code": "https://github.com/lose4578/Auriga"
+    },
+    "release": {
+      "code": "Available — official source repository",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "MIT",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.01112v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      },
+      {
+        "url": "https://github.com/lose4578/Auriga",
+        "label": "Official repository, source files and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Multi-view depth estimates are not evidence of a deployed physical depth sensor; results are simulated."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "GPT-6 Astra",
+      "modelSize": "Not reported",
+      "inputs": "Multi-view visual observations and task instructions",
+      "outputs": "Executable robot tool calls",
+      "trainingMethod": "Zero-shot agent harness with task belief and execution feedback.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Authors report RoboDojo simulation score 64 and 57.7% task success."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.01112v1/auriga-overview-v2.png",
+        "page": "https://arxiv.org/abs/2611.01112",
+        "kind": "architecture",
+        "credit": "Auriga authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "captain-code-policy",
+    "name": "CaPtain",
+    "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+    "date": "2026-10-29",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "A 4B vision-language model is post-trained to write grounded robot control code through a manipulation harness.",
+    "institution": "The Chinese University of Hong Kong; NovaXBot",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.40799",
+      "project": "https://waltstephen.github.io/captain/",
+      "code": "https://github.com/waltstephen/CaPtain",
+      "weights": "https://huggingface.co/YijiaFan/CaPtain-4B",
+      "data": "https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data",
+      "harness": "https://github.com/waltstephen/CaPtain-Harness"
+    },
+    "release": {
+      "code": "Available — official source repository",
+      "weights": "Available — CaPtain-4B model files",
+      "data": "Available — official SFT dataset",
+      "license": "MIT for code; model and data licenses are separate.",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.40799v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      },
+      {
+        "url": "https://github.com/waltstephen/CaPtain",
+        "label": "Official repository, source files and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/YijiaFan/CaPtain-4B",
+        "label": "Official model weights and model card",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data",
+        "label": "Official SFT dataset",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "The model weights, SFT data and harness are separately released artifacts with separate licenses."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Code-as-policy robot agent",
+      "baseModel": "CaPtain-4B",
+      "modelSize": "4B",
+      "inputs": "Visual observations, instructions and robot tool feedback",
+      "outputs": "Executable robot control code and tool calls",
+      "trainingMethod": "Supervised fine-tuning and reinforcement learning for code-as-policy.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Authors evaluate a manipulation harness in simulation and on physical robots."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.40799v1/fig1_harness.png",
+        "page": "https://arxiv.org/abs/2610.40799",
+        "kind": "architecture",
+        "credit": "CaPtain authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "touchbridge",
+    "name": "TouchBridge",
+    "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+    "date": "2026-10-29",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "Tactile human demonstrations support contact-preserving retargeting and synthetic robot training data.",
+    "institution": "Tsinghua University; Zhejiang University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.40349",
+      "project": "https://touchbridge2026.github.io/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.40349v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      }
+    ],
+    "caveats": [
+      "Tactile is a demonstration-transfer signal; this alone does not establish tactile input to the deployed robot policy."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Human-to-robot transfer policy",
+      "baseModel": "GR00T N1.7",
+      "modelSize": "Not reported",
+      "inputs": "Robot RGB and state at deployment; tactile observations condition human demonstration transfer",
+      "outputs": "Robot manipulation actions",
+      "trainingMethod": "Contact-preserving tactile retargeting and synthetic robot demonstrations for VLA fine-tuning.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Four real tasks; authors report 72.5% success for transferred data versus 77.5% for matched teleoperation."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2610.40349v1/tactile_retarget_new.png",
+        "page": "https://arxiv.org/abs/2610.40349",
+        "kind": "architecture",
+        "credit": "TouchBridge authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "cimi",
+    "name": "CIMI",
+    "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+    "date": "2026-10-29",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Contact-aligned human demonstrations and a hierarchical policy transfer dexterous skills to robot hands.",
+    "institution": "National University of Singapore",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.41028",
+      "project": "https://nus-lins-lab.github.io/CIMIWeb/",
+      "code": "https://github.com/ariszxxu/CIMI"
+    },
+    "release": {
+      "code": "Available — official software and hardware designs",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "See repository LICENSE and third-party notices.",
+      "notes": "Official repository has implementation and hardware assets; individual components have separate licenses."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.41028v1",
+        "label": "Author paper: methods, scope, and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "modalities",
+          "benchmark",
+          "benchmark.dataCollection",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://nus-lins-lab.github.io/CIMIWeb/",
+        "label": "Official project and linked releases",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Shared fingertip contact-surface geometry and RGB views are visual sensing, not direct tactile-force measurements."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Contact-grounded hierarchical policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Contact-surface geometry, fingertip RGB and wider scene views.",
+      "outputs": "Contact-surface trajectories and coordinated wrist/finger commands.",
+      "trainingMethod": "Human contact-aligned retargeted demonstrations train a contact-surface planner and controller.",
+      "trainingData": "Human demonstrations retargeted to LEAP and Wuji robot hands.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Six hand-task pairs on real LEAP and Wuji hands; authors report at least 50 percentage points mean final-stage improvement over evaluated baselines."
+    }
+  },
+  {
+    "id": "dexarena",
+    "name": "DexArena",
+    "title": "DexArena: A Unified Benchmark for Long-Horizon Dexterous Manipulation",
+    "date": "2026-11-02",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "dexterous-benchmarks",
+      "general-manipulation"
+    ],
+    "resourceType": "benchmark",
+    "summary": "A simulation benchmark for staged and long-horizon bimanual dexterous manipulation.",
+    "institution": "Shanghai Jiao Tong University; Shanghai Institute for Physical Artificial Intelligence and Robotics",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.02629",
+      "project": "https://sipair-elastic.github.io/DexArena-website/",
+      "code": "https://github.com/SIPAIR-Elastic/DexArena",
+      "data": "https://huggingface.co/datasets/SIPAIR/DexArena"
+    },
+    "release": {
+      "code": "Not yet released — repository contains README and license only",
+      "weights": "Not verified",
+      "data": "Restricted — task asset repository is gated; anonymous file access returned 401",
+      "license": "Apache-2.0 repository; asset licenses may differ.",
+      "notes": "The code repository is a README-only placeholder; Hugging Face asset files require access approval."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.02629v1",
+        "label": "Author paper: methods, scope, and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "modalities",
+          "benchmark",
+          "benchmark.dataCollection",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://sipair-elastic.github.io/DexArena-website/",
+        "label": "Official project and linked releases",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Simulation results do not establish real-world performance.",
+      "The code repository is a placeholder despite the public project link.",
+      "Task assets are gated, and anonymous file access returned HTTP 401."
+    ],
+    "verified": "2026-11-05",
+    "benchmark": {
+      "simulator": "Physics simulation; exact simulator not verified",
+      "simulatorVersion": "Not reported",
+      "taskCount": "10 long-horizon and 30 stage-level tasks",
+      "tasks": [
+        "Meal preparation",
+        "Cabinet and pouring",
+        "Drawer and plug",
+        "Nut and bolt",
+        "Office desk",
+        "Furniture assembly",
+        "Pipette transfer",
+        "Juice preparation",
+        "Package opening",
+        "Table cleaning"
+      ],
+      "taskListScope": "The ten long-horizon task labels in the authors’ Figure 2; their 30 constituent stages are not separately enumerated here.",
+      "capabilities": "Long-horizon skill composition, bimanual coordination and scene generalization.",
+      "metrics": "Stage completion and end-to-end success.",
+      "robots": "Single-arm and bimanual dexterous hands.",
+      "sensors": "External and wrist RGB, robot state.",
+      "dataCollection": "Human teleoperation demonstrations in simulation with replay validation.",
+      "data": "Teleoperation demonstrations reported by authors; gated official dataset repository includes task assets.",
+      "protocol": "Standardized simulation, scene randomization and stage/long-horizon evaluation.",
+      "baselines": "PPO, RLPD, ACT, Diffusion Policy, π0.5 and GR00T N1.7."
+    }
+  },
+  {
+    "id": "tacmind",
+    "name": "TacMind",
+    "title": "TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation",
+    "date": "2026-10-30",
+    "year": 2026,
+    "collections": [
+      "benchmark",
+      "policy"
+    ],
+    "categories": [
+      "tactile-benchmarks",
+      "tactile-foundation",
+      "tactile-il"
+    ],
+    "resourceType": "benchmark",
+    "summary": "A tactile benchmark and streaming visuotactile policy for contact-rich manipulation.",
+    "institution": "Shanghai Jiao Tong University; Daimon Robotics",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.00455",
+      "project": "https://tacmind-bench.github.io/",
+      "code": "https://github.com/Tacmind-Bench/TacMind",
+      "data": "https://huggingface.co/datasets/JiaxinShi/TacMind-Bench"
+    },
+    "release": {
+      "code": "Available — official benchmark and implementation",
+      "weights": "Not verified",
+      "data": "Available — official tactile benchmark episode archives",
+      "license": "MIT for repository; dataset and component licenses are separate.",
+      "notes": "Official repository contains source and assets; published dataset lists episode archives. Model checkpoint release has not been verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.00455v1",
+        "label": "Author paper: methods, scope, and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "modalities",
+          "benchmark",
+          "benchmark.dataCollection",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://tacmind-bench.github.io/",
+        "label": "Official project and linked releases",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "The 28 standard and 100 extra tasks are simulation benchmark counts; real-world evaluation is separate.",
+      "Predictive tactile state and measured tactile observations are distinct."
+    ],
+    "verified": "2026-11-05",
+    "benchmark": {
+      "simulator": "Isaac-based simulation",
+      "simulatorVersion": "Not verified",
+      "taskCount": "28 standard plus 100 extra tasks",
+      "tasks": [],
+      "taskListScope": "Counts cover author-defined standard and extra suites; task names not transcribed.",
+      "capabilities": "Precision, ambiguous-contact recognition, dynamic interaction and robustness.",
+      "metrics": "Task success and tactile prediction metrics.",
+      "robots": "Simulated manipulators with tactile fingertips.",
+      "sensors": "Simulated GelSight Mini and Daimon tactile sensors; RGB and proprioception.",
+      "dataCollection": "Agentic generated and debugged scripted action experts in simulation; real demonstrations contribute separately to tactile model pretraining.",
+      "data": "Published tactile manipulation episodes and benchmark assets.",
+      "protocol": "Controlled tactile tasks and perturbations; physical transfer is reported separately.",
+      "baselines": "Visuotactile action models and tactile representation ablations."
+    },
+    "policy": {
+      "family": "Visuotactile language-action policy",
+      "baseModel": "TacMind-0 with Tac-LeWM tactile world model",
+      "modelSize": "Not reported",
+      "inputs": "RGB, tactile observations, robot state and task instruction.",
+      "outputs": "Robot actions conditioned on streaming tactile state.",
+      "trainingMethod": "Predictive tactile representation pretraining followed by tactile-conditioned action generation.",
+      "trainingData": "Multi-sensor tactile manipulation demonstrations from simulation and the real world.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "TacMind-Bench standard tasks and separate real-world contact-rich experiments."
+    }
+  },
+  {
+    "id": "astra-three-tier-robomme",
+    "name": "Astra Three-Tier RoboMME",
+    "title": "Can Astra Solve RoboMME without Breaking the Bank?",
+    "date": "2026-11-04",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A three-tier planner, VLA executor and learned monitor reduce high-level calls on memory-dependent manipulation tasks.",
+    "institution": "Stanford University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Language",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [
+      "Not reported"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.06184",
+      "project": "https://bingaochen.github.io/Astra-on-RoboMME/",
+      "code": "https://github.com/bingaochen/Astra-on-RoboMME"
+    },
+    "release": {
+      "code": "Available — official source repository",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Apache-2.0",
+      "notes": "Release status checked against author artifacts on 2026-11-05."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.06184v1",
+        "label": "Original paper: method, inputs and evaluation",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ],
+        "note": "Results and sensing claims are scoped to the authors’ evaluation and deployment setting."
+      },
+      {
+        "url": "https://github.com/bingaochen/Astra-on-RoboMME",
+        "label": "Official repository, source files and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Simulation results and hosted-model usage should not be interpreted as real-robot evaluation.",
+      "This is a separate paper and architecture from the similarly named waypoint-only Astra on RoboMME agent."
+    ],
+    "verified": "2026-11-05",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "GPT-6 Astra planner; π0.5 executor; Qwen3-VL-4B monitor",
+      "modelSize": "Not reported",
+      "inputs": "Video/history, current RGB, task instruction and robot state",
+      "outputs": "Subtask instructions and 16-step robot action chunks",
+      "trainingMethod": "Fine-tuned progress monitor; planner and executor orchestrated at different rates.",
+      "trainingData": "See original paper for dataset and protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "RoboMME: 79.13% reported episode success and 3.63 planner calls per episode."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.06184v1/three-tier-overview.png",
+        "page": "https://arxiv.org/abs/2611.06184",
+        "kind": "architecture",
+        "credit": "Astra Three-Tier RoboMME authors",
+        "note": "Author method figure."
+      }
+    ],
+    "relatedIds": [
+      "astra-robomme"
+    ]
   }
 ]

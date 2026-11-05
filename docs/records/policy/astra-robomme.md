@@ -44,6 +44,7 @@ A full-context frontier VLM retains the episode video and prior responses while 
 - The reported run had not been validated by benchmark maintainers when the paper was published.
 - Waypoint control and the privileged oracle-skill diagnostic are separate protocols.
 - Only one full run is reported, whereas the submission template asks for three. Configuration and interface notes were informed by earlier test-split runs, so this is not an untouched held-out evaluation.
+- A separate three-tier Astra + π0.5 monitor architecture is indexed under Astra Three-Tier RoboMME.
 
 **Primary evidence**
 
