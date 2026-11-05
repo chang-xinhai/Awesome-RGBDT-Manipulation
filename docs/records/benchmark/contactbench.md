@@ -8,7 +8,7 @@ ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation
 
 **2026-10-17 · Preprint · University of Illinois Urbana-Champaign**
 
-**[Paper](https://arxiv.org/abs/2610.24512)** · [Project](https://jingyi-xiang.github.io/contactbench)
+**[Paper](https://arxiv.org/abs/2610.24512)** · [Project](https://jingyi-xiang.github.io/contactbench) · [Code](https://github.com/Michaelwyx/contactbench-sim)
 
 A printable 36-task suite instantiates eight everyday contact skills with tunable physical/simulation mechanisms and evaluates learned policies on six physical tasks.
 
@@ -34,11 +34,11 @@ A printable 36-task suite instantiates eight everyday contact skills with tunabl
 | Observations / modalities | RGB · Tactile · Proprioception |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Not released — project simulation-code button says coming soon |
-| Release: weights | Not applicable |
-| Release: data | Not released — asset-model download says coming soon |
-| Release: license | Implementation/dataset/asset license not verified; project figures retain original rights. |
-| Release: notes | The paper describes an open benchmark, but inspected project Code and Asset models links are placeholder#buttons explicitly labeled coming soon. |
+| Release: code | Partial — official simulation implementation covers 22 of 31 short-horizon tasks [2](https://github.com/Michaelwyx/contactbench-sim)  |
+| Release: weights | Not applicable [2](https://github.com/Michaelwyx/contactbench-sim)  |
+| Release: data | Available — 49 sim-ready printable kit assets and variants; demonstration corpus separate [2](https://github.com/Michaelwyx/contactbench-sim)  |
+| Release: license | MIT repository; individual third-party assets and dependencies may differ [2](https://github.com/Michaelwyx/contactbench-sim)  |
+| Release: notes | Authors report 73 scripted rows for 22 base tasks, a separate task-2 scene, teleoperation and aligned data collection. Policy-learning and evaluation pipelines are not part of this release. [2](https://github.com/Michaelwyx/contactbench-sim)  |
 
 **Task names — Selected named reference/evaluation examples from the paper; not the complete 36-task catalogue.:**
 
@@ -54,7 +54,9 @@ A printable 36-task suite instantiates eight everyday contact skills with tunabl
 - 36reference tasks/&gt;40assets are suitecoverage; policycomparisonis sixphysicaltasks.
 - Poor evaluatedVTpolicyperformance on thisprotocol doesnot establishthat tactileinformation is universallyunhelpful.
 - Simulation fingertipimages/pressure/shear/netforces andphysicalGelSight channels are distinctsensorconfigurations.
+- The public sim release covers 22 of the 31 short-horizon tasks with scripted policies; paper-wide policy-learning/evaluation pipelines and the complete real demonstration corpus remain separate.
 
 **Primary evidence**
 
 1. [Original full paper, methods and evaluation](https://arxiv.org/html/2610.24512) — Publication date is arXiv v1; implementation and deployment observations are distinguished from training supervision, generated geometry and base-model identity.
+2. [Official source repository and current release scope](https://github.com/Michaelwyx/contactbench-sim) — Inspected actual implementation and author README; component and dataset availability remain separate.

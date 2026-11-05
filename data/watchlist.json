@@ -3,6 +3,111 @@
   "reviewed": "2026-11-05",
   "sources": [
     {
+      "work": "rle-bench",
+      "kind": "project",
+      "url": "https://rle-bench.github.io/"
+    },
+    {
+      "work": "rle-bench",
+      "kind": "code",
+      "url": "https://github.com/RLE-Bench/RLE-Bench"
+    },
+    {
+      "work": "vabar",
+      "kind": "project",
+      "url": "https://berkeleyautomation.github.io/vabar-website/"
+    },
+    {
+      "work": "pyrua-real",
+      "kind": "project",
+      "url": "https://dagroup-pku.github.io/PyRUA-Lean/real/"
+    },
+    {
+      "work": "pyrua-real",
+      "kind": "code",
+      "url": "https://github.com/DAGroup-PKU/PyRUA-Lean"
+    },
+    {
+      "work": "robocasa-mem",
+      "kind": "project",
+      "url": "https://sihhangchen.github.io/RoboCasa-Mem/"
+    },
+    {
+      "work": "robocasa-mem",
+      "kind": "code",
+      "url": "https://github.com/SiHhangChen/RoboCasa-Mem"
+    },
+    {
+      "work": "mesa-bench",
+      "kind": "project",
+      "url": "https://pairlab.github.io/MESA/"
+    },
+    {
+      "work": "mesa-bench",
+      "kind": "code",
+      "url": "https://github.com/pairlab/mesa-env"
+    },
+    {
+      "work": "pyrua-datafarm",
+      "kind": "project",
+      "url": "https://dagroup-pku.github.io/PyRUA-Lean/DataFarm"
+    },
+    {
+      "work": "pyrua-datafarm",
+      "kind": "code",
+      "url": "https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm"
+    },
+    {
+      "work": "robotagentbench",
+      "kind": "project",
+      "url": "https://aetherlabsai.github.io/RobotAgentBench/"
+    },
+    {
+      "work": "robotagentbench",
+      "kind": "code",
+      "url": "https://github.com/AetherLabsAI/RobotAgentBench"
+    },
+    {
+      "work": "worldarena-2",
+      "kind": "project",
+      "url": "https://world-arena.ai/"
+    },
+    {
+      "work": "worldarena-2",
+      "kind": "code",
+      "url": "https://github.com/WorldArena2/WorldArena-2.0"
+    },
+    {
+      "work": "vitaclab",
+      "kind": "project",
+      "url": "https://youlj109.github.io/ViTacLab/"
+    },
+    {
+      "work": "vitaclab",
+      "kind": "code",
+      "url": "https://github.com/youlj109/ViTacLab"
+    },
+    {
+      "work": "codeactionbench",
+      "kind": "project",
+      "url": "https://codeactionbench.org/benchmark"
+    },
+    {
+      "work": "codeactionbench",
+      "kind": "code",
+      "url": "https://github.com/lyhkk/CodeActionBench"
+    },
+    {
+      "work": "spark-keypoints",
+      "kind": "project",
+      "url": "https://cwru-aism.github.io/spark-page/"
+    },
+    {
+      "work": "spark-keypoints",
+      "kind": "code",
+      "url": "https://github.com/CWRU-AISM/sparkbot"
+    },
+    {
       "work": "gta2",
       "kind": "project",
       "url": "https://gta2-project.github.io/"
@@ -106,6 +211,11 @@
       "work": "contactbench",
       "kind": "project",
       "url": "https://jingyi-xiang.github.io/contactbench"
+    },
+    {
+      "work": "contactbench",
+      "kind": "code",
+      "url": "https://github.com/Michaelwyx/contactbench-sim"
     },
     {
       "work": "mocap",
@@ -296,11 +406,6 @@
       "work": "pyrualean",
       "kind": "project",
       "url": "https://dagroup-pku.github.io/PyRUA-Lean/"
-    },
-    {
-      "work": "pyrualean",
-      "kind": "code",
-      "url": "https://github.com/DAGroup-PKU/PyRUA-Lean"
     },
     {
       "work": "simex",
@@ -4468,6 +4573,11 @@
       "url": "https://tactx-project.github.io/"
     },
     {
+      "work": "tactx",
+      "kind": "code",
+      "url": "https://github.com/tactx-project/TactX"
+    },
+    {
       "work": "ra-touch",
       "kind": "project",
       "url": "https://aim-skku.github.io/RA-Touch/"
@@ -4951,6 +5061,11 @@
       "work": "ego2robot",
       "kind": "project",
       "url": "https://www-ye.github.io/ego2robot_blog/"
+    },
+    {
+      "work": "ego2robot",
+      "kind": "code",
+      "url": "https://github.com/www-Ye/ego2robot_blog"
     },
     {
       "work": "dex-x",

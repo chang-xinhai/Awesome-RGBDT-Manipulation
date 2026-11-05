@@ -8,7 +8,7 @@ TactX: Learning Shared Tactile Representations Across Diverse Sensors
 
 **2026-06-30 · arXiv preprint 2026 (submitted to CoRL 2026) · UC San Diego; Seoul National University; Amazon FAR**
 
-**[Paper](https://arxiv.org/abs/2606.31236)** · [Project](https://tactx-project.github.io/)
+**[Paper](https://arxiv.org/abs/2606.31236)** · [Project](https://tactx-project.github.io/) · [Code](https://github.com/tactx-project/TactX)
 
 Sensor-specific encoders map optical, magnetic and resistive touch to one transferable latent, evaluated through frozen-encoder ACT policy transfer.
 
@@ -34,18 +34,20 @@ Sensor-specific encoders map optical, magnetic and resistive touch to one transf
 | Observations / modalities | Tactile |
 | Evaluation domain | Real robot |
 | Embodiment |  |
-| Release: code | Not verified [2](https://tactx-project.github.io/)  |
-| Release: weights | Not verified [2](https://tactx-project.github.io/)  |
-| Release: data | Not verified [2](https://tactx-project.github.io/)  |
-| Release: license | Not verified [2](https://tactx-project.github.io/)  |
-| Release: notes | Official project advertises code, dataset and checkpoints, but its inspected resource elements have no usable download destinations. Public artifacts remain unverified. [2](https://tactx-project.github.io/)  |
+| Release: code | Available — representation alignment/evaluation and downstream ACT training code [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
+| Release: weights | Not bundled — pretrained checkpoints require separate access [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
+| Release: data | Not bundled — paired-contact and robot demonstration data require separate access [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
+| Release: license | Not verified — no root LICENSE found [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
+| Release: notes | Public repository has representation-learning, cross-sensor evaluation and ACT policy training source; datasets and pretrained checkpoints are not bundled. [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
 
 **Scope and qualifications**
 
 - Primary contribution is the transferable tactile representation; ACT is a downstream control probe, so this record is counted as a Model.
 - The 16D tactile latent differs from ACT’s 32D action-CVAE latent; sensors are sampled separately from the action-chunk horizon.
+- Datasets and pretrained checkpoints are not bundled with the released code.
 
 **Primary evidence**
 
 1. [Original manuscript and first public submission history](https://arxiv.org/abs/2606.31236) — Full author method, evaluation and appendix reviewed; downstream controller probes are distinguished from the reusable model.
 2. [Official author project and current artifact destinations](https://tactx-project.github.io/) — A project button or advertised artifact does not establish a downloadable release; paper-version differences are retained.
+3. [Official source repository and current release scope](https://github.com/tactx-project/TactX) — Inspected actual implementation and author README; component and dataset availability remain separate.

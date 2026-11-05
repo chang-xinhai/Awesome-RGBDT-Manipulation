@@ -11723,5 +11723,226 @@
       "height": 400,
       "note": "Author method figure; locally optimized copy. Copyright remains with the original authors."
     }
+  },
+  "vabar": {
+    "benchmark": {
+      "path": "/images/catalog/vabar-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.06881v1/VABAR-main.png",
+      "page": "https://arxiv.org/abs/2611.06881",
+      "credit": "VABAR authors",
+      "alt": "VABAR — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "113a192b0f5aa48a14a4efb781f33b217b05e10e0b837597fe0bca5b605921c8",
+      "width": 1600,
+      "height": 887,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "pyrua-real": {
+    "policy": {
+      "path": "/images/catalog/pyrua-real-policy.webp",
+      "original": "https://arxiv.org/html/2611.06768v1/rsi_system_architecture_v16.png",
+      "page": "https://arxiv.org/abs/2611.06768",
+      "credit": "PyRUA-REAL authors",
+      "alt": "PyRUA-REAL — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "4c6587450d6f899dceffe232be0f734461ccc5dabfbf9a36f7d98e9a55bf6f51",
+      "width": 1600,
+      "height": 677,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "robocasa-mem": {
+    "benchmark": {
+      "path": "/images/catalog/robocasa-mem-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.06475v1/benchmark-overview.png",
+      "page": "https://arxiv.org/abs/2611.06475",
+      "credit": "RoboCasa-Mem authors",
+      "alt": "RoboCasa-Mem — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "e6856f6ab9f7658e39b075942cfdba4856e7f1e77801793c9da99840eda5b6a3",
+      "width": 1582,
+      "height": 991,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    },
+    "policy": {
+      "path": "/images/catalog/robocasa-mem-policy.webp",
+      "original": "https://arxiv.org/html/2611.06475v1/hierarchical_memory_planner_editable_layers_v4.png",
+      "page": "https://arxiv.org/abs/2611.06475",
+      "credit": "RoboCasa-Mem authors",
+      "alt": "RoboCasa-Mem — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "a530b5a5903191b2400af571eb1eea171d81357900032e7c2fa64b04a310b251",
+      "width": 1599,
+      "height": 1049,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "mesa-bench": {
+    "benchmark": {
+      "path": "/images/catalog/mesa-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.05567v1/teaser.png",
+      "page": "https://arxiv.org/abs/2611.05567",
+      "credit": "MESA authors",
+      "alt": "MESA — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "35dedaa18b7a93b7bef941f3a68c43ffff19b8ff318aa96ad6f5697ffe4f1429",
+      "width": 1600,
+      "height": 714,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "pyrua-datafarm": {
+    "benchmark": {
+      "path": "/images/catalog/pyrua-datafarm-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.05320v1/fig1-teaser.png",
+      "page": "https://arxiv.org/abs/2611.05320",
+      "credit": "PyRUA-DataFarm authors",
+      "alt": "PyRUA-DataFarm — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "f52f9170d78ce214692ac577745f2a989c8c17cb356b0ade6ce4b124151979b5",
+      "width": 823,
+      "height": 388,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "cronos-bench": {
+    "benchmark": {
+      "path": "/images/catalog/cronos-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.05080v1/Teaser_new6.png",
+      "page": "https://arxiv.org/abs/2611.05080",
+      "credit": "CRONOS authors",
+      "alt": "CRONOS — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "7d698eb66d0a85b238b8af714ae96c0e4ba2f84c8dada42332f0041dcd700731",
+      "width": 1600,
+      "height": 900,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "dimure": {
+    "benchmark": {
+      "path": "/images/catalog/dimure-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.04226v1/libero_disturb_nine.png",
+      "page": "https://arxiv.org/abs/2611.04226",
+      "credit": "DiMuRe / LIBERO-Disturb authors",
+      "alt": "DiMuRe / LIBERO-Disturb — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "0af4e8dc646e026a356d09b8f3e1d2f6c33c16a29a012a75b3c511a4727ae4e0",
+      "width": 857,
+      "height": 422,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    },
+    "policy": {
+      "path": "/images/catalog/dimure-policy.webp",
+      "original": "https://arxiv.org/html/2611.04226v1/figure2.png",
+      "page": "https://arxiv.org/abs/2611.04226",
+      "credit": "DiMuRe / LIBERO-Disturb authors",
+      "alt": "DiMuRe / LIBERO-Disturb — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "5cc361bafbe68f8e74701e18a87f22faedbea31289f136ccbc0297e0047fdc4c",
+      "width": 1600,
+      "height": 725,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "robotagentbench": {
+    "benchmark": {
+      "path": "/images/catalog/robotagentbench-benchmark.webp",
+      "original": "https://arxiv.org/html/2610.34649v1/Robot_Agent_Arena.png",
+      "page": "https://arxiv.org/abs/2610.34649",
+      "credit": "RobotAgentBench authors",
+      "alt": "RobotAgentBench — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "bb34d31d3d76cfb3f813075e33ee0d15cc47a72bb3b534e580b967233a2f134c",
+      "width": 1600,
+      "height": 947,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "worldarena-2": {
+    "benchmark": {
+      "path": "/images/catalog/worldarena-2-benchmark.webp",
+      "original": "https://arxiv.org/html/2605.17912v1/WorldArena2.png",
+      "page": "https://arxiv.org/abs/2605.17912",
+      "credit": "WorldArena 2.0 authors",
+      "alt": "WorldArena 2.0 — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "a1d7f8793dd7cd1537a7696dbd675d97c5eb9a70b01195c31b494219ca953109",
+      "width": 1230,
+      "height": 754,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "vitaclab": {
+    "benchmark": {
+      "path": "/images/catalog/vitaclab-benchmark.webp",
+      "original": "https://raw.githubusercontent.com/youlj109/ViTacLab/main/docs/media/paper/vitaclab-teaser.png",
+      "page": "https://youlj109.github.io/ViTacLab/",
+      "credit": "ViTacLab authors",
+      "alt": "ViTacLab — benchmark and task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "80927fa5560c6f2d60ff73293283f04c97ea467fbd9c67d38f29af806eda94b6",
+      "width": 1600,
+      "height": 710,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "codeactionbench": {
+    "benchmark": {
+      "path": "/images/catalog/codeactionbench-benchmark.webp",
+      "original": "https://arxiv.org/html/2609.33807v1/figure2-trust-boundary-crop.png",
+      "page": "https://arxiv.org/abs/2609.33807",
+      "credit": "CodeActionBench authors",
+      "alt": "CodeActionBench task contract and information boundaries for agent, robot API and verifier",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "0678b57362332610d6c33f18d56d48dbdfadc1d29f22e15f4ddec580d266b4af",
+      "width": 1600,
+      "height": 757,
+      "note": "Author Figure 2: benchmark interfaces and information boundaries between evaluated agent, robot API and out-of-band verifier; visually inspected."
+    }
+  },
+  "spark-keypoints": {
+    "policy": {
+      "path": "/images/catalog/spark-keypoints-policy.webp",
+      "original": "https://arxiv.org/html/2606.30613v1/figure_v2.png",
+      "page": "https://arxiv.org/abs/2606.30613",
+      "credit": "SPARK (Anchored Keypoints) authors",
+      "alt": "SPARK (Anchored Keypoints) — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "138a827913da497319c1107d41ade1212e8b7ebe33445fb25e6eee63988eaa29",
+      "width": 964,
+      "height": 510,
+      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+    }
+  },
+  "rle-bench": {
+    "benchmark": {
+      "path": "/images/catalog/rle-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2609.34210v1/RLE_BENCH_overview_editable.png",
+      "page": "https://arxiv.org/abs/2609.34210",
+      "credit": "RLE-Bench authors",
+      "alt": "RLE-Bench task families across four robotics engineering workflows",
+      "kind": "task-overview",
+      "reviewed": "2026-11-05",
+      "sourceSha256": "f537df47c14f579dc218a574450a8b91cb2925bb4109616e81e2d63b747b6212",
+      "width": 660,
+      "height": 413,
+      "note": "Author overview of four workflows, nine families and 51 tasks; visually inspected."
+    }
   }
 }

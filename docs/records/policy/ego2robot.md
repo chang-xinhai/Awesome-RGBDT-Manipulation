@@ -8,7 +8,7 @@ Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data
 
 **2026-08-03 · arXiv preprint · Renmin University of China**
 
-**[Paper](https://arxiv.org/abs/2608.02580)** · [Project](https://www-ye.github.io/ego2robot_blog/)
+**[Paper](https://arxiv.org/abs/2608.02580)** · [Project](https://www-ye.github.io/ego2robot_blog/) · [Code](https://github.com/www-Ye/ego2robot_blog)
 
 Synthesizes retargeted robot observations and actions from egocentric human data for downstream manipulation policy pretraining.
 
@@ -33,18 +33,20 @@ Synthesizes retargeted robot observations and actions from egocentric human data
 | Observations / modalities | RGB · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Bimanual |
-| Release: code | Not verified [2](https://www-ye.github.io/ego2robot_blog/)  |
-| Release: weights | Not verified [2](https://www-ye.github.io/ego2robot_blog/)  |
-| Release: data | Not verified [2](https://www-ye.github.io/ego2robot_blog/)  |
-| Release: license | Not verified [2](https://www-ye.github.io/ego2robot_blog/)  |
-| Release: notes | Project and manuscript demonstrate the pipeline; a downloadable implementation or full corpus was not independently verified. [2](https://www-ye.github.io/ego2robot_blog/)  |
+| Release: code | Available — human-to-robot data synthesis and RoboTwin evaluation source [2](https://www-ye.github.io/ego2robot_blog/) [3](https://github.com/www-Ye/ego2robot_blog)  |
+| Release: weights | Not verified [2](https://www-ye.github.io/ego2robot_blog/) [3](https://github.com/www-Ye/ego2robot_blog)  |
+| Release: data | Not verified — external source datasets and generated corpus separate [2](https://www-ye.github.io/ego2robot_blog/) [3](https://github.com/www-Ye/ego2robot_blog)  |
+| Release: license | Not verified — no root LICENSE found [2](https://www-ye.github.io/ego2robot_blog/) [3](https://github.com/www-Ye/ego2robot_blog)  |
+| Release: notes | Despite repository name, root contains the synthesis pipeline and evaluation/robotwin implementation. External models, checkpoints and input datasets are independent. [2](https://www-ye.github.io/ego2robot_blog/) [3](https://github.com/www-Ye/ego2robot_blog)  |
 
 **Scope and qualifications**
 
 - Human egocentric data and actual robot training/deployment observations are separate stages.
 - Do not infer a measured depth policy input from camera hardware, reconstruction, or data generation alone.
+- Pipeline code does not itself provide external source datasets, model weights, or a fully reproduced generated corpus.
 
 **Primary evidence**
 
 1. [Author manuscript and initial submission](https://arxiv.org/html/2608.02580v1) — Original manuscript distinguishes human capture, training labels and deployment observations.
 2. [Official project and release evidence](https://www-ye.github.io/ego2robot_blog/) — Current repository contents and access are assessed independently of paper claims.
+3. [Official source repository and current release scope](https://github.com/www-Ye/ego2robot_blog) — Inspected actual implementation and author README; component and dataset availability remain separate.
