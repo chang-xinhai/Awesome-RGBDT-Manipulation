@@ -19,26 +19,26 @@ A simulation benchmark for staged and long-horizon bimanual dexterous manipulati
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | benchmark |
-| Simulator | Physics simulation; exact simulator not verified [1](https://arxiv.org/html/2611.02629v1)  |
-| Simulator version and scope | Not reported [1](https://arxiv.org/html/2611.02629v1)  |
-| Task count and scope | 10 long-horizon and 30 stage-level tasks [1](https://arxiv.org/html/2611.02629v1)  |
-| Task-list scope | The ten long-horizon task labels in the authors’ Figure 2; their 30 constituent stages are not separately enumerated here. [1](https://arxiv.org/html/2611.02629v1)  |
-| Capability dimensions | Long-horizon skill composition, bimanual coordination and scene generalization. [1](https://arxiv.org/html/2611.02629v1)  |
-| Metrics | Stage completion and end-to-end success. [1](https://arxiv.org/html/2611.02629v1)  |
-| Robots | Single-arm and bimanual dexterous hands. [1](https://arxiv.org/html/2611.02629v1)  |
-| Sensors and observations | External and wrist RGB, robot state. [1](https://arxiv.org/html/2611.02629v1)  |
-| Data collection method | Human teleoperation demonstrations in simulation with replay validation. [1](https://arxiv.org/html/2611.02629v1)  |
-| Demonstrations and data | Teleoperation demonstrations reported by authors; gated official dataset repository includes task assets. [1](https://arxiv.org/html/2611.02629v1)  |
-| Evaluation protocol | Standardized simulation, scene randomization and stage/long-horizon evaluation. [1](https://arxiv.org/html/2611.02629v1)  |
-| Evaluated baselines | PPO, RLPD, ACT, Diffusion Policy, π0.5 and GR00T N1.7. [1](https://arxiv.org/html/2611.02629v1)  |
+| Simulator | SAPIEN / ManiSkill [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Simulator version and scope | Not reported [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Task count and scope | 10 long-horizon and 30 stage-level tasks [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Task-list scope | The ten long-horizon task labels in the authors’ Figure 2; their 30 constituent stages are not separately enumerated here. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Capability dimensions | Long-horizon skill composition, bimanual coordination and scene generalization. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Metrics | Stage completion and end-to-end success. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Robots | Sharpa, Wuji, XHand and Franka gripper end effectors. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Sensors and observations | External and wrist RGB, robot state. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Data collection method | Human teleoperation demonstrations in simulation with replay validation. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Demonstrations and data | The author describes 100 video episodes per stage task and further reviewed state-only recordings; access to the released files is gated. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Evaluation protocol | Standardized simulation, scene randomization and stage/long-horizon evaluation. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Evaluated baselines | PPO, RLPD, ACT, Diffusion Policy, π0.5 and GR00T N1.7. [1](https://arxiv.org/html/2611.02629v1) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Not reported |
-| Release: code | Not yet released — repository contains README and license only [2](https://sipair-elastic.github.io/DexArena-website/)  |
-| Release: weights | Not verified [2](https://sipair-elastic.github.io/DexArena-website/)  |
-| Release: data | Restricted — task asset repository is gated; anonymous file access returned 401 [2](https://sipair-elastic.github.io/DexArena-website/)  |
-| Release: license | Apache-2.0 repository; asset licenses may differ. [2](https://sipair-elastic.github.io/DexArena-website/)  |
-| Release: notes | The code repository is a README-only placeholder; Hugging Face asset files require access approval. [2](https://sipair-elastic.github.io/DexArena-website/)  |
+| Release: code | Available — benchmark tasks, simulator, demonstration utilities and baseline training/evaluation source [2](https://sipair-elastic.github.io/DexArena-website/) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Release: weights | Gated — author dataset repository advertises baseline checkpoints [2](https://sipair-elastic.github.io/DexArena-website/) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Release: data | Gated — author dataset includes task assets and demonstrations; access request required [2](https://sipair-elastic.github.io/DexArena-website/) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Release: license | Apache-2.0 repository; datasets, assets and upstream dependencies may have separate terms. [2](https://sipair-elastic.github.io/DexArena-website/) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
+| Release: notes | Repository provides tasks, scene library, recording utilities and baseline training/evaluation. The dataset is gated and requires authentication; runnable results were not independently reproduced. [2](https://sipair-elastic.github.io/DexArena-website/) [3](https://github.com/SIPAIR-Elastic/DexArena)  |
 
 **Task names — The ten long-horizon task labels in the authors’ Figure 2; their 30 constituent stages are not separately enumerated here.:**
 
@@ -56,10 +56,10 @@ A simulation benchmark for staged and long-horizon bimanual dexterous manipulati
 **Scope and qualifications**
 
 - Simulation results do not establish real-world performance.
-- The code repository is a placeholder despite the public project link.
-- Task assets are gated, and anonymous file access returned HTTP 401.
+- Task assets, demonstrations and baseline checkpoints are hosted in a gated dataset; author says access is automatically granted after request.
 
 **Primary evidence**
 
 1. [Author paper: methods, scope, and evaluation](https://arxiv.org/html/2611.02629v1)
 2. [Official project and linked releases](https://sipair-elastic.github.io/DexArena-website/)
+3. [Official source inventory and release instructions](https://github.com/SIPAIR-Elastic/DexArena) — README reports training/evaluation code and gated assets; source and data access are independently scoped.

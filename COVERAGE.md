@@ -1,21 +1,21 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-11-05. 793 unique records; 65 benchmark records; 660 policy records; 59 models; 9 surveys; 16 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-11-08. 807 unique records; 66 benchmark records; 663 policy records; 69 models; 9 surveys; 16 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
 - Visuo-Tactile Benchmarks: 25 records with this classification.
 - Precision and Assembly: 26 records with this classification.
 - Dexterous Manipulation: 15 records with this classification.
-- General Manipulation: 24 records with this classification.
-- Robustness and Evaluation: 24 records with this classification.
+- General Manipulation: 25 records with this classification.
+- Robustness and Evaluation: 25 records with this classification.
 - Supporting Tools and Data: 16 records with this classification.
-- Visuo-Tactile Policy Learning: 89 records with this classification.
+- Visuo-Tactile Policy Learning: 90 records with this classification.
 - Tactile VLA and World-Action Models: 113 records with this classification.
-- RGB-D and 3D Policies: 193 records with this classification.
+- RGB-D and 3D Policies: 204 records with this classification.
 - Tactile Representations and Pretraining: 45 records with this classification.
-- Geometry and Predictive Models: 26 records with this classification.
-- Visual Precision and Reinforcement Learning: 51 records with this classification.
+- Geometry and Predictive Models: 36 records with this classification.
+- Visual Precision and Reinforcement Learning: 52 records with this classification.
 - Agent / RSI / ICL: 283 records with this classification.
 - Generalist Policy Foundations: 163 records with this classification.
 

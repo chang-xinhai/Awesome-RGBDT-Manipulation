@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-05",
+  "reviewed": "2026-11-08",
   "sources": [
     {
       "work": "rle-bench",
@@ -5181,6 +5181,106 @@
       "work": "astra-three-tier-robomme",
       "kind": "code",
       "url": "https://github.com/bingaochen/Astra-on-RoboMME"
+    },
+    {
+      "work": "defm",
+      "kind": "project",
+      "url": "https://de-fm.github.io/"
+    },
+    {
+      "work": "defm",
+      "kind": "code",
+      "url": "https://github.com/leggedrobotics/defm"
+    },
+    {
+      "work": "foundationstereo",
+      "kind": "project",
+      "url": "https://nvlabs.github.io/FoundationStereo/"
+    },
+    {
+      "work": "foundationstereo",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/FoundationStereo"
+    },
+    {
+      "work": "fast-foundationstereo",
+      "kind": "project",
+      "url": "https://nvlabs.github.io/Fast-FoundationStereo/"
+    },
+    {
+      "work": "fast-foundationstereo",
+      "kind": "code",
+      "url": "https://github.com/NVlabs/Fast-FoundationStereo"
+    },
+    {
+      "work": "depth-anything-v2",
+      "kind": "project",
+      "url": "https://depth-anything-v2.github.io/"
+    },
+    {
+      "work": "depth-anything-v2",
+      "kind": "code",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2"
+    },
+    {
+      "work": "depth-anything-3",
+      "kind": "project",
+      "url": "https://depth-anything-3.github.io/"
+    },
+    {
+      "work": "depth-anything-3",
+      "kind": "code",
+      "url": "https://github.com/ByteDance-Seed/Depth-Anything-3"
+    },
+    {
+      "work": "depth-pro",
+      "kind": "project",
+      "url": "https://machinelearning.apple.com/research/depth-pro"
+    },
+    {
+      "work": "depth-pro",
+      "kind": "code",
+      "url": "https://github.com/apple/ml-depth-pro"
+    },
+    {
+      "work": "prompt-depth-anything",
+      "kind": "project",
+      "url": "https://promptda.github.io/"
+    },
+    {
+      "work": "prompt-depth-anything",
+      "kind": "code",
+      "url": "https://github.com/DepthAnything/PromptDA"
+    },
+    {
+      "work": "tactilelab",
+      "kind": "project",
+      "url": "https://yijionglin.github.io/tactilelab/"
+    },
+    {
+      "work": "semantics-to-contact",
+      "kind": "project",
+      "url": "https://edem-ai.github.io/S2C/"
+    },
+    {
+      "work": "spatial-umi-dream",
+      "kind": "project",
+      "url": "https://weiduoyuan.com/spatial-umi-dream/"
+    },
+    {
+      "work": "roboarcade",
+      "kind": "project",
+      "url": "https://roboarcade.org"
+    },
+    {
+      "work": "remake-depth",
+      "kind": "project",
+      "url": "https://chengyaofeng.github.io/ReMake.github.io/"
+    },
+    {
+      "work": "remake-depth",
+      "kind": "code",
+      "url": "https://github.com/ChengYaofeng/ReMake"
     }
   ]
 }

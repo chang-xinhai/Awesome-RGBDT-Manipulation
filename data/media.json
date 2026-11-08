@@ -11944,5 +11944,215 @@
       "height": 413,
       "note": "Author overview of four workflows, nine families and 51 tasks; visually inspected."
     }
+  },
+  "defm": {
+    "policy": {
+      "path": "/images/catalog/defm-policy.webp",
+      "original": "https://de-fm.github.io/static/images/self_distillation.png",
+      "page": "https://de-fm.github.io/",
+      "credit": "DeFM authors",
+      "alt": "DeFM — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "61fb06bbb37bf7bb1baa0fb2f2a00304f21122745871cebd2f531b9ad7612884",
+      "width": 911,
+      "height": 470,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "foundationstereo": {
+    "policy": {
+      "path": "/images/catalog/foundationstereo-policy.webp",
+      "original": "https://arxiv.org/html/2501.09898v1/overview.png",
+      "page": "https://nvlabs.github.io/FoundationStereo/",
+      "credit": "FoundationStereo authors",
+      "alt": "FoundationStereo — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "d7c4f9b9f67803e77ec2f0e1f9cdb77b5bbf2f7311b57fca6ca229d95630a7b5",
+      "width": 1500,
+      "height": 566,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "fast-foundationstereo": {
+    "policy": {
+      "path": "/images/catalog/fast-foundationstereo-policy.webp",
+      "original": "https://arxiv.org/html/2512.11130v1/pipeline.png",
+      "page": "https://nvlabs.github.io/Fast-FoundationStereo/",
+      "credit": "Fast-FoundationStereo authors",
+      "alt": "Fast-FoundationStereo — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "abcf15428b36d0b2738d3c1985b1101faaba0ebb325d8f62a42cd1e00bd425df",
+      "width": 1460,
+      "height": 970,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "depth-anything-v2": {
+    "policy": {
+      "path": "/images/catalog/depth-anything-v2-policy.webp",
+      "original": "https://arxiv.org/html/2406.09414v1/teaser.png",
+      "page": "https://depth-anything-v2.github.io/",
+      "credit": "Depth Anything V2 authors",
+      "alt": "Depth Anything V2 — example predictions and model comparisons",
+      "kind": "result",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "b2cb4e7fee44397d1f78e0f75358a0b17d0549a76c7364a52ff7cb58771a74cd",
+      "width": 1500,
+      "height": 911,
+      "note": "Author figure compares example depth predictions and model characteristics; not an architecture diagram."
+    }
+  },
+  "depth-anything-3": {
+    "policy": {
+      "path": "/images/catalog/depth-anything-3-policy.webp",
+      "original": "https://arxiv.org/html/2511.10647v1/figs/pdfs/pipeline.png",
+      "page": "https://depth-anything-3.github.io/",
+      "credit": "Depth Anything 3 authors",
+      "alt": "Depth Anything 3 — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "767a9bc86f4a9f57685ef9c43396e51e911d8f13e2c51cbbec234ed9f69a365a",
+      "width": 1500,
+      "height": 512,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "depth-pro": {
+    "policy": {
+      "path": "/images/catalog/depth-pro-policy.webp",
+      "original": "https://arxiv.org/html/2410.02073v1/fig/spn_revised.jpeg",
+      "page": "https://machinelearning.apple.com/research/depth-pro",
+      "credit": "Depth Pro authors",
+      "alt": "Depth Pro — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "f67caa733e39dd2beda099bbb0616facb383b8906bb9a52ddb43ec7fb9910b15",
+      "width": 1500,
+      "height": 844,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "prompt-depth-anything": {
+    "policy": {
+      "path": "/images/catalog/prompt-depth-anything-policy.webp",
+      "original": "https://arxiv.org/html/2412.14015v1/pipeline.png",
+      "page": "https://promptda.github.io/",
+      "credit": "Prompt Depth Anything authors",
+      "alt": "Prompt Depth Anything — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "fe504b4b2509330e6eae9cfd1ef09a67fa6898b4902237bdfdd11bc17df321f9",
+      "width": 1500,
+      "height": 452,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "ua-depth": {
+    "policy": {
+      "path": "/images/catalog/ua-depth-policy.webp",
+      "original": "https://arxiv.org/html/2611.01645v1/overview.png",
+      "page": "https://arxiv.org/abs/2611.01645",
+      "credit": "UA-Depth authors",
+      "alt": "UA-Depth — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "2ae451715069257596e1fb3f70625ff5e87dd14992285d37fb36cdf9d50110f0",
+      "width": 1500,
+      "height": 467,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "tactilelab": {
+    "policy": {
+      "path": "/images/catalog/tactilelab-policy.webp",
+      "original": "https://arxiv.org/html/2611.07881v1/pic/multimodal_policy_learning.png",
+      "page": "https://yijionglin.github.io/tactilelab/",
+      "credit": "TactileLab authors",
+      "alt": "TactileLab — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "aa7dc09e971dda15792e5bfdd4217d294041dc6aef71dfc0ed938e8e3303baef",
+      "width": 1500,
+      "height": 602,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "semantics-to-contact": {
+    "policy": {
+      "path": "/images/catalog/semantics-to-contact-policy.webp",
+      "original": "https://arxiv.org/html/2611.07532v1/pipeline.png",
+      "page": "https://edem-ai.github.io/S2C/",
+      "credit": "Semantics-to-Contact authors",
+      "alt": "Semantics-to-Contact — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "c491ef16c002fa1ea9ef7c8d8dd07600a413ecaa67dfdc6266c56b2eb180d920",
+      "width": 1500,
+      "height": 996,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "spatial-umi-dream": {
+    "policy": {
+      "path": "/images/catalog/spatial-umi-dream-policy.webp",
+      "original": "https://arxiv.org/html/2611.07229v1/fig2_method.png",
+      "page": "https://weiduoyuan.com/spatial-umi-dream/",
+      "credit": "Spatial-UMI-Dream authors",
+      "alt": "Spatial-UMI-Dream — method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "d94493cbb0041679338d737f56f16eb48ddf0a788e762e278cabb9d05f9d9016",
+      "width": 1500,
+      "height": 525,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "roboarcade": {
+    "benchmark": {
+      "path": "/images/catalog/roboarcade-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.08209v1/task_lineup_4x5.png",
+      "page": "https://roboarcade.org",
+      "credit": "RoboARCade authors",
+      "alt": "RoboARCade — task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "bc0f0d9b44d213a864facbf450ecaa4434da15bb9306c737e792801484ae96c6",
+      "width": 600,
+      "height": 480,
+      "note": "Author-supplied original paper or project figure; third-party rights retained."
+    }
+  },
+  "remake-depth": {
+    "policy": {
+      "path": "/images/catalog/remake-depth-policy.webp",
+      "original": "https://arxiv.org/html/2508.02507v1/fig3.png",
+      "page": "https://arxiv.org/abs/2508.02507",
+      "credit": "ReMake authors",
+      "alt": "ReMake method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "2bae1652c87e8ecdcdf12d9f90e74c29e7cfc155b53fcb770026ef047444b89e",
+      "width": 1468,
+      "height": 544,
+      "note": "Author method figure; original rights retained."
+    }
+  },
+  "aispo-depth": {
+    "policy": {
+      "path": "/images/catalog/aispo-depth-policy.webp",
+      "original": "https://arxiv.org/html/2606.25503v1/framework-v6.png",
+      "page": "https://arxiv.org/abs/2606.25503",
+      "credit": "AISPO authors",
+      "alt": "AISPO method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-08",
+      "sourceSha256": "93bb8c5a91bcac5037ee9686107bea337ccd419abb0aa90182b9ebe54b2ced28",
+      "width": 1500,
+      "height": 829,
+      "note": "Author method figure; original rights retained."
+    }
   }
 }

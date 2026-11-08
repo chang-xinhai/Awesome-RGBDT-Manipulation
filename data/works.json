@@ -83582,11 +83582,11 @@
       "data": "https://huggingface.co/datasets/SIPAIR/DexArena"
     },
     "release": {
-      "code": "Not yet released — repository contains README and license only",
-      "weights": "Not verified",
-      "data": "Restricted — task asset repository is gated; anonymous file access returned 401",
-      "license": "Apache-2.0 repository; asset licenses may differ.",
-      "notes": "The code repository is a README-only placeholder; Hugging Face asset files require access approval."
+      "code": "Available — benchmark tasks, simulator, demonstration utilities and baseline training/evaluation source",
+      "weights": "Gated — author dataset repository advertises baseline checkpoints",
+      "data": "Gated — author dataset includes task assets and demonstrations; access request required",
+      "license": "Apache-2.0 repository; datasets, assets and upstream dependencies may have separate terms.",
+      "notes": "Repository provides tasks, scene library, recording utilities and baseline training/evaluation. The dataset is gated and requires authentication; runnable results were not independently reproduced."
     },
     "evidence": [
       {
@@ -83610,16 +83610,25 @@
           "links",
           "release"
         ]
+      },
+      {
+        "url": "https://github.com/SIPAIR-Elastic/DexArena",
+        "label": "Official source inventory and release instructions",
+        "fields": [
+          "links",
+          "release",
+          "benchmark"
+        ],
+        "note": "README reports training/evaluation code and gated assets; source and data access are independently scoped."
       }
     ],
     "caveats": [
       "Simulation results do not establish real-world performance.",
-      "The code repository is a placeholder despite the public project link.",
-      "Task assets are gated, and anonymous file access returned HTTP 401."
+      "Task assets, demonstrations and baseline checkpoints are hosted in a gated dataset; author says access is automatically granted after request."
     ],
-    "verified": "2026-11-05",
+    "verified": "2026-11-08",
     "benchmark": {
-      "simulator": "Physics simulation; exact simulator not verified",
+      "simulator": "SAPIEN / ManiSkill",
       "simulatorVersion": "Not reported",
       "taskCount": "10 long-horizon and 30 stage-level tasks",
       "tasks": [
@@ -83637,10 +83646,10 @@
       "taskListScope": "The ten long-horizon task labels in the authors’ Figure 2; their 30 constituent stages are not separately enumerated here.",
       "capabilities": "Long-horizon skill composition, bimanual coordination and scene generalization.",
       "metrics": "Stage completion and end-to-end success.",
-      "robots": "Single-arm and bimanual dexterous hands.",
+      "robots": "Sharpa, Wuji, XHand and Franka gripper end effectors.",
       "sensors": "External and wrist RGB, robot state.",
       "dataCollection": "Human teleoperation demonstrations in simulation with replay validation.",
-      "data": "Teleoperation demonstrations reported by authors; gated official dataset repository includes task assets.",
+      "data": "The author describes 100 video episodes per stage task and further reviewed state-only recordings; access to the released files is gated.",
       "protocol": "Standardized simulation, scene randomization and stage/long-horizon evaluation.",
       "baselines": "PPO, RLPD, ACT, Diffusion Policy, π0.5 and GR00T N1.7."
     }
@@ -83841,6 +83850,1175 @@
     ],
     "relatedIds": [
       "astra-robomme"
+    ]
+  },
+  {
+    "id": "defm",
+    "name": "DeFM",
+    "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+    "date": "2026-01-26",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Self-supervised depth-image representations transfer to manipulation, navigation and locomotion.",
+    "institution": "ETH Zurich",
+    "venue": "IEEE T-RO",
+    "modalities": [
+      "Depth"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.18923",
+      "project": "https://de-fm.github.io/",
+      "code": "https://github.com/leggedrobotics/defm",
+      "weights": "https://huggingface.co/leggedrobotics/defm"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Available — see official model page; terms vary by checkpoint",
+      "data": "Not verified",
+      "license": "Apache-2.0 for official code and published DeFM model card; external data have separate terms.",
+      "notes": "Consumes depth images; it does not infer depth from RGB or directly output robot actions."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2601.18923v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/leggedrobotics/defm",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Consumes depth images; it does not infer depth from RGB or directly output robot actions."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth representation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "Depth images normalized to preserve metric awareness.",
+      "outputs": "Dense geometric and semantic feature representations.",
+      "trainingMethod": "DINO-style self-distillation and compact model distillation; 60.4M mixed real, synthetic and monocular-predicted depth images.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Simulated dexterous grasping, depth understanding, navigation and locomotion; real-world deployment demonstrated for navigation."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://de-fm.github.io/static/images/self_distillation.png",
+        "page": "https://de-fm.github.io/",
+        "kind": "architecture",
+        "credit": "DeFM authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "foundationstereo",
+    "name": "FoundationStereo",
+    "title": "FoundationStereo: Zero-Shot Stereo Matching",
+    "date": "2025-01-17",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A zero-shot stereo foundation model predicts dense disparities from calibrated image pairs.",
+    "institution": "NVIDIA",
+    "venue": "CVPR 2025",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2501.09898",
+      "project": "https://nvlabs.github.io/FoundationStereo/",
+      "code": "https://github.com/NVlabs/FoundationStereo",
+      "weights": "https://huggingface.co/nvidia/c-foundationstereo-s"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Commercial C-FoundationStereo model card available; research checkpoints linked separately by authors",
+      "data": "Not verified",
+      "license": "NVIDIA research license limits use; separately offered commercial version has separate terms.",
+      "notes": "Research source/checkpoints are distinct from the separately licensed NVIDIA C-FoundationStereo model."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2501.09898v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/NVlabs/FoundationStereo",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Predicted stereo depth is not a measured depth stream; calibrated camera geometry is necessary for metric conversion."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "Rectified left and right RGB stereo images.",
+      "outputs": "Stereo disparity; focal length and baseline convert disparity to metric depth.",
+      "trainingMethod": "Stereo model training on a curated synthetic image-pair dataset with pretrained visual priors.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Zero-shot stereo matching; useful as a geometric frontend for robot manipulation."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2501.09898v1/overview.png",
+        "page": "https://nvlabs.github.io/FoundationStereo/",
+        "kind": "architecture",
+        "credit": "FoundationStereo authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "fast-foundationstereo",
+    "name": "Fast-FoundationStereo",
+    "title": "Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching",
+    "date": "2025-12-11",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A distilled and optimized stereo model enables faster zero-shot disparity estimation.",
+    "institution": "NVIDIA",
+    "venue": "CVPR 2026",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.11130",
+      "project": "https://nvlabs.github.io/Fast-FoundationStereo/",
+      "code": "https://github.com/NVlabs/Fast-FoundationStereo",
+      "weights": "https://huggingface.co/nvidia/c-fast-foundationstereo"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Available — see official model page; terms vary by checkpoint",
+      "data": "Not verified",
+      "license": "Research code and checkpoints are subject to NVIDIA research terms; C-Fast model uses the separate NVIDIA Open Model Agreement.",
+      "notes": "Research and C-Fast commercial variants have different terms; reconstructed depth is predicted rather than an independent measured channel."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2512.11130v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/NVlabs/Fast-FoundationStereo",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Research and C-Fast commercial variants have different terms; reconstructed depth is predicted rather than an independent measured channel."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "Rectified stereo RGB images.",
+      "outputs": "Disparity; metric depth additionally needs focal length and stereo baseline.",
+      "trainingMethod": "Architecture search, distillation and pruning, with synthetic and pseudo-labelled stereo data.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Stereo datasets and speed/accuracy evaluation; stereo geometry is applicable to robot capture processing."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2512.11130v1/pipeline.png",
+        "page": "https://nvlabs.github.io/Fast-FoundationStereo/",
+        "kind": "architecture",
+        "credit": "Fast-FoundationStereo authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "depth-anything-v2",
+    "name": "Depth Anything V2",
+    "title": "Depth Anything V2",
+    "date": "2024-06-13",
+    "year": 2024,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A monocular depth foundation model predicts detailed relative scene geometry.",
+    "institution": "The University of Hong Kong",
+    "venue": "NeurIPS 2024",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.09414",
+      "project": "https://depth-anything-v2.github.io/",
+      "code": "https://github.com/DepthAnything/Depth-Anything-V2",
+      "weights": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Available — multiple checkpoints; size-specific license differs",
+      "data": "Not verified",
+      "license": "Apache-2.0 code and small model; base, large and giant weights use CC BY-NC 4.0.",
+      "notes": "Relative depth is not metric sensor data; downstream robot success is not implied by depth benchmarks."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2406.09414v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/DepthAnything/Depth-Anything-V2",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Relative depth is not metric sensor data; downstream robot success is not implied by depth benchmarks."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "A single RGB image.",
+      "outputs": "Relative depth by default; separate metric-finetuned variants output metric predictions.",
+      "trainingMethod": "Synthetic labels, large-scale pseudo-labelled images and teacher-student distillation.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Zero-shot monocular depth benchmarks; useful as a perception prior for robotics."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2406.09414v1/teaser.png",
+        "page": "https://depth-anything-v2.github.io/",
+        "kind": "result",
+        "credit": "Depth Anything V2 authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "depth-anything-3",
+    "name": "Depth Anything 3",
+    "title": "Depth Anything 3: Recovering the Visual Space from Any Views",
+    "date": "2025-11-13",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A multi-view geometry model predicts spatial structure from one or more images.",
+    "institution": "ByteDance Seed",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2511.10647",
+      "project": "https://depth-anything-3.github.io/",
+      "code": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+      "weights": "https://huggingface.co/depth-anything/DA3-BASE"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Available — multiple checkpoints; model-specific terms differ",
+      "data": "Not verified",
+      "license": "Apache-2.0 source; model variants have distinct Apache-2.0 or CC BY-NC 4.0 terms.",
+      "notes": "Metric behavior is variant specific; DA3Metric requires focal-length rescaling, while relative outputs are not sensor depth."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2511.10647v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Metric behavior is variant specific; DA3Metric requires focal-length rescaling, while relative outputs are not sensor depth."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "One or more RGB views with optional camera poses.",
+      "outputs": "Depth, ray or camera information and point geometry; scale depends on model variant.",
+      "trainingMethod": "Feed-forward visual geometry pretraining and distillation.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Multi-view pose, depth and reconstruction evaluations; potential robot geometry frontend."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2511.10647v1/figs/pdfs/pipeline.png",
+        "page": "https://depth-anything-3.github.io/",
+        "kind": "architecture",
+        "credit": "Depth Anything 3 authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "depth-pro",
+    "name": "Depth Pro",
+    "title": "Depth Pro: Sharp Monocular Metric Depth in Less Than a Second",
+    "date": "2024-10-02",
+    "year": 2024,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A monocular foundation model predicts sharp metric depth and focal length.",
+    "institution": "Apple",
+    "venue": "ICLR 2025",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.02073",
+      "project": "https://machinelearning.apple.com/research/depth-pro",
+      "code": "https://github.com/apple/ml-depth-pro",
+      "weights": "https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Available — official checkpoint under Apple Sample Code License",
+      "data": "Not verified",
+      "license": "Apple Sample Code License covers released code and model weights; inspect dependencies separately.",
+      "notes": "Metric values are learned estimates, not measured depth; no manipulation policy is included."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2410.02073v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/apple/ml-depth-pro",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/apple/ml-depth-pro",
+        "label": "Official checkpoint download instructions",
+        "fields": [
+          "release.weights",
+          "links"
+        ]
+      }
+    ],
+    "caveats": [
+      "Metric values are learned estimates, not measured depth; no manipulation policy is included."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "One RGB image; camera intrinsics are not required as external input.",
+      "outputs": "Predicted metric depth and camera focal estimate.",
+      "trainingMethod": "Multi-scale vision transformer trained using real and synthetic data.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Zero-shot metric depth and high-resolution boundary evaluation."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2410.02073v1/fig/spn_revised.jpeg",
+        "page": "https://machinelearning.apple.com/research/depth-pro",
+        "kind": "architecture",
+        "credit": "Depth Pro authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "prompt-depth-anything",
+    "name": "Prompt Depth Anything",
+    "title": "Prompting Depth Anything for 4K Resolution Accurate Metric Depth Estimation",
+    "date": "2024-12-18",
+    "year": 2024,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A depth foundation model uses a low-resolution depth prompt to recover high-resolution metric geometry.",
+    "institution": "Zhejiang University",
+    "venue": "CVPR 2025",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.14015",
+      "project": "https://promptda.github.io/",
+      "code": "https://github.com/DepthAnything/PromptDA",
+      "weights": "https://huggingface.co/depth-anything/prompt-depth-anything-vits"
+    },
+    "release": {
+      "code": "Available — source linked",
+      "weights": "Available — see official model page; terms vary by checkpoint",
+      "data": "Not verified",
+      "license": "Apache-2.0 code and official Small, Large, and Small-Transparent model cards; input data retain their own terms.",
+      "notes": "Uses measured or otherwise supplied depth as a prompt; predicted output is not a direct sensor reading."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2412.14015v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/DepthAnything/PromptDA",
+        "label": "Official code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Uses measured or otherwise supplied depth as a prompt; predicted output is not a direct sensor reading."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "RGB image and sparse or low-resolution depth prompt.",
+      "outputs": "Dense predicted metric depth.",
+      "trainingMethod": "Fine-tuned depth foundation model with multiscale prompt fusion.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Metric depth reconstruction and downstream robot grasping evaluation."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2412.14015v1/pipeline.png",
+        "page": "https://promptda.github.io/",
+        "kind": "architecture",
+        "credit": "Prompt Depth Anything authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "ua-depth",
+    "name": "UA-Depth",
+    "title": "UA-Depth: Uncertainty-Aware Depth Restoration for Material-Agnostic Object Manipulation",
+    "date": "2026-11-01",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Uncertainty-aware RGB-D restoration refines noisy metric depth for difficult object materials.",
+    "institution": "The Chinese University of Hong Kong",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.01645"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified; paper states code, models and data will be released upon publication.",
+      "notes": "An estimated uncertainty map is not itself a tactile signal or a grasping policy."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.01645v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "An estimated uncertainty map is not itself a tactile signal or a grasping policy."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "RGB and noisy or incomplete sensor depth; a frozen monocular depth prior.",
+      "outputs": "Restored metric depth and pixel-wise uncertainty.",
+      "trainingMethod": "Iterative depth/uncertainty co-refinement using aligned foundation-model priors.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Eight-dataset zero-shot depth evaluation, 6D object pose and grasp synthesis."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.01645v1/overview.png",
+        "page": "https://arxiv.org/abs/2611.01645",
+        "kind": "architecture",
+        "credit": "UA-Depth authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "tactilelab",
+    "name": "TactileLab",
+    "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+    "date": "2026-11-05",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "Shear-sensitive tactile simulation and real-to-sim tactile translation enable sim-to-real manipulation.",
+    "institution": "Not reported",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.07881",
+      "project": "https://yijionglin.github.io/tactilelab/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Model, source and data availability are tracked separately."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.07881v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "policy",
+          "modalities",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Simulated optical flow captures shear-related contact motion under a no-slip modelling assumption; it is not direct force measurement."
+    ],
+    "verified": "2026-11-08",
+    "policy": {
+      "family": "Multimodal tactile RL",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "Simulated tactile flow and contact depth with robot state histories; real tactile images translated to simulated representations.",
+      "outputs": "Robot actions for dexterous in-hand and bimanual manipulation.",
+      "trainingMethod": "Reinforcement learning in Isaac Lab with real-to-sim tactile translation.",
+      "trainingData": "See original paper",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Dual-arm object following and dexterous in-hand manipulation in simulation and real robot experiments."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.07881v1/pic/multimodal_policy_learning.png",
+        "page": "https://yijionglin.github.io/tactilelab/",
+        "kind": "architecture",
+        "credit": "TactileLab authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "semantics-to-contact",
+    "name": "Semantics-to-Contact",
+    "title": "Semantics-to-Contact: A Stagewise Framework for Robust Contact-Rich Manipulation",
+    "date": "2026-11-05",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "visual-precision-rl"
+    ],
+    "resourceType": "policy",
+    "summary": "A VLM localizes contact regions before human-in-the-loop force-guided residual reinforcement learning.",
+    "institution": "The Chinese University of Hong Kong, Shenzhen",
+    "venue": "NeurIPS 2026",
+    "modalities": [
+      "RGB",
+      "Force",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.07532",
+      "project": "https://edem-ai.github.io/S2C/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Model, source and data availability are tracked separately."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.07532v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "policy",
+          "modalities",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Wrist force feedback should not be relabelled as tactile skin sensing."
+    ],
+    "verified": "2026-11-08",
+    "policy": {
+      "family": "Force-guided visual RL",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "Task instruction, visual observations, robot state and force feedback.",
+      "outputs": "Motion targets and residual control actions.",
+      "trainingMethod": "VLM-guided semantic focusing followed by real-world human-in-the-loop residual RL.",
+      "trainingData": "See original paper",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Six contact-rich real-world tasks under visual and positional perturbations."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.07532v1/pipeline.png",
+        "page": "https://edem-ai.github.io/S2C/",
+        "kind": "architecture",
+        "credit": "Semantics-to-Contact authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "spatial-umi-dream",
+    "name": "Spatial-UMI-Dream",
+    "title": "Spatial-UMI-Dream: Scaling World Action Models with Metric Geometry for UMI Manipulation",
+    "date": "2026-11-04",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "A world-action model predicts future observations and actions from stereo-derived metric geometry in UMI demonstrations.",
+    "institution": "University of Southern California",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.07229",
+      "project": "https://weiduoyuan.com/spatial-umi-dream/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Model, source and data availability are tracked separately."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.07229v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "policy",
+          "modalities",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Depth is reconstructed from stereo, not a separate active depth sensor; external task-suite videos are for visualization."
+    ],
+    "verified": "2026-11-08",
+    "policy": {
+      "family": "RGB-D world-action policy",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "Dual-gripper RGB and stereo-estimated metric depth with observation history and instruction.",
+      "outputs": "Future RGB-D predictions and robot action sequences.",
+      "trainingMethod": "Two-stage world-only and joint world-action pretraining.",
+      "trainingData": "See original paper",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "RoboTwin-UMI simulated benchmark and six real-world manipulation tasks."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.07229v1/fig2_method.png",
+        "page": "https://weiduoyuan.com/spatial-umi-dream/",
+        "kind": "architecture",
+        "credit": "Spatial-UMI-Dream authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "roboarcade",
+    "name": "RoboARCade",
+    "title": "RoboARCade: Benchmarking Agentic Robot Control",
+    "date": "2026-11-05",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "robustness-evaluation"
+    ],
+    "resourceType": "benchmark",
+    "summary": "A MuJoCo benchmark tests agentic control, in-context adaptation and reasoning across 22 manipulation tasks.",
+    "institution": "Stanford University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.08209",
+      "project": "https://roboarcade.org"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Model, source and data availability are tracked separately."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.08209v1",
+        "label": "Author paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "benchmark",
+          "modalities",
+          "caveats",
+          "benchmark.dataCollection"
+        ]
+      }
+    ],
+    "caveats": [
+      "Three simulation embodiments do not imply physical deployment; agents access one of two visual interfaces."
+    ],
+    "verified": "2026-11-08",
+    "benchmark": {
+      "simulator": "MuJoCo",
+      "simulatorVersion": "Not verified",
+      "taskCount": "22 manipulation tasks",
+      "tasks": [],
+      "taskListScope": "22 total tasks; the paper figure shows 20.",
+      "capabilities": "Long-horizon control, adaptation, memory and reasoning.",
+      "metrics": "Task success, inference cost and calls.",
+      "robots": "Three simulated embodiments.",
+      "sensors": "Multi-view RGB-D or vision interaction interface; robot state.",
+      "dataCollection": "Tasks derived from existing open-source benchmark sources with widened initial conditions.",
+      "data": "Agent execution traces linked by project; access independently scoped.",
+      "protocol": "22 tasks with five seeds each; a separate five-task subset for adaptation experiments.",
+      "baselines": "Agentic foundation-model controls with two visual interfaces."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.08209v1/task_lineup_4x5.png",
+        "page": "https://roboarcade.org",
+        "kind": "task-overview",
+        "credit": "RoboARCade authors",
+        "note": "Author figure."
+      }
+    ]
+  },
+  {
+    "id": "remake-depth",
+    "name": "ReMake",
+    "title": "Rethinking Transparent Object Grasping: Depth Completion with Monocular Depth Estimation and Instance Mask",
+    "date": "2025-08-04",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "RGB-D depth completion guided by instance masks and monocular depth improves transparent-object grasp perception.",
+    "institution": "Not reported",
+    "venue": "IEEE RA-L 2026",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.02507",
+      "project": "https://chengyaofeng.github.io/ReMake.github.io/",
+      "code": "https://github.com/ChengYaofeng/ReMake"
+    },
+    "release": {
+      "code": "Available",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "MIT source; checkpoints and data terms remain separate.",
+      "notes": "Depth completion is a geometry model rather than an action policy."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2508.02507v1",
+        "label": "Author paper",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/ChengYaofeng/ReMake",
+        "label": "Author source repository",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Input depth is sensor-derived; completed depth is model-predicted, and is not an additional measured sensor."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "RGB-D image, instance mask and monocular predicted relative depth.",
+      "outputs": "Completed depth for transparent-object geometry.",
+      "trainingMethod": "Depth completion with instance masks and monocular depth priors.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Transparent-object depth benchmarks and physical robot grasping."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2508.02507v1/fig3.png",
+        "page": "https://arxiv.org/abs/2508.02507",
+        "kind": "architecture",
+        "credit": "ReMake authors",
+        "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "aispo-depth",
+    "name": "AISPO",
+    "title": "AISPO: Enhancing Depth Reliability for Robotic Manipulation of Non-Lambertian Objects via Affine-Invariant Shape Prior",
+    "date": "2026-06-24",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "An affine-invariant shape prior improves RGB-D restoration for transparent and reflective robot manipulation.",
+    "institution": "LimX Dynamics",
+    "venue": "IEEE RA-L 2026",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.25503"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified.",
+      "notes": "Depth completion is a geometry model rather than an action policy."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2606.25503v1",
+        "label": "Author paper",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "model",
+          "modalities",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Input depth is sensor-derived; completed depth is model-predicted, and is not an additional measured sensor."
+    ],
+    "verified": "2026-11-08",
+    "model": {
+      "role": "Depth and geometry perception reference",
+      "family": "Depth estimation",
+      "baseModel": "See original paper",
+      "modelSize": "Not reported",
+      "inputs": "RGB and degraded sensor depth; predicted shape prior.",
+      "outputs": "Completed depth for non-Lambertian objects.",
+      "trainingMethod": "Depth completion with learned affine-invariant shape prior.",
+      "trainingData": "See original paper for dataset scope",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "See original paper and official implementation",
+      "evaluation": "Depth benchmarks and real-world manipulation experiments."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2606.25503v1/framework-v6.png",
+        "page": "https://arxiv.org/abs/2606.25503",
+        "kind": "architecture",
+        "credit": "AISPO authors",
+        "note": "Author method figure."
+      }
     ]
   }
 ]
