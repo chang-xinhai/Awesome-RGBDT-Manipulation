@@ -85420,7 +85420,7 @@
     ],
     "resourceType": "policy",
     "summary": "Transfers action-conditioned hand and scene dynamics into dexterous policy latents for RGB-only deployment.",
-    "institution": "Not reported",
+    "institution": "Sharpa Robotics",
     "venue": "Preprint",
     "modalities": [
       "RGB",
@@ -85456,6 +85456,14 @@
           "policy",
           "caveats"
         ]
+      },
+      {
+        "url": "https://dexforesight.github.io/",
+        "label": "Author project affiliations",
+        "fields": [
+          "institution"
+        ],
+        "note": "Project page names Sharpa Robotics as the first affiliation; first arXiv v1 HTML omits affiliation markers."
       }
     ],
     "caveats": [

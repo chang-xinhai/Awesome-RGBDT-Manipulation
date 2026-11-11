@@ -6,7 +6,7 @@
 
 DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight
 
-**2026-11-08 · Preprint · Not reported**
+**2026-11-08 · Preprint · Sharpa Robotics**
 
 **[Paper](https://arxiv.org/abs/2611.11166)** · [Project](https://dexforesight.github.io/)
 
@@ -46,3 +46,4 @@ Transfers action-conditioned hand and scene dynamics into dexterous policy laten
 **Primary evidence**
 
 1. [Primary paper and first submission](https://arxiv.org/html/2611.11166v1)
+2. [Author project affiliations](https://dexforesight.github.io/) — Project page names Sharpa Robotics as the first affiliation; first arXiv v1 HTML omits affiliation markers.
