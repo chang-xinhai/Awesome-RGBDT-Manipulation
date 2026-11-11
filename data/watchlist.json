@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-08",
+  "reviewed": "2026-11-11",
   "sources": [
     {
       "work": "rle-bench",
@@ -3908,6 +3908,16 @@
       "url": "https://github.com/michaelyeah7/learning-to-feel-the-future"
     },
     {
+      "work": "vtam",
+      "kind": "project",
+      "url": "https://plan-lab.github.io/projects/vtam/"
+    },
+    {
+      "work": "vtam",
+      "kind": "code",
+      "url": "https://github.com/PLAN-Lab/VTAM"
+    },
+    {
       "work": "hapticwam",
       "kind": "project",
       "url": "https://advanced-robotic-manipulation.github.io/websites/hapticwam/"
@@ -5281,6 +5291,56 @@
       "work": "remake-depth",
       "kind": "code",
       "url": "https://github.com/ChengYaofeng/ReMake"
+    },
+    {
+      "work": "lingbot-touch",
+      "kind": "project",
+      "url": "https://technology.robbyant.com/lingbot-touch"
+    },
+    {
+      "work": "lingbot-touch",
+      "kind": "code",
+      "url": "https://github.com/Robbyant/lingbot-touch"
+    },
+    {
+      "work": "mdf-plus-plus",
+      "kind": "project",
+      "url": "https://jointmdf.github.io/"
+    },
+    {
+      "work": "pctac",
+      "kind": "project",
+      "url": "https://bey0ndt1me.github.io/PCTac-page/"
+    },
+    {
+      "work": "dexforesight",
+      "kind": "project",
+      "url": "https://dexforesight.github.io/"
+    },
+    {
+      "work": "revosim",
+      "kind": "project",
+      "url": "https://braincotech.github.io/RevoSim-web/"
+    },
+    {
+      "work": "revosim",
+      "kind": "code",
+      "url": "https://github.com/BrainCoTech/RevoSim"
+    },
+    {
+      "work": "nocontactnoworries",
+      "kind": "project",
+      "url": "https://soham2560.github.io/no-contact-no-worries/"
+    },
+    {
+      "work": "somaalign",
+      "kind": "project",
+      "url": "https://hijackoo.github.io/SomaAlign/"
+    },
+    {
+      "work": "somaalign",
+      "kind": "code",
+      "url": "https://github.com/Hijackoo/SomaAlign"
     }
   ]
 }

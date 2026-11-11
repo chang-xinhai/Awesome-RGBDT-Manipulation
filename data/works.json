@@ -63124,7 +63124,7 @@
   {
     "id": "vtam",
     "name": "VTAM",
-    "title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
+    "title": "VTAM: Efficient Visuo-Tactile World-Action Models for Contact-Rich Manipulation without Tactile Pretraining",
     "date": "2026-03-24",
     "year": 2026,
     "collections": [
@@ -63134,7 +63134,7 @@
       "tactile-foundation"
     ],
     "resourceType": "policy",
-    "summary": "A video-action backbone receives tactile streams with attention regularization for force-sensitive manipulation.",
+    "summary": "A video-pretrained world-action model learns tactile dynamics from task demonstrations without separate tactile pretraining.",
     "institution": "University of Illinois Urbana-Champaign / Stanford University / Shanghai Jiao Tong University",
     "venue": "Preprint",
     "modalities": [
@@ -63143,33 +63143,37 @@
       "Proprioception"
     ],
     "environments": [
+      "Simulation",
       "Real world"
     ],
     "embodiments": [
       "Parallel-jaw gripper"
     ],
     "links": {
-      "paper": "https://arxiv.org/abs/2603.23481"
+      "paper": "https://arxiv.org/abs/2603.23481",
+      "project": "https://plan-lab.github.io/projects/vtam/",
+      "code": "https://github.com/PLAN-Lab/VTAM",
+      "data": "https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight"
     },
     "policy": {
       "family": "World-action model",
       "baseModel": "Genie Envisioner GE-base / LTX-Video transformer with 28 layers and parallel action expert.",
       "modelSize": "Not reported",
-      "inputs": "Multi-view RGB, GelSight Mini tactile images, language/task conditioning and robot state.",
-      "outputs": "54-step continuous action chunks coupled to predicted video/tactile dynamics.",
-      "trainingData": "266 real demonstrations: 100 chip pick-and-place, 105 whiteboard wiping, 61 cucumber peeling.",
-      "trainingTime": "50k video-backbone +20k action-head updates; appendix reports~3.4s per optimization step. Total wall-clock time Not reported.",
-      "trainingHardware": "4 NVIDIA A100 GPUs, 40 GB each; Deep Speed ZeRO-2 / bf 16.",
-      "controlRate": "30 Hz collection and execution.",
-      "trainingMethod": "50 k video-backbone fine-tuning steps followed by 20 k action-head steps; tactile regularization balances visual/tactile attention.",
-      "evaluation": "xArm 6 / parallel gripper; fragile chip transport, cucumber peeling and whiteboard wiping."
+      "inputs": "RGB, GelSight Mini or Xense Photon tactile imagery, task conditioning and robot state.",
+      "outputs": "54-step actions, robot states and predicted tactile optical-flow force proxy.",
+      "trainingData": "Approximately 100 demonstrations per real task; eight UniVTAC simulation tasks in v2.",
+      "trainingTime": "50k visual/tactile latent updates followed by 20k joint action updates; wall time not reported.",
+      "trainingHardware": "Four NVIDIA A100 GPUs.",
+      "controlRate": "1 Hz policy inference and tactile feedback; 30 Hz data collection and low-level action execution.",
+      "trainingMethod": "Shared frozen video VAE and pretrained video transformer, then two-stage tactile/visual latent adaptation and end-to-end action learning.",
+      "evaluation": "v2: four real tasks on xArm6/GelSight Mini and Flexiv Rizon 4/Xense Photon; eight UniVTAC simulation tasks."
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Original paper reviewed; claimed future releases are not treated as currently available."
+      "code": "Available — training and inference; UniVTAC configuration pending",
+      "weights": "Forthcoming — VTAM task checkpoints; upstream pretrained backbones have separate access",
+      "data": "Available — xArm / GelSight demonstrations, chip archive verified HTTP 206",
+      "license": "Mixed licenses: Apache-2.0 and CC BY-NC-SA 4.0 by source file; check NOTICE and upstream terms.",
+      "notes": "Official source contains real-world training and inference; task checkpoints and UniVTAC simulation configurations are marked pending. Upstream GE and LTX pretrained weights have their own terms."
     },
     "evidence": [
       {
@@ -63184,21 +63188,70 @@
           "caveats"
         ],
         "note": "Primary full text reviewed; dataset, deployment modalities and training-only privileges are scoped separately."
+      },
+      {
+        "url": "https://arxiv.org/html/2603.23481v2",
+        "label": "Revised paper v2: methods, control rates and evaluation",
+        "fields": [
+          "title",
+          "summary",
+          "policy",
+          "environments",
+          "caveats"
+        ],
+        "note": "Revised version dated 5 November 2026; first submission date retained."
+      },
+      {
+        "url": "https://github.com/PLAN-Lab/VTAM",
+        "label": "Official source and scope",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Training / inference public; UniVTAC configs and trained checkpoints pending."
+      },
+      {
+        "url": "https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE",
+        "label": "Per-file license notice",
+        "fields": [
+          "release"
+        ],
+        "note": "Original implementation and upstream components have mixed Apache-2.0 and CC BY-NC-SA terms."
+      },
+      {
+        "url": "https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight",
+        "label": "Official xArm data release",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "Three task archives listed and chip archive returned HTTP 206 for a byte-range request."
       }
     ],
     "caveats": [
-      "RealSense D455 cameras supply RGB streams; no runtime measured-depth input is established."
+      "The light flow-force proxy derives from optical tactile flow and is not a direct external force measurement.",
+      "RealSense cameras supply RGB; scene depth is not established as a deployed policy input.",
+      "Paper v2 substantially revises the title, task coverage and interpretation; date remains first submission."
     ],
     "imageCandidates": [
       {
-        "url": "https://arxiv.org/pdf/2603.23481",
-        "page": "https://arxiv.org/abs/2603.23481",
+        "url": "https://arxiv.org/html/2603.23481v2/overview_diagram.png",
+        "page": "https://arxiv.org/html/2603.23481v2",
         "kind": "architecture",
-        "credit": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs authors",
-        "note": "Original PDF page 4, Figure2 video/action architecture. Cropped without surrounding body text."
+        "credit": "VTAM authors",
+        "note": "Revised v2 architecture figure."
       }
     ],
-    "verified": "2026-10-17"
+    "verified": "2026-11-11",
+    "releaseByCollection": {
+      "policy": {
+        "code": "Available — training and inference; UniVTAC configuration pending",
+        "weights": "Forthcoming — VTAM task checkpoints; upstream pretrained backbones have separate access",
+        "data": "Available — xArm / GelSight demonstrations, chip archive verified HTTP 206",
+        "license": "Mixed licenses: Apache-2.0 and CC BY-NC-SA 4.0 by source file; check NOTICE and upstream terms.",
+        "notes": "Official source contains real-world training and inference; task checkpoints and UniVTAC simulation configurations are marked pending. Upstream GE and LTX pretrained weights have their own terms."
+      }
+    }
   },
   {
     "id": "vitar",
@@ -85018,6 +85071,689 @@
         "kind": "architecture",
         "credit": "AISPO authors",
         "note": "Author method figure."
+      }
+    ]
+  },
+  {
+    "id": "lingbot-touch",
+    "name": "LingBot-Touch",
+    "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+    "date": "2026-11-09",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-representation"
+    ],
+    "resourceType": "model",
+    "summary": "A shared haptic transformer learns sensor-agnostic tactile features for downstream policies.",
+    "institution": "Robbyant",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.12806",
+      "project": "https://technology.robbyant.com/lingbot-touch",
+      "code": "https://github.com/Robbyant/lingbot-touch",
+      "weights": "https://huggingface.co/robbyant/lingbot-touch-tiny"
+    },
+    "release": {
+      "code": "Available — inference target encoder and utilities",
+      "weights": "Available — Tiny checkpoint verified by HTTP range 206",
+      "data": "Not verified",
+      "license": "Apache-2.0 source and Tiny model card; third-party dependencies have separate terms.",
+      "notes": "The official release supplies inference and sensor-interface code; complete pretraining pipeline and corpus were not established as public."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.12806",
+        "label": "Primary paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "model",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/Robbyant/lingbot-touch",
+        "label": "Official source and release",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/robbyant/lingbot-touch-tiny",
+        "label": "Official model and checkpoint",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "This is a tactile encoder, not an executable robot policy. Robot and glove data are mixed; cross-sensor transfer requires geometry normalization and task-policy adaptation."
+    ],
+    "verified": "2026-11-11",
+    "model": {
+      "role": "Tactile representation encoder for downstream robot policies",
+      "family": "Heterogeneous tactile representation",
+      "baseModel": "Haptic Transformer / JEPA",
+      "modelSize": "Tiny: 5.46M parameters; Small also provided",
+      "inputs": "Normalized magnetic, piezoresistive or processed visuotactile signals with calibrated taxel positions; not raw RGB.",
+      "outputs": "Spatiotemporal tactile token features consumed by downstream policies.",
+      "trainingMethod": "JEPA masked latent prediction from nearly 5,000 h of heterogeneous tactile recordings.",
+      "trainingData": "4,983 h of human and robot tactile recordings reported by the author project; publicly released corpus not verified.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Frozen target encoder and downstream trainable readouts.",
+      "evaluation": "Offline tactile tasks, simulation and 26 real manipulation tasks with frozen encoder integrated into four policy families."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://raw.githubusercontent.com/Robbyant/lingbot-touch/main/assets/pretraining.png",
+        "page": "https://technology.robbyant.com/lingbot-touch",
+        "kind": "architecture",
+        "credit": "LingBot-Touch authors",
+        "note": "Official figure; original rights retained."
+      }
+    ]
+  },
+  {
+    "id": "bat-wam",
+    "name": "BAT-WAM",
+    "title": "BAT-WAM: Bridging Action and Touch in World-Action Models for Dexterous Hands",
+    "date": "2026-11-07",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Bridges tactile and hand-state codebooks with RGB context for tactile completion and dexterous actions.",
+    "institution": "Fudan University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.10967"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and project links are not evidence of code or model availability."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.10967v1",
+        "label": "Primary paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "The experimental cameras are RGB-D devices, but an actual deployment depth input is not established; do not equate camera capability with policy observations."
+    ],
+    "verified": "2026-11-11",
+    "policy": {
+      "family": "Visuotactile world-action model",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "RGB observations, full-hand tactile signals, hand state and instruction.",
+      "outputs": "Predicted tactile and hand state representations and dexterous manipulation actions.",
+      "trainingData": "Separate tactile and action tokenizers linked by an RGB-conditioned bridge and WAM policy training; 200 demonstrations for each of seven real tasks.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Separate tactile and action tokenizers linked by an RGB-conditioned bridge and WAM policy training; 200 demonstrations for each of seven real tasks.",
+      "evaluation": "HT-Bench offline completion/prediction and seven real tasks using a Linker L6 hand with a tactile glove."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.10967v1/figures/architecture.png",
+        "page": "https://arxiv.org/html/2611.10967v1",
+        "kind": "architecture",
+        "credit": "BAT-WAM authors",
+        "note": "Official figure; original rights retained."
+      }
+    ]
+  },
+  {
+    "id": "mdf-plus-plus",
+    "name": "MDF++",
+    "title": "MDF++: Visuo-Tactile World Action Model with End-to-end Representation Learning",
+    "date": "2026-11-06",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "Learns control-relevant vision and touch representations jointly with a diffusion world-action model.",
+    "institution": "University of Michigan",
+    "venue": "CoRL 2026",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Force/Torque",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.09293",
+      "project": "https://jointmdf.github.io/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and project links are not evidence of code or model availability."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.09293v1",
+        "label": "Primary paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "The physical experiment uses both tactile imagery and force/proprioceptive sensing; force is not inferred tactile-only evidence."
+    ],
+    "verified": "2026-11-11",
+    "policy": {
+      "family": "Multimodal diffusion world-action model",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Visual and tactile images, force and robot proprioception.",
+      "outputs": "Action chunks and conditional multisensory predictions.",
+      "trainingData": "Selective cross-modal gradient flow jointly trains visual/tactile encoders with a diffusion backbone; real task datasets contain 300 and 255 demonstrations.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Selective cross-modal gradient flow jointly trains visual/tactile encoders with a diffusion backbone; real task datasets contain 300 and 255 demonstrations.",
+      "evaluation": "Simulated contact tasks and real bolt screwing and nut mating with Franka Research 3 and WSG-50 GelSight gripper."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.09293v1/sys_figure.png",
+        "page": "https://jointmdf.github.io/",
+        "kind": "architecture",
+        "credit": "MDF++ authors",
+        "note": "Official figure; original rights retained."
+      }
+    ]
+  },
+  {
+    "id": "pctac",
+    "name": "PCTac",
+    "title": "PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation",
+    "date": "2026-11-09",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "Integrates load-dependent photonic-crystal hue images into a visuotactile diffusion policy.",
+    "institution": "ShanghaiTech University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.12383",
+      "project": "https://bey0ndt1me.github.io/PCTac-page/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and project links are not evidence of code or model availability."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.12383v1",
+        "label": "Primary paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Hue is a load-sensitive optical tactile measurement, not a calibrated 3D force vector. Do not assume all author-described hardware or code is publicly downloadable."
+    ],
+    "verified": "2026-11-11",
+    "policy": {
+      "family": "Visuotactile diffusion policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Wrist and global RGB, robot state and reference-relative tactile hue fields.",
+      "outputs": "Manipulation action sequences.",
+      "trainingData": "Behavior cloning with Diffusion Policy on sensorized demonstrations; see paper for task-specific training.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Behavior cloning with Diffusion Policy on sensorized demonstrations; see paper for task-specific training.",
+      "evaluation": "Three real tasks: wiping, test-tube insertion and perturbed insertion, with 90 physical rollouts."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.12383v1/Fig_system_pipeline_v2.png",
+        "page": "https://bey0ndt1me.github.io/PCTac-page/",
+        "kind": "architecture",
+        "credit": "PCTac authors",
+        "note": "Official figure; original rights retained."
+      }
+    ]
+  },
+  {
+    "id": "dexforesight",
+    "name": "DexForesight",
+    "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
+    "date": "2026-11-08",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Transfers action-conditioned hand and scene dynamics into dexterous policy latents for RGB-only deployment.",
+    "institution": "Not reported",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.11166",
+      "project": "https://dexforesight.github.io/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and project links are not evidence of code or model availability."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.11166v1",
+        "label": "Primary paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "No depth input, online geometry reconstruction or explicit world-model execution at deployment. Offline predicted depth is not a measured RGB-D stream."
+    ],
+    "verified": "2026-11-11",
+    "policy": {
+      "family": "Spatially grounded dexterous policy",
+      "baseModel": "Not reported",
+      "modelSize": "Not reported",
+      "inputs": "Deployment: RGB, language and robot state. Training teacher additionally uses offline estimated scene depth and hand kinematics.",
+      "outputs": "Dexterous robot action chunks.",
+      "trainingData": "Frozen world-model query alignment; about 370 hours of demonstrations across 60 tasks. Real depth is estimated offline from stereo video; simulation depth is rendered.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Frozen world-model query alignment; about 370 hours of demonstrations across 60 tasks. Real depth is estimated offline from stereo video; simulation depth is rendered.",
+      "evaluation": "11 DexJoCo simulated tasks and three physical robot tasks: Close Box, Insert Battery and Screw On Lid."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.11166v1/new_pipeline.png",
+        "page": "https://dexforesight.github.io/",
+        "kind": "architecture",
+        "credit": "DexForesight authors",
+        "note": "Official figure; original rights retained."
+      }
+    ]
+  },
+  {
+    "id": "revosim",
+    "name": "RevoSim",
+    "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+    "date": "2026-11-06",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "simulator",
+    "summary": "Simulates distributed pressure and fingertip optical touch for BrainCo Revo dexterous hands.",
+    "institution": "The Hong Kong University of Science and Technology (Guangzhou)",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.08939",
+      "project": "https://braincotech.github.io/RevoSim-web/",
+      "code": "https://github.com/BrainCoTech/RevoSim"
+    },
+    "release": {
+      "code": "Available — official simulator source",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "MIT repository code; Isaac and other dependency terms are separate.",
+      "notes": "Public source tree contains 65 Python files. Current repository MT/MX layouts list 519/387 tactile samples per hand and are distinct from the paper configuration."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.08939v1",
+        "label": "Primary paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "benchmark",
+          "caveats",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://github.com/BrainCoTech/RevoSim",
+        "label": "Official source and release",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Tactile depth describes local sensor deformation rather than scene RGB-D. Paper results demonstrate policies in simulation; sim-to-real transfer is future work. Current repository layouts differ from the 285-taxel paper configuration."
+    ],
+    "verified": "2026-11-11",
+    "benchmark": {
+      "simulator": "Isaac Lab / Isaac Sim GPU tactile simulator",
+      "simulatorVersion": "Current repository specifies Isaac Sim 5.1.0 and Isaac Lab v2.3.2; paper setup may differ.",
+      "taskCount": "Two illustrative policy tasks, not a standardized benchmark",
+      "tasks": [
+        "In-hand rotation",
+        "Grasping"
+      ],
+      "taskListScope": "Paper illustrative sim-only learning tasks; not an exhaustive benchmark.",
+      "capabilities": [
+        "Whole-hand pressure simulation",
+        "Optical tactile rendering",
+        "Marker displacement"
+      ],
+      "metrics": "Tactile rendering quality and throughput; illustrative policy task performance.",
+      "robots": "BrainCo Revo3 dexterous hand in simulation.",
+      "sensors": "Paper 285 piezoresistive taxels and five vision-based tactile fingertips; current repository MT/MX layouts differ.",
+      "dataCollection": "Simulated contact dynamics produce synchronous pressure and optical tactile observations for reinforcement learning.",
+      "data": "Simulation interaction rollouts; downloadable training data not verified.",
+      "protocol": "Simulation-only tactile in-hand rotation and grasping demonstrations and throughput measurements.",
+      "baselines": "Simulation throughput and sensor-output comparison; see original paper for settings."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://braincotech.github.io/RevoSim-web/assets/grasping.webp",
+        "page": "https://braincotech.github.io/RevoSim-web/",
+        "kind": "task-overview",
+        "credit": "RevoSim authors",
+        "note": "Official figure; original rights retained."
+      }
+    ]
+  },
+  {
+    "id": "nocontactnoworries",
+    "name": "NoContactNoWorries",
+    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "date": "2026-06-23",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "Estimates fingertip binary contact from RGB-D and robot motion for downstream in-hand control without tactile sensing at deployment.",
+    "institution": "International Institute of Information Technology Hyderabad",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.24450",
+      "project": "https://soham2560.github.io/no-contact-no-worries/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Project page does not by itself establish release of code, model weights or data."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2606.24450",
+        "label": "Primary manuscript and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Predicted binary contact is pseudo-tactile, not an observed physical tactile stream. Real fingertip sensors provide evaluation ground truth and are removed for policy deployment."
+    ],
+    "verified": "2026-11-11",
+    "policy": {
+      "family": "Estimated-contact in-hand policy",
+      "baseModel": "Transformer contact estimator and downstream RL control",
+      "modelSize": "Not reported",
+      "inputs": "Synchronized RGB-D, measured and commanded finger joints.",
+      "outputs": "Predicted binary fingertip contacts supplied to a separate manipulation policy.",
+      "trainingData": "Simulation rollouts with physics-engine binary contact labels; real resistive sensors provide evaluation labels only.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Vision and pose cross-attention with causal temporal modeling, then downstream reinforcement-learning policy.",
+      "evaluation": "Simulated and physical LEAP hand contact prediction and in-hand object rotation; ten physical trials reported per evaluation setting."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2606.24450v1/Diagrams/ml_pipeline.png",
+        "page": "https://arxiv.org/abs/2606.24450",
+        "kind": "architecture",
+        "credit": "NoContactNoWorries authors",
+        "note": "Official author figure."
+      }
+    ]
+  },
+  {
+    "id": "somaalign",
+    "name": "SomaAlign",
+    "title": "SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping",
+    "date": "2026-11-02",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-representation",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Aligns RGB-D, tactile, inertial and language features into a reliability-aware soft-grasp representation.",
+    "institution": "Huazhong University of Science and Technology",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Tactile",
+      "IMU",
+      "Language"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.02794",
+      "project": "https://hijackoo.github.io/SomaAlign/",
+      "code": "https://github.com/Hijackoo/SomaAlign"
+    },
+    "release": {
+      "code": "Available — inference and evaluation source",
+      "weights": "Not verified",
+      "data": "Announced — dataset repository access returns HTTP 401; files pending paper acceptance",
+      "license": "CC BY-NC-SA 4.0 repository LICENSE; third-party terms separate",
+      "notes": "Official repository has inference and dataset adapters, but points to user-supplied checkpoints; author-listed dataset currently returns HTTP 401."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.02794",
+        "label": "Primary manuscript and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "modalities",
+          "model",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/Hijackoo/SomaAlign",
+        "label": "Official source, license and dataset status",
+        "fields": [
+          "release",
+          "links"
+        ]
+      },
+      {
+        "url": "https://github.com/Hijackoo/SomaAlign#datasets",
+        "label": "Authors’ dataset availability statement",
+        "fields": [
+          "release"
+        ],
+        "note": "The linked Soma dataset access returned HTTP 401 during verification."
+      }
+    ],
+    "caveats": [
+      "A representation, not a closed-loop grasp policy. Software-cycle alignment does not establish hardware-level synchronized timestamps. Dataset files are announced but not publicly verified."
+    ],
+    "verified": "2026-11-11",
+    "model": {
+      "role": "Multimodal representation for grasp perception",
+      "family": "Reliability-aware multimodal alignment",
+      "baseModel": "ImageBind-derived modality encoders",
+      "modelSize": "1024-dimensional shared embedding; parameter count not verified",
+      "inputs": "Remote and hand RGB, depth, tactile pressure, IMU and structured text.",
+      "outputs": "Aligned multimodal embeddings for retrieval and grasp-outcome prediction.",
+      "trainingMethod": "Masked reliability estimation, reliability-conditioned contrastive alignment and conflict-aware refinement.",
+      "trainingData": "Paper reports Soma: 100 objects, 1,000 grasp trajectories and 74,914 software-cycle samples; Soma-Success has 998 valid independent trials.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Frozen encoders with separate lightweight downstream probes.",
+      "evaluation": "Cross-modal retrieval, attribute recognition and separate grasp outcome prediction on Soma-Success."
+    },
+    "imageCandidates": [
+      {
+        "url": "https://arxiv.org/html/2611.02794v1/F1.png",
+        "page": "https://arxiv.org/abs/2611.02794",
+        "kind": "architecture",
+        "credit": "SomaAlign authors",
+        "note": "Official author figure."
       }
     ]
   }

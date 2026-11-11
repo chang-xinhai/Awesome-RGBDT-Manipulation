@@ -8683,17 +8683,17 @@
   },
   "vtam": {
     "policy": {
-      "path": "/assets/figures/sensing-vtam-policy.webp",
-      "original": "https://arxiv.org/pdf/2603.23481",
-      "page": "https://arxiv.org/abs/2603.23481",
-      "credit": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs authors",
-      "alt": "VTAM original method diagram",
+      "path": "/images/catalog/nov11-vtam-v2.webp",
+      "original": "https://arxiv.org/html/2603.23481v2/overview_diagram.png",
+      "page": "https://arxiv.org/html/2603.23481v2",
+      "credit": "VTAM authors",
+      "alt": "VTAM v2 visuotactile world-action architecture",
       "kind": "architecture",
-      "reviewed": "2026-10-17",
-      "width": 1518,
-      "height": 582,
-      "note": "Original PDF page 4, Figure2 video/action architecture. Cropped without surrounding body text.",
-      "sourceSha256": "954f7590a181a34fe18a6344c0798fcbf8ef3cf8e7a87cf13d947174b786ed4a"
+      "reviewed": "2026-11-11",
+      "width": 1300,
+      "height": 608,
+      "sourceSha256": "577f1a27b6ecafb7da138ea34146b87a0a6a83fdc90e9f84b03ce71cbf7b21b3",
+      "note": "Revised v2 author method figure."
     }
   },
   "factr": {
@@ -12153,6 +12153,126 @@
       "width": 1500,
       "height": 829,
       "note": "Author method figure; original rights retained."
+    }
+  },
+  "lingbot-touch": {
+    "policy": {
+      "path": "/images/catalog/nov11-lingbot-touch.webp",
+      "original": "https://raw.githubusercontent.com/Robbyant/lingbot-touch/main/assets/pretraining.png",
+      "page": "https://technology.robbyant.com/lingbot-touch",
+      "credit": "LingBot-Touch authors",
+      "alt": "LingBot-Touch method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "f1423fa374deb0d83fef1359646388e52743131e1b0b534d60764bbfdf098e30",
+      "width": 1300,
+      "height": 537,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "bat-wam": {
+    "policy": {
+      "path": "/images/catalog/nov11-bat-wam.webp",
+      "original": "https://arxiv.org/html/2611.10967v1/figures/architecture.png",
+      "page": "https://arxiv.org/html/2611.10967v1",
+      "credit": "BAT-WAM authors",
+      "alt": "BAT-WAM method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "507c30ece596a8ebbe8545b16144b1585b0ff3307d31aab0a9813b064ee78fe7",
+      "width": 1300,
+      "height": 638,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "mdf-plus-plus": {
+    "policy": {
+      "path": "/images/catalog/nov11-mdf-plus-plus.webp",
+      "original": "https://arxiv.org/html/2611.09293v1/sys_figure.png",
+      "page": "https://jointmdf.github.io/",
+      "credit": "MDF++ authors",
+      "alt": "MDF++ method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "34019a4ccce21a6c1b1a5d10df5683545b5aa1032c1e3276e6b14e2eab166e76",
+      "width": 1277,
+      "height": 804,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "pctac": {
+    "policy": {
+      "path": "/images/catalog/nov11-pctac.webp",
+      "original": "https://arxiv.org/html/2611.12383v1/Fig_system_pipeline_v2.png",
+      "page": "https://bey0ndt1me.github.io/PCTac-page/",
+      "credit": "PCTac authors",
+      "alt": "PCTac method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "bda23b6f48a80497ec09761add75e0f32ca10a671c25c2e2a6051c21a3a858c4",
+      "width": 1300,
+      "height": 598,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "dexforesight": {
+    "policy": {
+      "path": "/images/catalog/nov11-dexforesight.webp",
+      "original": "https://arxiv.org/html/2611.11166v1/new_pipeline.png",
+      "page": "https://dexforesight.github.io/",
+      "credit": "DexForesight authors",
+      "alt": "DexForesight method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "17a2122dfec4c407443260deb6cdaa342f6ce11f7ba7e98a8fdc69e9357edf9d",
+      "width": 1300,
+      "height": 706,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "revosim": {
+    "benchmark": {
+      "path": "/images/catalog/nov11-revosim.webp",
+      "original": "https://braincotech.github.io/RevoSim-web/assets/grasping.webp",
+      "page": "https://braincotech.github.io/RevoSim-web/",
+      "credit": "RevoSim authors",
+      "alt": "RevoSim simulated grasping and tactile observations",
+      "kind": "task-overview",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "6e8d9d0efdf1c6bbd43df30149854921a64175b8d7823fbf505c168d130627fa",
+      "width": 1300,
+      "height": 335,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "nocontactnoworries": {
+    "policy": {
+      "path": "/images/catalog/nov11-nocontactnoworries.webp",
+      "original": "https://arxiv.org/html/2606.24450v1/Diagrams/ml_pipeline.png",
+      "page": "https://arxiv.org/abs/2606.24450",
+      "credit": "NoContactNoWorries authors",
+      "alt": "NoContactNoWorries method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "04df3a612a75726c6b4e4b30bf506849c24ff07a6d2a370f9fac38ab34d9e265",
+      "width": 1300,
+      "height": 480,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "somaalign": {
+    "policy": {
+      "path": "/images/catalog/nov11-somaalign.webp",
+      "original": "https://arxiv.org/html/2611.02794v1/F1.png",
+      "page": "https://arxiv.org/abs/2611.02794",
+      "credit": "SomaAlign authors",
+      "alt": "SomaAlign method architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-11",
+      "sourceSha256": "ccc036658954f1247b3f87c425e214b89981ed8dba591b0f4a669722e08c968a",
+      "width": 1300,
+      "height": 627,
+      "note": "Original author figure; third-party rights retained."
     }
   }
 }
