@@ -8,7 +8,7 @@ Spatial-UMI-Dream: Scaling World Action Models with Metric Geometry for UMI Mani
 
 **2026-11-04 · Preprint · University of Southern California**
 
-**[Paper](https://arxiv.org/abs/2611.07229)** · [Project](https://weiduoyuan.com/spatial-umi-dream/)
+**[Paper](https://arxiv.org/abs/2611.07229)** · [Project](https://weiduoyuan.com/spatial-umi-dream/) · [Code](https://github.com/Yewandou7/spatial_umi_dream) · [Data](https://github.com/ZeYuan06/RoboTwin-UMI) · [Weights](https://huggingface.co/Yewandou/spatial-umi-dream)
 
 A world-action model predicts future observations and actions from stereo-derived metric geometry in UMI demonstrations.
 
@@ -33,16 +33,20 @@ A world-action model predicts future observations and actions from stereo-derive
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment |  |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Model, source and data availability are tracked separately. |
+| Release: code | Available — model training, depth generation and deployment source [2](https://github.com/Yewandou7/spatial_umi_dream) [3](https://huggingface.co/Yewandou/spatial-umi-dream) [4](https://github.com/ZeYuan06/RoboTwin-UMI)  |
+| Release: weights | Available — pretrained and RoboTwin-UMI checkpoints [2](https://github.com/Yewandou7/spatial_umi_dream) [3](https://huggingface.co/Yewandou/spatial-umi-dream) [4](https://github.com/ZeYuan06/RoboTwin-UMI)  |
+| Release: data | RoboTwin-UMI training data and benchmark provided separately; 605-hour UMI dataset release not verified [2](https://github.com/Yewandou7/spatial_umi_dream) [3](https://huggingface.co/Yewandou/spatial-umi-dream) [4](https://github.com/ZeYuan06/RoboTwin-UMI)  |
+| Release: license | Apache-2.0 code; upstream models and datasets have separate terms. [2](https://github.com/Yewandou7/spatial_umi_dream) [3](https://huggingface.co/Yewandou/spatial-umi-dream) [4](https://github.com/ZeYuan06/RoboTwin-UMI)  |
+| Release: notes | Repository and official checkpoint listing inspected; complete UMI pretraining data availability is not established. [2](https://github.com/Yewandou7/spatial_umi_dream) [3](https://huggingface.co/Yewandou/spatial-umi-dream) [4](https://github.com/ZeYuan06/RoboTwin-UMI)  |
 
 **Scope and qualifications**
 
 - Depth is reconstructed from stereo, not a separate active depth sensor; external task-suite videos are for visualization.
+- Released benchmark data and model checkpoints do not establish that the 605-hour UMI pretraining corpus is public.
 
 **Primary evidence**
 
 1. [Author paper and first submission](https://arxiv.org/html/2611.07229v1)
+2. [Official training and depth-generation source](https://github.com/Yewandou7/spatial_umi_dream)
+3. [Official model checkpoints](https://huggingface.co/Yewandou/spatial-umi-dream)
+4. [Official benchmark repository and training-data instructions](https://github.com/ZeYuan06/RoboTwin-UMI)

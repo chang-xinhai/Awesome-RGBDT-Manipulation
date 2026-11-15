@@ -12394,5 +12394,125 @@
       "height": 619,
       "note": "Original author figure; third-party rights retained."
     }
+  },
+  "harp-bench": {
+    "benchmark": {
+      "path": "/images/catalog/harp-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.11123v1/tasks_v1.png",
+      "page": "https://arxiv.org/html/2611.11123",
+      "credit": "HARP-Bench authors",
+      "alt": "Four human-activity conditions in HARP-Bench",
+      "kind": "task-overview",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "8aa761bfd7948b347ac81053a80984f80e337a767f0b392bb465e5cfa0c0af07",
+      "width": 1204,
+      "height": 311,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "roto": {
+    "benchmark": {
+      "path": "/images/catalog/roto-benchmark.webp",
+      "original": "https://raw.githubusercontent.com/elle-miller/roto/main/readme_assets/images/roto2.png",
+      "page": "https://github.com/elle-miller/roto",
+      "credit": "roto 2.0 authors",
+      "alt": "RoTO 2.0 simulated hand task overview",
+      "kind": "task-overview",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "35134c69e52931489314e7a6ce059b4da4196d6600715633c801b62959e9bbde",
+      "width": 1500,
+      "height": 310,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "taxel-placement": {
+    "benchmark": {
+      "path": "/images/catalog/taxel-placement-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.10647v1/Tactile_setting_v8.png",
+      "page": "https://arxiv.org/html/2611.10647",
+      "credit": "Taxel placement study authors",
+      "alt": "Contact-informed taxel-placement comparisons",
+      "kind": "task-overview",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "31e7cb349570314a28fd07f7bf3851e51f68366ef1663bbc8395fc2e7bb55c35",
+      "width": 420,
+      "height": 229,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "taclat-il": {
+    "benchmark": {
+      "path": "/images/catalog/taclat-il-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.00957v1/figs/real/MarkerDrawing-Front.png",
+      "page": "https://arxiv.org/html/2611.00957",
+      "credit": "Tactile foundation models for IL authors",
+      "alt": "Physical marker-drawing evaluation task",
+      "kind": "task-overview",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "3305dbd6f73fd7d02b6b035d22abdc5cf3691680a9d75a656417cd9de10d2750",
+      "width": 465,
+      "height": 465,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "blind-dex-grasp": {
+    "policy": {
+      "path": "/images/catalog/blind-dex-grasp-policy.webp",
+      "original": "https://arxiv.org/html/2606.11767v1/pipeline.png",
+      "page": "https://arxiv.org/html/2606.11767",
+      "credit": "Blind Dexterous Grasping authors",
+      "alt": "Tactile blind grasping calibration and distillation pipeline",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "86fe88fe81a52e520a04ea0ef3b634120ceb175f1b01bddd3817179f345202d0",
+      "width": 1174,
+      "height": 435,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "sketchmate": {
+    "policy": {
+      "path": "/images/catalog/sketchmate-policy.webp",
+      "original": "https://arxiv.org/html/2610.41844v1/overview.png",
+      "page": "https://arxiv.org/html/2610.41844",
+      "credit": "SketchMate authors",
+      "alt": "Agentic geometric sketch and compliant insertion pipeline",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "95dd2cc7b0ff1a5f33ca6100048d92ab689fb22eff1ff15a32302d1769ec77db",
+      "width": 814,
+      "height": 314,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "swam": {
+    "policy": {
+      "path": "/images/catalog/swam-policy.webp",
+      "original": "https://arxiv.org/html/2611.12870v1/model_architecture.png",
+      "page": "https://arxiv.org/html/2611.12870",
+      "credit": "SWAM authors",
+      "alt": "SWAM shared-attention video and action model architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "fc96c91e9b41b9386ebe39cf33b26ccf70ff30dfb454ee7e1d8153459a7ee8d7",
+      "width": 1500,
+      "height": 1165,
+      "note": "Official author figure; original rights retained."
+    }
+  },
+  "pointwam": {
+    "policy": {
+      "path": "/images/catalog/pointwam-policy.webp",
+      "original": "https://arxiv.org/pdf/2610.02840",
+      "page": "https://arxiv.org/abs/2610.02840",
+      "credit": "PointWAM authors",
+      "alt": "PointWAM 3D trajectory forecasting and action retargeting architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "70ebc1269e280acd7a76851abcd9f1dd5030b283fa075994bb775e21266ddd05",
+      "width": 1230,
+      "height": 435,
+      "note": "Cropped author Figure 2 from PDF page 3; original rights retained."
+    }
   }
 }

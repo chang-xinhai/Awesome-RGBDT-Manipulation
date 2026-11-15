@@ -5278,6 +5278,11 @@
       "url": "https://weiduoyuan.com/spatial-umi-dream/"
     },
     {
+      "work": "spatial-umi-dream",
+      "kind": "code",
+      "url": "https://github.com/Yewandou7/spatial_umi_dream"
+    },
+    {
       "work": "roboarcade",
       "kind": "project",
       "url": "https://roboarcade.org"
@@ -5396,6 +5401,51 @@
       "work": "flip-anything",
       "kind": "project",
       "url": "https://berkeleyautomation.github.io/flipanything/"
+    },
+    {
+      "work": "harp-bench",
+      "kind": "code",
+      "url": "https://github.com/UMass-Embodied-AGI/harp"
+    },
+    {
+      "work": "roto",
+      "kind": "project",
+      "url": "https://elle-miller.github.io/roto/"
+    },
+    {
+      "work": "roto",
+      "kind": "code",
+      "url": "https://github.com/elle-miller/roto"
+    },
+    {
+      "work": "taclat-il",
+      "kind": "project",
+      "url": "https://mmurooka.github.io/tfm4il-project-page/"
+    },
+    {
+      "work": "taclat-il",
+      "kind": "code",
+      "url": "https://github.com/isri-aist/TacLatentIL"
+    },
+    {
+      "work": "blind-dex-grasp",
+      "kind": "project",
+      "url": "https://dex-blind-grasp.github.io/"
+    },
+    {
+      "work": "swam",
+      "kind": "project",
+      "url": "https://char-lotte-xia.github.io/swam-official/"
+    },
+    {
+      "work": "swam",
+      "kind": "code",
+      "url": "https://github.com/shaaaaron/SWAM"
+    },
+    {
+      "work": "pointwam",
+      "kind": "project",
+      "url": "https://chrockey.github.io/PointWAM/"
     }
   ]
 }
