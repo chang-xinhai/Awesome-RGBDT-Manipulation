@@ -12274,5 +12274,125 @@
       "height": 627,
       "note": "Original author figure; third-party rights retained."
     }
+  },
+  "flexitac": {
+    "benchmark": {
+      "path": "/images/catalog/nov15-flexitac.webp",
+      "original": "https://arxiv.org/html/2604.28156v1/sensor_assembly_v2.png",
+      "page": "https://arxiv.org/abs/2604.28156",
+      "credit": "FlexiTac authors",
+      "alt": "FlexiTac physical sensor pad, board and assembly",
+      "kind": "hardware",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "6342f39c7cc587186a8b7ac616609c75d863ec735cf58837f5cf7a2332856e91",
+      "width": 1169,
+      "height": 1100,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "tactile-versus-wrist": {
+    "benchmark": {
+      "path": "/images/catalog/nov15-tactile-versus-wrist.webp",
+      "original": "https://arxiv.org/html/2611.10490v1/station.png",
+      "page": "https://arxiv.org/abs/2611.10490",
+      "credit": "Tactile vs wrist cameras authors",
+      "alt": "Physical setup for tactile versus wrist-camera comparisons",
+      "kind": "task-overview",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "d5c2b680e7606e707fdc505c9a1eac1ba11f2e104b424c2942a5e7434ec01d46",
+      "width": 1375,
+      "height": 1045,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "embodied-first-exam": {
+    "benchmark": {
+      "path": "/images/catalog/nov15-embodied-first-exam.webp",
+      "original": "https://arxiv.org/html/2611.12177v1/tasks.png",
+      "page": "https://arxiv.org/abs/2611.12177",
+      "credit": "Embodied First Exam authors",
+      "alt": "Embodied First Exam newly built and adapted simulation suites",
+      "kind": "task-overview",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "adcb3deca6d6832a2f85670dd27601c44df35b63e401e85e0b3616bd88833064",
+      "width": 1500,
+      "height": 807,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "mate-async": {
+    "policy": {
+      "path": "/images/catalog/nov15-mate-async.webp",
+      "original": "https://arxiv.org/html/2607.17257v2/model-v2.png",
+      "page": "https://arxiv.org/abs/2607.17257",
+      "credit": "MATE authors",
+      "alt": "MATE asynchronous vision and force diffusion composition",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "fc5e828de592231aa4f3b4ed9f1ab4bf65569a5659a042cecab910442e5eac37",
+      "width": 1500,
+      "height": 456,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "ace-cap-0": {
+    "policy": {
+      "path": "/images/catalog/nov15-ace-cap-0.webp",
+      "original": "https://arxiv.org/html/2611.16872v1/ACE-CaP-0-method-working.png",
+      "page": "https://arxiv.org/abs/2611.16872",
+      "credit": "ACE-CaP-0 authors",
+      "alt": "ACE-CaP-0 development and frozen program execution pipeline",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "a27cc3866840c73dae2d429a92dd956afef2ec9db6321f327d532d8597187ebe",
+      "width": 1500,
+      "height": 1045,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "roboscript-wicl": {
+    "policy": {
+      "path": "/images/catalog/nov15-roboscript-wicl.webp",
+      "original": "https://archeone-ai.github.io/RoboScript/static/images/3-RoboScript.webp",
+      "page": "https://arxiv.org/abs/2611.12885",
+      "credit": "RoboScript / WICL authors",
+      "alt": "RoboScript task learning, memory, execution and reflection",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "8eaa7732d2de7b0aef942e0dcd1a98511e598b94c766248564d28fa3640efaf2",
+      "width": 1500,
+      "height": 487,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "reskill-agent": {
+    "policy": {
+      "path": "/images/catalog/nov15-reskill-agent.webp",
+      "original": "https://arxiv.org/html/2611.10510v1/method.png",
+      "page": "https://arxiv.org/abs/2611.10510",
+      "credit": "ReSkill authors",
+      "alt": "ReSkill task construction, selective revision and evaluation",
+      "kind": "architecture",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "c9130a72fa9706aaa6f9588f31cf01520d6c570f646866eec2afb8c003c18e1b",
+      "width": 1500,
+      "height": 667,
+      "note": "Original author figure; third-party rights retained."
+    }
+  },
+  "flip-anything": {
+    "policy": {
+      "path": "/images/catalog/nov15-flip-anything.webp",
+      "original": "https://arxiv.org/html/2611.11941v1/figures/flip-title-v3.png",
+      "page": "https://arxiv.org/abs/2611.11941",
+      "credit": "Flip Anything authors",
+      "alt": "Flip Anything self-learning and bimanual robot evaluation",
+      "kind": "pipeline",
+      "reviewed": "2026-11-15",
+      "sourceSha256": "40d7431b44b256ad31c3b3bd0f292b247c99a55144dad010079a21691fa58cc5",
+      "width": 1500,
+      "height": 619,
+      "note": "Original author figure; third-party rights retained."
+    }
   }
 }

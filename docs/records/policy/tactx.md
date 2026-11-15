@@ -6,9 +6,9 @@
 
 TactX: Learning Shared Tactile Representations Across Diverse Sensors
 
-**2026-06-30 · arXiv preprint 2026 (submitted to CoRL 2026) · UC San Diego; Seoul National University; Amazon FAR**
+**2026-06-30 · CoRL 2026 · UC San Diego; Seoul National University; Amazon FAR**
 
-**[Paper](https://arxiv.org/abs/2606.31236)** · [Project](https://tactx-project.github.io/) · [Code](https://github.com/tactx-project/TactX)
+**[Paper](https://arxiv.org/abs/2606.31236)** · [Project](https://tactx-project.github.io/) · [Code](https://github.com/tactx-project/TactX) · [Data](https://huggingface.co/datasets/TactX/TactX)
 
 Sensor-specific encoders map optical, magnetic and resistive touch to one transferable latent, evaluated through frozen-encoder ACT policy transfer.
 
@@ -26,7 +26,7 @@ Sensor-specific encoders map optical, magnetic and resistive touch to one transf
 | Model inputs | Daimon optical contact composites, eFlesh magnetic vectors or FlexiTac resistive grids; paired quasi-static contacts supply training alignment. [1](https://arxiv.org/abs/2606.31236)  |
 | Model outputs | Shared 16D tactile posterior mean; downstream ACT separately outputs robot action chunks. [1](https://arxiv.org/abs/2606.31236)  |
 | Training method | Joint pairwise contrastive alignment, self/cross reconstruction and KL regularization; encoders remain frozen for downstream imitation learning. [1](https://arxiv.org/abs/2606.31236)  |
-| Training data and scale | Representation: 2,670 paired-contact trajectories / approximately 145K frames across ten printed objects and six mounting configurations. Downstream ACT: approximately 50 GELLO demonstrations per task. [1](https://arxiv.org/abs/2606.31236)  |
+| Training data and scale | Representation: 2,670 paired-contact trajectories / approximately 145K frames across ten printed objects and six mounting configurations. Downstream ACT: approximately 50 GELLO demonstrations per task. [1](https://arxiv.org/abs/2606.31236) [4](https://huggingface.co/datasets/TactX/TactX)  |
 | Training duration | Representation: 300 epochs. Downstream ACT: 50K steps with 64-step chunks. Wall-clock times not reported. [1](https://arxiv.org/abs/2606.31236)  |
 | Training hardware | Not reported in the inspected primary manuscript [1](https://arxiv.org/abs/2606.31236)  |
 | Inference setting and runtime | Not reported in the inspected primary manuscript [1](https://arxiv.org/abs/2606.31236)  |
@@ -34,20 +34,21 @@ Sensor-specific encoders map optical, magnetic and resistive touch to one transf
 | Observations / modalities | Tactile |
 | Evaluation domain | Real robot |
 | Embodiment |  |
-| Release: code | Available — representation alignment/evaluation and downstream ACT training code [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
-| Release: weights | Not bundled — pretrained checkpoints require separate access [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
-| Release: data | Not bundled — paired-contact and robot demonstration data require separate access [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
-| Release: license | Not verified — no root LICENSE found [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
-| Release: notes | Public repository has representation-learning, cross-sensor evaluation and ACT policy training source; datasets and pretrained checkpoints are not bundled. [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX)  |
+| Release: code | Available — representation alignment/evaluation and downstream ACT training code [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX) [4](https://huggingface.co/datasets/TactX/TactX)  |
+| Release: weights | Not bundled — pretrained checkpoints require separate access [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX) [4](https://huggingface.co/datasets/TactX/TactX)  |
+| Release: data | Available — 544 teleoperated Franka episodes listed; HDF5 sample verified HTTP 206 [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX) [4](https://huggingface.co/datasets/TactX/TactX)  |
+| Release: license | Not verified — no root LICENSE found [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX) [4](https://huggingface.co/datasets/TactX/TactX)  |
+| Release: notes | Robot demonstrations are public separately from source code; paired-contact representation data and pretrained checkpoints are not established as fully released. [2](https://tactx-project.github.io/) [3](https://github.com/tactx-project/TactX) [4](https://huggingface.co/datasets/TactX/TactX)  |
 
 **Scope and qualifications**
 
 - Primary contribution is the transferable tactile representation; ACT is a downstream control probe, so this record is counted as a Model.
 - The 16D tactile latent differs from ACT’s 32D action-CVAE latent; sensors are sampled separately from the action-chunk horizon.
-- Datasets and pretrained checkpoints are not bundled with the released code.
+- Released robot demonstration HDF5 files are separate from the paired-contact representation alignment corpus; complete coverage and pretrained checkpoint release have not been independently established.
 
 **Primary evidence**
 
 1. [Original manuscript and first public submission history](https://arxiv.org/abs/2606.31236) — Full author method, evaluation and appendix reviewed; downstream controller probes are distinguished from the reusable model.
 2. [Official author project and current artifact destinations](https://tactx-project.github.io/) — A project button or advertised artifact does not establish a downloadable release; paper-version differences are retained.
 3. [Official source repository and current release scope](https://github.com/tactx-project/TactX) — Inspected actual implementation and author README; component and dataset availability remain separate.
+4. [Official robot demonstration dataset card and verified sample](https://huggingface.co/datasets/TactX/TactX) — 544 episodes listed; daimon/board_wipe sample returned HTTP 206; CC BY 4.0 dataset card.

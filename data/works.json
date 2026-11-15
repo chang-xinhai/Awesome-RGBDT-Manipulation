@@ -74537,7 +74537,7 @@
     "resourceType": "model",
     "summary": "Sensor-specific encoders map optical, magnetic and resistive touch to one transferable latent, evaluated through frozen-encoder ACT policy transfer.",
     "institution": "UC San Diego; Seoul National University; Amazon FAR",
-    "venue": "arXiv preprint 2026 (submitted to CoRL 2026)",
+    "venue": "CoRL 2026",
     "modalities": [
       "Tactile"
     ],
@@ -74548,14 +74548,15 @@
     "links": {
       "paper": "https://arxiv.org/abs/2606.31236",
       "project": "https://tactx-project.github.io/",
-      "code": "https://github.com/tactx-project/TactX"
+      "code": "https://github.com/tactx-project/TactX",
+      "data": "https://huggingface.co/datasets/TactX/TactX"
     },
     "release": {
       "code": "Available — representation alignment/evaluation and downstream ACT training code",
       "weights": "Not bundled — pretrained checkpoints require separate access",
-      "data": "Not bundled — paired-contact and robot demonstration data require separate access",
+      "data": "Available — 544 teleoperated Franka episodes listed; HDF5 sample verified HTTP 206",
       "license": "Not verified — no root LICENSE found",
-      "notes": "Public repository has representation-learning, cross-sensor evaluation and ACT policy training source; datasets and pretrained checkpoints are not bundled."
+      "notes": "Robot demonstrations are public separately from source code; paired-contact representation data and pretrained checkpoints are not established as fully released."
     },
     "model": {
       "role": "Cross-sensor tactile representation",
@@ -74605,14 +74606,24 @@
           "release"
         ],
         "note": "Inspected actual implementation and author README; component and dataset availability remain separate."
+      },
+      {
+        "url": "https://huggingface.co/datasets/TactX/TactX",
+        "label": "Official robot demonstration dataset card and verified sample",
+        "fields": [
+          "links",
+          "release",
+          "model.trainingData"
+        ],
+        "note": "544 episodes listed; daimon/board_wipe sample returned HTTP 206; CC BY 4.0 dataset card."
       }
     ],
     "caveats": [
       "Primary contribution is the transferable tactile representation; ACT is a downstream control probe, so this record is counted as a Model.",
       "The 16D tactile latent differs from ACT’s 32D action-CVAE latent; sensors are sampled separately from the action-chunk horizon.",
-      "Datasets and pretrained checkpoints are not bundled with the released code."
+      "Released robot demonstration HDF5 files are separate from the paired-contact representation alignment corpus; complete coverage and pretrained checkpoint release have not been independently established."
     ],
-    "verified": "2026-11-05",
+    "verified": "2026-11-15",
     "imageCandidates": {
       "policy": "https://arxiv.org/html/2606.31236v1/figures/archi_v4.png"
     }
@@ -85764,5 +85775,689 @@
         "note": "Official author figure."
       }
     ]
+  },
+  {
+    "id": "flexitac",
+    "name": "FlexiTac",
+    "title": "FlexiTac: A Low-Cost, Open-Source, Scalable Tactile Sensing Solution for Robotic Systems",
+    "date": "2026-04-30",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "Flexible piezoresistive tactile pads and readout hardware support contact-rich manipulation research.",
+    "institution": "Columbia University",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.28156",
+      "project": "https://flexitac.github.io/",
+      "code": "https://github.com/FlexiTac/FlexiTac"
+    },
+    "release": {
+      "code": "Available — pad design, firmware and acquisition source",
+      "weights": "Not applicable",
+      "data": "Not verified",
+      "license": "Root repository license not verified; FlexiTac-Gen subproject has separate terms",
+      "notes": "Open hardware and software; availability and terms differ across components."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2604.28156",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "benchmark",
+          "caveats",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://flexitac.github.io/",
+        "label": "Official project and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/FlexiTac/FlexiTac",
+        "label": "Official code and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Sensor readings are pressure-sensitive taxels, not scene depth or direct wrist force/torque. Pad design and firmware do not imply every ecosystem policy is released."
+    ],
+    "verified": "2026-11-15",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Hardware and sensor platform, not a manipulation benchmark",
+      "tasks": [],
+      "taskListScope": "Hardware platform, not an evaluated task suite",
+      "capabilities": [
+        "Piezoresistive pressure sensing",
+        "Flexible FPC tactile pads",
+        "Serial readout"
+      ],
+      "metrics": "Not applicable",
+      "robots": "Multiple grippers and wearable collectors; integration-specific",
+      "sensors": "FlexiTac V2 flexible pressure array; cited project specifies 32 × 12 and 2 mm grid for one configuration.",
+      "dataCollection": "Pressure-array readout from physical contacts; no tactile output is scene depth.",
+      "data": "Not verified",
+      "protocol": "Hardware integration and representative manipulation applications; not one uniform benchmark.",
+      "baselines": "Not applicable"
+    }
+  },
+  {
+    "id": "tactile-versus-wrist",
+    "name": "Tactile vs wrist cameras",
+    "title": "Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation",
+    "date": "2026-11-07",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "tactile-benchmarks"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "A controlled real-robot study compares tactile arrays and wrist views in contact-rich tasks.",
+    "institution": "Toyota Research Institute",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.10490",
+      "project": "https://annieyaj.github.io/tactile-vs-vision/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Availability is distinguished for source, data and model weights."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.10490",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "benchmark",
+          "caveats",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://annieyaj.github.io/tactile-vs-vision/",
+        "label": "Official project and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Conclusions are limited to the tested tasks and sensor combinations, not an unconditional equivalence between touch and vision."
+    ],
+    "verified": "2026-11-15",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Six real-world task families",
+      "tasks": [
+        "Tight clearance",
+        "Rigid / soft placement",
+        "Straw insertion",
+        "Occluded retrieval",
+        "Plug insertion",
+        "Whiteboard wiping"
+      ],
+      "taskListScope": "Six paper-reported task families; controlled wrist/tactile comparisons apply to a subset.",
+      "capabilities": [
+        "Occluded retrieval",
+        "Insertion",
+        "Contact-rich tool use"
+      ],
+      "metrics": "Task success across sensor ablations.",
+      "robots": "YAM arm with gripper",
+      "sensors": "Scene and egocentric cameras, optional wrist camera, two FlexiTac tactile arrays.",
+      "dataCollection": "Real-robot demonstrations with tactile arrays and visual cameras.",
+      "data": "Not verified",
+      "protocol": "Controlled camera/tactile ablations and physical task trials.",
+      "baselines": "ACT policies with and without wrist-camera and tactile observations."
+    }
+  },
+  {
+    "id": "embodied-first-exam",
+    "name": "Embodied First Exam",
+    "title": "Embodied First Exam",
+    "date": "2026-11-09",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation"
+    ],
+    "resourceType": "benchmark",
+    "summary": "An agent-native simulation exam evaluates direct control, code and learned-policy approaches across diverse robot suites.",
+    "institution": "Northwestern University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.12177",
+      "project": "https://embodied-first-exam.ai/",
+      "code": "https://github.com/mll-lab-nu/embodied-first-exam"
+    },
+    "release": {
+      "code": "Available — benchmark harness and task implementations",
+      "weights": "External agent model access varies",
+      "data": "Benchmark task configuration public; full evaluated agent outputs not independently audited",
+      "license": "MIT repository; benchmark assets and dependencies carry separate terms",
+      "notes": "Model APIs, simulators and adapted suites have independent terms."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.12177",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "benchmark",
+          "caveats",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://embodied-first-exam.ai/",
+        "label": "Official project and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/mll-lab-nu/embodied-first-exam",
+        "label": "Official code and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Simulation benchmark, not a real-robot trial. Standard and privileged settings must not be conflated; 392 tasks lack a reference solution."
+    ],
+    "verified": "2026-11-15",
+    "benchmark": {
+      "simulator": "MuJoCo, ManiSkill, Isaac and other suite-specific backends",
+      "simulatorVersion": "Not reported",
+      "taskCount": "1,156 tasks across 35 suites, 47 robots; 456 core tasks",
+      "tasks": [
+        "RoboARC",
+        "DexHandExam",
+        "RoboPaint",
+        "RoboDynamicExam",
+        "iSpatialGym",
+        "Embodied Safety Exam",
+        "RoboEngineer",
+        "Embodied Olympics"
+      ],
+      "taskListScope": "Examples from the nine new suites; 26 other suites are adapted. Core task count is separate from the full registry.",
+      "capabilities": [
+        "Code-based control",
+        "Dexterous manipulation",
+        "Spatial reasoning",
+        "Agent evaluation"
+      ],
+      "metrics": "Task success with setting-specific evaluation.",
+      "robots": "47 distinct robot models across all suites.",
+      "sensors": "Standard setting uses sensor observations; privileged setting additionally exposes simulator state.",
+      "dataCollection": "Agent-generated commands, code or trained policies interact with simulated task environments.",
+      "data": "Not verified",
+      "protocol": "Standard, realtime and privileged settings have different reset and observation rules.",
+      "baselines": "Eight coding agents under the paper’s tested settings."
+    }
+  },
+  {
+    "id": "mate-async",
+    "name": "MATE",
+    "title": "MATE: Asynchronous Multi-Rate Diffusion Policy Composition",
+    "date": "2026-07-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il"
+    ],
+    "resourceType": "policy",
+    "summary": "Asynchronously composes independently trained vision and force diffusion policies at different rates.",
+    "institution": "Shanghai Jiao Tong University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Force/Torque",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2607.17257",
+      "code": "https://github.com/Alan-Heoooh/MATE",
+      "project": "https://lag-fusion.github.io/"
+    },
+    "release": {
+      "code": "Available — training and asynchronous deployment source",
+      "weights": "Not bundled; supplied separately",
+      "data": "Not bundled; supplied separately",
+      "license": "CC BY-NC-SA 4.0 root license; upstream components have separate terms",
+      "notes": "Public repository contains training and inference source; checkpoints, measured calibration and robot adapter are separately supplied."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2607.17257",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/Alan-Heoooh/MATE",
+        "label": "Official code and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://lag-fusion.github.io/",
+        "label": "Official project and method overview",
+        "fields": [
+          "links",
+          "summary"
+        ]
+      }
+    ],
+    "caveats": [
+      "Measured wrist force/torque is not cutaneous tactile sensing. RGB-D is specific to the separate 3D-vision experiment. Title and method use revised v2; date remains v1."
+    ],
+    "verified": "2026-11-15",
+    "policy": {
+      "family": "Asynchronous diffusion composition",
+      "baseModel": "Vision and force diffusion experts",
+      "modelSize": "Not reported",
+      "inputs": "RGB observations, wrist force/torque and robot state; alternative experiment composes 2D and 3D visual policies.",
+      "outputs": "Rebased relative action trajectories",
+      "trainingData": "Task demonstrations; component-specific datasets supplied separately.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Independently trained experts contribute asynchronous denoising guidance; state-aligned rebase handles delayed updates.",
+      "evaluation": "Real contact-rich manipulation and separately tested 2D/3D policy composition."
+    }
+  },
+  {
+    "id": "ace-cap-0",
+    "name": "ACE-CaP-0",
+    "title": "ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience",
+    "date": "2026-11-12",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "A coding agent revises reusable robot programs with demonstrations and simulation on demand.",
+    "institution": "ACE Robotics",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.16872",
+      "project": "https://acerobotics2025.github.io/ACE-CaP/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Project and paper do not establish a public complete executable implementation."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.16872",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://acerobotics2025.github.io/ACE-CaP/",
+        "label": "Official project and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Program revisions and selective simulation are development-time adaptation, not updates to foundation-model weights. Eight physical tasks are evaluated after development."
+    ],
+    "verified": "2026-11-15",
+    "policy": {
+      "family": "Code-as-policy robot agent",
+      "baseModel": "Claude Opus 5.5 coding agent",
+      "modelSize": "Not reported",
+      "inputs": "Task instructions, multi-view cameras, robot state and execution feedback.",
+      "outputs": "Revised Python robot programs and perception/control tool calls.",
+      "trainingData": "Demonstrations requested for specific task segments; limits differ by study.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Agent requests demonstrations or simulation on demand while developing code; frozen program executes without an agent at runtime.",
+      "evaluation": "Eight real-world bimanual tasks, 30 trials each; task-specific program development."
+    }
+  },
+  {
+    "id": "roboscript-wicl",
+    "name": "RoboScript / WICL",
+    "title": "World In-Context Learning for Agentic Robot Manipulation",
+    "date": "2026-11-09",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "A frozen model builds task memory from demonstration and simulated rehearsal, then deploys reusable skills.",
+    "institution": "Huazhong University of Science and Technology",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.12885",
+      "project": "https://archeone-ai.github.io/RoboScript/",
+      "code": "https://github.com/ArcheOne-AI/RoboScript"
+    },
+    "release": {
+      "code": "Available — public task runtime, simulation and real-robot adapters",
+      "weights": "External foundation-model access varies",
+      "data": "Not verified",
+      "license": "Apache-2.0 repository; third-party components retain their terms",
+      "notes": "Actual executable source tree inspected; hosted model and robot hardware require separate access."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.12885",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://archeone-ai.github.io/RoboScript/",
+        "label": "Official project and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/ArcheOne-AI/RoboScript",
+        "label": "Official code and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Author score combines clean and randomized simulation and must not be interpreted as physical-robot success."
+    ],
+    "verified": "2026-11-15",
+    "policy": {
+      "family": "Robot agent with in-context memory",
+      "baseModel": "Frozen foundation model",
+      "modelSize": "Not reported",
+      "inputs": "Task instruction, demonstration, scene observations and rehearsal feedback; real system uses RGB-D.",
+      "outputs": "Tool-mediated manipulation and task-memory updates.",
+      "trainingData": "One demonstration per task and simulation interaction; frozen task memory at evaluation.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Frozen model rehearses in simulation and stores task steps and corrections in context, not weight gradients.",
+      "evaluation": "50 RoboTwin tasks in clean and randomized simulation; physical dual-arm cross-embodiment transfer."
+    }
+  },
+  {
+    "id": "reskill-agent",
+    "name": "ReSkill",
+    "title": "ReSkill: Selective Self-Improvement for Robot Manipulation",
+    "date": "2026-11-07",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "A coding agent targets failing task-graph nodes and retains evaluated skill revisions.",
+    "institution": "The Chinese University of Hong Kong",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.10510"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Availability is distinguished for source, data and model weights."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.10510",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Evaluation layouts were available during model selection. Real-world skill revision occurred in rebuilt simulation; the frozen program makes no agent calls at runtime."
+    ],
+    "verified": "2026-11-15",
+    "policy": {
+      "family": "Robot agent",
+      "baseModel": "Coding agent, exact base model varies",
+      "modelSize": "Not reported",
+      "inputs": "Task, visual observations, execution records and skill library.",
+      "outputs": "Revised task graphs, skills and independently executable robot program.",
+      "trainingData": "One teleoperated demonstration per physical-task reconstruction.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Coding agent revises task graph and reusable skills during development; paired evaluations determine which changes are retained.",
+      "evaluation": "Ten RoboDojo tasks and eight physical Xtrainer tasks; real-task development in reconstructed simulation."
+    }
+  },
+  {
+    "id": "flip-anything",
+    "name": "Flip Anything",
+    "title": "Flip Anything with Agentic Robotics Self-Learning",
+    "date": "2026-11-09",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl"
+    ],
+    "resourceType": "policy",
+    "summary": "A coding agent improves an object-flipping graph policy through simulation feedback and transfers it to a bimanual robot.",
+    "institution": "University of California, Berkeley",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.11941",
+      "project": "https://berkeleyautomation.github.io/flipanything/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Availability is distinguished for source, data and model weights."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2611.11941",
+        "label": "Original paper and first submission",
+        "fields": [
+          "title",
+          "date",
+          "summary",
+          "institution",
+          "modalities",
+          "policy",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://berkeleyautomation.github.io/flipanything/",
+        "label": "Official project and release scope",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Simulation and physical camera setups differ; tuned development performance is not a held-out benchmark score."
+    ],
+    "verified": "2026-11-15",
+    "policy": {
+      "family": "Code-as-policy robot agent",
+      "baseModel": "Coding agent and reactive graph policy",
+      "modelSize": "Not reported",
+      "inputs": "RGB-D observations, robot state and execution feedback.",
+      "outputs": "Graph-based perception, grasping, handover and recovery programs.",
+      "trainingData": "Not reported",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "trainingMethod": "Agent iteratively revises executable logic from simulation feedback; no foundation-model weight update is claimed.",
+      "evaluation": "Object-flipping simulation and separately reported physical robot trials."
+    }
   }
 ]

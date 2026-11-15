@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-11",
+  "reviewed": "2026-11-15",
   "sources": [
     {
       "work": "rle-bench",
@@ -5341,6 +5341,61 @@
       "work": "somaalign",
       "kind": "code",
       "url": "https://github.com/Hijackoo/SomaAlign"
+    },
+    {
+      "work": "flexitac",
+      "kind": "project",
+      "url": "https://flexitac.github.io/"
+    },
+    {
+      "work": "flexitac",
+      "kind": "code",
+      "url": "https://github.com/FlexiTac/FlexiTac"
+    },
+    {
+      "work": "tactile-versus-wrist",
+      "kind": "project",
+      "url": "https://annieyaj.github.io/tactile-vs-vision/"
+    },
+    {
+      "work": "embodied-first-exam",
+      "kind": "project",
+      "url": "https://embodied-first-exam.ai/"
+    },
+    {
+      "work": "embodied-first-exam",
+      "kind": "code",
+      "url": "https://github.com/mll-lab-nu/embodied-first-exam"
+    },
+    {
+      "work": "mate-async",
+      "kind": "project",
+      "url": "https://lag-fusion.github.io/"
+    },
+    {
+      "work": "mate-async",
+      "kind": "code",
+      "url": "https://github.com/Alan-Heoooh/MATE"
+    },
+    {
+      "work": "ace-cap-0",
+      "kind": "project",
+      "url": "https://acerobotics2025.github.io/ACE-CaP/"
+    },
+    {
+      "work": "roboscript-wicl",
+      "kind": "project",
+      "url": "https://archeone-ai.github.io/RoboScript/"
+    },
+    {
+      "work": "roboscript-wicl",
+      "kind": "code",
+      "url": "https://github.com/ArcheOne-AI/RoboScript"
+    },
+    {
+      "work": "flip-anything",
+      "kind": "project",
+      "url": "https://berkeleyautomation.github.io/flipanything/"
     }
   ]
 }
