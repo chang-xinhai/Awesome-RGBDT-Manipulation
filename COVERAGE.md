@@ -1,23 +1,23 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-11-15. 831 unique records; 72 benchmark records; 677 policy records; 71 models; 9 surveys; 18 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-11-20. 851 unique records; 73 benchmark records; 688 policy records; 78 models; 9 surveys; 20 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
-- Visuo-Tactile Benchmarks: 29 records with this classification.
+- Visuo-Tactile Benchmarks: 30 records with this classification.
 - Precision and Assembly: 26 records with this classification.
-- Dexterous Manipulation: 17 records with this classification.
+- Dexterous Manipulation: 18 records with this classification.
 - General Manipulation: 27 records with this classification.
 - Robustness and Evaluation: 26 records with this classification.
-- Supporting Tools and Data: 18 records with this classification.
-- Visuo-Tactile Policy Learning: 94 records with this classification.
-- Tactile VLA and World-Action Models: 114 records with this classification.
-- RGB-D and 3D Policies: 209 records with this classification.
-- Tactile Representations and Pretraining: 47 records with this classification.
-- Geometry and Predictive Models: 36 records with this classification.
-- Visual Precision and Reinforcement Learning: 53 records with this classification.
-- Agent / RSI / ICL: 288 records with this classification.
-- Generalist Policy Foundations: 165 records with this classification.
+- Supporting Tools and Data: 20 records with this classification.
+- Visuo-Tactile Policy Learning: 99 records with this classification.
+- Tactile VLA and World-Action Models: 117 records with this classification.
+- RGB-D and 3D Policies: 215 records with this classification.
+- Tactile Representations and Pretraining: 51 records with this classification.
+- Geometry and Predictive Models: 40 records with this classification.
+- Visual Precision and Reinforcement Learning: 54 records with this classification.
+- Agent / RSI / ICL: 293 records with this classification.
+- Generalist Policy Foundations: 166 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -38,6 +38,7 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [ForceBench simulation comparison](https://arxiv.org/abs/2610.19604) | paper-baselines | 9 / 10 |
 | [SparkArena simulation / hardware paper baselines](https://arxiv.org/abs/2610.22342) | paper-baselines | 11 / 13 |
 | [RoboDojo official Agent / Agent+VLA / Agent+WAM track](https://robodojo-benchmark.com/leaderboard) | leaderboard | 10 / 10 |
+| [RoboDojo Agent track legacy qualification under November 14 rules](https://robodojo-benchmark.com/leaderboard#agent) | leaderboard | 3 / 5 |
 
 ## Survey citation trails
 

@@ -8,7 +8,7 @@ HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipula
 
 **2026-10-19 · Preprint · Tsinghua University**
 
-**[Paper](https://arxiv.org/abs/2610.26765)** · [Project](https://llltttwww.github.io/HandsOn-website/) · [Code](https://github.com/TsinghuaC3I/HandsOn) · [Data](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets)
+**[Paper](https://arxiv.org/abs/2610.26765)** · [Project](https://llltttwww.github.io/HandsOn-website/) · [Code](https://github.com/TsinghuaC3I/HandsOn) · [Data](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) · [Weights](https://huggingface.co/Cyan666/HandsOn-Checkpoints) · [Data-Newton](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets/tree/main/newton_wuji2) · [Leaderboard](https://llltttwww.github.io/HandsOn-website/leaderboard.html)
 
 A dexterous simulation platform pairs 50 demonstrated tasks with 16 demonstration-free transfer tasks and execution diagnostics.
 
@@ -28,17 +28,17 @@ A dexterous simulation platform pairs 50 demonstrated tasks with 16 demonstratio
 | Robots | Paper ROKAE–Wuji bimanual platform. Other arm/hand descriptions establish portability support, not all-combination evaluation. [1](https://arxiv.org/html/2610.26765)  |
 | Sensors and observations | Three RGB views and measured robot joint/end-effector state; operator/setup camera not a policy input. [1](https://arxiv.org/html/2610.26765)  |
 | Data collection method | Curated human teleoperation with dexterous hand retargeting, success/feasibility verification and high-fidelity re-rendering. [1](https://arxiv.org/html/2610.26765)  |
-| Demonstrations and data | 18,000 curated PhysX demonstrations / 6,053,555 timesteps at 30 Hz. Newton demonstration data remain planned. [1](https://arxiv.org/html/2610.26765)  |
-| Evaluation protocol | Native EEF52 executor at 30 Hz; task-specific 3×P75 physical-time budgets with three deformable exceptions. GPT-6: ten trials per task, 660 total, simulation paused during API inference. [1](https://arxiv.org/html/2610.26765)  |
+| Demonstrations and data | Paper corpus: 18,000 curated PhysX/Wuji1 demonstrations (15,178 train / 2,822 validation), 6,053,555 timesteps at 30 Hz. Separate release: 10,000 raw Newton/Wuji2 trajectories across 50 Core tasks, shortest 200 per task. [1](https://arxiv.org/html/2610.26765)  |
+| Evaluation protocol | Native EEF52 executor at 30 Hz; task-specific 3×P75 physical-time budgets with three deformable exceptions. GPT-6: ten trials per task, 660 total, simulation paused during API inference. Open submissions use the separate frozen handson-eval-v1 protocol, with public/hidden tracks per the official guide. [1](https://arxiv.org/html/2610.26765) [4](https://github.com/TsinghuaC3I/HandsOn/blob/main/leaderboard/README.md)  |
 | Evaluated baselines | Diffusion, VLA, WAM and GPT-6 move_eef. Best trained multi-task OpenWAM: 29.1% Core-50. GPT-6: 5.2% Core-50 / 1.9% Transfer-16. [1](https://arxiv.org/html/2610.26765)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Bimanual · Dexterous hand |
-| Release: code | Available —66-task PhysX implementation [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets)  |
-| Release: weights | Not applicable — benchmark; policy-specific checkpoints retain separate scope [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets)  |
-| Release: data | Available —PhysX demonstrations; Newton data not released [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets)  |
-| Release: license | MIT original benchmark code and published dataset card; bundled robot/scene/policy assets retain component-specific licenses. [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets)  |
-| Release: notes | Actual native simulation/evaluation code,66 configs andHFdata/parquet/video inventories are public. OptionalNewton evaluation currentlycovers2 tasks, not a complete alternate 66-task release. [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets)  |
+| Release: code | Available — 66-task PhysX evaluation and Newton/Wuji2 rendering tools [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) [5](https://huggingface.co/Cyan666/HandsOn-Checkpoints)  |
+| Release: weights | Available — eight paper multi-task checkpoints hosted separately [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) [5](https://huggingface.co/Cyan666/HandsOn-Checkpoints)  |
+| Release: data | Available — PhysX/Wuji1 paper demonstrations and separate Newton/Wuji2 raw trajectories [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) [5](https://huggingface.co/Cyan666/HandsOn-Checkpoints)  |
+| Release: license | MIT original benchmark code and published dataset card; bundled robot/scene/policy assets retain component-specific licenses. [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) [5](https://huggingface.co/Cyan666/HandsOn-Checkpoints)  |
+| Release: notes | The original PhysX corpus and Newton/Wuji2 data use different hardware/simulator protocols. The latter contains the shortest 200 raw trajectories per Core task. Its release does not imply a complete 66-task Newton evaluation. [2](https://github.com/TsinghuaC3I/HandsOn) [3](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) [5](https://huggingface.co/Cyan666/HandsOn-Checkpoints)  |
 
 **Task names — Complete 66 released configurations: 50 demonstrated tasks; 16 transfer tasks (6 compositional, 7 generalization, 3 deformable).:**
 
@@ -121,3 +121,6 @@ A dexterous simulation platform pairs 50 demonstrated tasks with 16 demonstratio
 1. [Original full paper, methods and evaluation](https://arxiv.org/html/2610.26765) — Publication date is arXiv v1; implementation and deployment observations are distinguished from training supervision, generated geometry and base-model identity.
 2. [Official artifact: actual source files, inventory and license](https://github.com/TsinghuaC3I/HandsOn) — 7755real files,66 actual config entries and native runner; not merely a website. HF72058 entries include actual trajectory/video data.
 3. [Official artifact inventory / model or dataset card](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets) — Actual file inventory and artifact-specific terms checked independently; upstream checkpoints and equivalent dataset layouts are not double-counted.
+4. [HandsOn frozen leaderboard submission protocol](https://github.com/TsinghuaC3I/HandsOn/blob/main/leaderboard/README.md)
+5. [Official repository and public artifact inventory](https://huggingface.co/Cyan666/HandsOn-Checkpoints) — Verified actual distributed checkpoint files and SHA256SUMS.
+6. [Official repository and public artifact inventory](https://huggingface.co/datasets/Cyan666/HandsOn-Datasets/tree/main/newton_wuji2) — Separate official Newton/Wuji2 raw demonstration inventory.

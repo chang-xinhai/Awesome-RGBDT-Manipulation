@@ -8,7 +8,7 @@ Q0-Preview
 
 **2026-10-30 · Leaderboard / preview · Qoo Tech**
 
-**[Project](https://robodojo-benchmark.com/leaderboard?bench=sim)**
+**[Project](https://robodojo-benchmark.com/leaderboard#agent)**
 
 Robot agent submitted to the official RoboDojo simulation leaderboard. Architecture and release details have not been independently disclosed.
 
@@ -31,7 +31,7 @@ Robot agent submitted to the official RoboDojo simulation leaderboard. Architect
 | Training duration | Not reported |
 | Training hardware | Not reported |
 | Inference and control rates | Not reported |
-| Evaluation scope | Official RoboDojo simulation snapshot 30 October 2026: score 73.33; success 68.00%. [1](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
+| Evaluation scope | Official RoboDojo simulation snapshot 30 October 2026: score 73.33; success 68.00%. The current official Agent track marks this legacy result with a rule-deviation asterisk. [1](https://robodojo-benchmark.com/data/leaderboard.generated.json) [3](https://robodojo-benchmark.com/leaderboard#agent)  |
 | Observations / modalities |  |
 | Evaluation domain | Simulation |
 | Embodiment |  |
@@ -45,8 +45,10 @@ Robot agent submitted to the official RoboDojo simulation leaderboard. Architect
 
 - No author method report or deployment inputs verified; leaderboard type does not establish measured depth, weight updates or a public release.
 - The date records the official leaderboard announcement, not a paper submission.
+- The archived board qualification describes additional evaluation conditions in task context. It does not supply a full public system implementation.
 
 **Primary evidence**
 
 1. [Official RoboDojo simulation results](https://robodojo-benchmark.com/data/leaderboard.generated.json) — Snapshot updated 2026-10-30; system type Agent is specified by the leaderboard app.
 2. [Official leaderboard announcement](https://robodojo-benchmark.com/) — October 30 dates its leaderboard announcement, not a technical paper.
+3. [Official legacy Agent track annotation](https://robodojo-benchmark.com/leaderboard#agent)

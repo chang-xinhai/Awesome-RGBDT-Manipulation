@@ -8,7 +8,7 @@ RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Gener
 
 **2026-07-05 · Preprint · RoboDojo consortium**
 
-**[Paper](https://arxiv.org/abs/2607.04434)** · [Project](https://robodojo-benchmark.com/) · [Code](https://github.com/RoboDojo-Benchmark/RoboDojo) · [Data](https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo)
+**[Paper](https://arxiv.org/abs/2607.04434)** · [Project](https://robodojo-benchmark.com/) · [Code](https://github.com/RoboDojo-Benchmark/RoboDojo) · [Data](https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo) · [Agent-Protocol](https://robodojo-benchmark.com/leaderboard/protocol?lang=en) · [Leaderboard](https://robodojo-benchmark.com/leaderboard#agent)
 
 Unified simulation/physical benchmark with five capability dimensions and common policy deployment through XPolicyLab.
 
@@ -26,10 +26,10 @@ Unified simulation/physical benchmark with five capability dimensions and common
 | Capability dimensions | Generalization · Memory · Precision · Long-horizon execution · Open-vocabulary instruction following [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
 | Metrics | Capability-specific / overall task-success aggregates; fine-grained progress under task criteria; separate sim and physical leaderboards. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
 | Robots | Simulation dual-arm ARX X5; physical ARX X5, Piper and Piper X. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
-| Sensors and observations | Head and wrist RGB cameras, proprioception and instructions. Simulator can export depth, but listed baseline observation channels must be verified separately; official suite has no tactile sensor. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
+| Sensors and observations | Head and wrist RGB cameras, proprioception and instructions. Simulator can export depth, but listed baseline observation channels must be verified separately; official suite has no tactile sensor. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [11](https://robodojo-benchmark.com/leaderboard/protocol?lang=en)  |
 | Data collection method | Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [5](https://arxiv.org/abs/2607.04434)  |
 | Demonstrations and data | Demonstration data downloadable by task; exact current total count varies by release. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
-| Evaluation protocol | Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/)  |
+| Evaluation protocol | Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation. The November 14 Agent track adds standardized task prompts, runtime-observation boundaries and disclosure rules. Older rows with deviations are marked individually. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [11](https://robodojo-benchmark.com/leaderboard/protocol?lang=en)  |
 | Evaluated baselines | Frozen paper: 30 simulation and 10 physical baselines. Official 30 October 2026 generated snapshot: 66 simulation and 13 physical submission rows, including 10 Agent / Agent+WAM / Agent+VLA aliases mapping to 8 canonical systems; the three GPT/DeepSeek rows share RoboProbe. GO-3 Nano Preview and Q0-Preview are new Agent-track entries. Adapter integrations do not establish scored submissions. [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [6](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
@@ -89,6 +89,7 @@ Unified simulation/physical benchmark with five capability dimensions and common
 
 - A simulator depth output does not mean original evaluated policies use depth.
 - Report core 42 tasks separately from DLC and adapted external reproductions.
+- Agent-track hardware, demo/experience and scoring scope are per submission. The current official runtime policy distinguishes standard RGB/state/calibration from privileged simulator information.
 
 **Primary evidence**
 
@@ -102,3 +103,4 @@ Unified simulation/physical benchmark with five capability dimensions and common
 8. [Official current source / actual release —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — Fresh official generated JSON updated2026-10-24:62simulation/12physical. App system-type map identifies8Agent aliases; score membership and adapter availability are independent.
 9. [Official current source / actual release —26October2026](https://github.com/XPolicyLab/XPolicyLab/tree/c43a74653bec480ebe82c84770664e8035bc56c9/policy) — Actual API directory listing:73adapter directories excluding demo_policy, not README inferred totals.
 10. [Official leaderboard snapshot — 30 October 2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — 66 sim / 13 real rows; current application type map identifies Q0-Preview and GO-3 Nano Preview as Agent-track systems.
+11. [Official November 14 Agent Track protocol](https://robodojo-benchmark.com/leaderboard/protocol?lang=en)

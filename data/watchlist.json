@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-15",
+  "reviewed": "2026-11-20",
   "sources": [
     {
       "work": "rle-bench",
@@ -4985,6 +4985,11 @@
     {
       "work": "q0-preview",
       "kind": "project",
+      "url": "https://robodojo-benchmark.com/leaderboard#agent"
+    },
+    {
+      "work": "go3-nano-preview",
+      "kind": "project",
       "url": "https://robodojo-benchmark.com/leaderboard?bench=sim"
     },
     {
@@ -5446,6 +5451,121 @@
       "work": "pointwam",
       "kind": "project",
       "url": "https://chrockey.github.io/PointWAM/"
+    },
+    {
+      "work": "amp1",
+      "kind": "project",
+      "url": "https://apple-aiml-research.github.io/ml-amp/"
+    },
+    {
+      "work": "amp1",
+      "kind": "code",
+      "url": "https://github.com/apple-aiml-research/ml-amp"
+    },
+    {
+      "work": "justrua",
+      "kind": "project",
+      "url": "https://zefanw.github.io/JustRUA/"
+    },
+    {
+      "work": "justrua",
+      "kind": "code",
+      "url": "https://github.com/ZefanW/JustRUA"
+    },
+    {
+      "work": "interactvla",
+      "kind": "project",
+      "url": "https://lingwupro.github.io/InteractVLA/"
+    },
+    {
+      "work": "interactvla",
+      "kind": "code",
+      "url": "https://github.com/LingwuPro/InteractVLA"
+    },
+    {
+      "work": "witac",
+      "kind": "project",
+      "url": "https://wrist-informed-tactile-representations.github.io/"
+    },
+    {
+      "work": "touchtwin",
+      "kind": "project",
+      "url": "https://touchtwin.github.io/"
+    },
+    {
+      "work": "dexremo",
+      "kind": "project",
+      "url": "https://dexremo.github.io/"
+    },
+    {
+      "work": "taf-foundation",
+      "kind": "project",
+      "url": "https://mrjiangjm.github.io/TaF-Foundation/"
+    },
+    {
+      "work": "luxtac",
+      "kind": "project",
+      "url": "https://luxtac.github.io/"
+    },
+    {
+      "work": "luxtac",
+      "kind": "code",
+      "url": "https://github.com/AdeeshDesai/LuxTac-Sim"
+    },
+    {
+      "work": "cora-vtla",
+      "kind": "project",
+      "url": "https://cora-vtla.github.io/"
+    },
+    {
+      "work": "lodos",
+      "kind": "code",
+      "url": "https://github.com/martius-lab/lodos"
+    },
+    {
+      "work": "oap",
+      "kind": "project",
+      "url": "https://zihaolu001.github.io/oap-project/"
+    },
+    {
+      "work": "oap",
+      "kind": "code",
+      "url": "https://github.com/ZihaoLu001/OaP"
+    },
+    {
+      "work": "phoenix-mwa",
+      "kind": "project",
+      "url": "https://openphoenix-team.github.io/Phoenix-pages/"
+    },
+    {
+      "work": "phoenix-mwa",
+      "kind": "code",
+      "url": "https://github.com/Anyverse-Dynamics/Phoenix-MWA"
+    },
+    {
+      "work": "recova",
+      "kind": "project",
+      "url": "https://research.nvidia.com/labs/gear/recova/"
+    },
+    {
+      "work": "dkt",
+      "kind": "project",
+      "url": "https://daniellli.github.io/projects/DKT/"
+    },
+    {
+      "work": "dkt",
+      "kind": "code",
+      "url": "https://github.com/Daniellli/DKT"
+    },
+    {
+      "work": "d3roma",
+      "kind": "project",
+      "url": "https://pku-epic.github.io/D3RoMa/"
+    },
+    {
+      "work": "d3roma",
+      "kind": "code",
+      "url": "https://github.com/songlin/d3roma"
     }
   ]
 }

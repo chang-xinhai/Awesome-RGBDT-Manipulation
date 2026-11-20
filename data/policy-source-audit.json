@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-30",
+  "reviewed": "2026-11-20",
   "sources": [
     {
       "id": "robotwin2-paper",
@@ -1278,6 +1278,39 @@
           "name": "Q0-Preview",
           "workId": "q0-preview",
           "note": "Official Agent row, score 73.33, success 68%; method details and release are not verified."
+        }
+      ]
+    },
+    {
+      "id": "robodojo-agent-protocol-20261114",
+      "benchmarkId": "robodojo",
+      "label": "RoboDojo Agent track legacy qualification under November 14 rules",
+      "url": "https://robodojo-benchmark.com/leaderboard#agent",
+      "kind": "leaderboard",
+      "scope": "November 18 official website snapshot. Legacy submissions carry an asterisk where they deviate from the updated Agent Track protocol; public baseline/data release and rule-compliant reevaluation are separate facts. The rows here track newly annotated versions and newly added November 14 legacy systems.",
+      "entries": [
+        {
+          "name": "Agent-as-Policy*",
+          "workId": "agent-as-policy",
+          "note": "Realworld Labs; official archive flags scoring-condition disclosures in task notes. Distinct from the separate released paper and source-run result."
+        },
+        {
+          "name": "SOLVE*",
+          "note": "NVIDIA legacy Agent entry; official archive flags per-task guide injection. No independently verified canonical executable release was matched to this specific submission."
+        },
+        {
+          "name": "JoyAI-VL*",
+          "note": "Joy Future Academy legacy Agent entry; official archive flags task-dependent tools. Standalone author implementation and paper identity were not established for this particular submission."
+        },
+        {
+          "name": "SenseNova-RoboRSI*",
+          "workId": "sensenova-roborsi",
+          "note": "SenseNova Agent+VLA entry; Avg. w/o Open score 57.10 / success 49.17%. The official archive flags task-specific ICL bundles and tools; public logs are a different artifact from the runtime."
+        },
+        {
+          "name": "Q0-Preview*",
+          "workId": "q0-preview",
+          "note": "Qoo Tech legacy Agent entry; board flags additional evaluation conditions in task context."
         }
       ]
     }

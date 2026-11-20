@@ -12514,5 +12514,318 @@
       "height": 435,
       "note": "Cropped author Figure 2 from PDF page 3; original rights retained."
     }
+  },
+  "amp1": {
+    "policy": {
+      "path": "/images/catalog/amp1-policy.webp",
+      "original": "https://arxiv.org/html/2611.09892v3/fig6_amp_agent_harness.png",
+      "page": "https://arxiv.org/html/2611.09892v3",
+      "credit": "AMP1 authors",
+      "alt": "Persistent Python interpreter, model tools, sensor inputs and robot interface",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 933,
+      "height": 1140,
+      "note": "Figure 6. Author figure, resized without changing its content.",
+      "sourceSha256": "49c6d627f4e54ba315e14c1f495e381130e67fdb6d4391ad0a0ae26711dfe4e4"
+    }
+  },
+  "justrua": {
+    "policy": {
+      "path": "/images/catalog/justrua-policy.webp",
+      "original": "https://arxiv.org/html/2611.16009v1/figures/web/fig_framework.png",
+      "page": "https://arxiv.org/html/2611.16009v1",
+      "credit": "JustRUA authors",
+      "alt": "Controlled evaluation testbed separating the policy, actions, geometry and experience reuse",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 634,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "45f2a94d86a4382fc78645624e4035aa846615fa7863ed58a9fc5e82f5d816aa"
+    }
+  },
+  "interactvla": {
+    "policy": {
+      "path": "/images/catalog/interactvla-policy.webp",
+      "original": "https://arxiv.org/html/2611.22584v1/cvpr-main.png",
+      "page": "https://arxiv.org/html/2611.22584v1",
+      "credit": "InteractVLA authors",
+      "alt": "Geometric action guidance and calibrated feedback connecting the reasoning agent to the VLA",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 595,
+      "note": "Figure 3. Author figure, resized without changing its content.",
+      "sourceSha256": "4a16d3a5c3a94f7f1d912fd1466113a13d026888f33d0931cb6712cfc6e273b0"
+    }
+  },
+  "witac": {
+    "policy": {
+      "path": "/images/catalog/witac-policy.webp",
+      "original": "https://arxiv.org/html/2611.21057v2/method_overview_pptx.png",
+      "page": "https://arxiv.org/html/2611.21057v2",
+      "credit": "WiTac authors",
+      "alt": "Wrist-conditioned tactile fusion, pretraining heads and gated conditioning of VLA actions",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 601,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "cf3aaad833c53460e289f92862d8de16bc98e4899caa951dbdc1f835b2e6243b"
+    }
+  },
+  "touchtwin": {
+    "benchmark": {
+      "path": "/images/catalog/touchtwin-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.17619v1/overview.png",
+      "page": "https://arxiv.org/html/2611.17619v1",
+      "credit": "TouchTwin authors",
+      "alt": "Real RGB-D and glove touch, matched simulation replay and generated perturbations",
+      "kind": "data-preview",
+      "reviewed": "2026-11-20",
+      "width": 660,
+      "height": 185,
+      "note": "Figure 1. Author figure, resized without changing its content.",
+      "sourceSha256": "03087d8e05646da703c5a8aeea78be55442d27de80d1d7f811ee35142978a6a8"
+    }
+  },
+  "dexremo": {
+    "benchmark": {
+      "path": "/images/catalog/dexremo-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.15981v1/fig1.png",
+      "page": "https://arxiv.org/html/2611.15981v1",
+      "credit": "DexRemo authors",
+      "alt": "Examples of removal scenarios and the DexRemo force-sensing hand",
+      "kind": "task-overview",
+      "reviewed": "2026-11-20",
+      "width": 867,
+      "height": 1140,
+      "note": "Figure 1. Author figure, resized without changing its content.",
+      "sourceSha256": "d3b40fae12e15c266b4eb3007010b379babf63f6c5e3dd7368713f786e385817"
+    },
+    "policy": {
+      "path": "/images/catalog/dexremo-policy.webp",
+      "original": "https://arxiv.org/html/2611.15981v1/fig2_new_03.png",
+      "page": "https://arxiv.org/html/2611.15981v1",
+      "credit": "DexRemo authors",
+      "alt": "Removal task coverage, leader-follower capture and the wrist-frame ACT baseline",
+      "kind": "pipeline",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 1050,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "ca80d1df443ff61fc8b433cbe649c08b5dcecaabc0c55973d1fb45e09700243d"
+    }
+  },
+  "taf-foundation": {
+    "policy": {
+      "path": "/images/catalog/taf-foundation-policy.webp",
+      "original": "https://arxiv.org/html/2611.20718v1/fig/pipeline.png",
+      "page": "https://arxiv.org/html/2611.20718v1",
+      "credit": "TaF-Foundation authors",
+      "alt": "Sensor-specific tactile adapters, a shared encoder and wrench-grounded downstream applications",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 526,
+      "note": "Figure 4. Author figure, resized without changing its content.",
+      "sourceSha256": "3b34f954a836a9ccdcb814dabc22c7a2617aa8f622a67eba87b30a0731590563"
+    }
+  },
+  "tacbridge": {
+    "policy": {
+      "path": "/images/catalog/tacbridge-policy.webp",
+      "original": "https://arxiv.org/html/2611.20939v1/frame.png",
+      "page": "https://arxiv.org/html/2611.20939v1",
+      "credit": "TacBridge authors",
+      "alt": "Paired contacts, cross-sensor masked tactile pretraining and downstream tasks",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 781,
+      "note": "Figure 1. Author figure, resized without changing its content.",
+      "sourceSha256": "76ca271ef6dff44e1ae252fb8a5e332fc7bf20901a67552d0af76b8b6b9d2ac9"
+    }
+  },
+  "luxtac": {
+    "policy": {
+      "path": "/images/catalog/luxtac-policy.webp",
+      "original": "https://arxiv.org/html/2611.23575v1/figures/sensorforcediagram.png",
+      "page": "https://arxiv.org/html/2611.23575v1",
+      "credit": "LuxTac authors",
+      "alt": "Optical taxel readout under normal and shear loading",
+      "kind": "sensor-design",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 633,
+      "note": "Figure 3. Author figure, resized without changing its content.",
+      "sourceSha256": "dd1b232fd5c512037eeacced37ade167f1862a572b029735f9765417b3accc39"
+    }
+  },
+  "three-d-touch": {
+    "policy": {
+      "path": "/images/catalog/three-d-touch-policy.webp",
+      "original": "https://arxiv.org/html/2611.23961v1/framework.png",
+      "page": "https://arxiv.org/html/2611.23961v1",
+      "credit": "3DTouch authors",
+      "alt": "RGB-D back-projection, spatial tactile grounding and geometry-conditioned VLA policy",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 528,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "05eb51cdaeb6a2f99c0037810a6802b95da9e0e927d5117f3556ef24efedd11d"
+    }
+  },
+  "cora-vtla": {
+    "policy": {
+      "path": "/images/catalog/cora-vtla-policy.webp",
+      "original": "https://arxiv.org/html/2611.23963v1/Fig2-VTLA_svg-raw.png",
+      "page": "https://arxiv.org/html/2611.23963v1",
+      "credit": "CoRA-VTLA authors",
+      "alt": "Contact-guided attention, queryable tactile history and two-stage training",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 522,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "6b2a7a4e5a376966fd439652cf0a31ca63136e918ccb961c3ca2abf0f021eaa4"
+    }
+  },
+  "taptactouch": {
+    "policy": {
+      "path": "/images/catalog/taptactouch-policy.webp",
+      "original": "https://arxiv.org/html/2611.24207v1/figures/fig1.png",
+      "page": "https://arxiv.org/html/2611.24207v1",
+      "credit": "TapTacTouch authors",
+      "alt": "Tactile exploration with kinematics, multi-scale surface inference and a reconstructed mesh",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 727,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "f303ad6026e9034d955165c942d38c51faee8645427087a9b90a18483e9c8eb0"
+    }
+  },
+  "lodos": {
+    "benchmark": {
+      "path": "/images/catalog/lodos-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.08872v1/pinch_fig.png",
+      "page": "https://arxiv.org/html/2611.08872v1",
+      "credit": "Lodos authors",
+      "alt": "Simulated antipodal lift showing contact behavior with and without the friction correction",
+      "kind": "task-overview",
+      "reviewed": "2026-11-20",
+      "width": 1010,
+      "height": 267,
+      "note": "Figure 4. Author figure, resized without changing its content.",
+      "sourceSha256": "b7bca476ff5f40f002a074c29b582ac991d6d7878f1ce436e857f54339d83bb1"
+    }
+  },
+  "oap": {
+    "policy": {
+      "path": "/images/catalog/oap-policy.webp",
+      "original": "https://arxiv.org/html/2611.18298v1/method.png",
+      "page": "https://arxiv.org/html/2611.18298v1",
+      "credit": "Objectives as Policies authors",
+      "alt": "Digital-twin objective programming, rollout feedback and real-robot model predictive control",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 817,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "a4cfeb0d3da619414748644f929e473032c624b2c73896f92b06e48ddf1749a1"
+    }
+  },
+  "phoenix-mwa": {
+    "policy": {
+      "path": "/images/catalog/phoenix-mwa-policy.webp",
+      "original": "https://arxiv.org/html/2611.24938v1/architecture.png",
+      "page": "https://arxiv.org/html/2611.24938v1",
+      "credit": "Phoenix authors",
+      "alt": "Geometry and video-semantic teacher distillation, causal video latents and joint action prediction",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 1083,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "28e2be7398a6b3e031655aea72a4687ad6549363fc0868209ff77a46ab55d50a"
+    }
+  },
+  "recova": {
+    "policy": {
+      "path": "/images/catalog/recova-policy.webp",
+      "original": "https://arxiv.org/html/2610.01178v1/recova_overview.png",
+      "page": "https://arxiv.org/html/2610.01178v1",
+      "credit": "Recova authors",
+      "alt": "Digital-twin failure analysis, recovery programming and physical DAgger feedback",
+      "kind": "pipeline",
+      "reviewed": "2026-11-20",
+      "width": 550,
+      "height": 266,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "1a831cb595fbdd122bf982bc74dbeb142073953e52513ff080a7cd4c9f6bb309"
+    }
+  },
+  "tacsushi": {
+    "policy": {
+      "path": "/images/catalog/tacsushi-policy.webp",
+      "original": "https://arxiv.org/html/2609.19613v2/fig3_v2.png",
+      "page": "https://arxiv.org/html/2609.19613v2",
+      "credit": "TacSushi authors",
+      "alt": "Physical Shadow Hand, tactile-equipped setup and demonstration collection",
+      "kind": "platform",
+      "reviewed": "2026-11-20",
+      "width": 1294,
+      "height": 590,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "7ec485a48b86b087846346f38eb612fd6eb6c499c923d16f9260ef864807db87"
+    }
+  },
+  "dkt": {
+    "policy": {
+      "path": "/images/catalog/dkt-policy.webp",
+      "original": "https://arxiv.org/html/2512.23705v1/main.png",
+      "page": "https://arxiv.org/html/2512.23705v1",
+      "credit": "DKT authors",
+      "alt": "DKT video diffusion training and inference for transparency-aware depth and normal maps",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 842,
+      "height": 204,
+      "note": "Figure 3. Author figure, resized without changing its content.",
+      "sourceSha256": "4d00baccaff67d00c32175df40e7bed10b1bbd639bd8b8fe37eec21df6a53c93"
+    }
+  },
+  "cleardepth": {
+    "policy": {
+      "path": "/images/catalog/cleardepth-policy.webp",
+      "original": "https://arxiv.org/html/2409.08926v3/cleardepth_network_v2.png",
+      "page": "https://arxiv.org/html/2409.08926v3",
+      "credit": "ClearDepth authors",
+      "alt": "Stereo input, structural feature encoder and post-fusion depth prediction",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1150,
+      "height": 372,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "f8c6e8f751f6e9af2ea064415fda79013f11d9e9cb4edaf27b77a1dc6b6bdc51"
+    }
+  },
+  "d3roma": {
+    "policy": {
+      "path": "/images/catalog/d3roma-policy.webp",
+      "original": "https://arxiv.org/html/2409.14365v2/grad.png",
+      "page": "https://arxiv.org/html/2409.14365v2",
+      "credit": "D3RoMa authors",
+      "alt": "Diffusion refinement guided by left–right stereo geometry",
+      "kind": "architecture",
+      "reviewed": "2026-11-20",
+      "width": 1400,
+      "height": 382,
+      "note": "Figure 2. Author figure, resized without changing its content.",
+      "sourceSha256": "5cd5d4b3e14a200b313d95878528833c365fa94cc11fc2366a3019fcb3796e45"
+    }
   }
 }

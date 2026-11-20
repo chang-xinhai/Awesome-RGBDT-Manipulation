@@ -8,7 +8,7 @@ Agent as Policy for Robotic Manipulation
 
 **2026-09-11 · Preprint · Not reported**
 
-**[Paper](https://arxiv.org/abs/2609.12541)** · [Project](https://agent-as-policy-2026.github.io/) · [Code](https://github.com/agent-as-policy-2026/agent-as-policy) · [Data](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) · [Data-Robodojo](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo) · [Results-Robodojo](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md)
+**[Paper](https://arxiv.org/abs/2609.12541)** · [Project](https://agent-as-policy-2026.github.io/) · [Code](https://github.com/agent-as-policy-2026/agent-as-policy) · [Data](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) · [Board](https://robodojo-benchmark.com/leaderboard#agent) · [Data-Robodojo](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo) · [Results-Robodojo](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md)
 
 General coding agents write and select robot programs from multimodal feedback on physical manipulation tasks, while experience files support repeated-run refinement and transfer.
 
@@ -29,7 +29,7 @@ General coding agents write and select robot programs from multimodal feedback o
 | Training duration | Not reported [1](https://arxiv.org/abs/2609.12541) [5](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md) [6](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo)  |
 | Training hardware | Not reported [1](https://arxiv.org/abs/2609.12541) [5](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md) [6](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo)  |
 | Inference and control rates | Not reported [1](https://arxiv.org/abs/2609.12541) [5](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md) [6](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo)  |
-| Evaluation scope | Physical video-guided assembly, image-guided construction, dice flipping, targeted throwing and bimanual towel folding. The released RoboDojo adapter now reports one complete seed: 54 configurations / 2,100 episodes; Score 63.63 and success 56.13%, scored by the benchmark summarizer. This author-published seed is not an official live-leaderboard result. [1](https://arxiv.org/abs/2609.12541) [5](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md) [6](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo)  |
+| Evaluation scope | Physical video-guided assembly, image-guided construction, dice flipping, targeted throwing and bimanual towel folding. The released RoboDojo adapter now reports one complete seed: 54 configurations / 2,100 episodes; Score 63.63 and success 56.13%, scored by the benchmark summarizer. This author-published seed is not an official live-leaderboard result. The legacy official entry is separate and has a rule-deviation asterisk under the November 14 protocol. [1](https://arxiv.org/abs/2609.12541) [5](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md) [6](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo)  |
 | Observations / modalities | RGB · Depth · Proprioception · Language |
 | Evaluation domain | Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
@@ -43,6 +43,7 @@ General coding agents write and select robot programs from multimodal feedback o
 
 - Throwing time / token statistics and successful-trial-only summaries have different denominators.
 - The task preparation and experience-refinement budget must be retained when comparing against one-shot execution.
+- On the current official board the legacy submission is starred. Its entry records task-specific notes and access routes that the standardized Agent protocol now restricts.
 
 **Primary evidence**
 
@@ -52,3 +53,4 @@ General coding agents write and select robot programs from multimodal feedback o
 4. [Current artifact inventory and release scope](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) — 2026-10-19 current file-tree/implementation/model-data inventory audit; release scope and licensing are independent. Not a runtime reproduction.
 5. [Official current source / artifact inventory — 21 October 2026](https://github.com/agent-as-policy-2026/agent-as-policy/blob/main/robodojo/results/seed0/_summary.md) — New source summary reports native54configurations and2,100 episodes; official-board membership remains distinct.
 6. [Official current source / artifact inventory — 21 October 2026](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy-robodojo) — Actual dataset API/file inventory inspected for recordings and traces; published CC BY 4.0 dataset terms are separate from Apache code.
+7. [RoboDojo legacy Agent track entry](https://robodojo-benchmark.com/leaderboard#agent)
