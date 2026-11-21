@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-30",
+  "reviewed": "2026-11-21",
   "scope": "Source-by-source tactile and manipulation-relevant geometry discovery. Source aliases can overlap; inclusion specifications use original papers and releases.",
   "sources": [
     {
@@ -3274,6 +3274,121 @@
           "url": "https://openphoenix-team.github.io/Phoenix-pages/",
           "status": "candidate",
           "note": "Substantive pretraining/adapter code exists, but supplied weight NOTICE states inference tensors unchanged from upstream Wan; do not label these as verified trained method weights. Candidate withheld pending coherent artifact provenance."
+        }
+      ]
+    },
+    {
+      "id": "stereo-depth-training-20261121",
+      "label": "Stereo depth training and evaluation release lineage",
+      "url": "https://github.com/NVlabs/FoundationStereo#fsd-dataset",
+      "kind": "primary-expansion",
+      "scope": "Paper, supplement, dataset card and release evidence for stereo data and model recipes. Keeps train and eval splits, measured and rendered labels, and reconstructed and distributed imagery distinct.",
+      "snapshot": "2026-11-21",
+      "entries": [
+        {
+          "name": "FoundationStereo FSD",
+          "url": "https://github.com/NVlabs/FoundationStereo#fsd-dataset",
+          "status": "indexed",
+          "workId": "foundationstereo",
+          "note": "Research release provides synthetic left/right and reference disparity. The commercial model card describes a separately scoped mixture."
+        },
+        {
+          "name": "FFS Stereo4D",
+          "url": "https://huggingface.co/datasets/nvidia/ffs_stereo4d",
+          "status": "indexed",
+          "workId": "fast-foundationstereo",
+          "note": "Teacher disparity PNGs and upstream timestamps only. Reconstruct images with Stereo4D; assumed baseline affects scale."
+        },
+        {
+          "name": "S²M² paper training recipe",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Min_S2M2_Scalable_Stereo_ICCV_2025_supplemental.pdf",
+          "status": "indexed",
+          "workId": "s2m2",
+          "note": "Particular published variants use different mixtures; the publicly named constituents do not constitute a bundled release."
+        },
+        {
+          "name": "Scene Flow Datasets",
+          "url": "https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html",
+          "status": "indexed",
+          "workId": "sceneflow-stereo",
+          "note": "S²M² Phase 1 constituent. Author archives preserve separate RGB, camera and disparity data."
+        },
+        {
+          "name": "CREStereo training data",
+          "url": "https://github.com/megvii-research/CREStereo#the-proposed-dataset",
+          "status": "indexed",
+          "workId": "crestereo-training",
+          "note": "S²M² Phase 1 constituent; also appears in the separately documented C-FoundationStereo mixture."
+        },
+        {
+          "name": "IRS data",
+          "url": "https://github.com/HKBU-HPML/IRS#download",
+          "status": "indexed",
+          "workId": "irs-stereo",
+          "note": "Indoor synthetic RGB pairs, rendered disparity and normals; a Phase 2 S²M² constituent."
+        },
+        {
+          "name": "No Bias Stereo",
+          "url": "https://intrinsic-experimental.github.io/nbs-website/",
+          "status": "indexed",
+          "workId": "nbs",
+          "note": "Private synthetic training corpus is separate from the released SimpleProc seeds and 55-pair processed XYZ-IBD evaluation."
+        },
+        {
+          "name": "Original XYZ-IBD",
+          "url": "https://huggingface.co/datasets/bop-benchmark/xyzibd",
+          "status": "indexed",
+          "workId": "xyz-ibd",
+          "note": "BOP release and the rectified NBS stereo supplement are separately linked."
+        },
+        {
+          "name": "XRStereo",
+          "url": "https://huggingface.co/datasets/facebook/xrstereo",
+          "status": "indexed",
+          "workId": "xrstereo-stereosplat",
+          "note": "StereoSplat synthetic training release contains both rectified RGB images and disparity for each eye."
+        },
+        {
+          "name": "Active-Passive SimStereo",
+          "url": "https://research-repository.uwa.edu.au/en/datasets/active-passive-simstereo/",
+          "status": "indexed",
+          "workId": "active-passive-simstereo",
+          "note": "Paired passive visible and active-pattern NIR renders."
+        },
+        {
+          "name": "ActiveZero",
+          "url": "https://www.liuisabella.com/ActiveZero/",
+          "status": "indexed",
+          "workId": "activezero",
+          "note": "Physical and simulated IR splits are documented; whole dataset download remains unverified."
+        },
+        {
+          "name": "DREDS and STD",
+          "url": "https://github.com/PKU-EPIC/DREDS#dataset",
+          "status": "indexed",
+          "workId": "dreds-std",
+          "note": "Active stereo simulation and physical RGB-D restoration testing use different payloads."
+        },
+        {
+          "name": "Official DROID raw",
+          "url": "https://droid-dataset.github.io/droid/the-droid-dataset",
+          "status": "indexed",
+          "workId": "droid-stereo",
+          "note": "DROID raw stereo MP4 and SVO preserve binocular recordings; RLDS conversion is separate."
+        },
+        {
+          "name": "EgoViz-120",
+          "url": "https://huggingface.co/datasets/humaidtech/EgoViz-120",
+          "status": "indexed",
+          "workId": "egoviz-120",
+          "note": "Binocular and camera calibration streams in MCAP; dashboard MP4 is a preview."
+        },
+        {
+          "name": "RoboCap-10k",
+          "url": "https://huggingface.co/datasets/groundedsi/RoboCap-10k",
+          "status": "indexed",
+          "workId": "robocap-10k",
+          "note": "Publisher-described corpus with manually gated LeRobot access."
         }
       ]
     }

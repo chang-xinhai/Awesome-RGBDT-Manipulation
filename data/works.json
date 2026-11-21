@@ -84093,9 +84093,11 @@
     "date": "2025-01-17",
     "year": 2025,
     "collections": [
+      "benchmark",
       "policy"
     ],
     "categories": [
+      "supporting-resources",
       "geometry-models",
       "rgbd-3d"
     ],
@@ -84112,14 +84114,16 @@
       "paper": "https://arxiv.org/abs/2501.09898",
       "project": "https://nvlabs.github.io/FoundationStereo/",
       "code": "https://github.com/NVlabs/FoundationStereo",
-      "weights": "https://huggingface.co/nvidia/c-foundationstereo-s"
+      "weights": "https://huggingface.co/nvidia/c-foundationstereo-s",
+      "data": "https://github.com/NVlabs/FoundationStereo#fsd-dataset",
+      "dataset sample": "https://drive.google.com/file/d/1dJwK5x8xsaCazz5xPGJ2OKFIWrd9rQT5/view?usp=drive_link"
     },
     "release": {
-      "code": "Available — source linked",
-      "weights": "Commercial C-FoundationStereo model card available; research checkpoints linked separately by authors",
-      "data": "Not verified",
-      "license": "NVIDIA research license limits use; separately offered commercial version has separate terms.",
-      "notes": "Research source/checkpoints are distinct from the separately licensed NVIDIA C-FoundationStereo model."
+      "code": "Available — research implementation and separate NVIDIA commercial release",
+      "weights": "Available — research checkpoints and separate C-FoundationStereo model",
+      "data": "Available — official FSD whole archive and small sample via repository",
+      "license": "NVIDIA Source Code License with research limitations governs the research repo and is linked as the FSD dataset license; C-FoundationStereo has separate terms.",
+      "notes": "The research paper’s dataset and commercial checkpoint training recipe have different scopes."
     },
     "evidence": [
       {
@@ -84142,12 +84146,38 @@
           "links",
           "release"
         ]
+      },
+      {
+        "url": "https://github.com/NVlabs/FoundationStereo#fsd-dataset",
+        "label": "Author dataset announcement, samples and download locations",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "benchmark.data",
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/NVlabs/FoundationStereo/blob/master/LICENSE",
+        "label": "Research license linked by FSD dataset section",
+        "fields": [
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/nvidia/c-foundationstereo-s/blob/main/README.md",
+        "label": "Separately scoped commercial checkpoint recipe",
+        "fields": [
+          "model.trainingData",
+          "caveats"
+        ]
       }
     ],
     "caveats": [
       "Predicted stereo depth is not a measured depth stream; calibrated camera geometry is necessary for metric conversion."
     ],
-    "verified": "2026-11-08",
+    "verified": "2026-11-21",
     "model": {
       "role": "Depth and geometry perception reference",
       "family": "Depth estimation",
@@ -84156,7 +84186,7 @@
       "inputs": "Rectified left and right RGB stereo images.",
       "outputs": "Stereo disparity; focal length and baseline convert disparity to metric depth.",
       "trainingMethod": "Stereo model training on a curated synthetic image-pair dataset with pretrained visual priors.",
-      "trainingData": "See original paper for dataset scope",
+      "trainingData": "Research paper: approximately 1M synthetic RGB stereo pairs from FSD after self-curation. The C-FoundationStereo card documents its separate FSD, CREStereo and TartanAir mixture.",
       "trainingTime": "Not reported",
       "trainingHardware": "Not reported",
       "inference": "See original paper and official implementation",
@@ -84170,7 +84200,49 @@
         "credit": "FoundationStereo authors",
         "note": "Author figure."
       }
-    ]
+    ],
+    "relatedIds": [
+      "fast-foundationstereo",
+      "s2m2",
+      "nbs",
+      "crestereo-training"
+    ],
+    "releaseByCollection": {
+      "benchmark": {
+        "code": "Available — sample visualizer linked in author repository",
+        "weights": "Not applicable",
+        "data": "Available — full FSD and 3 GB sample from author repository",
+        "license": "The repository directs users to its NVIDIA Source Code License for the FSD dataset.",
+        "notes": "Official counts and file sizes describe the research release."
+      },
+      "policy": {
+        "code": "Available — research implementation and separate NVIDIA commercial release",
+        "weights": "Available — research checkpoints and separate C-FoundationStereo model",
+        "data": "Available — official FSD whole archive and small sample via repository",
+        "license": "NVIDIA Source Code License with research limitations governs the research repo and is linked as the FSD dataset license; C-FoundationStereo has separate terms.",
+        "notes": "The research paper’s dataset and commercial checkpoint training recipe have different scopes."
+      }
+    },
+    "benchmark": {
+      "simulator": "NVIDIA Omniverse",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Supervised synthetic stereo training",
+        "Specular, texture-poor and occluded scenes"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Not applicable",
+      "sensors": "Rendered rectified RGB pairs and ground-truth disparity.",
+      "dataCollection": "Omniverse rendering varies baseline, focal length, viewpoints, illumination, materials and object configurations, then filters ambiguous samples.",
+      "data": "Approximately 1M stereo pairs in the research paper; full data folder >1 TB and a 3 GB sample documented by the official repository.",
+      "protocol": "Use the research FSD instance for training. The commercial model’s separate card documents its synthetic mixture and scope.",
+      "baselines": "Not applicable"
+    },
+    "benchmarkName": "FoundationStereo Dataset (FSD)",
+    "benchmarkSummary": "The paper’s approximately 1M synthetic pairs with dense reference disparity include structured scenes and randomized objects."
   },
   {
     "id": "fast-foundationstereo",
@@ -84179,9 +84251,11 @@
     "date": "2025-12-11",
     "year": 2025,
     "collections": [
+      "benchmark",
       "policy"
     ],
     "categories": [
+      "supporting-resources",
       "geometry-models",
       "rgbd-3d"
     ],
@@ -84198,14 +84272,16 @@
       "paper": "https://arxiv.org/abs/2512.11130",
       "project": "https://nvlabs.github.io/Fast-FoundationStereo/",
       "code": "https://github.com/NVlabs/Fast-FoundationStereo",
-      "weights": "https://huggingface.co/nvidia/c-fast-foundationstereo"
+      "weights": "https://huggingface.co/nvidia/c-fast-foundationstereo",
+      "data": "https://huggingface.co/datasets/nvidia/ffs_stereo4d",
+      "source geometry": "https://github.com/Stereo4d/stereo4d-code"
     },
     "release": {
-      "code": "Available — source linked",
-      "weights": "Available — see official model page; terms vary by checkpoint",
-      "data": "Not verified",
-      "license": "Research code and checkpoints are subject to NVIDIA research terms; C-Fast model uses the separate NVIDIA Open Model Agreement.",
-      "notes": "Research and C-Fast commercial variants have different terms; reconstructed depth is predicted rather than an independent measured channel."
+      "code": "Available — research implementation; separately licensed TAO path linked by authors",
+      "weights": "Available — research checkpoint family and C-Fast model with separate terms",
+      "data": "Available — FFS Stereo4D pseudo-disparity/metadata only",
+      "license": "Research and C-Fast code/checkpoints have separate NVIDIA terms. FFS Stereo4D labels are CC BY-NC 4.0.",
+      "notes": "Public dataset license does not grant rights to source videos. The research training mixture is separate from the commercial model release."
     },
     "evidence": [
       {
@@ -84228,12 +84304,31 @@
           "links",
           "release"
         ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md",
+        "label": "Data-card artifact, resolution and geometry contract",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "links",
+          "release",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/Stereo4d/stereo4d-code",
+        "label": "Author toolkit for upstream stereo calibration and video extraction",
+        "fields": [
+          "links",
+          "benchmark.protocol"
+        ]
       }
     ],
     "caveats": [
       "Research and C-Fast commercial variants have different terms; reconstructed depth is predicted rather than an independent measured channel."
     ],
-    "verified": "2026-11-08",
+    "verified": "2026-11-21",
     "model": {
       "role": "Depth and geometry perception reference",
       "family": "Depth estimation",
@@ -84242,7 +84337,7 @@
       "inputs": "Rectified stereo RGB images.",
       "outputs": "Disparity; metric depth additionally needs focal length and stereo baseline.",
       "trainingMethod": "Architecture search, distillation and pruning, with synthetic and pseudo-labelled stereo data.",
-      "trainingData": "See original paper for dataset scope",
+      "trainingData": "Research paper: synthetic training plus roughly 1.4M in-the-wild stereo pairs derived from Stereo4D with teacher pseudo-disparity. Released FFS files package labels and metadata separately from original images.",
       "trainingTime": "Not reported",
       "trainingHardware": "Not reported",
       "inference": "See original paper and official implementation",
@@ -84256,7 +84351,47 @@
         "credit": "Fast-FoundationStereo authors",
         "note": "Author figure."
       }
-    ]
+    ],
+    "relatedIds": [
+      "foundationstereo",
+      "s2m2"
+    ],
+    "releaseByCollection": {
+      "benchmark": {
+        "code": "Available — upstream Stereo4D rectification toolkit",
+        "weights": "Not applicable",
+        "data": "Available — disparity with source metadata, no RGB image pairs",
+        "license": "CC BY-NC 4.0 for released labels; original source-video terms apply independently.",
+        "notes": "Scale depends on the assumed stereo baseline."
+      },
+      "policy": {
+        "code": "Available — research implementation; separately licensed TAO path linked by authors",
+        "weights": "Available — research checkpoint family and C-Fast model with separate terms",
+        "data": "Available — FFS Stereo4D pseudo-disparity/metadata only",
+        "license": "Research and C-Fast code/checkpoints have separate NVIDIA terms. FFS Stereo4D labels are CC BY-NC 4.0.",
+        "notes": "Public dataset license does not grant rights to source videos. The research training mixture is separate from the commercial model release."
+      }
+    },
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Teacher pseudo-labeling",
+        "Stereo dataset re-materialization"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Not applicable",
+      "sensors": "Released disparity PNGs and timestamp metadata; upstream stereo RGB reconstructed separately.",
+      "dataCollection": "Rectify Stereo4D source videos, apply the FoundationStereo teacher, and package accepted disparity pseudo-labels.",
+      "data": "The paper describes roughly 1.4M curated pairs. The public card exposes ZIP shards and per-frame metadata.csv; releases may differ from paper counts.",
+      "protocol": "Use as pseudo-supervision after re-materializing same-frame left/right imagery with the Stereo4D calibration. Scale assumes a 63 mm baseline.",
+      "baselines": "Not applicable"
+    },
+    "benchmarkName": "FFS Stereo4D",
+    "benchmarkSummary": "Released disparity pseudo-labels and source-video metadata from research Fast-FoundationStereo training. RGB must be reconstructed from upstream videos."
   },
   {
     "id": "depth-anything-v2",
@@ -89071,6 +89206,1973 @@
     "relatedIds": [
       "dkt",
       "cleardepth"
+    ]
+  },
+  {
+    "id": "s2m2",
+    "name": "S²M²",
+    "title": "S²M²: Scalable Stereo Matching Model for Reliable Depth Estimation",
+    "date": "2025-07-17",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A scalable stereo network produces disparity, occlusion and confidence. The public supplement documents the training data and its staged expansion.",
+    "institution": "Samsung Electronics",
+    "venue": "ICCV 2025",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2507.13229",
+      "project": "https://junhong-3dv.github.io/s2m2-project/",
+      "code": "https://github.com/junhong-3dv/s2m2",
+      "weights": "https://huggingface.co/minimok/s2m2",
+      "training supplement": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Min_S2M2_Scalable_Stereo_ICCV_2025_supplemental.pdf"
+    },
+    "release": {
+      "code": "Available — official inference and export source",
+      "weights": "Available — S, M, L and XL checkpoints",
+      "data": "Named constituent datasets; the full mixed package was not identified",
+      "license": "CC BY-NC 4.0 in the repository LICENSE.md; each constituent dataset retains independent terms.",
+      "notes": "The manuscript’s experimental mixtures and the current checkpoints are described separately."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2507.13229v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      },
+      {
+        "url": "https://junhong-3dv.github.io/s2m2-project/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Min_S2M2_Scalable_Stereo_ICCV_2025_supplemental.pdf",
+        "label": "ICCV supplement, §1.1, staged training and samples",
+        "fields": [
+          "model.trainingData",
+          "model.trainingMethod",
+          "model.trainingHardware"
+        ]
+      },
+      {
+        "url": "https://github.com/junhong-3dv/s2m2",
+        "label": "Official implementation, published model binaries and sizes",
+        "fields": [
+          "release",
+          "links",
+          "model.modelSize"
+        ]
+      },
+      {
+        "url": "https://github.com/junhong-3dv/s2m2/blob/main/LICENSE.md",
+        "label": "Actual source license file",
+        "fields": [
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "Metric conversion needs the calibrated stereo geometry. Confidence output is a model estimate."
+    ],
+    "verified": "2026-11-21",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Stereo matching",
+      "baseModel": "Global matching, iterative refinement and selective multiscale feature transfer.",
+      "modelSize": "Official current S/M/L/XL checkpoints list 26.5M/80.4M/181M/406M parameters.",
+      "inputs": "Rectified left and right RGB frames.",
+      "outputs": "Dense disparity, occlusion and confidence.",
+      "trainingMethod": "Phase 1 single-stage training at 768 × 448, then expanded fixed-resolution fine-tuning and a multiresolution pass.",
+      "trainingData": "Phase 1: approximately 0.5M pairs from SceneFlow, TartanAir and CREStereo. Benchmark adaptation: up to 2M pairs, including FSD, IRS, Falling Things, Virtual KITTI 2, DrivingStereo and SMD-Net. The complete recipe is in Supplement §1.1.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "8 NVIDIA H100 GPUs for the final multiresolution stage.",
+      "inference": "Optional ONNX/TensorRT export; hardware, model size and refinement steps affect runtime.",
+      "evaluation": "Evaluated on held-out stereo benchmarks including Middlebury, ETH3D and KITTI. Some reported variants differ in training data or benchmark-specific adaptation."
+    },
+    "relatedIds": [
+      "foundationstereo",
+      "crestereo-training",
+      "sceneflow-stereo",
+      "irs-stereo"
+    ]
+  },
+  {
+    "id": "nbs",
+    "name": "NBS",
+    "title": "NBS: No Bias Stereo",
+    "date": "2026-08-28",
+    "year": 2026,
+    "collections": [
+      "benchmark",
+      "policy"
+    ],
+    "categories": [
+      "supporting-resources",
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A ViT-based stereo model studies large public/private training mixtures separately from synthetic and industrial evaluation sets.",
+    "institution": "Intrinsic (Google) and Texas A&M University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2608.28933",
+      "project": "https://intrinsic-experimental.github.io/nbs-website/",
+      "data": "https://intrinsic-experimental.github.io/nbs-website/static/data/NBS_No_Bias_Stereo_Supplementary_Material.zip"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Available — author supplement contains processed industrial evaluation and seeds for SimpleProc. Internal training data will not be released.",
+      "license": "Not verified",
+      "notes": "Public benchmark artifacts are independently available. No model implementation or checkpoint was identified in the primary release."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2608.28933v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection",
+          "model"
+        ]
+      },
+      {
+        "url": "https://intrinsic-experimental.github.io/nbs-website/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://intrinsic-experimental.github.io/nbs-website/static/data/NBS_No_Bias_Stereo_Supplementary_Material.zip",
+        "label": "Author-hosted benchmark supplement",
+        "fields": [
+          "links",
+          "release",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/html/2608.28933v1#S3.SS4",
+        "label": "Paper training stages and provenance",
+        "fields": [
+          "model.trainingData",
+          "model.trainingHardware"
+        ]
+      }
+    ],
+    "caveats": [
+      "The 2.4M figure is the count of internal synthetic scenes, not the size of the supplement."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "SimpleProc for synthetic evaluations",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "SimpleProc-S disparity",
+        "SimpleProc-M disparity",
+        "XYZ-IBD stereo disparity"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "EPE and bad-p disparity thresholds.",
+      "robots": "Not applicable",
+      "sensors": "Synthetic rectified RGB; selected industrial RGB views paired with structured-light reference geometry.",
+      "dataCollection": "SimpleProc procedural rendering plus a separate repackaging of original industrial captures from XYZ-IBD.",
+      "data": "SimpleProc-S has 661 scenes and SimpleProc-M has 530 scenes. XYZ-IBD stereo subset has 55 pairs after artifact filtering. The supplement supplies SimpleProc seeds and the processed industrial subset.",
+      "protocol": "Out-of-distribution perception tests; separate from the high-resolution training mixture and the ETH3D-specific training.",
+      "baselines": "FoundationStereo, S²M², Selective-IGEV, CREStereo and CroCo in the paper."
+    },
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Stereo matching",
+      "baseModel": "DINOv2-initialized ViT-L and DPT disparity head.",
+      "modelSize": "Not reported",
+      "inputs": "Rectified RGB pair.",
+      "outputs": "Dense disparity in pixels.",
+      "trainingMethod": "Base pretraining, staged high-resolution adaptation and benchmark-specific fine-tuning.",
+      "trainingData": "Base training uses FSD. High-resolution adaptation cites 13 public datasets and approximately 2.4M private synthetic scenes. ETH3D-specific fine-tuning combines FSD, ETH3D and Middlebury training splits.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Paper reports A100 and H100 stages separately.",
+      "inference": "Up to 1932 × 1330 native training resolution for the high-resolution model.",
+      "evaluation": "ETH3D, SimpleProc-S/M and a processed 55-pair XYZ-IBD stereo evaluation."
+    },
+    "relatedIds": [
+      "foundationstereo",
+      "s2m2",
+      "xyz-ibd"
+    ],
+    "benchmarkName": "NBS · SimpleProc and XYZ-IBD Stereo"
+  },
+  {
+    "id": "xrstereo-stereosplat",
+    "name": "XRStereo",
+    "title": "XRStereo: Synthetic Stereo Video Training Data for StereoSplat",
+    "date": "2026-09-29",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Synthetic, rectified RGB video pairs with disparity for each eye, camera intrinsics, baseline and pose for varied virtual head-mounted rigs.",
+    "institution": "Meta and University of Amsterdam",
+    "venue": "NeurIPS 2026",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.35902",
+      "project": "https://vladimiryugay.github.io/stereosplat/",
+      "code": "https://github.com/facebookresearch/stereo-splat",
+      "data": "https://huggingface.co/datasets/facebook/xrstereo"
+    },
+    "release": {
+      "code": "StereoSplat implementation linked",
+      "weights": "See model repository for its separately scoped releases.",
+      "data": "Available — 72 public tar shards and checksum manifest",
+      "license": "CC BY-NC 4.0 for the data.",
+      "notes": "This is the StereoSplat training split."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.35902v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://vladimiryugay.github.io/stereosplat/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/facebook/xrstereo/raw/main/README.md",
+        "label": "Author data card and NPZ schema",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "release",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/facebook/xrstereo/blob/main/manifest.json",
+        "label": "Release SHA-256 shard manifest",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Disparity through glass refers to surfaces behind the transparent layer per the data card. Moving cameras observe static scenes."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Blender camera coordinate convention for the release.",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Static-scene stereo geometry",
+        "Stereo novel-view synthesis"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Not applicable",
+      "sensors": "Rectified RGB pairs; dense disparity and calibration for both views.",
+      "dataCollection": "Synthetic camera trajectories through static scenes. The rig varies horizontal field of view and baseline.",
+      "data": "17,922 sequences × 5 stereo frames at 1024 × 1024; official card lists 372.8 GB in 72 shards.",
+      "protocol": "Training split for metric-scale novel-view synthesis; poses, intrinsics and baseline permit reuse for stereo geometry research.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "foundationstereo"
+    ]
+  },
+  {
+    "id": "dreds-std",
+    "name": "DREDS & STD",
+    "title": "Domain Randomization-Enhanced Depth Simulation and Restoration for Perceiving and Grasping Specular and Transparent Objects",
+    "date": "2022-08-07",
+    "year": 2022,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Simulates active-stereo depth failure modes and provides physical RGB-D restoration tests for transparent, reflective and diffuse objects.",
+    "institution": "Peking University and collaborators",
+    "venue": "ECCV 2022",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2208.03792",
+      "project": "https://pku-epic.github.io/DREDS/",
+      "code": "https://github.com/PKU-EPIC/DREDS",
+      "data": "https://github.com/PKU-EPIC/DREDS#dataset"
+    },
+    "release": {
+      "code": "Available — generation simulator and SwinDRNet",
+      "weights": "Available — SwinDRNet weights documented by authors",
+      "data": "Available — synthetic DREDS and separate real STD via author mirror",
+      "license": "CC BY-NC 4.0 for the work and dataset.",
+      "notes": "Synthetic and physical modality payloads differ."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2208.03792v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://pku-epic.github.io/DREDS/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/PKU-EPIC/DREDS#dataset",
+        "label": "Official dataset split counts and download indexes",
+        "fields": [
+          "links",
+          "release",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/html/2409.14365",
+        "label": "Follow-up method notes IR differences between DREDS and real STD",
+        "fields": [
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "Active IR describes the simulator, not the payload of every split. The real STD depth-restoration release does not expose the synthetic IR-pair interface."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Blender with the DREDS depth sensor simulator",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Transparent depth restoration",
+        "Specular depth restoration",
+        "Downstream object pose and grasping"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Depth error; downstream 6D pose or grasp metric per task.",
+      "robots": "Physical grasp evaluation and RGB-D recordings are separately scoped.",
+      "sensors": "RGB, simulated active-stereo depth, and reference labels; real STD includes RGB-D.",
+      "dataCollection": "Render stereo IR projection and sensor-like depth noise with randomized materials. RealSense-based STD acquisition is a separate real domain.",
+      "data": "DREDS-CatKnown: 100,200 training and 19,380 test images. Synthetic CatNovel: 11,520. Real STD: 38,000 RGB-D images across known and novel splits reported by publisher.",
+      "protocol": "Train on simulation and evaluate sim-to-real, transparent/specular restoration, category-level pose and grasping.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "d3roma",
+      "mir-depth"
+    ]
+  },
+  {
+    "id": "activezero",
+    "name": "ActiveZero",
+    "title": "ActiveZero: Mixed Domain Learning for Active Stereovision with Zero Annotation",
+    "date": "2021-12-06",
+    "year": 2021,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Pairs simulated active infrared stereo training with a separate physical RealSense domain and aligned test scenes.",
+    "institution": "University of California, San Diego and collaborators",
+    "venue": "CVPR 2022",
+    "modalities": [
+      "Infrared",
+      "Depth"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2112.02772",
+      "project": "https://www.liuisabella.com/ActiveZero/",
+      "code": "https://github.com/haosulab/ActiveZero"
+    },
+    "release": {
+      "code": "Available — author repository",
+      "weights": "Not verified",
+      "data": "Paper describes collection and splits; public full corpus download not verified.",
+      "license": "Not verified",
+      "notes": "Use the linked paper and dataset examples as a protocol reference."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2112.02772",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://www.liuisabella.com/ActiveZero/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Liu_ActiveZero_Mixed_Domain_Learning_for_Active_Stereovision_With_Zero_Annotation_CVPR_2022_paper.pdf",
+        "label": "CVPR paper §4, real/sim train and test split",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "benchmark.data"
+        ]
+      }
+    ],
+    "caveats": [
+      "Physical training imagery is unlabeled. Test depth is from an aligned simulation reference."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Physics-based simulation for synthetic and aligned reference scenes.",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Active IR matching",
+        "Sim-to-real disparity evaluation"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Disparity/depth error and completeness reported separately.",
+      "robots": "Not applicable",
+      "sensors": "Left/right IR with a projected pattern; RealSense D415 in the real setting.",
+      "dataCollection": "Render projected IR on primitive scenes, collect unlabeled real training pairs and align simulated geometry to separate physical test captures.",
+      "data": "Paper describes 20,000 simulated training stereo IR images with reference disparity and a 504-image test set spanning 24 aligned scenes.",
+      "protocol": "Separate synthetic supervised, real self-supervised and sim-aligned test roles; testing includes diffuse, specular, translucent and transparent objects.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "dreds-std",
+      "active-passive-simstereo"
+    ]
+  },
+  {
+    "id": "active-passive-simstereo",
+    "name": "Active-Passive SimStereo",
+    "title": "Active-Passive SimStereo — Benchmarking the Cross-Generalization Capabilities of Deep Learning-based Stereo Methods",
+    "date": "2022-02-04",
+    "year": 2022,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Renders both passive RGB and active-pattern near-infrared stereo for the same simulated scenes to measure cross-sensing generalization.",
+    "institution": "University of Western Australia and collaborators",
+    "venue": "NeurIPS 2022 Datasets and Benchmarks",
+    "modalities": [
+      "RGB",
+      "Infrared"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2209.08305",
+      "project": "https://research-repository.uwa.edu.au/en/datasets/active-passive-simstereo/",
+      "data": "https://ieee-dataport.org/open-access/active-passive-simstereo"
+    },
+    "release": {
+      "code": "Benchmark documentation available",
+      "weights": "Not applicable",
+      "data": "UWA data index links IEEE DataPort download.",
+      "license": "Not verified",
+      "notes": "Synthetic paired modalities and disparities."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2209.08305v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://research-repository.uwa.edu.au/en/datasets/active-passive-simstereo/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://research-repository.uwa.edu.au/en/datasets/active-passive-simstereo/",
+        "label": "Institutional dataset issuance and paired render modalities",
+        "fields": [
+          "date",
+          "benchmark",
+          "benchmark.dataCollection",
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "The official data record predates the arXiv paper. Synthetic hardware appearance does not replace physical projector validation."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Blender",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Passive visible-light matching",
+        "Active patterned near-IR matching",
+        "Cross-sensing transfer"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Disparity error, separated by sensing modality.",
+      "robots": "Not applicable",
+      "sensors": "Paired RGB and patterned NIR stereo, disparity reference.",
+      "dataCollection": "Blender rendering of realistic and abstract scenes with matched passive and active image variants.",
+      "data": "Official UWA entry and linked IEEE DataPort payload.",
+      "protocol": "Compares passive-to-active generalization by applying matching architectures to corresponding scene variants.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "activezero",
+      "dreds-std"
+    ]
+  },
+  {
+    "id": "sceneflow-stereo",
+    "name": "Scene Flow Datasets",
+    "title": "A Large Dataset to Train Convolutional Networks for Disparity, Optical Flow, and Scene Flow Estimation",
+    "date": "2015-12-07",
+    "year": 2015,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "FlyingThings3D, Driving and Monkaa provide synthetic dual-view RGB, dense disparity, scene flow and camera data.",
+    "institution": "University of Freiburg and Technical University of Munich",
+    "venue": "CVPR 2016",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/1512.02134",
+      "project": "https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html",
+      "data": "https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html#downloads"
+    },
+    "release": {
+      "code": "Not applicable",
+      "weights": "Not applicable",
+      "data": "Available — Freiburg sample pack, archival downloads and torrents",
+      "license": "Research use only under the publisher’s terms.",
+      "notes": "Documented constituent of the S²M² base-training mixture."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/1512.02134v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html",
+        "label": "Freiburg data documentation and use terms",
+        "fields": [
+          "release",
+          "links",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Min_S2M2_Scalable_Stereo_ICCV_2025_supplemental.pdf",
+        "label": "S²M² supplementary training recipe",
+        "fields": [
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Blender",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Dense disparity",
+        "Optical and scene flow"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Disparity and flow end-point error depending on task.",
+      "robots": "Not applicable",
+      "sensors": "Stereo clean-pass/final-pass RGB; rendered disparity and scene flow; per-scene camera data.",
+      "dataCollection": "Render independently animated stereo scenes in three source domains with known geometry.",
+      "data": "Official release offers a sample pack and separate downloadable component archives.",
+      "protocol": "Follow the prescribed asset-disjoint FlyingThings3D train/test split; not all raw samples were used for DispNet.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "s2m2",
+      "crestereo-training"
+    ]
+  },
+  {
+    "id": "crestereo-training",
+    "name": "CREStereo Training Data",
+    "title": "Practical Stereo Matching via Cascaded Recurrent Network with Adaptive Correlation",
+    "date": "2022-03-22",
+    "year": 2022,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Rendered binocular RGB and disparity target narrow structures, texture-poor regions and reflective appearances.",
+    "institution": "Megvii Research and collaborators",
+    "venue": "CVPR 2022",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2203.11483",
+      "project": "https://github.com/megvii-research/CREStereo",
+      "code": "https://github.com/megvii-research/CREStereo",
+      "data": "https://github.com/megvii-research/CREStereo#the-proposed-dataset"
+    },
+    "release": {
+      "code": "Available — matching code and data download script",
+      "weights": "Not applicable",
+      "data": "Official approximately 400 GB archive index and download script",
+      "license": "See the author repository; package-specific data terms should be checked independently.",
+      "notes": "CREStereo training data is reused by S²M² and is identified separately from the matching implementation."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2203.11483v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://github.com/megvii-research/CREStereo",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/megvii-research/CREStereo#the-proposed-dataset",
+        "label": "Author download and disparity format",
+        "fields": [
+          "release",
+          "links",
+          "benchmark.data",
+          "benchmark.sensors"
+        ]
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Min_S2M2_Scalable_Stereo_ICCV_2025_supplemental.pdf",
+        "label": "Named constituent of S²M²’s base mixture",
+        "fields": [
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/nvidia/c-foundationstereo-s/blob/main/README.md",
+        "label": "NVIDIA’s independently scoped 200K-example CREStereo recipe",
+        "fields": [
+          "benchmark.data"
+        ]
+      }
+    ],
+    "caveats": [],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Blender",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Supervised disparity training",
+        "Difficult thin-structure examples"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Not applicable",
+      "sensors": "RGB stereo, rendered disparity encoded as 16-bit PNG.",
+      "dataCollection": "Procedural Blender rendering with foreground thin structures, diverse object appearances, and randomized cameras and lighting.",
+      "data": "Official repository documents an approximately 400 GB standalone archive and disparity encoding. NVIDIA identifies 200K CREStereo examples in its separate model recipe.",
+      "protocol": "Supervised disparity training; external evaluation sets and real-image demos remain separate.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "s2m2",
+      "sceneflow-stereo",
+      "foundationstereo"
+    ]
+  },
+  {
+    "id": "booster",
+    "name": "Booster",
+    "title": "Open Challenges in Deep Stereo: the Booster Dataset",
+    "date": "2022-06-09",
+    "year": 2022,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Balanced and mixed-resolution RGB stereo focused on transparent and reflective surfaces with dense reference disparity and material masks.",
+    "institution": "University of Bologna",
+    "venue": "CVPR 2022 / TPAMI 2024 extension",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2206.04671",
+      "project": "https://cvlab.unibo.it/booster-web/",
+      "data": "https://drive.google.com/drive/folders/1HSamUiWdSDPIas6Coad1lD42csV4EmJR?usp=sharing",
+      "extension": "https://arxiv.org/abs/2301.08245"
+    },
+    "release": {
+      "code": "Not applicable",
+      "weights": "Not applicable",
+      "data": "Available — authors document training and separate stereo and monocular test sets",
+      "license": "Not verified",
+      "notes": "The 2022 paper and expanded TPAMI release report different counts."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2206.04671v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://cvlab.unibo.it/booster-web/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://cvlab.unibo.it/booster-web/",
+        "label": "Official data, sample format and original versus extended scope",
+        "fields": [
+          "release",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/abs/2301.08245",
+        "label": "Expanded TPAMI publication",
+        "fields": [
+          "benchmark.data",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "The 419 and 606 counts describe releases of one dataset and should not be summed. Test RGB availability is separate from ground-truth availability."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Material-aware disparity",
+        "Mixed-resolution stereo matching"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Disparity error split by material and resolution.",
+      "robots": "Not applicable",
+      "sensors": "Passive visible RGB stereo input; dense disparity derived by the authors’ space-time collection process.",
+      "dataCollection": "Indoor captures under varying lighting with balanced 12 MP stereo and a 12 MP/1.1 MP arrangement.",
+      "data": "CVPR: 419 annotated samples across 64 scenes. TPAMI extension: 606 across 85 scenes. The additional 15K unlabeled samples are separate.",
+      "protocol": "Training and withheld test labels are split by challenge; see separate stereo and monocular tracks.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "nbs",
+      "cleardepth",
+      "dreds-std"
+    ]
+  },
+  {
+    "id": "layeredflow",
+    "name": "LayeredFlow",
+    "title": "LayeredFlow: A Real-World Benchmark for Non-Lambertian Multi-Layer Optical Flow",
+    "date": "2024-09-09",
+    "year": 2024,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Real stereo and flow captures plus a separate synthetic training resource for transparent and specular objects.",
+    "institution": "Princeton University",
+    "venue": "ECCV 2024",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2409.05688",
+      "project": "https://layeredflow.cs.princeton.edu/",
+      "code": "https://github.com/princeton-vl/LayeredFlow",
+      "data": "https://github.com/princeton-vl/LayeredFlow#download",
+      "synthetic data": "https://huggingface.co/datasets/princeton-vl/LayeredFlow-Syn"
+    },
+    "release": {
+      "code": "Available — benchmark tooling and synthetic generator",
+      "weights": "Available — author-linked optical-flow checkpoints",
+      "data": "Available — real validation/test archive and separate synthetic data",
+      "license": "Not verified",
+      "notes": "The real test payload omits hidden ground truth; synthetic training is distributed separately."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2409.05688v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://layeredflow.cs.princeton.edu/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/princeton-vl/LayeredFlow",
+        "label": "Author download and synthetic generation documentation",
+        "fields": [
+          "release",
+          "links",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/00289-supp.pdf",
+        "label": "ECCV supplement, first-layer stereo evaluation",
+        "fields": [
+          "benchmark.protocol",
+          "benchmark.metrics",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "The paper’s combined flow/stereo figure does not specify a count of dense disparity-labeled stereo pairs."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Multilayer optical flow",
+        "First-layer stereo matching"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "End-point error and bad-τ on the applicable sampled layer.",
+      "robots": "Not applicable",
+      "sensors": "Real stereo RGB with sparse, multilayer correspondences and separate synthetic annotations.",
+      "dataCollection": "Outdoor and indoor capture of non-Lambertian objects plus procedural simulation in a distinct collection.",
+      "data": "Paper describes 150K optical-flow and stereo pairs across 185 scenes and 360 objects, and 60K synthetic images across 30 scenes.",
+      "protocol": "Real train/validation/test roles and synthetic generator differ. Supplement evaluates stereo matching on first-layer points.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "booster",
+      "stereobj-1m"
+    ]
+  },
+  {
+    "id": "stereobj-1m",
+    "name": "StereOBJ-1M",
+    "title": "StereOBJ-1M: Large-scale Stereo Image Dataset for 6D Object Pose Estimation",
+    "date": "2021-09-21",
+    "year": 2021,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Large-scale real stereo RGB captures of held and placed objects including transparent, reflective and occluded instances.",
+    "institution": "Carnegie Mellon University",
+    "venue": "ICCV 2021",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2109.10115",
+      "project": "https://github.com/xingyul/stereobj-1m",
+      "code": "https://github.com/xingyul/stereobj-1m",
+      "data": "https://github.com/xingyul/stereobj-1m#data-download"
+    },
+    "release": {
+      "code": "Available — official scripts and pose baseline",
+      "weights": "Not verified",
+      "data": "Author-located stereo images, annotations and splits",
+      "license": "MIT for code; check dataset-specific terms at the release.",
+      "notes": "Paired stereo images are independently usable from the pose annotations."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2109.10115v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://github.com/xingyul/stereobj-1m",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/xingyul/stereobj-1m#data-download",
+        "label": "Official paired files and annotation payload",
+        "fields": [
+          "release",
+          "links",
+          "benchmark.data",
+          "benchmark.sensors"
+        ]
+      }
+    ],
+    "caveats": [
+      "Do not treat pose labels as measured dense stereo disparity."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "6D object pose",
+        "Reflective and transparent stereo imagery"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "6D object pose metrics in the paper.",
+      "robots": "Not applicable",
+      "sensors": "Stereo RGB with calibrated cameras and object pose/mask annotations.",
+      "dataCollection": "Record known objects across physical environments and human interaction conditions; use multiview annotation for precise 6D pose.",
+      "data": "393K+ stereo frames; the 1.5M scale describes 6D object pose annotations.",
+      "protocol": "Object pose and cross-environment generalization; paired RGB are useful as difficult stereo imagery.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "booster",
+      "layeredflow"
+    ]
+  },
+  {
+    "id": "xyz-ibd",
+    "name": "XYZ-IBD",
+    "title": "XYZ-IBD: Benchmarking Robust 6D Object Pose Estimation under Real-World Industrial Complexity",
+    "date": "2025-05-31",
+    "year": 2025,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Multi-view industrial bin-picking dataset with reflective parts, calibrated cameras and geometric reference scans.",
+    "institution": "Technical University of Munich and collaborators",
+    "venue": "ECCV 2026",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.00599",
+      "project": "https://xyz-ibd.github.io/",
+      "code": "https://github.com/demianhj/XYZ-IBD",
+      "data": "https://huggingface.co/datasets/bop-benchmark/xyzibd",
+      "NBS stereo supplement": "https://intrinsic-experimental.github.io/nbs-website/static/data/NBS_No_Bias_Stereo_Supplementary_Material.zip"
+    },
+    "release": {
+      "code": "Available — official BlenderProc recipe",
+      "weights": "Not verified",
+      "data": "Available — BOP original distributions; separate NBS stereo adaptation",
+      "license": "CC BY-NC-SA 4.0 for the BOP dataset.",
+      "notes": "Original physical and synthetic releases and NBS’s 55-pair derivative are independent payloads."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2506.00599v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://xyz-ibd.github.io/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/bop-benchmark/xyzibd",
+        "label": "BOP-hosted downloadable files and data license",
+        "fields": [
+          "release",
+          "links"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/html/2608.28933v1#S4.SS1.SSS2",
+        "label": "NBS §4.1.2, derived stereo test scope",
+        "fields": [
+          "benchmark.protocol",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "The BOP original files are not the 55-pair rectified NBS derivative."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Industrial 6D pose",
+        "Industrial depth estimation",
+        "NBS stereo disparity"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "BOP pose/AP and task-specific depth/disparity errors.",
+      "robots": "FANUC arm for acquisition.",
+      "sensors": "Per-view color/grayscale/depth; structured-light and laser reference systems and a RealSense D415.",
+      "dataCollection": "Arm-mounted sensors capture calibrated industrial parts with material treatment and multi-view fusion. A BlenderProc set provides synthetic training.",
+      "data": "75 physical multi-view scenes, 15 reflective parts and 50K+ synthetic training images per author site.",
+      "protocol": "Original BOP-Industrial/pose and TRICKY depth evaluation; NBS selects and rectifies two views and fuses reference scans for a separate 55-pair protocol.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "nbs",
+      "stereobj-1m"
+    ]
+  },
+  {
+    "id": "droid-stereo",
+    "name": "DROID (raw stereo)",
+    "title": "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
+    "date": "2024-03-19",
+    "year": 2024,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Raw release preserves both eyes from each one of the three ZED cameras in real manipulation recordings.",
+    "institution": "DROID multi-institution consortium",
+    "venue": "RSS 2024",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2403.12945",
+      "project": "https://droid-dataset.github.io/",
+      "code": "https://github.com/droid-dataset/droid",
+      "data": "https://droid-dataset.github.io/droid/the-droid-dataset"
+    },
+    "release": {
+      "code": "Available — DROID collection stack and raw conversion",
+      "weights": "See separate policy learning release.",
+      "data": "Available — explicit raw HD stereo MP4/SVO variant in author docs",
+      "license": "CC BY 4.0 for DROID data under the paper’s release.",
+      "notes": "RLDS and raw releases have different image payloads and documented completeness."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2403.12945v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://droid-dataset.github.io/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://droid-dataset.github.io/droid/the-droid-dataset",
+        "label": "Official raw stereo and RLDS file contract",
+        "fields": [
+          "links",
+          "release",
+          "benchmark.sensors",
+          "benchmark.data",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://autolab.berkeley.edu/assets/publications/media/2024-RSS-DROID.pdf",
+        "label": "RSS paper including data license",
+        "fields": [
+          "release.license",
+          "date"
+        ]
+      }
+    ],
+    "caveats": [
+      "The raw documentation notes incomplete early uploads; the paper’s 76K demonstrations are not a verified public dual-eye count.",
+      "The two exterior cameras are different devices, not the two eyes of one stereo camera."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Robot manipulation imitation learning",
+        "Raw stereo geometry"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Franka arm and parallel-jaw gripper.",
+      "sensors": "Three ZED stereo units, concatenated same-unit left/right MP4 or raw SVO, plus HDF5 actions and proprioception.",
+      "dataCollection": "Distributed teleoperation on a shared Franka setup across real indoor scenes.",
+      "data": "76K demonstrations and 350 hours in the original paper across all formats. Authors describe the stereo-enabled raw archive as approximately 8.7 TB.",
+      "protocol": "Use same-device stereo MP4/SVO. Per-eye calibration and left/right frames should be checked against the ZED recording.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "stereopolicy",
+      "egoviz-120"
+    ]
+  },
+  {
+    "id": "egoviz-120",
+    "name": "EgoViz-120",
+    "title": "EgoViz-120: 120 Hours of Synchronized Real-World Egocentric Data",
+    "date": "2026-08",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Real workplace demonstrations in synchronized MCAP with head-mounted stereo, dual wrist views, depth, IMUs and hand poses.",
+    "institution": "Humaid Tech",
+    "venue": "Dataset release",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "IMU"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "project": "https://huggingface.co/datasets/humaidtech/EgoViz-120",
+      "data": "https://huggingface.co/buckets/humaidtech/EgoViz-120"
+    },
+    "release": {
+      "code": "Dataset documentation and loading instructions",
+      "weights": "Not applicable",
+      "data": "Available — publisher’s Hugging Face Storage Bucket, separate from the card repository.",
+      "license": "CC BY 4.0 for the release.",
+      "notes": "The stitched MP4 is a dashboard preview; the raw synchronized streams are in MCAP files."
+    },
+    "evidence": [
+      {
+        "url": "https://huggingface.co/datasets/humaidtech/EgoViz-120",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://github.com/humaidtech/EgoViz-120",
+        "label": "Publisher’s synchronized stream contract and download help",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Action labels are model-generated. Use camera-derived depth as depth supplied by the capture stack, not independently measured ground truth."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Workplace human demonstrations",
+        "Stereo geometry",
+        "Hand-object activity pretraining"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Not applicable",
+      "sensors": "Calibrated ZED head left/right video, 16-bit depth, wrist frames, IMU, TF and inferred hand/action annotations.",
+      "dataCollection": "Operations staff wear the rig during routine work; streams share a clock and each activity clip is stored in one MCAP.",
+      "data": "120.4 hours and 5,392 clips across 12 categories, as reported on the card.",
+      "protocol": "Browse preview first, use MCAP camera_info/TF for calibrated geometry and split by group_id to separate capture sessions.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "droid-stereo",
+      "robocap-10k"
+    ]
+  },
+  {
+    "id": "robocap-10k",
+    "name": "RoboCap-10k",
+    "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+    "date": "2026-11-05",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "A large wearable daily-work corpus collects synchronized stereo-capable video and exposes camera and metric action labels in publisher-described formats.",
+    "institution": "Grounded Superintelligence",
+    "venue": "Technical report and dataset",
+    "modalities": [
+      "RGB",
+      "IMU"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "project": "https://www.gsi.company/blogs/robocap-10k",
+      "data": "https://huggingface.co/datasets/groundedsi/RoboCap-10k",
+      "report": "https://www.gsi.company/blogs/robocap-10k/robocap_10k_a_metrically_accurate_egocentric_dataset_for_robot_learning.pdf",
+      "visualizer": "https://robocap10k.com/"
+    },
+    "release": {
+      "code": "Dataset preparation details on author site",
+      "weights": "Not applicable",
+      "data": "Access request — the Hugging Face dataset uses manual approval; shard indexes are documented by the publisher.",
+      "license": "CC BY 4.0 per official data card; access approval still applies.",
+      "notes": "Distinguish the author’s full-corpus statement, the manually gated LeRobot payload, and the public browser preview."
+    },
+    "evidence": [
+      {
+        "url": "https://www.gsi.company/blogs/robocap-10k",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/groundedsi/RoboCap-10k",
+        "label": "Publisher’s full data distribution with access request",
+        "fields": [
+          "release",
+          "links",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://www.gsi.company/blogs/robocap-10k/robocap_10k_a_metrically_accurate_egocentric_dataset_for_robot_learning.pdf",
+        "label": "Primary technical documentation and collection setup",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [
+      "The author’s hours do not quantify anonymously downloadable stereo footage. Raw calibrated depth labels and estimated 3D trajectories should not be conflated."
+    ],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Egocentric workplace capture",
+        "Metric action-label pretraining",
+        "Stereo reconstruction"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Not applicable",
+      "robots": "Not applicable",
+      "sensors": "Hardware-synchronized global-shutter views including fisheye stereo pairs; IMU and calibrated hand/head trajectories.",
+      "dataCollection": "Same wearable hardware used across work sites; Grounded API produces calibration and pose enrichment.",
+      "data": "Publisher reports over 10,000 hours and 412 LeRobot 3.0 shards; sample and full gated payload have distinct access.",
+      "protocol": "For stereo, check delivered video field names and episode calibration in the release. Model-estimated 3D hand trajectories are annotation outputs.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "egoviz-120"
+    ]
+  },
+  {
+    "id": "irs-stereo",
+    "name": "IRS",
+    "title": "IRS: A Large Naturalistic Indoor Robotics Stereo Dataset to Train Deep Models for Disparity and Surface Normal Estimation",
+    "date": "2019-12-20",
+    "year": 2019,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Synthetic indoor robotics stereo has RGB, rendered disparity, and normals in homes, offices, stores and restaurants.",
+    "institution": "Hong Kong Baptist University and collaborators",
+    "venue": "Preprint and dataset",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/1912.09678",
+      "project": "https://github.com/HKBU-HPML/IRS",
+      "code": "https://github.com/HKBU-HPML/IRS",
+      "data": "https://github.com/HKBU-HPML/IRS#download"
+    },
+    "release": {
+      "code": "Available — author network and data readers",
+      "weights": "Not verified",
+      "data": "Official OneDrive archive and train/test lists",
+      "license": "Not verified",
+      "notes": "The author-documented dataset is a named component of S²M²’s expanded training."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/1912.09678",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://github.com/HKBU-HPML/IRS",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/HKBU-HPML/IRS",
+        "label": "Official dataset scope and format",
+        "fields": [
+          "benchmark",
+          "benchmark.dataCollection",
+          "benchmark.data",
+          "release"
+        ]
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Min_S2M2_Scalable_Stereo_ICCV_2025_supplemental.pdf",
+        "label": "ICCV supplementary §1.1 identifies IRS in expanded training",
+        "fields": [
+          "caveats"
+        ]
+      }
+    ],
+    "caveats": [],
+    "verified": "2026-11-21",
+    "benchmark": {
+      "simulator": "Synthetic scene renderer",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Indoor stereo matching",
+        "Surface normal estimation"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Disparity and surface-normal errors measured separately.",
+      "robots": "Not applicable",
+      "sensors": "Synthetic visible RGB, rendered disparity and normals.",
+      "dataCollection": "Render naturalistic indoor room scenes with varied illumination and reflective objects.",
+      "data": "Author repository reports 103,316 samples, covering varied indoor room categories.",
+      "protocol": "Follow the authored train/test lists for disparity and surface-normal estimation.",
+      "baselines": "Not applicable"
+    },
+    "relatedIds": [
+      "s2m2",
+      "sceneflow-stereo"
+    ]
+  },
+  {
+    "id": "mir-depth",
+    "name": "MIR-Depth",
+    "title": "MIR-Depth: Multi-Range Refinement for Single-View RGB-D Depth Completion of Transparent Objects",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Refines inaccurate single-view RGB-D captures of transparent objects for visible-surface depth recovery and GraspNet-based grasp prediction.",
+    "institution": "Harbin Engineering University and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.25417"
+    },
+    "release": {
+      "code": "Announced, not verified",
+      "weights": "Announced, not verified",
+      "data": "Uses named public datasets",
+      "license": "Not verified",
+      "notes": "Code and checkpoints are planned in the paper."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.25417v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      }
+    ],
+    "caveats": [
+      "This is a single-view restoration model and uses an object mask. Predicted grasp poses are downstream evidence."
+    ],
+    "verified": "2026-11-21",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Single-view depth completion",
+      "baseModel": "Frozen Depth Anything V2 Small prior plus multi-scale ConvGRU and gated depth correction.",
+      "modelSize": "Not reported",
+      "inputs": "Single RGB frame, measured raw depth, object mask and computed prior.",
+      "outputs": "Corrected visible-object metric depth.",
+      "trainingMethod": "Combine global and local inverse-depth range hypotheses and use validity-gated recurrent updates.",
+      "trainingData": "Official TransCG training split, 34,191 640 × 480 RGB-D frames from 78 scenes as reported by the paper.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Not reported",
+      "evaluation": "TransCG and zero-shot tests on TODD, TRansPose, ClearPose and HouseCat6D, plus real setup grasp pose prediction."
+    },
+    "relatedIds": [
+      "dreds-std",
+      "cleardepth",
+      "d3roma"
+    ]
+  },
+  {
+    "id": "unicraft-robot-use",
+    "name": "UniCraft",
+    "title": "Alignment Drives Reuse: Learning Generalizable Robot-Use Agents from Heterogeneous Experience",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation",
+      "rgbd-3d"
+    ],
+    "resourceType": "policy",
+    "summary": "An RGB-D robot-use agent aligns geometric frames, control interfaces and task descriptions to reuse skills across simulation benchmarks.",
+    "institution": "The University of Sydney and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26376"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper discloses training and transfer settings; reusable skill files, checkpoints and a runtime release were not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26376v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      }
+    ],
+    "caveats": [
+      "All reported experiments are simulated. RoboDojo is transfer testing, separate from the learning pools. Nothing in the paper changes the official RoboDojo roster."
+    ],
+    "verified": "2026-11-21",
+    "policy": {
+      "family": "Reusable code/skill and orchestration refinement",
+      "baseModel": "Fixed frontier VLMs with execution history and shared robot-control adapters.",
+      "modelSize": "Not reported",
+      "inputs": "Calibrated simulator RGB-D and robot state, with aligned geometry and simulator-specific sensing adapters.",
+      "outputs": "Executable robot skills and their orchestration through available control APIs.",
+      "trainingMethod": "Interleave tasks across three benchmarks; use rollout feedback to edit and retain reusable skill code and selection rules without updating model weights.",
+      "trainingData": "2,700 learning rollouts per agent model from LIBERO-PRO, RoboTwin 2.0 and RoboCasa365 with six embodiments.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Zero-shot test across robosuite and RoboDojo after freezing learned skills. The paper reports 210 RoboDojo trials across 42 tasks, a paper protocol rather than an official leaderboard entry."
+    },
+    "relatedIds": [
+      "robodojo",
+      "agent-as-policy",
+      "amp1"
+    ]
+  },
+  {
+    "id": "reasoning-on-call",
+    "name": "RoC",
+    "title": "Reasoning on Call: Efficient Agentic Robot Control for Long-Horizon Robot Manipulation",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A task monitor invokes a reasoning agent selectively to recover subtask plans and robot execution during long-horizon manipulation.",
+    "institution": "Wuhan University and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26341"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "The inspected paper documents the protocol and model components. Code, weights and data downloads were not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26341v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      }
+    ],
+    "caveats": [
+      "Online state and memory updates are distinct from training the monitor. No additional inference-time gradient update is claimed."
+    ],
+    "verified": "2026-11-21",
+    "policy": {
+      "family": "Event-triggered reasoning and task feedback",
+      "baseModel": "FastWAM low-level policy in the simulation setting and an online task-state monitor.",
+      "modelSize": "Not reported",
+      "inputs": "Temporal RGB frames, current task text, interaction history and robot state in the paper’s simulation policy.",
+      "outputs": "Low-level robot commands with separate execution-repair and plan-revision decisions.",
+      "trainingMethod": "Train a monitor for subtask progression and use verified outcomes to update memory. Call the high-level agent only when monitor criteria are met.",
+      "trainingData": "Authors train the simulation monitor for one epoch across nine RMBench tasks.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "All nine RMBench tasks and three physical long-horizon manipulation settings; compares success with token usage and agent intervention frequency."
+    },
+    "relatedIds": [
+      "agent-as-policy",
+      "amp1"
+    ]
+  },
+  {
+    "id": "coachsi",
+    "name": "CoachSI",
+    "title": "CoachSI: Self-Improvement of Robot Policies with a Language Coach",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "An off-the-shelf VLM supplies training-time language subgoals, then successful coached rollouts refine a policy deployed without coaching.",
+    "institution": "University of Illinois Chicago",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.25529",
+      "project": "https://tlxhlll.github.io/CoachSI/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Authors provide method and demonstrations. No separate runnable code, checkpoint or dataset was verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.25529v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      },
+      {
+        "url": "https://tlxhlll.github.io/CoachSI/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "This is policy self-improvement through training-time gradient updates, rather than adaptation by a live language coach during deployment."
+    ],
+    "verified": "2026-11-21",
+    "policy": {
+      "family": "Rollout-based weight adaptation with a language coach",
+      "baseModel": "Frozen VLM coach plus visual WAM or VLA policy.",
+      "modelSize": "Not reported",
+      "inputs": "Deployed policy uses camera images and the original long-horizon instruction. The paper separately tests training coaches with and without privileged state.",
+      "outputs": "Task-directed robot actions from the policy. The coach emits language-only atomic instructions at training time.",
+      "trainingMethod": "Collect successful coached rollouts, relabel the successful chunks with the original task in hindsight, and tune the policy while freezing its action backbone.",
+      "trainingData": "Self-collected successful interaction sequences; compared with demo- and self-collected-success baselines at an equal data budget.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Unseen-scene long-horizon task success for the unassisted policy and an additional camera-only coach condition."
+    },
+    "relatedIds": [
+      "agent-as-policy",
+      "unicraft-robot-use"
     ]
   }
 ]

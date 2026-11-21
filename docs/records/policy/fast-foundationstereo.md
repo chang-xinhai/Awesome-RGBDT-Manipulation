@@ -8,7 +8,7 @@ Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching
 
 **2025-12-11 · CVPR 2026 · NVIDIA**
 
-**[Paper](https://arxiv.org/abs/2512.11130)** · [Project](https://nvlabs.github.io/Fast-FoundationStereo/) · [Code](https://github.com/NVlabs/Fast-FoundationStereo) · [Weights](https://huggingface.co/nvidia/c-fast-foundationstereo)
+**[Paper](https://arxiv.org/abs/2512.11130)** · [Project](https://nvlabs.github.io/Fast-FoundationStereo/) · [Code](https://github.com/NVlabs/Fast-FoundationStereo) · [Data](https://huggingface.co/datasets/nvidia/ffs_stereo4d) · [Weights](https://huggingface.co/nvidia/c-fast-foundationstereo) · [Source Geometry](https://github.com/Stereo4d/stereo4d-code)
 
 A distilled and optimized stereo model enables faster zero-shot disparity estimation.
 
@@ -26,7 +26,7 @@ A distilled and optimized stereo model enables faster zero-shot disparity estima
 | Model inputs | Rectified stereo RGB images. [1](https://arxiv.org/html/2512.11130v1)  |
 | Model outputs | Disparity; metric depth additionally needs focal length and stereo baseline. [1](https://arxiv.org/html/2512.11130v1)  |
 | Training method | Architecture search, distillation and pruning, with synthetic and pseudo-labelled stereo data. [1](https://arxiv.org/html/2512.11130v1)  |
-| Training data and scale | See original paper for dataset scope [1](https://arxiv.org/html/2512.11130v1)  |
+| Training data and scale | Research paper: synthetic training plus roughly 1.4M in-the-wild stereo pairs derived from Stereo4D with teacher pseudo-disparity. Released FFS files package labels and metadata separately from original images. [1](https://arxiv.org/html/2512.11130v1)  |
 | Training duration | Not reported [1](https://arxiv.org/html/2512.11130v1)  |
 | Training hardware | Not reported [1](https://arxiv.org/html/2512.11130v1)  |
 | Inference setting and runtime | See original paper and official implementation [1](https://arxiv.org/html/2512.11130v1)  |
@@ -34,11 +34,11 @@ A distilled and optimized stereo model enables faster zero-shot disparity estima
 | Observations / modalities | RGB |
 | Evaluation domain |  |
 | Embodiment |  |
-| Release: code | Available — source linked [2](https://github.com/NVlabs/Fast-FoundationStereo)  |
-| Release: weights | Available — see official model page; terms vary by checkpoint [2](https://github.com/NVlabs/Fast-FoundationStereo)  |
-| Release: data | Not verified [2](https://github.com/NVlabs/Fast-FoundationStereo)  |
-| Release: license | Research code and checkpoints are subject to NVIDIA research terms; C-Fast model uses the separate NVIDIA Open Model Agreement. [2](https://github.com/NVlabs/Fast-FoundationStereo)  |
-| Release: notes | Research and C-Fast commercial variants have different terms; reconstructed depth is predicted rather than an independent measured channel. [2](https://github.com/NVlabs/Fast-FoundationStereo)  |
+| Release: code | Available — research implementation; separately licensed TAO path linked by authors [2](https://github.com/NVlabs/Fast-FoundationStereo) [3](https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md)  |
+| Release: weights | Available — research checkpoint family and C-Fast model with separate terms [2](https://github.com/NVlabs/Fast-FoundationStereo) [3](https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md)  |
+| Release: data | Available — FFS Stereo4D pseudo-disparity/metadata only [2](https://github.com/NVlabs/Fast-FoundationStereo) [3](https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md)  |
+| Release: license | Research and C-Fast code/checkpoints have separate NVIDIA terms. FFS Stereo4D labels are CC BY-NC 4.0. [2](https://github.com/NVlabs/Fast-FoundationStereo) [3](https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md)  |
+| Release: notes | Public dataset license does not grant rights to source videos. The research training mixture is separate from the commercial model release. [2](https://github.com/NVlabs/Fast-FoundationStereo) [3](https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,5 @@ A distilled and optimized stereo model enables faster zero-shot disparity estima
 
 1. [Author paper and first submission](https://arxiv.org/html/2512.11130v1)
 2. [Official code and license](https://github.com/NVlabs/Fast-FoundationStereo)
+3. [Data-card artifact, resolution and geometry contract](https://huggingface.co/datasets/nvidia/ffs_stereo4d/raw/main/README.md)
+4. [Author toolkit for upstream stereo calibration and video extraction](https://github.com/Stereo4d/stereo4d-code)

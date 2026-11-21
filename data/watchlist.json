@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-20",
+  "reviewed": "2026-11-21",
   "sources": [
     {
       "work": "rle-bench",
@@ -5566,6 +5566,126 @@
       "work": "d3roma",
       "kind": "code",
       "url": "https://github.com/songlin/d3roma"
+    },
+    {
+      "work": "s2m2",
+      "kind": "project",
+      "url": "https://junhong-3dv.github.io/s2m2-project/"
+    },
+    {
+      "work": "s2m2",
+      "kind": "code",
+      "url": "https://github.com/junhong-3dv/s2m2"
+    },
+    {
+      "work": "nbs",
+      "kind": "project",
+      "url": "https://intrinsic-experimental.github.io/nbs-website/"
+    },
+    {
+      "work": "xrstereo-stereosplat",
+      "kind": "project",
+      "url": "https://vladimiryugay.github.io/stereosplat/"
+    },
+    {
+      "work": "xrstereo-stereosplat",
+      "kind": "code",
+      "url": "https://github.com/facebookresearch/stereo-splat"
+    },
+    {
+      "work": "dreds-std",
+      "kind": "project",
+      "url": "https://pku-epic.github.io/DREDS/"
+    },
+    {
+      "work": "dreds-std",
+      "kind": "code",
+      "url": "https://github.com/PKU-EPIC/DREDS"
+    },
+    {
+      "work": "activezero",
+      "kind": "project",
+      "url": "https://www.liuisabella.com/ActiveZero/"
+    },
+    {
+      "work": "activezero",
+      "kind": "code",
+      "url": "https://github.com/haosulab/ActiveZero"
+    },
+    {
+      "work": "active-passive-simstereo",
+      "kind": "project",
+      "url": "https://research-repository.uwa.edu.au/en/datasets/active-passive-simstereo/"
+    },
+    {
+      "work": "sceneflow-stereo",
+      "kind": "project",
+      "url": "https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html"
+    },
+    {
+      "work": "crestereo-training",
+      "kind": "project",
+      "url": "https://github.com/megvii-research/CREStereo"
+    },
+    {
+      "work": "booster",
+      "kind": "project",
+      "url": "https://cvlab.unibo.it/booster-web/"
+    },
+    {
+      "work": "layeredflow",
+      "kind": "project",
+      "url": "https://layeredflow.cs.princeton.edu/"
+    },
+    {
+      "work": "layeredflow",
+      "kind": "code",
+      "url": "https://github.com/princeton-vl/LayeredFlow"
+    },
+    {
+      "work": "stereobj-1m",
+      "kind": "project",
+      "url": "https://github.com/xingyul/stereobj-1m"
+    },
+    {
+      "work": "xyz-ibd",
+      "kind": "project",
+      "url": "https://xyz-ibd.github.io/"
+    },
+    {
+      "work": "xyz-ibd",
+      "kind": "code",
+      "url": "https://github.com/demianhj/XYZ-IBD"
+    },
+    {
+      "work": "droid-stereo",
+      "kind": "project",
+      "url": "https://droid-dataset.github.io/"
+    },
+    {
+      "work": "droid-stereo",
+      "kind": "code",
+      "url": "https://github.com/droid-dataset/droid"
+    },
+    {
+      "work": "egoviz-120",
+      "kind": "project",
+      "url": "https://huggingface.co/datasets/humaidtech/EgoViz-120"
+    },
+    {
+      "work": "robocap-10k",
+      "kind": "project",
+      "url": "https://www.gsi.company/blogs/robocap-10k"
+    },
+    {
+      "work": "irs-stereo",
+      "kind": "project",
+      "url": "https://github.com/HKBU-HPML/IRS"
+    },
+    {
+      "work": "coachsi",
+      "kind": "project",
+      "url": "https://tlxhlll.github.io/CoachSI/"
     }
   ]
 }

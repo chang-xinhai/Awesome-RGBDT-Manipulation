@@ -11973,6 +11973,19 @@
       "width": 1500,
       "height": 566,
       "note": "Author-supplied original paper or project figure; third-party rights retained."
+    },
+    "benchmark": {
+      "original": "https://nvlabs.github.io/FoundationStereo/static/images/sdg_montage.jpg",
+      "page": "https://nvlabs.github.io/FoundationStereo/",
+      "credit": "FoundationStereo authors",
+      "alt": "Author montage of indoor, outdoor and randomized FSD stereo training scenes",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/foundationstereo-benchmark.webp",
+      "width": 1333,
+      "height": 365,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "d939a8dbf72b3d3a7d7b4a3cb51791fae196bc6e43b7bd8ca3845f248eaa9b4f"
     }
   },
   "fast-foundationstereo": {
@@ -11988,6 +12001,19 @@
       "width": 1460,
       "height": 970,
       "note": "Author-supplied original paper or project figure; third-party rights retained."
+    },
+    "benchmark": {
+      "original": "https://arxiv.org/html/2512.11130v1/stereo4d.png",
+      "page": "https://arxiv.org/html/2512.11130v1",
+      "credit": "Fast-FoundationStereo authors",
+      "alt": "Pseudo-labeling pipeline and author examples from in-the-wild stereo footage",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/fast-foundationstereo-benchmark.webp",
+      "width": 440,
+      "height": 436,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "f549330b0149cd6703406b3313b11d2b4ff00e9c6c61d632959068a35af7f9a0"
     }
   },
   "depth-anything-v2": {
@@ -12826,6 +12852,319 @@
       "height": 382,
       "note": "Figure 2. Author figure, resized without changing its content.",
       "sourceSha256": "5cd5d4b3e14a200b313d95878528833c365fa94cc11fc2366a3019fcb3796e45"
+    }
+  },
+  "s2m2": {
+    "policy": {
+      "original": "https://arxiv.org/html/2507.13229v1/Figures_main/overview.png",
+      "page": "https://arxiv.org/html/2507.13229v1",
+      "credit": "S²M² authors",
+      "alt": "S²M² stereo feature, initialization and refinement architecture",
+      "kind": "architecture",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/s2m2-policy.webp",
+      "width": 1480,
+      "height": 350,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "1a43822aa51dabec971a87034c13d55223524ab4215dfeb6924c73e4f3afe443"
+    }
+  },
+  "nbs": {
+    "policy": {
+      "original": "https://intrinsic-experimental.github.io/nbs-website/static/images/architecture.png",
+      "page": "https://intrinsic-experimental.github.io/nbs-website/",
+      "credit": "NBS authors",
+      "alt": "Plain ViT backbone and disparity decoder architecture",
+      "kind": "architecture",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/nbs-policy.webp",
+      "width": 1480,
+      "height": 530,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "28d5efd23dba737617928e37e6d77e4ef5398444f58711c144181c8344ebed69"
+    },
+    "benchmark": {
+      "original": "https://arxiv.org/html/2608.28933v1/neurips_scenes_viz.png",
+      "page": "https://arxiv.org/html/2608.28933v1",
+      "credit": "NBS authors",
+      "alt": "Rectified image pairs and fused reference depth for NBS’s XYZ-IBD evaluation",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/nbs-benchmark.webp",
+      "width": 1480,
+      "height": 500,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "0df41a7292f6a9a1a91d72daa1025dd3526ef6386c37a541e29de5a0182acace"
+    }
+  },
+  "xrstereo-stereosplat": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2610.35902v1/figures/xrstereo/10_left_color.png",
+      "page": "https://arxiv.org/html/2610.35902v1",
+      "credit": "StereoSplat authors",
+      "alt": "Left-eye color sample from the XRStereo training examples in Figure 7",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/xrstereo-stereosplat-benchmark.webp",
+      "width": 640,
+      "height": 320,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "577a9982951c601871c1576700c049e03510f7eec0138dee9b52f5c6a8ead44d"
+    }
+  },
+  "dreds-std": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2208.03792v1/DREDS_example.png",
+      "page": "https://arxiv.org/html/2208.03792v1",
+      "credit": "DREDS authors",
+      "alt": "Synthetic DREDS RGB, noisy depth and surface-label examples",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/dreds-std-benchmark.webp",
+      "width": 1227,
+      "height": 1280,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "19c394d7f6d6d17e0648a3cc417068af1701132a377acc5b9cb92316834510af"
+    }
+  },
+  "activezero": {
+    "benchmark": {
+      "original": "https://www.liuisabella.com/ActiveZero/materials/dataset.png",
+      "page": "https://www.liuisabella.com/ActiveZero/",
+      "credit": "ActiveZero authors",
+      "alt": "Rendered and physical active stereo training and matched real evaluation examples",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/activezero-benchmark.webp",
+      "width": 830,
+      "height": 1280,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "4afd824700cb101087c91890ec0019aedb30a9f91313c23c8dd6ebaafa36a2db"
+    }
+  },
+  "active-passive-simstereo": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2209.08305v1/TestSetFlat.png",
+      "page": "https://arxiv.org/html/2209.08305v1",
+      "credit": "Active-Passive SimStereo authors",
+      "alt": "Paper Figure 5 showing scene styles in the simulated test split",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/active-passive-simstereo-benchmark.webp",
+      "width": 1480,
+      "height": 252,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "2742d05d0641fecfb2a3ac9dc6b6e6f6f231840d19dbf5eb87783e04a3b294db"
+    }
+  },
+  "sceneflow-stereo": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/1512.02134v1/images/monkaa/Cleanpass_0050_L.jpg",
+      "page": "https://arxiv.org/html/1512.02134v1",
+      "credit": "Scene Flow Dataset authors",
+      "alt": "Published left-eye Monkaa clean-pass sample",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/sceneflow-stereo-benchmark.webp",
+      "width": 960,
+      "height": 540,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "ab487438c701e38945740c476e9349299bad1e8712743e626505bce45b42e6b2"
+    }
+  },
+  "crestereo-training": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2203.11483v1/blender_example/reflect.png",
+      "page": "https://arxiv.org/html/2203.11483v1",
+      "credit": "CREStereo authors",
+      "alt": "Reflective synthetic image from the CREStereo training distribution",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/crestereo-training-benchmark.webp",
+      "width": 1480,
+      "height": 833,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "da144eea2ecf67810fe094016fbc1a2ec3fa5ccfaea541ca42dcfb39a5ed6cb6"
+    }
+  },
+  "booster": {
+    "benchmark": {
+      "original": "https://cvlab.unibo.it/booster-web/assets/samples/balanced_ShotGlasses_camera_00_im0.jpg",
+      "page": "https://cvlab.unibo.it/booster-web/",
+      "credit": "Booster authors",
+      "alt": "Official Booster left-eye sample featuring shot glasses",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/booster-benchmark.webp",
+      "width": 1480,
+      "height": 1083,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "fc92cdc69e62b82508304ef2fac8f202b5153e81f4f69ea108030ae98287ce57"
+    }
+  },
+  "layeredflow": {
+    "benchmark": {
+      "original": "https://layeredflow.cs.princeton.edu/static/imgs/benchmark_gallery.jpg",
+      "page": "https://layeredflow.cs.princeton.edu/",
+      "credit": "LayeredFlow authors",
+      "alt": "Author benchmark gallery showing layered flow and challenging glass or mirror objects",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/layeredflow-benchmark.webp",
+      "width": 1480,
+      "height": 833,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "5cb0ee49e34c7c548d009a65008a08790a23b20030cc19af0f9ea32a63b7b8bb"
+    }
+  },
+  "stereobj-1m": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2109.10115v1/teaser_compressed.png",
+      "page": "https://arxiv.org/html/2109.10115v1",
+      "credit": "StereOBJ-1M authors",
+      "alt": "Stereo object-pose dataset examples spanning tabletop, tools and clutter",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/stereobj-1m-benchmark.webp",
+      "width": 807,
+      "height": 419,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "bfa46bf25d37dda99455667c93ed6f630c83d7afe462dc2a17fdb66d61bd6eb5"
+    }
+  },
+  "xyz-ibd": {
+    "benchmark": {
+      "original": "https://xyz-ibd.github.io/images/scenes.png",
+      "page": "https://xyz-ibd.github.io/",
+      "credit": "XYZ-IBD authors",
+      "alt": "Real industrial bin scenes with metallic parts and dense occlusion",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/xyz-ibd-benchmark.webp",
+      "width": 1480,
+      "height": 452,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "4b249b8c293f2594c4c5f13e753091bfe51ca017b273699b41cb741e162b900a"
+    }
+  },
+  "droid-stereo": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2403.12945v1/droid_setup.png",
+      "page": "https://arxiv.org/html/2403.12945v1",
+      "credit": "DROID Dataset Team",
+      "alt": "DROID Franka capture setup with two movable exterior cameras and one wrist camera",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/droid-stereo-benchmark.webp",
+      "width": 1352,
+      "height": 1026,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "17dc3b9bd144eb7733e9be38e423a794016831ae144c800d4a4c8ad4e8f5ca66"
+    }
+  },
+  "egoviz-120": {
+    "benchmark": {
+      "original": "https://raw.githubusercontent.com/humaidtech/EgoViz-120/main/preview.jpg",
+      "page": "https://github.com/humaidtech/EgoViz-120",
+      "credit": "Humaid Tech",
+      "alt": "Author dashboard preview of left/right head images, wrists, depth and traces",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/egoviz-120-benchmark.webp",
+      "width": 960,
+      "height": 540,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "503caa95d71ecb1beeca641d34ff9ab290bf3e1a6eb81a79ecbe559fb7cc69c8"
+    }
+  },
+  "robocap-10k": {
+    "benchmark": {
+      "original": "https://www.gsi.company/blogs/robocap-10k/04_taxonomy.jpg",
+      "page": "https://www.gsi.company/blogs/robocap-10k",
+      "credit": "Grounded Superintelligence",
+      "alt": "Publisher taxonomy showing the distribution of occupational tasks",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/robocap-10k-benchmark.webp",
+      "width": 1480,
+      "height": 665,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "c41495c6ce9ae67553e484e349aa4391c48b965d6ee112b2c2abe32b21a59cdb"
+    }
+  },
+  "irs-stereo": {
+    "benchmark": {
+      "original": "https://raw.githubusercontent.com/HKBU-HPML/IRS/master/imgs/left.png",
+      "page": "https://github.com/HKBU-HPML/IRS",
+      "credit": "IRS authors",
+      "alt": "Synthetic left-eye indoor RGB example distributed with IRS",
+      "kind": "dataset-preview",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/irs-stereo-benchmark.webp",
+      "width": 956,
+      "height": 538,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "e1245bd7cb8524c9367e1a548989b15af923fb19183467a2068dcc956bbd36c6"
+    }
+  },
+  "mir-depth": {
+    "policy": {
+      "original": "https://arxiv.org/html/2611.25417v1/mir-framework-v7.png",
+      "page": "https://arxiv.org/html/2611.25417v1",
+      "credit": "MIR-Depth authors",
+      "alt": "Author architecture for global and local inverse-depth refinement",
+      "kind": "architecture",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/mir-depth-policy.webp",
+      "width": 1480,
+      "height": 399,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "68ed4727f639b57fb42249a940b71c61c91fa94680a8a494eecd36e41e1a4b1f"
+    }
+  },
+  "unicraft-robot-use": {
+    "policy": {
+      "original": "https://arxiv.org/html/2611.26376v1/x2.png",
+      "page": "https://arxiv.org/html/2611.26376v1",
+      "credit": "UniCraft authors",
+      "alt": "Author diagram of learning geometry-aligned and reusable robot skills",
+      "kind": "architecture",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/unicraft-robot-use-policy.webp",
+      "width": 396,
+      "height": 420,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "10a0e4645cf95052effe912c128d663086b6195bd70b2010cb75bd63bc9e63ef"
+    }
+  },
+  "reasoning-on-call": {
+    "policy": {
+      "original": "https://arxiv.org/html/2611.26341v1/figures/Figure2.png",
+      "page": "https://arxiv.org/html/2611.26341v1",
+      "credit": "Reasoning on Call authors",
+      "alt": "Author diagram of a selectively invoked reasoning agent and online task-state monitor",
+      "kind": "architecture",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/reasoning-on-call-policy.webp",
+      "width": 1480,
+      "height": 1164,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "09d33adb31167dd6523a4581063f2da2bd059b0acbf31d23e37f84f2c95026a4"
+    }
+  },
+  "coachsi": {
+    "policy": {
+      "original": "https://arxiv.org/html/2611.25529v1/fig_overview.png",
+      "page": "https://arxiv.org/html/2611.25529v1",
+      "credit": "CoachSI authors",
+      "alt": "Training-time subgoal coaching and hindsight relabeling procedure",
+      "kind": "architecture",
+      "note": "Author figure or dataset preview, resized without changing its content.",
+      "path": "/images/catalog/coachsi-policy.webp",
+      "width": 825,
+      "height": 358,
+      "reviewed": "2026-11-21",
+      "sourceSha256": "3fc10c9cf7d22f24e91907db8bc48f14674152aa9a14da3279b50ebab9955ff7"
     }
   }
 }

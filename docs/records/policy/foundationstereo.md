@@ -8,7 +8,7 @@ FoundationStereo: Zero-Shot Stereo Matching
 
 **2025-01-17 · CVPR 2025 · NVIDIA**
 
-**[Paper](https://arxiv.org/abs/2501.09898)** · [Project](https://nvlabs.github.io/FoundationStereo/) · [Code](https://github.com/NVlabs/FoundationStereo) · [Weights](https://huggingface.co/nvidia/c-foundationstereo-s)
+**[Paper](https://arxiv.org/abs/2501.09898)** · [Project](https://nvlabs.github.io/FoundationStereo/) · [Code](https://github.com/NVlabs/FoundationStereo) · [Data](https://github.com/NVlabs/FoundationStereo#fsd-dataset) · [Weights](https://huggingface.co/nvidia/c-foundationstereo-s) · [Dataset Sample](https://drive.google.com/file/d/1dJwK5x8xsaCazz5xPGJ2OKFIWrd9rQT5/view?usp=drive_link)
 
 A zero-shot stereo foundation model predicts dense disparities from calibrated image pairs.
 
@@ -26,7 +26,7 @@ A zero-shot stereo foundation model predicts dense disparities from calibrated i
 | Model inputs | Rectified left and right RGB stereo images. [1](https://arxiv.org/html/2501.09898v1)  |
 | Model outputs | Stereo disparity; focal length and baseline convert disparity to metric depth. [1](https://arxiv.org/html/2501.09898v1)  |
 | Training method | Stereo model training on a curated synthetic image-pair dataset with pretrained visual priors. [1](https://arxiv.org/html/2501.09898v1)  |
-| Training data and scale | See original paper for dataset scope [1](https://arxiv.org/html/2501.09898v1)  |
+| Training data and scale | Research paper: approximately 1M synthetic RGB stereo pairs from FSD after self-curation. The C-FoundationStereo card documents its separate FSD, CREStereo and TartanAir mixture. [1](https://arxiv.org/html/2501.09898v1) [5](https://huggingface.co/nvidia/c-foundationstereo-s/blob/main/README.md)  |
 | Training duration | Not reported [1](https://arxiv.org/html/2501.09898v1)  |
 | Training hardware | Not reported [1](https://arxiv.org/html/2501.09898v1)  |
 | Inference setting and runtime | See original paper and official implementation [1](https://arxiv.org/html/2501.09898v1)  |
@@ -34,11 +34,11 @@ A zero-shot stereo foundation model predicts dense disparities from calibrated i
 | Observations / modalities | RGB |
 | Evaluation domain |  |
 | Embodiment |  |
-| Release: code | Available — source linked [2](https://github.com/NVlabs/FoundationStereo)  |
-| Release: weights | Commercial C-FoundationStereo model card available; research checkpoints linked separately by authors [2](https://github.com/NVlabs/FoundationStereo)  |
-| Release: data | Not verified [2](https://github.com/NVlabs/FoundationStereo)  |
-| Release: license | NVIDIA research license limits use; separately offered commercial version has separate terms. [2](https://github.com/NVlabs/FoundationStereo)  |
-| Release: notes | Research source/checkpoints are distinct from the separately licensed NVIDIA C-FoundationStereo model. [2](https://github.com/NVlabs/FoundationStereo)  |
+| Release: code | Available — research implementation and separate NVIDIA commercial release [2](https://github.com/NVlabs/FoundationStereo) [3](https://github.com/NVlabs/FoundationStereo#fsd-dataset)  |
+| Release: weights | Available — research checkpoints and separate C-FoundationStereo model [2](https://github.com/NVlabs/FoundationStereo) [3](https://github.com/NVlabs/FoundationStereo#fsd-dataset)  |
+| Release: data | Available — official FSD whole archive and small sample via repository [2](https://github.com/NVlabs/FoundationStereo) [3](https://github.com/NVlabs/FoundationStereo#fsd-dataset)  |
+| Release: license | NVIDIA Source Code License with research limitations governs the research repo and is linked as the FSD dataset license; C-FoundationStereo has separate terms. [2](https://github.com/NVlabs/FoundationStereo) [3](https://github.com/NVlabs/FoundationStereo#fsd-dataset) [4](https://github.com/NVlabs/FoundationStereo/blob/master/LICENSE)  |
+| Release: notes | The research paper’s dataset and commercial checkpoint training recipe have different scopes. [2](https://github.com/NVlabs/FoundationStereo) [3](https://github.com/NVlabs/FoundationStereo#fsd-dataset)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,6 @@ A zero-shot stereo foundation model predicts dense disparities from calibrated i
 
 1. [Author paper and first submission](https://arxiv.org/html/2501.09898v1)
 2. [Official code and license](https://github.com/NVlabs/FoundationStereo)
+3. [Author dataset announcement, samples and download locations](https://github.com/NVlabs/FoundationStereo#fsd-dataset)
+4. [Research license linked by FSD dataset section](https://github.com/NVlabs/FoundationStereo/blob/master/LICENSE)
+5. [Separately scoped commercial checkpoint recipe](https://huggingface.co/nvidia/c-foundationstereo-s/blob/main/README.md)
