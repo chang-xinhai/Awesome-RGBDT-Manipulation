@@ -13169,17 +13169,16 @@
   },
   "depth-pro-2": {
     "policy": {
-      "path": "/images/catalog/depth-pro-2-policy.webp",
-      "original": "https://arxiv.org/html/2611.26603v1/architecture.png",
-      "page": "https://arxiv.org/html/2611.26603v1",
-      "credit": "Peiyun Hu and coauthors, Apple",
-      "alt": "Depth Pro 2 transformer and DPT decoder with input RGB and output depth sequence",
-      "kind": "architecture",
+      "path": "/images/catalog/depth-pro-2-examples-policy.webp",
+      "original": "https://apple-aiml-research.github.io/ml-depth-pro-2/assets/images/img01/input.jpg",
+      "page": "https://apple-aiml-research.github.io/ml-depth-pro-2/#images",
+      "credit": "Apple Machine Learning Research",
+      "alt": "Apple’s Depth Pro 2 RGB examples with a peacock and a cart above their corresponding colorized depth predictions",
+      "kind": "qualitative-results",
       "reviewed": "2026-11-22",
-      "width": 1470,
-      "height": 827,
-      "note": "Author figure resized for the atlas; source rights retained.",
-      "sourceSha256": "cff062dcd406dc171fe4f6061c5d78dbb12cf8e5facca25b1e59cb3b725adf89"
+      "width": 1160,
+      "height": 686,
+      "note": "Unmodified RGB views in the upper row and their corresponding Depth Pro 2 estimates below, extracted from Apple’s official comparison. Source page includes the full qualitative comparisons and architecture."
     }
   },
   "moge-3": {

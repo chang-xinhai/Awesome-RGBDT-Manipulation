@@ -440,6 +440,7 @@ function figureLabel(w: Work, f: Figure) {
     "data-pipeline": "Data collection & learning pipeline",
     "data-collection-process": "Author data collection process",
     "conceptual-pipeline": "Author conceptual pipeline",
+    "qualitative-results": "Author qualitative results",
     "source-excerpt": "Published source text preview",
     "leaderboard-preview": "Official leaderboard result preview",
   };

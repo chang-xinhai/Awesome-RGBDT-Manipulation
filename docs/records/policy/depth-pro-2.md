@@ -12,9 +12,9 @@ Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth
 
 A shared network predicts native-resolution metric depth from a single RGB image, a monocular video or a live stream. The model family trades speed for boundary detail and temporal stability.
 
-<img src="../../../website/public/images/catalog/depth-pro-2-policy.webp" width="760" alt="Depth Pro 2 transformer and DPT decoder with input RGB and output depth sequence"/>
+<img src="../../../website/public/images/catalog/depth-pro-2-examples-policy.webp" width="760" alt="Apple’s Depth Pro 2 RGB examples with a peacock and a cart above their corresponding colorized depth predictions"/>
 
-*Peiyun Hu and coauthors, Apple · [Figure source](https://arxiv.org/html/2611.26603v1) · Original rights retained.*
+*Apple Machine Learning Research · [Figure source](https://apple-aiml-research.github.io/ml-depth-pro-2/#images) · Original rights retained.*
 
 | Field | Reported value and source scope |
 | :-- | :-- |
