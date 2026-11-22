@@ -38,7 +38,7 @@ A monocular foundation model predicts sharp metric depth and focal length.
 | Release: weights | Available — official checkpoint under Apple Sample Code License [2](https://github.com/apple/ml-depth-pro) [3](https://github.com/apple/ml-depth-pro)  |
 | Release: data | Not verified [2](https://github.com/apple/ml-depth-pro)  |
 | Release: license | Apple Sample Code License covers released code and model weights; inspect dependencies separately. [2](https://github.com/apple/ml-depth-pro)  |
-| Release: notes | Metric values are learned estimates, not measured depth; no manipulation policy is included. [2](https://github.com/apple/ml-depth-pro)  |
+| Release: notes | Original Depth Pro is a single-image model. Depth Pro 2 is a separate architecture and its model weights have different licensing. [2](https://github.com/apple/ml-depth-pro)  |
 
 **Scope and qualifications**
 

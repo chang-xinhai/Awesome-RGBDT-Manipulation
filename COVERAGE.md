@@ -1,23 +1,23 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-11-21. 871 unique records; 73 benchmark records; 691 policy records; 81 models; 9 surveys; 37 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-11-22. 887 unique records; 75 benchmark records; 695 policy records; 89 models; 9 surveys; 41 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
 - Visuo-Tactile Benchmarks: 30 records with this classification.
 - Precision and Assembly: 26 records with this classification.
 - Dexterous Manipulation: 18 records with this classification.
-- General Manipulation: 27 records with this classification.
-- Robustness and Evaluation: 26 records with this classification.
-- Supporting Tools and Data: 37 records with this classification.
-- Visuo-Tactile Policy Learning: 99 records with this classification.
-- Tactile VLA and World-Action Models: 117 records with this classification.
-- RGB-D and 3D Policies: 219 records with this classification.
+- General Manipulation: 28 records with this classification.
+- Robustness and Evaluation: 27 records with this classification.
+- Supporting Tools and Data: 41 records with this classification.
+- Visuo-Tactile Policy Learning: 101 records with this classification.
+- Tactile VLA and World-Action Models: 118 records with this classification.
+- RGB-D and 3D Policies: 229 records with this classification.
 - Tactile Representations and Pretraining: 51 records with this classification.
-- Geometry and Predictive Models: 43 records with this classification.
-- Visual Precision and Reinforcement Learning: 54 records with this classification.
+- Geometry and Predictive Models: 51 records with this classification.
+- Visual Precision and Reinforcement Learning: 55 records with this classification.
 - Agent / RSI / ICL: 296 records with this classification.
-- Generalist Policy Foundations: 169 records with this classification.
+- Generalist Policy Foundations: 171 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -77,6 +77,7 @@ Source aliases are discovery provenance, not primary method evidence. Indexed ma
 | [October21 primary manipulation expansion and independent Agent/RGB-D review](https://arxiv.org/list/cs.RO/recent) | 23 / 26 |
 | [Fresh Agent/RGB-D/visual–tactile primary expansion](https://arxiv.org/list/cs.RO/recent) | 26 / 27 |
 | [Stereo depth training and evaluation release lineage](https://github.com/NVlabs/FoundationStereo#fsd-dataset) | 15 / 15 |
+| [Metric, stereo and video depth provenance](https://arxiv.org/html/2611.26603v1) | 10 / 10 |
 
 ## Evidence methodology
 

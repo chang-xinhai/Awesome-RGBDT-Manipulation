@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-11-21",
+  "reviewed": "2026-11-22",
   "scope": "Source-by-source tactile and manipulation-relevant geometry discovery. Source aliases can overlap; inclusion specifications use original papers and releases.",
   "sources": [
     {
@@ -3389,6 +3389,86 @@
           "status": "indexed",
           "workId": "robocap-10k",
           "note": "Publisher-described corpus with manually gated LeRobot access."
+        }
+      ]
+    },
+    {
+      "id": "metric-depth-models-20261122",
+      "label": "Metric, stereo and video depth provenance",
+      "url": "https://arxiv.org/html/2611.26603v1",
+      "kind": "primary-expansion",
+      "scope": "Primary Depth Pro 2 entry points, paper baselines and evaluation counterparts, with a parallel recent arXiv search for metric/stereo geometry tools. This is not a leaderboard or evidence that every indexed work was evaluated in the Apple paper.",
+      "snapshot": "2026-11-22",
+      "entries": [
+        {
+          "name": "Depth Pro 2",
+          "url": "https://arxiv.org/abs/2611.26603",
+          "status": "indexed",
+          "workId": "depth-pro-2",
+          "note": "Author code implements the inference runtime and exports, whereas the model licence restricts use to research. The paper lists but does not bundle its full training mixture."
+        },
+        {
+          "name": "MoGe-3",
+          "url": "https://arxiv.org/abs/2607.17967",
+          "status": "indexed",
+          "workId": "moge-3",
+          "note": "Standalone primary source checked for method and release scope."
+        },
+        {
+          "name": "FoundationGeo",
+          "url": "https://arxiv.org/abs/2607.11588",
+          "status": "indexed",
+          "workId": "foundationgeo",
+          "note": "Standalone primary source checked for method and release scope."
+        },
+        {
+          "name": "InfiniDepth",
+          "url": "https://arxiv.org/abs/2601.03252",
+          "status": "indexed",
+          "workId": "infinidepth",
+          "note": "Standalone primary source checked for method and release scope."
+        },
+        {
+          "name": "VeloDepth",
+          "url": "https://arxiv.org/abs/2512.10725",
+          "status": "indexed",
+          "workId": "velodepth",
+          "note": "Standalone primary source checked for method and release scope."
+        },
+        {
+          "name": "EM-ViT",
+          "url": "https://arxiv.org/abs/2611.14958",
+          "status": "indexed",
+          "workId": "em-vit",
+          "note": "Standalone primary source checked for method and release scope."
+        },
+        {
+          "name": "HDiT-Stereo",
+          "url": "https://arxiv.org/abs/2611.25113",
+          "status": "indexed",
+          "workId": "hdit-stereo",
+          "note": "Controlled geometry test and associated synthetic experiment, with downloadable artifacts unverified."
+        },
+        {
+          "name": "DfD-GS",
+          "url": "https://arxiv.org/abs/2611.26072",
+          "status": "indexed",
+          "workId": "dfd-gs",
+          "note": "Standalone primary source checked for method and release scope."
+        },
+        {
+          "name": "DIMED",
+          "url": "https://arxiv.org/abs/2611.20518",
+          "status": "indexed",
+          "workId": "dimed",
+          "note": "Independent monocular scale analysis does not include Depth Pro 2 in the original reported architecture set."
+        },
+        {
+          "name": "DyDToF",
+          "url": "https://arxiv.org/abs/2211.08658",
+          "status": "indexed",
+          "workId": "dydtof",
+          "note": "Author RGB/dToF rendering benchmark used as an RGB-only metric-reference test by Depth Pro 2. Training and evaluation are different."
         }
       ]
     }

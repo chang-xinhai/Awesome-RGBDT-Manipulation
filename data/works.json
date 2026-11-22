@@ -84505,14 +84505,15 @@
       "paper": "https://arxiv.org/abs/2511.10647",
       "project": "https://depth-anything-3.github.io/",
       "code": "https://github.com/ByteDance-Seed/Depth-Anything-3",
-      "weights": "https://huggingface.co/depth-anything/DA3-BASE"
+      "weights": "https://huggingface.co/depth-anything/DA3-BASE",
+      "Metric-Large weights": "https://huggingface.co/depth-anything/DA3METRIC-LARGE"
     },
     "release": {
       "code": "Available — source linked",
       "weights": "Available — multiple checkpoints; model-specific terms differ",
       "data": "Not verified",
       "license": "Apache-2.0 source; model variants have distinct Apache-2.0 or CC BY-NC 4.0 terms.",
-      "notes": "Metric behavior is variant specific; DA3Metric requires focal-length rescaling, while relative outputs are not sensor depth."
+      "notes": "Metric behavior is variant-specific. Official DA3METRIC-LARGE weights are Apache-2.0 and require focal-length rescaling; relative outputs are not sensor depth."
     },
     "evidence": [
       {
@@ -84535,12 +84536,21 @@
           "links",
           "release"
         ]
+      },
+      {
+        "url": "https://huggingface.co/depth-anything/DA3METRIC-LARGE",
+        "label": "Official metric checkpoint differs from the general DA3-BASE card",
+        "fields": [
+          "links",
+          "release.weights",
+          "model.inference"
+        ]
       }
     ],
     "caveats": [
       "Metric behavior is variant specific; DA3Metric requires focal-length rescaling, while relative outputs are not sensor depth."
     ],
-    "verified": "2026-11-08",
+    "verified": "2026-11-22",
     "model": {
       "role": "Depth and geometry perception reference",
       "family": "Depth estimation",
@@ -84598,7 +84608,7 @@
       "weights": "Available — official checkpoint under Apple Sample Code License",
       "data": "Not verified",
       "license": "Apple Sample Code License covers released code and model weights; inspect dependencies separately.",
-      "notes": "Metric values are learned estimates, not measured depth; no manipulation policy is included."
+      "notes": "Original Depth Pro is a single-image model. Depth Pro 2 is a separate architecture and its model weights have different licensing."
     },
     "evidence": [
       {
@@ -84634,7 +84644,7 @@
     "caveats": [
       "Metric values are learned estimates, not measured depth; no manipulation policy is included."
     ],
-    "verified": "2026-11-08",
+    "verified": "2026-11-22",
     "model": {
       "role": "Depth and geometry perception reference",
       "family": "Depth estimation",
@@ -84657,6 +84667,9 @@
         "credit": "Depth Pro authors",
         "note": "Author figure."
       }
+    ],
+    "relatedIds": [
+      "depth-pro-2"
     ]
   },
   {
@@ -91173,6 +91186,1645 @@
     "relatedIds": [
       "agent-as-policy",
       "unicraft-robot-use"
+    ]
+  },
+  {
+    "id": "depth-pro-2",
+    "name": "Depth Pro 2",
+    "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "A shared network predicts native-resolution metric depth from a single RGB image, a monocular video or a live stream. The model family trades speed for boundary detail and temporal stability.",
+    "institution": "Apple",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26603",
+      "project": "https://apple-aiml-research.github.io/ml-depth-pro-2/",
+      "code": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+      "weights": "https://huggingface.co/apple/DepthPro2",
+      "Focal-length weights": "https://huggingface.co/apple/DepthPro2-focal",
+      "Core ML exports": "https://huggingface.co/apple/DepthPro2-coreml",
+      "Source license": "https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/LICENSE",
+      "Model license": "https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/LICENSE_MODEL"
+    },
+    "release": {
+      "code": "Available — image, video and live-stream inference, plus Core ML export.",
+      "weights": "Available — S, B, L, H+, shared focal-length estimator and separately packaged Core ML exports.",
+      "data": "Paper names and quantifies 19 components; Apple’s internal data and a merged training release were not verified.",
+      "license": "Source under Apple Sample Code License. Model terms restrict use to non-commercial scientific research and academic development.",
+      "notes": "PyTorch source runs the released model family. The repository does not ship the authors’ training or benchmark-evaluation implementation."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26603v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      },
+      {
+        "url": "https://apple-aiml-research.github.io/ml-depth-pro-2/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/html/2611.26603v1#A1.SS1",
+        "label": "Appendix A, training data mixture and hardware",
+        "fields": [
+          "model.trainingData",
+          "model.trainingHardware"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/apple/DepthPro2",
+        "label": "Apple variant and focal model index",
+        "fields": [
+          "links",
+          "release.weights",
+          "model.modelSize"
+        ]
+      },
+      {
+        "url": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+        "label": "Apple source, streaming modes and scope",
+        "fields": [
+          "links",
+          "release.code",
+          "release.notes",
+          "model.inference"
+        ]
+      },
+      {
+        "url": "https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/LICENSE",
+        "label": "Source license file",
+        "fields": [
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/LICENSE_MODEL",
+        "label": "Apple model terms",
+        "fields": [
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "Inferred metres do not imply measured depth or calibrated out-of-domain operation.",
+      "Check terms and deployment mode before using the model on a robot. The cited B200 throughput does not describe end-to-end robot latency."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Native-resolution metric monocular image and video depth",
+      "baseModel": "DINOv3-initialized multi-view transformer with interleaved within/across-frame attention and a DPT decoder.",
+      "modelSize": "S 24M; B 97M; L 334M; H+ 872M. Shared focal estimator: 23.5M, separate from depth model counts.",
+      "inputs": "One RGB image or a temporal RGB sequence; focal length or horizontal field of view can be provided or estimated.",
+      "outputs": "Dense metric camera-view depth in metres at source size. Decoder predicts focal-normalized inverse depth, then focal length restores metric depth.",
+      "trainingMethod": "Joint image/video supervised native-resolution token-budget training, with un-interpolated depth targets and intrinsics-aware metric supervision.",
+      "trainingData": "19 mixed synthetic and real datasets in Appendix A Table 7, including internal Apple captures/renderings and public sources such as Dynamic Replica, BEDLAM and TartanAir V2.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Paper trains variants for 100K steps on 128 NVIDIA B200 GPUs.",
+      "inference": "Paper reports 1080p streaming S at 53 FPS and H+ at 8 FPS on one NVIDIA B200. Buffered streaming can use future frames; unbuffered uses past/current frames. Exports have separate hardware and window constraints.",
+      "evaluation": "Paper evaluates zero-shot metric depth, boundary F1 and temporal jitter under separately described image and video protocols. Examples include Sintel, Spring and DyDToF."
+    },
+    "relatedIds": [
+      "depth-pro",
+      "velodepth",
+      "moge-3",
+      "infinidepth",
+      "dydtof"
+    ]
+  },
+  {
+    "id": "moge-3",
+    "name": "MoGe-3",
+    "title": "MoGe-3: Fine-Detail Monocular Geometry Estimation with Self-Guided Sparse Volumetric Refinement",
+    "date": "2026-07-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Predicts metric point maps from one RGB image, then refines thin structures and local depth discontinuities in a sparse voxel shell.",
+    "institution": "Microsoft Research and Tsinghua University",
+    "venue": "NeurIPS 2026",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2607.17967",
+      "project": "https://qft-333.github.io/moge3page/",
+      "code": "https://github.com/microsoft/MoGe",
+      "weights": "https://huggingface.co/Ruicheng/moge-3-vitg",
+      "ViT-L weights": "https://huggingface.co/Ruicheng/moge-3-vitl",
+      "data": "https://huggingface.co/datasets/Ruicheng/monocular-geometry-evaluation"
+    },
+    "release": {
+      "code": "Available — official MoGe v3 inference and evaluation paths.",
+      "weights": "Available — ViT-G and ViT-L checkpoint cards.",
+      "data": "Named training sources; processed common evaluation archive is public.",
+      "license": "MIT repository with bundled third-party exceptions; official ViT-G checkpoint card states MIT. Check individual files and dependency terms.",
+      "notes": "Use the v3 class and a v3 checkpoint; v1 and v2 are separate models."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2607.17967v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      },
+      {
+        "url": "https://qft-333.github.io/moge3page/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/microsoft/MoGe",
+        "label": "Official implementation and checkpoint matrix",
+        "fields": [
+          "links",
+          "release.code",
+          "model.modelSize"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Ruicheng/moge-3-vitg",
+        "label": "ViT-G weights and license card",
+        "fields": [
+          "release.weights",
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Ruicheng/moge-3-vitl",
+        "label": "ViT-L weights",
+        "fields": [
+          "release.weights"
+        ]
+      },
+      {
+        "url": "https://qft-333.github.io/moge3page/",
+        "label": "Author project and acceptance label",
+        "fields": [
+          "venue",
+          "model"
+        ]
+      }
+    ],
+    "caveats": [
+      "Metric 3D and normals are inferred from RGB; no physical depth stream or manipulation policy is provided."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Monocular metric geometry",
+      "baseModel": "Base point-map estimator plus Self-Guided Sparse 3D Refinement (SSR).",
+      "modelSize": "Released ViT-G 1.25B and ViT-L 370M per official repository.",
+      "inputs": "One RGB image.",
+      "outputs": "Metric camera-frame point map, depth, surface normals and predicted camera geometry.",
+      "trainingMethod": "Lift coarse points and 2D features into a sparse voxel shell and train sparse 3D residual refinement.",
+      "trainingData": "Mixed geometry supervision; source and training details are described in the paper.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Iterative sparse voxel refinement, with successive re-voxelization of the current point-map estimate.",
+      "evaluation": "Relative and metric geometry, boundary F1 and local geometry evaluated separately on held-out samples with close object and thin-structure examples."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "infinidepth"
+    ]
+  },
+  {
+    "id": "foundationgeo",
+    "name": "FoundationGeo",
+    "title": "FoundationGeo: Learning Spatial Pixel-Wise Fields for Monocular Metric Geometry",
+    "date": "2026-07-13",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Learns high-detail relative point geometry, then predicts spatially varying metric scale and ray corrections to recover a camera-frame metric point map.",
+    "institution": "University of Hong Kong",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2607.11588",
+      "project": "https://mx-liu6.github.io/FoundationGeo-web/",
+      "code": "https://github.com/mx-liu6/FoundationGeo",
+      "weights": "https://huggingface.co/mxliu-hku/FoundationGeo-1.1",
+      "Relative base weights": "https://huggingface.co/mxliu-hku/FoundationGeo-Base-1.1"
+    },
+    "release": {
+      "code": "Available — author repository includes inference, training and evaluation entry points.",
+      "weights": "Available — official FoundationGeo 1.1 weights.",
+      "data": "Public evaluation mirror linked; complete mixed training corpus not verified.",
+      "license": "MIT source and FoundationGeo 1.1 model card. Dataset and DINOv3 terms are independent.",
+      "notes": "Repository checkpoint is version 1.1; use the author’s variant guidance."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2607.11588v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      },
+      {
+        "url": "https://mx-liu6.github.io/FoundationGeo-web/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/mx-liu6/FoundationGeo",
+        "label": "Official inference, train and evaluation code",
+        "fields": [
+          "links",
+          "release.code",
+          "release.data"
+        ]
+      },
+      {
+        "url": "https://github.com/mx-liu6/FoundationGeo/blob/main/LICENSE",
+        "label": "Source license",
+        "fields": [
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/mxliu-hku/FoundationGeo-1.1",
+        "label": "Version 1.1 weight card",
+        "fields": [
+          "release.weights",
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "Training focal coverage is a demonstrated failure axis; assess downstream geometry under the target lens."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Monocular metric 3D geometry",
+      "baseModel": "DINOv3-initialized relative geometry backbone; learned scale and ray residual fields.",
+      "modelSize": "Not reported",
+      "inputs": "One RGB image.",
+      "outputs": "Metric point map with pixel-aligned depths, rays and a predicted validity mask.",
+      "trainingMethod": "Relative geometry supervision followed by metric point-wise calibration; wider focal coverage synthesized separately.",
+      "trainingData": "Paper reports a 10.2M-sample stage-1 mix and a Blender renderer for under-covered intrinsic regimes in the metric phase.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "One forward pass with spatial scale and ray correction. Model predicts depth, not a calibrated sensor measurement.",
+      "evaluation": "Seven zero-shot depth benchmarks span indoor, outdoor and synthetic conditions. Paper separately measures focal-length distribution shift."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "moge-3"
+    ]
+  },
+  {
+    "id": "infinidepth",
+    "name": "InfiniDepth",
+    "title": "InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields",
+    "date": "2026-01-06",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "An implicit decoder queries depth continuously. RGB-only decoding and optional sensor-guided metric reconstruction are separate operating modes.",
+    "institution": "Zhejiang University and Li Auto",
+    "venue": "CVPR 2026",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.03252",
+      "project": "https://zju3dv.github.io/InfiniDepth/",
+      "code": "https://github.com/zju3dv/InfiniDepth",
+      "weights": "https://huggingface.co/ritianyu/InfiniDepth/tree/main"
+    },
+    "release": {
+      "code": "Available — author inference, training and evaluation source.",
+      "weights": "Available — linked relative-depth, sensor-guided and Gaussian checkpoints.",
+      "data": "Synth4K benchmark protocol and files for local evaluation are documented; a stand-alone complete Synth4K download was not verified.",
+      "license": "Source uses the Project Registration License v1.0. Weight bundle and dependencies should be checked independently.",
+      "notes": "The author CLI uses a separate MoGe-2 checkpoint to recover metric scale for RGB-only geometry exports."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2601.03252v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      },
+      {
+        "url": "https://zju3dv.github.io/InfiniDepth/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/zju3dv/InfiniDepth",
+        "label": "Author checkpoints and mode-specific CLI instructions",
+        "fields": [
+          "links",
+          "release.code",
+          "release.weights",
+          "model.inputs",
+          "model.inference"
+        ]
+      },
+      {
+        "url": "https://github.com/zju3dv/InfiniDepth/blob/main/LICENSE",
+        "label": "Actual source registration license",
+        "fields": [
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://github.com/zju3dv/InfiniDepth/blob/main/INSTALL.md",
+        "label": "Official model zoo and checkpoint combinations",
+        "fields": [
+          "links",
+          "release.weights",
+          "model.inference"
+        ]
+      }
+    ],
+    "caveats": [
+      "A continuous RGB-only result does not provide measured range. The included sensor path takes actual depth input."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Continuous implicit depth and sensor augmentation",
+      "baseModel": "Multiscale image features, local implicit decoder and optional Gaussian head.",
+      "modelSize": "Not reported",
+      "inputs": "RGB image and continuous spatial coordinates; optional observed depth in the separately trained sensor variant.",
+      "outputs": "Depth query at arbitrary coordinates, optional metric depth augmentation and 3D Gaussian export.",
+      "trainingMethod": "Train an implicit local query decoder and optional heads with densely supervised samples and depth-sensor priors per variant.",
+      "trainingData": "Paper appendix describes RGB-only and sensor depth sources; the Synth4K test set is a separate evaluation resource.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "The arbitrary-resolution query trades sample count against runtime. Optional sensor or external monocular scale anchors differ by mode.",
+      "evaluation": "Relative depth evaluated on Synth4K and real images; metric sensor augmentation and large viewpoint changes use separately stated protocols."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "moge-3"
+    ]
+  },
+  {
+    "id": "velodepth",
+    "name": "VeloDepth",
+    "title": "Video Depth Propagation",
+    "date": "2025-12-11",
+    "year": 2025,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "An online propagation model reuses earlier metric-depth features, avoiding repeated heavy inference on every video frame.",
+    "institution": "ETH Zürich and Toyota Motor Europe",
+    "venue": "3DV 2026",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.10725",
+      "project": "https://lpiccinelli-eth.github.io/pub/velodepth/",
+      "code": "https://github.com/lpiccinelli-eth/velodepth",
+      "weights": "https://huggingface.co/lpiccinelli/velodepth"
+    },
+    "release": {
+      "code": "Available — PyTorch inference implementation.",
+      "weights": "Available — author release with UniK3D keyframe model.",
+      "data": "Paper lists training and evaluation sets; no bundled complete training corpus verified.",
+      "license": "CC BY-NC-SA 4.0 in the author source LICENSE; check checkpoint and base model terms separately.",
+      "notes": "Current published release propagates UniK3D estimates."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2512.10725v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      },
+      {
+        "url": "https://lpiccinelli-eth.github.io/pub/velodepth/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/lpiccinelli-eth/velodepth",
+        "label": "Official implementation and released base model choice",
+        "fields": [
+          "links",
+          "release.code",
+          "model.baseModel"
+        ]
+      },
+      {
+        "url": "https://github.com/lpiccinelli-eth/velodepth/blob/main/LICENSE",
+        "label": "Source license",
+        "fields": [
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/lpiccinelli/velodepth",
+        "label": "Official checkpoint repository",
+        "fields": [
+          "release.weights"
+        ]
+      }
+    ],
+    "caveats": [
+      "The depth scale follows the learned keyframe estimator."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Causal monocular video depth",
+      "baseModel": "UniK3D keyframe estimator with recurrent flow-based learned propagation.",
+      "modelSize": "Not reported",
+      "inputs": "Online sequence of RGB frames and persistent previous depth/features.",
+      "outputs": "Dense depth per frame and propagated hidden features.",
+      "trainingMethod": "Pretrain depth from the base model; learn spatiotemporal residuals and feature propagation from video supervision.",
+      "trainingData": "Paper describes training clips and public benchmark splits in training details.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Keyframe inference is separate from the faster update path; reported FPS depends on the keyframe schedule and GPU.",
+      "evaluation": "Zero-shot tested across real and synthetic video depth domains with depth error and temporal consistency."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "dydtof"
+    ]
+  },
+  {
+    "id": "em-vit",
+    "name": "EM-ViT",
+    "title": "Adapting Monocular Depth Estimation in Novel Scenes through Disparity Refinement and Robot Ego-Motion",
+    "date": "2026-11-11",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Adapts a frozen monocular depth prior to metric scale while a mobile robot explores, using sparse LiDAR and optional ego-motion supervision.",
+    "institution": "University of California, Riverside and NASA JPL",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Point cloud"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.14958"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper evidence is available; public code, weights and paired processed corpus were not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.14958v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      }
+    ],
+    "caveats": [
+      "RGB-only forward inference after adaptation and the sensing needed to reach that state are separate."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Online metric depth adaptation",
+      "baseModel": "Frozen Depth Anything V2 prior and lightweight virtual-stereo adaptation heads.",
+      "modelSize": "Not reported",
+      "inputs": "RGB and focal length; sparse LiDAR and optionally ego-motion provide online supervision during operation.",
+      "outputs": "Dense metric depth from refined disparity and a learned effective baseline.",
+      "trainingMethod": "Online lightweight training from sparse measured depth, optional temporal photometric supervision and structural gradients.",
+      "trainingData": "Onboard observations from the current scene provide adaptation supervision; includes mobile-robot and public sequences.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Individual-frame predictions reuse the scene-adapted lightweight heads rather than trusting metric scale from the frozen prior.",
+      "evaluation": "KITTI, CitrusFarm, Perseverance Navcam and local robot environments. Sparse-beam ablations change available supervision."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "depth-anything-3"
+    ]
+  },
+  {
+    "id": "hdit-stereo",
+    "name": "HDiT-Stereo",
+    "title": "Do Deep Stereo Models Learn Shape Priors?",
+    "date": "2026-11-18",
+    "year": 2026,
+    "collections": [
+      "benchmark",
+      "policy"
+    ],
+    "categories": [
+      "supporting-resources",
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Controlled stereo experiments isolate shape priors and weak boundary evidence. A conditional generator jointly models disparity and object boundaries.",
+    "institution": "Harvard University",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.25113"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and figures are public. Implementation, weights and downloadable dataset were not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.25113v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection",
+          "model"
+        ]
+      }
+    ],
+    "caveats": [
+      "Synthetic planar shapes isolate a failure mechanism; results do not establish general scene performance."
+    ],
+    "verified": "2026-11-22",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Texture similarity stress test",
+        "Depth similarity stress test",
+        "Contour recovery"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Disparity error and boundary localization metrics.",
+      "robots": "Not applicable",
+      "sensors": "Rendered stereo color pairs, disparity, object support and amodal masks.",
+      "dataCollection": "Procedurally vary polygon shape, slant, color, texture and cue similarity.",
+      "data": "Dataset described by the paper; download not verified.",
+      "protocol": "Tests dependence on local image evidence and learned global shape priors under controlled shifts.",
+      "baselines": "RAFT-Stereo, Selective-IGEV, MonSter and DEFOM-Stereo under zero-shot, fine-tuning and scratch variants."
+    },
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Generative stereo disparity and boundary estimation",
+      "baseModel": "Conditional HDiT with DINOv2 alongside learned photometric correspondence features.",
+      "modelSize": "Not reported",
+      "inputs": "Rectified synthetic stereo RGB images.",
+      "outputs": "Dense disparity and an unsigned object-boundary distance field on the left-view grid; repeated samples give an uncertainty cue.",
+      "trainingMethod": "Joint diffusion over disparity and boundary labels, evaluated against trained or fine-tuned discriminative stereo methods.",
+      "trainingData": "Paper reports 25,000 synthetic training images with planar slanted polygons and controlled appearance, boundary and depth cues.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Not reported",
+      "evaluation": "Controlled boundary error and disparity evaluations under weak local stereo cues; shape regularity is measured separately."
+    },
+    "relatedIds": [
+      "s2m2",
+      "foundationstereo",
+      "nbs"
+    ],
+    "benchmarkName": "Stereo Shape Priors · Controlled Polygons"
+  },
+  {
+    "id": "dfd-gs",
+    "name": "DfD-GS",
+    "title": "DfD-GS: Defocus Image Prior for Metric-Scale Single-View Depth Estimation and View Synthesis",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "geometry-models",
+      "rgbd-3d"
+    ],
+    "resourceType": "model",
+    "summary": "Uses optical defocus as a metric cue for depth and Gaussian geometry from two images of the same viewpoint.",
+    "institution": "Keio University and University of Stuttgart",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26072"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and examples available; executable release was not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26072v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "model"
+        ]
+      }
+    ],
+    "caveats": [
+      "Paired focus settings differ from stereo, time-of-flight and ordinary monocular depth models."
+    ],
+    "verified": "2026-11-22",
+    "model": {
+      "role": "Geometry perception model",
+      "family": "Single-view depth-from-defocus and Gaussian reconstruction",
+      "baseModel": "Defocus-conditioned U-Net plus Gaussian reconstruction pipeline.",
+      "modelSize": "Not reported",
+      "inputs": "All-in-focus and defocused images from the same view, plus known defocus strength.",
+      "outputs": "A metric-scale depth estimate and 3D Gaussians suitable for novel views.",
+      "trainingMethod": "Predict defocus-aware disparity offsets, then use depth for metric Gaussian reconstruction.",
+      "trainingData": "Paper describes synthetic defocus generation and the experimental protocol.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "inference": "Requires a defocus pair and defocus strength. Single viewpoint does not imply single-image RGB.",
+      "evaluation": "Booster, Middlebury and WildRGB-D depth and novel-view experiments; input-generation conditions are described per dataset."
+    },
+    "relatedIds": [
+      "booster",
+      "infinidepth"
+    ]
+  },
+  {
+    "id": "dimed",
+    "name": "DIMED",
+    "title": "What the Averages Hide: Monocular Metric Depth Models Still Fail in Everyday Scenes, Mostly on Scale",
+    "date": "2026-11-16",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "Diagnoses metric monocular depth failures by separating global scale errors from shape errors on individual images.",
+    "institution": "Antigravity Tech / Insta360 and NTU",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.20518",
+      "project": "https://antigravity-tech.github.io/DIMED/",
+      "code": "https://github.com/antigravity-tech/DIMED",
+      "data": "https://huggingface.co/datasets/hljiang/DIMED"
+    },
+    "release": {
+      "code": "Available — evaluation adapters and per-image recomputation scripts.",
+      "weights": "Not applicable",
+      "data": "Available — published TUM-Family, TUM-Ref and model evaluation results.",
+      "license": "MIT source; CC BY 4.0 listed for published DIMED artifacts. Parent datasets retain their own terms.",
+      "notes": "The published TUM release is distinct from the broader benchmark suite and from HAMMER examples."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.20518v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://antigravity-tech.github.io/DIMED/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/antigravity-tech/DIMED",
+        "label": "Official adapters",
+        "fields": [
+          "links",
+          "release.code"
+        ]
+      },
+      {
+        "url": "https://github.com/antigravity-tech/DIMED/blob/main/LICENSE",
+        "label": "Repository license",
+        "fields": [
+          "release.license"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/hljiang/DIMED",
+        "label": "Public TUM data payload, per-image results and license",
+        "fields": [
+          "benchmark.data",
+          "release.data",
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "Reference depth is not an input stream for benchmarked monocular models."
+    ],
+    "verified": "2026-11-22",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Scale failure diagnosis",
+        "Model comparison with and without known intrinsics",
+        "Matched background and texture analysis"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Per-image metric and aligned δ₁, failure rate, scale bias/dispersion and shared failure.",
+      "robots": "Not applicable",
+      "sensors": "Monocular RGB inference; synchronized sensor depth kept as an evaluation reference.",
+      "dataCollection": "Process calibrated TUM RGB-D sequences, with separate HAMMER and six other source benchmarks used in paper analyses.",
+      "data": "Public subset: 514 TUM-Family and 215 TUM-Ref images; also publishes per-image result files.",
+      "protocol": "Paper examines 11 model architectures under intrinsics-known and estimated conditions where supported, with per-image scale alignment and model-shared failures.",
+      "baselines": "Paper lists 11 architectures including MoGe, DA3Metric, FoundationGeo and UniK3D."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "foundationgeo",
+      "moge-3"
+    ]
+  },
+  {
+    "id": "dydtof",
+    "name": "DyDToF",
+    "title": "Consistent Direct Time-of-Flight Video Depth Super-Resolution",
+    "date": "2022-11-16",
+    "year": 2022,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "dataset",
+    "summary": "Rendered dynamic video with synthetic direct time-of-flight and dense reference depth supports sensor upsampling and temporal depth evaluation.",
+    "institution": "Meta Reality Labs",
+    "venue": "CVPR 2023",
+    "modalities": [
+      "RGB",
+      "Depth"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2211.08658",
+      "project": "https://zhsun0357.github.io/consistent_dtof_video/",
+      "code": "https://github.com/facebookresearch/DVSR",
+      "data": "https://drive.google.com/drive/folders/19MT7dhJaMkVd6y5QHywWqjZRNN08-XPU",
+      "weights": "https://github.com/facebookresearch/DVSR/tree/main/chkpts"
+    },
+    "release": {
+      "code": "Available — author DVSR code and rendering/processing instructions.",
+      "weights": "Available — official DVSR checkpoint linked in upstream README.",
+      "data": "Available — DyDToF release folder linked upstream; vendor real dToF raw data is excluded.",
+      "license": "CC BY-NC 4.0 in DVSR repository LICENSE; inspect individual archive terms separately.",
+      "notes": "Paper’s dToF simulation input and the separately tested RGB-only metric-depth evaluation are different protocols."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2211.08658v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Sun_Consistent_Direct_Time-of-Flight_Video_Depth_Super-Resolution_CVPR_2023_paper.html",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/facebookresearch/DVSR",
+        "label": "Author data release and archive contents",
+        "fields": [
+          "benchmark.data",
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/facebookresearch/DVSR/blob/main/LICENSE",
+        "label": "Source licence",
+        "fields": [
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "The released geometry is rendered, not physical depth capture. The original paper uses some vendor sensor data only in private experiments."
+    ],
+    "verified": "2026-11-22",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Dynamic depth super-resolution",
+        "Temporal depth consistency",
+        "Boundary preservation"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Depth error and temporal consistency, with evaluation windows scoped by paper.",
+      "robots": "Not applicable",
+      "sensors": "Synthetic RGB, rendered dense depth, normal and albedo; calibrated camera trajectories.",
+      "dataCollection": "Render dynamic objects and moving cameras with clean geometry; project physically modelled low-resolution dToF measurements for DVSR experiments.",
+      "data": "100 clips and 45,000 frames, per author repository. RGB, depth, albedo, normals and camera trajectory provided per clip.",
+      "protocol": "Multi-frame direct-ToF super-resolution in the original work; later monocular methods use RGB-only frames and held-out dense reference depth.",
+      "baselines": "DVSR and contemporary RGB-guided temporal depth super-resolution baselines."
+    },
+    "relatedIds": [
+      "depth-pro-2",
+      "velodepth"
+    ]
+  },
+  {
+    "id": "tipdex-vtla",
+    "name": "TipDex-VTLA",
+    "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il",
+      "tactile-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Forecasts touch and estimates action sensitivity to lighting, then gates corrections on unexecuted actions when observed contact disagrees with the forecast.",
+    "institution": "Wuhan University and Wuhan Huaweike Intelligent Technology",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Tactile",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "RealMan RM75",
+      "Inspire RH56F2-E2-T1"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.25683"
+    },
+    "release": {
+      "code": "Announced by authors; official source not verified",
+      "weights": "Not verified",
+      "data": "Announced by authors; downloadable rollout set not verified",
+      "license": "Not verified",
+      "notes": "Code and demonstration availability were announced in the paper."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.25683v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      }
+    ],
+    "caveats": [
+      "RealSense devices supply RGB in the described policy configuration. Their availability does not establish measured depth input."
+    ],
+    "verified": "2026-11-22",
+    "policy": {
+      "family": "Vision–tactile–language–action",
+      "baseModel": "Slow/fast action model, VASE reliability head and TACE correction module.",
+      "modelSize": "Not reported",
+      "inputs": "Overhead and wrist RGB, joint feedback, tactile arrays and instruction. Each hand has 364 taxels across eight arrays.",
+      "outputs": "Action chunks with bounded feature corrections for unexecuted actions.",
+      "trainingMethod": "Train action backbone and tactile forecasting, then freeze those modules and train visual reliability and correction gates on paired lighting perturbations.",
+      "trainingData": "300 physical demonstrations, 200 for the backbone and 100 for Stage 2, whose trajectories are paired with perturbed-illumination copies.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Eight NVIDIA A100 GPUs in each training stage.",
+      "controlRate": "Tactile sampling at 30 Hz; this is not the action dispatch rate.",
+      "evaluation": "Egg transfer, grape picking, tissue and bean manipulation plus UniVTAC simulation. Real trials: mean full-task success 87.5% under normal lighting and 73.8% on the paper’s unseen-light condition."
+    },
+    "relatedIds": [
+      "three-d-touch",
+      "cora-vtla"
+    ]
+  },
+  {
+    "id": "tma",
+    "name": "TMA",
+    "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+    "date": "2026-11-13",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "tactile-il",
+      "visual-precision-rl"
+    ],
+    "resourceType": "policy",
+    "summary": "Transfers tactile-driven round-doorknob manipulation from simulation to a humanoid by jointly coordinating hand motion and whole-body stabilization.",
+    "institution": "Amazon, Rice University and collaborating universities",
+    "venue": "Preprint",
+    "modalities": [
+      "Tactile",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Unitree G1 Edu",
+      "BrainCo Revo2"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.18976",
+      "project": "https://humanoid-tma.github.io/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Author project shows videos; implementation and weights were not identified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.18976v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      },
+      {
+        "url": "https://humanoid-tma.github.io/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Adaptation is through tactile-conditioned latent inference during operation; the deployed system does not update model weights."
+    ],
+    "verified": "2026-11-22",
+    "policy": {
+      "family": "Sim-to-real tactile reinforcement learning",
+      "baseModel": "Privileged PPO teacher, tactile-history adaptation encoder and frozen general locomotion controller.",
+      "modelSize": "Not reported",
+      "inputs": "Deployable joint/body observations and multi-finger tactile contact histories. Door properties used by the training teacher are privileged.",
+      "outputs": "Upper-body joint targets for arm and hand; separate balance controller stabilizes leg and waist joints.",
+      "trainingMethod": "Train a clean-observation oracle, fine-tune with observation noise, then fit a temporal adapter to latent privileged feedback.",
+      "trainingData": "Procedurally randomized articulated door simulation, with fixed real-world no-fine-tuning evaluation.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Simulation physics 200 Hz and policy control 50 Hz; hardware timing follows the paper setup.",
+      "evaluation": "Zero-shot real transfer evaluated on four commercial round doorknobs, compared with RMA and reactive tactile baselines."
+    },
+    "relatedIds": [
+      "three-d-touch",
+      "tipdex-vtla"
+    ]
+  },
+  {
+    "id": "waco",
+    "name": "WACO",
+    "title": "Towards Pose-Robust Few-Shot Vision-Language-Action Models",
+    "date": "2026-11-18",
+    "year": 2026,
+    "collections": [
+      "benchmark",
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "generalist-foundation",
+      "robustness-evaluation"
+    ],
+    "resourceType": "policy",
+    "summary": "Canonicalizes camera/base shifts before passing observations to the manipulation VLA. LIBERO-PoseShift applies controlled shifts to test robustness.",
+    "institution": "Shandong University and Shenzhen Loop Area Institute",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Depth",
+      "Proprioception",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "UR5e"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.24360",
+      "project": "https://peacelwh.github.io/WACO/",
+      "code": "https://github.com/peacelwh/WACO",
+      "weights": "https://huggingface.co/Bluexxx/WACO-pi05-LIBERO",
+      "data": "https://huggingface.co/datasets/Bluexxx/LIBERO-PoseShift"
+    },
+    "release": {
+      "code": "Available — LeRobot plugin, runtime canonicalizer and simulator perturbations.",
+      "weights": "Available — one author checkpoint for LIBERO-Plus camera track.",
+      "data": "Available — LIBERO-PoseShift calibration and training assets.",
+      "license": "Apache-2.0 source and asset card; checkpoint follows Gemma/base-model terms. Derived data preserve upstream licenses.",
+      "notes": "Use the runtime calibration bundle with the released checkpoint; the released settings are narrower than the full paper evaluation."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.24360v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection",
+          "policy"
+        ]
+      },
+      {
+        "url": "https://peacelwh.github.io/WACO/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/peacelwh/WACO",
+        "label": "Official runtime and licensed implementation",
+        "fields": [
+          "release.code",
+          "links"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/Bluexxx/LIBERO-PoseShift",
+        "label": "Published dataset guide and depth provenance",
+        "fields": [
+          "release.data",
+          "release.license",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Bluexxx/WACO-pi05-LIBERO",
+        "label": "Public checkpoint and scoped license",
+        "fields": [
+          "release.weights",
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "Provided depth targets for one training configuration come from DA-V2 and must not be described as sensor measurements.",
+      "LIBERO-Plus camera-track results are narrower than BASE/MIXED protocols."
+    ],
+    "verified": "2026-11-22",
+    "benchmark": {
+      "simulator": "MuJoCo via robosuite and LeRobot",
+      "simulatorVersion": "MuJoCo via robosuite; released LeRobot plugin targets LeRobot 0.6.1.",
+      "taskCount": "Three perturbation tracks. The 1,599-task LIBERO-Plus camera track is a separately reported scope.",
+      "tasks": [
+        "Camera shift",
+        "Base shift",
+        "Joint camera/base shift"
+      ],
+      "taskListScope": "Perturbation families for LIBERO-PoseShift; variation severities and task selections are scoped per paper.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Episode success per perturbation type and severity; separate pose estimation error.",
+      "robots": "UR5e real evaluation; LIBERO simulation",
+      "sensors": "Rendered RGB/depth in simulation, calibrated physical RGB-D for the tabletop hardware arm.",
+      "dataCollection": "Perturbations are scripted at reset. Clean demonstrations and released depth estimates have separately described provenance.",
+      "data": "Benchmark plugin, calibration bundles, and optional training-depth artifact on the author card.",
+      "protocol": "Compare unmodified or fine-tuned VLAs under fixed camera and base perturbation severities.",
+      "baselines": "π0.5 standard few-shot fine-tuning and ablations of the alignment and correction components."
+    },
+    "policy": {
+      "family": "RGB-D pose canonicalization around a VLA",
+      "baseModel": "π0.5 in LeRobot plus world-anchored geometry front-end.",
+      "modelSize": "Not reported",
+      "inputs": "RGB-D and robot state at setup/deployment, nominal RGB-D static scene, robot mesh and instruction.",
+      "outputs": "Canonicalized RGB/state passed to the VLA; predicted action is mapped back to the current robot base frame.",
+      "trainingMethod": "Training-free two-anchor pose estimation and separately evaluated error-aware VLA fine-tuning.",
+      "trainingData": "Few-shot LIBERO demonstrations with nominal camera/base and scripted perturbations. Simulated training assets include separately predicted and scale-aligned DA-V2 depth.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Simulated camera, base and combined perturbation tracks and physical UR5e tests under pose shifts."
+    },
+    "relatedIds": [
+      "interactvla"
+    ],
+    "benchmarkName": "LIBERO-PoseShift",
+    "releaseByCollection": {
+      "benchmark": {
+        "code": "Available — simulator perturbation plugin and benchmark scripts.",
+        "weights": "Not applicable to the benchmark.",
+        "data": "Available — LIBERO-PoseShift calibration and training-depth assets.",
+        "license": "Apache-2.0 source and assets; derived training data preserve upstream terms.",
+        "notes": "Recorded simulated perturbation and separately tested real pose-shift protocols have independent scope."
+      },
+      "policy": {
+        "code": "Available — LeRobot plugin, runtime canonicalizer and simulator perturbations.",
+        "weights": "Available — one author checkpoint for LIBERO-Plus camera track.",
+        "data": "Available — LIBERO-PoseShift calibration and training assets.",
+        "license": "Apache-2.0 source and asset card; checkpoint follows Gemma/base-model terms. Derived data preserve upstream licenses.",
+        "notes": "Use the runtime calibration bundle with the released checkpoint; the released settings are narrower than the full paper evaluation."
+      }
+    }
+  },
+  {
+    "id": "m4m",
+    "name": "M4M",
+    "title": "Learning to Move from and for Manipulation Policies: Spatializing Latent Action Representations for Goal-Pose-Free Mobile Manipulation",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "rgbd-3d",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "Learns where to move before acting by predicting a frozen manipulation policy’s success at unseen stances using calibrated stereo.",
+    "institution": "University of Michigan",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Language",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.25366"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper states that code and videos are intended for the project page. Public repository, checkpoints and data files were not independently verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.25366v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      }
+    ],
+    "caveats": [
+      "Stereo-specific learned geometry is not direct measured depth. The manuscript explicitly leaves physical robot testing to future work."
+    ],
+    "verified": "2026-11-22",
+    "policy": {
+      "family": "Stereo-guided mobile manipulation handoff",
+      "baseModel": "Frozen π0.5 policy plus stereo BEV geometry, a learned stance score and a learned handoff.",
+      "modelSize": "Not reported",
+      "inputs": "Calibrated stereo RGB, language and robot state during manipulation. No measured depth stream is reported for the policy.",
+      "outputs": "Base approach actions and handoff to the frozen action policy.",
+      "trainingMethod": "Distill latent action representations observed at candidate stances and fit a success head using limited outcomes. Learn navigation and handoff around the frozen VLA.",
+      "trainingData": "Simulated training kitchen stances and policy rollouts; evaluate on held-out kitchen layouts.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Eight articulated-object tasks in held-out RoboCasa kitchens, 47.0% mean task success against 26.5% for the strongest paper baseline and 19.2% direct execution."
+    },
+    "relatedIds": [
+      "stereopolicy"
+    ]
+  },
+  {
+    "id": "phydex",
+    "name": "PhyDEX",
+    "title": "PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation"
+    ],
+    "resourceType": "benchmark",
+    "summary": "Tests extrinsic dexterity through controlled object throwing and physical-property shifts, with separate simulation and small real-world validations.",
+    "institution": "University of Arkansas and collaborating universities",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception",
+      "Force/Torque",
+      "Language"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "UR10e and Robotiq 2F-85",
+      "Humanoid simulation"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26565"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "The paper describes the dataset and generator; the listed project page did not resolve during verification, and code or download was not confirmed."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26565v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      }
+    ],
+    "caveats": [
+      "Generator-visible point clouds and physical parameters are not general policy observations.",
+      "Restrict comparisons to the same embodiment and protocol, particularly for real-world trials."
+    ],
+    "verified": "2026-11-22",
+    "benchmark": {
+      "simulator": "NVIDIA Isaac Sim",
+      "simulatorVersion": "Not reported",
+      "taskCount": "9 task types and 100 scenes; physical validation is separate.",
+      "tasks": [
+        "Uniform object with static, multiple or moving destination",
+        "Irregular object with static, multiple or moving destination",
+        "Dynamic mass with static, multiple or moving destination"
+      ],
+      "taskListScope": "Three object families and three destination families form nine task types.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Task success, staged failure cases and physical-parameter-ablation results.",
+      "robots": "Isaac Sim arm configurations and separate physical UR10e with Robotiq 2F-85",
+      "sensors": "Robot cameras and state; wrist F/T exists on the real apparatus. Ground-truth physical properties and point clouds are generator/ablation inputs.",
+      "dataCollection": "Automatically combine grasp generation, cuRobo planning and throw optimization under randomized mass/friction in Isaac Sim.",
+      "data": "35,357 simulated episodes (143.2 hours), nine tasks and 100 scenes reported. Separate real tests use three externally identical cubes.",
+      "protocol": "Stratify extrinsic throwing by object mass distribution and destination geometry or motion. Physical properties provided to a separate ablation.",
+      "baselines": "GR00T N1.7, DynamicVLA and ForceVLA on the stated paper setting."
+    }
+  },
+  {
+    "id": "agentrobocritic",
+    "name": "AgentRoboCritic",
+    "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+    "date": "2026-11-19",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "Audits direct low-level robot control at the action level. A critic compares the resulting scene to the controller’s stated intent and labels execution failures.",
+    "institution": "Carnegie Mellon University and Bosch Research",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Language",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26613",
+      "project": "https://adu2021.github.io/blog/AgentRoboCritic/",
+      "code": "https://github.com/cxcscmu/AgentRoboCritic",
+      "data": "https://huggingface.co/datasets/cx-cmu/AgentRoboCritic-Bench",
+      "Training dataset": "https://huggingface.co/datasets/cx-cmu/AgentRoboCritic-Dataset",
+      "weights": "https://huggingface.co/cx-cmu/AgentRoboCritic-Muse-Glimmer-30B"
+    },
+    "release": {
+      "code": "Available — official critic evaluation scripts.",
+      "weights": "Available — fine-tuned Muse-Glimmer-30B critic; not the acting controller.",
+      "data": "Available — human-rated 400-action benchmark and separate critic dataset.",
+      "license": "MIT code, CC BY 4.0 datasets, Apache-2.0 model card subject to base-model usage terms.",
+      "notes": "Training, validation and human-rated testing are separate and episode-disjoint."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26613v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://adu2021.github.io/blog/AgentRoboCritic/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/cxcscmu/AgentRoboCritic",
+        "label": "Author implementation",
+        "fields": [
+          "release.code",
+          "links"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/cx-cmu/AgentRoboCritic-Dataset",
+        "label": "Train and validation payload and label source",
+        "fields": [
+          "release.data",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/cx-cmu/AgentRoboCritic-Bench",
+        "label": "400 human-labeled action test set",
+        "fields": [
+          "release.data",
+          "benchmark.data"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/cx-cmu/AgentRoboCritic-Muse-Glimmer-30B",
+        "label": "Critic weights and upstream terms",
+        "fields": [
+          "release.weights",
+          "release.license"
+        ]
+      }
+    ],
+    "caveats": [
+      "Critic score is action-label accuracy and cannot be substituted for policy task success."
+    ],
+    "verified": "2026-11-22",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "Supporting dataset or perception evaluation",
+      "tasks": [
+        "Local intent attainment",
+        "Action failure classification",
+        "Recovery analysis"
+      ],
+      "taskListScope": "Listed uses of the resource, with no closed-loop robot task count.",
+      "capabilities": "Training and evaluation data",
+      "metrics": "Intent success and failure-mode classification against human annotations.",
+      "robots": "Multi-benchmark robot setups",
+      "sensors": "Multi-view action clips, command, task context and explicit local intent. Controller observations vary by environment.",
+      "dataCollection": "Collect agent rollouts on 12 manipulation benchmarks; label achieved/failed actions and causes. Human-rated data are a separate held-out portion.",
+      "data": "12,844 training and 1,548 validation actions in the public critic corpus; 400 separately human-rated actions in AgentRoboCritic-Bench.",
+      "protocol": "Given a local intent and observations around the control command, classify intent attainment and failure mode. Original rollout results evaluate agents separately.",
+      "baselines": "Paper evaluates baseline critic and fine-tuned Muse-Glimmer-30B; controller episode success is a separate result."
+    },
+    "relatedIds": [
+      "robodojo",
+      "reasoning-on-call",
+      "interactvla"
     ]
   }
 ]

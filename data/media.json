@@ -13166,5 +13166,271 @@
       "reviewed": "2026-11-21",
       "sourceSha256": "3fc10c9cf7d22f24e91907db8bc48f14674152aa9a14da3279b50ebab9955ff7"
     }
+  },
+  "depth-pro-2": {
+    "policy": {
+      "path": "/images/catalog/depth-pro-2-policy.webp",
+      "original": "https://arxiv.org/html/2611.26603v1/architecture.png",
+      "page": "https://arxiv.org/html/2611.26603v1",
+      "credit": "Peiyun Hu and coauthors, Apple",
+      "alt": "Depth Pro 2 transformer and DPT decoder with input RGB and output depth sequence",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 827,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "cff062dcd406dc171fe4f6061c5d78dbb12cf8e5facca25b1e59cb3b725adf89"
+    }
+  },
+  "moge-3": {
+    "policy": {
+      "path": "/images/catalog/moge-3-policy.webp",
+      "original": "https://arxiv.org/html/2607.17967v1/architecture.png",
+      "page": "https://arxiv.org/html/2607.17967v1",
+      "credit": "Lingyu Kong and coauthors, Microsoft Research",
+      "alt": "MoGe-3 base geometry estimator and sparse 3D refinement around object boundaries",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1430,
+      "height": 680,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "39b5c2a011584f34bd42f3ee1d12e4fc403b9260b146a60a0ae5a68b05672bcb"
+    }
+  },
+  "foundationgeo": {
+    "policy": {
+      "path": "/images/catalog/foundationgeo-policy.webp",
+      "original": "https://arxiv.org/html/2607.11588v1/Model_Structure.png",
+      "page": "https://arxiv.org/html/2607.11588v1",
+      "credit": "Muxin Liu and coauthors",
+      "alt": "FoundationGeo relative geometry and metric scale and ray calibration fields",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 590,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "1299c675281693979a00c0b97d8eed5c95ff0a7874aff7e051297fbbc05c3238"
+    }
+  },
+  "infinidepth": {
+    "policy": {
+      "path": "/images/catalog/infinidepth-policy.webp",
+      "original": "https://arxiv.org/html/2601.03252v1/pipeline_finalversion.png",
+      "page": "https://arxiv.org/html/2601.03252v1",
+      "credit": "Hao Yu and coauthors",
+      "alt": "InfiniDepth hierarchy of image feature queries and implicit depth decoding",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 987,
+      "height": 241,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "4b40915ff898aeeae9e969e52a2862765856d2db8c1309aa9caed0bf8a60090b"
+    }
+  },
+  "velodepth": {
+    "policy": {
+      "path": "/images/catalog/velodepth-policy.webp",
+      "original": "https://arxiv.org/html/2512.10725v1/VeloDepth_1_overview_v4.png",
+      "page": "https://arxiv.org/html/2512.10725v1",
+      "credit": "Luigi Piccinelli and coauthors",
+      "alt": "VeloDepth keyframe estimation, flow-based propagation and depth correction",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 686,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "f72ab56624483838d085c54bd0755626dcb6474aa7ef0c88eabf6a2b283f07b3"
+    }
+  },
+  "em-vit": {
+    "policy": {
+      "path": "/images/catalog/em-vit-policy.webp",
+      "original": "https://arxiv.org/html/2611.14958v1/figures/egomde_system_overview_nolabel.png",
+      "page": "https://arxiv.org/html/2611.14958v1",
+      "credit": "EM-ViT authors",
+      "alt": "Virtual stereo refinement and effective baseline estimation in EM-ViT",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 710,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "2630e4b46865cf8032bb6da9ecac60170b6f35f95d67ac0993989e76611b3a89"
+    }
+  },
+  "hdit-stereo": {
+    "policy": {
+      "path": "/images/catalog/hdit-stereo-policy.webp",
+      "original": "https://arxiv.org/html/2611.25113v1/figures/model_pipeline_2.png",
+      "page": "https://arxiv.org/html/2611.25113v1",
+      "credit": "Linbo Tang, Aneel Damaraju and Todd Zickler",
+      "alt": "HDiT-Stereo conditional diffusion of disparity and object-boundary fields",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 527,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "298ec3f480231976d8d344a4bfa78ef7da43f5808823b048e791edfafe76ab71"
+    },
+    "benchmark": {
+      "path": "/images/catalog/hdit-stereo-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.25113v1/figures/dataset_controlled_difficulty.png",
+      "page": "https://arxiv.org/html/2611.25113v1",
+      "credit": "Linbo Tang, Aneel Damaraju and Todd Zickler",
+      "alt": "Controlled examples of slanted polygon stereo inputs and their difficulty factors",
+      "kind": "dataset-preview",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 574,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "55b90110fcf16f2346034eed2db94c5df4e93d063d398ab913c43f24507e6e2d"
+    }
+  },
+  "dfd-gs": {
+    "policy": {
+      "path": "/images/catalog/dfd-gs-policy.webp",
+      "original": "https://arxiv.org/html/2611.26072v1/pipeline.png",
+      "page": "https://arxiv.org/html/2611.26072v1",
+      "credit": "Shiori Ueda and coauthors",
+      "alt": "DfD-GS architecture from sharp and defocused views to metric depth and Gaussian geometry",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 863,
+      "height": 276,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "7015ebb5329258c736b3fe72597dfee78e1e7a4925afcf6753f3bc782cfcbaa8"
+    }
+  },
+  "dimed": {
+    "benchmark": {
+      "path": "/images/catalog/dimed-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.20518v1/figA3_hammer_pair.png",
+      "page": "https://arxiv.org/html/2611.20518v1#A8.F15",
+      "credit": "Hualie Jiang and coauthors, Antigravity Tech / Insta360",
+      "alt": "Paired HAMMER table inputs and depth predictions before and after adding objects",
+      "kind": "dataset-preview",
+      "reviewed": "2026-11-22",
+      "width": 1168,
+      "height": 688,
+      "note": "Four image panels of the source figure are arranged in two rows, preserving empty-table and object-added RGB/depth pairs.",
+      "sourceSha256": "0c90a28adf5a08b874aa44129b8d3844b57d5f0ce2dc7da9656c4e93d11bffb7"
+    }
+  },
+  "dydtof": {
+    "benchmark": {
+      "path": "/images/catalog/dydtof-benchmark.webp",
+      "original": "https://arxiv.org/html/2211.08658v1/dataset.png",
+      "page": "https://arxiv.org/html/2211.08658v1",
+      "credit": "Zhanghao Sun and coauthors",
+      "alt": "Synthetic DyDToF RGB and geometric reference channels from the original benchmark",
+      "kind": "dataset-preview",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 462,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "e76cb696314174ee3906fc737096099c89c57dce3e9566570deb75e8145c3e70"
+    }
+  },
+  "tipdex-vtla": {
+    "policy": {
+      "path": "/images/catalog/tipdex-vtla-policy.webp",
+      "original": "https://arxiv.org/html/2611.25683v1/figures/new-method01.png",
+      "page": "https://arxiv.org/html/2611.25683v1",
+      "credit": "Xudi Ge and coauthors",
+      "alt": "TipDex visual reliability and tactile forecast correction architecture",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 735,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "8d2badfab4c4dbf54edb88fded5a8cb830c6a07f9c3fdf037ac6c5b7ebc121dd"
+    }
+  },
+  "tma": {
+    "policy": {
+      "path": "/images/catalog/tma-policy.webp",
+      "original": "https://arxiv.org/html/2611.18976v1/method_overview_v3.png",
+      "page": "https://arxiv.org/html/2611.18976v1",
+      "credit": "Yiting Chen and coauthors",
+      "alt": "TMA upper-body manipulation and tactile adaptation with pretrained balance control",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 866,
+      "height": 244,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "98f61afee08f44cf7afa5d0f77254c39c63a6bc610132db951e65d3e549b023f"
+    }
+  },
+  "phydex": {
+    "benchmark": {
+      "path": "/images/catalog/phydex-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.26565v1/phydex-data-analysis.png",
+      "page": "https://arxiv.org/html/2611.26565v1",
+      "credit": "Hao Vo and coauthors",
+      "alt": "PhyDEX task families and episode breakdown for static and moving destinations",
+      "kind": "dataset-preview",
+      "reviewed": "2026-11-22",
+      "width": 1007,
+      "height": 339,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "21757184e9d75edc755c376908220dbd49ed9aa74f63d2c57e2c3ba9d583bdc5"
+    }
+  },
+  "agentrobocritic": {
+    "benchmark": {
+      "path": "/images/catalog/agentrobocritic-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.26613v1/failure_cases.png",
+      "page": "https://arxiv.org/html/2611.26613v1",
+      "credit": "Yiyang Du and coauthors",
+      "alt": "Six manipulation failure modes shown with before/after robot observations",
+      "kind": "dataset-preview",
+      "reviewed": "2026-11-22",
+      "width": 825,
+      "height": 192,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "34307b5a3fa1011e0306cd7b423f6f4783482e51487c9cf49adbbba007d3d230"
+    }
+  },
+  "waco": {
+    "policy": {
+      "path": "/images/catalog/waco-policy.webp",
+      "original": "https://arxiv.org/html/2611.24360v1/overview.png",
+      "page": "https://arxiv.org/html/2611.24360v1",
+      "credit": "Wenhao Li and coauthors",
+      "alt": "WACO two-anchor alignment and canonicalized input to the frozen VLA",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 825,
+      "height": 296,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "3565695fc2821031038ec3375b3c9113ee50da55e30f7831b5b888f13ef4ad1c"
+    },
+    "benchmark": {
+      "path": "/images/catalog/waco-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.24360v1/bench_grid.png",
+      "page": "https://arxiv.org/html/2611.24360v1",
+      "credit": "Wenhao Li and coauthors",
+      "alt": "LIBERO-PoseShift example perturbations on a kitchen manipulation task",
+      "kind": "dataset-preview",
+      "reviewed": "2026-11-22",
+      "width": 825,
+      "height": 312,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "7a976d6fc0ec371afc7b3ce7a39d46fe56fe0c9104c2640b1ba29292eed28397"
+    }
+  },
+  "m4m": {
+    "policy": {
+      "path": "/images/catalog/m4m-policy.webp",
+      "original": "https://arxiv.org/html/2611.25366v1/figures/overview_arxiv.png",
+      "page": "https://arxiv.org/html/2611.25366v1",
+      "credit": "Siyuan Zheng, Zhong Cao and Henry X. Liu",
+      "alt": "M4M stereo perception, stance scoring and manipulation handoff",
+      "kind": "architecture",
+      "reviewed": "2026-11-22",
+      "width": 1470,
+      "height": 584,
+      "note": "Author figure resized for the atlas; source rights retained.",
+      "sourceSha256": "306242c789885242e672a313942a325bfad194db1f3af0a6fea570db46a31dc6"
+    }
   }
 }

@@ -8,7 +8,7 @@ Depth Anything 3: Recovering the Visual Space from Any Views
 
 **2025-11-13 · Preprint · ByteDance Seed**
 
-**[Paper](https://arxiv.org/abs/2511.10647)** · [Project](https://depth-anything-3.github.io/) · [Code](https://github.com/ByteDance-Seed/Depth-Anything-3) · [Weights](https://huggingface.co/depth-anything/DA3-BASE)
+**[Paper](https://arxiv.org/abs/2511.10647)** · [Project](https://depth-anything-3.github.io/) · [Code](https://github.com/ByteDance-Seed/Depth-Anything-3) · [Weights](https://huggingface.co/depth-anything/DA3-BASE) · [Metric-Large Weights](https://huggingface.co/depth-anything/DA3METRIC-LARGE)
 
 A multi-view geometry model predicts spatial structure from one or more images.
 
@@ -29,16 +29,16 @@ A multi-view geometry model predicts spatial structure from one or more images.
 | Training data and scale | See original paper for dataset scope [1](https://arxiv.org/html/2511.10647v1)  |
 | Training duration | Not reported [1](https://arxiv.org/html/2511.10647v1)  |
 | Training hardware | Not reported [1](https://arxiv.org/html/2511.10647v1)  |
-| Inference setting and runtime | See original paper and official implementation [1](https://arxiv.org/html/2511.10647v1)  |
+| Inference setting and runtime | See original paper and official implementation [1](https://arxiv.org/html/2511.10647v1) [3](https://huggingface.co/depth-anything/DA3METRIC-LARGE)  |
 | Downstream evaluation and scope | Multi-view pose, depth and reconstruction evaluations; potential robot geometry frontend. [1](https://arxiv.org/html/2511.10647v1)  |
 | Observations / modalities | RGB |
 | Evaluation domain |  |
 | Embodiment |  |
 | Release: code | Available — source linked [2](https://github.com/ByteDance-Seed/Depth-Anything-3)  |
-| Release: weights | Available — multiple checkpoints; model-specific terms differ [2](https://github.com/ByteDance-Seed/Depth-Anything-3)  |
+| Release: weights | Available — multiple checkpoints; model-specific terms differ [2](https://github.com/ByteDance-Seed/Depth-Anything-3) [3](https://huggingface.co/depth-anything/DA3METRIC-LARGE)  |
 | Release: data | Not verified [2](https://github.com/ByteDance-Seed/Depth-Anything-3)  |
 | Release: license | Apache-2.0 source; model variants have distinct Apache-2.0 or CC BY-NC 4.0 terms. [2](https://github.com/ByteDance-Seed/Depth-Anything-3)  |
-| Release: notes | Metric behavior is variant specific; DA3Metric requires focal-length rescaling, while relative outputs are not sensor depth. [2](https://github.com/ByteDance-Seed/Depth-Anything-3)  |
+| Release: notes | Metric behavior is variant-specific. Official DA3METRIC-LARGE weights are Apache-2.0 and require focal-length rescaling; relative outputs are not sensor depth. [2](https://github.com/ByteDance-Seed/Depth-Anything-3)  |
 
 **Scope and qualifications**
 
@@ -48,3 +48,4 @@ A multi-view geometry model predicts spatial structure from one or more images.
 
 1. [Author paper and first submission](https://arxiv.org/html/2511.10647v1)
 2. [Official code and license](https://github.com/ByteDance-Seed/Depth-Anything-3)
+3. [Official metric checkpoint differs from the general DA3-BASE card](https://huggingface.co/depth-anything/DA3METRIC-LARGE)

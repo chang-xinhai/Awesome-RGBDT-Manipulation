@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-21",
+  "reviewed": "2026-11-22",
   "sources": [
     {
       "work": "rle-bench",
@@ -5686,6 +5686,101 @@
       "work": "coachsi",
       "kind": "project",
       "url": "https://tlxhlll.github.io/CoachSI/"
+    },
+    {
+      "work": "depth-pro-2",
+      "kind": "project",
+      "url": "https://apple-aiml-research.github.io/ml-depth-pro-2/"
+    },
+    {
+      "work": "depth-pro-2",
+      "kind": "code",
+      "url": "https://github.com/apple-aiml-research/ml-depth-pro-2"
+    },
+    {
+      "work": "moge-3",
+      "kind": "project",
+      "url": "https://qft-333.github.io/moge3page/"
+    },
+    {
+      "work": "moge-3",
+      "kind": "code",
+      "url": "https://github.com/microsoft/MoGe"
+    },
+    {
+      "work": "foundationgeo",
+      "kind": "project",
+      "url": "https://mx-liu6.github.io/FoundationGeo-web/"
+    },
+    {
+      "work": "foundationgeo",
+      "kind": "code",
+      "url": "https://github.com/mx-liu6/FoundationGeo"
+    },
+    {
+      "work": "infinidepth",
+      "kind": "project",
+      "url": "https://zju3dv.github.io/InfiniDepth/"
+    },
+    {
+      "work": "infinidepth",
+      "kind": "code",
+      "url": "https://github.com/zju3dv/InfiniDepth"
+    },
+    {
+      "work": "velodepth",
+      "kind": "project",
+      "url": "https://lpiccinelli-eth.github.io/pub/velodepth/"
+    },
+    {
+      "work": "velodepth",
+      "kind": "code",
+      "url": "https://github.com/lpiccinelli-eth/velodepth"
+    },
+    {
+      "work": "dimed",
+      "kind": "project",
+      "url": "https://antigravity-tech.github.io/DIMED/"
+    },
+    {
+      "work": "dimed",
+      "kind": "code",
+      "url": "https://github.com/antigravity-tech/DIMED"
+    },
+    {
+      "work": "dydtof",
+      "kind": "project",
+      "url": "https://zhsun0357.github.io/consistent_dtof_video/"
+    },
+    {
+      "work": "dydtof",
+      "kind": "code",
+      "url": "https://github.com/facebookresearch/DVSR"
+    },
+    {
+      "work": "tma",
+      "kind": "project",
+      "url": "https://humanoid-tma.github.io/"
+    },
+    {
+      "work": "waco",
+      "kind": "project",
+      "url": "https://peacelwh.github.io/WACO/"
+    },
+    {
+      "work": "waco",
+      "kind": "code",
+      "url": "https://github.com/peacelwh/WACO"
+    },
+    {
+      "work": "agentrobocritic",
+      "kind": "project",
+      "url": "https://adu2021.github.io/blog/AgentRoboCritic/"
+    },
+    {
+      "work": "agentrobocritic",
+      "kind": "code",
+      "url": "https://github.com/cxcscmu/AgentRoboCritic"
     }
   ]
 }
