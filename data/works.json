@@ -3838,7 +3838,8 @@
       "report": "https://www.sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence",
       "weights": "https://huggingface.co/sensenova/sensenova-roborsi-27b-preview",
       "data": "https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log",
-      "board": "https://robodojo-benchmark.com/leaderboard#agent"
+      "board": "https://robodojo-benchmark.com/leaderboard#agent",
+      "dataset-manifest": "https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log/tree/main"
     },
     "policy": {
       "family": "Hybrid",
@@ -3851,14 +3852,14 @@
       "trainingHardware": "Not reported",
       "controlRate": "Not reported",
       "trainingMethod": "Two branches: frozen-model harness revision with retesting, and joint model–harness RSI that updates the Qwen3.8-27B-derived Preview model.",
-      "evaluation": "Official legacy Agent+VLA RoboDojo row (Avg. w/o Open): score 57.10 / success 49.17%, with an asterisk under the November 14 rules. This differs from the earlier author-run GPT-6 Astra harness results and the separate 27B Preview branch. The author reports 92.5% VLA-assisted / 95% direct on LIBERO-Pro for its learned branch, with task scope maintained."
+      "evaluation": "Official legacy Agent+VLA RoboDojo row (Avg. w/o Open): score 57.10 / success 49.17%, with an asterisk under the November 14 rules. This differs from the earlier author-run GPT-6 Astra harness results and the separate 27B Preview branch. The author reports 92.5% VLA-assisted / 95% direct on LIBERO-Pro for its learned branch, with task scope maintained. Official November snapshot reports 57.10 score / 49.17% success (Avg. w/o Open), with a legacy asterisk on the Agent + VLA entry."
     },
     "release": {
       "code": "Partial",
       "weights": "Available — 27B Preview, 12 safetensor shards",
       "data": "Available — released trajectory logs and 336 RoboDojo ablation records (42 tasks × eight methods); full training data scope remains unverified",
       "license": "Apache-2.0 public runtime and 27B Preview checkpoint, verified actual LICENSE and upstream Qwen NOTICE; external models, simulators and datasets retain separate terms.",
-      "notes": "Public 27B weights and benchmark runtimes have distinct availability. The hosted dataset includes task trajectories and a dedicated RoboDojo ablation archive. The evaluation runtime status for RoboDojo is still marked coming soon."
+      "notes": "The hosted dataset contains logs and a 336-record RoboDojo ablation archive. Public exact RoboDojo evaluation runtime remains marked coming soon; public weights, simulator adapters and dataset packages have different scopes."
     },
     "evidence": [
       {
@@ -3920,6 +3921,23 @@
           "policy.evaluation",
           "caveats"
         ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log/tree/main",
+        "label": "Actual official trajectory release directory",
+        "fields": [
+          "links",
+          "release"
+        ],
+        "note": "The public tree enumerates RoboDojo.zip, RoboDojo_ablation.zip and SHA256SUMS. These are distinct from a full evaluation runtime."
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official scored RoboDojo legacy submission",
+        "fields": [
+          "policy.evaluation",
+          "caveats"
+        ]
       }
     ],
     "caveats": [
@@ -3938,7 +3956,7 @@
         "note": "Official runtime overview shows model / skill interfaces, benchmark execution, trace collection and recursive harness improvement."
       }
     ],
-    "verified": "2026-11-20",
+    "verified": "2026-11-24",
     "relatedIds": [
       "astra-embodied-policies"
     ]
@@ -16159,8 +16177,8 @@
       "sensors": "Head and wrist RGB cameras, proprioception and instructions. Simulator can export depth, but listed baseline observation channels must be verified separately; official suite has no tactile sensor.",
       "dataCollection": "Simulation: annotated skill composition with cuRobo v2 motion planning, or VR teleoperation for difficult tasks. Real-world: homogeneous leader–follower robot teleoperation.",
       "data": "Demonstration data downloadable by task; exact current total count varies by release.",
-      "protocol": "Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation. The November 14 Agent track adds standardized task prompts, runtime-observation boundaries and disclosure rules. Older rows with deviations are marked individually.",
-      "baselines": "Frozen paper: 30 simulation and 10 physical baselines. Official 30 October 2026 generated snapshot: 66 simulation and 13 physical submission rows, including 10 Agent / Agent+WAM / Agent+VLA aliases mapping to 8 canonical systems; the three GPT/DeepSeek rows share RoboProbe. GO-3 Nano Preview and Q0-Preview are new Agent-track entries. Adapter integrations do not establish scored submissions."
+      "protocol": "Seed-controlled layouts; standard/randomized generalization conditions; heterogeneous parallel simulation; physical standardized scene reset and cloud evaluation. The November 14 Agent track adds standardized task prompts, runtime-observation boundaries and disclosure rules. Older rows with deviations are marked individually. Agent Avg. (w/o Open) equally weights generalization, precision, long horizon and memory. Treat pre-rule submissions flagged with an asterisk separately from evaluations under the updated protocol.",
+      "baselines": "Paper: 30 simulation and 10 physical baselines. Official 18 November 2026 feed: 74 simulation and 14 physical rows, including 14 Agent, Agent + VLA or Agent + WAM aliases. New legacy entries are SOLVE, Agent-as-Policy, JoyAI-VL and SenseNova-RoboRSI. Task-qualified source code, adapter registration and evaluated rows have distinct scopes."
     },
     "release": {
       "code": "Available",
@@ -16264,6 +16282,15 @@
           "benchmark.sensors",
           "caveats"
         ]
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official feed and Agent track inventory — 18 November 2026",
+        "fields": [
+          "benchmark.baselines",
+          "benchmark.protocol"
+        ],
+        "note": "The generated feed contains 74 simulation and 14 physical rows. Matching visible sources in the site application identifies 14 rows of type Agent / Agent + VLA / Agent + WAM. The board labels legacy deviations individually."
       }
     ],
     "caveats": [
@@ -16281,7 +16308,7 @@
         "pdfPage": 6
       }
     ],
-    "verified": "2026-11-20",
+    "verified": "2026-11-24",
     "releaseByCollection": {
       "benchmark": {
         "code": "Available",
@@ -42348,7 +42375,9 @@
       "Bimanual"
     ],
     "links": {
-      "project": "https://yanming03.github.io/PhysicalRSI/v2/"
+      "project": "https://yanming03.github.io/PhysicalRSI/v2/",
+      "adapter": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI",
+      "leaderboard": "https://robodojo-benchmark.com/leaderboard#agent"
     },
     "policy": {
       "family": "Hybrid",
@@ -42361,7 +42390,7 @@
       "trainingHardware": "Not reported",
       "controlRate": "The website labels 0.1–1 Hz planning and 20–50 Hz control as illustrative estimates, not measured policy throughput.",
       "trainingMethod": "Frozen agent model in the illustrated harness-evolution loop: vary candidate programs, evaluate, select and inherit. This is distinct from training a new VLA checkpoint.",
-      "evaluation": "RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. Current official October 24 snapshot: PhysicalRSI:Score 36.27, success 31.38%. These live-board results remain separate from the manuscript/development protocols."
+      "evaluation": "RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. Current official October 24 snapshot: PhysicalRSI:Score 36.27, success 31.38%. These live-board results remain separate from the manuscript/development protocols. Official November snapshot scores the legacy row 38.12 / 33.00% success on the four-group Avg. w/o Open metric."
     },
     "release": {
       "code": "Partial",
@@ -42391,12 +42420,30 @@
           "policy.evaluation"
         ],
         "note": "JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system."
+      },
+      {
+        "url": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI",
+        "label": "Public contributed adapter and interface",
+        "fields": [
+          "links",
+          "release",
+          "policy"
+        ]
+      },
+      {
+        "url": "https://robodojo-benchmark.com/data/leaderboard.generated.json",
+        "label": "Official RoboDojo Agent snapshot",
+        "fields": [
+          "policy.evaluation",
+          "caveats"
+        ]
       }
     ],
     "caveats": [
       "No paper submission or explicit initial publication date was established; this record is undated.",
       "The contributed benchmark adapter selects a registered skill composition at episode start and keeps it fixed until reset; it does not by itself release the entire research evolution loop.",
-      "Distinct from the unrelated PhysicalRSI / PhysicalRSI liquid-handling infrastructure repository."
+      "Distinct from the unrelated PhysicalRSI / PhysicalRSI liquid-handling infrastructure repository.",
+      "The current Agent + VLA row is marked as a legacy submission with task-specific program guidance; distinguish the historical five-group score from the newer four-group average."
     ],
     "imageCandidates": [
       {
@@ -42407,7 +42454,7 @@
         "note": "The official HTML architecture canvas shows evidence-driven harness revision, skill routing and the physical execution loop."
       }
     ],
-    "verified": "2026-10-26"
+    "verified": "2026-11-24"
   },
   {
     "id": "mm-abc",
@@ -85120,8 +85167,8 @@
     "modalities": [
       "RGB",
       "Depth",
-      "Proprioception",
-      "Language"
+      "Point cloud",
+      "Proprioception"
     ],
     "environments": [
       "Simulation"
@@ -85129,14 +85176,17 @@
     "embodiments": [],
     "links": {
       "paper": "https://arxiv.org/abs/2611.08209",
-      "project": "https://roboarcade.org"
+      "project": "https://roboarcade.org",
+      "code": "https://github.com/Satvik1701/RoboARCade",
+      "data": "https://huggingface.co/datasets/roboarcade/roboarcade-assets",
+      "leaderboard": "https://roboarcade.org/"
     },
     "release": {
-      "code": "Not verified",
-      "weights": "Not verified",
-      "data": "Not verified",
-      "license": "Not verified",
-      "notes": "Model, source and data availability are tracked separately."
+      "code": "Available — benchmark, task packs and interchangeable agent interfaces",
+      "weights": "External agent access varies",
+      "data": "Available — downloadable simulation and replay assets, plus public task traces and videos",
+      "license": "MIT benchmark source; third-party assets carry their own terms",
+      "notes": "Benchmark task packs and rollout traces are separate artifacts; hosted models are external."
     },
     "evidence": [
       {
@@ -85152,12 +85202,38 @@
           "caveats",
           "benchmark.dataCollection"
         ]
+      },
+      {
+        "url": "https://arxiv.org/html/2611.08209v2",
+        "label": "Paper v2 — 23 November 2026",
+        "fields": [
+          "benchmark",
+          "modalities",
+          "caveats"
+        ]
+      },
+      {
+        "url": "https://github.com/Satvik1701/RoboARCade",
+        "label": "Public benchmark code and license",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main",
+        "label": "Public task and replay assets",
+        "fields": [
+          "links",
+          "release"
+        ]
       }
     ],
     "caveats": [
-      "Three simulation embodiments do not imply physical deployment; agents access one of two visual interfaces."
+      "The reported depth and point clouds are simulator outputs. The two agent interfaces have distinct tools and costs.",
+      "The five-task adaptation subset reports separate results for an in-context successful task trace and iterative prompt revision. Model weights were not updated by those experiments."
     ],
-    "verified": "2026-11-08",
+    "verified": "2026-11-24",
     "benchmark": {
       "simulator": "MuJoCo",
       "simulatorVersion": "Not verified",
@@ -85167,11 +85243,11 @@
       "capabilities": "Long-horizon control, adaptation, memory and reasoning.",
       "metrics": "Task success, inference cost and calls.",
       "robots": "Three simulated embodiments.",
-      "sensors": "Multi-view RGB-D or vision interaction interface; robot state.",
+      "sensors": "Direct multi-view simulated RGB-D images and camera calibration; VIA adds an interactive 3D point cloud and virtual target gripper with raw image feeds.",
       "dataCollection": "Tasks derived from existing open-source benchmark sources with widened initial conditions.",
-      "data": "Agent execution traces linked by project; access independently scoped.",
+      "data": "Public author-hosted results, videos and traces; Hugging Face task, replay and simulator asset packs.",
       "protocol": "22 tasks with five seeds each; a separate five-task subset for adaptation experiments.",
-      "baselines": "Agentic foundation-model controls with two visual interfaces."
+      "baselines": "Paper v2: VIA full-suite success rates are 49.8% Astra, 43.6% Fable and 14.0% Sol. The five-task subset tests trace-based ICL (53.5% to 73.0% for Astra) and agent-generated prompt refinement (72.0%)."
     },
     "imageCandidates": [
       {
@@ -86246,12 +86322,13 @@
     "links": {
       "paper": "https://arxiv.org/abs/2611.12177",
       "project": "https://embodied-first-exam.ai/",
-      "code": "https://github.com/mll-lab-nu/embodied-first-exam"
+      "code": "https://github.com/mll-lab-nu/embodied-first-exam",
+      "robodojo-integration": "https://github.com/mll-lab-nu/embodied-first-exam/blob/main/tasks/robodojo/README.md"
     },
     "release": {
       "code": "Available — benchmark harness and task implementations",
       "weights": "External agent model access varies",
-      "data": "Benchmark task configuration public; full evaluated agent outputs not independently audited",
+      "data": "Available — task definitions and packaging in source repository",
       "license": "MIT repository; benchmark assets and dependencies carry separate terms",
       "notes": "Model APIs, simulators and adapted suites have independent terms."
     },
@@ -86285,16 +86362,35 @@
           "links",
           "release"
         ]
+      },
+      {
+        "url": "https://github.com/mll-lab-nu/embodied-first-exam#2-run",
+        "label": "Current official task counts by mode",
+        "fields": [
+          "benchmark.taskCount",
+          "benchmark.protocol",
+          "benchmark.data",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/mll-lab-nu/embodied-first-exam/blob/main/tasks/robodojo/README.md",
+        "label": "Current RoboDojo integration and replay protocol",
+        "fields": [
+          "benchmark.protocol",
+          "benchmark.sensors"
+        ]
       }
     ],
     "caveats": [
-      "Simulation benchmark, not a real-robot trial. Standard and privileged settings must not be conflated; 392 tasks lack a reference solution."
+      "The paper and latest repository use different task inventories. The published benchmark reports 392 tasks without a reference solution.",
+      "Standard, Privileged and Real-time differ in observation, reset, timing and grading protocol; the modes are overlapping views of the same core tasks."
     ],
-    "verified": "2026-11-15",
+    "verified": "2026-11-24",
     "benchmark": {
       "simulator": "MuJoCo, ManiSkill, Isaac and other suite-specific backends",
       "simulatorVersion": "Not reported",
-      "taskCount": "1,156 tasks across 35 suites, 47 robots; 456 core tasks",
+      "taskCount": "Paper: 1,156 tasks, 35 suites, 47 robots and 456 core tasks. Public repository: 1,211 tasks over 36 benchmarks including HumanCLAW; 481 tasks in its current core set.",
       "tasks": [
         "RoboARC",
         "DexHandExam",
@@ -86316,9 +86412,9 @@
       "robots": "47 distinct robot models across all suites.",
       "sensors": "Standard setting uses sensor observations; privileged setting additionally exposes simulator state.",
       "dataCollection": "Agent-generated commands, code or trained policies interact with simulated task environments.",
-      "data": "Not verified",
-      "protocol": "Standard, realtime and privileged settings have different reset and observation rules.",
-      "baselines": "Eight coding agents under the paper’s tested settings."
+      "data": "Public task definitions and installation through GitHub and PyPI. Full evaluated execution outputs not independently audited.",
+      "protocol": "Repository documents 481 Standard, 416 Privileged and 54 Real-time interfaces in the current core, which overlap. RoboDojo integration has 54 Standard and 54 Privileged task directories including extras. Standard uses the live verdict; Privileged may use up to three fresh replays.",
+      "baselines": "Eight coding agents under the paper’s tested settings. Live repository inventory includes suites not in the paper results."
     }
   },
   {
@@ -92825,6 +92921,884 @@
       "robodojo",
       "reasoning-on-call",
       "interactvla"
+    ]
+  },
+  {
+    "id": "robocoliseum",
+    "name": "RoboColiseum",
+    "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+    "date": "2026-11-20",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "precision-assembly",
+      "dexterous-benchmarks"
+    ],
+    "resourceType": "benchmark",
+    "summary": "A calibrated simulator and leaderboard compare Agent and VLA execution across eight manipulation tracks, with a separate paired sim-to-real score validation.",
+    "institution": "AgiBot and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.27042",
+      "project": "https://robocoliseum.ai/",
+      "code": "https://github.com/RoboColiseum/RoboColiseum",
+      "leaderboard": "https://robocoliseum.ai/leaderboard",
+      "runtime": "https://github.com/AgibotTech/genie_sim/tree/main/source/agent2act",
+      "data": "https://huggingface.co/datasets/agibot-world/GenieSim3.0-Dataset/tree/main/task_suite",
+      "weights": "https://huggingface.co/datasets/agibot-world/GenieSim3.0-Dataset/tree/main/checkpoints"
+    },
+    "release": {
+      "code": "Available — guides, Genie Sim and Agent2Act",
+      "weights": "Available — project-linked VLA baselines",
+      "data": "Available — project-linked training task suites",
+      "license": "Component-specific terms",
+      "notes": "The hosted scoring service and its complete evaluator assets have separate release scope."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.27042v2",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://robocoliseum.ai/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/RoboColiseum/RoboColiseum",
+        "label": "Official guide and public artifacts",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://robocoliseum.ai/leaderboard",
+        "label": "Official live ranked submissions",
+        "fields": [
+          "benchmark.baselines"
+        ],
+        "note": "Paper counts are frozen at revision v2."
+      }
+    ],
+    "caveats": [
+      "Paper v2, 23 November: reported r = 0.9686 over 22 paired robot/task validation configurations. The Season II Agent rankings are simulation results.",
+      "Agent2Act is one execution interface. Input channels and model release status vary across submissions."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "Genie Sim; PhysX, Newton and MuJoCo evaluated as physics backends",
+      "simulatorVersion": "Not reported",
+      "taskCount": "Eight capability tracks across two seasons; 22 paired physical/simulation validation configurations",
+      "tasks": [
+        "Instruction following",
+        "Spatial reasoning",
+        "General manipulation",
+        "Robustness",
+        "Dexterous manipulation",
+        "Precision manipulation",
+        "Whole-body coordination",
+        "Cross-embodiment execution"
+      ],
+      "taskListScope": "Track taxonomy. The 22 real/sim configurations form a separate validation experiment.",
+      "capabilities": "Multi-embodiment manipulation, precision, generalization and agent control.",
+      "metrics": "Task progress, resource use and completion reward; real–simulation score association in the paired experiment.",
+      "robots": "AgiBot G2 and other evaluation embodiments. Season II adds robot configurations beyond the Season I setup.",
+      "sensors": "Observation interface depends on method and track; several Real2Sim validation diagnostics use RGB or RGB-D.",
+      "dataCollection": "Recorded robot commands and physical sensor traces for calibration/validation; hosted Agent and VLA systems generate evaluation trajectories.",
+      "data": "Official repository links Genie Sim task suites and baseline checkpoints.",
+      "protocol": "Season I foundational tracks and Season II specific capability tracks; each track sets execution limits and scores completion and resource use.",
+      "baselines": "Paper v2 lists 12 selected Season I policies and all 11 Season II scored systems at its cutoff (eight Agent, three VLA)."
+    }
+  },
+  {
+    "id": "rosworld",
+    "name": "ROSWORLD",
+    "title": "ROSWORLD: When Digital Task Competence Meets Physical Execution",
+    "date": "2026-11-20",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "precision-assembly",
+      "dexterous-benchmarks"
+    ],
+    "resourceType": "benchmark",
+    "summary": "Agents use simulated robot contact to operate the keyboard and mouse of a live desktop VM, with paired direct-input baselines on the same software tasks.",
+    "institution": "University of Tokyo, JD.com and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.27467"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not applicable",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "The manuscript provides task selection and methods. A runnable release was not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.27467v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      }
+    ],
+    "caveats": [
+      "The input devices are simulated while the desktop software runs in a live VM. No physical robot trial is reported.",
+      "Counts are maxima by embodiment and are reported against the same 40 selected tasks."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "Simulated workstation with a live OSWorld virtual machine",
+      "simulatorVersion": "Not reported",
+      "taskCount": "40 OSWorld tasks across ten applications",
+      "tasks": [
+        "Document editing",
+        "Spreadsheet editing",
+        "File management",
+        "Application configuration",
+        "Keyboard shortcuts",
+        "Mouse operations"
+      ],
+      "taskListScope": "Representative workflows in the official 40-task set.",
+      "capabilities": "Long-horizon visual interaction, precise peripheral contact and recovery.",
+      "metrics": "Official OSWorld task success; matched contact-level failure analysis.",
+      "robots": "Single arm with a rigid probe; dual-arm dexterous hands.",
+      "sensors": "Oblique and top-down rendered workstation camera views; paired desktop baseline uses direct virtual inputs.",
+      "dataCollection": "No training corpus introduced. Agents generate trajectories by manipulating simulated keyboard and mouse.",
+      "data": "Paper and aggregate results are public.",
+      "protocol": "Same goals and success evaluators across direct OSWorld input and two contact-driven simulated embodiments.",
+      "baselines": "Five frontier models; 31–39/40 direct, at most 23/40 with the probe and 28/40 with dexterous hands."
+    }
+  },
+  {
+    "id": "ember-0",
+    "name": "Ember-0",
+    "title": "Ember-0: A benchmark for LLMs in the real world",
+    "date": "2026-10-23",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "precision-assembly"
+    ],
+    "resourceType": "benchmark",
+    "summary": "Five frontier models use tool calls to control physical bimanual stations on sixteen manipulation tasks spanning planning, tool use and deformable objects.",
+    "institution": "XDOF",
+    "venue": "Official project report",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "project": "https://www.xdof.ai/blog/evaluating-llms",
+      "leaderboard": "https://benchmarks.xdof.ai/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not applicable",
+      "data": "Public scores and selected demonstration videos",
+      "license": "Not verified",
+      "notes": "No public executable benchmark or complete rollout download was verified."
+    },
+    "evidence": [
+      {
+        "url": "https://www.xdof.ai/blog/evaluating-llms",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://benchmarks.xdof.ai/",
+        "label": "Official evaluation board",
+        "fields": [
+          "links",
+          "benchmark.baselines"
+        ]
+      }
+    ],
+    "caveats": [
+      "Camera images and robot state are reported. The task setup excludes force or touch sensing and does not establish a depth input."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "Not applicable",
+      "simulatorVersion": "Not applicable",
+      "taskCount": "16 physical bimanual manipulation tasks",
+      "tasks": [
+        "Retrieve out-of-reach plush",
+        "Retrieve an occluded marker",
+        "Stand up a fallen bottle",
+        "Move potato chip without breaking it",
+        "Hang mug on mug tree",
+        "Follow the red sticky note",
+        "Sweep up trash",
+        "Pick up bread with tongs",
+        "Ball into bowl without touching",
+        "Unfold the T-shirt",
+        "Serve cereal on tray",
+        "Tie a knot",
+        "Write HI on paper",
+        "Count Legos",
+        "Stack rectangular blocks high",
+        "Organize the tableware"
+      ],
+      "taskListScope": "Complete official 16-task inventory.",
+      "capabilities": "Planning, tool use, bimanual coordination, memory, deformation and contact.",
+      "metrics": "Human-annotated task success, visible subgoals and execution events; time and model costs.",
+      "robots": "Six physical stations, each with two six-axis YAM arms and grippers.",
+      "sensors": "Two wrist cameras and one overhead camera; measured robot state and controller results.",
+      "dataCollection": "Agent-generated physical rollouts with annotated success, observable subtasks and events; no training corpus described.",
+      "data": "Task list, sample videos, and scored results are public.",
+      "protocol": "Up to 30 minutes per episode; agent can end early. Each decision includes recent turn history and a persistent within-run text memo.",
+      "baselines": "Five frontier models in the initial report. Live scoreboard should be read at its own publication cutoff."
+    }
+  },
+  {
+    "id": "flex-rsi",
+    "name": "Flex-RSI",
+    "title": "Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents",
+    "date": "2026-11-06",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "supporting-resources"
+    ],
+    "resourceType": "evaluation-tool",
+    "summary": "An RSI evaluation harness measures whether agents improve editable starter solutions under fixed budgets, including robot-control and perception tasks.",
+    "institution": "Flex-RSI authors",
+    "venue": "Preprint",
+    "modalities": [],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.08946",
+      "project": "https://flex-rsi.github.io/",
+      "code": "https://github.com/flex-rsi/rsi-bench",
+      "data": "https://huggingface.co/datasets/Flex-RSI/RSI-Dataset"
+    },
+    "release": {
+      "code": "Available — task runner and implementation",
+      "weights": "External API models",
+      "data": "Available — public dataset repository with task data",
+      "license": "Not verified",
+      "notes": "Release covers the public task runner and data package; exact task inventory is version-dependent."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.08946v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://flex-rsi.github.io/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/flex-rsi/rsi-bench",
+        "label": "Official code and task-level definitions",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/Flex-RSI/RSI-Dataset",
+        "label": "Official released dataset tree",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "The 24 paper tasks span multiple domains. Robot task counts and outputs follow each underlying evaluation.",
+      "Solution code and harness revisions are scored; the shared protocol does not require changes to the executor model weights."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "Task-dependent; robot adaptations include RoboDojo, RoboCasa and RoboLab",
+      "simulatorVersion": "Not reported",
+      "taskCount": "24 mixed-domain evaluation tasks in the paper",
+      "tasks": [
+        "RoboDojo",
+        "RoboCasa",
+        "RoboLab",
+        "LIBERO-MAX",
+        "LIBERO-PRO",
+        "Embodied-SWE",
+        "Ego-Exo Memory",
+        "3D Tracking",
+        "Scene from Photo",
+        "Scene from Video"
+      ],
+      "taskListScope": "Selected robot-related and perception tasks. Source code and manuscript have separately scoped inventories.",
+      "capabilities": "Iterative solution improvement under fixed budgets across action, reasoning, creation and reconstruction.",
+      "metrics": "Held-out final score and improvement over starter under a fixed budget; underlying metrics vary by task.",
+      "robots": "Simulation embodiment depends on underlying environment.",
+      "sensors": "Source-dependent observations. Authors show RGB feedback in robot examples; the mixed-task harness has no shared deployment sensor.",
+      "dataCollection": "Not applicable",
+      "data": "Public task runner and released dataset folders; hosted models and upstream environment assets remain separate.",
+      "protocol": "Agent proposes changes to an editable starter solution and experiments on development data. The orchestrator decides which revisions to keep on validation and scores the final solution on held-out test.",
+      "baselines": "Paper v1 evaluates 18 frontier models across its mixed collection."
+    },
+    "relatedIds": [
+      "robodojo"
+    ]
+  },
+  {
+    "id": "embodiedlab",
+    "name": "EmbodiedLab",
+    "title": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+    "date": "2026-10-26",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "precision-assembly"
+    ],
+    "resourceType": "benchmark",
+    "summary": "A simulated laboratory evaluates whether agents use robot interaction and camera feedback to choose and carry out quantitative experiments.",
+    "institution": "HexaFuture and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.35385",
+      "project": "https://hexafuture.ai/benchmarks/embodiedlab/",
+      "code": "https://github.com/HexaFuture/EmbodiedLab"
+    },
+    "release": {
+      "code": "Available — simulator tasks and harness",
+      "weights": "External agent access varies",
+      "data": "Available — public experiment configuration; external simulator and assets may have separate terms",
+      "license": "Apache-2.0 repository",
+      "notes": "Paper and live code maintain different task inventories."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.35385v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://hexafuture.ai/benchmarks/embodiedlab/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/HexaFuture/EmbodiedLab",
+        "label": "Official repository and current inventory",
+        "fields": [
+          "links",
+          "release",
+          "benchmark.taskCount",
+          "benchmark.simulatorVersion"
+        ]
+      }
+    ],
+    "caveats": [
+      "The published 30-task results and the extended 35-task release use different inventories.",
+      "T0, T1 and T2 provide different observation/action privileges and can be compared only with explicit interface labels."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "NVIDIA Isaac Sim",
+      "simulatorVersion": "6.0.1 in public repository",
+      "taskCount": "30 experiments in the paper; 35 experiments in the current public repository",
+      "tasks": [
+        "Spring stiffness",
+        "Pendulum gravity",
+        "Friction on an incline",
+        "Resistance in a black box",
+        "Focal length of a converging lens",
+        "Thermistor B constant",
+        "Absorption peak of an unknown dye"
+      ],
+      "taskListScope": "Examples across five disciplines in the paper; release adds five optimization experiments.",
+      "capabilities": "Precise contact, long-horizon procedures, fine instrument reading and multi-point analysis.",
+      "metrics": "Success requires measurement tolerance, evidence grounded in recorded instrument readings and acceptable final bench state.",
+      "robots": "Franka robot with two-finger gripper.",
+      "sensors": "Three camera views and robot state at T0; T1 adds privileged perception and motion planning; T2 adds distilled manipulation skills.",
+      "dataCollection": "Task construction uses authored randomized physical scenes and reference runs. Evaluated agents gather their own observations.",
+      "data": "Executable tasks and public experiment definitions in the source repository.",
+      "protocol": "Each scene samples hidden parameters. The agent chooses an experimental procedure and controls the robot through a level-specific API.",
+      "baselines": "Six frontier models in paper v1; strongest native-interface setting succeeds on fewer than half across paper experiments."
+    }
+  },
+  {
+    "id": "embodied-harness",
+    "name": "Embodied-Harness",
+    "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+    "date": "2026-11-20",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "An Actor executes manipulations while a Reflector revises executable guidance using feedback and memory. Both vision-language models remain frozen.",
+    "institution": "Zhejiang University and Huazhong University of Science and Technology",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.27689",
+      "project": "https://embodied-harness.github.io/"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not applicable",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "Paper and author project with rollout videos; implementation, checkpoints and training logs were not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.27689v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      },
+      {
+        "url": "https://embodied-harness.github.io/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "Separate physical and simulation conditions, and retain trial/revision budgets when comparing outcomes.",
+      "Physical evaluation is concentrated in three tasks; no measured depth or tactile input is established."
+    ],
+    "verified": "2026-11-24",
+    "policy": {
+      "family": "Frozen Actor and Reflector with persistent execution guidance",
+      "baseModel": "Separate frozen multimodal Actor and Reflector",
+      "modelSize": "Not reported",
+      "inputs": "Camera images, current robot state, instruction and memory",
+      "outputs": "Cartesian movement, orientation, pointing, gripper and home commands via IK",
+      "trainingMethod": "Revises the persistent natural-language execution guidance and memory after trajectories; no new gradients or Actor/Reflector weights",
+      "trainingData": "Task-specific and cross-task execution feedback; held-out generalization scope depends on experiment",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "RoboTwin 2.0 / C2R, RoboSPA and RMBench in simulation; 29/30 physical Piper episodes across three tasks."
+    }
+  },
+  {
+    "id": "robouniverse-10k",
+    "name": "RoboUniverse-10K",
+    "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+    "date": "2026-11-23",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "precision-assembly"
+    ],
+    "resourceType": "benchmark",
+    "summary": "An automated real-to-sim pipeline builds resettable manipulation environments for training and evaluating closed-loop coding agents, with a 500-task held-out suite.",
+    "institution": "Tsinghua University, Einsia and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.31002",
+      "project": "https://lab.einsia.ai/robo-universe/",
+      "code": "https://github.com/Einsia/RoboUniverse-10K",
+      "data": "https://huggingface.co/datasets/Einsia/RoboUniverse-10K",
+      "weights": "https://huggingface.co/Einsia/RoboUniverse-35B-A3B"
+    },
+    "release": {
+      "code": "Available — environment and task tooling",
+      "weights": "Available — RoboUniverse-35B-A3B, 16 Safetensors shards",
+      "data": "Available — official environment dataset repo",
+      "license": "Apache-2.0 repository; simulator, model and third-party assets have separate terms",
+      "notes": "Simulator, benchmark packages, original videos and reported post-trained weights have separate release scopes."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.31002v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://lab.einsia.ai/robo-universe/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/Einsia/RoboUniverse-10K",
+        "label": "Official implementation",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/Einsia/RoboUniverse-10K",
+        "label": "Official environment assets",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Einsia/RoboUniverse-35B-A3B/tree/main",
+        "label": "Original public model weights",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "The 10,807 count is environments, with 500 in the held-out tested set. The separate physical demonstrations are outside that tally.",
+      "Predicted depth helps build simulated scenes from source video. That preprocessing does not establish a live measured-depth input to benchmark agents."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "Isaac Sim and isolated Harbor-compatible task runtime",
+      "simulatorVersion": "Not reported",
+      "taskCount": "10,807 released environments: 10,307 training and 500 held-out RoboUniverse-Verified tasks",
+      "tasks": [
+        "Franka single-arm tabletop manipulation",
+        "AgileX dual-arm tabletop manipulation",
+        "Grasping",
+        "Precision placement",
+        "Bimanual handover",
+        "Cloth folding"
+      ],
+      "taskListScope": "Representative task types spanning the paper’s eight families.",
+      "capabilities": "Real-to-sim task construction, closed-loop visual control, precision and contact.",
+      "metrics": "Binary success from an independent verifier; reported per family and embodiment.",
+      "robots": "4,132 single-arm Franka and 6,675 dual-arm AgileX task environments.",
+      "sensors": "Rendered views and robot-control observations. Depth estimates and masks help reconstruct source scenes offline.",
+      "dataCollection": "Coding agents construct simulation scenes, reference controllers and verifiers from real robot videos. Runtime agents produce their own trajectories.",
+      "data": "Public dataset repository links the task environments; physical source videos retain upstream terms.",
+      "protocol": "The agent receives task instructions and sensor/action tools. The independently executed verifier keeps privileged state, intermediate grader output and grading logic hidden.",
+      "baselines": "Frontier coding-agent baselines on 500 held-out environments. The paper separately evaluates a post-trained open model and demonstrates limited physical transfer."
+    }
+  },
+  {
+    "id": "robodyna",
+    "name": "RoboDyna",
+    "title": "RoboDyna: A Benchmark for Evaluating Robotic Manipulation under Physically Grounded Dynamics",
+    "date": "2026-11-20",
+    "year": 2026,
+    "collections": [
+      "benchmark"
+    ],
+    "categories": [
+      "general-manipulation",
+      "robustness-evaluation"
+    ],
+    "resourceType": "benchmark",
+    "summary": "A fixed dual-arm platform tests whether manipulation policies handle independently moving objects and action latency under two scheduling protocols.",
+    "institution": "RoboDyna authors",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation"
+    ],
+    "embodiments": [],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.26969",
+      "project": "https://robodyna.github.io/robodyna/",
+      "code": "https://github.com/robodyna/robodyna",
+      "data": "https://huggingface.co/datasets/RoboDyna/robodyna-benchmark-v2"
+    },
+    "release": {
+      "code": "Available — simulator and evaluation code",
+      "weights": "External baseline models",
+      "data": "Available — official demonstrations in HDF5 and LeRobot formats",
+      "license": "Apache-2.0 code and demonstration package; assets have their own license",
+      "notes": "Task implementations, demos and pre-trained external policies retain separate terms."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.26969v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "benchmark",
+          "benchmark.dataCollection"
+        ]
+      },
+      {
+        "url": "https://robodyna.github.io/robodyna/",
+        "label": "Author source and artifact entry points",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://github.com/robodyna/robodyna",
+        "label": "Official evaluation repository",
+        "fields": [
+          "links",
+          "release"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/RoboDyna/robodyna-benchmark-v2",
+        "label": "Official demonstration dataset",
+        "fields": [
+          "links",
+          "release"
+        ]
+      }
+    ],
+    "caveats": [
+      "The benchmark evaluates learned policies and humans. It is an adjacent closed-loop dynamics suite with no frontier coding-agent run in the paper.",
+      "The reported policy observation uses RGB streams and robot state. The public release adds five tasks beyond the paper benchmark."
+    ],
+    "verified": "2026-11-24",
+    "benchmark": {
+      "simulator": "SAPIEN",
+      "simulatorVersion": "3.0.3",
+      "taskCount": "30 tasks: 20 conceptual and 10 household",
+      "tasks": [
+        "Catch ramp ball",
+        "Load train",
+        "Dynamic target interception",
+        "Contact-induced motion",
+        "Boil milk",
+        "Push target from shelf"
+      ],
+      "taskListScope": "Representative concepts and household scenes; each conceptual task has four difficulty settings.",
+      "capabilities": "Control under physics-driven dynamics, contact, moving targets and inference delay.",
+      "metrics": "Full success and partial completion, under synchronous and asynchronous scheduling.",
+      "robots": "Simulated dual UR5 robot.",
+      "sensors": "Synchronized RGB from one head and two wrist cameras, plus proprioception.",
+      "dataCollection": "3,500 expert demonstrations and author tools for collecting human data via direct teleoperation or scene-interactive control.",
+      "data": "Project links its code and dataset organization.",
+      "protocol": "Matched task conditions with either pause-during-inference or continuing simulation; difficulty composition varies the physical scene.",
+      "baselines": "Two VLA baselines and one WAM plus human control modes; all three evaluated policies solve fewer than one in five episodes overall in the paper."
+    }
+  },
+  {
+    "id": "agent-on-guard",
+    "name": "Agent on Guard",
+    "title": "Agent on Guard: Self-Improving Runtime Intervention for Robust Robotic Manipulation",
+    "date": "2026-11-23",
+    "year": 2026,
+    "collections": [
+      "policy"
+    ],
+    "categories": [
+      "agent-rsi-icl",
+      "generalist-foundation"
+    ],
+    "resourceType": "policy",
+    "summary": "A coding agent learns when to take control from a frozen robot policy, how to recover, and when to hand control back while physical execution continues.",
+    "institution": "LeapWing AI and collaborators",
+    "venue": "Preprint",
+    "modalities": [
+      "RGB",
+      "Proprioception"
+    ],
+    "environments": [
+      "Simulation",
+      "Real world"
+    ],
+    "embodiments": [
+      "Bimanual",
+      "Parallel-jaw gripper"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2611.30101"
+    },
+    "release": {
+      "code": "Not verified",
+      "weights": "Not verified",
+      "data": "Not verified",
+      "license": "Not verified",
+      "notes": "The manuscript reports simulator and physical trials. AoG implementation, trajectory data and resulting weights were not verified."
+    },
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2611.30101v1",
+        "label": "Original author paper or dataset description",
+        "fields": [
+          "title",
+          "date",
+          "institution",
+          "summary",
+          "modalities",
+          "caveats",
+          "policy"
+        ]
+      }
+    ],
+    "caveats": [
+      "RoboDojo-Sim results come from the manuscript protocol with five capability groups and should remain separate from the four-group official Agent leaderboard.",
+      "After adaptation, the shared harness stays fixed across held-out test episodes. Any scene-specific code edits remain inside one test episode."
+    ],
+    "verified": "2026-11-24",
+    "policy": {
+      "family": "Frozen-policy orchestration with recurrent intervention and recovery evolution",
+      "baseModel": "VPP2 or Xiaomi-Robotics-1 and GPT-6 Astra / GPT-6.1 Sol in sim; separately fine-tuned pi0.5 with Astra in physical experiments",
+      "modelSize": "Not reported",
+      "inputs": "RGB, public robot state, action history and handover feedback. Physical PiPER setup has three RGB-D cameras, but depth consumption is not established.",
+      "outputs": "Continued policy control, queued-action cancellation during takeover, executable recovery and closed-loop handover.",
+      "trainingMethod": "Evolves planner guidance, recovery code and intervention/handover conditions over five simulation or four real-world rounds. Executor/policy weights frozen during RSI; physical base policy separately fine-tuned before RSI.",
+      "trainingData": "Full development rollouts, task outcomes and observations after handover. Physical base policy fine-tuned on 20 real demonstrations per task.",
+      "trainingTime": "Not reported",
+      "trainingHardware": "Not reported",
+      "controlRate": "Not reported",
+      "evaluation": "Paper: 57.26 score and 50.57% success over 42 RoboDojo-Sim tasks using five capability groups; separate RoboCasa365 runs and three physical tasks with 20 test trials per task per method."
+    },
+    "relatedIds": [
+      "robodojo"
     ]
   }
 ]

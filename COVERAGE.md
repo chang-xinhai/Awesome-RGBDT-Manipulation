@@ -1,23 +1,23 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-11-22. 887 unique records; 75 benchmark records; 695 policy records; 89 models; 9 surveys; 41 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-11-24. 896 unique records; 81 benchmark records; 697 policy records; 89 models; 9 surveys; 42 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
 - Visuo-Tactile Benchmarks: 30 records with this classification.
-- Precision and Assembly: 26 records with this classification.
-- Dexterous Manipulation: 18 records with this classification.
-- General Manipulation: 28 records with this classification.
-- Robustness and Evaluation: 27 records with this classification.
-- Supporting Tools and Data: 41 records with this classification.
+- Precision and Assembly: 31 records with this classification.
+- Dexterous Manipulation: 20 records with this classification.
+- General Manipulation: 34 records with this classification.
+- Robustness and Evaluation: 28 records with this classification.
+- Supporting Tools and Data: 42 records with this classification.
 - Visuo-Tactile Policy Learning: 101 records with this classification.
 - Tactile VLA and World-Action Models: 118 records with this classification.
 - RGB-D and 3D Policies: 229 records with this classification.
 - Tactile Representations and Pretraining: 51 records with this classification.
 - Geometry and Predictive Models: 51 records with this classification.
 - Visual Precision and Reinforcement Learning: 55 records with this classification.
-- Agent / RSI / ICL: 296 records with this classification.
-- Generalist Policy Foundations: 171 records with this classification.
+- Agent / RSI / ICL: 298 records with this classification.
+- Generalist Policy Foundations: 173 records with this classification.
 
 ## Benchmark-to-policy source audit
 
@@ -38,7 +38,8 @@ Paper baselines, leaderboard participants and adapter registries are distinct so
 | [ForceBench simulation comparison](https://arxiv.org/abs/2610.19604) | paper-baselines | 9 / 10 |
 | [SparkArena simulation / hardware paper baselines](https://arxiv.org/abs/2610.22342) | paper-baselines | 11 / 13 |
 | [RoboDojo official Agent / Agent+VLA / Agent+WAM track](https://robodojo-benchmark.com/leaderboard) | leaderboard | 10 / 10 |
-| [RoboDojo Agent track legacy qualification under November 14 rules](https://robodojo-benchmark.com/leaderboard#agent) | leaderboard | 3 / 5 |
+| [RoboDojo Agent track legacy qualification under November 14 rules](https://robodojo-benchmark.com/leaderboard#agent) | leaderboard | 4 / 6 |
+| [XPolicyLab public JoyAI-VL adapter — checked 24 November](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/JoyAI_VL) | adapter-registry | 0 / 1 |
 
 ## Survey citation trails
 

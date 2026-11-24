@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-22",
+  "reviewed": "2026-11-24",
   "sources": [
     {
       "work": "rle-bench",
@@ -5293,6 +5293,11 @@
       "url": "https://roboarcade.org"
     },
     {
+      "work": "roboarcade",
+      "kind": "code",
+      "url": "https://github.com/Satvik1701/RoboARCade"
+    },
+    {
       "work": "remake-depth",
       "kind": "project",
       "url": "https://chengyaofeng.github.io/ReMake.github.io/"
@@ -5781,6 +5786,66 @@
       "work": "agentrobocritic",
       "kind": "code",
       "url": "https://github.com/cxcscmu/AgentRoboCritic"
+    },
+    {
+      "work": "robocoliseum",
+      "kind": "project",
+      "url": "https://robocoliseum.ai/"
+    },
+    {
+      "work": "robocoliseum",
+      "kind": "code",
+      "url": "https://github.com/RoboColiseum/RoboColiseum"
+    },
+    {
+      "work": "ember-0",
+      "kind": "project",
+      "url": "https://www.xdof.ai/blog/evaluating-llms"
+    },
+    {
+      "work": "flex-rsi",
+      "kind": "project",
+      "url": "https://flex-rsi.github.io/"
+    },
+    {
+      "work": "flex-rsi",
+      "kind": "code",
+      "url": "https://github.com/flex-rsi/rsi-bench"
+    },
+    {
+      "work": "embodiedlab",
+      "kind": "project",
+      "url": "https://hexafuture.ai/benchmarks/embodiedlab/"
+    },
+    {
+      "work": "embodiedlab",
+      "kind": "code",
+      "url": "https://github.com/HexaFuture/EmbodiedLab"
+    },
+    {
+      "work": "embodied-harness",
+      "kind": "project",
+      "url": "https://embodied-harness.github.io/"
+    },
+    {
+      "work": "robouniverse-10k",
+      "kind": "project",
+      "url": "https://lab.einsia.ai/robo-universe/"
+    },
+    {
+      "work": "robouniverse-10k",
+      "kind": "code",
+      "url": "https://github.com/Einsia/RoboUniverse-10K"
+    },
+    {
+      "work": "robodyna",
+      "kind": "project",
+      "url": "https://robodyna.github.io/robodyna/"
+    },
+    {
+      "work": "robodyna",
+      "kind": "code",
+      "url": "https://github.com/robodyna/robodyna"
     }
   ]
 }

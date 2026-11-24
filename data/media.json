@@ -13431,5 +13431,140 @@
       "note": "Author figure resized for the atlas; source rights retained.",
       "sourceSha256": "306242c789885242e672a313942a325bfad194db1f3af0a6fea570db46a31dc6"
     }
+  },
+  "robocoliseum": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2611.27042v2/figures/scenes.png",
+      "page": "https://arxiv.org/html/2611.27042v2",
+      "credit": "RoboColiseum authors",
+      "alt": "Paired real and simulated manipulation scenes including tabletop tasks and cloth handling",
+      "kind": "task-overview",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/robocoliseum-benchmark.webp",
+      "sourceSha256": "d5729cd66337f30d74fe8d29e92bd3965879f4b46750e7fbf83c48a84f601ed2",
+      "width": 1260,
+      "height": 486,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "rosworld": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2611.27467v1/overview.png",
+      "page": "https://arxiv.org/html/2611.27467v1",
+      "credit": "ROSWORLD authors",
+      "alt": "A simulated desktop workstation operated by a single rigid probe or dual dexterous hands",
+      "kind": "task-overview",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/rosworld-benchmark.webp",
+      "sourceSha256": "734d505a1167f00d6f76b06ffa2d80de873525e9a2feab9bba34f3b72c5e81be",
+      "width": 1260,
+      "height": 422,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "ember-0": {
+    "benchmark": {
+      "original": "https://www.xdof.ai/blog/evaluating-llms/plush.mp4",
+      "page": "https://www.xdof.ai/blog/evaluating-llms",
+      "credit": "XDOF",
+      "alt": "A physical YAM gripper pulls a towel in order to retrieve an out-of-reach plush toy",
+      "kind": "task-overview",
+      "note": "Still from 00:05 of the author’s real YAM manipulation rollout; resized for the catalog.",
+      "path": "/images/catalog/ember-0-benchmark.webp",
+      "sourceSha256": "5ec47b6b695bb8175d360d63e22d2da1fdf2844e56970d0279330e616b7ac01f",
+      "width": 1260,
+      "height": 709,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "flex-rsi": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2611.08946v1/figures/qual/robo/robodojo-9-after-1.jpg",
+      "page": "https://arxiv.org/html/2611.08946v1",
+      "credit": "Flex-RSI authors",
+      "alt": "A robot manipulation example from the later iteration of a Flex-RSI run in RoboDojo",
+      "kind": "task-overview",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/flex-rsi-benchmark.webp",
+      "sourceSha256": "e74fdad59a1536e6cf161c870618d18cda55a70521889e36111f746759626ecf",
+      "width": 480,
+      "height": 360,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "embodiedlab": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2610.35385v1/fig_overview.png",
+      "page": "https://arxiv.org/html/2610.35385v1",
+      "credit": "EmbodiedLab authors",
+      "alt": "An example lens experiment showing the simulated robot, apparatus, and scoring workflow",
+      "kind": "task-overview",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/embodiedlab-benchmark.webp",
+      "sourceSha256": "e04ea5147a63c37d23616b511e50e0fc20b993d1644e9eea05b62146dfe1a0c9",
+      "width": 756,
+      "height": 315,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "embodied-harness": {
+    "policy": {
+      "original": "https://arxiv.org/html/2611.27689v1/Embodied-Harness.png",
+      "page": "https://arxiv.org/html/2611.27689v1",
+      "credit": "Zhenxuan Fan and coauthors",
+      "alt": "Actor camera-to-action loop and Reflector feedback, memory and harness update stages",
+      "kind": "architecture",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/embodied-harness-policy.webp",
+      "sourceSha256": "00511d40bad7edab26f622140b4b1b59d4687ba16b12960dc3da00f7db021bb6",
+      "width": 1260,
+      "height": 585,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "robouniverse-10k": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2611.31002v1/fig_collection_taxonomy.png",
+      "page": "https://arxiv.org/html/2611.31002v1",
+      "credit": "RoboUniverse-10K authors",
+      "alt": "Example Franka and AgileX environments grouped into eight manipulation families",
+      "kind": "task-overview",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/robouniverse-10k-benchmark.webp",
+      "sourceSha256": "736ef61197742e4756fceaa30f48e16f748159db46beb66e5175aa9ba93ee7af",
+      "width": 1260,
+      "height": 718,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "robodyna": {
+    "benchmark": {
+      "original": "https://arxiv.org/html/2611.26969v1/fig_gallery.png",
+      "page": "https://arxiv.org/html/2611.26969v1",
+      "credit": "RoboDyna authors",
+      "alt": "The 30 simulated robot tasks in conceptual groups and household settings",
+      "kind": "task-overview",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/robodyna-benchmark.webp",
+      "sourceSha256": "20982f604b799a5d4859571dd1d0958f2f9032d40375a4bed08ebc9df633c3a6",
+      "width": 660,
+      "height": 228,
+      "reviewed": "2026-11-24"
+    }
+  },
+  "agent-on-guard": {
+    "policy": {
+      "original": "https://arxiv.org/html/2611.30101v1/method.png",
+      "page": "https://arxiv.org/html/2611.30101v1",
+      "credit": "Gengming Cui and coauthors",
+      "alt": "Agent on Guard planner alternating autonomous intervention with frozen-policy control on a physical timeline",
+      "kind": "architecture",
+      "note": "Author figure resized for the catalog; source rights remain with the authors.",
+      "path": "/images/catalog/agent-on-guard-policy.webp",
+      "sourceSha256": "05185c9c12f3b249bf04c66d09dad9908668f9434b15ff3a8c8db0db9837f067",
+      "width": 804,
+      "height": 418,
+      "reviewed": "2026-11-24"
+    }
   }
 }

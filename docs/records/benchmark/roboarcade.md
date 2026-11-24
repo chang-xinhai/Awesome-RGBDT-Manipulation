@@ -8,7 +8,7 @@ RoboARCade: Benchmarking Agentic Robot Control
 
 **2026-11-05 · Preprint · Stanford University**
 
-**[Paper](https://arxiv.org/abs/2611.08209)** · [Project](https://roboarcade.org)
+**[Paper](https://arxiv.org/abs/2611.08209)** · [Project](https://roboarcade.org) · [Code](https://github.com/Satvik1701/RoboARCade) · [Data](https://huggingface.co/datasets/roboarcade/roboarcade-assets) · [Leaderboard](https://roboarcade.org/)
 
 A MuJoCo benchmark tests agentic control, in-context adaptation and reasoning across 22 manipulation tasks.
 
@@ -19,26 +19,26 @@ A MuJoCo benchmark tests agentic control, in-context adaptation and reasoning ac
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | benchmark |
-| Simulator | MuJoCo [1](https://arxiv.org/html/2611.08209v1)  |
-| Simulator version and scope | Not verified [1](https://arxiv.org/html/2611.08209v1)  |
-| Task count and scope | 22 manipulation tasks [1](https://arxiv.org/html/2611.08209v1)  |
-| Task-list scope | 22 total tasks; the paper figure shows 20. [1](https://arxiv.org/html/2611.08209v1)  |
-| Capability dimensions | Long-horizon control, adaptation, memory and reasoning. [1](https://arxiv.org/html/2611.08209v1)  |
-| Metrics | Task success, inference cost and calls. [1](https://arxiv.org/html/2611.08209v1)  |
-| Robots | Three simulated embodiments. [1](https://arxiv.org/html/2611.08209v1)  |
-| Sensors and observations | Multi-view RGB-D or vision interaction interface; robot state. [1](https://arxiv.org/html/2611.08209v1)  |
-| Data collection method | Tasks derived from existing open-source benchmark sources with widened initial conditions. [1](https://arxiv.org/html/2611.08209v1)  |
-| Demonstrations and data | Agent execution traces linked by project; access independently scoped. [1](https://arxiv.org/html/2611.08209v1)  |
-| Evaluation protocol | 22 tasks with five seeds each; a separate five-task subset for adaptation experiments. [1](https://arxiv.org/html/2611.08209v1)  |
-| Evaluated baselines | Agentic foundation-model controls with two visual interfaces. [1](https://arxiv.org/html/2611.08209v1)  |
-| Observations / modalities | RGB · Depth · Proprioception · Language |
+| Simulator | MuJoCo [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Simulator version and scope | Not verified [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Task count and scope | 22 manipulation tasks [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Task-list scope | 22 total tasks; the paper figure shows 20. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Capability dimensions | Long-horizon control, adaptation, memory and reasoning. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Metrics | Task success, inference cost and calls. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Robots | Three simulated embodiments. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Sensors and observations | Direct multi-view simulated RGB-D images and camera calibration; VIA adds an interactive 3D point cloud and virtual target gripper with raw image feeds. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Data collection method | Tasks derived from existing open-source benchmark sources with widened initial conditions. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Demonstrations and data | Public author-hosted results, videos and traces; Hugging Face task, replay and simulator asset packs. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Evaluation protocol | 22 tasks with five seeds each; a separate five-task subset for adaptation experiments. [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Evaluated baselines | Paper v2: VIA full-suite success rates are 49.8% Astra, 43.6% Fable and 14.0% Sol. The five-task subset tests trace-based ICL (53.5% to 73.0% for Astra) and agent-generated prompt refinement (72.0%). [1](https://arxiv.org/html/2611.08209v1) [2](https://arxiv.org/html/2611.08209v2)  |
+| Observations / modalities | RGB · Depth · Point cloud · Proprioception |
 | Evaluation domain | Simulation |
 | Embodiment |  |
-| Release: code | Not verified |
-| Release: weights | Not verified |
-| Release: data | Not verified |
-| Release: license | Not verified |
-| Release: notes | Model, source and data availability are tracked separately. |
+| Release: code | Available — benchmark, task packs and interchangeable agent interfaces [3](https://github.com/Satvik1701/RoboARCade) [4](https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main)  |
+| Release: weights | External agent access varies [3](https://github.com/Satvik1701/RoboARCade) [4](https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main)  |
+| Release: data | Available — downloadable simulation and replay assets, plus public task traces and videos [3](https://github.com/Satvik1701/RoboARCade) [4](https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main)  |
+| Release: license | MIT benchmark source; third-party assets carry their own terms [3](https://github.com/Satvik1701/RoboARCade) [4](https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main)  |
+| Release: notes | Benchmark task packs and rollout traces are separate artifacts; hosted models are external. [3](https://github.com/Satvik1701/RoboARCade) [4](https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main)  |
 
 **Task names — 22 total tasks; the paper figure shows 20.:**
 
@@ -46,8 +46,12 @@ Task names not reported or not verified in the cited sources.
 
 **Scope and qualifications**
 
-- Three simulation embodiments do not imply physical deployment; agents access one of two visual interfaces.
+- The reported depth and point clouds are simulator outputs. The two agent interfaces have distinct tools and costs.
+- The five-task adaptation subset reports separate results for an in-context successful task trace and iterative prompt revision. Model weights were not updated by those experiments.
 
 **Primary evidence**
 
 1. [Author paper and first submission](https://arxiv.org/html/2611.08209v1)
+2. [Paper v2 — 23 November 2026](https://arxiv.org/html/2611.08209v2)
+3. [Public benchmark code and license](https://github.com/Satvik1701/RoboARCade)
+4. [Public task and replay assets](https://huggingface.co/datasets/roboarcade/roboarcade-assets/tree/main)

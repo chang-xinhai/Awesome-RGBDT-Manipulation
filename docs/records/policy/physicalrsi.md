@@ -8,7 +8,7 @@ PhysicalRSI 1.0: Native System 1–2 Co-evolution
 
 **Undated · Official project report · Not reported**
 
-**[Project](https://yanming03.github.io/PhysicalRSI/v2/)**
+**[Project](https://yanming03.github.io/PhysicalRSI/v2/)** · [Adapter](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI) · [Leaderboard](https://robodojo-benchmark.com/leaderboard#agent)
 
 A multimodal agent revises an executable harness that selects and composes code-policy and VLA skills. Rollout evidence guides successive harness versions.
 
@@ -19,33 +19,36 @@ A multimodal agent revises an executable harness that selects and composes code-
 | Field | Reported value and source scope |
 | :-- | :-- |
 | Record type | policy |
-| Policy family | Hybrid [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Base model and architecture | A multimodal System 2 agent with a System 1 skill pool including code policies, π0.5 and π0.5 with sparse memory; the public page does not identify one universal agent checkpoint. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Model size and component | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Deployment inputs | Task goal, RGB observations, proprioception, episode state, execution feedback and retained skill / control-code artifacts. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Action outputs and horizon | Harness-selected code or VLA skill actions through a physical API; the agent can revise routing, tools, control code and skills between improvement rounds. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Training method | Frozen agent model in the illustrated harness-evolution loop: vary candidate programs, evaluate, select and inherit. This is distinct from training a new VLA checkpoint. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Training data | Rollout success / failure evidence revises the harness; underlying VLA skill training is separate. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Training duration | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Training hardware | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Inference and control rates | The website labels 0.1–1 Hz planning and 20–50 Hz control as illustrative estimates, not measured policy throughput. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Evaluation scope | RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. Current official October 24 snapshot: PhysicalRSI:Score 36.27, success 31.38%. These live-board results remain separate from the manuscript/development protocols. [1](https://yanming03.github.io/PhysicalRSI/v2/) [2](https://robodojo-benchmark.com/data/leaderboard.generated.json)  |
+| Policy family | Hybrid [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Base model and architecture | A multimodal System 2 agent with a System 1 skill pool including code policies, π0.5 and π0.5 with sparse memory; the public page does not identify one universal agent checkpoint. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Model size and component | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Deployment inputs | Task goal, RGB observations, proprioception, episode state, execution feedback and retained skill / control-code artifacts. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Action outputs and horizon | Harness-selected code or VLA skill actions through a physical API; the agent can revise routing, tools, control code and skills between improvement rounds. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Training method | Frozen agent model in the illustrated harness-evolution loop: vary candidate programs, evaluate, select and inherit. This is distinct from training a new VLA checkpoint. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Training data | Rollout success / failure evidence revises the harness; underlying VLA skill training is separate. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Training duration | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Training hardware | Not reported [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Inference and control rates | The website labels 0.1–1 Hz planning and 20–50 Hz control as illustrative estimates, not measured policy throughput. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Evaluation scope | RoboDojo with published task / layout result sheets; skill inheritance, composition and memory case studies. Current official October 24 snapshot: PhysicalRSI:Score 36.27, success 31.38%. These live-board results remain separate from the manuscript/development protocols. Official November snapshot scores the legacy row 38.12 / 33.00% success on the four-group Avg. w/o Open metric. [1](https://yanming03.github.io/PhysicalRSI/v2/) [2](https://robodojo-benchmark.com/data/leaderboard.generated.json) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment | Parallel-jaw gripper · Bimanual |
-| Release: code | Partial [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Release: weights | Not verified [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Release: data | Partial [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Release: license | Not verified; the author project and the contributed RoboDojo adapter have separate release scopes. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
-| Release: notes | Public project and an author-contributed evaluation adapter exist. A standalone upstream repository at the previously suggested URL could not be verified. [1](https://yanming03.github.io/PhysicalRSI/v2/)  |
+| Release: code | Partial [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Release: weights | Not verified [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Release: data | Partial [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Release: license | Not verified; the author project and the contributed RoboDojo adapter have separate release scopes. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
+| Release: notes | Public project and an author-contributed evaluation adapter exist. A standalone upstream repository at the previously suggested URL could not be verified. [1](https://yanming03.github.io/PhysicalRSI/v2/) [3](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)  |
 
 **Scope and qualifications**
 
 - No paper submission or explicit initial publication date was established; this record is undated.
 - The contributed benchmark adapter selects a registered skill composition at episode start and keeps it fixed until reset; it does not by itself release the entire research evolution loop.
 - Distinct from the unrelated PhysicalRSI / PhysicalRSI liquid-handling infrastructure repository.
+- The current Agent + VLA row is marked as a legacy submission with task-specific program guidance; distinguish the historical five-group score from the newer four-group average.
 
 **Primary evidence**
 
 1. [Official project / author report](https://yanming03.github.io/PhysicalRSI/v2/) — Project-only evidence; any reported date is an explicit public report or code-release event, not a manuscript submission.
 2. [Fresh official scored submission —26October2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — JSON updateOctober24 and current app system-type map inspected; scores are unchanged from previous aliases where applicable. Input modalities and actual release scope were rechecked from the original system.
+3. [Public contributed adapter and interface](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PhysicalRSI)
+4. [Official RoboDojo Agent snapshot](https://robodojo-benchmark.com/data/leaderboard.generated.json)

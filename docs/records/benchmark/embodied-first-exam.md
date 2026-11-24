@@ -8,7 +8,7 @@ Embodied First Exam
 
 **2026-11-09 · Preprint · Northwestern University**
 
-**[Paper](https://arxiv.org/abs/2611.12177)** · [Project](https://embodied-first-exam.ai/) · [Code](https://github.com/mll-lab-nu/embodied-first-exam)
+**[Paper](https://arxiv.org/abs/2611.12177)** · [Project](https://embodied-first-exam.ai/) · [Code](https://github.com/mll-lab-nu/embodied-first-exam) · [Robodojo-Integration](https://github.com/mll-lab-nu/embodied-first-exam/blob/main/tasks/robodojo/README.md)
 
 An agent-native simulation exam evaluates direct control, code and learned-policy approaches across diverse robot suites.
 
@@ -21,24 +21,24 @@ An agent-native simulation exam evaluates direct control, code and learned-polic
 | Record type | benchmark |
 | Simulator | MuJoCo, ManiSkill, Isaac and other suite-specific backends [1](https://arxiv.org/abs/2611.12177)  |
 | Simulator version and scope | Not reported [1](https://arxiv.org/abs/2611.12177)  |
-| Task count and scope | 1,156 tasks across 35 suites, 47 robots; 456 core tasks [1](https://arxiv.org/abs/2611.12177)  |
+| Task count and scope | Paper: 1,156 tasks, 35 suites, 47 robots and 456 core tasks. Public repository: 1,211 tasks over 36 benchmarks including HumanCLAW; 481 tasks in its current core set. [1](https://arxiv.org/abs/2611.12177) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
 | Task-list scope | Examples from the nine new suites; 26 other suites are adapted. Core task count is separate from the full registry. [1](https://arxiv.org/abs/2611.12177)  |
 | Capability dimensions | Code-based control · Dexterous manipulation · Spatial reasoning · Agent evaluation [1](https://arxiv.org/abs/2611.12177)  |
 | Metrics | Task success with setting-specific evaluation. [1](https://arxiv.org/abs/2611.12177)  |
 | Robots | 47 distinct robot models across all suites. [1](https://arxiv.org/abs/2611.12177)  |
-| Sensors and observations | Standard setting uses sensor observations; privileged setting additionally exposes simulator state. [1](https://arxiv.org/abs/2611.12177)  |
+| Sensors and observations | Standard setting uses sensor observations; privileged setting additionally exposes simulator state. [1](https://arxiv.org/abs/2611.12177) [5](https://github.com/mll-lab-nu/embodied-first-exam/blob/main/tasks/robodojo/README.md)  |
 | Data collection method | Agent-generated commands, code or trained policies interact with simulated task environments. [1](https://arxiv.org/abs/2611.12177)  |
-| Demonstrations and data | Not verified [1](https://arxiv.org/abs/2611.12177)  |
-| Evaluation protocol | Standard, realtime and privileged settings have different reset and observation rules. [1](https://arxiv.org/abs/2611.12177)  |
-| Evaluated baselines | Eight coding agents under the paper’s tested settings. [1](https://arxiv.org/abs/2611.12177)  |
+| Demonstrations and data | Public task definitions and installation through GitHub and PyPI. Full evaluated execution outputs not independently audited. [1](https://arxiv.org/abs/2611.12177) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
+| Evaluation protocol | Repository documents 481 Standard, 416 Privileged and 54 Real-time interfaces in the current core, which overlap. RoboDojo integration has 54 Standard and 54 Privileged task directories including extras. Standard uses the live verdict; Privileged may use up to three fresh replays. [1](https://arxiv.org/abs/2611.12177) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run) [5](https://github.com/mll-lab-nu/embodied-first-exam/blob/main/tasks/robodojo/README.md)  |
+| Evaluated baselines | Eight coding agents under the paper’s tested settings. Live repository inventory includes suites not in the paper results. [1](https://arxiv.org/abs/2611.12177)  |
 | Observations / modalities | RGB · Proprioception · Language |
 | Evaluation domain | Simulation |
 | Embodiment |  |
-| Release: code | Available — benchmark harness and task implementations [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam)  |
-| Release: weights | External agent model access varies [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam)  |
-| Release: data | Benchmark task configuration public; full evaluated agent outputs not independently audited [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam)  |
-| Release: license | MIT repository; benchmark assets and dependencies carry separate terms [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam)  |
-| Release: notes | Model APIs, simulators and adapted suites have independent terms. [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam)  |
+| Release: code | Available — benchmark harness and task implementations [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
+| Release: weights | External agent model access varies [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
+| Release: data | Available — task definitions and packaging in source repository [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
+| Release: license | MIT repository; benchmark assets and dependencies carry separate terms [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
+| Release: notes | Model APIs, simulators and adapted suites have independent terms. [2](https://embodied-first-exam.ai/) [3](https://github.com/mll-lab-nu/embodied-first-exam) [4](https://github.com/mll-lab-nu/embodied-first-exam#2-run)  |
 
 **Task names — Examples from the nine new suites; 26 other suites are adapted. Core task count is separate from the full registry.:**
 
@@ -53,10 +53,13 @@ An agent-native simulation exam evaluates direct control, code and learned-polic
 
 **Scope and qualifications**
 
-- Simulation benchmark, not a real-robot trial. Standard and privileged settings must not be conflated; 392 tasks lack a reference solution.
+- The paper and latest repository use different task inventories. The published benchmark reports 392 tasks without a reference solution.
+- Standard, Privileged and Real-time differ in observation, reset, timing and grading protocol; the modes are overlapping views of the same core tasks.
 
 **Primary evidence**
 
 1. [Original paper and first submission](https://arxiv.org/abs/2611.12177)
 2. [Official project and release scope](https://embodied-first-exam.ai/)
 3. [Official code and release scope](https://github.com/mll-lab-nu/embodied-first-exam)
+4. [Current official task counts by mode](https://github.com/mll-lab-nu/embodied-first-exam#2-run)
+5. [Current RoboDojo integration and replay protocol](https://github.com/mll-lab-nu/embodied-first-exam/blob/main/tasks/robodojo/README.md)
