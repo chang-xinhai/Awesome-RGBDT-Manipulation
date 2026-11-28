@@ -8,7 +8,7 @@ $N_0$-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulat
 
 **2026-07-26 · Preprint · NeoteAI / Fudan TEAI**
 
-**[Paper](https://arxiv.org/abs/2607.23783)** · [Project](https://research.neoteai.com/n0-twam/) · [Code](https://github.com/neoteai/N0-TWAM)
+**[Paper](https://arxiv.org/abs/2607.23783)** · [Project](https://research.neoteai.com/n0-twam/) · [Code](https://github.com/neoteai/N0-TWAM) · [Weights](https://huggingface.co/NeoteAI/n0-twam-base) · [Neosim Post-Training Checkpoint](https://huggingface.co/NeoteAI/n0-twam-neosim-delta) · [Univtac Post-Training Checkpoint](https://huggingface.co/NeoteAI/n0-twam-univtac-delta)
 
 A tactile-native asymmetric mixture-of-transformers jointly predicts video/contact futures and robot actions at foundation-model scale.
 
@@ -34,10 +34,10 @@ A tactile-native asymmetric mixture-of-transformers jointly predicts video/conta
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper · Bimanual |
 | Release: code | Available [2](https://github.com/neoteai/N0-TWAM)  |
-| Release: weights | Available [2](https://github.com/neoteai/N0-TWAM)  |
+| Release: weights | Available — base and distinct UniVTAC/NeoSim simulated post-training variants [2](https://github.com/neoteai/N0-TWAM) [5](https://github.com/neoteai/N0-TWAM#readme)  |
 | Release: data | Partial [2](https://github.com/neoteai/N0-TWAM)  |
-| Release: license | Not verified [2](https://github.com/neoteai/N0-TWAM)  |
-| Release: notes | Official repository links weights and post-training/inference; full pretraining corpus availability not established. [2](https://github.com/neoteai/N0-TWAM)  |
+| Release: license | CC BY-NC-SA 4.0 repository; redistributed components, such as Wan2.2 VAE/text assets and the OpenPI client, retain their original licenses. [2](https://github.com/neoteai/N0-TWAM) [4](https://github.com/neoteai/N0-TWAM/blob/main/LICENSE)  |
+| Release: notes | Repository links published base, simulator post-training models, deployment instructions, and post-training source. Hardware task checkpoints and the full pretraining corpus are not implied. [2](https://github.com/neoteai/N0-TWAM)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,5 @@ A tactile-native asymmetric mixture-of-transformers jointly predicts video/conta
 1. [Author manuscript and submission history](https://arxiv.org/abs/2607.23783) — Policy facts refer to the full manuscript available on the verification date; date is first arXiv submission.
 2. [Official repository](https://github.com/neoteai/N0-TWAM) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2607.23783) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
+4. [Original repository license text](https://github.com/neoteai/N0-TWAM/blob/main/LICENSE)
+5. [Author release notes and versioned simulator checkpoint links](https://github.com/neoteai/N0-TWAM#readme)

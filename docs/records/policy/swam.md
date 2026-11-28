@@ -8,7 +8,7 @@ SWAM: Scaling World Action Models with Cross-Modal Alignment
 
 **2026-11-09 · Preprint · Shanghai Jiao Tong University**
 
-**[Paper](https://arxiv.org/abs/2611.12870)** · [Project](https://char-lotte-xia.github.io/swam-official/) · [Code](https://github.com/shaaaaron/SWAM) · [Data](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)
+**[Paper](https://arxiv.org/abs/2611.12870)** · [Project](https://char-lotte-xia.github.io/swam-official/) · [Code](https://github.com/shaaaaron/SWAM) · [Data](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain) · [Weights](https://huggingface.co/FreDERicia/SWAM)
 
 A world-action model studies language–video alignment and multisource human/robot pretraining for manipulation.
 
@@ -34,10 +34,10 @@ A world-action model studies language–video alignment and multisource human/ro
 | Evaluation domain | Simulation · Real world |
 | Embodiment |  |
 | Release: code | Available — training and RoboTwin evaluation source [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
-| Release: weights | Not independently verified [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
+| Release: weights | Available — pretraining and RoboTwin post-training checkpoints [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
 | Release: data | Partial — 27 public subsets; in-house UMI, Ego4D and EgoSuite excluded [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
 | Release: license | Apache-2.0 repository; upstream components and dataset sources have separate terms. [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
-| Release: notes | Public source and a subset of pretraining data verified independently; full paper data pool is not public. [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
+| Release: notes | Official model repository lists separate pretraining/post-training bundles and safetensor shards. The full paper data pool is not public. [2](https://char-lotte-xia.github.io/swam-official/) [3](https://github.com/shaaaaron/SWAM) [4](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)  |
 
 **Scope and qualifications**
 
@@ -50,3 +50,5 @@ A world-action model studies language–video alignment and multisource human/ro
 2. [Official project and artifact scope](https://char-lotte-xia.github.io/swam-official/)
 3. [Official code and artifact scope](https://github.com/shaaaaron/SWAM)
 4. [Official data and artifact scope](https://huggingface.co/datasets/FreDERicia/SWAM-Pretrain)
+5. [Author describes base and post-trained checkpoint separation](https://github.com/shaaaaron/SWAM#readme)
+6. [Both public weight bundles with sharded safetensors](https://huggingface.co/FreDERicia/SWAM/tree/main)

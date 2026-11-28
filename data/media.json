@@ -11886,18 +11886,31 @@
     }
   },
   "vitaclab": {
+    "policy": {
+      "path": "/images/catalog/vitaclab-policy.webp",
+      "original": "https://arxiv.org/html/2611.32476v1/vitaclab-figure4.png",
+      "page": "https://arxiv.org/html/2611.32476v1",
+      "width": 1440,
+      "height": 803,
+      "sourceSha256": "64ea0f2afe0b1807424c2d4cdd9bbe7465439748fcbea462f6b198bf97212c38",
+      "credit": "Linjing You and coauthors",
+      "alt": "Pose-conditioned Transformer and shared tactile codebook bridge force grids and tactile imagery for a diffusion policy",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    },
     "benchmark": {
       "path": "/images/catalog/vitaclab-benchmark.webp",
-      "original": "https://raw.githubusercontent.com/youlj109/ViTacLab/main/docs/media/paper/vitaclab-teaser.png",
-      "page": "https://youlj109.github.io/ViTacLab/",
-      "credit": "ViTacLab authors",
-      "alt": "ViTacLab — benchmark and task overview",
+      "original": "https://arxiv.org/html/2611.32476v1/vitaclab-figure3.png",
+      "page": "https://arxiv.org/html/2611.32476v1",
+      "width": 1440,
+      "height": 798,
+      "sourceSha256": "4eb6c0ce0a3ca2715668074e0bf410b7eb5193c24c06bb4abfffcee92f560d15",
+      "credit": "Linjing You and coauthors",
+      "alt": "Author gallery of fifteen ViTacBench tasks grouped by embodiment and reliance on tactile feedback",
       "kind": "task-overview",
-      "reviewed": "2026-11-05",
-      "sourceSha256": "80927fa5560c6f2d60ff73293283f04c97ea467fbd9c67d38f29af806eda94b6",
-      "width": 1600,
-      "height": 710,
-      "note": "Author-supplied figure visually inspected and converted to an optimized local copy; original source and rights remain with the authors."
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
     }
   },
   "codeactionbench": {
@@ -13565,6 +13578,435 @@
       "width": 804,
       "height": 418,
       "reviewed": "2026-11-24"
+    }
+  },
+  "cotacwam": {
+    "policy": {
+      "path": "/images/catalog/cotacwam-policy.webp",
+      "original": "https://arxiv.org/html/2611.34117v1/method_overview.png",
+      "page": "https://arxiv.org/html/2611.34117v1",
+      "width": 1440,
+      "height": 648,
+      "sourceSha256": "27b981fca7b9f20499639ddf57726e37802111290396fa062268b315b724c877",
+      "credit": "Lei Jin and coauthors",
+      "alt": "Head and wrist vision with tactile inputs feed predictive experts and an independent failure-triggered correction path",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "cairn": {
+    "policy": {
+      "path": "/images/catalog/cairn-policy.webp",
+      "original": "https://arxiv.org/html/2611.34914v1/overview.png",
+      "page": "https://arxiv.org/html/2611.34914v1",
+      "width": 469,
+      "height": 256,
+      "sourceSha256": "00d4104e45eca01b2b478cf40cf12be7d47424edee296f303df303a6f66a02c6",
+      "credit": "Agelos Kratimenos and coauthors",
+      "alt": "Scene and held-object points with sampled object SE(3) trajectories around an obstruction",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Left panel of author Figure 2 shows the geometric prior and sampled trajectories. Full reciprocal steering diagram is in the source."
+    }
+  },
+  "m2-adaptvla": {
+    "policy": {
+      "path": "/images/catalog/m2-adaptvla-policy.webp",
+      "original": "https://tlf-tlf.github.io/M2AdaptVLAPage/assets/figures/method.webp",
+      "page": "https://tlf-tlf.github.io/M2AdaptVLAPage/",
+      "width": 1440,
+      "height": 723,
+      "sourceSha256": "f72fe7760439eafca09506d38857dc4a14e6f56fe3907129ee146c23e42cf9b4",
+      "credit": "Liufan Tan and coauthors",
+      "alt": "TTT visual memory, context-gated wrist wrench history and final-step test-time adaptation in the action expert",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "splatwam": {
+    "policy": {
+      "path": "/images/catalog/splatwam-policy.webp",
+      "original": "https://arxiv.org/html/2611.33467v1/fig_arch.png",
+      "page": "https://arxiv.org/html/2611.33467v1",
+      "width": 569,
+      "height": 246,
+      "sourceSha256": "6538d5885db0e3ce32590e31a7bc77697fa0e2ca291725497434cd0acab1b7e5",
+      "credit": "Frank Tsu-Fang Lu and coauthors",
+      "alt": "Multi-view observation tokenizer feeding Gaussian dynamics and a shared policy head",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Excerpt of author Figure 2 shows the multiview tokenizer, Gaussian dynamics and action head. Novel-view rasterization is shown separately in the source."
+    }
+  },
+  "act-depth-failure": {
+    "benchmark": {
+      "path": "/images/catalog/act-depth-failure-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.33352v1/fig_iros_1_teaser.png",
+      "page": "https://arxiv.org/html/2611.33352v1",
+      "width": 833,
+      "height": 320,
+      "sourceSha256": "4d0d712865fba97c45e1a41ecfc4264c72251d298ab12608942b9204aeefb2de",
+      "credit": "Inayat Rasool and coauthors",
+      "alt": "Wrist RGB and four author-generated depth conditions paired with policy gains relative to RGB-only",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "ego2real": {
+    "policy": {
+      "path": "/images/catalog/ego2real-policy.webp",
+      "original": "https://arxiv.org/html/2611.32101v1/pipeline.png",
+      "page": "https://arxiv.org/html/2611.32101v1",
+      "width": 1100,
+      "height": 509,
+      "sourceSha256": "177acc5ad799c33e4efdbc5a008c79abb5bf841c03a22f9451534f55072a071f",
+      "credit": "Ange Bao and coauthors",
+      "alt": "Human RGB-D and instrumented gloves refine hand–object references, robot retargeting and contact-informed reinforcement learning",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "g07": {
+    "policy": {
+      "path": "/images/catalog/g07-policy.webp",
+      "original": "https://arxiv.org/html/2611.31822v2/model.png",
+      "page": "https://arxiv.org/html/2611.31822v2",
+      "width": 800,
+      "height": 599,
+      "sourceSha256": "e16b985457f1d6df064b392d5a755616ff84befdeff18bde17b1bee029183385",
+      "credit": "Galaxea Team",
+      "alt": "G0.7 architecture showing up to five minutes of history, optional demo conditioning and separate fast versus imagine-then-act execution modes",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "himodex": {
+    "policy": {
+      "path": "/images/catalog/himodex-policy.webp",
+      "original": "https://arxiv.org/html/2611.31782v1/images/pipeline_1117.png",
+      "page": "https://arxiv.org/html/2611.31782v1",
+      "width": 1356,
+      "height": 1000,
+      "sourceSha256": "00ec559de6e106f4683d0a84ca440c2adf935fbb28cc2b37a25da2b817709a74",
+      "credit": "Jin Yang and coauthors",
+      "alt": "Two-stage bimanual training pipeline combines multi-view vision, tactile, wrench and audio before learning the action branch",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "foveawam": {
+    "policy": {
+      "path": "/images/catalog/foveawam-policy.webp",
+      "original": "https://arxiv.org/html/2611.31705v1/fig2_se3wam.png",
+      "page": "https://arxiv.org/html/2611.31705v1",
+      "width": 825,
+      "height": 490,
+      "sourceSha256": "b39031b5e73c8c6e229ec9ef76582d91148099af152305eca1f8544d156e7e3c",
+      "credit": "Jiaqi Yin and coauthors",
+      "alt": "Current RGB-D and metric pose history feed separate 3D forecast heads and an action stream that skips prediction during inference",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    },
+    "benchmark": {
+      "path": "/images/catalog/foveawam-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.31705v1/ontimebench.png",
+      "page": "https://arxiv.org/html/2611.31705v1",
+      "width": 825,
+      "height": 394,
+      "sourceSha256": "99e2b4928d142e3e5021a1a8bd07bb853d7217978bc9da9a9dbce4f4d872d5d5",
+      "credit": "Jiaqi Yin and coauthors",
+      "alt": "Comparison of paused and live delays plus the five OnTimeBench task families and fourteen task thumbnails",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "hi3r-vla": {
+    "policy": {
+      "path": "/images/catalog/hi3r-vla-policy.webp",
+      "original": "https://arxiv.org/html/2611.31535v1/method.png",
+      "page": "https://arxiv.org/html/2611.31535v1",
+      "width": 1440,
+      "height": 518,
+      "sourceSha256": "5e97de6283644a7f93051fc4b09b6a83cc89c1c4f522d817aefa80804e9de3f4",
+      "credit": "Shizhe Chen and coauthors",
+      "alt": "Image features align to a hierarchical point encoder and feed a geometry-aware flow-matching action expert",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "weavevla": {
+    "policy": {
+      "path": "/images/catalog/weavevla-policy.webp",
+      "original": "https://arxiv.org/html/2611.31126v2/graphvla_v2.png",
+      "page": "https://arxiv.org/html/2611.31126v2",
+      "width": 1440,
+      "height": 519,
+      "sourceSha256": "6ea68d59308f74eb01a60af1f55cade20324665c7663a35803b451b437f3a385",
+      "credit": "Zien Wang and coauthors",
+      "alt": "Object detections and RGB geometry feed recurrent graph edges and task-conditioned action tokens",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "tacinf": {
+    "policy": {
+      "path": "/images/catalog/tacinf-policy.webp",
+      "original": "https://arxiv.org/html/2611.29240v1/fig04_vtla_system.png",
+      "page": "https://arxiv.org/html/2611.29240v1",
+      "width": 1145,
+      "height": 555,
+      "sourceSha256": "5ca945cf96b6c3351358d5d358e2067af5abbcdcd19abe82bafa2925128ae2e5",
+      "credit": "Qiwei Wu and coauthors",
+      "alt": "Tactile image, motion-field or force input adapters feed a visual-language model and a joint force and position action head",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    },
+    "benchmark": {
+      "path": "/images/catalog/tacinf-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.29240v1/figs/fig02_tabero_benchmark.png",
+      "page": "https://arxiv.org/html/2611.29240v1",
+      "width": 1294,
+      "height": 440,
+      "sourceSha256": "e24259a468257647181a3b493bd5ef2a3a8a07d4ea0aa34e19d158e3e409e868",
+      "credit": "Qiwei Wu and coauthors",
+      "alt": "Author gallery of robot manipulation tasks for the Tacinf-Tabero simulator",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "a2i-vla": {
+    "policy": {
+      "path": "/images/catalog/a2i-vla-policy.webp",
+      "original": "https://arxiv.org/html/2611.29279v1/architectureV2.png",
+      "page": "https://arxiv.org/html/2611.29279v1",
+      "width": 1193,
+      "height": 512,
+      "sourceSha256": "a312d9eb5576cb09a7a85ab4e40dd4663752db008c9edc0c48c92ba99ca88e0c",
+      "credit": "Kun Dai and coauthors",
+      "alt": "Two-stage force–tactile alignment followed by gated feature injection into a π0.5 action expert",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "vtla-rl": {
+    "policy": {
+      "path": "/images/catalog/vtla-rl-policy.webp",
+      "original": "https://arxiv.org/html/2611.28752v1/figures/exports/fig2_architecture.png",
+      "page": "https://arxiv.org/html/2611.28752v1",
+      "width": 1440,
+      "height": 436,
+      "sourceSha256": "274c6e45790cad7656f3bd9ea9ad7512d85d067464d3025228dce85b86fe5097",
+      "credit": "Qiwei Wu and coauthors",
+      "alt": "Shared camera and tactile-image encoder with a motion and bilateral-force action expert and simulation RL post-training",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "tacinno": {
+    "policy": {
+      "path": "/images/catalog/tacinno-policy.webp",
+      "original": "https://arxiv.org/html/2611.26405v3/tacinno_pi05_v10.png",
+      "page": "https://arxiv.org/html/2611.26405v3",
+      "width": 394,
+      "height": 360,
+      "sourceSha256": "1b5e79f5fd59787e6708ebd14220f16f6fcd4112f6b8d6dcb6da16ae6dcbca2a",
+      "credit": "Weile Li and coauthors",
+      "alt": "Policy diagram shows tactile history remaining at deployment while auxiliary innovation and contact prediction heads are removed",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "hog-wam": {
+    "policy": {
+      "path": "/images/catalog/hog-wam-policy.webp",
+      "original": "https://arxiv.org/html/2611.34811v1/01_hogwam_overview.png",
+      "page": "https://arxiv.org/html/2611.34811v1",
+      "width": 1440,
+      "height": 576,
+      "sourceSha256": "7bc46afd4d63b2ab739df8d104a1ca68ec84e47b5d242685cf6ca0a5959c2674",
+      "credit": "Boxuan Dong and coauthors",
+      "alt": "RGB, action and auxiliary gradient diffusion streams with separate real-robot robustness comparisons",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "effectwam": {
+    "policy": {
+      "path": "/images/catalog/effectwam-policy.webp",
+      "original": "https://arxiv.org/html/2611.32053v2/framework1.png",
+      "page": "https://arxiv.org/html/2611.32053v2",
+      "width": 1004,
+      "height": 447,
+      "sourceSha256": "c171627e00573d66b82caca7b4df166542dc2ec6a80fc3f826cdc37ee3892daf",
+      "credit": "Yuan Zhang and coauthors",
+      "alt": "Generation expert behind predicted visual effects, optional rendering and action chunks",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Center and output panels of author Figure 1. The source also shows the input encoders."
+    }
+  },
+  "veritouch": {
+    "policy": {
+      "path": "/images/catalog/veritouch-policy.webp",
+      "original": "https://arxiv.org/html/2611.30572v1/method_overview.png",
+      "page": "https://arxiv.org/html/2611.30572v1",
+      "width": 1440,
+      "height": 780,
+      "sourceSha256": "ef49fe5b6b28ed7fd40f3cef260e122b937db0bd71601d254d6ab94a498f8685",
+      "credit": "Shuxun Wang and coauthors",
+      "alt": "Joint visual and tactile rollout generation, multimodal plausibility checks, inverse dynamics labeling and downstream policy training",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "tacittouch": {
+    "policy": {
+      "path": "/images/catalog/tacittouch-policy.webp",
+      "original": "https://arxiv.org/html/2611.28697v1/overview.png",
+      "page": "https://arxiv.org/html/2611.28697v1",
+      "width": 825,
+      "height": 385,
+      "sourceSha256": "179ca70e9739d7e28dfc78635c3f0b1a66911206457cd0053d4b2130d6e17b40",
+      "credit": "Chen Yang and coauthors",
+      "alt": "Offline visuo-tactile-to-visual distillation diagram and the sensor-free tactile path in the deployed RGB-only student",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "egoloaf": {
+    "policy": {
+      "path": "/images/catalog/egoloaf-policy.webp",
+      "original": "https://arxiv.org/html/2611.32260v1/method_overview.png",
+      "page": "https://arxiv.org/html/2611.32260v1",
+      "width": 840,
+      "height": 338,
+      "sourceSha256": "86d4886bb2383d9cba68bcca4a6884e6eeff8d05ad0fe040ea2d47f69252539f",
+      "credit": "Yiming Zeng and coauthors",
+      "alt": "Egocentric observations become body and hand targets, robot renderings and object-relative affordances for VLA post-training",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "roboarc": {
+    "benchmark": {
+      "path": "/images/catalog/roboarc-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.33390v1/fig_overview.png",
+      "page": "https://arxiv.org/html/2611.33390v1",
+      "width": 1440,
+      "height": 881,
+      "sourceSha256": "7721608adc6972b908739232a14260542a549d0e200b1e823dce087a0ee218b5",
+      "credit": "Qineng Wang and coauthors",
+      "alt": "Physics-based robot puzzle evaluator, the sensor and privileged regimes, and examples from the six constraint groups",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "force2act": {
+    "policy": {
+      "path": "/images/catalog/force2act-policy.webp",
+      "original": "https://arxiv.org/html/2611.29208v1/force2act_overview.png",
+      "page": "https://arxiv.org/html/2611.29208v1",
+      "width": 1250,
+      "height": 535,
+      "sourceSha256": "67d673b59a054cec6c897944e8f77a41ae6539244f9315050081e968ec801d3a",
+      "credit": "Keerthi Vasan Murugan and coauthors",
+      "alt": "Global RGB and relative-force flow policy coupled to a reactive mixture of force experts",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    },
+    "benchmark": {
+      "path": "/images/catalog/force2act-benchmark.webp",
+      "original": "https://raw.githubusercontent.com/MAGICLAB-NUS/Force2Act/main/assets/bench.jpg",
+      "page": "https://github.com/MAGICLAB-NUS/Force2Act#readme",
+      "width": 1324,
+      "height": 660,
+      "sourceSha256": "c485eac87dacd3890a351dc4eb591ac2864e804f11f85bf2fc54e714e10acdb1",
+      "credit": "Keerthi Vasan Murugan and coauthors",
+      "alt": "Author thumbnail gallery of the five simulated Force2Act-Bench tasks",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Five panels from the author task gallery, rearranged in source order into two rows for readability."
+    }
+  },
+  "entangle": {
+    "policy": {
+      "path": "/images/catalog/entangle-policy.webp",
+      "original": "https://arxiv.org/html/2611.28732v2/model_architecture.png",
+      "page": "https://arxiv.org/html/2611.28732v2",
+      "width": 1440,
+      "height": 771,
+      "sourceSha256": "bdfc06dc0983c8ceb86e9779cd4c60978e2147fe4107a812355ed9303b50cb67",
+      "credit": "Chendong Xiang and coauthors",
+      "alt": "Human context video and current robot views drive joint future video and action prediction and receding-horizon execution",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "egodepth-bench": {
+    "benchmark": {
+      "path": "/images/catalog/egodepth-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.30734v1/resource_teaser.png",
+      "page": "https://arxiv.org/html/2611.30734v1",
+      "width": 414,
+      "height": 248,
+      "sourceSha256": "fdabc9f72a9b0b292839ac44b10e48f195dbddce972df26253f211b21c9cb8f7",
+      "credit": "Yuan Gao and coauthors",
+      "alt": "Actual fisheye RGB view, corresponding metric Z-depth labelling and six synchronized view thumbnails",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "dextacwam": {
+    "policy": {
+      "path": "/images/catalog/dextacwam-policy.webp",
+      "original": "https://dextacwam.github.io/static/images/architecture.png?v=20260916-2",
+      "page": "https://dextacwam.github.io/",
+      "width": 1440,
+      "height": 810,
+      "sourceSha256": "313ff69d12db542ffc7dc48cedef2add66a2837c4effd2e5c13534c092594e3a",
+      "credit": "Haoran Yuan and coauthors",
+      "alt": "World branch with vision and bilateral multi-finger tactile latents, with an action expert reading predicted dynamics",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
+    }
+  },
+  "tactic": {
+    "policy": {
+      "path": "/images/catalog/tactic-policy.webp",
+      "original": "https://arxiv.org/html/2607.09218v1/figures/figure_2_method.png",
+      "page": "https://arxiv.org/html/2607.09218v1",
+      "width": 1440,
+      "height": 571,
+      "sourceSha256": "cdbfe8f7a3ac86c375fad61bf70fbfc02476d0591a7d2332751522ed5565e14c",
+      "credit": "Rishabh Madan and coauthors",
+      "alt": "RGB-D, proprioception and force measured across the arm are fused for contact-aware sampling and receding-horizon action selection",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
     }
   }
 }

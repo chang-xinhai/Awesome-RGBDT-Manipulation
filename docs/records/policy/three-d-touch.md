@@ -22,7 +22,7 @@ Grounds measured RGB-D scene points and dense fingertip force in one robot-base 
 | Policy family | Geometry- and tactile-conditioned VLA [1](https://arxiv.org/html/2611.23961)  |
 | Base model and architecture | π0 [1](https://arxiv.org/html/2611.23961)  |
 | Model size and component | Not reported [1](https://arxiv.org/html/2611.23961)  |
-| Deployment inputs | Front RGB and calibrated RGB-D, 600 three-axis tactile taxels, robot state and instruction. [1](https://arxiv.org/html/2611.23961)  |
+| Deployment inputs | Front RGB and calibrated metric RGB-D scene points; measured three-axis tactile observations from 600 taxels per XHand, plus robot state and instruction. [1](https://arxiv.org/html/2611.23961)  |
 | Action outputs and horizon | 18-dimensional joint actions for arm and hand; executes 16 steps per inference. [1](https://arxiv.org/html/2611.23961)  |
 | Training method | Fine-tunes the action model with scene, per-finger tactile and explicit geometric relation tokens. [1](https://arxiv.org/html/2611.23961)  |
 | Training data | About 100 physical demonstrations per task on five tasks. [1](https://arxiv.org/html/2611.23961)  |
@@ -43,6 +43,7 @@ Grounds measured RGB-D scene points and dense fingertip force in one robot-base 
 
 - Calibrated RGB-D is explicitly used at deployment; object surfaces and hand/object relations are computed from observations.
 - The XHand reports three-axis force at 600 tactile taxels. The action space and tactile readout are separately sized.
+- The shared robot-frame representation receives both depth-derived scene points and actual tactile force vectors for action prediction.
 
 **Primary evidence**
 

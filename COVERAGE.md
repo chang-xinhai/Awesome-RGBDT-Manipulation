@@ -1,23 +1,23 @@
 # Coverage and evidence boundary
 
-Review cutoff: 2026-11-24. 896 unique records; 81 benchmark records; 697 policy records; 89 models; 9 surveys; 42 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
+Review cutoff: 2026-11-28. 922 unique records; 86 benchmark records; 720 policy records; 90 models; 9 surveys; 43 supporting resources. Collection and category counts overlap. Models have representation/prediction interfaces, surveys have review scope, and neither adds to the executable-policy count.
 
 ## Search areas
 
-- Visuo-Tactile Benchmarks: 30 records with this classification.
-- Precision and Assembly: 31 records with this classification.
-- Dexterous Manipulation: 20 records with this classification.
-- General Manipulation: 34 records with this classification.
-- Robustness and Evaluation: 28 records with this classification.
-- Supporting Tools and Data: 42 records with this classification.
-- Visuo-Tactile Policy Learning: 101 records with this classification.
-- Tactile VLA and World-Action Models: 118 records with this classification.
-- RGB-D and 3D Policies: 229 records with this classification.
-- Tactile Representations and Pretraining: 51 records with this classification.
+- Visuo-Tactile Benchmarks: 31 records with this classification.
+- Precision and Assembly: 34 records with this classification.
+- Dexterous Manipulation: 21 records with this classification.
+- General Manipulation: 36 records with this classification.
+- Robustness and Evaluation: 31 records with this classification.
+- Supporting Tools and Data: 43 records with this classification.
+- Visuo-Tactile Policy Learning: 110 records with this classification.
+- Tactile VLA and World-Action Models: 126 records with this classification.
+- RGB-D and 3D Policies: 237 records with this classification.
+- Tactile Representations and Pretraining: 52 records with this classification.
 - Geometry and Predictive Models: 51 records with this classification.
-- Visual Precision and Reinforcement Learning: 55 records with this classification.
-- Agent / RSI / ICL: 298 records with this classification.
-- Generalist Policy Foundations: 173 records with this classification.
+- Visual Precision and Reinforcement Learning: 60 records with this classification.
+- Agent / RSI / ICL: 299 records with this classification.
+- Generalist Policy Foundations: 186 records with this classification.
 
 ## Benchmark-to-policy source audit
 

@@ -1,6 +1,6 @@
 {
   "purpose": "Official sources for future reviewed updates; no automatic publishing",
-  "reviewed": "2026-11-24",
+  "reviewed": "2026-11-28",
   "sources": [
     {
       "work": "rle-bench",
@@ -380,7 +380,7 @@
     {
       "work": "simpletouch",
       "kind": "code",
-      "url": "https://github.com/ccyydd/SimpleTouch"
+      "url": "https://github.com/PIER-Lab/SimpleTouch"
     },
     {
       "work": "vigar",
@@ -5846,6 +5846,131 @@
       "work": "robodyna",
       "kind": "code",
       "url": "https://github.com/robodyna/robodyna"
+    },
+    {
+      "work": "m2-adaptvla",
+      "kind": "project",
+      "url": "https://tlf-tlf.github.io/M2AdaptVLAPage/"
+    },
+    {
+      "work": "g07",
+      "kind": "project",
+      "url": "https://www.galaxea-ai.com/model-g07.html"
+    },
+    {
+      "work": "foveawam",
+      "kind": "project",
+      "url": "https://foveawam.github.io/"
+    },
+    {
+      "work": "foveawam",
+      "kind": "code",
+      "url": "https://github.com/ArrebolBlack/FoveaWAM"
+    },
+    {
+      "work": "hi3r-vla",
+      "kind": "project",
+      "url": "https://cshizhe.github.io/projects/hi3r_vla.html"
+    },
+    {
+      "work": "weavevla",
+      "kind": "project",
+      "url": "https://kingzein.github.io/weave-vla/"
+    },
+    {
+      "work": "weavevla",
+      "kind": "code",
+      "url": "https://github.com/Kingzein/WeaveVLA"
+    },
+    {
+      "work": "tacinf",
+      "kind": "project",
+      "url": "https://tacinf.github.io/"
+    },
+    {
+      "work": "tacinf",
+      "kind": "code",
+      "url": "https://github.com/NathanWu7/T2-VLA"
+    },
+    {
+      "work": "tacinno",
+      "kind": "project",
+      "url": "https://tacinno.github.io/"
+    },
+    {
+      "work": "tacinno",
+      "kind": "code",
+      "url": "https://github.com/LisavilaLee/TacInno"
+    },
+    {
+      "work": "hog-wam",
+      "kind": "code",
+      "url": "https://github.com/iPPLab/HOG-WAM"
+    },
+    {
+      "work": "veritouch",
+      "kind": "project",
+      "url": "https://zjuscl.github.io/veritouch/"
+    },
+    {
+      "work": "tacittouch",
+      "kind": "project",
+      "url": "https://pier-lab.github.io/tacittouch/"
+    },
+    {
+      "work": "egoloaf",
+      "kind": "project",
+      "url": "https://egoloaf.github.io/"
+    },
+    {
+      "work": "roboarc",
+      "kind": "project",
+      "url": "https://roboarc.embodied-first-exam.ai/"
+    },
+    {
+      "work": "roboarc",
+      "kind": "code",
+      "url": "https://github.com/mll-lab-nu/RoboARC"
+    },
+    {
+      "work": "force2act",
+      "kind": "project",
+      "url": "https://magiclab-nus.github.io/Force2Act/"
+    },
+    {
+      "work": "force2act",
+      "kind": "code",
+      "url": "https://github.com/MAGICLAB-NUS/Force2Act"
+    },
+    {
+      "work": "entangle",
+      "kind": "project",
+      "url": "https://entangle-robotics.github.io/"
+    },
+    {
+      "work": "egodepth-bench",
+      "kind": "project",
+      "url": "https://egodepth-bench.github.io/"
+    },
+    {
+      "work": "egodepth-bench",
+      "kind": "code",
+      "url": "https://github.com/Chris004869/EgoDepth-Bench"
+    },
+    {
+      "work": "dextacwam",
+      "kind": "project",
+      "url": "https://dextacwam.github.io/"
+    },
+    {
+      "work": "dextacwam",
+      "kind": "code",
+      "url": "https://github.com/dextacwam/DexTacWAM"
+    },
+    {
+      "work": "tactic",
+      "kind": "project",
+      "url": "https://emprise.cs.cornell.edu/tactic/"
     }
   ]
 }

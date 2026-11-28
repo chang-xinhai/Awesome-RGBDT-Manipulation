@@ -8,7 +8,7 @@ SimpleTouch: Can Vision-Language-Action Models Master Contact-Rich Manipulation 
 
 **2026-10-02 · Preprint · Tsinghua University / Amap / Hong Kong Polytechnic University**
 
-**[Paper](https://arxiv.org/abs/2610.02784)** · [Project](https://simpletouch-robot.github.io/) · [Code](https://github.com/ccyydd/SimpleTouch) · [Weights](https://huggingface.co/cyang203912/SimpleTouch)
+**[Paper](https://arxiv.org/abs/2610.02784)** · [Project](https://simpletouch-robot.github.io/) · [Code](https://github.com/PIER-Lab/SimpleTouch) · [Weights](https://huggingface.co/cyang203912/SimpleTouch)
 
 Adds a tactile expert and training-only future-touch supervision to π0.5, using full frozen tactile token maps without tactile policy pretraining.
 
@@ -33,7 +33,7 @@ Adds a tactile expert and training-only future-touch supervision to π0.5, using
 | Observations / modalities | RGB · Tactile · Proprioception · Language |
 | Evaluation domain | Simulation · Real world |
 | Embodiment | Parallel-jaw gripper |
-| Release: code | Available [2](https://github.com/ccyydd/SimpleTouch)  |
+| Release: code | Available [2](https://github.com/ccyydd/SimpleTouch) [5](https://github.com/PIER-Lab/SimpleTouch#readme)  |
 | Release: weights | Available [2](https://github.com/ccyydd/SimpleTouch)  |
 | Release: data | Not verified [2](https://github.com/ccyydd/SimpleTouch)  |
 | Release: license | Apache-2.0 for repository code, verified from LICENSE; pretrained models, datasets, dependencies and figure rights retain separate terms. [2](https://github.com/ccyydd/SimpleTouch) [4](https://github.com/ccyydd/SimpleTouch/blob/main/LICENSE)  |
@@ -50,3 +50,4 @@ Adds a tactile expert and training-only future-touch supervision to π0.5, using
 2. [Official repository](https://github.com/ccyydd/SimpleTouch) — Release status is checked separately from paper claims; a project page alone does not imply released implementation or weights.
 3. [Full paper: method and implementation details](https://arxiv.org/html/2610.02784) — Unreported specifications remain explicitly unknown; hardware/rates are scoped to training, inference or low-level control.
 4. [Actual repository code license](https://github.com/ccyydd/SimpleTouch/blob/main/LICENSE) — 2026-10-19 actual file inspection; applies to repository code, not a blanket grant over models/data/third-party assets.
+5. [Canonical repository and newly added TacitTouch implementation](https://github.com/PIER-Lab/SimpleTouch#readme)

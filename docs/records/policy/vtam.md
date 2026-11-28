@@ -8,7 +8,7 @@ VTAM: Efficient Visuo-Tactile World-Action Models for Contact-Rich Manipulation 
 
 **2026-03-24 · Preprint · University of Illinois Urbana-Champaign / Stanford University / Shanghai Jiao Tong University**
 
-**[Paper](https://arxiv.org/abs/2603.23481)** · [Project](https://plan-lab.github.io/projects/vtam/) · [Code](https://github.com/PLAN-Lab/VTAM) · [Data](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)
+**[Paper](https://arxiv.org/abs/2603.23481)** · [Project](https://plan-lab.github.io/projects/vtam/) · [Code](https://github.com/PLAN-Lab/VTAM) · [Data](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight) · [Additional Open-X-Tactile Recordings](https://huggingface.co/datasets/JensenYuan/VTAM_OXT)
 
 A video-pretrained world-action model learns tactile dynamics from task demonstrations without separate tactile pretraining.
 
@@ -35,9 +35,9 @@ A video-pretrained world-action model learns tactile dynamics from task demonstr
 | Embodiment | Parallel-jaw gripper |
 | Release: code | Available — training and inference; UniVTAC configuration pending [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
 | Release: weights | Forthcoming — VTAM task checkpoints; upstream pretrained backbones have separate access [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
-| Release: data | Available — xArm / GelSight demonstrations, chip archive verified HTTP 206 [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
+| Release: data | Available — xArm/GelSight demos and a distinct three-archive Open-X-Tactile collection [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
 | Release: license | Mixed licenses: Apache-2.0 and CC BY-NC-SA 4.0 by source file; check NOTICE and upstream terms. [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
-| Release: notes | Official source contains real-world training and inference; task checkpoints and UniVTAC simulation configurations are marked pending. Upstream GE and LTX pretrained weights have their own terms. [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
+| Release: notes | The author project now also lists VTAM_OXT with chip, peel and wipe Zarr archives under CC BY 4.0. UniVTAC configs and task-policy weights remain marked pending. [3](https://github.com/PLAN-Lab/VTAM) [4](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) [5](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight)  |
 
 **Scope and qualifications**
 
@@ -52,3 +52,4 @@ A video-pretrained world-action model learns tactile dynamics from task demonstr
 3. [Official source and scope](https://github.com/PLAN-Lab/VTAM) — Training / inference public; UniVTAC configs and trained checkpoints pending.
 4. [Per-file license notice](https://github.com/PLAN-Lab/VTAM/blob/main/NOTICE) — Original implementation and upstream components have mixed Apache-2.0 and CC BY-NC-SA terms.
 5. [Official xArm data release](https://huggingface.co/datasets/JensenYuan/VTAM_xArm_GelSight) — Three task archives listed and chip archive returned HTTP 206 for a byte-range request.
+6. [Verified distinct three-archive OXT release on the author project](https://huggingface.co/datasets/JensenYuan/VTAM_OXT/tree/main)

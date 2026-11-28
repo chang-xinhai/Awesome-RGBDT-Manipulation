@@ -8,7 +8,7 @@ OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pret
 
 **2026-09-07 · Preprint · OpenWAM contributors**
 
-**[Paper](https://arxiv.org/abs/2609.07398)** · [Project](https://openwam-official.github.io/) · [Code](https://github.com/OpenWAM-Official/OpenWAM) · [Weights](https://huggingface.co/OpenWAM)
+**[Paper](https://arxiv.org/abs/2609.07398)** · [Project](https://openwam-official.github.io/) · [Code](https://github.com/OpenWAM-Official/OpenWAM) · [Data](https://huggingface.co/OpenWAM/datasets) · [Weights](https://huggingface.co/OpenWAM) · [Benchmark Adapters](https://github.com/OpenWAM-Official/OpenWAM/tree/main/benchmarks)
 
 Modular WAM infrastructure and controlled architecture study produce a released video-action policy pretrained on curated heterogeneous interaction data.
 
@@ -35,9 +35,9 @@ Modular WAM infrastructure and controlled architecture study produce a released 
 | Embodiment | Parallel-jaw gripper · Bimanual |
 | Release: code | Available [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/)  |
 | Release: weights | Available [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/)  |
-| Release: data | Partial [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/)  |
+| Release: data | Available in scoped public releases — author-linked cleaned AgiBotWorld-Beta, RoboCOIN, InternData-A1 and DROID robot pretraining datasets [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/) [4](https://github.com/OpenWAM-Official/OpenWAM#news)  |
 | Release: license | Apache-2.0 code; weights/data/backbone terms separate [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/)  |
-| Release: notes | Availability concerns author-linked artifacts; no training or installation reproduced. [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/)  |
+| Release: notes | Cleaned pretraining datasets have independent releases. Author repository separates OpenWAM-Alpha and OpenWAM-Study checkpoint families and evaluator adapters; integrations do not establish new benchmark scores. [2](https://github.com/OpenWAM-Official/OpenWAM) [3](https://openwam-official.github.io/)  |
 
 **Scope and qualifications**
 
@@ -49,3 +49,6 @@ Modular WAM infrastructure and controlled architecture study produce a released 
 1. [Author manuscript and submission history](https://arxiv.org/abs/2609.07398) — Read full manuscript; first arXiv submission retained separately from current revision. Numeric costs and observations have setting-specific scope.
 2. [Official implementation](https://github.com/OpenWAM-Official/OpenWAM) — Author-linked code and artifact instructions; current release may differ from the original manuscript.
 3. [Official project](https://openwam-official.github.io/) — Author project and links; scientific figure keeps original rights.
+4. [Primary linked cleaned pretraining releases](https://github.com/OpenWAM-Official/OpenWAM#news)
+5. [Verified multi-part DROID release archive files](https://huggingface.co/datasets/OpenWAM/Droid/tree/main)
+6. [Current benchmark adapter source](https://github.com/OpenWAM-Official/OpenWAM/tree/main/benchmarks)
