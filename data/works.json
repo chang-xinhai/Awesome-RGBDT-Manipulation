@@ -94420,7 +94420,7 @@
       "generalist-foundation"
     ],
     "resourceType": "policy",
-    "summary": "Scales a direct-action WAM to five minutes of visual context and uses paired robot and human-ego training to track task constraints over long sequences.",
+    "summary": "Scales a direct-action WAM to five minutes of visual context and co-trains on robot teleoperation and human egocentric video.",
     "institution": "Galaxea",
     "venue": "Preprint",
     "modalities": [
