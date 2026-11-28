@@ -8,7 +8,7 @@ TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real
 
 **2026-11-13 · Preprint · Stanford University and collaborators**
 
-**[Paper](https://arxiv.org/abs/2611.17619)** · [Project](https://touchtwin.github.io/)
+**[Paper](https://arxiv.org/abs/2611.17619)** · [Project](https://touchtwin.github.io/) · [Upstream Touchscale (Gated)](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale) · [Upstream Touchscale-Oxt (Gated)](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale-OXT)
 
 Rebuilds human RGB-D and glove-touch recordings in MuJoCo, then perturbs tactile replays to generate force-labeled demonstrations.
 
@@ -38,7 +38,7 @@ Rebuilds human RGB-D and glove-touch recordings in MuJoCo, then perturbs tactile
 | Release: weights | Not verified for the evaluated policy, contact predictor or video renderer [2](https://touchtwin.github.io/)  |
 | Release: data | Not verified [2](https://touchtwin.github.io/)  |
 | Release: license | Not verified [2](https://touchtwin.github.io/)  |
-| Release: notes | Paper, replay examples and project videos are public. Separate downloadable TouchTwin artifacts were not verified. [2](https://touchtwin.github.io/)  |
+| Release: notes | Paper, replay examples and project videos are public. Upstream TouchScale and TouchScale-OXT are separately gated; no separate downloadable TouchTwin reconstructed assets or replay corpus was verified. [2](https://touchtwin.github.io/) [3](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale) [4](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale-OXT)  |
 
 **Task names — Reported applications of a data generation pipeline.:**
 
@@ -55,3 +55,5 @@ Rebuilds human RGB-D and glove-touch recordings in MuJoCo, then perturbs tactile
 
 1. [Primary paper and evaluated setting](https://arxiv.org/html/2611.17619)
 2. [Author project and artifact status](https://touchtwin.github.io/)
+3. [Author-linked source corpus and approval terms, distinct from synthetic replay](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale)
+4. [Source contributor release and gated files; not a TouchTwin reconstruction release](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale-OXT)

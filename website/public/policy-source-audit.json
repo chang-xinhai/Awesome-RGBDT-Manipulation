@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-11-24",
+  "reviewed": "2026-11-28",
   "sources": [
     {
       "id": "robotwin2-paper",
@@ -1330,6 +1330,88 @@
         {
           "name": "JoyAI-VL API-driven Agent",
           "note": "Public adapter supports RGB, shared SAM3 segmentation and joint control. Its maintained development log scopes the removal of task skills, task recipes and dedicated tools; no new leaderboard score was verified."
+        }
+      ]
+    },
+    {
+      "id": "robodojo-mirror-baselines",
+      "benchmarkId": "robodojo-mirror",
+      "label": "RoboDojo-Mirror frozen-checkpoint comparison",
+      "url": "https://arxiv.org/html/2611.33010v1",
+      "kind": "paper-baselines",
+      "scope": "Eight matched simulation tasks and a separately scoped four-task physical study. Physical comparison uses only π0.5 and FastWAM; simulator diagnostics reuse subsets.",
+      "entries": [
+        {
+          "name": "π0.5",
+          "workId": "pi05"
+        },
+        {
+          "name": "FastWAM",
+          "workId": "fast-wam"
+        },
+        {
+          "name": "VPP2",
+          "workId": "vpp2"
+        },
+        {
+          "name": "Awomo-0.5",
+          "workId": "awomo05"
+        },
+        {
+          "name": "WALL-OSS",
+          "workId": "wall-oss05"
+        }
+      ]
+    },
+    {
+      "id": "roboinf-paper-baselines",
+      "benchmarkId": "roboinf",
+      "label": "RoboInF instruction-fidelity comparisons",
+      "url": "https://arxiv.org/html/2611.30555v1",
+      "kind": "paper-baselines",
+      "scope": "VLA/WAM post-training and additional VLA comparisons are distinct from the agent comparison with a shared RGB-D executor.",
+      "entries": [
+        {
+          "name": "π0.5",
+          "workId": "pi05"
+        },
+        {
+          "name": "OpenWAM",
+          "workId": "openwam"
+        },
+        {
+          "name": "GR00T",
+          "workId": "grootn16"
+        },
+        {
+          "name": "LingBot-VA",
+          "workId": "lingbot-va"
+        }
+      ]
+    },
+    {
+      "id": "await-paper-baselines",
+      "benchmarkId": "await-bench",
+      "label": "AWAIT timing study methods",
+      "url": "https://arxiv.org/html/2611.29558v1",
+      "kind": "paper-baselines",
+      "scope": "Native direct agent, three implementation-specific executors and separate human teleoperation. Measured-latency and imposed-delay scopes are separate.",
+      "entries": [
+        {
+          "name": "Native agent",
+          "note": "AWAIT-specific direct tool-calling reference; no independent policy record."
+        },
+        {
+          "name": "CaP-X",
+          "workId": "cap-x"
+        },
+        {
+          "name": "PyRUA-Lean",
+          "workId": "pyrualean"
+        },
+        {
+          "name": "Q0-Preview",
+          "workId": "q0-preview"
         }
       ]
     }

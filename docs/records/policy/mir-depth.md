@@ -47,3 +47,4 @@ Refines inaccurate single-view RGB-D captures of transparent objects for visible
 **Primary evidence**
 
 1. [Original author paper or dataset description](https://arxiv.org/html/2611.25417v1)
+2. [Paper compares DCIRNet as transparent-object depth completion prior work](https://arxiv.org/html/2611.25417v1)

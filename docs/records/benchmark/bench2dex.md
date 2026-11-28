@@ -81,3 +81,4 @@ A bimanual dexterous suite across 12 arm-hand pairings, using a shared geometry-
 3. [Official repository](https://github.com/Bench2Dex/Bench2Dex) — Current public repository; implementation scope may differ from paper.
 4. [Official source](https://github.com/Bench2Dex/Bench2Dex/blob/main/LICENSE) — License text read directly; code license does not automatically cover models, data or simulator.
 5. [Data collection method and scope](https://arxiv.org/abs/2609.15726) — Section3.1 online teleoperation and3.2 offline multimodal replay.
+6. [Independent benchmark paper evaluates frozen PyRUA-Dex programs; no checkpoint result promoted to a leaderboard claim](https://arxiv.org/html/2611.33144v1)

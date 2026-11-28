@@ -14008,5 +14008,346 @@
       "reviewed": "2026-11-28",
       "note": "Author figure, optimized for the atlas; labels and original figure bounds preserved."
     }
+  },
+  "dexlatentworld": {
+    "policy": {
+      "path": "/images/catalog/dexlatentworld-policy.webp",
+      "original": "https://vinaymohan0409.github.io/DexLatentWorld/assets/video/real/grasp_lift_cup.jpg",
+      "page": "https://vinaymohan0409.github.io/DexLatentWorld/",
+      "width": 1280,
+      "height": 720,
+      "sourceSha256": "69bc48010bd9c3769f57e1303ddaea7df01c11cbdda33b23d89a51fcb6bfe330",
+      "credit": "Vinay Udit Mohan and coauthors",
+      "alt": "Sharpa Wave robot hand grasps a paper cup in the authors’ physical zero-shot manipulation example",
+      "kind": "author-demo",
+      "reviewed": "2026-11-28",
+      "note": "Author demonstration poster, optimized for the atlas. Original rights retained."
+    }
+  },
+  "regeoanch": {
+    "policy": {
+      "path": "/images/catalog/regeoanch-policy.webp",
+      "original": "https://arxiv.org/html/2611.32162v1/framework_v2.png",
+      "page": "https://arxiv.org/html/2611.32162v1",
+      "width": 1440,
+      "height": 552,
+      "sourceSha256": "617eb17321cc573e86f96f656259d8517e829073b631bdbb1b133e42543bb568",
+      "credit": "Chengyu Tao and coauthors",
+      "alt": "Calibrated RGB at deployment feeds a depth decoder, base and gripper anchors, and action conditioning",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "consisx": {
+    "policy": {
+      "path": "/images/catalog/consisx-policy.webp",
+      "original": "https://arxiv.org/html/2611.30308v2/Pipeline.png",
+      "page": "https://arxiv.org/html/2611.30308v2",
+      "width": 1440,
+      "height": 625,
+      "sourceSha256": "3190feec61ebd71fddb5b7fcff0bf9b3dec5dde1383206926b458d5961c09a19",
+      "credit": "Yunhe Zhang and coauthors",
+      "alt": "Multi-view RGB features form 3D-aware associations and entity embeddings before conditioning an action head",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "pyrua-dex": {
+    "policy": {
+      "path": "/images/catalog/pyrua-dex-policy.webp",
+      "original": "https://arxiv.org/html/2611.33144v1/fig-method.png",
+      "page": "https://arxiv.org/html/2611.33144v1",
+      "width": 784,
+      "height": 293,
+      "sourceSha256": "a4b3807737b0a46eb31a712cf93583205d504f1734d7cbc1fa3eca4dc7cd9e97",
+      "credit": "Feixiang Ruan and coauthors",
+      "alt": "Parallel coding-agent exploration produces programs that are distilled, refined and frozen before execution",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "forth-vtla": {
+    "policy": {
+      "path": "/images/catalog/forth-vtla-policy.webp",
+      "original": "https://arxiv.org/html/2611.26744v1/figures/fig2_system.png",
+      "page": "https://arxiv.org/html/2611.26744v1",
+      "width": 1440,
+      "height": 445,
+      "sourceSha256": "d551acf3336da7dd1cf4df298c547250979a80372ac4fbfeb665e996ed7a3898",
+      "credit": "Junde Li and coauthors",
+      "alt": "The three FORTH layers pair tactile feature learning, token adaptation and force-limited execution with measured control diagnostics",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "dexduet": {
+    "policy": {
+      "path": "/images/catalog/dexduet-policy.webp",
+      "original": "https://arxiv.org/html/2611.30495v1/method.png",
+      "page": "https://arxiv.org/html/2611.30495v1",
+      "width": 825,
+      "height": 396,
+      "sourceSha256": "376307edca6ade94cfa9c466ad7f269c507c4729be852ea94334460225dc56b0",
+      "credit": "Haoran Zhang and coauthors",
+      "alt": "Weight-sharing hand policies exchange robot state and train against hand graph and contact rewards",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "nav4manip": {
+    "policy": {
+      "path": "/images/catalog/nav4manip-policy.webp",
+      "original": "https://arxiv.org/html/2611.34655v1/nav4manip_4.png",
+      "page": "https://arxiv.org/html/2611.34655v1",
+      "width": 1440,
+      "height": 500,
+      "sourceSha256": "5effd7ad02cfe2cea682a3bbb1bc416935a07b8787969c14eb46e4888a8197da",
+      "credit": "Yusen Feng and coauthors",
+      "alt": "Navigation predicts endpoint affordances and action sequences, then a dexterous world-action model executes",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    },
+    "benchmark": {
+      "path": "/images/catalog/nav4manip-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.34655v1/nav4manip_title_1.png",
+      "page": "https://arxiv.org/html/2611.34655v1",
+      "width": 1440,
+      "height": 828,
+      "sourceSha256": "49862fedc49ac6fe0ea247d3f2e9600d87a7b37e5852c3af557ae3f91939f819",
+      "credit": "Yusen Feng and coauthors",
+      "alt": "Nav-N-Manip overview showing blocking, navigation endpoints and dexterous handoff",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "flowdreamer": {
+    "policy": {
+      "path": "/images/catalog/flowdreamer-policy.webp",
+      "original": "https://arxiv.org/html/2505.10075v1/framework.png",
+      "page": "https://arxiv.org/html/2505.10075v1",
+      "width": 1440,
+      "height": 383,
+      "sourceSha256": "ab6f34c971713e8daa0c062eb7282beab39cea5da9201720a543416557b9c8d1",
+      "credit": "Jun Guo and coauthors",
+      "alt": "A 3D scene-flow predictor drives spatial warping and the video generation module from a prior frame and action",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "simpwm": {
+    "policy": {
+      "path": "/images/catalog/simpwm-policy.webp",
+      "original": "https://sim-pwm.pages.dev/assets/video/pwm/ov/27560_proxy.mp4",
+      "page": "https://sim-pwm.pages.dev/",
+      "width": 640,
+      "height": 352,
+      "sourceSha256": "9274ec57ff7c16358262e52f267aeeaacb174e465ebb537fb3fc222e1dbadcdb",
+      "credit": "Tingting Liao and coauthors",
+      "alt": "SimPWM demonstration frame showing the simulator’s robot and object proxy in the calibrated scene",
+      "kind": "author-demo",
+      "reviewed": "2026-11-28",
+      "note": "Frame at 2 seconds from the authors’ official proxy clip, optimized for the atlas. Original rights retained."
+    }
+  },
+  "artkit": {
+    "policy": {
+      "path": "/images/catalog/artkit-policy.webp",
+      "original": "https://arxiv.org/html/2611.33403v1/framework.png",
+      "page": "https://arxiv.org/html/2611.33403v1",
+      "width": 1440,
+      "height": 571,
+      "sourceSha256": "43605961c09c91d385972811f21de5d83086d50decb2f4ee2c751e3b792a28d6",
+      "credit": "Sylvia Yuan and coauthors",
+      "alt": "An RGB-D video validates generated link geometry and supports motion-driven re-segmentation and joint recovery",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "geomvgen": {
+    "policy": {
+      "path": "/images/catalog/geomvgen-policy.webp",
+      "original": "https://arxiv.org/html/2611.31689v1/framework.png",
+      "page": "https://arxiv.org/html/2611.31689v1",
+      "width": 1440,
+      "height": 569,
+      "sourceSha256": "d2a53708cf9f7640d4260fa749f5b714918e7e49b47ce4d7a4345e7bb0b9070d",
+      "credit": "Qiaoqiao Jia and coauthors",
+      "alt": "Two latent streams exchange appearance and geometry and use shared action/view conditioning",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "dcirnet": {
+    "policy": {
+      "path": "/images/catalog/dcirnet-policy.webp",
+      "original": "https://arxiv.org/html/2506.09491v1/dc_grasp.png",
+      "page": "https://arxiv.org/html/2506.09491v1",
+      "width": 804,
+      "height": 615,
+      "sourceSha256": "3b1dea92e14929a26a22a969b1a843de3199bdc020790e1fb94ab0348241d10e",
+      "credit": "Guanghu Xie and coauthors",
+      "alt": "Author figure of RGB-D depth completion and downstream grasping of difficult transparent and reflective objects",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "3da-vtg": {
+    "policy": {
+      "path": "/images/catalog/3da-vtg-policy.webp",
+      "original": "https://raw.githubusercontent.com/Yiju1213/3DA-VTG/main/figures/figure-3-framework-overview.png",
+      "page": "https://github.com/Yiju1213/3DA-VTG",
+      "width": 669,
+      "height": 350,
+      "sourceSha256": "5c0d905fd5a7dfa405d9fe939f24d9d3df1878b621699afed5f1af3eecbf124a",
+      "credit": "Yong Tao and coauthors",
+      "alt": "3DA-VTG framework aligns RGB-D points with tactile contact depth before shape completion and stability prediction",
+      "kind": "architecture",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    },
+    "benchmark": {
+      "path": "/images/catalog/3da-vtg-benchmark.webp",
+      "original": "https://raw.githubusercontent.com/Yiju1213/3DA-VTG/main/figures/figure-1-dataset-construction-pipeline.png",
+      "page": "https://github.com/Yiju1213/3DA-VTG",
+      "width": 1419,
+      "height": 619,
+      "sourceSha256": "67ec632b24dd79d298faaecf51fd1360f66900c5fa0d9ea8e0c575eae43a7012",
+      "credit": "Yong Tao and coauthors",
+      "alt": "Dataset pipeline with a robot handover setup and automatically annotated stable and unstable grasps",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "rct": {
+    "benchmark": {
+      "path": "/images/catalog/rct-benchmark.webp",
+      "original": "https://faerber-lab.github.io/RCT/static/images/setup.webp",
+      "page": "https://faerber-lab.github.io/RCT/#dataset",
+      "width": 938,
+      "height": 1000,
+      "sourceSha256": "b29596e9fd1df44aa89aeb004305a73648a51b33975f96ce0f2fdc4799bff483",
+      "credit": "Jingbo He, Michael Färber and Roberto Calandra",
+      "alt": "Robot arm and rotating tool adapter carrying the optical DIGIT sensors used to collect independent contact sequences",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Official collection setup photograph; cropped around the arm and sensor head. Original rights retained."
+    }
+  },
+  "roboinf": {
+    "benchmark": {
+      "path": "/images/catalog/roboinf-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.30555v1/dataset_overview_artwork.png",
+      "page": "https://arxiv.org/html/2611.30555v1",
+      "width": 1440,
+      "height": 879,
+      "sourceSha256": "e7a55655d180175c183520329c47bd758a6a514ae06cad6577a687be3bd8d8d2",
+      "credit": "Jiawei Guo and coauthors",
+      "alt": "Dataset task gallery with paired instruction branches for eight manipulation families",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "hive-bench": {
+    "benchmark": {
+      "path": "/images/catalog/hive-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.30813v1/simulation_times.png",
+      "page": "https://arxiv.org/html/2611.30813v1",
+      "width": 1440,
+      "height": 468,
+      "sourceSha256": "fbc39d5287d922fc6f4213792919583a981237b66227d88dbb0ef84c96d73624",
+      "credit": "Qiwei Liang and coauthors",
+      "alt": "Egocentric robot task environments from RoboCasa-GR1 kitchens and RoboTwin randomized tabletops",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "robodojo-mirror": {
+    "benchmark": {
+      "path": "/images/catalog/robodojo-mirror-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.33010v1/benchmark_construction_v6_libero_4_resized.png",
+      "page": "https://arxiv.org/html/2611.33010v1",
+      "width": 841,
+      "height": 400,
+      "sourceSha256": "676df8038aa5c7a155cc82eb8c1f3040ed8194646787ab4ac0d5cb3729d9d3fe",
+      "credit": "Xuanchen Liu and coauthors",
+      "alt": "Matched task layouts under the mirror-free baseline and three mirror interventions",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "dtu-bench": {
+    "benchmark": {
+      "path": "/images/catalog/dtu-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.34538v1/figure1.7.png",
+      "page": "https://arxiv.org/html/2611.34538v1",
+      "width": 1266,
+      "height": 606,
+      "sourceSha256": "28810ca4fbae2e6e8e42366c8f6ea83f23030066dde930192af65af88c786910",
+      "credit": "Yanran Jiang and coauthors",
+      "alt": "Instruction updates in the same LIBERO scene across multiple change categories and robot execution stages",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "failpoint-x": {
+    "benchmark": {
+      "path": "/images/catalog/failpoint-x-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.33769v1/fig_b2_gallery.png",
+      "page": "https://arxiv.org/html/2611.33769v1",
+      "width": 823,
+      "height": 503,
+      "sourceSha256": "53ae0092f929bd6b8078f3bfc4fed51fbe79de30581b0f6d3b379d5570347f15",
+      "credit": "Zirui Li and coauthors",
+      "alt": "Recorded failure examples from the benchmark, including grasp and object-placement failures",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "fabricbench": {
+    "benchmark": {
+      "path": "/images/catalog/fabricbench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.31577v1/overview_fabricbench.png",
+      "page": "https://arxiv.org/html/2611.31577v1",
+      "width": 841,
+      "height": 722,
+      "sourceSha256": "a30dc87b7f32f30663fe0e858a63744567967827b1abca748b76d8abd3dd7247",
+      "credit": "Wenkang Hu and coauthors",
+      "alt": "Fabric asset examples, physical interaction, evaluation axes and representative task stages",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
+  },
+  "await-bench": {
+    "benchmark": {
+      "path": "/images/catalog/await-bench-benchmark.webp",
+      "original": "https://arxiv.org/html/2611.29558v1/await_tasks.png",
+      "page": "https://arxiv.org/html/2611.29558v1",
+      "width": 840,
+      "height": 360,
+      "sourceSha256": "7ad85bd7dbffdbf4ffdd56ca5350d330056dc88908a08ac220f11a0046564bf5",
+      "credit": "Haoxiang Zhan and coauthors",
+      "alt": "Eighteen time-sensitive task examples grouped by how the action window opens",
+      "kind": "task-overview",
+      "reviewed": "2026-11-28",
+      "note": "Original figure by the authors, optimized for the catalog. Original rights retained."
+    }
   }
 }

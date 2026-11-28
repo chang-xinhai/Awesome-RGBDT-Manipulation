@@ -105,3 +105,4 @@ Unified simulation/physical benchmark with five capability dimensions and common
 10. [Official leaderboard snapshot — 30 October 2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — 66 sim / 13 real rows; current application type map identifies Q0-Preview and GO-3 Nano Preview as Agent-track systems.
 11. [Official November 14 Agent Track protocol](https://robodojo-benchmark.com/leaderboard/protocol?lang=en)
 12. [Official feed and Agent track inventory — 18 November 2026](https://robodojo-benchmark.com/data/leaderboard.generated.json) — The generated feed contains 74 simulation and 14 physical rows. Matching visible sources in the site application identifies 14 rows of type Agent / Agent + VLA / Agent + WAM. The board labels legacy deviations individually.
+13. [Extension uses RoboDojo scene and checkpoint interfaces; matched mirror controls have their own record](https://github.com/iPPLab/robodojo-mirror#readme)
